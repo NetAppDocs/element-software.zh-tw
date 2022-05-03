@@ -1,0 +1,32 @@
+---
+permalink: storage/task_snapmirror_perform_failover_from_element_cluster.html 
+sidebar: sidebar 
+keywords: failover, cluster, perform a failover, snapmirror 
+summary: 您可以從元素叢集執行容錯移轉、以便目的地端的主機能夠讀取/寫入目的地磁碟區。在從元素叢集執行容錯移轉之前、您必須中斷SnapMirror關係。 
+---
+= 從元素叢集執行容錯移轉
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從元素叢集執行容錯移轉、以便目的地端的主機能夠讀取/寫入目的地磁碟區。在從元素叢集執行容錯移轉之前、您必須中斷SnapMirror關係。
+
+使用NetApp Element 這個功能來執行容錯移轉。如果Element UI無法使用、您也可以使用ONTAP 支援功能的支援功能、以使用支援中斷ONTAP 關係的命令。
+
+.您需要的是 #8217 ；需要的是什麼
+* SnapMirror關係存在、且目的地Volume上至少有一個有效的快照。
+* 由於主站台發生非計畫性停機或計畫性事件、因此您需要容錯移轉至目的地Volume。
+
+
+.步驟
+. 在Element UI中、按一下「*資料保護*>* SnapMirror關係*」。
+. 找出您要容錯移轉的來源Volume關係。
+. 單擊* Actions（操作）*圖標。
+. 按一下「*中斷*」。
+. 確認行動。
++
+目的地叢集上的磁碟區現在具有讀寫存取權、可掛載至應用程式主機以恢復正式作業工作負載。所有SnapMirror複寫都會因為此動作而停止。關係顯示中斷狀態。
+
+

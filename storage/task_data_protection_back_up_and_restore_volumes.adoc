@@ -1,0 +1,28 @@
+---
+permalink: storage/task_data_protection_back_up_and_restore_volumes.html 
+sidebar: sidebar 
+keywords: volumes, backup and restore 
+summary: 您可以將磁碟區備份並還原至其他SolidFire 的不一致儲存設備、以及與Amazon S3或OpenStack Swift相容的次要物件存放區。 
+---
+= 備份與還原磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將磁碟區備份並還原至其他SolidFire 的不一致儲存設備、以及與Amazon S3或OpenStack Swift相容的次要物件存放區。
+
+從OpenStack Swift或Amazon S3還原磁碟區時、您需要原始備份程序的資訊清單資訊。如果您要還原SolidFire 已備份到還原系統上的磁碟區、則不需要任何資訊清單資訊。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_data_protection_back_up_volume_to_amazon_s3.adoc[將磁碟區備份至Amazon S3物件存放區]
+* xref:task_data_protection_back_up_volume_to_openstack_swift.adoc[將磁碟區備份到OpenStack Swift物件存放區]
+* xref:task_data_protection_back_up_volume_to_solidfire.adoc[將磁碟區備份到SolidFire 一個不全的儲存叢集]
+* xref:task_data_protection_restore_volume_from_backup_on_amazon_s3.adoc[從Amazon S3物件存放區的備份還原磁碟區]
+* xref:task_data_protection_restore_volume_from_backup_on_openstack_swift.adoc[從OpenStack Swift物件存放區的備份還原磁碟區]
+* xref:task_data_protection_restore_volume_from_backup_on_solidfire.adoc[從SolidFire 還原儲存叢集上的備份還原磁碟區]
+

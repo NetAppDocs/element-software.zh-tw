@@ -1,0 +1,87 @@
+---
+permalink: api/reference_element_api_getremotelogginghosts.html 
+sidebar: sidebar 
+keywords: remote,logging,hosts,host,get,getting,getremotelogginghosts 
+summary: 您可以使用GetRemoteLoggingHist方法來取得目前的記錄伺服器清單。 
+---
+= GetRemoteLoggingHos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetRemoteLoggingHosers」方法來取得目前的記錄伺服器清單。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+遠端系統
+ a| 
+設定接收轉送記錄資訊之主機的IP位址和連接埠資訊清單。
+ a| 
+xref:reference_element_api_loggingserver.adoc[記錄伺服器] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "id": 3386609,
+   "method": "GetRemoteLoggingHosts",
+   "params": {}
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 3386609,
+   "result": {
+      "remoteHosts": [
+         {
+           "host": "172.16.1.20",
+           "port": 10514
+         },
+         {
+           "host": "172.16.1.25"
+         }
+      ]
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_setremotelogginghosts.adoc[SetRemoteLoggingHos]

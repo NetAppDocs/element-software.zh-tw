@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_setloginbanner.html 
+sidebar: sidebar 
+keywords: terms,use,banner,configure,set,setting,setloginbanner,login 
+summary: 您可以使用SetLoginBanner方法來設定使用者登入Element Web介面時看到的使用條款橫幅。 
+---
+= SetLoginBanner
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「etLoginBanner」方法來設定使用者登入Element Web介面時看到的使用條款橫幅。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+橫幅
+ a| 
+所需的使用條款橫幅文字。允許的長度上限為4、096個字元。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+已啟用
+ a| 
+使用條款橫幅的狀態。可能值：
+
+* 「對」：使用條款橫幅會顯示在網路介面登入時。
+* 「假」：網頁介面登入時不會顯示使用條款橫幅。
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+橫幅
+ a| 
+使用條款橫幅的目前文字。即使橫幅已停用、此值仍可包含文字。
+ a| 
+字串
+
+
+
+ a| 
+已啟用
+ a| 
+使用條款橫幅的狀態。可能值：
+
+* 是：網頁介面登入時會顯示使用條款橫幅。
+* 否：網頁介面登入時不會顯示使用條款橫幅。
+
+ a| 
+布林值
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 3920,
+  "method": "SetLoginBanner",
+  "params": {
+    "banner": "Welcome to NetApp!",
+    "enabled": true
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 3920,
+  "result": {
+    "loginBanner": {
+      "banner": "Welcome to NetApp!",
+      "enabled": true
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+10.0%

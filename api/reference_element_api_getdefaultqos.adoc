@@ -1,0 +1,87 @@
+---
+permalink: api/reference_element_api_getdefaultqos.html 
+sidebar: sidebar 
+keywords: qos,values,default,get,getting,getdefaultqos 
+summary: 您可以使用GetDefaultQoS方法、為新建立的磁碟區取得預設的服務品質（QoS）值。 
+---
+= GetDefaultQoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetDefaultQoS」方法來取得新建立磁碟區的預設服務品質（QoS）值。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+QoS
+ a| 
+預設QoS值。
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetDefaultQoS",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+      "burstIOPS" : 15000,
+      "burstTime" : 60,
+      "curve" : {
+         "1048576" : 15000,
+         "131072" : 1900,
+         "16384" : 270,
+         "262144" : 3000,
+         "32768" : 500,
+         "4096" : 100,
+         "524288" : 7500,
+         "65536" : 1000,
+         "8192" : 160
+      },
+      "maxIOPS" : 15000,
+      "minIOPS" : 100
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

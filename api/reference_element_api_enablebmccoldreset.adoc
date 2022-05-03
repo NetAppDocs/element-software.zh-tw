@@ -1,0 +1,94 @@
+---
+permalink: api/reference_element_api_enablebmccoldreset.html 
+sidebar: sidebar 
+keywords: BMC cold reset,BMC reset,enable BMC 
+summary: 您可以使用啟用Bmc/Cold重 設方法、針對叢集中的所有節點、啟用定期重設「基礎板管理控制器」（BMC）的背景工作。 
+---
+= 啟用Bmc/ColdReset
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「EnablBmc/ColdReset」（啟用Bmc/ColdReset）方法、針對叢集中的所有節點、啟用定期重設基礎板管理控制器（BMC）的背景工作。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+逾時
+ a| 
+BMC重設作業之間的時間（以分鐘為單位）。
+ a| 
+整數
+ a| 
+20160分鐘
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+cBMCResetDationMinutes
+ a| 
+傳回重設時間間隔之間的時間。命令完成後、時間間隔應始終為0。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method": "EnableBmcColdReset",
+    "params": {
+                "timeout": 36000
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "cBmcResetDurationMinutes": 36000
+    }
+}
+----
+
+
+== 新的自版本
+
+12.0

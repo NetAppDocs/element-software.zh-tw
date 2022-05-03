@@ -1,0 +1,215 @@
+---
+permalink: api/reference_element_api_enableldapauthentication.html 
+sidebar: sidebar 
+keywords: LDAP,auth,authentication,enable,enabling,EnableLdapAuthentication 
+summary: 您可以使用EnablLdap驗 證方法來設定LDAP目錄連線、以便LDAP驗證至叢集。然後、屬於LDAP目錄成員的使用者可以使用LDAP認證登入儲存系統。 
+---
+= 啟用Ldap驗 證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「EnablLdapAuthentication」方法來設定LDAP目錄連線、以便LDAP驗證至叢集。然後、屬於LDAP目錄成員的使用者可以使用LDAP認證登入儲存系統。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+驗證類型
+ a| 
+識別要使用的使用者驗證方法。可能值：
+
+* 《重新連結》
+* 《實時連結》
+
+ a| 
+字串
+ a| 
+SearchAndBind
+ a| 
+否
+
+
+
+ a| 
+群組搜尋基DN
+ a| 
+用於開始群組子樹狀結構搜尋的樹狀結構基礎DN。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+群組搜尋類型
+ a| 
+控制使用的預設群組搜尋篩選器。可能值：
+
+* NoGroups：不支援群組。
+* ActiveDirectory：使用者所有Active Directory群組的巢狀成員資格。
+* 成員DN：成員DN樣式群組（單一層級）。
+
+ a| 
+字串
+ a| 
+ActiveDirectory
+ a| 
+否
+
+
+
+ a| 
+伺服器URI
+ a| 
+以逗號分隔的LDAP或LDAPS伺服器URI清單。您可以在LDAP或LDAPS URI結尾新增自訂連接埠、方法是使用一個分號加上連接埠號碼。例如、URI "LDAP://1.2.3.4.3.4."使用預設連接埠、而URI "LDAPS：//1.2.3.4.1:12"則使用自訂連接埠123。
+ a| 
+字串陣列
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+使用者搜尋基DN
+ a| 
+用於開始子樹搜尋的樹狀結構基礎DN。使用SearchAndBind的驗證類型時需要此參數。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+searchBindDN
+ a| 
+用於登入以執行LDAP搜尋使用者的完整DN。DN需要LDAP目錄的讀取存取權。使用SearchAndBind的驗證類型時需要此參數。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+searchBindPassword
+ a| 
+用於搜尋的searchBindDN帳戶密碼。使用SearchAndBind的驗證類型時需要此參數。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+使用者搜尋篩選器
+ a| 
+查詢LDAP伺服器時要使用的LDAP搜尋篩選器。字串應有預留位置文字「%username%」、取代為驗證使用者的使用者名稱。例如、（&（objectClass =人員）（sAMAccountName=%username%））會使用Active Directory中的sAMAccountName欄位、以符合在叢集登入時輸入的使用者名稱。使用SearchAndBind的驗證類型時需要此參數。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+使用者DNS範本
+ a| 
+字串範本、用於定義建構完整使用者辨別名稱（DN）的模式。字串應有預留位置文字「%username%」、取代為驗證使用者的使用者名稱。使用DirectBind的驗證類型時、必須使用此參數。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+群組搜尋CustomFilter
+ a| 
+若要搭配CustomFilter搜尋類型使用、請使用LDAP篩選器來傳回使用者群組的DNS。字串可以有%username%和%userDN%的預留位置文字、視需要以使用者名稱和完整的使用者DN取代。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "EnableLdapAuthentication",
+  "params": {
+     "authType": "SearchAndBind",
+     "groupSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+     "groupSearchType": "ActiveDirectory",
+     "searchBindDN": "SFReadOnly@prodtest.solidfire.net",
+     "searchBindPassword": "zsw@#edcASD12",
+     "sslCert": "",
+     "userSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+     "userSearchFilter": "(&(objectClass=person)(sAMAccountName=%USERNAME%))",
+     "serverURIs":[
+           "ldaps://111.22.333.444",
+           "ldap://555.66.777.888"
+           ]
+       },
+  "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

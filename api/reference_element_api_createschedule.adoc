@@ -1,0 +1,539 @@
+---
+permalink: api/reference_element_api_createschedule.html 
+sidebar: sidebar 
+keywords: CreateSchedule,create,creating,schedule,schedules,snapshot,snapshots,scheduling,automatic,volume,volumes 
+summary: 您可以使用「建立排程」、以定義的時間間隔排程磁碟區的自動快照。 
+---
+= 建立排程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「建立排程」、以定義的時間間隔排程磁碟區的自動快照。
+
+您可以稍後使用建立的快照做為備份或復原、以確保磁碟區或磁碟區群組上的資料在建立快照的時間點保持一致。如果您排程快照在5分鐘內不可見的時間段執行、快照將在下一個時間段執行、時間間隔為5分鐘。例如、如果您排定在12：42：00 UTC執行快照、則快照將在12：45：00 UTC執行。您無法排程快照以5分鐘以內的時間間隔執行。
+
+
+NOTE: 如果叢集完整度處於階段1、2或3、您可以建立快照。叢集完整度達到階段4或5時、您無法建立快照。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+屬性
+ a| 
+使用「frequency」字串來指出快照的頻率。可能值：
+
+* 《星期幾》
+* 《月份數》
+* 《時間間隔》
+
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+| 「HasError」 | *需要說明的說明* | 布林值 | 「假」 | 否 
+
+
+ a| 
+《時數》
+ a| 
+每週重複快照之間的時數或每小時的格林尼治標準時間（以每週天數或每月天數模式計算）。有效值為0至23。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+| 《最後執行狀態》 | 上次排程快照建立的結果或狀態。 | 字串 | 無 | 否 
+
+
+ a| 
+名稱
+ a| 
+快照的名稱。如果未輸入名稱、則會使用拍攝群組快照的日期和時間。名稱長度上限為24個字元。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+《我的最大目標》
+ a| 
+週期性快照之間的分鐘數、或快照將以每週數天或每月數日模式所發生的時間（以GMT時間 為單位）。有效值為5至59。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+暫停
+ a| 
+指出排程是否應暫停。有效值：
+
+* "真的"
+* 「假」
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+"重複"
+ a| 
+指出排程是否為週期性。有效值包括：
+
+* "真的"
+* 「假」
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+| "RunNextInterval"  a| 
+指定是否在下次排程器處於作用中狀態時執行快照。設為true時、排程快照會在排程器下次作用時執行、並重新設回假。有效值包括：
+
+* "真的"
+* 「假」
+
+| 布林值 | 「假」 | 否 
+
+
+ a| 
+「排定名稱」
+ a| 
+排程的唯一名稱。允許的排程名稱長度上限為24個字元。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+「排定類型」
+ a| 
+指出要建立的排程類型。有效值為Snapshot。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+「排定資訊」
+ a| 
+排程的唯一名稱、所建立快照的保留期間、以及建立快照的磁碟區Volume ID。有效值：
+
+* 「volumeID」：快照中要包含的磁碟區ID。（整數）
+* 「Volume」（磁碟區）：要包含在群組快照中的磁碟區ID清單。（整數陣列）
+* 「名稱」：要使用的快照名稱。（字串）
+* 「enableRemoteReplication」：指出是否應將快照包含在遠端複寫中。（布林值）
+* 「快照」：快照保留的時間長度、以小時：分：秒表示如果為空白、則快照會永遠保留。（字串）
+* 「fifo」：快照會以先進先出（FIFO）的方式保留。（字串）
+* 「enureSerialCreation」：指定如果正在進行先前的快照複寫、是否應允許建立新的快照。（布林值）
+
+ a| 
+Json物件
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+「napMirrorLabel」
+ a| 
+SnapMirror軟體用來指定SnapMirror端點上的快照保留原則的標籤。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+「tartingDate」
+ a| 
+排程執行的時間。如果未設定、排程會立即開始。格式化為UTC時間。
+ a| 
+ISO 8601日期字串
+ a| 
+無
+ a| 
+否
+
+
+
+| 《toBeDelered》 | 指定此快照排程應在建立快照後刪除。 | 布林值 | 「假」 | 否 
+
+
+ a| 
+《我的天》
+ a| 
+每月快照的日期。有效值為1到31。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+是（如果排程為每月天數）
+
+
+
+ a| 
+《平日》
+ a| 
+快照將在一週中的某天建立。必要值（若有使用）：
+
+* 「DAY」：0到6（星期日到星期六）
+* 「偏移量」：每月每個可能的週、1到6（如果大於1、則僅在一週的第一天相符。例如、「偏移量：3」表示週日的第三個週日、「週三偏移量：4」表示週三的第四個週日。偏移量：0表示不採取任何行動。偏移量：1（預設）表示快照是在一週中的這個日期建立、無論快照落在哪個月份）
+
+ a| 
+Json物件陣列
+ a| 
+無
+ a| 
+是（如果排程為一週中的天數）
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+scheduleID
+ a| 
+已建立排程的ID。
+ a| 
+整數
+
+
+
+ a| 
+排程
+ a| 
+包含新建立排程資訊的物件。
+ a| 
+xref:reference_element_api_schedule.adoc[排程]
+
+|===
+
+
+== 申請範例1.
+
+下列排程範例包含下列參數：
+
+* 未指定開始時間或分鐘、因此排程會盡可能接近於午夜（00：00：00Z）開始。
+* 不會重複發生（只會執行一次）。
+* 它在2015年6月1日之後的第一個星期日或星期三（UTC 19：17：15Z）運行一次（以先到者為準）。
+* 它僅包含一個Volume（Volume ID = 1）。
+
+
+[listing]
+----
+{
+  "method":"CreateSchedule",
+  "params":{
+    "hours":0,
+    "minutes":0,
+    "paused":false,
+    "recurring":false,
+    "scheduleName":"MCAsnapshot1",
+    "scheduleType":"snapshot",
+    "attributes":{
+      "frequency":"Days Of Week"
+    },
+    "scheduleInfo":{
+      "volumeID":"1",
+      "name":"MCA1"
+    },
+    "monthdays":[],
+    "weekdays":[
+      {
+        "day":0,
+        "offset":1
+      },
+      {
+        "day":3,
+        "offset":1
+      }
+    ],
+    "startingDate":"2015-06-01T19:17:54Z"
+  },
+   "id":1
+}
+}
+}
+----
+
+
+== 回應範例1.
+
+上述要求會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Days Of Week"
+      },
+      "hasError": false,
+      "hours": 0,
+      "lastRunStatus": "Success",
+      "lastRunTimeStarted": null,
+      "minutes": 0,
+      "monthdays": [],
+      "paused": false,
+      "recurring": false,
+      "runNextInterval": false,
+      "scheduleID": 4,
+      "scheduleInfo": {
+        "name": "MCA1",
+        "volumeID": "1"
+      },
+      "scheduleName": "MCAsnapshot1",
+      "scheduleType": "Snapshot",
+      "startingDate": "2015-06-01T19:17:54Z",
+      "toBeDeleted": false,
+      "weekdays": [
+        {
+          "day": 0,
+          "offset": 1
+        },
+        {
+          "day": 3,
+          "offset": 1
+        }
+      ]
+    },
+    "scheduleID": 4
+  }
+}
+----
+
+
+== 申請範例2.
+
+下列排程範例包含下列參數：
+
+* 重複執行（將在指定時間以每月的每個排程時間間隔執行）。
+* 開始日期之後每月的第1、10、15和30天執行。
+* 它會在排定的每一天下午12：15執行。
+* 它僅包含一個Volume（Volume ID = 1）。
+
+
+[listing]
+----
+{
+  "method":"CreateSchedule",
+    "params":{
+      "hours":12,
+      "minutes":15,
+      "paused":false,
+      "recurring":true,
+      "scheduleName":"MCASnapshot1",
+      "scheduleType":"snapshot",
+      "attributes":{
+        "frequency":"Days Of Month"
+      },
+      "scheduleInfo":{
+        "volumeID":"1"
+      },
+      "weekdays":[
+      ],
+      "monthdays":[
+        1,
+        10,
+        15,
+        30
+      ],
+      "startingDate":"2015-04-02T18:03:15Z"
+    },
+    "id":1
+}
+----
+
+
+== 回應範例2.
+
+上述要求會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Days Of Month"
+      },
+      "hasError": false,
+      "hours": 12,
+      "lastRunStatus": "Success",
+      "lastRunTimeStarted": null,
+      "minutes": 15,
+      "monthdays": [
+        1,
+        10,
+        15,
+        30
+      ],
+      "paused": false,
+      "recurring": true,
+      "runNextInterval": false,
+      "scheduleID": 5,
+      "scheduleInfo": {
+        "volumeID": "1"
+      },
+      "scheduleName": "MCASnapshot1",
+      "scheduleType": "Snapshot",
+      "startingDate": "2015-04-02T18:03:15Z",
+      "toBeDeleted": false,
+      "weekdays": []
+    },
+      "scheduleID": 5
+  }
+}
+----
+
+
+== 申請範例3.
+
+下列排程範例包含下列參數：
+
+* 自2015年4月2日排定的時間間隔後5分鐘內開始。
+* 重複執行（將在指定時間以每月的每個排程時間間隔執行）。
+* 它會在開始日期之後的每月第二、第三和第四個月執行。
+* 排定在每天下午14：45執行。
+* 其中包括一組磁碟區（Volume = 1和2）。
+
+
+[listing]
+----
+{
+  "method":"CreateSchedule",
+  "params":{
+    "hours":14,
+    "minutes":45,
+    "paused":false,
+    "recurring":true,
+    "scheduleName":"MCASnapUser1",
+    "scheduleType":"snapshot",
+    "attributes":{
+      "frequency":"Days Of Month"
+    },
+    "scheduleInfo":{
+      "volumes":[1,2]
+    },
+    "weekdays":[],
+    "monthdays":[2,3,4],
+    "startingDate":"2015-04-02T20:38:23Z"
+  },
+  "id":1
+}
+----
+
+
+== 回應範例3.
+
+上述要求會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Days Of Month"
+      },
+      "hasError": false,
+      "hours": 14,
+      "lastRunStatus": "Success",
+      "lastRunTimeStarted": null,
+      "minutes": 45,
+      "monthdays": [
+        2,
+        3,
+        4
+      ],
+      "paused": false,
+      "recurring": true,
+      "runNextInterval": false,
+      "scheduleID": 6,
+      "scheduleInfo": {
+        "volumes": [
+          1,
+          2
+        ]
+      },
+      "scheduleName": "MCASnapUser1",
+      "scheduleType": "Snapshot",
+      "startingDate": "2015-04-02T20:38:23Z",
+      "toBeDeleted": false,
+      "weekdays": []
+    },
+    "scheduleID": 6
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

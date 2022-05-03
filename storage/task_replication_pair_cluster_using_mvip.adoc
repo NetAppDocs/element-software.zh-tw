@@ -1,0 +1,36 @@
+---
+permalink: storage/task_replication_pair_cluster_using_mvip.html 
+sidebar: sidebar 
+keywords: pair clusters, mvip, connection 
+summary: 您可以使用一個叢集的MVIP與另一個叢集建立連線、配對兩個叢集以進行即時複寫。若要使用此方法、必須在兩個叢集上存取叢集管理員。叢集管理員使用者名稱和密碼可用於驗證叢集存取、然後才能配對叢集。 
+---
+= 使用MVIP配對叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用一個叢集的MVIP與另一個叢集建立連線、配對兩個叢集以進行即時複寫。若要使用此方法、必須在兩個叢集上存取叢集管理員。叢集管理員使用者名稱和密碼可用於驗證叢集存取、然後才能配對叢集。
+
+. 在本機叢集上、選取*資料保護*>*叢集配對*。
+. 按一下*配對叢集*。
+. 按一下「*開始配對*」、然後按一下「*是*」、表示您可以存取遠端叢集。
+. 輸入遠端叢集MVIP位址。
+. 按一下*在遠端叢集上完成配對*。
++
+在*需要驗證*視窗中、輸入遠端叢集的叢集管理員使用者名稱和密碼。
+
+. 在遠端叢集上、選取*資料保護*>*叢集配對*。
+. 按一下*配對叢集*。
+. 按一下*完整配對*。
+. 按一下*完整配對*按鈕。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_replication_pair_cluster_using_pairing_key.adoc[使用配對金鑰配對叢集]
+* https://www.youtube.com/watch?v=HbKxPZnNvn4&feature=youtu.be["使用MVIP配對叢集（影片）"]
+

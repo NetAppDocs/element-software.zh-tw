@@ -1,0 +1,145 @@
+---
+permalink: api/reference_element_api_listvolumesforaccount.html 
+sidebar: sidebar 
+keywords: volume,volumes,list,listing,account,active,pending,deleted,listvolumesforaccount 
+summary: 您可以使用清單磁碟區ForAccount方法、列出帳戶的作用中磁碟區和（擱置中）已刪除磁碟區。 
+---
+= listVolumesForAccount
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listVolumesForAccount」（清單磁碟區ForAccount）方法、列出某個帳戶的作用中磁碟區和（擱置中）刪除磁碟區。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+包括虛擬磁碟區
+ a| 
+虛擬磁碟區預設會包含在回應中。若要排除虛擬磁碟區、請設定為假。
+ a| 
+布林值
+ a| 
+是的
+ a| 
+否
+
+
+
+ a| 
+帳戶ID
+ a| 
+將傳回此AccountID擁有的所有Volume。
+ a| 
+整數
+ a| 
+否
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+磁碟區
+ a| 
+Volume資訊清單。
+ a| 
+xref:reference_element_api_volume.adoc[Volume] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListVolumesForAccount",
+   "params": {
+      "accountID"  : 1
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法的回應類似於下列範例：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "volumes": [
+            {
+                "access": "readWrite",
+                "accountID": 1,
+                "attributes": {},
+                "blockSize": 4096,
+                "createTime": "2018-07-22T16:15:25Z",
+                "deleteTime": "",
+                "enable512e": false,
+                "iqn": "iqn.2010-01.com.solidfire:0oto.test1.25",
+                "name": "test1",
+                "purgeTime": "",
+                "qos": {
+                    "burstIOPS": 15000,
+                    "burstTime": 60,
+                    "curve": {
+                        "4096": 100,
+                        "8192": 160,
+                        "16384": 270,
+                        "32768": 500,
+                        "65536": 1000,
+                        "131072": 1950,
+                        "262144": 3900,
+                        "524288": 7600,
+                        "1048576": 15000
+                    },
+                    "maxIOPS": 15000,
+                    "minIOPS": 50
+                },
+                "scsiEUIDeviceID": "306f746f00000019f47acc0100000000",
+                "scsiNAADeviceID": "6f47acc100000000306f746f00000019",
+                "sliceCount": 1,
+                "status": "active",
+                "totalSize": 1000341504,
+                "virtualVolumeID": null,
+                "volumeAccessGroups": [],
+                "volumeID": 25,
+                "volumePairs": []
+            }
+        ]
+    }
+}
+----
+
+
+== 新的自版本
+
+9.6

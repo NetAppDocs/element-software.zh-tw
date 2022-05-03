@@ -1,0 +1,83 @@
+---
+permalink: concepts/concept_solidfire_concepts_security.html 
+sidebar: sidebar 
+keywords: solidfire security, element security, encryption at rest, software encryption at rest, external key management, fips 140-2, mfa 
+summary: 當您使用NetApp Element 支援功能時、資料會受到業界標準安全傳輸協定的保護。 
+---
+= 安全性
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您使用SolidFire 完所有的Flash儲存系統時、您的資料會受到業界標準安全傳輸協定的保護。
+
+
+
+== 閒置加密（硬體）
+
+儲存節點中的所有磁碟機都能在磁碟機層級使用AES 256位元加密進行加密。每個磁碟機都有自己的加密金鑰、這是在磁碟機初次初始化時建立的。啟用加密功能時、會建立全叢集的密碼、然後將密碼區塊散佈到叢集中的所有節點。沒有單一節點儲存整個密碼。然後使用密碼來保護所有磁碟機的存取權。需要密碼才能解除磁碟機鎖定、除非從磁碟機上拔下電源或磁碟機已鎖定、否則不需要密碼。
+
+link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["啟用閒置時的硬體加密功能"^] 不會影響叢集的效能或效率。如果使用元素API或元素UI從叢集組態中移除啟用加密的磁碟機或節點、則磁碟機上的靜止加密功能將會停用。移除磁碟機後、可使用「RecureEraseDrives」API方法安全清除磁碟機。如果強制移除實體磁碟機或節點、資料仍會受到整個叢集的密碼和磁碟機的個別加密金鑰保護。
+
+
+
+== 閒置加密（軟體）
+
+另一種閒置加密的軟體閒置加密功能、可將寫入儲存叢集中SSD的所有資料加密。 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["啟用時"^]，它會加密所有寫入的資料，並自動解密在軟體中讀取的所有資料。靜態軟體加密可鏡射硬體中的自我加密磁碟（SED）實作、在沒有SED的情況下提供資料安全性。
+
+
+NOTE: 靜止狀態的軟體加密功能預設適用於SolidFire 所有的「企業版」SDS節點。靜止軟體加密功能可在SolidFire 不含自我加密磁碟機（SED）的企業SDS節點中、提供資料安全加密的主要軟體層。
+
+
+WARNING: 對於支援所有Flash的儲存叢集、在建立叢集期間必須啟用閒置軟體加密功能、而且在建立叢集後無法停用。SolidFire
+
+軟體和硬體式的閒置加密均可獨立使用、也可彼此搭配使用。
+
+
+
+== 外部金鑰管理
+
+您可以將Element軟體設定為使用協力廠商的KMIP相容金鑰管理服務（KMS）來管理儲存叢集加密金鑰。啟用此功能時、儲存叢集的整個叢集磁碟機存取密碼加密金鑰會由您指定的KMS管理。
+
+Element可使用下列主要管理服務：
+
+* Gemalto SafeNet KeySecure
+* KeySecure的SafeNet
+* HyTrust金鑰控制
+* Vormetric Data Security Manager
+* IBM安全金鑰生命週期管理程式
+
+
+如需設定外部金鑰管理的詳細資訊、請參閱 link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["外部金鑰管理入門"] 文件。
+
+
+
+== 多因素驗證
+
+多因素驗證（MFA）可讓您要求使用者在NetApp Element 登入時出示多種證據、以便透過該Web UI或儲存節點UI進行驗證。您可以將元素設定為僅接受多因素驗證、以便與現有的使用者管理系統和身分識別供應商整合、以進行登入。您可以將元素設定為與現有的SAML 2.0身分識別供應商整合、以便強制執行多種驗證配置、例如密碼與文字訊息、密碼與電子郵件訊息、或其他方法。
+
+您可以將多因素驗證與通用的SAML 2.0相容身分識別供應商（IDP）配對、例如Microsoft Active Directory Federation Services（ADFS）和Shiboleth.
+
+若要設定MFA、請參閱 link:../storage/concept_system_manage_mfa_enable_multi_factor_authentication.html["啟用多因素驗證"] 文件。
+
+
+
+== FIPS 140-2適用於HTTPS和靜止資料加密
+
+NetApp SolidFire 支援符合聯邦資訊處理標準（FIPS）140-2密碼編譯模組要求的加密。您可以在SolidFire 您的支援HTTPS通訊和磁碟機加密的情況下、在您的支援叢集上啟用FIPS 140-2法規遵循。
+
+當您在叢集上啟用FIPS 140-2操作模式時、叢集會啟動NetApp密碼編譯安全模組（NCSM）、並利用FIPS 140-2第1級認證加密功能、將所有經由HTTPS傳輸的通訊資料、都能透過HTTPS傳輸到NetApp Element 該UI和API。您可以使用「EnablFeature」元素API搭配「FIPS」參數來啟用FIPS 140-2 HTTPS加密。在具有FIPS相容硬體的儲存叢集上、您也可以使用「具「FipsDrives」參數的「Enablfoes' Element API」、為閒置的資料啟用FIPS磁碟機加密。
+
+如需準備新儲存叢集以進行FIPS 140-2加密的詳細資訊、請參閱 link:../storage/task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["建立支援FIPS磁碟機的叢集"]。
+
+如需在已準備好的現有叢集上啟用FIPS 140-2的詳細資訊、請參閱 link:../api/reference_element_api_enablefeature.html["啟用功能元素API"]。
+
+
+
+== 以取得更多資訊
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

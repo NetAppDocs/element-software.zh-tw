@@ -1,0 +1,102 @@
+---
+permalink: api/reference_element_api_createkeyproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key provider,creating,create 
+summary: 您可以使用CreeKeyProviderKmip方法、建立具有指定名稱的金鑰管理互通性傳輸協定（KMIP）金鑰提供者。金鑰提供者定義擷取驗證金鑰的機制和位置。當您建立新的KMIP金鑰提供者時、它並未指派任何KMIP金鑰伺服器給它。若要建立KMIP金鑰伺服器、請使用Create KeyServerKmip方法。若要將其指派給供應商、請參閱AddKeyServerToProviderKmip。 
+---
+= CreeKeyProviderKmip
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Create KeyProviderKmip」方法、建立具有指定名稱的金鑰管理互通性傳輸協定（KMIP）金鑰提供者。金鑰提供者定義擷取驗證金鑰的機制和位置。當您建立新的KMIP金鑰提供者時、它並未指派任何KMIP金鑰伺服器給它。若要建立KMIP金鑰伺服器、請使用「Create KeyServerKmip」方法。若要將其指派給供應商、請參閱「AddKeyServerToProviderKmip」。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+KeyProviderName
+ a| 
+與建立的KMIP金鑰提供者建立關聯的名稱。此名稱僅供顯示用途使用、不需要唯一名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+kmipKeyProvider
+ a| 
+包含新建立金鑰提供者詳細資料的物件。
+ a| 
+link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "CreateKeyProviderKmip",
+  "params": {
+    "keyProviderName": "ProviderName",
+    },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+    "kmipKeyProvider": {
+        "keyProviderName": "ProviderName",
+        "keyProviderIsActive": true,
+        "kmipCapabilities": "SSL",
+        "keyServerIDs": [
+            15
+        ],
+        "keyProviderID": 1
+    }
+}
+}
+----
+
+
+== 新的自版本
+
+11.7

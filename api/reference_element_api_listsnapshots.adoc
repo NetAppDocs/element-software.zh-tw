@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_listsnapshots.html 
+sidebar: sidebar 
+keywords: snapshot,snapshots,list,listing,attributes,listsnapshots 
+summary: 您可以使用listsnapshots傳回在磁碟區上所擷取之每個快照的屬性。 
+---
+= 列表快照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listsnapshots」傳回在磁碟區上擷取的每個快照屬性。
+
+當從來源叢集呼叫此方法時、位於目標叢集上的快照相關資訊會顯示在來源叢集上。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume ID
+ a| 
+擷取磁碟區的快照。如果未提供volumeID、則會傳回所有Volume的所有快照。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+Snapshot ID
+ a| 
+擷取個別Snapshot ID的資訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+快照
+ a| 
+每個磁碟區的每個快照相關資訊。如果未提供volumeID、則會傳回所有Volume的所有快照。群組中的快照會以群組ID傳回。
+ a| 
+xref:reference_element_api_snapshot.adoc[Snapshot] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListSnapshots",
+   "params": {
+             "volumeID": "1"
+       },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "snapshots": [
+        {
+          "attributes": {},
+          "checksum": "0x0",
+          "createTime": "2015-05-08T13:15:00Z",
+          "enableRemoteReplication": true,
+          "expirationReason": "None",
+          "expirationTime": "2015-05-08T21:15:00Z",
+          "groupID": 0,
+          "groupSnapshotUUID": "00000000-0000-0000-0000-000000000000",
+          "name": "Hourly",
+          "remoteStatuses": [
+              {
+                "remoteStatus": "Present",
+                "volumePairUUID": "237e1cf9-fb4a-49de-a089-a6a9a1f0361e"
+              }
+         ],
+          "snapshotID": 572,
+          "snapshotUUID": "efa98e40-cb36-4c20-a090-a36c48296c14",
+          "status": "done",
+          "totalSize": 10000269312,
+          "volumeID": 1
+        }
+      ]
+    }
+  }
+----
+
+
+== 新的自版本
+
+9.6

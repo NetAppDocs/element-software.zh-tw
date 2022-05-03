@@ -1,0 +1,112 @@
+---
+permalink: api/reference_element_api_enableclusterssh.html 
+sidebar: sidebar 
+keywords: SSH,enabling,enable,cluster,EnableClusterSsh 
+summary: 您可以使用EnablClusterSsh方法、在儲存叢集中的所有節點上啟用SSH服務。 
+---
+= 啟用ClusterSsh
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「EnablClusterSsh」方法、在儲存叢集中的所有節點上啟用SSH服務。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+持續時間
+ a| 
+SSH服務保持啟用狀態的時間量。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+結果
+ a| 
+Json物件、包含儲存叢集的SSH服務狀態、停用SSH之前的剩餘時間、以及每個節點的SSH服務狀態。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "EnableClusterSsh",
+  "params": {
+      "duration"  : "02:00:00.00"
+  },
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id": 1,
+	"result" : {
+    "enabled": true,
+    "timeRemaining": "00:43:21",
+    "nodes": [
+    {
+        "nodeID": 1,
+        "enabled": true
+    },
+    {
+        "nodeID": 2,
+        "enabled": true
+    },
+    {
+        "nodeID": 3,
+        "enabled": false
+    },
+    {
+        "nodeID": 4,
+        "enabled": false
+    } ]
+			}
+	}
+----
+
+
+== 新的自版本
+
+10.3.1

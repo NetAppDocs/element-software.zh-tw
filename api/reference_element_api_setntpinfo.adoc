@@ -1,0 +1,101 @@
+---
+permalink: api/reference_element_api_setntpinfo.html 
+sidebar: sidebar 
+keywords: ntp,info,set,setting,setntpinfo 
+summary: 您可以使用SetNtpInfo方法在叢集節點上設定NTP。使用此介面設定的值會套用至叢集中的所有節點。如果NTP廣播伺服器定期在網路上廣播時間資訊、您可以選擇將節點設定為廣播用戶端。 
+---
+= SetNtpInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「etNtpInfo」方法在叢集節點上設定NTP。使用此介面設定的值會套用至叢集中的所有節點。如果NTP廣播伺服器定期在網路上廣播時間資訊、您可以選擇將節點設定為廣播用戶端。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+
+NOTE: 請確定您使用網路內部的NTP伺服器、而非安裝預設值。
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+伺服器
+ a| 
+要新增至每個節點NTP組態的NTP伺服器清單。
+ a| 
+字串陣列
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+BroadcastClient
+ a| 
+將叢集中的每個節點啟用為廣播用戶端。
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "SetNtpInfo",
+   "params": {
+     "servers"  : [
+       "ntpserver1.example.org",
+       "ntpserver2.example.org",
+       "ntpserver3.example.org"
+     ],
+     "broadcastclient" : false
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id" : 1,
+    "result" : {}
+}
+----
+
+
+== 新的自版本
+
+9.6

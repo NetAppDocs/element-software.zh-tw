@@ -1,0 +1,41 @@
+---
+permalink: storage/concept_data_manage_vvol_work_virtual_volumes.html 
+sidebar: sidebar 
+keywords: virtual volume, configure vvols, use UI to manage 
+summary: 您可以使用Element UI來檢視虛擬磁碟區及其相關儲存容器、傳輸協定端點、繫結和主機的資訊並執行工作。 
+---
+= 使用虛擬磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Element UI來檢視虛擬磁碟區及其相關儲存容器、傳輸協定端點、繫結和主機的資訊並執行工作。
+
+本產品隨附的VMware軟體儲存系統已停用虛擬磁碟區（VVols）功能。NetApp Element您必須執行一次性工作、透過元素UI手動啟用vSphere VVOL功能。
+
+啟用VVOL功能之後、VVOL索引標籤會出現在使用者介面中、提供VVOL相關的監控和有限的管理選項。此外、稱為VASA Provider的儲存端軟體元件也可做為vSphere的儲存感知服務。大多數VVOL命令（例如VVOL建立、複製及編輯）都是由vCenter Server或ESXi主機啟動、並由VASA Provider轉譯為Element軟體儲存系統的Element API。您可以使用Element UI來啟動建立、刪除及管理儲存容器及刪除虛擬磁碟區的命令。
+
+在vSphere中、大多數使用虛擬磁碟區功能與元件軟體儲存系統所需的組態都是在vSphere中進行。請參閱《VMware vSphere Virtual Volumes for SolidFire VMware Storage組態指南》_、在vCenter中註冊VASA Provider、建立及管理VVOL資料存放區、以及根據原則管理儲存設備。
+
+
+NOTE: 請勿在NetApp Element 單一vCenter執行個體中登錄多個VMware vCenter供應商。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。
+
+
+NOTE: 如果您已向vCenter註冊VASA供應商、則VASA支援可作為升級修補程式提供多個vCenter。若要安裝、請從下載VSA39 .tar.gz檔案 https://mysupport.netapp.com/products/element_software/VASA39/index.html["NetApp軟體下載"] 並遵循資訊清單中的指示。該供應商使用NetApp認證。NetApp Element有了這個修補程式、vCenter便會使用未經修改的憑證來支援VASA和VVols使用的多個vCenter。請勿修改憑證。VASA不支援自訂SSL憑證。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_data_manage_vvol_enable_virtual_volumes.adoc[啟用虛擬磁碟區]
+* xref:task_data_manage_vvol_view_virtual_volume_details.adoc[檢視虛擬Volume詳細資料]
+* xref:task_data_manage_vvol_delete_a_virtual_volume.adoc[刪除虛擬Volume]
+* xref:concept_data_manage_vvol_manage_storage_containers.adoc[建立儲存容器]
+* xref:concept_data_manage_vvol_manage_storage_containers.adoc[編輯儲存容器]
+* xref:concept_data_manage_vvol_manage_storage_containers.adoc[刪除儲存容器]
+* xref:concept_data_manage_vvol_protocol_endpoints.adoc[傳輸協定端點]
+* xref:concept_data_manage_vvol_bindings.adoc[綁定]
+* xref:reference_data_manage_vvol_host_details.adoc[主機詳細資料]
+

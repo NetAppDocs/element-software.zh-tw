@@ -1,0 +1,138 @@
+---
+permalink: api/reference_element_api_task_virtual_volumes.html 
+sidebar: sidebar 
+keywords: object,objects,task 
+summary: 工作物件包含系統中目前執行中或已完成之虛擬Volume工作的相關資訊。您可以使用listVirtualVolume工作方法擷取所有虛擬Volume工作的此資訊。 
+---
+= 工作（虛擬磁碟區）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+工作物件包含系統中目前執行中或已完成之虛擬Volume工作的相關資訊。您可以使用「listVirtualVolume Tasks」（清單虛擬磁碟區工作）方法擷取所有虛擬磁碟區工作的此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+已取消
+ a| 
+指出工作是否已取消。可能值：
+
+* 是的
+* 錯
+
+ a| 
+布林值
+
+
+
+ a| 
+cloneweVirtualVolume ID
+ a| 
+要複製之虛擬磁碟區的唯一虛擬Volume ID（適用於複製工作）。
+ a| 
+UUID
+
+
+
+ a| 
+父中繼資料
+ a| 
+包含父工作中繼資料的物件、用於複製或建立虛擬磁碟區的快照。
+ a| 
+Json物件
+
+
+
+ a| 
+ParentTotalSiz..
+ a| 
+父實體上可供複本或快照工作使用的總空間（以位元組為單位）。
+ a| 
+整數
+
+
+
+ a| 
+ParentUsedSiz
+ a| 
+父實體（以位元組為單位）用於實體複本或快照工作的已用空間。
+ a| 
+整數
+
+
+
+ a| 
+營運
+ a| 
+工作執行的作業類型。可能值：
+
+* 不明：工作作業不明。
+* 準備：工作是準備虛擬磁碟區。
+* Snapshot（快照）：任務是建立虛擬磁碟區的快照。
+* 復原：工作正在將虛擬磁碟區復原為快照。
+* Clone：工作是建立虛擬磁碟區的實體複本。
+* 快速複製：工作是建立虛擬磁碟區的快速複製。
+* copyDffs：工作是將不同的區塊複製到虛擬磁碟區。
+
+ a| 
+字串
+
+
+
+ a| 
+狀態
+ a| 
+虛擬Volume工作的目前狀態。可能值：
+
+* 錯誤：工作失敗並傳回錯誤。
+* 佇列中：工作正在等待執行。
+* 執行中：工作目前正在執行中。
+* 成功：工作已成功完成。
+
+ a| 
+字串
+
+
+
+ a| 
+虛擬化Volume HostID
+ a| 
+啟動工作之主機的唯一ID。
+ a| 
+UUID
+
+
+
+ a| 
+虛擬Volume ID
+ a| 
+新的獨特虛擬Volume ID（適用於建立新虛擬Volume的工作）。
+ a| 
+UUID
+
+
+
+ a| 
+虛擬Volume工作ID
+ a| 
+工作的唯一識別碼。
+ a| 
+UUID
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_listvirtualvolumetasks.adoc[listVirtualVolume工作]

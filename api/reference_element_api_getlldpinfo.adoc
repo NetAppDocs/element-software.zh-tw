@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_getlldpinfo.html 
+sidebar: sidebar 
+keywords: lldp,info,get,getting,getlldpinfo,storage 
+summary: 您可以使用GetLldpInfo方法、為儲存叢集的每個節點或個別儲存節點取得連結層探索傳輸協定（LLDP）組態。 
+---
+= GetLldpInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetLldpInfo」方法、為儲存叢集的每個節點或個別儲存節點取得連結層探索通訊協定（LLDP）組態。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+LLLDPInfo
+ a| 
+儲存叢集每個節點的機箱、介面和鄰近LLDP設定相關資訊。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetLldpInfo",
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+由於此回應範例的長度很長、因此會在補充主題中予以記錄。
+
+
+
+== 新的自版本
+
+11.0
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_response_example_getlldpinfo.adoc[GetLldpInfo]

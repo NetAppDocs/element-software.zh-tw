@@ -1,0 +1,113 @@
+---
+permalink: api/reference_element_api_snapmirrorpolicy.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorPolicy 
+summary: SnapMirrorPolicy物件包含SnapMirror原則的相關資訊、這些資訊儲存在ONTAP 一套系統上。 
+---
+= snapMirrorPolicy
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirrorPolicy物件包含SnapMirror原則的相關資訊、這些資訊儲存在ONTAP 一套系統上。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目的地ONTAP 資訊系統的ID。
+ a| 
+整數
+
+
+
+ a| 
+PolicyName
+ a| 
+指派給原則的唯一名稱。
+ a| 
+字串
+
+
+
+ a| 
+策略類型
+ a| 
+原則類型。可能值：
+
+* 非同步鏡射
+* mirror保存庫
+
+ a| 
+字串
+
+
+
+ a| 
+留言
+ a| 
+與SnapMirror原則相關的人工讀取說明。
+ a| 
+字串
+
+
+
+ a| 
+傳輸優先順序
+ a| 
+SnapMirror傳輸執行的優先順序。可能值：
+
+* 正常：預設優先順序。這些傳輸作業排定在優先順序最低的傳輸之前。
+* 低：這些傳輸的優先順序最低、排定在大多數一般優先傳輸之後。
+
+ a| 
+字串
+
+
+
+ a| 
+原則規則
+ a| 
+描述原則規則的物件清單。
+ a| 
+xref:reference_element_api_snapmirrorpolicyrule.adoc[snapMirrorPolicyRule] 陣列
+
+
+
+ a| 
+累計保留計數
+ a| 
+原則中所有規則的保留總數。
+ a| 
+整數
+
+
+
+ a| 
+完全規則
+ a| 
+原則中的規則總數。
+ a| 
+整數
+
+
+
+ a| 
+VserverName
+ a| 
+SnapMirror原則的Vserver名稱。
+ a| 
+字串
+
+|===

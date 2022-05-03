@@ -1,0 +1,51 @@
+---
+permalink: api/reference_element_api_protectionschemetolerance.html 
+sidebar: sidebar 
+keywords: object,objects,protectionSchemeTolerance 
+summary: protectionSchemeTolerance物件包含有關儲存叢集（針對特定保護方案）是否可在故障後繼續讀取和寫入資料的資訊。 
+---
+= 保護架構容錯度
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionSchemeTolerance物件包含有關儲存叢集（針對特定保護方案）是否可在故障後繼續讀取和寫入資料的資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+保護方案
+ a| 
+此儲存叢集目前的保護方案。唯一可能的值是雙螺旋曲線。
+ a| 
+字串
+
+
+
+ a| 
+可持續的故障ForBlockData
+ a| 
+目前在不喪失相關保護方案區塊資料可用度的情況下、可能發生的同時故障數。
+ a| 
+整數
+
+
+
+ a| 
+可持續故障的中繼資料
+ a| 
+目前可能同時發生的故障數、但不會喪失相關保護方案的中繼資料可用度。
+ a| 
+整數
+
+|===

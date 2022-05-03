@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_disablebmccoldreset.html 
+sidebar: sidebar 
+keywords: BMC cold reset,BMC reset,disable BMC 
+summary: 您可以使用「停用Bmc/Cold重 設」方法、停用週期性重設叢集中所有節點之「基礎板管理控制器」（BMC）的背景工作。 
+---
+= 停用Bmc/ColdReset
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「DisableBmc/ColdReset」（停用Bmc/ColdResetet）方法、停用週期性重設叢集中所有節點之基礎板管理控制器（BMC）的背景工作。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+cBMCResetDationMinutes
+ a| 
+傳回重設時間間隔之間的時間。命令完成後、時間間隔應始終為0。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "DisableBmcColdReset",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "cBmcResetDurationMinutes": 0
+    }
+}
+----
+
+
+== 新的自版本
+
+12.0

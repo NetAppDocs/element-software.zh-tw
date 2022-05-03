@@ -1,0 +1,101 @@
+---
+permalink: api/reference_element_api_getdriveconfig.html 
+sidebar: sidebar 
+keywords: drive,config,configuration,get,getting,getdriveconfig 
+summary: 您可以使用GetDriveConfig方法取得磁碟機資訊、以取得預期的磁碟片和區塊磁碟機數、以及目前連線至節點的磁碟片和區塊磁碟機數。 
+---
+= GetDriveConfig
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetDriveConfig」方法取得磁碟機資訊、以取得預期的磁碟片和區塊磁碟機數、以及目前連線至節點的磁碟片和區塊磁碟機數。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+磁碟機組態
+ a| 
+連接至節點的磁碟機資訊。
+ a| 
+xref:reference_element_api_drive.adoc[磁碟機]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetDriveConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法的回應類似於下列範例。由於長度限制、回應僅包含一個儲存節點之一磁碟機的資訊。
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+			"driveConfig": {
+					"drives": [
+						{
+							"canonicalName": "sda",
+							"connected": true,
+							"dev": 2052,
+							"devPath": "/dev/sdimm0p4",
+							"driveType": "Slice",
+							"name": "scsi-SATA_VRFSD3400GNCVMT205581853-part4",
+							"path": "/dev/sda4",
+							"pathLink": "/dev/sdimm0p4",
+							"product": "VRFSD3400GNCVMTKS1",
+							"scsiCompatId": "scsi-SATA_VRFSD3400GNCVMT205581853-part4",
+							"scsiState": "Running",
+							"securityAtMaximum": false,
+							"securityEnabled": false,
+							"securityFrozen": true,
+							"securityLocked": false,
+							"securitySupported": true,
+							"serial": "205581853",
+							"size": 299988156416,
+							"slot": -1,
+							"uuid": "9d4b198b-5ff9-4f7c-04fc-3bc4e2f38974",
+							"vendor": "Viking",
+							"version": "612ABBF0"
+						}
+					],
+					"numBlockActual": 10,
+					"numBlockExpected": 10,
+					"numSliceActual": 1,
+					"numSliceExpected": 1,
+					"numTotalActual": 11,
+					"numTotalExpected": 11
+			}
+	}
+}
+----

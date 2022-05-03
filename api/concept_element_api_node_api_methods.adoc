@@ -1,0 +1,75 @@
+---
+permalink: api/concept_element_api_node_api_methods.html 
+sidebar: sidebar 
+keywords: node,api,methods 
+summary: 您可以使用節點API方法來設定個別節點。這些方法可在需要設定、設定但尚未參與叢集的單一節點上運作、或是正在主動參與叢集。節點API方法可讓您檢視及修改個別節點和叢集網路的設定、以便與節點進行通訊。您必須針對個別節點執行這些方法；您無法針對叢集的位址執行每節點API方法。 
+---
+= 節點API方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用節點API方法來設定個別節點。這些方法可在需要設定、設定但尚未參與叢集的單一節點上運作、或是正在主動參與叢集。節點API方法可讓您檢視及修改個別節點和叢集網路的設定、以便與節點進行通訊。您必須針對個別節點執行這些方法；您無法針對叢集的位址執行每節點API方法。
+
+* xref:reference_element_api_checkpingonvlan.adoc[CheckPingOnVlan]
+* xref:reference_element_api_checkproposednodeadditions.adoc[檢查ProposedNodeAddition]
+* xref:reference_element_api_createclustersupportbundle.adoc[CreClusterSupportBundle]
+* xref:reference_element_api_createsupportbundle.adoc[建立支援產品組合]
+* xref:reference_element_api_deleteallsupportbundles.adoc[刪除AllSupportBundles]
+* xref:reference_element_api_disablemaintenancemode.adoc[停用維護模式]
+* xref:reference_element_api_disablessh.adoc[停用Ssh]
+* xref:reference_element_api_enablemaintenancemode.adoc[啟用維護模式]
+* xref:reference_element_api_enablessh.adoc[啟用Ssh]
+* xref:reference_element_api_getclusterconfig.adoc[GetClusterConfig]
+* xref:reference_element_api_getclusterstate.adoc[GetClusterState]
+* xref:reference_element_api_getconfig.adoc[組態設定]
+* xref:reference_element_api_getdriveconfig.adoc[GetDriveConfig]
+* xref:reference_element_api_gethardwareconfig.adoc[GetHardwareConfig]
+* xref:reference_element_api_gethardwareinfo.adoc[GetHardwareInfo]
+* xref:reference_element_api_getipmiconfig.adoc[GetIpmiConfig]
+* xref:reference_element_api_getipmiinfo.adoc[GetIpmiInfo]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetwork組態]
+* xref:reference_element_api_getnetworkinterface.adoc[GetNetwork介面]
+* xref:reference_element_api_getnodeactivetlsciphers.adoc[GetNodeActiveTlsCiphers]
+* xref:reference_element_api_getnodefipsdrivesreport.adoc[GetNodeFipsDrivesReport]
+* xref:reference_element_api_getnodesslcertificate.adoc[GetNodeSSLCertificate]
+* xref:reference_element_api_getnodesupportedtlsciphers.adoc[GetNodeSupportedTlsCiphers]
+* xref:reference_element_api_getpendingoperation.adoc[GetPendingOperation]
+* xref:reference_element_api_getsshinfo.adoc[GetSshInfo]
+* xref:reference_element_api_listdrivehardware.adoc[清單硬體]
+* xref:reference_element_api_listnetworkinterfaces.adoc[列表網路介面]
+* xref:reference_element_api_listtests.adoc[清單測試]
+* xref:reference_element_api_listutilities.adoc[清單公用程式]
+* xref:reference_element_api_removenodesslcertificate.adoc[遠端節點SSLCertificate]
+* xref:reference_element_api_resetdrives.adoc[重新設定磁碟機]
+* xref:reference_element_api_resetnode.adoc[ResetNode]
+* xref:reference_element_api_resetnodesupplementaltlsciphers.adoc[ResetNodeSupplementalTlsCiphers]
+* xref:reference_element_api_restartnetworking.adoc[恢復網路]
+* xref:reference_element_api_restartservices.adoc[恢復服務]
+* xref:reference_element_api_setclusterconfig.adoc[SetClusterConfig]
+* xref:reference_element_api_setconfig.adoc[設定組態]
+* xref:reference_element_api_setnetworkconfig.adoc[設定網路組態]
+* xref:reference_element_api_setnodesslcertificate.adoc[SetNodeSSLCertificate]
+* xref:reference_element_api_setnodesupplementaltlsciphers.adoc[SetNodeSupplementalTlsCiphers]
+* xref:reference_element_api_shutdown.adoc[關機]
+* xref:reference_element_api_testconnectensemble.adoc[TestConnectEntemble]
+* xref:reference_element_api_testconnectmvip.adoc[TestConnectMvip]
+* xref:reference_element_api_testconnectsvip.adoc[TestConnectSvip]
+* xref:reference_element_api_testdrives.adoc[測試磁碟機]
+* xref:reference_element_api_testhardwareconfig.adoc[測試硬體組態]
+* xref:reference_element_api_testlocatecluster.adoc[TestLocateCluster]
+* xref:reference_element_api_testlocalconnectivity.adoc[TestLocalConnectivity]
+* xref:reference_element_api_testnetworkconfig.adoc[測試網路組態]
+* xref:reference_element_api_testping.adoc[測試Ping]
+* xref:reference_element_api_testremoteconnectivity.adoc[測試RemoteConnectivity]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

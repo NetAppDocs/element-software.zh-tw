@@ -1,0 +1,122 @@
+---
+permalink: concepts/concept_intro_solidfire_software_interfaces.html 
+sidebar: sidebar 
+keywords: interfaces, integration, user interface, Plug-in, vCenter, API, node UIs, command line, snapshots, shadow copies, Element software, Element, Element UI, UI, manage storage, utilities, integration utilities 
+summary: 您可以SolidFire 使用NetApp Element 各種不實的軟體介面和整合公用程式來管理一套不實的儲存系統。 
+---
+= 軟體介面SolidFire
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以SolidFire 使用不同NetApp Element 的功能區軟體介面和整合公用程式來管理功能區。
+
+.選項
+* <<NetApp Element software user interface>>
+* <<NetApp Element software API>>
+* <<NetApp Element Plug-in for vCenter Server>>
+* <<NetApp Hybrid Cloud Control>>
+* <<Management node UIs>>
+* <<Additional integration utilities and tools>>
+
+
+
+
+== 軟體使用者介面NetApp Element
+
+可讓您設定元素儲存、監控叢集容量與效能、以及管理多租戶基礎架構的儲存活動。Element是SolidFire 儲存作業系統、是指作為一個叢集核心的儲存作業系統。Element軟體可在叢集中的所有節點上獨立執行、並可讓叢集的節點將顯示為單一儲存系統的資源結合到外部用戶端。Element軟體負責整個系統的所有叢集協調、擴充及管理。軟體介面是以Element API為基礎建置而成。
+
+link:../storage/index.html["使用Element軟體管理儲存設備"]
+
+
+
+== 軟件API NetApp Element
+
+可讓您使用一組物件、方法和常式來管理元素儲存。元素API是以透過HTTPS的JSON-RPC傳輸協定為基礎。您可以啟用API記錄來監控元素UI中的API作業；如此可讓您查看發行給系統的方法。您可以同時啟用要求和回應、以查看系統如何回覆所發佈的方法。
+
+link:../api/index.html["使用Element API管理儲存設備"]
+
+
+
+== vCenter Server的VMware vCenter外掛程式NetApp Element
+
+可讓您使用VMware vSphere中Element UI的替代介面來設定及管理執行Element軟體的儲存叢集。
+
+https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+
+
+
+== NetApp混合雲控制
+
+可讓您使用NetApp混合雲控制介面升級元素儲存與管理服務、並管理儲存資產。
+
+link:../hccstorage/index.html["利用NetApp混合雲控制管理及監控儲存設備總覽"]
+
+
+
+== 管理節點UI
+
+管理節點包含兩個UI：一個用於管理REST型服務的UI、以及一個用於管理網路和叢集設定的每節點UI、以及作業系統測試和公用程式。從REST API UI中、您可以從管理節點存取與服務相關的API功能表、以控制以服務為基礎的系統功能。
+
+
+
+== 其他整合公用程式與工具
+
+雖然您通常會使用NetApp Element 適用於NetApp Element vCenter Server的VMware vCenter、VMware API和NetApp Element VMware外掛程式來管理儲存設備、但您可以使用其他整合公用程式和工具來存取儲存設備。
+
+
+
+=== Element CLI
+
+https://mysupport.netapp.com/site/tools/tool-eula/elem-cli["Element CLI"^] 可讓您SolidFire 使用命令列介面來控制效能不受影響的儲存系統、而不需使用Element API。
+
+
+
+=== Element PowerShell工具
+
+https://mysupport.netapp.com/site/tools/tool-eula/elem-powershell-tools["Element PowerShell工具"^] 可讓您使用Microsoft Windows PowerShell功能集合、這些功能使用Element API來管理SolidFire 支援的儲存系統。
+
+
+
+=== 元素SDK
+
+https://mysupport.netapp.com/site/products/all/details/netapphci-solidfire-elementsoftware/tools-tab["元素SDK"^] 讓您SolidFire 使用下列工具來管理您的VMware叢集：
+
+* Element Java SDK：可讓程式設計師將Element API與Java程式設計語言整合。
+* Element .NET SDK：可讓程式設計師將Element API與.NET程式設計平台整合。
+* Element Python SDK：可讓程式設計師將Element API與Python程式設計語言整合。
+
+
+
+
+=== 以測試套件為設計目標SolidFire
+
+可讓程式設計師使用的集合 link:https://github.com/solidfire/postman["後人"^] 測試元素API呼叫的功能。
+
+
+
+=== 儲存複製介面卡SolidFire
+
+https://mysupport.netapp.com/site/products/all/details/elementsra/downloads-tab["儲存複製介面卡SolidFire"^] 與VMware Site Recovery Manager（SRM）整合、可與複寫SolidFire 的VMware vCenter儲存叢集進行通訊、並執行支援的工作流程。
+
+
+
+=== HRO SolidFire
+
+https://mysupport.netapp.com/site/products/all/details/solidfire-vro/downloads-tab["HRO SolidFire"^] 利用SolidFire VMware vReize Orchestrator提供一種使用Element API來管理您的VMware vCenter儲存系統的便利方法。
+
+
+
+=== VSS Provider SolidFire
+
+https://mysupport.netapp.com/site/products/all/details/solidfire-vss-provider/downloads-tab["VSS Provider SolidFire"^] 整合VSS陰影複製與元素快照和複製。
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

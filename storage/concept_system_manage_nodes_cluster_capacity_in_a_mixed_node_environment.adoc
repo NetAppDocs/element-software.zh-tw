@@ -1,0 +1,27 @@
+---
+permalink: storage/concept_system_manage_nodes_cluster_capacity_in_a_mixed_node_environment.html 
+sidebar: sidebar 
+keywords: nodes, mixed environment, capacity, cluster capacity, mixed nodes, encrypted, non-encrypted, threshold 
+summary: 您可以在叢集中混合不同類型的節點。SF系列2405、3010、4805、6010、9605、 9010、19210、38410和H系列可共存於叢集內。 
+---
+= 混合式節點環境中的叢集容量
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在叢集中混合不同類型的節點。SF系列2405、3010、4805、6010、9605、 9010、19210、38410和H系列可共存於叢集內。
+
+H系列包含H610S-1、H610S-2、H610S-4和H410S節點。這些節點同時支援10GbE和25GbE。
+
+最好不要混用未加密和加密的節點。在混合式節點叢集中、任何節點都不能大於叢集總容量的33%。例如、在具有四個SF系列4805節點的叢集中、唯一可新增的最大節點是SF系列9605。叢集容量臨界值是根據這種情況下最大節點可能遺失的情況來計算。
+
+從元件12開始、不支援下列SF系列儲存節點：
+
+* SF3010
+* SF6010
+* SF9010
+
+
+如果您將其中一個儲存節點升級至元件12、您將會看到錯誤訊息、指出元素12．0不支援此節點。

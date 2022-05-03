@@ -1,0 +1,37 @@
+---
+permalink: setup/task_setup_add_drives_to_a_cluster.html 
+sidebar: sidebar 
+keywords:  
+summary: 當您將節點新增至叢集或在現有節點中安裝新磁碟機時、磁碟機會自動登錄為可用。您必須先使用元素UI或API將磁碟機新增至叢集、才能參與叢集。 
+---
+= 新增磁碟機至叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您將節點新增至叢集或在現有節點中安裝新磁碟機時、磁碟機會自動登錄為可用。您必須先使用元素UI或API將磁碟機新增至叢集、才能參與叢集。
+
+當存在下列情況時、可用磁碟機清單中不會顯示磁碟機：
+
+* 磁碟機處於「作用中」、「移除」、「清除」或「故障」狀態。
+* 磁碟機所屬的節點處於「Pending（擱置）」狀態。
+
+
+.步驟
+. 從元素使用者介面中、選取*叢集*>*磁碟機*。
+. 按一下*「可用」*以檢視可用磁碟機的清單。
+. 執行下列其中一項：
++
+** 若要新增個別磁碟機、請按一下您要新增磁碟機的*「Actions」（動作）*圖示、然後按一下*「Add*」（新增*）。
+** 若要新增多個磁碟機、請選取要新增磁碟機的核取方塊、按一下*大量動作*、然後按一下*新增*。
++
+....
+== Find more information
+* https://www.netapp.com/data-storage/solidfire/documentation[SolidFire and Element Resources page^]
+* https://docs.netapp.com/us-en/vcp/index.html[NetApp Element Plug-in for vCenter Server^]
+....
+
+
+

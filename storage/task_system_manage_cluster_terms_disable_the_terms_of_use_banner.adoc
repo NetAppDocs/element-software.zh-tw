@@ -1,0 +1,23 @@
+---
+permalink: storage/task_system_manage_cluster_terms_disable_the_terms_of_use_banner.html 
+sidebar: sidebar 
+keywords: terms of use banner, disable 
+summary: 您可以停用「使用條款」橫幅。停用橫幅時、使用者不再需要接受元素UI的使用條款。 
+---
+= 停用使用條款橫幅
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以停用「使用條款」橫幅。停用橫幅時、使用者不再需要接受元素UI的使用條款。
+
+* 您必須擁有叢集管理員權限、才能設定使用條款。
+* 確認已啟用使用條款。
++
+.. 按一下「*使用者*>*使用條款*」。
+.. 按一下*停用*。
+
+
+

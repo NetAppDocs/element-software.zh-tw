@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_deleteclusterinterfacepreference.html 
+sidebar: sidebar 
+keywords: cluster,interface,preferences,delete,deleting,DeleteClusterInterfacePreference 
+summary: 刪除ClusterInterfacePreference方法可讓與執行Element軟體的儲存叢集整合的系統刪除現有的叢集介面喜好設定。此方法僅供內部使用。 
+---
+= 刪除ClusterInterfacePreference
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「刪除叢集介面喜好設定」方法可讓與執行Element軟體的儲存叢集整合的系統、刪除現有的叢集介面喜好設定。此方法僅供內部使用。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+名稱
+ a| 
+要刪除的叢集介面喜好設定名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+	"method": "DeleteClusterInterfacePreference",
+	"params": {
+		"name": "prefname"
+		},
+	"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {}
+}
+----
+
+
+== 新的自版本
+
+11.0

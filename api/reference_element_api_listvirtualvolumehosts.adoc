@@ -1,0 +1,104 @@
+---
+permalink: api/reference_element_api_listvirtualvolumehosts.html 
+sidebar: sidebar 
+keywords: virtual,volume,vvol,host,hosts,list,listing,known,listvirtualvolumehosts 
+summary: 您可以使用listVirtualVolume Hist方法取得叢集已知的所有虛擬Volume主機清單。虛擬Volume主機是VMware ESX主機、已啟動與VASA API供應商的工作階段。 
+---
+= ListVirtualVolume最新資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listVirtualVolume Hosps」方法、取得叢集已知的所有虛擬Volume主機清單。虛擬Volume主機是VMware ESX主機、已啟動與VASA API供應商的工作階段。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+虛擬化Volume HostID
+ a| 
+要擷取資訊的虛擬Volume主機ID清單。如果省略此參數、此方法會傳回所有虛擬Volume主機的相關資訊。
+ a| 
+虛擬化Volume HostID UUID陣列
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+主機
+ a| 
+描述叢集中虛擬Volume主機的物件清單。
+ a| 
+xref:reference_element_api_host.adoc[主機] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListVirtualVolumeHosts",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "hosts": [
+      {
+        "bindings": [],
+        "clusterID": "5ebdb4ad-9617-4647-adfd-c1013578483b",
+        "hostAddress": "172.30.89.117",
+        "initiatorNames": [
+          "iqn.1998-01.com.vmware:zdc-dhcp-0-c-29-d6-4b-f1-1a0cd614",
+          "iqn.1998-01.com.vmware:zdc-dhcp-0-c-29-d6-4b-f1-5bcf9254"
+        ],
+        "virtualVolumeHostID": "564de1a4-9a99-da0f-8b7c-3a41dfd64bf1",
+        "visibleProtocolEndpointIDs": [
+          "5dd53da0-b9b7-43f9-9b7e-b41c2558e92b"
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

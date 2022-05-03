@@ -1,0 +1,130 @@
+---
+permalink: api/reference_element_api_listvolumestatsbyvolume.html 
+sidebar: sidebar 
+keywords: volumes,volume,stats,list,listing,listvolumestatsbyvolume,activity 
+summary: 您可以使用listVolumesStatsByVolume方法、依Volume列出每個Volume的高層級活動測量值。這些值是從建立磁碟區而來的累計值。 
+---
+= listVolumesStatsByVolume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listVolume狀態ByVolume」方法、依Volume列出每個Volume的高層級活動測量值。這些值是從建立磁碟區而來的累計值。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+包括虛擬磁碟區
+ a| 
+虛擬磁碟區預設會包含在回應中。若要排除虛擬磁碟區、請設定為假。
+ a| 
+布林值
+ a| 
+是的
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume統計資料
+ a| 
+Volume活動資訊清單。
+ a| 
+xref:reference_element_api_volumestats.adoc[Volume統計資料] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListVolumeStatsByVolume",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 3,
+        "actualIOPS": 0,
+        "asyncDelay": null,
+        "averageIOPSize": 4096,
+        "burstIOPSCredit": 30000,
+        "clientQueueDepth": 0,
+        "desiredMetadataHosts": null,
+        "latencyUSec": 0,
+        "metadataHosts": {
+          "deadSecondaries": [],
+          "liveSecondaries": [
+              16
+          ],
+          "primary": 12
+        },
+        "nonZeroBlocks": 7499205,
+        "readBytes": 159012818944,
+        "readBytesLastSample": 0,
+        "readLatencyUSec": 0,
+        "readOps": 38821489,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "throttle": 0,
+        "timestamp": "2016-10-17T20:55:31.087537Z",
+        "unalignedReads": 0,
+        "unalignedWrites": 0,
+        "volumeAccessGroups": [
+          1
+        ],
+        "volumeID": 1,
+        "volumeSize": 53687091200,
+        "volumeUtilization": 0,
+        "writeBytes": 52992585728,
+        "writeBytesLastSample": 0,
+        "writeLatencyUSec": 0,
+        "writeOps": 12937643,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 5607995
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

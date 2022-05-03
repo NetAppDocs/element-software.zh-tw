@@ -1,0 +1,28 @@
+---
+permalink: storage/task_system_manage_cluster_set_the_cluster_full_threshold.html 
+sidebar: sidebar 
+keywords: cluster fullness, setting threshold, metadata, warning 
+summary: 您可以使用下列步驟變更系統產生區塊叢集完整度警告的層級。此外、您也可以使用ModifyClusterFullThreshold API方法來變更系統產生區塊或中繼資料警告的層級。 
+---
+= 設定叢集完整臨界值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用下列步驟變更系統產生區塊叢集完整度警告的層級。此外、您也可以使用ModifyClusterFullThreshold API方法來變更系統產生區塊或中繼資料警告的層級。
+
+您必須擁有叢集管理員權限。
+
+.步驟
+. 按一下*叢集*>*設定*。
+. 在「叢集完整設定」區段中、輸入*當Helix無法從節點故障中恢復*之前、仍有_%容量保留時發出警告警示的百分比。
+. 按一下*儲存變更*。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Flash_Storage/SF_Series/How_are_the_blockSpace_thresholds_calculated_for_Element["如何計算元素的區塊空間臨界值"^]

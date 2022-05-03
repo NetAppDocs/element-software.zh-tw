@@ -1,0 +1,135 @@
+---
+permalink: api/reference_element_api_gethardwareinfo.html 
+sidebar: sidebar 
+keywords: node,hardware,info,get,getting,gethardwareinfo 
+summary: 您可以使用GetHardwareInfo方法來取得單一節點的硬體資訊和狀態。硬體資訊通常包括製造商、廠商、版本、磁碟機及其他相關的識別資訊。 
+---
+= GetHardwareInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetHardwareInfo」方法取得單一節點的即時硬體資訊和狀態。硬體資訊通常包括製造商、廠商、版本、磁碟機及其他相關的識別資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+力
+ a| 
+將此「force」參數設為true、以便在叢集中的所有節點上執行。
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+硬體資訊
+ a| 
+節點的硬體資訊。
+ a| 
+xref:reference_element_api_hardwareinfo.adoc[硬體資訊]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetHardwareInfo",
+   "params": {
+   },
+"id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "hardwareInfo": {
+      "bus": {
+        "core_DMI:0200": {
+          "description": "Motherboard",
+          "physid": "0",
+          "product": "0A47AA",
+          "serial": "..AB123456C12354.",
+          "version": "C07"
+        }
+      },
+      "driveHardware": [
+        {
+          "canonicalName": "sdh",
+          "connected": true,
+          "dev": 2160,
+          "devPath": "/dev/disk/by-path/pci-0000:41:00.0-sas-0x500056b37789abf0-lun-0",
+          "driveEncryptionCapability": "fips",
+          "driveType": "Block",
+          "lifeRemainingPercent": 92,
+          "lifetimeReadBytes": 175436696911872,
+          "lifetimeWriteBytes": 81941097349120,
+          "name": "scsi-SATA_INTEL_SSDSC2BB3BTWL12345686300AAA",
+          "path": "/dev/sdh",
+          "pathLink": "/dev/disk/by-path/pci-0000:41:00.0-sas-0x500056b37789abf0-lun-0",
+          "powerOnHours": 17246,
+          "product": "INTEL SSDAA2AA300A4",
+          "reallocatedSectors": 0,
+          "reserveCapacityPercent": 100,
+          "scsiCompatId": "scsi-SATA_INTEL_SSDSC2BB3BTWL12345686300AAA",
+          "scsiState": "Running",
+          "securityAtMaximum": false,
+          "securityEnabled": false,
+          "securityFrozen": false,
+          "securityLocked": false,
+          "securitySupported": true,
+          "serial": "AAAA33710886300AAA",
+          "size": 300069052416,
+          "slot": 1,
+          "smartSsdWriteCapable": false,
+          "uuid": "aea178b9-c336-6bab-a61d-87b615e8120c",
+          "vendor": "Intel",
+          "version": "D2010370"
+        },
+      ...
+      ]
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

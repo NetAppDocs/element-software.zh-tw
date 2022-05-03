@@ -1,0 +1,146 @@
+---
+permalink: storage/reference_system_manage_fips_ssl_cipher_changes.html 
+sidebar: sidebar 
+keywords: fips, ssl ciphers, 140-2, encryption algorithms 
+summary: SSL密碼是主機用來建立安全通訊的加密演算法。啟用FIPS 140-2模式時、元素軟體支援的標準密碼和非標準密碼。 
+---
+= SSL密碼
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SSL密碼是主機用來建立安全通訊的加密演算法。啟用FIPS 140-2模式時、元素軟體支援的標準密碼和非標準密碼。
+
+下列清單提供元素軟體支援的標準安全通訊端層（SSL）密碼、以及啟用FIPS 140-2模式時支援的SSL密碼：
+
+* * FIPS 140-2已停用*
++
+TLS_DHE_RSA_with _AES-122_CBC_SHA256（DH2048）- A
+
++
+TLS_DHE_RSA_with _AES-122_GCM_SHA256（DH2048）- A
+
++
+TLS_DHE_RSA_AT_AES-256_CBC_SHA256（DH2048）- A
+
++
+TLS_DHE_RSA_AT_AES-256_GCM_SHA384（DH2048）- A
+
++
+TLS_ECDHE_RSA_with _AES-122_CBC_SHA256（secp256r1）- A
+
++
+TLS_ECDHE_RSA_with _AES-122_GCM_SHA256（secp256r1）- A
+
++
+TLS_ECDHE_RSA_with _AES-256_CBC_SHA384（secp256r1）- A
+
++
+TLS_ECDHE_RSA_with _AES-256_GCM_SHA384（secp256r1）- A
+
++
+TLS_RSA_AT_3DE_EDE_CBC_SHA（RSA 2048）- C
+
++
+TLS_RSA_AT_AES-122_CBC_SHA（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-122_CBC_SHA256（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-122_GCM_SHA256（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-256_CBC_SHA（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-256_CBC_SHA256（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-256_GCM_SHA384（RSA 2048）- A
+
++
+TLS_RSA_with _Camella_128_CBC_SHA（RSA 2048）- A
+
++
+TLS_RSA_with _Camella_256_CBC_SHA（RSA 2048）- A
+
++
+TLS_RSA_AT_ID_CBC_SHA（RSA 2048）- A
+
++
+TLS_RSA_AT_RC4_122_MD5（RSA 2048）- C
+
++
+TLS_RSA_AT_RC4_128_SHa（RSA 2048）- C
+
++
+TLS_RSA_AT_SEIN_CBC_SHA（RSA 2048）- A
+
+* * FIPS 140-2已啟用*
++
+TLS_DHE_RSA_with _AES-122_CBC_SHA256（DH2048）- A
+
++
+TLS_DHE_RSA_with _AES-122_GCM_SHA256（DH2048）- A
+
++
+TLS_DHE_RSA_AT_AES-256_CBC_SHA256（DH2048）- A
+
++
+TLS_DHE_RSA_AT_AES-256_GCM_SHA384（DH2048）- A
+
++
+TLS_ECDHE_RSA_with _AES-122_CBC_SHA256（第571r1節）- A
+
++
+TLS_ECDHE_RSA_with _AES-122_CBC_SHA256（secp256r1）- A
+
++
+TLS_ECDHE_RSA_with _AES-122_GCM_SHA256（secp256r1）- A
+
++
+TLS_ECDHE_RSA_with _AES-122_GCM_SHA256（第571r1節）- A
+
++
+TLS_ECDHE_RSA_with _AES-256_CBC_SHA384（第571r1節）- A
+
++
+TLS_ECDHE_RSA_with _AES-256_CBC_SHA384（secp256r1）- A
+
++
+TLS_ECDHE_RSA_with _AES-256_GCM_SHA384（secp256r1）- A
+
++
+TLS_ECDHE_RSA_with _AES-256_GCM_SHA384（第571r1節）- A
+
++
+TLS_RSA_AT_3DE_EDE_CBC_SHA（RSA 2048）- C
+
++
+TLS_RSA_AT_AES-122_CBC_SHA（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-122_CBC_SHA256（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-122_GCM_SHA256（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-256_CBC_SHA（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-256_CBC_SHA256（RSA 2048）- A
+
++
+TLS_RSA_AT_AES-256_GCM_SHA384（RSA 2048）- A
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:task_system_manage_fips_enable_fips_140_2_for_https.adoc[在叢集上啟用FIPS 140-2 for HTTPS]

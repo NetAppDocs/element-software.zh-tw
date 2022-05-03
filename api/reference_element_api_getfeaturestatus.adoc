@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_getfeaturestatus.html 
+sidebar: sidebar 
+keywords: feature,status,cluster,get,getting,getfeaturestatus 
+summary: 您可以使用GetFeatureStatus方法擷取叢集功能的狀態。 
+---
+= GetFeatureStatus
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetFeatureStatus」方法來擷取叢集功能的狀態。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+功能
+ a| 
+叢集功能的狀態。如果未提供任何值、系統會傳回所有功能的狀態。可能值：
+
+* Vvols：擷取VVols叢集功能的狀態。
+* SnapMirror：擷取SnapMirror複寫叢集功能的狀態。
+* FIPS：擷取FIPS 140-2加密的HTTPS通訊狀態。
+* FpsDrives：擷取FIPS 140-2磁碟機加密功能的狀態。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+功能
+ a| 
+表示功能名稱及其狀態的功能物件陣列。物件成員：
+
+* 功能：（字串）功能名稱。
+* 已啟用：（布林值）是否已啟用此功能。
+
+ a| 
+Json物件陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetFeatureStatus",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "features": [
+            {
+                "enabled": true,
+                "feature": "Vvols"
+            },
+            {
+                "enabled": true,
+                "feature": "SnapMirror"
+            },
+            {
+                "enabled": true,
+                "feature": "Fips"
+            },
+            {
+                "enabled": true,
+                "feature": "FipsDrives"
+            }
+        ]
+    }
+}
+----
+
+
+== 新的自版本
+
+9.6

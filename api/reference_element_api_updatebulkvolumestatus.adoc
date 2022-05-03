@@ -1,0 +1,184 @@
+---
+permalink: api/reference_element_api_updatebulkvolumestatus.html 
+sidebar: sidebar 
+keywords: updatebulkvolumestatus,update,updating,bulk,volume,status,job 
+summary: 您可以使用Update BulkVolume Status方法來更新以StartBulkVolume Read或StartBulkVolume Write方法啟動的大量Volume工作狀態。 
+---
+= 更新BulkVolume狀態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Update BulkVolume Status」（更新磁碟區狀態）方法、更新以「TartBulkVolume Read」或「TartBulkVolume Write」方法啟動的大量磁碟區工作狀態。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+金鑰
+ a| 
+初始化期間指派的金鑰 xref:reference_element_api_startbulkvolumeread.adoc[StartBulkVolume Read] 或 xref:reference_element_api_startbulkvolumewrite.adoc[StartBulkVolume寫入] 工作階段：
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+狀態
+ a| 
+系統會設定指定大量Volume工作的狀態。可能值：
+
+* 執行中：仍在作用中的工作。
+* 完成：已完成的工作。
+* 失敗：已失敗的工作。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+完成百分比
+ a| 
+大量Volume工作的完成進度、以百分比表示。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+訊息
+ a| 
+當工作完成時、傳回大量Volume工作的狀態。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+屬性
+ a| 
+Json屬性；更新大量Volume工作中的內容。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+狀態
+ a| 
+要求的工作階段狀態。傳回狀態：
+
+* 準備
+* 使用中
+* 完成
+* 失敗
+
+ a| 
+字串
+
+
+
+ a| 
+屬性
+ a| 
+傳回方法呼叫中指定的屬性。無論值是否已變更、都會傳回值。
+ a| 
+字串
+
+
+
+ a| 
+URL
+ a| 
+存取節點Web伺服器的URL；僅在工作階段仍在作用中時提供。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "UpdateBulkVolumeStatus",
+   "params": {
+          "key": "0b2f532123225febda2625f55dcb0448",
+	      "status": "running"
+      },
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result": {
+	  "status" : "running",
+	  "url" : "https://10.10.23.47:8443/"
+    }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_startbulkvolumeread.adoc[StartBulkVolume Read]
+* xref:reference_element_api_startbulkvolumewrite.adoc[StartBulkVolume寫入]
+

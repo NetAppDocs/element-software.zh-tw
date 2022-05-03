@@ -1,0 +1,36 @@
+---
+permalink: storage/task_monitor_volume_performance.html 
+sidebar: sidebar 
+keywords: volume performance, view, view alerts 
+summary: 您可以檢視叢集中所有磁碟區的詳細效能資訊。您可以根據Volume ID或任何效能欄來排序資訊。您也可以根據特定條件來篩選資訊。 
+---
+= 檢視Volume效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視叢集中所有磁碟區的詳細效能資訊。您可以根據Volume ID或任何效能欄來排序資訊。您也可以根據特定條件來篩選資訊。
+
+您可以按一下*重新整理每*清單、然後選擇不同的值、來變更系統重新整理頁面上效能資訊的頻率。如果叢集的磁碟區少於1000個、預設的重新整理時間間隔為10秒；否則、預設值為60秒。如果您選擇Never值、則會停用自動重新整理頁面。
+
+您可以按一下*開啟自動重新整理*來重新啟用自動重新整理。
+
+. 在Element UI中、選取* Report*>* Volume Performance *。
+. 在Volume清單中、按一下Volume的「Actions（動作）」圖示。
+. 按一下*檢視詳細資料*。
++
+頁面底部會顯示一個紙匣、其中包含有關該磁碟區的一般資訊。
+
+. 若要查看磁碟區的詳細資訊、請按一下*「查看更多詳細資料」*。
++
+系統會顯示磁碟區的詳細資訊及效能圖表。
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_monitor_volume_performance_details.adoc[Volume效能詳細資料]

@@ -1,0 +1,24 @@
+---
+permalink: storage/task_monitor_iscsi_sessions.html 
+sidebar: sidebar 
+keywords: iscsi sessions, monitor 
+summary: 您可以檢視連線至叢集的iSCSI工作階段。您可以篩選資訊、僅包含所需的工作階段。 
+---
+= 檢視iSCSI工作階段
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視連線至叢集的iSCSI工作階段。您可以篩選資訊、僅包含所需的工作階段。
+
+. 在Element UI中、選取* Reports*>* iSCSI工作階段*。
+. 若要查看篩選條件欄位、請按一下*篩選*。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_monitor_iscsi_session_details.adoc[iSCSI工作階段詳細資料]

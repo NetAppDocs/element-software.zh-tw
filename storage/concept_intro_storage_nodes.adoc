@@ -1,0 +1,23 @@
+---
+permalink: storage/concept_intro_storage_nodes.html 
+sidebar: sidebar 
+keywords: storage nodes, management nodes, block space, metadata space, data management, storage management, Bond10G, network interface, network, metadata, data storage, storage, drives, network interfaces 
+summary: 這個伺服器包含一系列的磁碟機、這些磁碟機透過Bond10G網路介面彼此通訊。SolidFire節點中的磁碟機包含區塊和中繼資料空間、可用於資料儲存和資料管理。 
+---
+= 儲存節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+這個伺服器包含一系列的磁碟機、這些磁碟機透過Bond10G網路介面彼此通訊。SolidFire節點中的磁碟機包含區塊和中繼資料空間、可用於資料儲存和資料管理。
+
+儲存節點具有下列特性：
+
+* 每個節點都有唯一的名稱。如果系統管理員未指定節點名稱、則預設為SF-XXXX、其中XXXX為系統產生的四個隨機字元。
+* 每個節點都有自己的高效能非揮發性隨機存取記憶體（NVRAM）寫入快取、可改善整體系統效能並縮短寫入延遲。
+* 每個節點都連接至兩個網路（儲存與管理）、每個網路都有兩個獨立的連結來提供備援與效能。每個節點都需要每個網路上的IP位址。
+* 您可以建立具有新儲存節點的叢集、或是將儲存節點新增至現有叢集、以增加儲存容量和效能。
+* 您可以隨時從叢集新增或移除節點、而不中斷服務。
+

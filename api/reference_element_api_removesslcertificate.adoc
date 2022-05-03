@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_removesslcertificate.html 
+sidebar: sidebar 
+keywords: ssl,certificate,cert,remove,removing,cluster,removesslcertificate 
+summary: 您可以使用RemoveSSLCertificate方法移除叢集中儲存節點的使用者SSL憑證和私密金鑰。移除憑證和私密金鑰之後、儲存節點會設定為使用預設的憑證和私密金鑰。 
+---
+= 遠端SSLCertificate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「RemoveSSLCertificate」方法移除叢集中儲存節點的使用者SSL憑證和私密金鑰。移除憑證和私密金鑰之後、儲存節點會設定為使用預設的憑證和私密金鑰。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method" : "RemoveSSLCertificate",
+    "params" : {},
+    "id" : 3
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id" : 3,
+    "result" : {}
+}
+----
+
+
+== 新的自版本
+
+10.0%

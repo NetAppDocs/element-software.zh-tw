@@ -1,0 +1,24 @@
+---
+permalink: storage/task_troubleshoot_add_mdss_drives.html 
+sidebar: sidebar 
+keywords: mdss, add, multi-drive slice service 
+summary: 您可以SolidFire 將插槽2中的區塊磁碟機轉換成分割磁碟機、在節點上新增第二個中繼資料磁碟機。這是透過啟用多磁碟機分片服務（MDSS）功能來完成。若要啟用此功能、您必須聯絡NetApp支援部門。 
+---
+= 新增MDSS磁碟機
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以SolidFire 將插槽2中的區塊磁碟機轉換成分割磁碟機、在節點上新增第二個中繼資料磁碟機。這是透過啟用多磁碟機分片服務（MDSS）功能來達成的。若要啟用此功能、您必須聯絡NetApp支援部門。
+
+若要將分片磁碟機設為可用狀態、可能需要用新的或備用磁碟機來更換故障磁碟機。您必須在新增插槽2的磁碟機的同時、新增系統磁碟機。如果您嘗試單獨新增插槽2分割磁碟機、或是在新增系統分割磁碟機之前、系統將會產生錯誤。
+
+. 按一下*叢集*>*磁碟機*。
+. 按一下*「可用」*以檢視可用磁碟機的清單。
+. 選取要新增的分片磁碟機。
+. 按一下*大量動作*。
+. 按一下「 * 新增 * 」。
+. 從「*作用中磁碟機*」索引標籤確認已新增磁碟機。
+

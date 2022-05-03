@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_getontapversioninfo.html 
+sidebar: sidebar 
+keywords: ontap,version,info,information,get,getting,api,support,getontapversioninfo 
+summary: Element Web UI使用GetOnTapVerionInfo從ONTAP SnapMirror關係中的SnapMirror叢集取得API版本支援的相關資訊。 
+---
+= GetOnTapVersion資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI使用「GetOnTapVersionInfo」、從ONTAP SnapMirror關係中的叢集取得API版本支援的相關資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+如果提供、系統會列出端點的版本資訊、以及指定的snapMirrorEndpointID。如果未提供、系統會列出所有已知SnapMirror端點的版本資訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+版本資訊
+ a| 
+關於這個解決方法的軟體版本資訊ONTAP 。
+ a| 
+xref:reference_element_api_ontapversioninfo.adoc[版本資訊] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

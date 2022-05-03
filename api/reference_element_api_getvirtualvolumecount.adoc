@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_getvirtualvolumecount.html 
+sidebar: sidebar 
+keywords: volume,volumes,virtual,get,getting,count,GetVirtualVolumeCount 
+summary: 您可以使用GetVirtualVolume Count方法擷取系統中目前的虛擬磁碟區數目。 
+---
+= GetVirtualVolume計數
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetVirtualVolume Count」方法來擷取系統中目前的虛擬磁碟區數目。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+數
+ a| 
+系統中目前的虛擬磁碟區數目。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetVirtualVolumeCount",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "count": 5
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

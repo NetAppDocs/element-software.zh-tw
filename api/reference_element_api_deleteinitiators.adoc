@@ -1,0 +1,100 @@
+---
+permalink: api/reference_element_api_deleteinitiators.html 
+sidebar: sidebar 
+keywords: delete,deleting,initiator,initiators,DeleteInitiators 
+summary: 您可以使用刪除啟動器、從系統中刪除一或多個啟動器（以及從任何相關的磁碟區或磁碟區存取群組中刪除）。 
+---
+= 刪除啟動器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「刪除啟動器」從系統中刪除一或多個啟動器（以及從任何相關的磁碟區或磁碟區存取群組中刪除）。
+
+如果「刪除啟動器」無法刪除參數中提供的其中一個啟動器、系統會傳回錯誤、並不會刪除任何啟動器（無法部分完成）。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+啟動器
+ a| 
+要刪除的啟動器ID陣列。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 錯誤
+
+此方法會傳回下列錯誤：
+
+|===
+
+
+| 名稱 | 說明 
+
+
+ a| 
+xinitialatorDoesNotExist
+ a| 
+如果您選擇的啟動器名稱不存在則傳回。
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 5101,
+  "method": "DeleteInitiators",
+  "params": {
+    "initiators": [
+      145,
+      147
+    ]
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 5101,
+  "result": {}
+}
+----
+
+
+== 新的自版本
+
+9.6

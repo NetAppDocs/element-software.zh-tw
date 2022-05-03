@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_protection_schedule_a_snapshot_task.html 
+sidebar: sidebar 
+keywords: snapshot, schedule, volume snapshots, group snapshots 
+summary: 您可以排程磁碟區快照以指定的時間間隔執行、以保護磁碟區或磁碟區群組上的資料。您可以排程自動執行單一Volume快照或群組快照。 
+---
+= 排程快照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以排程磁碟區快照以指定的時間間隔執行、以保護磁碟區或磁碟區群組上的資料。您可以排程自動執行單一Volume快照或群組快照。
+
+設定快照排程時、您可以根據每週天數或每月天數、從時間間隔中進行選擇。您也可以指定下一次快照發生之前的天數、小時數和分鐘數。如果要複寫磁碟區、您可以將產生的快照儲存在遠端儲存系統上。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_data_protection_create_a_snapshot_schedule.adoc[建立快照排程]
+* xref:task_data_protection_edit_a_snapshot_schedule.adoc[編輯快照排程]
+* xref:task_data_protection_delete_a_snapshot_schedule.adoc[刪除快照排程]
+* xref:task_data_protection_copy_a_snapshot_schedule.adoc[複製快照排程]
+

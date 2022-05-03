@@ -1,0 +1,86 @@
+---
+permalink: storage/task_data_manage_vvol_view_virtual_volume_details.html 
+sidebar: sidebar 
+keywords: virtual volumes, view details vvols, vvols performance activity, vSphere 
+summary: 您可以在Element UI中檢閱叢集上所有作用中虛擬磁碟區的虛擬Volume資訊。您也可以檢視每個虛擬Volume的效能活動、包括輸入、輸出、處理量、延遲、 佇列深度和Volume資訊。 
+---
+= 檢視虛擬Volume詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Element UI中檢閱叢集上所有作用中虛擬磁碟區的虛擬Volume資訊。您也可以檢視每個虛擬Volume的效能活動、包括輸入、輸出、處理量、延遲、 佇列深度和Volume資訊。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您應該已在叢集的元素UI中啟用VVols功能。
+* 您應該已建立關聯的儲存容器。
+* 您應該已將vSphere叢集設定為使用Element軟體VVols功能。
+* 您應該已在vSphere中建立至少一個VM。
+
+
+.步驟
+. 按一下「* VVols *>*虛擬磁碟區*」。
++
+將顯示所有作用中虛擬磁碟區的資訊。
+
+. 按一下您要檢閱之虛擬磁碟區的*「Actions」（動作）*圖示。
+. 在產生的功能表中、選取*檢視詳細資料*。
+
+
+
+
+== 詳細資料
+
+VVols索引標籤的Virtual Volumes（虛擬磁碟區）頁面提供叢集上每個作用中虛擬磁碟區的相關資訊、例如Volume ID、Snapshot ID、父虛擬磁碟區ID和虛擬Volume ID。
+
+* * Volume ID*：基礎Volume的ID。
+* * Snapshot ID*：基礎Volume Snapshot的ID。如果虛擬磁碟區不代表SolidFire 某個不全快照、則值為0。
+* *父虛擬Volume ID*：父虛擬Volume的虛擬Volume ID。如果ID全部為零、則虛擬磁碟區是獨立的、沒有父磁碟區的連結。
+* *虛擬Volume ID*：虛擬Volume的UUID。
+* *名稱*：指派給虛擬磁碟區的名稱。
+* *儲存Container *：擁有虛擬磁碟區的儲存Container。
+* *來賓作業系統類型*：與虛擬磁碟區相關聯的作業系統。
+* *虛擬磁碟區類型*：虛擬磁碟區類型：config、Data、Memory、Swap或其他。
+* *存取*：指派給虛擬磁碟區的讀寫權限。
+* *大小*：虛擬磁碟區的大小（以GB或GiB為單位）。
+* * Snapshot *：相關快照的數量。按一下號碼以連結至快照詳細資料。
+* *最低IOPS *：虛擬磁碟區的最低IOPS QoS設定。
+* *最大IOPS *：虛擬磁碟區的最大IOPS QoS設定。
+* *爆發IOPS *：虛擬磁碟區的最大突發QoS設定。
+* * VMW_vmid*：以「VMW_」為前置欄位的資訊由VMware定義。
+* *建立時間*：虛擬磁碟區建立工作完成的時間。
+
+
+
+
+== 個別虛擬Volume詳細資料
+
+在您選取個別虛擬磁碟區並檢視其詳細資料時、VVols索引標籤上的Virtual Volumes（虛擬磁碟區）頁面會提供下列虛擬磁碟區資訊。
+
+* * VMW_XXXXX *：VMware定義了「VMW_」前置欄位中的資訊。
+* *父虛擬Volume ID*：父虛擬Volume的虛擬Volume ID。如果ID全部為零、則虛擬磁碟區是獨立的、沒有父磁碟區的連結。
+* *虛擬Volume ID*：虛擬Volume的UUID。
+* *虛擬磁碟區類型*：虛擬磁碟區類型：config、Data、Memory、Swap或其他。
+* * Volume ID*：基礎Volume的ID。
+* *存取*：指派給虛擬磁碟區的讀寫權限。
+* *帳戶名稱*：包含磁碟區的帳戶名稱。
+* *存取群組*：相關的Volume存取群組。
+* * Volume總大小*：已配置容量總計（以位元組為單位）。
+* *非零區塊*：上一次垃圾回收作業完成後、含有資料的4KiB區塊總數。
+* *零區塊*：上一輪垃圾回收作業完成後、無資料的4KiB區塊總數。
+* * Snapshot *：相關快照的數量。按一下號碼以連結至快照詳細資料。
+* *最低IOPS *：虛擬磁碟區的最低IOPS QoS設定。
+* *最大IOPS *：虛擬磁碟區的最大IOPS QoS設定。
+* *爆發IOPS *：虛擬磁碟區的最大突發QoS設定。
+* *啟用512*：由於虛擬磁碟區一律使用512位元組區塊大小模擬、因此值永遠為yes。
+* *已配對磁碟區*：指出是否已配對磁碟區。
+* *建立時間*：虛擬磁碟區建立工作完成的時間。
+* *區塊大小*：磁碟區上區塊的大小。
+* *未對齊寫入*：對於512e磁碟區、非4K磁碟區邊界的寫入作業數量。大量未對齊的寫入作業可能表示分割區對齊不正確。
+* *未對齊讀取*：對於512e磁碟區、非4K磁碟區邊界的讀取作業數量。大量未對齊的讀取可能表示分區對齊不正確。
+* * scsiEUIDeviceID*：磁碟區的全域唯一SCSI裝置識別碼、格式為EUI-64（16位元組）。
+* * scsiAADeviceID*：NAA IEEE註冊延伸格式之磁碟區的全域唯一SCSI裝置識別碼。
+* *屬性*：Json物件格式的名稱-值配對清單。
+

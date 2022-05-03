@@ -1,0 +1,20 @@
+---
+permalink: storage/task_replication_delete_volume_relationship_after_replication.html 
+sidebar: sidebar 
+keywords: volume pair, delete, replication 
+summary: 複寫完成且不再需要磁碟區配對關係之後、您可以刪除磁碟區關係。 
+---
+= 複寫後刪除磁碟區關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+複寫完成且不再需要磁碟區配對關係之後、您可以刪除磁碟區關係。
+
+. 選擇*資料保護*>*磁碟區配對*。
+. 按一下您要刪除之磁碟區配對的*「Actions」（動作）*圖示。
+. 按一下*刪除*。
+. 確認訊息。
+

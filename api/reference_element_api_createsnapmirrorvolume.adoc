@@ -1,0 +1,134 @@
+---
+permalink: api/reference_element_api_createsnapmirrorvolume.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoints,create,creating,volume,volumes,CreateSnapMirrorVolume 
+summary: Element Web UI使用Create SnapMirrorVolume方法在遠端ONTAP 的作業系統上建立磁碟區。 
+---
+= 建立SnapMirrorVolume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element web UI使用「Create SnapMirrorVolume」方法在遠端ONTAP 系統上建立Volume。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+遠端ONTAP 不整合式儲存系統的端點ID、可與元件儲存叢集通訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+Vserver
+ a| 
+Vserver的名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+名稱
+ a| 
+目的地ONTAP 的流通量名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+類型
+ a| 
+Volume類型。可能值：
+
+* RW：讀寫Volume
+* ls：負載共用磁碟區
+* DP：資料保護磁碟區
+
+
+如果未提供類型、則預設類型為DP。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+Aggregate
+ a| 
+包含ONTAP 用來建立磁碟區的不含集合體。您可以使用listSnapMirrorAggregate取得可用ONTAP 的資訊。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+尺寸
+ a| 
+磁碟區大小（以位元組為單位）。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorVolume
+ a| 
+SnapMirror Volume的相關資訊。
+ a| 
+xref:reference_element_api_snapmirrorvolume.adoc[snapMirrorVolume]
+
+|===
+
+
+== 新的自版本
+
+10.1

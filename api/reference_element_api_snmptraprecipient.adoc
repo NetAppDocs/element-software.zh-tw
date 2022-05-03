@@ -1,0 +1,51 @@
+---
+permalink: api/reference_element_api_snmptraprecipient.html 
+sidebar: sidebar 
+keywords: object,objects,snmptraprecipient 
+summary: SNMP TrapRecipient物件包含設定為接收儲存叢集產生之SNMP設陷的主機相關資訊。您可以使用GetSnmpTrapInfo API方法取得設定為接收SNMP設陷的主機清單。 
+---
+= snmpTrapRecipient
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SNMP TrapRecipient物件包含設定為接收儲存叢集產生之SNMP設陷的主機相關資訊。您可以使用「GetSnmpTrapInfo」API方法取得設定為接收SNMP設陷的主機清單。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+主機
+ a| 
+目標主機的IP位址或主機名稱。
+ a| 
+字串
+
+
+
+ a| 
+連接埠
+ a| 
+應該傳送陷阱的主機上的udp連接埠號碼。有效範圍為1到65535.0（零）不是有效的連接埠號碼。預設連接埠為162。
+ a| 
+整數
+
+
+
+ a| 
+社群
+ a| 
+SNMP社群字串。
+ a| 
+字串
+
+|===

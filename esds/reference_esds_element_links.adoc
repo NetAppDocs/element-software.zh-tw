@@ -1,0 +1,113 @@
+---
+permalink: esds/reference_esds_element_links.html 
+sidebar: sidebar 
+keywords: element, solidfire esds, volumes, accounts, snapshots, virtual volumes, remote replication 
+summary: 在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使用Element UI、Element API或NetApp Element vCenter Server的VMware外掛程式（VCP）來管理儲存叢集。 
+---
+= 管理SolidFire 功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使用Element UI、Element API或NetApp Element vCenter Server的VMware外掛程式（VCP）來管理儲存叢集。
+
+以下是各種儲存管理工作內容的連結：
+
+* link:../storage/task_intro_use_basic_options_in_the_element_software_ui.html["在Element軟體UI中使用基本選項"^]
+* link:../storage/task_data_manage_accounts_work_with_accounts_task.html["使用使用者帳戶"^]
+* link:../storage/task_data_manage_volumes_work_with_volumes_task.html["使用Volume"^]
++
+您也可以在這裡找到將QoS原則套用至磁碟區的相關資訊。
+
+* link:../storage/concept_data_manage_vvol_work_virtual_volumes.html["使用虛擬磁碟區"^]
+* link:../storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["使用Volume存取群組和啟動器"^]
+* link:../storage/task_data_protection_using_volume_snapshots.html["使用快照"^]
+* link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["開始使用外部金鑰管理"^] _新增！_
+* link:../storage/task_system_manage_key_set_up_external_key_management.html["設定外部金鑰管理"^] _新增！_
+* link:../storage/task_replication_perform_remote_replication_between_element_clusters.html["在叢集之間執行遠端複寫"^]
+* link:../storage/task_data_protection_back_up_and_restore_volumes.html["備份與還原磁碟區"^]
+* link:../api/index.html["使用Element API管理儲存設備"^]
+* link:../storage/concept_system_monitoring_and_troubleshooting.html["系統疑難排解"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server適用的插件概述NetApp Element"]
++
+您可以從「總覽」頁面瀏覽至特定工作。
+
+
+
+
+
+== 在SolidFire 不穩定的ESDS叢集上使用Element API
+
+* *軟體加密REST增強功能*：Element 123引進軟體加密閒置功能的增強功能、此功能在您建立SolidFire 一套「企業版SDS」儲存叢集時預設為啟用。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。以下是靜止時與軟體加密相關的元素API方法（請參閱 https://docs.netapp.com/us-en/element-software/api/index.html["Element API文件"^] 如需每種方法的詳細資訊）：
++
+** 「建立叢集」
+** "disableEncryptionAtRest"
+** 《EnablEncryptionAtRest》
+** 「GetSoftwareEncryptionAt恢復 資訊」
+** 「RekeySoftwareEncryptionAt恢復 金鑰」
+
+
+* *能夠定義最多可保留的快照數量*：元素123增強了快照保留功能。下列API已經過修改、以支援此增強功能（請參閱 https://docs.netapp.com/us-en/element-software/api/index.html["Element API文件"^] 如需每種方法的詳細資訊）：
++
+** 「建立磁碟區」
+** 「磁碟區」
+** 《建立快照》
+** 《建立排程》
+** 《每日快照》
+** 《每日行程》
+** 《每日快照》
+** 《建立群組快照》
+
+
+* *取得元件軟體修補程式的相關資訊*：Element 123引進「GetPatchInfo」方法、可讓您取得儲存節點上安裝元件軟體修補程式的相關資訊。請參閱 https://docs.netapp.com/us-en/element-software/api/index.html["Element API文件"^] 以取得詳細資料。
+* *列出節點上每個網路介面的統計資料*：元素123採用「listNetworkInterfaceStats」方法、可讓您列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱 https://docs.netapp.com/us-en/element-software/api/index.html["Element API文件"^] 以取得詳細資料。
+* *元素12.2中引入並更新API以支援SolidFire 功能不全的ESDS*：元素12.2中加入了數個新的API、您可以在SolidFire 支援功能不全的ESDS叢集上使用。
+
+
+以下是元素12：2的新API清單：
+
+* link:../api/reference_element_api_getlicensekey.html["「GetLicenseKey」"^]
+* link:../api/reference_element_api_setlicensekey.html["「etLicenseKey」"^]
+* link:../api/reference_element_api_enablemaintenancemode.html[""EnablMaintenanceMode""^]
+* link:../api/reference_element_api_disablemaintenancemode.html[""Disable維護 模式""^]
+
+
+下列的12.2 API已更新、以支援SolidFire 功能完善的ESDS叢集：
+
+* link:../api/reference_element_api_addnodes.html["《addnodes》"^]
+* link:../api/reference_element_api_createcluster.html["「建立叢集」"^]
++
+
+NOTE: 元素軟體12.2的「建立叢集」方法中新增了「訂單編號」、「週期性編號」和「enableSoftwareEncryptionAtRest」等參數。安裝SolidFire 完EESDS之後、您應該在使用此API方法建立叢集時指定這些參數。
+
+* * SolidFire 元素12.2 API不支援於IselesDS叢集*：SolidFire 以下是不支援於支援的元素12.2 API清單：
+* 「listClusterInterfacespreferences」
+* 《ListNodeStats》
+* 「disableSsh」
+* 「disableClusterSsh」
+* 《EnablClusterSsh》
+* 「EnablSsh」
+* 「GetIpmiConfig」
+* 《GetIpmiInfo》
+* 《GetSshInfo》
+* "listNetworkInterfaces（列表網路介面）
+* "ResetNode"
+* 「恢復網路」
+* 《ResetNetwork Config》（重新設定網路組態）
+* 《組態設定》
+* "etNetwork Config"
+* 「DisableBmc/ColdReset...」
+* 「EnablBmc/ColdReset」
+* 「etNtpInfo」
+* 《TestAddressAvailability》（測試地址可用度）
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

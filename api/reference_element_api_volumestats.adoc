@@ -1,0 +1,406 @@
+---
+permalink: api/reference_element_api_volumestats.html 
+sidebar: sidebar 
+keywords: object,objects,volumeStats 
+summary: volumeStats物件包含個別Volume的統計資料。 
+---
+= Volume統計資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+volumeStats物件包含個別Volume的統計資料。
+
+
+
+== 物件成員
+
+您可以使用下列方法來取得部分或所有磁碟區的Volume Stats物件：
+
+* xref:reference_element_api_getvolumestats.adoc[GetVolume統計資料]
+* xref:reference_element_api_listvolumestatsbyaccount.adoc[listVolume狀態ByAccount]
+* xref:reference_element_api_listvolumestatsbyvolume.adoc[listVolumesStatsByVolume]
+* xref:reference_element_api_listvolumestatsbyvolumeaccessgroup.adoc[listVolume狀態ByVolume存取群組]
+
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 計算 | 類型 
+
+
+ a| 
+帳戶ID
+ a| 
+Volume擁有者帳戶的ID。
+ a| 
+不適用
+ a| 
+整數
+
+
+
+ a| 
+執行IOPS
+ a| 
+過去500毫秒內、磁碟區的目前實際IOPS。
+ a| 
+時間點
+ a| 
+整數
+
+
+
+ a| 
+asynday
+ a| 
+自上次與遠端叢集同步磁碟區以來的時間長度。如果Volume未配對、則此為null。*附註：*處於作用中複寫狀態的目標磁碟區、永遠會有0（零）的「asyncday」（啟用延遲）。在複寫期間、目標磁碟區可感知系統需求、並假設asyncdate隨時都準確無誤。
+ a| 
+不適用
+ a| 
+ISO 8601持續時間字串或null
+
+
+
+ a| 
+避免IOPSize
+ a| 
+最近500毫秒內磁碟區的I/O平均大小（以位元組為單位）。
+ a| 
+時間點
+ a| 
+整數
+
+
+
+ a| 
+BurstIOPSCredit
+ a| 
+使用者可用的IOP點數總數。當磁碟區未使用最高設定的最大IOPS時、會累積點數。
+ a| 
+不適用
+ a| 
+整數
+
+
+
+ a| 
+用戶端Quue深度
+ a| 
+未完成的磁碟區讀寫作業數。
+ a| 
+不適用
+ a| 
+整數
+
+
+
+ a| 
+叢集使用率
+ a| 
+使用的叢集容量量。
+ a| 
+不適用
+ a| 
+浮動
+
+
+
+ a| 
+desiredMetadataHoses
+ a| 
+如果要在中繼資料服務之間移轉Volume中繼資料、則會將中繼資料（分區）服務移轉至。「null」值表示磁碟區未進行移轉。
+ a| 
+不適用
+ a| 
+Json物件
+
+
+
+ a| 
+最新
+ a| 
+過去500毫秒內完成Volume作業的平均時間（以微秒為單位）。「0」（零）值表示磁碟區沒有I/O。
+ a| 
+時間點
+ a| 
+整數
+
+
+
+ a| 
+metadata Hos
+ a| 
+Volume中繼資料所在的中繼資料（分區）服務。可能值：
+
+* 主要：主控Volume的主要中繼資料服務。
+* LiveSecondaries：目前處於「即時」狀態的次要中繼資料服務。
+* 死區第二：處於死機狀態的次要中繼資料服務。
+
+ a| 
+不適用
+ a| 
+Json物件
+
+
+
+ a| 
+非ZeroLocks
+ a| 
+上次垃圾回收作業完成後、包含資料的4KiB區塊總數。
+ a| 
+不適用
+ a| 
+整數
+
+
+
+ a| 
+readBytes
+ a| 
+自磁碟區建立以來、從磁碟區讀取的累計位元組總數。
+ a| 
+單一增長
+ a| 
+整數
+
+
+
+ a| 
+readBytesast取樣
+ a| 
+上次取樣期間從磁碟區讀取的位元組總數。
+ a| 
+時間點
+ a| 
+整數
+
+
+
+ a| 
+讀取USec
+ a| 
+過去500毫秒內完成磁碟區讀取作業的平均時間（以微秒為單位）。
+ a| 
+時間點
+ a| 
+整數
+
+
+
+ a| 
+readLatency總計
+ a| 
+從磁碟區執行讀取作業所花費的總時間。
+ a| 
+單一增長
+ a| 
+整數
+
+
+
+ a| 
+readOps
+ a| 
+自磁碟區建立以來、磁碟區的讀取作業總計。
+ a| 
+單一增長
+ a| 
+整數
+
+
+
+ a| 
+readOpsLast範 例
+ a| 
+上次取樣期間的讀取作業總數。
+ a| 
+時間點
+ a| 
+整數
+
+
+
+ a| 
+SamplePeriodMSec
+ a| 
+取樣週期的長度、以毫秒為單位。
+ a| 
+不適用
+ a| 
+整數
+
+
+
+ a| 
+節流
+ a| 
+介於0和1之間的浮動值、表示系統因為資料重新複寫、暫時性錯誤和快照而將用戶端節流到低於最大IOPS的程度。
+ a| 
+不適用
+ a| 
+浮動
+
+
+
+ a| 
+時間戳記
+ a| 
+目前的時間格式為UTC + 0。
+ a| 
+不適用
+ a| 
+ISO 8601日期字串
+
+
+
+ a| 
+非alignedReads
+ a| 
+自磁碟區建立以來、對磁碟區的累計未對齊讀取作業總計。
+ a| 
+單一增長
+ a| 
+整數
+
+
+
+ a| 
+無alignedWrites
+ a| 
+自磁碟區建立以來、對磁碟區的累計未對齊寫入作業總計。
+ a| 
+單一增長
+ a| 
+整數
+
+
+
+ a| 
+Volume存取群組
+ a| 
+磁碟區所屬之磁碟區存取群組的ID清單。
+ a| 
+不適用
+ a| 
+整數陣列
+
+
+
+ a| 
+Volume ID
+ a| 
+Volume的ID。
+ a| 
+不適用
+ a| 
+整數
+
+
+
+ a| 
+Volume大小
+ a| 
+已配置容量總計（以位元組為單位）。
+ a| 
+不適用
+ a| 
+整數
+
+
+
+ a| 
+Volume使用率
+ a| 
+浮點值、說明用戶端使用該磁碟區輸入/輸出功能的程度、以及該磁碟區的最大IOPS QoS設定。可能值：
+
+* 0：用戶端未使用磁碟區。
+* 01至0.99：用戶端未充分利用磁碟區的IOPS功能。
+* 1.00：用戶端已充分利用磁碟區、達到上限IOPS設定所設定的IOPS限制。
+* 大於1.00：用戶端所使用的上限超過上限IOPS所設定的上限。如果將burstIOPS QoS設定設為高於最大IOPS、就可能發生這種情況。例如、如果將最大IOPS設為1000、而將burstIOPS設為2000、則如果用戶端充分利用該磁碟區、則「Volume利用率」值將為2.00。
+
+ a| 
+不適用
+ a| 
+浮動
+
+
+
+ a| 
+文章Bytes
+ a| 
+自建立磁碟區以來寫入磁碟區的累積位元組總數。
+ a| 
+單一增長
+ a| 
+整數
+
+
+
+ a| 
+文章附註最後範例
+ a| 
+上次取樣期間寫入磁碟區的位元組總數。
+ a| 
+單一增長
+ a| 
+整數
+
+
+
+ a| 
+寫入Latency USec
+ a| 
+過去500毫秒內完成磁碟區寫入作業的平均時間（以微秒為單位）。
+ a| 
+時間點
+ a| 
+整數
+
+
+
+ a| 
+寫入儲存USecTotal
+ a| 
+執行磁碟區寫入作業所花費的總時間。
+ a| 
+單一增長
+ a| 
+整數
+
+
+
+ a| 
+寫入作業
+ a| 
+自磁碟區建立以來、對磁碟區的累計寫入作業總計。
+ a| 
+單一增長
+ a| 
+整數
+
+
+
+ a| 
+寫入作業選項最後範例
+ a| 
+上次取樣期間的寫入作業總數。
+ a| 
+時間點
+ a| 
+整數
+
+
+
+ a| 
+零位調整鎖定
+ a| 
+上次完成垃圾回收作業後、無資料的空白4KiB區塊總數。
+ a| 
+時間點
+ a| 
+整數
+
+|===

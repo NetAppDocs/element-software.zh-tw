@@ -1,0 +1,45 @@
+---
+section: esds
+title: 安裝及使用SolidFire 企業版SDS
+url: "/esds/index.html"
+entries:
+- title: 立即開始SolidFire 使用ESXESDS
+  url: "/esds/concept_get_started_esds.html"
+- title: 執行必要的安裝工作
+  url: "/esds/concept_esds_prerequisite_tasks.html"
+  entries:
+  - title: 網路組態考量
+    url: "/esds/concept_esds_networking_best_practices.html"
+  - title: 設定主機網路
+    url: "/esds/task_esds_configure_the_interface_config_files.html"
+- title: 安裝SolidFire 不一樣的功能
+  url: "/esds/task_esds_install_using_ansible.html"
+- title: 執行安裝後工作
+  url: "/esds/task_esds_postinstallation.html"
+- title: 升級叢集
+  url: "/esds/task_esds_upgrade_cluster.html"
+- title: 監控叢集
+  url: "/esds/concept_esds_monitor_clusters.html"
+- title: 管理SolidFire 功能
+  url: "/esds/reference_esds_element_links.html"
+- title: 解除安裝SolidFire 不完整的
+  url: "/esds/task_esds_uninstall.html"
+- title: 維護SolidFire 功能
+  url: "/esds/concept_esds_maintain.html"
+  entries:
+  - title: 取得授權金鑰
+    url: "/esds/task_esds_get_license_key.html"
+  - title: 在不支援的ESDS叢集上使用維護模式SolidFire
+    url: "/esds/reference_esds_use_maintenance_mode.html"
+  - title: 更換HPE DL380的磁碟機
+    url: "/esds/task_esds_dl380_drive_repl.html"
+  - title: 更換HPE 360
+    url: "/esds/task_esds_dl360_drive_repl.html"
+  - title: 更換Dell R640的磁碟機
+    url: "/esds/task_esds_r640_drive_repl.html"
+  - title: 收集容器記錄
+    url: "/esds/reference_esds_containerlogs.html"
+  - title: 疑難排解KB文章的連結
+    url: "/esds/reference_esds_troubleshoot_links.html"
+  - title: SF_SDs_config.yaml檔案的內容
+    url: "/esds/reference_esds_sf_sds_config_file.html"

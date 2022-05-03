@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_protocolendpoint.html 
+sidebar: sidebar 
+keywords: object,objects,protocolEndpoint 
+summary: 傳輸協定端點物件包含傳輸協定端點的屬性。您可以使用listProtocolEndpoints API方法擷取叢集中所有傳輸協定端點的資訊。 
+---
+= 通訊協定端點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+傳輸協定端點物件包含傳輸協定端點的屬性。您可以使用「listProtocolEndpoints」API方法、為叢集中的所有傳輸協定端點擷取此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+primaryProviderID
+ a| 
+傳輸協定端點的主要傳輸協定端點供應商物件ID。
+ a| 
+整數
+
+
+
+ a| 
+傳輸協議EndpointID
+ a| 
+傳輸協定端點的唯一ID。
+ a| 
+UUID
+
+
+
+ a| 
+傳輸協議EndpointState
+ a| 
+傳輸協定端點的狀態。可能值：
+
+* 作用中：傳輸協定端點正在使用中。
+* 開始：傳輸協定端點正在啟動。
+* 容錯移轉：傳輸協定端點已容錯移轉。
+* 保留：保留傳輸協定端點。
+
+ a| 
+字串
+
+
+
+ a| 
+提供者類型
+ a| 
+傳輸協定端點供應商的類型。可能值：
+
+* 主要
+* 次要
+
+ a| 
+字串
+
+
+
+ a| 
+scsiAADeviceID
+ a| 
+NAA IEEE註冊延伸格式之傳輸協定端點的全域唯一SCSI裝置識別碼。
+ a| 
+字串
+
+
+
+ a| 
+二級供應商ID
+ a| 
+傳輸協定端點的次要傳輸協定端點供應商物件ID。
+ a| 
+整數
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_listprotocolendpoints.adoc[列出通訊協定端點]

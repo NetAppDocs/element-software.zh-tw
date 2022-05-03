@@ -1,0 +1,147 @@
+---
+permalink: api/reference_element_api_modifyinitiators.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,initiators,initiator,attribute,attributes,modifyinitiators 
+summary: 您可以使用ModifyInitiator方法來變更一或多個現有啟動器的屬性。 
+---
+= ModifyInitiator
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「多重啟動器」方法來變更一或多個現有啟動器的屬性。
+
+您無法變更現有啟動器的名稱。如果您需要變更啟動器的名稱、請先使用刪除 xref:reference_element_api_deleteinitiators.adoc[刪除啟動器] 方法、並使用建立新的方法 xref:reference_element_api_createinitiators.adoc[建立啟動器] 方法。
+
+如果ModifyInitiator無法變更參數中所提供的其中一個啟動器、則該方法會傳回錯誤、且不會修改任何啟動器（無法部分完成）。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+
+
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+啟動器
+ a| 
+包含每個要修改之啟動器特性的物件清單。可能的物件：
+
+* 別名：（選用）指派給啟動器的新易記名稱。（字串）
+* 「attributes」（屬性）：（選用）一組新的Json屬性、以指派給啟動器。（JSONN物件）
+* 「chapusernamusernamus...（選用）：此啟動器的新獨特CHAP使用者名稱。（字串）
+* 「FORCEDingUpgrade」：在升級期間完成啟動器修改。
+* 「initatorID」：（必要）要修改的啟動器ID。（整數）
+* 「initatorSecret」（初始化者機密）：（選用）用於驗證啟動器的新CHAP機密。（字串）
+* "remireChap"：（可選）如果此啟動器需要CHAP、則為True。（布林值）
+* 「Target Secret」（目標機密）：（選用）用於驗證目標的新CHAP機密（使用相互CHAP驗證時）。（字串）
+* 「virtualNetworkID」（虛擬網路ID）：（選用）與此啟動器相關聯的虛擬網路識別碼清單。如果定義一個或多個虛擬網路、此啟動器只能登入這些虛擬網路。如果您未定義任何虛擬網路、此啟動器可以登入所有網路。
+* 「volumeAccessGroupID」：（選用）應新增啟動器的Volume存取群組ID。如果啟動器先前位於不同的Volume存取群組、則會從舊的Volume存取群組中移除。如果此金鑰存在但為null、則啟動器會從其目前的Volume存取群組中移除、但不會放置在任何新的Volume存取群組中。（整數）
+
+ a| 
+Json物件陣列
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+啟動器
+ a| 
+描述新修改啟動器的物件清單。
+ a| 
+xref:reference_element_api_initiator.adoc[啟動器] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 6683,
+  "method": "ModifyInitiators",
+  "params": {
+    "initiators": [
+      {
+        "initiatorID": 2,
+        "alias": "alias1",
+        "volumeAccessGroupID": null
+      },
+      {
+        "initiatorID": 3,
+        "alias": "alias2",
+        "volumeAccessGroupID": 1
+      }
+    ]
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 6683,
+  "result": {
+    "initiators": [
+      {
+        "alias": "alias1",
+        "attributes": {},
+        "initiatorID": 2,
+        "initiatorName": "iqn.1993-08.org.debian:01:395543635",
+        "volumeAccessGroups": []
+      },
+      {
+        "alias": "alias2",
+        "attributes": {},
+        "initiatorID": 3,
+        "initiatorName": "iqn.1993-08.org.debian:01:935573135",
+        "volumeAccessGroups": [
+          1
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_createinitiators.adoc[建立啟動器]
+* xref:reference_element_api_deleteinitiators.adoc[刪除啟動器]
+

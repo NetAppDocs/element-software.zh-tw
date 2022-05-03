@@ -1,0 +1,32 @@
+---
+permalink: storage/task_data_protection_back_up_volume_to_amazon_s3.html 
+sidebar: sidebar 
+keywords: volume backup, amazon s3 object store 
+summary: 您可以將磁碟區備份到與Amazon S3相容的外部物件存放區。 
+---
+= 將磁碟區備份至Amazon S3物件存放區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將磁碟區備份到與Amazon S3相容的外部物件存放區。
+
+. 按一下*管理*>*磁碟區*。
+. 針對您要備份的磁碟區、按一下「動作」圖示。
+. 在產生的功能表中、按一下*備份至*。
+. 在*備份目標*下的*整合式備份*對話方塊中、選取* S3 *。
+. 在*資料格式*下選取一個選項：
++
+** *原生*：只SolidFire 有透過不兼容的儲存系統才能讀取的壓縮格式。
+** *未壓縮*：與其他系統相容的未壓縮格式。
+
+
+. 在「*主機名稱*」欄位中輸入要用來存取物件存放區的主機名稱。
+. 在*存取金鑰ID*欄位中輸入帳戶的存取金鑰ID。
+. 在「* Secret Access Key*（*機密存取金鑰*）」欄位中輸入帳戶的秘密存取金鑰。
+. 在「* S3 Bucket *」欄位中輸入要儲存備份的S3儲存區。
+. 在「*名稱標籤*」欄位中輸入要附加至前置詞的名稱標籤。
+. 按一下「*開始讀取*」。
+

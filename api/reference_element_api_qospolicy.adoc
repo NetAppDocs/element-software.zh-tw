@@ -1,0 +1,65 @@
+---
+permalink: api/reference_element_api_qospolicy.html 
+sidebar: sidebar 
+keywords: object,objects,QoSPolicy,QoS,policy,policies 
+summary: QoSPolicy物件包含執行Element軟體之儲存叢集上QoS原則的相關資訊。 
+---
+= QoSPolicy
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+QoSPolicy物件包含執行Element軟體之儲存叢集上QoS原則的相關資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+qosPolicyID
+ a| 
+儲存叢集自動指派之QoSPolicy的唯一整數識別碼。
+ a| 
+整數
+
+
+
+ a| 
+名稱
+ a| 
+QoS原則的名稱。例如：Gold、Platinum或Silver。
+ a| 
+字串
+
+
+
+ a| 
+QoS
+ a| 
+此原則所代表的QoS設定。
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+
+
+
+ a| 
+Volume ID
+ a| 
+與此原則相關聯的磁碟區清單。
+ a| 
+整數陣列
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_getqospolicy.adoc[GetQoSPolicy]

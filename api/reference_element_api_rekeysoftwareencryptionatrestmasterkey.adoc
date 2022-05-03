@@ -1,0 +1,84 @@
+---
+permalink: api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html 
+sidebar: sidebar 
+keywords: system, api, element, security, rekey, software encryption at rest 
+summary: 您可以使用RekeySoftwareEncryptionAtRestMasterKey方法重新輸入用來加密DEK（資料加密金鑰）的軟體加密閒置主金鑰。 
+---
+= RekeySoftwareEncryptionAt恢復 主金鑰
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「RekeySoftwareEncryptionAtRestMasterKey」方法重新輸入用來加密DEK（資料加密金鑰）的軟體加密閒置主金鑰。在建立叢集期間、閒置時的軟體加密會設定為使用內部金鑰管理（IKM）。此重新輸入方法可在建立叢集之後使用、以使用IKM或外部金鑰管理（EKM）。
+
+
+
+== 參數
+
+此方法具有下列輸入參數。如果未指定「keyManagementType」參數、則會使用現有的金鑰管理組態執行重新輸入作業。如果指定了「keyManagementType」、而且金鑰提供者是外部的、則也必須使用「keyProviderID」參數。
+
+[cols="4*"]
+|===
+| 參數 | 說明 | 類型 | 選用 
+
+
+| KeyManagement類型 | 用於管理主金鑰的金鑰管理類型。可能的值包括：「Internal」（內部）：使用內部金鑰管理重新輸入金鑰。「外部」：使用外部金鑰管理重新輸入金鑰。如果未指定此參數、則會使用現有的金鑰管理組態執行重新輸入作業。 | 字串 | 是的 
+
+
+| KeyProviderID | 要使用的金鑰提供者ID。這是作爲其中一種"CreateKeyProvider."方法的一部分返回的唯一值。只有當「keyManagementType」為「Extern外部」且無效時、才需要ID。 | 整數 | 是的 
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+[cols="4*"]
+|===
+| 參數 | 說明 | 類型 | 選用 
+
+
+| asyncdle | 使用此「asyncdyle」值搭配「Get非 同步結果」來判斷重新輸入作業的狀態。「GetSuccessynresult」輸出將包含一個「newkey」欄位、其中包含有關新主金鑰的資訊、以及包含舊金鑰相關資訊的「keyToDecommation」欄位。 | 整數 | 錯 
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+ "method": "rekeysoftwareencryptionatrestmasterkey",
+ "params": {
+   "keyManagementType": "external",
+   "keyProviderID": "<ID number>"
+ }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "asyncHandle": 1
+}
+----
+
+
+== 新的自版本
+
+12.3.
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

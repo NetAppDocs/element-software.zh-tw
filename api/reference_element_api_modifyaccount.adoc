@@ -1,0 +1,188 @@
+---
+permalink: api/reference_element_api_modifyaccount.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,accounts,settings,modifyaccount 
+summary: 您可以使用ModifyAccount方法來修改現有的帳戶。 
+---
+= 修改帳戶
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「modifyAccount」方法來修改現有的帳戶。
+
+當您鎖定帳戶時、該帳戶的任何現有連線都會立即終止。當您變更帳戶的CHAP設定時、任何現有的連線都會保持作用中狀態、新的CHAP設定會用於後續的連線或重新連線。若要清除帳戶的屬性、請為屬性參數指定｛｝。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+帳戶ID
+ a| 
+要修改之帳戶的帳戶ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+enableChap
+ a| 
+指定啟動器是否可以使用CHAP帳戶認證來存取磁碟區。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+初始化者機密
+ a| 
+用於啟動器的CHAP機密。此機密長度必須為12-16個字元、且不可滲透。啟動器CHAP密碼必須是唯一的、不得與目標CHAP密碼相同。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+狀態
+ a| 
+帳戶狀態。可能值：
+
+* 作用中：帳戶為作用中、且允許連線。
+* 鎖定：帳戶已鎖定、連線遭拒。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+目標機密
+ a| 
+用於目標的CHAP機密（交互CHAP驗證）。此機密長度必須為12-16個字元、且不可滲透。目標CHAP機密必須是唯一的、不得與啟動器CHAP機密相同。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+使用者名稱
+ a| 
+用於變更與帳戶相關的使用者名稱。（長度必須為1到64個字元）。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+帳戶
+ a| 
+包含已修改帳戶相關資訊的物件。
+ a| 
+xref:reference_element_api_account.adoc[帳戶]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例。在此範例中、會為屬性指定｛｝來清除屬性：
+
+[listing]
+----
+{
+   "method": "ModifyAccount",
+   "params": {
+     "accountID"  : 25,
+     "status"   : "locked",
+     "attributes" : {}
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "account": {
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "username": "user1",
+        "accountID": 1,
+        "volumes": [
+        ],
+        "enableChap": true,
+        "initiatorSecret": "txz123456q890",
+        "attributes": {
+        },
+        "status": active",
+        "targetSecret": "rxe123b567890"
+    }
+}
+----
+
+
+== 新的自版本
+
+9.6

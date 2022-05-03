@@ -1,0 +1,39 @@
+---
+permalink: api/concept_element_api_volume_snapshot_api_methods.html 
+sidebar: sidebar 
+keywords: volume,snapshot,API,method 
+summary: Element軟體Volume Snapshot API方法可讓您管理Volume快照。您可以使用Volume Snapshot API方法來建立、修改、複製及刪除Volume快照。 
+---
+= Volume Snapshot API方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Volume Snapshot API方法可讓您管理Volume快照。您可以使用Volume Snapshot API方法來建立、修改、複製及刪除Volume快照。
+
+* xref:concept_element_api_snapshots_overview.adoc[Snapshot總覽]
+* xref:reference_element_api_creategroupsnapshot.adoc[CreatGroupSnapshot]
+* xref:reference_element_api_createschedule.adoc[建立排程]
+* xref:reference_element_api_createsnapshot.adoc[建立Snapshot]
+* xref:reference_element_api_deletegroupsnapshot.adoc[刪除GroupSnapshot]
+* xref:reference_element_api_deletesnapshot.adoc[刪除Snapshot]
+* xref:reference_element_api_getschedule.adoc[Get排 程]
+* xref:reference_element_api_listgroupsnapshots.adoc[清單群組快照]
+* xref:reference_element_api_listschedules.adoc[清單排程]
+* xref:reference_element_api_listsnapshots.adoc[列表快照]
+* xref:reference_element_api_modifygroupsnapshot.adoc[ModifyGroupSnapshot]
+* xref:reference_element_api_modifyschedule.adoc[修改排程]
+* xref:reference_element_api_modifysnapshot.adoc[ModifySnapshot]
+* xref:reference_element_api_rollbacktogroupsnapshot.adoc[RollbackToGroupSnapshot]
+* xref:reference_element_api_rollbacktosnapshot.adoc[RollbackToSnapshot]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

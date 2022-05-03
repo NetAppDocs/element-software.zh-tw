@@ -1,0 +1,73 @@
+---
+permalink: api/reference_element_api_listsnapmirrornetworkinterfaces.html 
+sidebar: sidebar 
+keywords: snapmirror,interface,interfaces,list,listing,listsnapmirrornetworkinterfaces,ontap 
+summary: Element軟體Web UI使用ListSnapMirrorNetworkInterfaces方法列出遠端ONTAP 系統上所有可用的SnapMirror介面。 
+---
+= ListSnapMirrorNetwork介面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ListSnapMirrorNetworkInterfaces」方法、列出遠端ONTAP 系統上所有可用的SnapMirror介面。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+僅傳回與指定端點ID相關聯的網路介面。如果未提供端點ID、系統會列出所有已知SnapMirror端點的介面。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+介面角色
+ a| 
+僅列出服務指定角色的網路介面。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorNetworkInterfaces
+ a| 
+遠端ONTAP 不中斷儲存系統上可用的SnapMirror網路介面清單。
+ a| 
+xref:reference_element_api_snapmirrornetworkinterface.adoc[snapMirrornetworkInterface] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

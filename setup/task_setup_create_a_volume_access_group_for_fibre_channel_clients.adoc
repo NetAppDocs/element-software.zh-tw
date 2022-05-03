@@ -1,0 +1,43 @@
+---
+permalink: setup/task_setup_create_a_volume_access_group_for_fibre_channel_clients.html 
+sidebar: sidebar 
+keywords:  
+summary: Volume存取群組可在SolidFire Fibre Channel用戶端與支援的儲存系統上的Volume之間進行通訊。將Fibre Channel用戶端啟動器（WWPN）對應至Volume存取群組中的磁碟區、可在Fibre Channel網路和SolidFire 一個穩定的資料I/O之間建立安全的資料I/O。 
+---
+= 為Fibre Channel用戶端建立Volume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume存取群組可在SolidFire Fibre Channel用戶端與支援的儲存系統上的Volume之間進行通訊。將Fibre Channel用戶端啟動器（WWPN）對應至Volume存取群組中的磁碟區、可在Fibre Channel網路和SolidFire 一個穩定的Volume之間實現安全的資料I/O。
+
+您也可以將iSCSI啟動器新增至Volume存取群組、讓啟動器能夠存取Volume存取群組中的相同磁碟區。
+
+.步驟
+. 按一下*管理*>*存取群組*。
+. 按一下「*建立存取群組*」。
+. 在*名稱*欄位中輸入Volume存取群組的名稱。
+. 從* Unbound Fibre Channel Initiator（未綁定的Fibre Channel啟動器）*清單中選取並新增Fibre Channel啟動器。
++
+
+NOTE: 您可以稍後新增或刪除啟動器。
+
+. *選用：*從*啟動器*清單中選取並新增iSCSI啟動器。
+. 若要將磁碟區附加至存取群組、請執行下列步驟：
++
+.. 從* Volumes *（磁碟區）清單中選取磁碟區。
+.. 按一下*附加磁碟區*。
+
+
+. 按一下「*建立存取群組*」。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

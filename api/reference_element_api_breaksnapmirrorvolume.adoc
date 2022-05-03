@@ -1,0 +1,104 @@
+---
+permalink: api/reference_element_api_breaksnapmirrorvolume.html 
+sidebar: sidebar 
+keywords: SnapMirror,volume,volumes,break,breaking,relationship,ONTAP,source,snapshot 
+summary: Element Web UI使用BreakSnapMirrorVolume方法來中斷ONTAP 來源Container與Element目標Volume之間的SnapMirror關係。如果ONTAP 在將資料複製到元素Volume時、無法使用某個元素的SnapMirror Volume、則中斷元素SnapMirror Volume會很有用。此功能可讓儲存管理員控制元素SnapMirror Volume、中斷與遠端ONTAP 作業系統的關係、並將磁碟區還原為先前的快照。 
+---
+= BreakSnapMirrorVolume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI使用「BreakSnapMirrorVolume」方法來中斷ONTAP 來源Container與Element目標Volume之間的SnapMirror關係。如果ONTAP 在將資料複製到元素Volume時、無法使用某個元素的SnapMirror Volume、則中斷元素SnapMirror Volume會很有用。此功能可讓儲存管理員控制元素SnapMirror Volume、中斷與遠端ONTAP 作業系統的關係、並將磁碟區還原為先前的快照。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume ID
+ a| 
+執行中斷作業的Volume。Volume存取模式必須是snapMirrorTarget。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+Snapshot ID
+ a| 
+將磁碟區復原至此ID所識別的快照。預設行為是回復到最新的快照。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+保留
+ a| 
+保留任何比SnapshotID所識別快照更新的快照。可能值：
+
+* true：保留比snapshotID新的快照。
+* 否：不要保留比snapshotID更新的快照。
+
+
+如果為假、則會刪除任何比snapshotID更新的快照。
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+ a| 
+存取
+ a| 
+最終的Volume存取模式。可能值：
+
+* 讀寫
+* 唯讀
+* 已鎖定
+
+ a| 
+字串
+ a| 
+讀寫
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 新的自版本
+
+10.0%
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_breaksnapmirrorrelationship.adoc[BreakSnapMirrorRelationationations.]

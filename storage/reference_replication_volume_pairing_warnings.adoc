@@ -1,0 +1,56 @@
+---
+permalink: storage/reference_replication_volume_pairing_warnings.html 
+sidebar: sidebar 
+keywords: volume warnings, messages, replication, data protection 
+summary: 「資料保護」索引標籤上的「Volume Pairs」（磁碟區配對）頁面會在您配對磁碟區之後提供這些訊息這些訊息可顯示在「複製磁碟區」清單檢視的配對（除非另有說明）的來源端點和目標端點。 
+---
+= Volume配對警告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「資料保護」索引標籤上的「Volume Pairs」（磁碟區配對）頁面會在您配對磁碟區之後提供這些訊息這些訊息可顯示在「複製磁碟區」清單檢視中、配對的來源端點和目標端點（除非另有說明）。
+
+* *暫停ClusterFull*
++
+由於目標叢集已滿、因此來源複寫和大量資料傳輸無法繼續進行。訊息僅會顯示在配對的來源端點。
+
+* *暫停exeeedMaxSnapshotCount*
++
+目標磁碟區已有最大快照數量、無法複寫其他快照。
+
+* *暫停手冊*
++
+本機Volume已手動暫停。必須先取消暫停、才能繼續複寫。
+
+* *暫停ManualRemoted*
++
+遠端Volume處於手動暫停模式。需要手動介入、才能在複寫恢復之前取消暫停遠端磁碟區。
+
+* *暫停設定錯誤*
++
+正在等待作用中的來源和目標。需要手動介入才能恢復複寫。
+
+* *暫停QoS *
++
+目標QoS無法維持傳入IO。複寫會自動恢復。訊息僅會顯示在配對的來源端點。
+
+* *暫停SlowLink*
++
+偵測到慢速連結並停止複寫。複寫會自動恢復。訊息僅會顯示在配對的來源端點。
+
+* *暫停磁碟大小不符*
++
+目標Volume的大小與來源Volume不同。
+
+* *暫停XCopy*
++
+正在向來源Volume發出SCSI XCOPY命令。必須先完成命令、才能繼續複寫。訊息僅會顯示在配對的來源端點。
+
+* *停止設定錯誤*
++
+偵測到永久組態錯誤。遠端Volume已清除或取消配對。不可能採取修正行動；必須建立新的配對。
+
+

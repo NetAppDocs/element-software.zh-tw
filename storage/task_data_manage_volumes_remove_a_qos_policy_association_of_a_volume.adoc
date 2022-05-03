@@ -1,0 +1,30 @@
+---
+permalink: storage/task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html 
+sidebar: sidebar 
+keywords: remove qos policy, disassociate from a volume, modify 
+summary: 您可以選取自訂QoS設定、從Volume移除QoS原則關聯。 
+---
+= 移除磁碟區的QoS原則關聯
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以選取自訂QoS設定、從Volume移除QoS原則關聯。
+
+您要修改的Volume應與QoS原則相關聯。
+
+. 選擇*管理*>*磁碟區*。
+. 按一下「動作」圖示、即可查看包含您要修改之QoS原則的磁碟區。
+. 按一下 * 編輯 * 。
+. 在「*服務品質*」下的結果功能表中、按一下「*自訂設定*」。
+. 修改*最小IOPS *、*最大IOPS *和*爆發IOPS *、或保留預設設定。
+. 按一下*儲存變更*。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:task_data_manage_volumes_deleting_a_qos_policy.adoc[刪除QoS原則]

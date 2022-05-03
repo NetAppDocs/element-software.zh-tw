@@ -1,0 +1,75 @@
+---
+permalink: api/reference_element_api_networkinterfacestats.html 
+sidebar: sidebar 
+keywords: object,objects,stats,statistics,networkInterfacestats 
+summary: 網路介面統計資料物件包含儲存節點上個別網路介面的網路統計資料和錯誤資訊。 
+---
+= 網路連網統計資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+網路介面統計資料物件包含網路統計資料、傳輸和接收的封包總數、以及儲存節點上個別網路介面的錯誤資訊。您可以使用「listNetworkInterfaceStats」API方法、列出儲存節點上網路介面的資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+| 衝突 | 偵測到的衝突數。 | 整數 
+
+
+| 名稱 | 網路介面的名稱。 | 字串 
+
+
+| rxBytes | 接收的位元組總數。 | 整數 
+
+
+| rxCrcErrors | 收到的有CRC錯誤的封包數。 | 整數 
+
+
+| 已使用過的 | 捨棄的接收封包數。 | 整數 
+
+
+| rxErrors | 收到的不良或格式錯誤的封包數。 | 整數 
+
+
+| rx快 快轉錯誤 | 接收資料中的FIFO溢位錯誤數。 | 整數 
+
+
+| rxFrameErrors | 收到的訊框對齊錯誤封包數。 | 整數 
+
+
+| rxLengthErrors | 接收到的封包數（長度錯誤）。 | 整數 
+
+
+| rxMisedErrors | 接收器遺漏的封包數。 | 整數 
+
+
+| 過載錯誤 | 此介面的接收器環緩衝區溢位錯誤數。 | 整數 
+
+
+| rxPackets | 接收的封包總數。 | 整數 
+
+
+| txBytes | 傳輸的位元組總數。 | 整數 
+
+
+| txCarrierErrors | 傳輸端的載體錯誤數。 | 整數 
+
+
+| txErrors | 封包傳輸錯誤數。 | 整數 
+
+
+| tx快 夫錯誤 | 傳輸端的FIFO溢位錯誤數。 | 整數 
+
+
+| txPackets | 傳輸的封包總數。 | 整數 
+|===

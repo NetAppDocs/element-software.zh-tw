@@ -1,0 +1,208 @@
+---
+permalink: api/reference_element_api_clusterinfo.html 
+sidebar: sidebar 
+keywords: element, api, object, objects, clusterInfo 
+summary: clusterInfo物件包含節點用來與叢集通訊的資訊。您可以使用GetClusterInfo API方法取得此資訊。 
+---
+= 叢集資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterInfo物件包含節點用來與叢集通訊的資訊。您可以使用GetClusterInfo API方法取得此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+
+
+
+ a| 
+預設保護方案
+ a| 
+除非隨附保護方案、否則新磁碟區預設會使用保護方案 xref:reference_element_api_createvolume.adoc[建立Volume] 方法呼叫。此保護方案必須始終位於一組已啟用的保護方案中。
+ a| 
+字串
+
+
+
+ a| 
+enabledProtectionSchemes
+ a| 
+已在此儲存叢集上啟用的所有保護配置清單。
+ a| 
+字串陣列
+
+
+
+ a| 
+加密At恢復 狀態
+ a| 
+加密閒置狀態功能。可能值：
+
+* 啟用：正在啟用靜止加密。
+* 已啟用：已啟用靜止加密。
+* 停用：停用靜止加密。
+* 停用：停用靜止加密。
+
+ a| 
+字串
+
+
+
+ a| 
+頻道群
+ a| 
+參與叢集的節點。
+ a| 
+字串陣列
+
+
+
+ a| 
+mvip
+ a| 
+管理網路上叢集的浮動（虛擬）IP位址。
+ a| 
+字串
+
+
+
+ a| 
+mvipInterface
+ a| 
+與MVIP位址相關聯的實體介面。
+ a| 
+字串
+
+
+
+ a| 
+mvipNodeID
+ a| 
+主MVIP位址所在的節點。
+ a| 
+整數
+
+
+
+ a| 
+mvipVlanTag
+ a| 
+MVIP位址的VLAN識別碼。
+ a| 
+字串
+
+
+
+ a| 
+名稱
+ a| 
+唯一的叢集名稱。
+ a| 
+字串
+
+
+
+ a| 
+重新計數
+ a| 
+叢集中每個要儲存資料片段的複本數。有效值為「2」。
+ a| 
+整數
+
+
+
+ a| 
+軟體EncryptionAtRestState
+ a| 
+軟體型加密閒置狀態。
+ a| 
+字串
+
+
+
+ a| 
+支援的保護方案
+ a| 
+此儲存叢集支援的所有保護方案清單。
+ a| 
+字串陣列
+
+
+
+ a| 
+服務
+ a| 
+儲存設備（iSCSI）網路上叢集的浮動（虛擬）IP位址。
+ a| 
+字串
+
+
+
+ a| 
+svipInterface
+ a| 
+與主要SVIP位址相關聯的實體介面。
+ a| 
+字串
+
+
+
+ a| 
+svipNodeID
+ a| 
+主SVIP位址所在的節點。
+ a| 
+整數
+
+
+
+ a| 
+svipVlanTag
+ a| 
+主要SVIP位址的VLAN識別碼。
+ a| 
+字串
+
+
+
+ a| 
+唯一ID
+ a| 
+叢集的唯一ID。
+ a| 
+字串
+
+
+
+ a| 
+UUID
+ a| 
+叢集的唯一識別碼。
+ a| 
+UUID
+
+|===
+[discrete]
+== 如需詳細資訊、請參閱
+
+* link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

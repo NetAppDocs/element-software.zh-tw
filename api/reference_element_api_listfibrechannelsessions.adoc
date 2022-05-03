@@ -1,0 +1,88 @@
+---
+permalink: api/reference_element_api_listfibrechannelsessions.html 
+sidebar: sidebar 
+keywords: list,listing,fibre,channel,session,sessions,listfibrechannelsessions 
+summary: 您可以使用ListFibre ChannelSessions方法、列出叢集上光纖通道工作階段的相關資訊。 
+---
+= ListFIBreChannelSessions
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ListFibre ChannelSessions」（清單光纖通道工作階段）方法、列出叢集上光纖通道工作階段的相關資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+工作階段
+ a| 
+說明叢集上作用中光纖通道工作階段的物件清單。
+ a| 
+xref:reference_element_api_session_fibre_channel.adoc[工作階段] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListFibreChannelSessions",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+     "sessions" : [
+    {
+       "initiatorWWPN" : "21:00:00:0e:1e:14:af:40",
+       "nodeID" : 5,
+       "serviceID" : 21,
+       "targetWWPN": "5f:47:ac:c0:00:00:00:10",
+       "volumeAccessGroupID": 7
+    },
+    {
+       "initiatorWWPN" : "21:00:00:0e:1e:14:af:40",
+       "nodeID" : 1,
+       "serviceID" : 22,
+       "targetWWPN": "5f:47:ac:c0:00:00:00:11",
+       "volumeAccessGroupID": 7
+    }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,121 @@
+---
+permalink: api/reference_element_api_setconfig.html 
+sidebar: sidebar 
+keywords: config,configuration,set,setting,node,setconfig,network,cluster 
+summary: 您可以使用SetConfig方法來設定節點的網路和叢集資訊。此方法在單一API方法中包含相同的設定、使用SetClusterConfig和SetNetworkConfig方法皆可使用。只有您想要變更的欄位才需要納入此方法。 
+---
+= 設定組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「etConfig」（設定組態）方法來設定節點的網路和叢集資訊。此方法在單一API方法中包含相同的設定、這些設定可使用「etClusterConfig」和「etNetwork Config」兩種方法。只有您想要變更的欄位才需要納入此方法。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+注意：
+
+變更節點上的連結模式可能會導致網路連線暫時中斷。
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+叢集
+ a| 
+叢集資訊、可識別儲存節點如何與其相關的儲存叢集進行通訊。
+ a| 
+xref:reference_element_api_cluster.adoc[叢集]
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+網路
+ a| 
+節點每個網路介面的網路連線類型和目前設定。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[網路（所有介面）]
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+組態
+ a| 
+節點的新組態和目前組態。此物件包含：
+
+* xref:reference_element_api_cluster.adoc[叢集]：用於識別儲存節點如何與與其相關聯的儲存叢集進行通訊的叢集資訊。
+* xref:reference_element_api_network_all_interfaces.adoc[網路（所有介面）]：節點每個網路介面的網路連線類型和目前設定。
+
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+	"method": "SetConfig",
+	"params": {
+		"cluster": {
+			"name": "MyHostname"
+		},
+		"network": {
+			"Bond10G": {
+				"bond-mode": "ALB"
+			}
+		}
+	}
+}
+----
+
+
+== 回應範例
+
+此方法的回應與getconfig方法的傳回相同。使用SetConfig時、會顯示物件顯示的所有欄位和更新的值。
+
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_setclusterconfig.adoc[SetClusterConfig]
+* xref:reference_element_api_setnetworkconfig.adoc[設定網路組態]
+* xref:reference_element_api_response_example_getconfig.adoc[組態設定]
+

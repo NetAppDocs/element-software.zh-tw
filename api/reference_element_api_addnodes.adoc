@@ -1,0 +1,155 @@
+---
+permalink: api/reference_element_api_addnodes.html 
+sidebar: sidebar 
+keywords: addnodes,node,add,adding,nodes,cluster 
+summary: 您可以使用addnodes方法、將一或多個新節點新增至叢集。 
+---
+= 附加節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「addnodes」方法、將一個或多個新節點新增至叢集。
+
+第一次啟動未設定的節點時、系統會提示您設定節點。設定節點之後、就會在叢集上登錄為「擱置節點」。執行Element軟體的儲存叢集會自動將節點映像到叢集上的版本。當您新增擱置節點時、方法回應會包含一個asyncdyle值、您可以搭配使用「Getynprynresult」方法來查詢自動映像處理程序的狀態。
+
+新增Fibre Channel節點的程序與新增元素iSCSI儲存節點至叢集的程序相同。Fibre Channel節點會以節點ID登錄在系統中。當它們可存取時、會進入「擱置的節點」狀態。「listAllNodes」方法會傳回iSCSI節點的pendingNodeID、以及可新增至叢集的任何Fibre Channel節點。
+
+將節點新增至已設定用於虛擬網路的叢集時、系統需要足夠數量的虛擬儲存IP位址、才能將虛擬IP分配給新節點。如果新節點沒有可用的虛擬IP位址、則「addNode」作業會失敗。使用「共享虛擬網路」方法、將更多儲存IP位址新增至虛擬網路。
+
+新增節點之後、節點上的任何磁碟機都會可供使用、您可以使用「AddDrives」（新增磁碟機）方法來新增磁碟機、以增加叢集的儲存容量。
+
+
+NOTE: 在新增節點之後、可能需要幾秒鐘的時間才能啟動並將其磁碟機登錄為可用。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+自動安裝
+ a| 
+如果為true、則新增時會在節點上執行恢復原廠映像（RTFI）。預設行為是執行RTFI。如果「cEnablAutoInstall」叢集常量為假、則優先於此參數。如果正在進行升級、無論此參數的值為何、RTFI程序都不會發生。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+pendingNode
+ a| 
+要新增之節點的擱置節點ID。您可以使用ListVendingNode方法列出所有擱置的節點。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+自動安裝
+ a| 
+是否將新增的節點傳回原廠映像。
+ a| 
+布林值
+
+
+
+ a| 
+節點
+ a| 
+將先前的「pendingNodeID」對應到「nodeID」的物件陣列。當您新增執行不相容軟體版本的擱置節點時、此陣列會包含一個asyncdyle值、您可以搭配Getynprynet方法來查詢自動映像處理程序的狀態。
+ a| 
+Json物件陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "AddNodes",
+   "params": {
+     "autoInstall" : true,
+     "pendingNodes" : [1]
+   },
+   "id":1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  id: null,
+  result: {
+    autoInstall: true,
+    nodes: [
+      {
+        activeNodeKey: "giAm2ep1hA",
+        assignedNodeID: 6,
+        asyncHandle: 3,
+        cip: "10.10.5.106",
+        mip: "192.168.133.106",
+        pendingNodeID: 2,
+        platformInfo: {
+          chassisType: "R620",
+          cpuModel: "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+          nodeMemoryGB: 72,
+          nodeType: "SF3010"
+        },
+        sip: "10.10.5.106",
+        softwareVersion: "9.0.0.1077"
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_adddrives.adoc[新增磁碟機]
+* xref:reference_element_api_getasyncresult.adoc[Get非 同步結果]
+* xref:reference_element_api_listallnodes.adoc[listAllNode]
+* xref:reference_element_api_modifyvirtualnetwork.adoc[ModifyVirtualNetwork]
+

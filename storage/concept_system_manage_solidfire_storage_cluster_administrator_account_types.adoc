@@ -1,0 +1,27 @@
+---
+permalink: storage/concept_system_manage_solidfire_storage_cluster_administrator_account_types.html 
+sidebar: sidebar 
+keywords: user types, account, cluster, access active nodes, per-node UI 
+summary: 執行NetApp Element 下列兩種類型的系統管理員帳戶可存在於執行此軟件的儲存叢集：主叢集系統管理員帳戶和叢集系統管理員帳戶。 
+---
+= 儲存叢集管理員帳戶類型
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+執行NetApp Element 下列兩種類型的系統管理員帳戶可存在於執行此軟件的儲存叢集：主叢集系統管理員帳戶和叢集系統管理員帳戶。
+
+* *主叢集管理員帳戶*
++
+此管理員帳戶是在建立叢集時建立的。此帳戶是主要管理帳戶、具有最高層級的叢集存取權。此帳戶類似於Linux系統中的root使用者。您可以變更此系統管理員帳戶的密碼。
+
+* *叢集管理員帳戶*
++
+您可以為叢集管理員帳戶提供有限的管理存取權限、以便在叢集中執行特定工作。指派給每個叢集管理員帳戶的認證資料、用於驗證儲存系統內的API和元素UI要求。
+
+
+
+
+NOTE: 需要本機（非LDAP）叢集管理員帳戶、才能透過每節點UI存取叢集中的作用中節點。存取尚未屬於叢集一部分的節點時、不需要帳戶認證。

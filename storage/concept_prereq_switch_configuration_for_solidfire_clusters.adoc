@@ -1,0 +1,76 @@
+---
+permalink: storage/concept_prereq_switch_configuration_for_solidfire_clusters.html 
+sidebar: sidebar 
+keywords: cluster switch configuration, best practices for switch configuration, optimal storage performance, node hardware, traffic, cluster, Element software, best practices, switches, switch requirements, storage, performance, storage performance 
+summary: 該產品具備特定的交換器需求和最佳實務做法、NetApp Element 可提供最佳的儲存效能。 
+---
+= 執行Element軟體的叢集交換器組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+該產品具備特定的交換器需求和最佳實務做法、NetApp Element 可提供最佳的儲存效能。
+
+儲存節點需要10或25GbE乙太網路交換器、視特定節點硬體而定、才能進行iSCSI儲存服務和節點內部叢集服務通訊。1GbE交換器可用於下列類型的流量：
+
+* 管理叢集和節點
+* 節點之間的叢集內管理流量
+* 叢集節點與管理節點虛擬機器之間的流量
+
+
+|===
+
+
+ a| 
+*最佳實務做法：*在設定叢集流量的乙太網路交換器時、您應該實作下列最佳實務做法：
+
+* 對於叢集中的非儲存流量、請部署一對1GbE交換器、以提供高可用度和負載共享。
+* 在儲存網路交換器上、成對部署交換器、並設定及使用巨型框架（MTU大小9216位元組）。如此可確保成功安裝、並消除因封包分散而導致的儲存網路錯誤。
+
+
+|===
+元素部署至少需要兩個網路區段、每個區段的流量類型如下：
+
+* 管理
+* 儲存/資料
+
+
+根據NetApp H系列儲存節點機型和規劃的佈線組態、您可以使用不同的交換器來實體分隔這些網路、或使用VLAN以邏輯方式分隔這些網路。不過、在大多數部署中、您都需要使用VLAN以邏輯方式分隔這些網路。
+
+儲存節點必須能夠在部署之前、部署期間及部署後進行通訊。
+
+如果您要為儲存節點實作個別的管理網路、請確定這些管理網路之間有網路路由。這些網路必須指派閘道、而且閘道之間必須有路由。確保每個新節點都有指派的閘道、以利節點與管理網路之間的通訊。
+
+下列項目需要使用：NetApp Element
+
+* 所有連接至NetApp H系列儲存節點的交換器連接埠、都必須設定為跨距樹狀結構邊緣連接埠。
++
+** 在Cisco交換器上、視交換器機型、軟體版本和連接埠類型而定、您可以使用下列其中一個命令來執行此作業：
++
+*** 「ming-tree連接埠類型edge」
+*** 「ming-tree連接埠類型edge trunk」
+*** 「平移樹狀結構」
+*** 「移動樹狀結構」portfast trunk
+
+
+** 在Mellanox交換器上、您可以使用「shoitming-tree port type edge」命令來執行此作業。
+
+
+* 處理儲存流量的交換器必須支援每個連接埠至少10GbE的速度（每個連接埠最多支援25GbE）。
+* 處理管理流量的交換器必須支援每個連接埠至少1GbE的速度。
+* 您必須在處理儲存流量的交換器連接埠上設定巨型框架。主機必須能夠端點對端傳送9000位元組封包、才能順利安裝。
+* 所有儲存節點之間的往返網路延遲不應超過2毫秒。
+
+
+有些節點透過專屬的管理連接埠、提供額外的頻外管理功能。NetApp H300S、H500S和H700S節點也允許透過連接埠A進行IPMI存取最佳實務做法是為環境中的所有節點設定頻外管理、以簡化遠端管理。
+
+
+
+== 以取得更多資訊
+
+* https://docs.netapp.com/us-en/hci/docs/hci_prereqs_network_switch.html["網路和交換器需求NetApp HCI"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

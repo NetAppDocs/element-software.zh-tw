@@ -1,0 +1,1110 @@
+---
+permalink: api/reference_element_api_app_b_access_control.html 
+sidebar: sidebar 
+keywords: access,control,type 
+summary: 可用的元素API方法會因您設定的存取類型而異。 
+---
+= 存取控制
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+可用的元素API方法會因您設定的存取類型而異。
+
+
+
+== 帳戶
+
+帳戶存取類型可使用下列方法：
+
+|===
+
+
+ a| 
+AddAccount
+
+
+
+ a| 
+GetAccountByID
+
+
+
+ a| 
+修改帳戶
+
+
+
+ a| 
+GetAccountByName
+
+
+
+ a| 
+清單帳戶
+
+
+
+ a| 
+GetAccountEfficiency
+
+
+
+ a| 
+遠端帳戶
+
+|===
+
+
+== 系統管理員
+
+系統管理員存取類型可使用所有方法。
+
+
+
+== 叢集管理
+
+叢集管理存取類型可使用下列方法：
+
+|===
+
+
+ a| 
+AddClusterAdmin
+
+
+
+ a| 
+清單備份目標
+
+
+
+ a| 
+AddInitiatorsToVolume存取群組
+
+
+
+ a| 
+ListBulkVolume工作
+
+
+
+ a| 
+AddLdapClusterAdmin
+
+
+
+ a| 
+listClusterAdmins
+
+
+
+ a| 
+AddVirtualNetwork
+
+
+
+ a| 
+listClusterPaairs
+
+
+
+ a| 
+AddVirtualNetwork
+
+
+
+ a| 
+清單節點光纖通道連接埠資訊
+
+
+
+ a| 
+AddVolumetoVolume存取群組
+
+
+
+ a| 
+清單備份目標
+
+
+
+ a| 
+CloneMultiploVolumes
+
+
+
+ a| 
+清單硬體
+
+
+
+ a| 
+CompleteClusterPairing
+
+
+
+ a| 
+ListFIBreChannelSessions
+
+
+
+ a| 
+完成Volume配對
+
+
+
+ a| 
+ListFibreChannelPortInfo
+
+
+
+ a| 
+建立備份目標
+
+
+
+ a| 
+清單群組快照
+
+
+
+ a| 
+建立排程
+
+
+
+ a| 
+listActivePaedVolumes
+
+
+
+ a| 
+建立Snapshot
+
+
+
+ a| 
+ModifyBackup目標
+
+
+
+ a| 
+建立支援產品組合
+
+
+
+ a| 
+ModifyClusterAdmin
+
+
+
+ a| 
+CreClusterSupportBundle
+
+
+
+ a| 
+ModifyGroupSnapshot
+
+
+
+ a| 
+CreatGroupSnapshot
+
+
+
+ a| 
+ModifyClusterFull閥 值
+
+
+
+ a| 
+建立Volume存取群組
+
+
+
+ a| 
+ModifyVolume存取群組
+
+
+
+ a| 
+刪除AllSupportBundles
+
+
+
+ a| 
+ModifyVolume存取群組LUN指派
+
+
+
+ a| 
+刪除Snapshot
+
+
+
+ a| 
+ModifyVolume空氣
+
+
+
+ a| 
+刪除GroupSnapshot
+
+
+
+ a| 
+ModifyVirtualNetwork
+
+
+
+ a| 
+刪除Volume存取群組
+
+
+
+ a| 
+遠端叢集管理
+
+
+
+ a| 
+DisableEncryptionAtRest
+
+
+
+ a| 
+RemoveVolume Pair
+
+
+
+ a| 
+已停用Ldap驗 證
+
+
+
+ a| 
+遠端虛擬網路
+
+
+
+ a| 
+停用Snmp
+
+
+
+ a| 
+RemoveVolumesFromVolume存取群組
+
+
+
+ a| 
+啟用EncryptionAtRest
+
+
+
+ a| 
+RemoveInitialatorsFromVolume存取群組
+
+
+
+ a| 
+啟用Ldap驗 證
+
+
+
+ a| 
+RollbackToSnapshot
+
+
+
+ a| 
+啟用Snmp
+
+
+
+ a| 
+RollbackToGroupSnapshot
+
+
+
+ a| 
+GetBackup目標
+
+
+
+ a| 
+SetLoginSessionInfo
+
+
+
+ a| 
+GetClusterFullThreshold
+
+
+
+ a| 
+SetNtpInfo
+
+
+
+ a| 
+GetClusterMasterNodeID
+
+
+
+ a| 
+SetSnmpACL
+
+
+
+ a| 
+GetHardwareConfig
+
+
+
+ a| 
+SetSnmpInfo
+
+
+
+ a| 
+GetLdapConfiguration
+
+
+
+ a| 
+SetSnmpTrapInfo
+
+
+
+ a| 
+GetLoginSessionInfo
+
+
+
+ a| 
+SetRemoteLoggingHos
+
+
+
+ a| 
+GetNtpInfo
+
+
+
+ a| 
+關機
+
+
+
+ a| 
+GetNvramInfo
+
+
+
+ a| 
+StartBulkVolume Read
+
+
+
+ a| 
+GetRawStats
+
+
+
+ a| 
+StartBulkVolume寫入
+
+
+
+ a| 
+GetSnmpACL
+
+
+
+ a| 
+StartClusterPairing
+
+
+
+ a| 
+GetVolume存取群組效率
+
+
+
+ a| 
+StartVolume配對
+
+
+
+ a| 
+GetVolume存取LUN指派
+
+
+
+ a| 
+TestLdap驗 證
+
+
+
+ a| 
+GetVirtualNetwork
+
+
+
+ a| 
+
+|===
+
+
+== 磁碟機
+
+磁碟機存取類型可使用下列方法：
+
+|===
+
+
+ a| 
+清單磁碟機
+
+
+
+ a| 
+遠端磁碟機
+
+
+
+ a| 
+新增磁碟機
+
+
+
+ a| 
+SecureEraseDrives
+
+|===
+
+
+== 節點
+
+節點存取類型可使用下列方法：
+
+|===
+
+
+ a| 
+附加節點
+
+
+
+ a| 
+ListVendingNode
+
+
+
+ a| 
+ListActiveNode
+
+
+
+ a| 
+遠端節點
+
+|===
+
+
+== 讀取
+
+讀取存取類型可使用下列方法：
+
+|===
+
+
+ a| 
+GetAccountByID
+
+
+
+ a| 
+清單Clonewors
+
+
+
+ a| 
+GetAccountByName
+
+
+
+ a| 
+listDeletedVolumes
+
+
+
+ a| 
+Get非 同步結果
+
+
+
+ a| 
+清單硬體
+
+
+
+ a| 
+GetClusterCapacity
+
+
+
+ a| 
+清單磁碟機
+
+
+
+ a| 
+GetDefaultQoS
+
+
+
+ a| 
+清單事件
+
+
+
+ a| 
+GetDriveStats
+
+
+
+ a| 
+清單
+
+
+
+ a| 
+GetSoftwareUpgrade
+
+
+
+ a| 
+ListVendingNode
+
+
+
+ a| 
+GetVolume統計資料
+
+
+
+ a| 
+listSyncJobs
+
+
+
+ a| 
+清單帳戶
+
+
+
+ a| 
+listVolume存取群組
+
+
+
+ a| 
+ListActiveNode
+
+
+
+ a| 
+listVolume狀態ByAccount
+
+
+
+ a| 
+ListActiveNode
+
+
+
+ a| 
+listVolumesStatsByVolume
+
+
+
+ a| 
+listActiveVolumes
+
+
+
+ a| 
+listVolume狀態ByVolume存取群組
+
+
+
+ a| 
+listAllNode
+
+
+
+ a| 
+listVolumesForAccount
+
+
+
+ a| 
+清單備份目標
+
+|===
+
+
+== 報告
+
+報告存取類型可使用下列方法：
+
+|===
+
+
+ a| 
+ClearClusterFaults
+
+
+
+ a| 
+GetVolume效率
+
+
+
+ a| 
+GetAccountEfficiency
+
+
+
+ a| 
+GetVolume統計資料
+
+
+
+ a| 
+GetClusterCapacity
+
+
+
+ a| 
+清單Clonewors
+
+
+
+ a| 
+GetClusterHardwareInfo
+
+
+
+ a| 
+listClusterFaults
+
+
+
+ a| 
+GetClusterInfo
+
+
+
+ a| 
+listClusterPaairs
+
+
+
+ a| 
+GetClusterMasterNodeID
+
+
+
+ a| 
+清單硬體
+
+
+
+ a| 
+GetClusterStats
+
+
+
+ a| 
+清單事件
+
+
+
+ a| 
+GetDriveHardwareInfo
+
+
+
+ a| 
+清單
+
+
+
+ a| 
+GetDriveStats
+
+
+
+ a| 
+清單排程
+
+
+
+ a| 
+GetNetwork組態
+
+
+
+ a| 
+列表服務
+
+
+
+ a| 
+GetNodeHardwareInfo
+
+
+
+ a| 
+listSyncJobs
+
+
+
+ a| 
+GetNodeStats
+
+
+
+ a| 
+清單虛擬網路
+
+
+
+ a| 
+GetSnmpInfo
+
+
+
+ a| 
+listVolume狀態ByAccount
+
+
+
+ a| 
+GetSnmpTrapInfo
+
+
+
+ a| 
+listVolumesStatsByVolume
+
+
+
+ a| 
+GetVolume存取群組效率
+
+
+
+ a| 
+listVolume狀態ByVolume存取群組
+
+|===
+
+
+== 儲存庫
+
+清單所有節點方法可用於儲存庫存取類型。
+
+
+
+== 磁碟區
+
+磁碟區存取類型可使用下列方法：
+
+|===
+
+
+ a| 
+建立Volume
+
+
+
+ a| 
+刪除Volume
+
+
+
+ a| 
+ModifyBackup目標
+
+
+
+ a| 
+CloneVolume
+
+
+
+ a| 
+刪除Volume配對
+
+
+
+ a| 
+ModifyVolumes
+
+
+
+ a| 
+CloneMultiploVolumes
+
+
+
+ a| 
+GetBackup目標
+
+
+
+ a| 
+ModifyVolume空氣
+
+
+
+ a| 
+建立備份目標
+
+
+
+ a| 
+GetDefaultQoS
+
+
+
+ a| 
+PurgeDeletedVolume
+
+
+
+ a| 
+建立Snapshot
+
+
+
+ a| 
+listActiveVolumes
+
+
+
+ a| 
+遠端備份目標
+
+
+
+ a| 
+CreatGroupSnapshot
+
+
+
+ a| 
+清單備份目標
+
+
+
+ a| 
+RemoveVolume Pair
+
+
+
+ a| 
+完成Volume配對
+
+
+
+ a| 
+清單群組快照
+
+
+
+ a| 
+恢復刪除Volume
+
+
+
+ a| 
+CloneMultiploVolumes
+
+
+
+ a| 
+listVolumesForAccount
+
+
+
+ a| 
+RollbackToGroupSnapshot
+
+
+
+ a| 
+刪除GroupSnapshot
+
+
+
+ a| 
+listDeletedVolumes
+
+
+
+ a| 
+RollbackToSnapshot
+
+
+
+ a| 
+刪除Snapshot
+
+
+
+ a| 
+清單群組快照
+
+
+
+ a| 
+StartBulkVolume Read
+
+
+
+ a| 
+StartBulkVolume寫入
+
+
+
+ a| 
+StartVolume配對
+
+
+
+ a| 
+更新BulkVolume狀態
+
+|===
+
+
+== 寫入
+
+寫入存取類型可使用下列方法：
+
+|===
+
+
+ a| 
+新增磁碟機
+
+
+
+ a| 
+遠端節點
+
+
+
+ a| 
+附加節點
+
+
+
+ a| 
+遠端帳戶
+
+
+
+ a| 
+AddAccount
+
+
+
+ a| 
+RemoveVolumesFromVolume存取群組
+
+
+
+ a| 
+AddVolume ToVolume存取群組
+
+
+
+ a| 
+RemoveInitialatorsFromVolume存取群組
+
+
+
+ a| 
+AddInitiatorsToVolume存取群組
+
+
+
+ a| 
+刪除Volume存取群組
+
+
+
+ a| 
+建立Volume存取群組
+
+
+
+ a| 
+刪除Volume
+
+
+
+ a| 
+ModifyVolume存取群組
+
+
+
+ a| 
+恢復刪除Volume
+
+
+
+ a| 
+修改帳戶
+
+
+
+ a| 
+PurgeDeletedVolume
+
+
+
+ a| 
+建立Volume
+
+
+
+ a| 
+ModifyVolume
+
+
+
+ a| 
+CloneVolume
+
+
+
+ a| 
+Get非 同步結果
+
+
+
+ a| 
+遠端磁碟機
+
+|===

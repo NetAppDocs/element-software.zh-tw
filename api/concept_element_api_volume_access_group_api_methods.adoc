@@ -1,0 +1,33 @@
+---
+permalink: api/concept_element_api_volume_access_group_api_methods.html 
+sidebar: sidebar 
+keywords: volume,access,group,method,methods,API,managing,manage 
+summary: Volume存取群組方法可讓您新增、移除、檢視及修改Volume存取群組、這些群組是使用者可使用iSCSI或Fibre Channel啟動器存取的磁碟區集合。 
+---
+= Volume存取群組API方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume存取群組方法可讓您新增、移除、檢視及修改Volume存取群組、這些群組是使用者可使用iSCSI或Fibre Channel啟動器存取的磁碟區集合。
+
+* xref:reference_element_api_addinitiatorstovolumeaccessgroup.adoc[AddInitiatorsToVolume存取群組]
+* xref:reference_element_api_addvolumestovolumeaccessgroup.adoc[AddVolumesToVolume存取群組]
+* xref:reference_element_api_createvolumeaccessgroup.adoc[建立Volume存取群組]
+* xref:reference_element_api_deletevolumeaccessgroup.adoc[刪除Volume存取群組]
+* xref:reference_element_api_listvolumeaccessgroups.adoc[listVolume存取群組]
+* xref:reference_element_api_removevolumesfromvolumeaccessgroup.adoc[RemoveVolumesFromVolume存取群組]
+* xref:reference_element_api_removeinitiatorsfromvolumeaccessgroup.adoc[RemoveInitialatorsFromVolume存取群組]
+* xref:reference_element_api_modifyvolumeaccessgroup.adoc[ModifyVolume存取群組]
+* xref:reference_element_api_getvolumeaccessgroupefficiency.adoc[GetVolume存取群組效率]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

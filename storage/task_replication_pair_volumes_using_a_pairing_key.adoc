@@ -1,0 +1,74 @@
+---
+permalink: storage/task_replication_pair_volumes_using_a_pairing_key.html 
+sidebar: sidebar 
+keywords: volume pairings, pairing key, replication 
+summary: 如果您沒有遠端叢集的叢集管理認證、可以使用配對金鑰、將磁碟區與遠端叢集上的其他磁碟區配對。 
+---
+= 使用配對金鑰配對磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您沒有遠端叢集的叢集管理認證、可以使用配對金鑰、將磁碟區與遠端叢集上的其他磁碟區配對。
+
+.您需要的是 #8217 ；需要的是什麼
+* 請確定包含磁碟區的叢集已配對。
+* 請確定遠端叢集上有一個用於配對的Volume。
++
+
+NOTE: 您可以在配對程序之後指派複寫來源和目標。複寫來源或目標可以是Volume配對中的任一Volume。您應該建立不含資料且具有來源Volume確切特性的目標Volume、例如Volume的大小、區塊大小設定（512e或4K）、以及QoS組態。如果您將現有磁碟區指派為複寫目標、則該磁碟區上的資料將會遭到覆寫。目標Volume的大小可以大於或等於來源Volume、但不能變小。
+
+
+
+.步驟
+. 選擇*管理*>*磁碟區*。
+. 針對您要配對的磁碟區、按一下*「Actions」（動作）*圖示。
+. 按一下*配對*。
+. 在*配對Volume *對話方塊中、選取*開始配對*。
+. 選取*我不*表示您沒有遠端叢集的存取權。
+. 從清單中選取*複寫模式*：
++
+** *即時（非同步）*：寫入作業在來源叢集上提交後、便會對用戶端進行認可。
+** *即時（同步）*：寫入作業會在來源叢集和目標叢集上提交後、確認寫入至用戶端。
+** *僅快照*：僅複寫在來源叢集上建立的快照。不會複寫來源Volume的作用中寫入內容。
+
+
+. 按一下「*產生金鑰*」。
++
+
+NOTE: 此動作會產生配對的文字金鑰、並在本機叢集上建立未設定的Volume配對。如果您未完成此程序、則需要手動刪除Volume配對。
+
+. 將配對金鑰複製到電腦的剪貼簿。
+. 讓遠端叢集站台的叢集管理員可以存取配對金鑰。
++
+
+NOTE: Volume配對金鑰應以安全的方式處理、不得以允許意外或不安全存取的方式使用。
+
++
+
+IMPORTANT: 請勿修改配對金鑰中的任何字元。如果修改金鑰、金鑰就會變成無效。
+
+. 在遠端叢集元素UI中、選取*管理*>*磁碟區*。
+. 針對您要配對的磁碟區、按一下「動作」圖示。
+. 按一下*配對*。
+. 在*配對Volume *對話方塊中、選取*完整配對*。
+. 將另一個叢集的配對金鑰貼到*配對金鑰*方塊中。
+. 按一下*完整配對*。
++
+確認配對之後、兩個叢集便會開始連接磁碟區進行配對。在配對過程中、您可以在* Volume Pair*視窗的* Volume Status *（* Volume Pair*）欄中看到訊息。Volume配對會顯示「PausedMisconfigured」、直到指派Volume配對來源和目標為止。
+
++
+成功完成配對後、建議您重新整理Volumes（磁碟區）表格、從配對磁碟區的* Actions（動作）*清單中移除* Pair*（配對）選項。如果您不重新整理表格、*配對*選項仍可供選擇。如果您再次選取「*配對*」選項、就會開啟新的索引標籤、而且由於磁碟區已配對、系統會在Element UI頁面的「*配對Volume *」視窗中報告「磁碟區配對失敗：xVolume AlreadyPhed」錯誤訊息。
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_replication_volume_pairing_messages.adoc[Volume配對訊息]
+* xref:reference_replication_volume_pairing_warnings.adoc[Volume配對警告]
+* xref:task_replication_assign_replication_source_and_target_to_paired_volumes.adoc[將複寫來源和目標指派給配對的磁碟區]
+

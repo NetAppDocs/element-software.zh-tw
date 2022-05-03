@@ -1,0 +1,78 @@
+---
+permalink: api/reference_element_api_idpconfiginfo.html 
+sidebar: sidebar 
+keywords: objects,object,idpConfigInfo 
+summary: idpConfigInfo物件包含有關協力廠商身分識別供應商（IDP）的組態與整合詳細資料。 
+---
+= idpConfigInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+idpConfigInfo物件包含有關協力廠商身分識別供應商（IDP）的組態與整合詳細資料。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+已啟用
+ a| 
+指定是否啟用此協力廠商IdPconfiguration。
+ a| 
+布林值
+
+
+
+ a| 
+idpConfiguration ID
+ a| 
+協力廠商IDP組態的UUID。
+ a| 
+UUID
+
+
+
+ a| 
+idp中繼 資料
+ a| 
+SAML 2.0單一登入的組態與整合詳細資料。
+ a| 
+字串
+
+
+
+ a| 
+idpName
+ a| 
+用於擷取SAML 2.0單一登入之IDP供應商的名稱。
+ a| 
+字串
+
+
+
+ a| 
+服務提供者憑證
+ a| 
+用於與此IDP通訊的PEP格式Base64編碼的PKCS#10 X．509憑證。
+ a| 
+字串
+
+
+
+ a| 
+SpMetadata Url
+ a| 
+從叢集擷取服務供應商（SP）中繼資料的URL、以提供給IDP以建立信任關係。
+ a| 
+字串
+
+|===

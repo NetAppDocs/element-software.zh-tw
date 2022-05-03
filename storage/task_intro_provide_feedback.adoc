@@ -1,0 +1,30 @@
+---
+permalink: storage/task_intro_provide_feedback.html 
+sidebar: sidebar 
+keywords: feedback, web user interface, UI issues, feedback form, relevant information, screenshots 
+summary: 您可以使用整個UI中可存取的意見反應表單、協助改善Element軟體Web使用者介面、並解決任何UI問題。 
+---
+= 提供意見回饋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用整個UI中可存取的意見反應表單、協助改善Element軟體Web使用者介面、並解決任何UI問題。
+
+. 在元素UI的任何頁面中、按一下「*意見反應*」按鈕。
+. 在「摘要」和「說明」欄位中輸入相關資訊。
+. 附上任何實用的螢幕擷取畫面。
+. 輸入名稱和電子郵件地址。
+. 選取此核取方塊以包含目前環境的相關資料。
+. 按一下*提交*。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

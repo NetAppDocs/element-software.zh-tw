@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_deleteqospolicy.html 
+sidebar: sidebar 
+keywords: QoS,policy,policies,delete,deleting,DeleteQoSPolicy 
+summary: 您可以使用刪除QoSPolicy方法、從系統中刪除QoS原則。使用此原則所建立或修改之所有Volume的QoS設定不受影響。 
+---
+= 刪除QoSPolicy
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「刪除QoSPolicy」方法、從系統中刪除QoS原則。使用此原則所建立或修改之所有Volume的QoS設定不受影響。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+qosPolicyID
+ a| 
+要刪除的QoS原則ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 663,
+  "method": "DeleteQoSPolicy",
+  "params": {
+    "qosPolicyID": 4
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 663,
+  "result": {}
+}
+----
+
+
+== 新的自版本
+
+9.6

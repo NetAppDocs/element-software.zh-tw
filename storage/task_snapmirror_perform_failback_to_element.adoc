@@ -1,0 +1,23 @@
+---
+permalink: storage/task_snapmirror_perform_failback_to_element.html 
+sidebar: sidebar 
+keywords: failback, perform a failbacl, Element, snapmirror 
+summary: 當主要方面的問題已經解決時、您必須重新同步原始來源Volume並容錯回復NetApp Element 至該軟體。您執行的步驟會因原始來源磁碟區是否仍存在或是否需要容錯回復至新建立的磁碟區而有所不同。 
+---
+= 執行容錯回復至元素
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當主要方面的問題已經解決時、您必須重新同步原始來源Volume並容錯回復NetApp Element 至該軟體。您執行的步驟會因原始來源磁碟區是否仍存在或是否需要容錯回復至新建立的磁碟區而有所不同。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_snapmirror_perform_failback_when_source_volume_exists.adoc[當來源磁碟區仍存在時、請執行容錯回復]
+* xref:task_snapmirror_performing_failback_when_source_volume_no_longer_exists.adoc[當來源磁碟區不再存在時、請執行容錯回復]
+* xref:concept_snapmirror_failback_scenarios.adoc[SnapMirror容錯回復案例]
+

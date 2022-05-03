@@ -1,0 +1,20 @@
+---
+permalink: storage/task_replication_delete_volume_pairs.html 
+sidebar: sidebar 
+keywords: volume pairs, delete 
+summary: 若要移除兩個磁碟區之間的配對關聯、您可以刪除磁碟區配對。 
+---
+= 刪除Volume配對
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要移除兩個磁碟區之間的配對關聯、您可以刪除磁碟區配對。
+
+. 選擇*資料保護*>*磁碟區配對*。
+. 按一下您要刪除之磁碟區配對的「動作」圖示。
+. 按一下*刪除*。
+. 確認訊息。
+

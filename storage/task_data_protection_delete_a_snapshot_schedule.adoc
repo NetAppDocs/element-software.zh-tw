@@ -1,0 +1,20 @@
+---
+permalink: storage/task_data_protection_delete_a_snapshot_schedule.html 
+sidebar: sidebar 
+keywords: snapshot schedule, delete 
+summary: 您可以刪除快照排程。刪除排程之後、它不會執行任何未來排程的快照。排程所建立的任何快照都會保留在儲存系統上。 
+---
+= 刪除快照排程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以刪除快照排程。刪除排程之後、它不會執行任何未來排程的快照。排程所建立的任何快照都會保留在儲存系統上。
+
+. 按一下*資料保護*>*排程*。
+. 按一下您要刪除之排程的*動作*圖示。
+. 在產生的功能表中、按一下*刪除*。
+. 確認行動。
+

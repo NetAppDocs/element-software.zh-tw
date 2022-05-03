@@ -1,0 +1,140 @@
+---
+permalink: api/reference_element_api_createstoragecontainer.html 
+sidebar: sidebar 
+keywords: create,creating,storage,container,virtual,volume,volumes,vvol,vvols,CreateStorageContainer 
+summary: 您可以使用Create StorageContainer方法來建立虛擬Volume（VVOL）儲存容器。您可以使用儲存容器來進行報告和資源配置。您需要建立至少一個儲存容器、才能使用虛擬磁碟區功能。 
+---
+= CreStorageContainer
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Create StorageContainer」（建立儲存容器）方法來建立虛擬Volume（VVOL）儲存容器。您可以使用儲存容器來進行報告和資源配置。您需要建立至少一個儲存容器、才能使用虛擬磁碟區功能。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+名稱
+ a| 
+儲存容器名稱。遵循Element軟體帳戶命名限制。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+帳戶ID
+ a| 
+將成為儲存容器的非儲存容器帳戶。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+初始化者機密
+ a| 
+啟動器的CHAP驗證秘密。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+目標機密
+ a| 
+目標的CHAP驗證秘密。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+storageContainer
+ a| 
+包含新建立儲存容器相關資訊的物件。
+ a| 
+xref:reference_element_api_storagecontainer.adoc[storageContainer]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "CreateStorageContainer",
+    "params": {
+        "name" : "example"
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "storageContainer": {
+      "accountID": 8,
+      "initiatorSecret": "rVTOi25^H.d;cP}l",
+      "name": "example",
+      "protocolEndpointType": "SCSI",
+      "status": "active",
+      "storageContainerID": "a9ec1138-e386-4a44-90d7-b9acbbc05176",
+      "targetSecret": "6?AEIxWpvo6,!boM"
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

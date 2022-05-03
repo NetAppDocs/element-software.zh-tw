@@ -1,0 +1,42 @@
+---
+permalink: api/reference_element_api_nodeprotectiondomains.html 
+sidebar: sidebar 
+keywords: object,objects,node,protection domains 
+summary: nodeProtectionDomain物件包含有關節點識別及與該節點相關之保護網域的資訊。 
+---
+= 節點保護網域
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+nodeProtectionDomain物件包含有關節點識別及與該節點相關之保護網域的資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+節點ID
+ a| 
+節點的唯一識別碼。
+ a| 
+整數
+
+
+
+ a| 
+保護網域
+ a| 
+節點所屬的保護網域清單。
+ a| 
+link:reference_element_api_protectiondomain.md#GUID-96388C5C-ACA2-44D9-86CE-19FEF0825A11["保護網域"]
+
+|===

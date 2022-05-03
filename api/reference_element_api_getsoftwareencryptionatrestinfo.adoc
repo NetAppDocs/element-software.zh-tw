@@ -1,0 +1,88 @@
+---
+permalink: api/reference_element_api_getsoftwareencryptionatrestinfo.html 
+sidebar: sidebar 
+keywords: system, api, security, get, getting, software encryption at rest 
+summary: 您可以使用GetSoftwareEncryptionAtRestInfo方法來取得叢集用來加密閒置資料的資訊。 
+---
+= GetSoftwareEncryptionAt恢復 資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetSoftwareEncryptionAtRestInfo」方法、取得叢集用來加密閒置資料的軟體加密閒置資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+[cols="4*"]
+|===
+| 參數 | 說明 | 類型 | 選用 
+
+
+| 主KeyInfo | 目前軟體加密閒置主要金鑰的相關資訊。 | EncryptionKeyInfo | 是的 
+
+
+| rekeyMasterKey非ResultID | 目前或最近重新輸入作業的非同步結果ID（若有）、如果尚未刪除。「GetSuccessynresult」輸出將包含一個「newkey」欄位、其中包含有關新主金鑰的資訊、以及包含舊金鑰相關資訊的「keyToDecommation」欄位。 | 整數 | 是的 
+
+
+| 州/省 | 目前的軟體閒置加密狀態。可能的值包括「停用」或「啟用」。 | 字串 | 錯 
+
+
+| 版本 | 每次啟用閒置軟體加密時、會遞增的版本編號。 | 整數 | 錯 
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+ "method": "getsoftwareencryptionatrestinfo"
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "masterKeyInfo": {
+            "keyCreatedTime": "2021-09-20T23:15:56Z",
+            "keyID": "4d80a629-a11b-40ab-8b30-d66dd5647cfd",
+            "keyManagementType": "internal"
+        },
+        "state": "enabled",
+        "version": 1
+    }
+}
+----
+
+
+== 新的自版本
+
+12.3.
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

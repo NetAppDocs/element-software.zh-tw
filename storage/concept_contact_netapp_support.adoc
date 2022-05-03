@@ -1,0 +1,27 @@
+---
+permalink: storage/concept_contact_netapp_support.html 
+sidebar: sidebar 
+keywords: contact,support 
+summary: 如果您需要NetApp產品的相關協助或有任何問題或意見、請聯絡NetApp支援部門。 
+---
+= 請聯絡NetApp支援部門
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您需要NetApp產品的相關協助或有任何問題或意見、請聯絡NetApp支援部門。
+
+* 網路：
++
+http://mysupport.netapp.com["mysupport.netapp.com"]
+
+* 電話：
++
+** 888.4.NETAPP（888.463.8277）（美國與加拿大）
+** 00.800.44.638277（EMEA /歐洲）
+** +800.800.80.800（亞太地區）
+
+
+

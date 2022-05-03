@@ -1,0 +1,35 @@
+---
+permalink: storage/task_intro_sort_lists.html 
+sidebar: sidebar 
+keywords: sort lists, sorting on a single column, sorting on multiple columns, sort button, column selections, using sort criteria 
+summary: 您可以根據元素UI中特定頁面的一或多個準則來排序清單資訊。這有助於您在螢幕上安排所需的資訊。 
+---
+= 排序清單
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根據元素UI中特定頁面的一或多個準則來排序清單資訊。這有助於您在螢幕上安排所需的資訊。
+
+. 若要依單一欄排序、請按一下欄標題、直到資訊依照所需順序排序為止。
+. 若要使用多個欄進行排序、請按一下您要排序的每個欄的欄標題、直到每個欄中的資訊依照所需的順序排序為止。
++
+使用多個欄進行排序時、會出現「排序」按鈕。
+
+. 若要重新排序排序條件、請執行下列步驟：
++
+.. 按一下*排序*。
++
+系統會在「排序依據」欄位中填入您的欄選擇。
+
+.. 依照清單的排序順序排列「排序依據」欄位中的欄。
++
+系統會排序清單資訊。
+
+
+
+. 若要移除單一排序準則、請按一下排序準則名稱旁的*移除*圖示。
+. 若要移除所有排序條件、請按一下*全部清除*。
+

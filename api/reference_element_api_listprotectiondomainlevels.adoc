@@ -1,0 +1,122 @@
+---
+permalink: api/reference_element_api_listprotectiondomainlevels.html 
+sidebar: sidebar 
+keywords: list,listing,protection,domain,levels,level,listprotectiondomainlevels 
+summary: 您可以使用ListProtectionDomainLevels方法來列出儲存叢集的容錯度和恢復能力層級。容錯層級表示叢集在發生故障時能夠繼續讀取及寫入資料、而恢復層級則表示儲存叢集能夠自動從一或多個故障中自我修復。 
+---
+= 清單保護網域層級
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ListProtectionDomainLevels」方法來列出儲存叢集的容錯度和恢復能力層級。容錯層級表示叢集在發生故障時能夠繼續讀取和寫入資料、而恢復層級則表示儲存叢集能夠自動從一或多個故障中自我修復。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+保護網域層級
+ a| 
+不同保護網域層級的清單、每個層級都提供儲存叢集的容錯能力和恢復能力資訊。
+ a| 
+xref:reference_element_api_protectiondomainlevel.adoc[保護網域層級]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListProtectionDomainLevels",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"protectionDomainLevels": [
+			{
+				"protectionDomainType": "node",
+				"resiliency": {
+					"protectionSchemeResiliencies": [
+							{
+								"protectionScheme": "doubleHelix",
+								"sustainableFailuresForBlockData": 0,
+								"sustainableFailuresForMetadata": 1
+							}
+					],
+					"singleFailureThresholdBytesForBlockData": 0,
+					"sustainableFailuresForEnsemble": 1
+				},
+				"tolerance": {
+					"protectionSchemeTolerances": [
+							{
+								"protectionScheme": "doubleHelix",
+								"sustainableFailuresForBlockData": 0,
+								"sustainableFailuresForMetadata": 1
+							}
+					],
+					"sustainableFailuresForEnsemble": 1
+				}
+			},
+			{
+				"protectionDomainType": "chassis",
+				"resiliency": {
+					"protectionSchemeResiliencies": [
+							{
+								"protectionScheme": "doubleHelix",
+								"sustainableFailuresForBlockData": 0,
+								"sustainableFailuresForMetadata": 1
+							}
+					],
+					"singleFailureThresholdBytesForBlockData": 0,
+					"sustainableFailuresForEnsemble": 1
+				},
+				"tolerance": {
+					"protectionSchemeTolerances": [
+							{
+								"protectionScheme": "doubleHelix",
+								"sustainableFailuresForBlockData": 0,
+								"sustainableFailuresForMetadata": 1
+							}
+					],
+					"sustainableFailuresForEnsemble": 1
+				}
+			}
+		]
+	}
+}
+----
+
+
+== 新的自版本
+
+11.0

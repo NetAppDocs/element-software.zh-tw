@@ -1,0 +1,95 @@
+---
+permalink: api/reference_element_api_removevirtualnetwork.html 
+sidebar: sidebar 
+keywords: virtual,network,networks,remove,removing,removevirtualnetwork 
+summary: 您可以使用RemoveVirtualNetwork方法移除先前新增的虛擬網路。 
+---
+= 遠端虛擬網路
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「移除虛擬網路」方法移除先前新增的虛擬網路。
+
+
+NOTE: 此方法需要虛擬網路ID或虛擬網路標籤做為參數、但不能同時做為參數。
+
+
+NOTE: 如果有與虛擬網路相關聯的啟動器、您就無法移除該網路。先解除啟動器的關聯、然後移除虛擬網路。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+虛擬網路ID
+ a| 
+識別要移除之虛擬網路的網路ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+虛擬化網路標籤
+ a| 
+識別要移除之虛擬網路的網路標籤。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "RemoveVirtualNetwork",
+  "params": {
+     "virtualNetworkID": 5
+    }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+
+
+== 新的自版本
+
+9.6

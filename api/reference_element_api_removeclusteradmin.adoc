@@ -1,0 +1,79 @@
+---
+permalink: api/reference_element_api_removeclusteradmin.html 
+sidebar: sidebar 
+keywords: cluster,admin,remove,removing,removeclusteradmin 
+summary: 您可以使用RemoveClusterAdmin方法來移除叢集管理員、LDAP叢集管理員或協力廠商身分識別提供者（IDP）叢集管理員。您無法移除「admin」叢集管理帳戶。 
+---
+= 遠端叢集管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「RemoveClusterAdmin」方法來移除叢集管理員、LDAP叢集管理員或協力廠商身分識別供應商（IDP）叢集管理員。您無法移除「admin」叢集管理帳戶。
+
+
+
+== 參數
+
+移除IDP叢集管理員時、若該管理員已驗證與協力廠商身分識別供應商IDP相關的工作階段、則這些工作階段將會登出、或可能會在其目前工作階段內喪失存取權限。存取權限遺失取決於移除的IDP叢集管理員是否符合指定使用者SAML屬性中多個IDP叢集管理員的其中一個。其餘一組相符的IDP叢集管理員會減少集合存取權限。其他叢集管理使用者類型會在移除叢集管理員時登出。
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+叢集管理ID
+ a| 
+要移除之叢集管理的ClusterAdminID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "RemoveClusterAdmin",
+   "params": {
+     "clusterAdminID"  : 2
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+ "id" : 1
+ "result" : { }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,149 @@
+---
+permalink: api/reference_element_api_listclusterfaults.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,fault,faults,listclusterfaults,error,errors 
+summary: 您可以使用清單叢集故障方法、列出叢集上偵測到的任何故障相關資訊。使用此方法、您可以列出目前的故障和已解決的故障。系統每30秒快取一次故障。 
+---
+= listClusterFaults
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ListClusterFaults」方法列出叢集上偵測到的任何故障相關資訊。使用此方法、您可以列出目前的故障和已解決的故障。系統每30秒快取一次故障。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+最佳實務做法
+ a| 
+包括由不理想的系統組態所觸發的故障。可能值：
+
+* 是的
+* 錯
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+故障類型
+ a| 
+決定傳回的故障類型。可能值：
+
+* 目前：列出作用中、未解決的故障。
+* 已解決：列出先前偵測並解決的故障。
+* 全部：列出目前和已解決的故障。您可以在故障物件的「已解決」成員中看到故障狀態。
+
+ a| 
+字串
+ a| 
+全部
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+故障
+ a| 
+描述所要求叢集故障的物件。
+ a| 
+xref:reference_element_api_fault.adoc[故障]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListClusterFaults",
+    "params": {
+      "faultTypes": "current",
+      "bestPractices": true
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "faults": [
+      {
+        "clusterFaultID": 1,
+        "code": "notUsingLACPBondMode",
+        "data": null,
+        "date": "2016-04-26T14:57:04.275286Z",
+        "details": "Bond1G interfaces found not using LACP bond mode. Nodes not set to LACP bond mode: {1,2,4,5}",
+        "driveID": 0,
+        "driveIDs": [],
+        "nodeHardwareFaultID": 0,
+        "nodeID": 0,
+        "resolved": false,
+        "resolvedDate": "",
+        "serviceID": 0,
+        "severity": "bestPractice",
+        "type": "cluster"
+      },
+      {
+        "clusterFaultID": 9,
+        "code": "disconnectedClusterPair",
+        "data": null,
+        "date": "2016-04-26T20:40:08.736597Z",
+        "details": "One of the clusters in a pair may have become misconfigured or disconnected.  Remove the local pairing and retry pairing the clusters. Disconnected Cluster Pairs: []. Misconfigured Cluster Pairs: [3]",
+        "driveID": 0,
+        "driveIDs": [],
+        "nodeHardwareFaultID": 0,
+        "nodeID": 0,
+        "resolved": false,
+        "resolvedDate": "",
+        "serviceID": 0,
+        "severity": "warning",
+        "type": "cluster"
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

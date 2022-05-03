@@ -1,0 +1,54 @@
+---
+permalink: api/reference_element_api_response_object_members.html 
+sidebar: sidebar 
+keywords: response,object,member 
+summary: 每個Element軟體API回應本文都包含下列基本部分： 
+---
+= 回應物件成員
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每個Element軟體API回應本文都包含下列基本部分：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+結果
+ a| 
+方法傳回的物件。系統會傳回一個物件、其命名成員對應於方法的書面傳回值。如果發生錯誤、則此成員不存在。
+ a| 
+Json物件
+
+
+
+ a| 
+錯誤
+ a| 
+發生錯誤時傳回的物件。此成員只有在發生錯誤時才會出現。
+ a| 
+物件
+
+
+
+ a| 
+ID
+ a| 
+用於符合要求回應要求的識別碼、如要求所提供。
+ a| 
+字串或整數
+
+
+
+ a| 
+非使用參數
+ a| 
+一則警告訊息、指出至少有一個不正確的參數已傳遞至API方法、而且尚未使用。
+ a| 
+物件
+
+|===

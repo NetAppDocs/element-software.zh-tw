@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_initializesnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: snapmirror,relationship,relationships,initialize,initializing,initializesnapmirrorrelationship 
+summary: Element軟體Web UI使用初始化SnapMirrorRelationship方法、在叢集之間執行初始基礎傳輸、以在SnapMirror關係中初始化目的地Volume。 
+---
+= 初始化SnapMirrorRelationationations
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「初始化SnapMirrorRelationationationations'方法、在叢集之間執行初始基礎傳輸、以在SnapMirror關係中初始化目的地Volume。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+遠端ONTAP 系統的ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+destinationVolume
+ a| 
+SnapMirror關係中的目的地Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+最大傳輸率
+ a| 
+指定各磁碟區之間的最大資料傳輸率（以每秒千位元組為單位）。預設值0為無限、並允許SnapMirror關係充分利用可用的網路頻寬。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorRelationationationationship
+ a| 
+有關初始化SnapMirror關係的資訊。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationationationationship]
+
+|===
+
+
+== 新的自版本
+
+10.1

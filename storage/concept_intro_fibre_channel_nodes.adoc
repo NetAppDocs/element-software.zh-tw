@@ -1,0 +1,22 @@
+---
+permalink: storage/concept_intro_fibre_channel_nodes.html 
+sidebar: sidebar 
+keywords: fibre channel nodes, fibre channel switch, clients, protcols, iSCSi protocols, clusters, interconnections, fc, FC, connectivity, fibre channel connectivity, fibre channel nodes, fibre channel protocol 
+summary: 供應連接至光纖通道交換器的鏈路、您可以連接至光纖通道用戶端。SolidFireFibre Channel節點可做為光纖通道和iSCSI傳輸協定之間的傳輸協定轉換器、讓您將Fibre Channel連線功能新增至任何新SolidFire 的或現有的叢集。 
+---
+= Fibre Channel節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+供應連接至光纖通道交換器的鏈路、您可以連接至光纖通道用戶端。SolidFireFibre Channel節點可做為光纖通道和iSCSI傳輸協定之間的傳輸協定轉換器、讓您將Fibre Channel連線功能新增至任何新SolidFire 的或現有的叢集。
+
+Fibre Channel節點具有下列特性：
+
+* Fibre Channel交換器可管理光纖的狀態、提供最佳化的互連。
+* 兩個連接埠之間的流量只會流經交換器、不會傳輸到任何其他連接埠。
+* 連接埠故障已隔離、不會影響其他連接埠的運作。
+* 多對連接埠可在網路中同時通訊。
+

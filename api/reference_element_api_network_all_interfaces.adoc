@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_network_all_interfaces.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: 網路（所有介面）物件會收集有關儲存節點網路介面組態的資訊。您可以使用組態設定和GetNetwork組態方法來取得儲存節點的此資訊。 
+---
+= 網路（所有介面）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+網路（所有介面）物件會收集有關儲存節點網路介面組態的資訊。您可以使用「組態」和「GetNetwork組態」方法來取得儲存節點的此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Bond10G
+ a| 
+Bond10G繫結介面的組態資訊。
+ a| 
+xref:reference_element_api_network_bonded_interfaces.adoc[網路（連結介面）]
+
+
+
+ a| 
+邦迪1G
+ a| 
+Bond1G繫結介面的組態資訊。
+ a| 
+xref:reference_element_api_network_bonded_interfaces.adoc[網路（連結介面）]
+
+
+
+ a| 
+eth0至5
+ a| 
+儲存節點中每個乙太網路介面的一個物件、說明介面的組態資訊。這些物件的編號為0到5、以符合介面名稱。
+ a| 
+xref:reference_element_api_network_ethernet_interfaces.adoc[網路（乙太網路介面）]
+
+
+
+ a| 
+低
+ a| 
+環回介面的組態資訊。
+ a| 
+xref:reference_element_api_network_local_interfaces.adoc[網路（本機介面）]
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_getconfig.adoc[組態設定]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetwork組態]
+

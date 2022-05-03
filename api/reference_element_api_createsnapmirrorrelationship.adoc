@@ -1,0 +1,140 @@
+---
+permalink: api/reference_element_api_createsnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: SnapMirror,relationship,relationships,create,creating,CreateSnapMirrorRelationship 
+summary: Element Web UI使用Create SnapMirrorRelationship方法、在來源端點和目的地端點之間建立SnapMirror延伸資料保護關係。 
+---
+= 建立SnapMirrorRelationationationationationship
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI使用「Create SnapMirrorRelationship」方法、在來源端點和目的地端點之間建立SnapMirror延伸資料保護關係。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+遠端ONTAP 不整合式儲存系統的端點ID、可與元件儲存叢集通訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+來源磁碟區
+ a| 
+關係中的來源Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+destinationVolume
+ a| 
+關係中的目的地Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+關係類型
+ a| 
+關係類型。在執行Element軟體的儲存系統上、此值永遠是「extended _data_protection」。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+PolicyName
+ a| 
+指定ONTAP 關聯的SnapMirror原則名稱。如果未指定、則預設原則名稱為MirrorLatest。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+scheduleName
+ a| 
+用來更新SnapMirror關係的目前在SnapMirror系統上的cron排程名稱ONTAP 。如果未指定排程、則SnapMirror更新不會排程、必須手動更新。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+最大傳輸率
+ a| 
+指定各磁碟區之間的最大資料傳輸率（以每秒千位元組為單位）。預設值0為無限、並允許SnapMirror關係充分利用可用的網路頻寬。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorRelationationationationship
+ a| 
+關於新建立的SnapMirror關係的資訊。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationationationationship]
+
+|===
+
+
+== 新的自版本
+
+10.1

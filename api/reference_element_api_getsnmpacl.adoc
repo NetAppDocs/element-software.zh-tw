@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_getsnmpacl.html 
+sidebar: sidebar 
+keywords: snmp,acl,get,getting,getsnmpacl 
+summary: 您可以使用GetSnmpACL方法取得叢集節點上目前的SNMP存取權限。 
+---
+= GetSnmpACL
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetSnmpACL」方法、取得叢集節點上目前的SNMP存取權限。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+網路
+ a| 
+網路清單、以及網路對叢集節點上執行的SNMP伺服器有何存取類型。如果SNMP v3已停用、就會顯示此值。
+ a| 
+xref:reference_element_api_network_snmp.adoc[網路] 陣列
+
+
+
+ a| 
+使用者
+ a| 
+使用者清單及其對叢集節點上執行之SNMP伺服器的存取類型。如果已啟用SNMP v3、則會顯示此值。
+ a| 
+xref:reference_element_api_usmuser.adoc[使用者] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+"method": "GetSnmpACL",
+"params": {},
+"id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+     "usmUsers"  : [
+       {
+          "name": "jdoe",
+          "access": "rouser",
+          "secLevel": "priv",
+          "password": "mypassword",
+          "passphrase": "mypassphrase",
+       }
+     ]
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

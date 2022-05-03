@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_testldapauthentication.html 
+sidebar: sidebar 
+keywords: ldap,auth,authentication,test,testing,testldapauthentication 
+summary: 您可以使用TestLdap驗 證方法來驗證目前啟用的LDAP驗證設定。如果組態正確、API呼叫會傳回已測試使用者的群組成員資格。 
+---
+= TestLdap驗 證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「TestLdapAuthentication」方法來驗證目前啟用的LDAP驗證設定。如果組態正確、API呼叫會傳回已測試使用者的群組成員資格。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+使用者名稱
+ a| 
+要測試的使用者名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+密碼
+ a| 
+要測試的使用者名稱密碼。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+LDAPConfiguration
+ a| 
+要測試的LDAPConfiguration物件。如果您提供此參數、即使LDAP驗證目前已停用、系統仍會測試所提供的組態。
+ a| 
+xref:reference_element_api_ldapconfiguration.adoc[LDAPConfiguration]
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+群組
+ a| 
+包含已測試使用者為成員的LDAP群組清單。
+ a| 
+陣列
+
+
+
+ a| 
+使用者DN
+ a| 
+已測試使用者的完整LDAP辨別名稱。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+"method": "TestLdapAuthentication",
+"params": {"username":"admin1",
+           "password":"admin1PASS"
+      },
+  "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+ "id": 1,
+ "result": {
+    "groups": [
+        "CN=StorageMgmt,OU=PTUsers,DC=prodtest,DC=solidfire,DC=net"
+      ],
+        "userDN": "CN=Admin1 Jones,OU=PTUsers,DC=prodtest,DC=solidfire,DC=net"
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

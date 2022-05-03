@@ -1,0 +1,21 @@
+---
+permalink: storage/task_replication_delete_cluster_pair.html 
+sidebar: sidebar 
+keywords: cluster pairs, delete 
+summary: 您可以從配對中任一叢集的元素UI中刪除叢集配對。 
+---
+= 刪除叢集配對
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從配對中任一叢集的元素UI中刪除叢集配對。
+
+. 按一下*資料保護*>*叢集配對*。
+. 按一下叢集配對的「動作」圖示。
+. 在產生的功能表中、按一下*刪除*。
+. 確認行動。
+. 從叢集配對的第二個叢集再次執行步驟。
+

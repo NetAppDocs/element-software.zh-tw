@@ -1,0 +1,53 @@
+---
+permalink: storage/task_data_manage_vol_access_group_create_an_initiator.html 
+sidebar: sidebar 
+keywords: initiator, create, fc, iscsi, aliases, chap 
+summary: 您可以建立iSCSI或Fibre Channel啟動器、並選擇性地指派別名。 
+---
+= 建立啟動器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立iSCSI或Fibre Channel啟動器、並選擇性地指派別名。
+
+您也可以使用API呼叫來指派以initator為基礎的CHAP屬性。若要為每個啟動器新增CHAP帳戶名稱和認證、您必須使用「建立啟動器」API呼叫來移除和新增CHAP存取和屬性。透過「建立啟動器」和「多個啟動器」API呼叫、指定一或多個虛擬網路ID、即可限制啟動器存取一個或多個VLAN。如果未指定虛擬網路、啟動器就可以存取所有網路。
+
+如需詳細資訊、請參閱API參考資訊。link:../api/index.html["使用Element API管理儲存設備"]
+
+.步驟
+. 按一下*管理*>*啟動器*。
+. 按一下「*建立啟動器*」。
+. 執行步驟以建立單一啟動器或多個啟動器：
++
+[cols="25,75"]
+|===
+| 選項 | 步驟 
+
+
+ a| 
+建立單一啟動器
+ a| 
+.. 按一下*建立單一啟動器*。
+.. 在「* IQN/WWPN*」欄位中輸入啟動器的IQN或WWPN。
+.. 在*別名*欄位中輸入啟動器的易記名稱。
+.. 按一下「*建立啟動器*」。
+
+
+
+
+ a| 
+建立多個啟動器
+ a| 
+.. 按一下*大量建立啟動器*。
+.. 在文字方塊中輸入IQN或WWPN清單。
+.. 按一下「*新增啟動器*」。
+.. 從產生的清單中選擇啟動器、然後按一下「*別名*」欄中對應的「新增」圖示、以新增啟動器的別名。
+.. 按一下核取符號以確認新的別名。
+.. 按一下「*建立啟動器*」。
+
+
+|===
+

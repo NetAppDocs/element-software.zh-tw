@@ -1,0 +1,80 @@
+---
+sidebar: sidebar 
+permalink: upgrade/concept_element_upgrade_overview.html 
+summary: 您可以SolidFire 升級所有NetApp儲存元件、在部署後將您的現象不再只是最新的儲存系統。 
+keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgrade 
+---
+= 升級順序總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: solidfire, cloud, onprem, documentation, help
+
+
+[role="lead"]
+您可以SolidFire 在部署後、依序升級所有NetApp儲存元件、讓您的支援系統保持在最新狀態。
+
+這些元件包括管理服務、HealthTools、NetApp混合雲控制、Element軟體、管理節點、以及Element Plug-in for vCenter Server（視安裝而定）。
+
+。 <<sys_upgrade,系統升級順序>> 內容說明完成SolidFire 整套功能齊全的全快閃儲存系統升級所需的工作。理想情況下、這些程序是以較大的升級順序執行、而非隔離執行。如果需要元件型升級或更新、請參閱程序先決條件、以確保解決更多複雜性問題。
+
+。 link:task_sf_upgrade_all_vsphere.html["vSphere升級順序"] 包含Element Plug-in for vCenter Server內容、說明重新安裝Element Plug-in for vCenter Server所需的其他升級前和升級後步驟。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您執行的是管理節點11.3或更新版本。較新版本的管理節點採用模組化架構、可提供個別服務。
++
+
+TIP: 若要檢查版本、請登入管理節點、並在登入橫幅中檢視元素版本編號。如果您沒有11.3、請參閱 link:task_hcc_upgrade_management_node.html["升級管理節點"]。
+
+* 您已將管理服務升級至至少2.1.326版。
++
+使用NetApp混合式雲端控制進行升級的舊版服務組合版本無法使用。
+
+* 您已確保所有節點上的系統時間都已同步、且儲存叢集和節點的NTP設定正確。每個節點都必須在每個節點的Web UI（「https://[IP位址」：442`）中設定DNS名稱伺服器、且不會發生與時間偏移相關的未解決叢集故障。
+
+
+
+
+== 系統升級順序
+
+您可以使用下列順序來升級SolidFire Element 12.3.x的NetApp全快閃儲存系統
+
+.步驟
+. link:task_hcc_update_management_services.html["從混合雲控制系統更新管理服務"]。
++
+
+IMPORTANT: 如果您要將管理服務更新至2.16版或更新版本、而且執行的是管理節點11.3至11.8、則在更新管理服務之前、必須先增加管理節點VM的RAM。
+
++
+
+IMPORTANT: 您必須先更新至最新的管理服務套裝組合、才能升級Element軟體。
+
+. link:task_upgrade_element_latest_healthtools.html["（選用）升級至最新的HealthTools"]。
++
+
+NOTE: 只有在您執行的管理節點和元件軟體為11.1或更早版本時、才需要升級HealthTools。使用NetApp混合式雲端控制進行元素升級時、不需要HealthTools。
+
+. link:task_hcc_upgrade_element_prechecks.html["升級儲存設備之前、請先執行Element儲存設備健全狀況檢查"]。
+. link:task_hcc_upgrade_element_software.html["升級您的Element軟體與儲存韌體"]。
+. link:task_hcc_upgrade_storage_firmware.html["（選用）僅升級您的Element儲存韌體"]。
++
+
+NOTE: 當主要版本以外的新儲存韌體升級可供使用時、您可能會執行此工作。
+
+. link:task_hcc_upgrade_management_node.html["（選用）升級管理節點"]。
++
+
+NOTE: 不再需要升級管理節點作業系統、即可升級儲存叢集上的Element軟體。如果管理節點為11.3版或更新版本、您只需將管理服務升級至最新版本、即可使用NetApp混合雲控制系統執行元件升級。如果您基於其他理由（例如安全性補救）而想要升級管理節點作業系統、請依照您案例的管理節點升級程序進行。
+
+. link:task_vcp_upgrade_plugin.html["升級vCenter Server的Element外掛程式"]。
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+

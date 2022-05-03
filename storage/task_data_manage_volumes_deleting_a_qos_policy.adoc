@@ -1,0 +1,29 @@
+---
+permalink: storage/task_data_manage_volumes_deleting_a_qos_policy.html 
+sidebar: sidebar 
+keywords: qos policy, delete, volumes 
+summary: 您可以刪除不再需要的QoS原則。刪除QoS原則時、與原則相關聯的所有磁碟區都會維持QoS設定、但會與原則無關聯。 
+---
+= 刪除QoS原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以刪除不再需要的QoS原則。刪除QoS原則時、與原則相關聯的所有磁碟區都會維持QoS設定、但會與原則無關聯。
+
+
+NOTE: 如果您正嘗試將某個Volume與QoS原則解除關聯、可以將該Volume的QoS設定變更為自訂。
+
+. 選擇*管理*>* QoS原則*。
+. 按一下您要刪除之QoS原則的「動作」圖示。
+. 在產生的功能表中、選取*刪除*。
+. 確認行動。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.adoc[移除磁碟區的QoS原則關聯]

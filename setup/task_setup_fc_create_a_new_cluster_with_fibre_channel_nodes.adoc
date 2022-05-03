@@ -1,0 +1,52 @@
+---
+permalink: setup/task_setup_fc_create_a_new_cluster_with_fibre_channel_nodes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在設定個別的光纖通道節點之後、再建立新的叢集。建立叢集時、系統會自動為您建立叢集管理員使用者帳戶。叢集管理員擁有管理所有叢集屬性的權限、並可建立其他叢集管理員帳戶。 
+---
+= 使用Fibre Channel節點建立新叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在設定個別的光纖通道節點之後、再建立新的叢集。建立叢集時、系統會自動為您建立叢集管理員使用者帳戶。叢集管理員擁有管理所有叢集屬性的權限、並可建立其他叢集管理員帳戶。
+
+在新節點組態期間、會將1G或10G管理IP（MIP）位址指派給每個節點。您必須使用在組態期間建立的其中一個節點IP位址、才能開啟「Create a New Cluster」（建立新叢集）頁面。您使用的IP位址取決於您選擇用於叢集管理的網路。
+
+您已設定個別的Fibre Channel節點。
+
+.步驟
+. 在瀏覽器視窗中、輸入節點MIP位址。
+. 在「Create a New Cluster（建立新叢集）」中、輸入下列資訊：
++
+** 管理VIP：1GbE或10GbE網路上可路由傳送的虛擬IP、適用於網路管理工作。
+** iSCSI（儲存設備）VIP：10GbE網路上的虛擬IP、用於儲存設備和iSCSI探索。
++
+
+NOTE: 您無法在建立叢集後變更SVIP。
+
+** 使用者名稱：用於驗證叢集存取的主要叢集管理使用者名稱。您必須儲存使用者名稱以供日後參考。
++
+
+NOTE: 使用者名稱可以使用大小寫字母、特殊字元和數字。
+
+** 密碼：已驗證的叢集存取密碼。您必須儲存使用者名稱以供日後參考。預設會啟用雙向資料保護。您無法變更此設定。
+
+
+. 閱讀「使用者授權合約」、然後按一下「*我同意*」。
+. *選用*：在節點清單中、確保未選取不應包含在叢集內之節點的核取方塊。
+. 按一下「*建立叢集*」。
++
+根據叢集中的節點數量、系統可能需要數分鐘才能建立叢集。在正確設定的網路上、由五個節點組成的小型叢集所需時間應不到一分鐘。建立叢集之後、「Create a New Cluster（建立新叢集）」視窗會重新導向至叢集的MVIP URL位址、並顯示Web UI。
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

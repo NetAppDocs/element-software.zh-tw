@@ -1,0 +1,40 @@
+---
+permalink: storage/reference_data_manage_volumes_qos_policies_details.html 
+sidebar: sidebar 
+keywords: qos policies 
+summary: 您可以從「管理」索引標籤檢視QoS原則的詳細資料。 
+---
+= QoS原則詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從「管理」索引標籤檢視QoS原則的詳細資料。
+
+* *識別碼*
++
+系統產生的QoS原則ID。
+
+* *名稱*
++
+QoS原則的使用者定義名稱。
+
+* *最小IOPS *
++
+保證磁碟區IOPS的最低數量。
+
+* *最大IOPS *
++
+Volume允許的最大IOPS數。
+
+* *爆發IOPS *
++
+磁碟區在短時間內允許的最大IOPS數。預設值= 15、000。
+
+* *磁碟區*
++
+顯示使用原則的磁碟區數目。此數字會連結至已套用原則的磁碟區表格。
+
+

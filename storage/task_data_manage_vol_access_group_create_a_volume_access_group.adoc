@@ -1,0 +1,80 @@
+---
+permalink: storage/task_data_manage_vol_access_group_create_a_volume_access_group.html 
+sidebar: sidebar 
+keywords: volume access group, create, initiators 
+summary: 您可以將啟動器對應至磁碟區集合、以進行安全存取、藉此建立磁碟區存取群組。然後、您可以使用帳戶CHAP啟動器密碼和目標密碼、將存取權限授予群組中的磁碟區。 
+---
+= 建立Volume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將啟動器對應至磁碟區集合、以進行安全存取、藉此建立磁碟區存取群組。然後、您可以使用帳戶CHAP啟動器密碼和目標密碼、將存取權限授予群組中的磁碟區。
+
+如果您使用以啟動器為基礎的CHAP、則可在Volume存取群組中為單一啟動器新增CHAP認證、以提供更高的安全性。這可讓您將此選項套用至已存在的Volume存取群組。
+
+.步驟
+. 按一下*管理*>*存取群組*。
+. 按一下「*建立存取群組*」。
+. 在*名稱*欄位中輸入Volume存取群組的名稱。
+. 以下列其中一種方式將啟動器新增至Volume存取群組：
++
+[cols="25,75"]
+|===
+| 選項 | 說明 
+
+
+ a| 
+新增Fibre Channel啟動器
+ a| 
+.. 在「Add Initiator（新增啟動器）」下、從「Unbound Fibre Channel Initiator（未綁定的Fibre Channel啟動器）」清單中選取現有的Fibre Channel啟動器。
+.. 單擊* Add FC Initiator（添加FC啓動程序）*。
++
+
+NOTE: 如果您按一下「*建立啟動器*」連結、輸入啟動器名稱、然後按一下「*建立*」、即可在此步驟中建立啟動器。建立啟動器後、系統會自動將其新增至「啟動器」清單。
+
+
+
+格式範例如下：
+
+[listing]
+----
+5f:47:ac:c0:5c:74:d4:02
+----
+
+
+ a| 
+新增iSCSI啟動器
+ a| 
+在「Add Initiator（新增啟動器）」下、從「Initiator（啟動器）」清單中選取現有的啟動器。*注意：*如果您按一下*「建立啟動器」*連結、輸入啟動器名稱、然後按一下*「建立*」、即可在此步驟中建立啟動器。建立啟動器後、系統會自動將其新增至「啟動器」清單。
+
+格式範例如下：
+
+[listing]
+----
+iqn.2010-01.com.solidfire:c2r9.fc0.2100000e1e09bb8b
+----
+
+TIP: 您可以在「*管理*>*磁碟區*>*作用中*清單的磁碟區「動作」功能表中、選取「*檢視詳細資料*」、以找到每個磁碟區的啟動器IQN。
+
+修改啟動器時、您可以將requiredCHAP屬性切換為True、以設定目標啟動器密碼。如需詳細資訊、請參閱有關ModifyInitiator API方法的API資訊。
+
+link:../api/index.html["使用Element API管理儲存設備"]
+
+|===
+. *選用：*視需要新增更多啟動器。
+. 在「Add Volumes（新增磁碟區）」下、從* Volumes（*磁碟區）*清單中選取
++
+該磁碟區會出現在*附加的Volumes（磁碟區）清單中。
+
+. *選用：*視需要新增更多磁碟區。
+. 按一下「*建立存取群組*」。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:task_data_manage_vol_access_group_add_volumes.adoc[新增磁碟區至存取群組]

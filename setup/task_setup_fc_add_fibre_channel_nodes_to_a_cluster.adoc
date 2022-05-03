@@ -1,0 +1,43 @@
+---
+permalink: setup/task_setup_fc_add_fibre_channel_nodes_to_a_cluster.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在需要更多儲存設備或建立叢集期間、將Fibre Channel節點新增至叢集。初次開機時、Fibre Channel節點需要初始組態。節點設定完成後、就會顯示在待處理節點清單中、您可以將其新增至叢集。 
+---
+= 將Fibre Channel節點新增至叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在需要更多儲存設備或建立叢集期間、將Fibre Channel節點新增至叢集。初次開機時、Fibre Channel節點需要初始組態。節點設定完成後、就會顯示在待處理節點清單中、您可以將其新增至叢集。
+
+叢集中每個Fibre Channel節點上的軟體版本必須相容。將Fibre Channel節點新增至叢集時、叢集會視需要在新節點上安裝元素的叢集版本。
+
+.步驟
+. 選擇*叢集*>*節點*。
+. 按一下*「Pending」（待處理）*以檢視待處理節點的清單。
+. 執行下列其中一項：
++
+** 若要新增個別節點、請按一下您要新增之節點的*「Actions」（動作）*圖示。
+** 若要新增多個節點、請選取要新增之節點的核取方塊、然後選取*大量動作*。
++
+
+NOTE: 如果您要新增的節點的元素版本與叢集上執行的版本不同、叢集會非同步地將節點更新為叢集主機上執行的元素版本。節點更新後、會自動將自己新增至叢集。在此非同步程序期間、節點將處於「待處理作用中」狀態。
+
+
+
+. 按一下「 * 新增 * 」。
++
+節點會出現在作用中節點清單中。
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

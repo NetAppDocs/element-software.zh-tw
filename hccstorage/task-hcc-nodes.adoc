@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: hccstorage/task-hcc-nodes.html 
+summary: 您可以使用「混合雲控制節點」頁面、檢視系統中的儲存資產。 
+keywords: netapp, element, cluster, inventory, nodes, storage 
+---
+= 在節點頁面上檢視您的庫存
+:allow-uri-read: 
+
+
+[role="lead"]
+您可以檢視系統中的儲存資產、並判斷其IP位址、名稱和軟體版本。
+
+您可以檢視多個節點系統的儲存資訊。如果 link:../concepts/concept_solidfire_concepts_data_protection.html#custom_pd["自訂保護網域"] 您可以查看指派給特定節點的保護網域。
+
+若為SolidFire 「企業版SDS」節點、您可以在「儲存設備」索引標籤上監控庫存。
+
+.步驟
+. 開啟網頁瀏覽器、然後瀏覽至管理節點的IP位址。例如：
++
+[listing]
+----
+https://[management node IP address]
+----
+. 提供SolidFire 支援功能齊全的NetApp混合雲控制系統管理員認證資料、以登入NetApp混合雲控制系統。
+. 在左側導覽中、選取*節點*。
++
+image::hcc_nodes_storage_2nodes.png[混合雲控制節點頁面影像]
+
++
+
+NOTE: 當您第一次啟動新的NetApp混合雲控制工作階段時、當管理節點管理許多叢集時、載入NetApp混合雲控制節點頁面可能會有延遲。載入時間視管理節點主動管理的叢集數量而定。後續產品發表時、您將會體驗更快的載入時間。
+
+. 在「節點」頁面的「*儲存設備*」索引標籤上、檢閱下列資訊：
++
+.. 雙節點叢集：「Storage（儲存設備）」索引標籤上會出現「雙節點」標籤、並列出相關的見證節點。
+.. 三節點叢集：會列出儲存節點和相關的見證節點。三節點叢集在待命狀態下部署見證節點、以在節點故障時維持高可用度。
+.. 具有四個節點以上的叢集：會顯示具有四個以上節點之叢集的資訊。見證節點不適用。如果您從兩或三個儲存節點開始、並新增更多節點、則見證節點仍會出現。否則、「見證節點」表格不會出現。
+.. 韌體套裝組合版本：從管理服務2.14版開始、如果叢集執行Element 12或更新版本、您可以看到這些叢集的韌體套裝組合版本。如果叢集中的節點上有不同的韌體版本、您可以在*韌體產品組合版本*欄中看到*多個*。
+.. 自訂保護網域：如果叢集上使用自訂保護網域、您可以看到叢集中每個節點的自訂保護網域指派。如果未啟用自訂保護網域、則不會顯示此欄。
+
+
+. 您可以透過多種方式來處理這些頁面上的資訊：
++
+.. 若要篩選結果中的項目清單、請選取*篩選*圖示、然後選取篩選條件。您也可以輸入篩選條件的文字。
+.. 若要顯示或隱藏欄、請選取*顯示/隱藏欄*圖示。
+.. 若要下載表格、請選取*下載*圖示。
+
+
+
+
+
+TIP: 若要檢視儲存設備數量、請查看NetApp混合雲控制（HCC）儀表板。請參閱 link:task-hcc-dashboard.html["使用「HCC儀表 板」監控儲存資源"]。
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+

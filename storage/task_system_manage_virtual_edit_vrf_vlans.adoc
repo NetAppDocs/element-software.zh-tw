@@ -1,0 +1,21 @@
+---
+permalink: storage/task_system_manage_virtual_edit_vrf_vlans.html 
+sidebar: sidebar 
+keywords: vrf vlans edit, vrf vlan attributes, change 
+summary: 您可以變更VRF VLAN屬性、例如VLAN名稱、網路遮罩、閘道和IP位址區塊。 
+---
+= 編輯VRF VLAN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以變更VRF VLAN屬性、例如VLAN名稱、網路遮罩、閘道和IP位址區塊。
+
+. 按一下*叢集*>*網路*。
+. 按一下您要編輯之VLAN的「動作」圖示。
+. 按一下 * 編輯 * 。
+. 在「*編輯VLAN*」對話方塊中輸入VRF VLAN的新屬性。
+. 按一下*儲存變更*。
+

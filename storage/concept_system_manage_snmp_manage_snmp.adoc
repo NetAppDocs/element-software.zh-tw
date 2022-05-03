@@ -1,0 +1,19 @@
+---
+permalink: storage/concept_system_manage_snmp_manage_snmp.html 
+sidebar: sidebar 
+keywords: snmp, manage, config, cluster, requestor, usm, traps, monitor 
+summary: 您可以在叢集中設定簡單網路管理傳輸協定（SNMP）。 
+---
+= 管理SNMP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在叢集中設定簡單網路管理傳輸協定（SNMP）。
+
+您可以選取SNMP申請者、選取要使用的SNMP版本、識別SNMP使用者型安全模式（USM）使用者、並設定設陷以監控SolidFire 叢集。您也可以檢視及存取管理資訊基礎檔案。
+
+
+NOTE: 您可以同時使用IPv4和IPv6位址。

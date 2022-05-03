@@ -1,0 +1,116 @@
+---
+permalink: api/reference_element_api_modifysnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapmirror,relationship,modifysnapmirrorrelationship 
+summary: 您可以使用ModifySnapMirrorRelationship來變更排程快照的發生時間間隔。您也可以使用此方法刪除或暫停排程。 
+---
+= ModifySnapMirrorRelationationations
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「磁鏡射關係」來變更排程快照的執行時間間隔。您也可以使用此方法刪除或暫停排程。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+
+
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+destinationVolume
+ a| 
+SnapMirror關係中的目的地Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+最大傳輸率
+ a| 
+指定各磁碟區之間的最大資料傳輸率（以每秒千位元組為單位）。預設值0為無限、並允許SnapMirror關係充分利用可用的網路頻寬。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+PolicyName
+ a| 
+指定ONTAP 關聯的SnapMirror原則名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+scheduleName
+ a| 
+用來更新SnapMirror關係的目前在SnapMirror系統上的cron排程名稱ONTAP 。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+遠端ONTAP 不整合式儲存系統的端點ID、可與元件儲存叢集通訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorRelationationationationship
+ a| 
+包含已修改SnapMirror關係屬性的物件。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationationationationship]
+
+|===
+
+
+== 新的自版本
+
+10.1

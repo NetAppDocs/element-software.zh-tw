@@ -1,0 +1,31 @@
+---
+permalink: api/concept_element_api_account_api_methods.html 
+sidebar: sidebar 
+keywords: account,method,methods,API,managing,manage 
+summary: 帳戶方法可讓您新增、移除、檢視及修改帳戶與安全性資訊。 
+---
+= 帳戶API方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+帳戶方法可讓您新增、移除、檢視及修改帳戶與安全性資訊。
+
+* xref:reference_element_api_addaccount.adoc[AddAccount]
+* xref:reference_element_api_getaccountbyid.adoc[GetAccountByID]
+* xref:reference_element_api_getaccountbyname.adoc[GetAccountByName]
+* xref:reference_element_api_getaccountefficiency.adoc[GetAccountEfficiency]
+* xref:reference_element_api_listaccounts.adoc[清單帳戶]
+* xref:reference_element_api_modifyaccount.adoc[修改帳戶]
+* xref:reference_element_api_removeaccount.adoc[遠端帳戶]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

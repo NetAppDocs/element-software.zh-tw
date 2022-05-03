@@ -1,0 +1,32 @@
+---
+permalink: storage/concept_system_manage_nodes_node_versioning_and_compatibility.html 
+sidebar: sidebar 
+keywords: compatibility, node version, clusters, software version, compatible versions, major, minor, micro 
+summary: 節點相容性是根據安裝在節點上的Element軟體版本而定。如果節點和叢集不是相容版本、Element軟體型儲存叢集會自動將節點映像至叢集上的Element軟體版本。 
+---
+= 節點版本管理與相容性
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+節點相容性是根據安裝在節點上的Element軟體版本而定。如果節點和叢集不是相容版本、Element軟體型儲存叢集會自動將節點映像至叢集上的Element軟體版本。
+
+下列清單說明組成元素軟體版本編號的軟體版本重要性層級：
+
+* *重大*
++
+第一個數字代表軟體版本。具有一個主要元件編號的節點無法新增至包含不同主要修補程式編號節點的叢集、也無法使用混合主要版本的節點來建立叢集。
+
+* *次要*
++
+第二個數字代表已新增至主要版本之現有軟體功能的較小軟體功能或增強功能。此元件會在主要版本元件內遞增、表示此遞增版本與其他含有不同次要元件的元件軟體遞增版本不相容。例如、11.0與11.1不相容、11.1與11.2不相容。
+
+* *微*
++
+第三個數字代表與Major.Minor元件所代表的Element軟體版本相容的修補程式（遞增版本）。例如、11.0.1與11.0.2相容、11.0.2與11.0.3相容。
+
+
+
+相容性的主要和次要版本號碼必須相符。相容性不需要與微數字相符。

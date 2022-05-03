@@ -1,0 +1,149 @@
+---
+permalink: api/reference_element_api_listgroupsnapshots.html 
+sidebar: sidebar 
+keywords: snapshot,snapshots,group,list,listing,listgroupsnapshots 
+summary: 您可以使用清單群組快照方法來傳回已建立之所有群組快照的相關資訊。 
+---
+= 清單群組快照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「清單群組快照」方法來傳回已建立之所有群組快照的相關資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+群組SnapshotID
+ a| 
+擷取個別群組快照ID的資訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+磁碟區
+ a| 
+要查詢的唯一Volume ID陣列。如果未指定此參數、則會包含叢集上的所有群組快照。
+ a| 
+Volume ID陣列
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+群組快照
+ a| 
+包含每個群組快照資訊的物件清單。
+ a| 
+xref:reference_element_api_groupsnapshot.adoc[群組Snapshot] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListGroupSnapshots",
+  "params": {
+  "volumes": [
+     31,
+     49
+    ]
+  },
+  "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "groupSnapshots": [
+      {
+          "status": "Done",
+          "remoteStatuses": [
+              {
+                "volumePairUUID": "abcdef-1234-5678-90ab-cdef0123",
+                "remoteStatus": "Present"
+              }
+          ],
+          "attributes": {},
+          "groupSnapshotID": 1,
+          "createTime": "2014-06-17T17:35:05Z",
+          "members": [
+              {
+                "snapshotUUID": "abcdef-1234-5678-90ab-cdef0123",
+                "expirationReason": "None",
+                "virtualVolumeID": "abcdef-1234-5678-90ab-cdef0123",
+                "groupID": 1,
+                "createTime": "2014-06-17T17:35:05Z",
+                "totalSize": 1,
+                "snapMirrorLabel": "test1",
+                "volumeName": "test1",
+                "instanceCreateTime": "2014-06-17T17:35:05Z",
+                "volumeID": 1,
+                "checksum": "0x0",
+                "attributes": {},
+                "instanceSnapshotUUID": "abcdef-1234-5678-90ab-cdef0123",
+                "snapshotID": 1,
+                "status": "Done",
+                "groupSnapshotUUID": "abcdef-1234-5678-90ab-cdef0123",
+                "expirationTime": "2014-06-17T17:35:05Z",
+                "enableRemoteReplication": true,
+                "name": "test1",
+                "remoteStatuses": [
+                      {
+                        "volumePairUUID": "abcdef-1234-5678-90ab-cdef0123",
+                        "remoteStatus": "Present"
+                      }
+                  ]
+              }
+          ],
+          "enableRemoteReplication": true,
+          "name": "test1",
+          "groupSnapshotUUID": "abcdef-1234-5678-90ab-cdef0123"
+      }
+	]
+}
+----
+
+
+== 新的自版本
+
+9.6

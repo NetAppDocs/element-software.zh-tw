@@ -1,0 +1,29 @@
+---
+permalink: storage/task_intro_use_basic_options_in_the_element_software_ui.html 
+sidebar: sidebar 
+keywords: user interface, UI, API commands, SolidFire system 
+summary: 利用支援此功能的支援網頁使用者介面（Element UI）、您可以監控及執行在您的系統上執行的一般工作。NetApp Element SolidFire 
+---
+= 在Element軟體UI中使用基本選項
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用支援此功能的支援網頁使用者介面（Element UI）、您可以監控及執行支援系統上的一般工作。NetApp Element SolidFire
+
+基本選項包括檢視由UI活動啟動的API命令、並提供意見反應。
+
+* link:task_intro_view_api_activity_in_real_time.html["檢視API活動"]
+* link:reference_intro_icon_reference.html["元素介面中的圖示"]
+* link:task_intro_provide_feedback.html["提供意見回饋"]
+
+
+
+
+== 以取得更多資訊
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

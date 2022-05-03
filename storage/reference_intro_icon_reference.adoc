@@ -1,0 +1,106 @@
+---
+permalink: storage/reference_intro_icon_reference.html 
+sidebar: sidebar 
+keywords: icons, element interface, actions, system resources, quick reference 
+summary: 此支援功能可顯示圖示、代表您可對系統資源採取的行動。NetApp Element 
+---
+= 元素介面中的圖示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此支援功能可顯示圖示、代表您可對系統資源採取的行動。NetApp Element
+
+下表提供快速參考：
+
+|===
+
+
+| 圖示 | 說明 
+
+
+ a| 
+image:../media/element_icon_action.gif["元素OS Web UI中的動作圖示"]
+ a| 
+行動
+
+
+
+ a| 
+image:../media/element_icon_backupto.gif["Element OS Web UI中的「備份」圖示"]
+ a| 
+備份至
+
+
+
+ a| 
+image:../media/element_icon_clone.gif["Element OS Web UI中的Clone圖示"]
+ a| 
+複製或複製
+
+
+
+ a| 
+image:../media/element_icon_delete.gif["刪除元素OS Web UI中的圖示"]
+ a| 
+刪除或清除
+
+
+
+ a| 
+image:../media/element_icon_edit.gif["元素OS Web UI中的編輯圖示"]
+ a| 
+編輯
+
+
+
+ a| 
+image:../media/element_icon_filter.gif["元素OS Web UI中的篩選器圖示"]
+ a| 
+篩選器
+
+
+
+ a| 
+image:../media/element_icon_pair.gif["元素OS Web UI中的配對圖示"]
+ a| 
+配對
+
+
+
+ a| 
+image:../media/element_icon_refresh.gif["元素OS Web UI中的重新整理圖示"]
+ a| 
+重新整理
+
+
+
+ a| 
+image:../media/element_icon_restore.gif["元素OS Web UI中的還原圖示"]
+ a| 
+還原
+
+
+
+ a| 
+image:../media/element_icon_restorefrom.gif["從元素OS Web UI中的圖示還原"]
+ a| 
+還原來源
+
+
+
+ a| 
+image:../media/element_icon_rollback.gif["Element OS Web UI中的復原圖示"]
+ a| 
+復原
+
+
+
+ a| 
+image:../media/element_icon_snapshot.gif["Element OS Web UI中的Snapshot圖示"]
+ a| 
+Snapshot
+
+|===

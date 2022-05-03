@@ -1,0 +1,34 @@
+---
+permalink: storage/task_data_manage_vol_access_group_add_multiple_initiators.html 
+sidebar: sidebar 
+keywords: initiator, add to volume access group, access groups, add multiple initiators, create initiator 
+summary: 您可以將多個啟動器新增至現有的Volume存取群組、以允許存取Volume存取群組中的磁碟區、無論是否需要CHAP驗證。 
+---
+= 將多個啟動器新增至磁碟區存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將多個啟動器新增至現有的Volume存取群組、以允許存取Volume存取群組中的磁碟區、無論是否需要CHAP驗證。
+
+將啟動器新增至Volume存取群組時、啟動器可存取該Volume存取群組中的所有Volume。
+
+
+TIP: 您可以按一下「動作」圖示、然後按一下「作用中磁碟區」清單中磁碟區的*「檢視詳細資料」*、找到每個磁碟區的啟動器。
+
+您可以將多個啟動器新增至現有的Volume存取群組、以便存取磁碟區、並為該Volume存取群組中的每個啟動器指派唯一的CHAP認證。這可讓您將此選項套用至已存在的Volume存取群組。
+
+您可以使用API呼叫來指派以initator為基礎的CHAP屬性。若要為每個啟動器新增CHAP帳戶名稱和認證、您必須使用ModifyInitiator API呼叫來移除和新增CHAP存取和屬性。
+
+如需詳細資訊、請參閱 link:../api/index.html["使用Element API管理儲存設備"]。
+
+.步驟
+. 按一下*管理*>*啟動器*。
+. 選取您要新增至存取群組的啟動器。
+. 按一下*大量動作*按鈕。
+. 按一下「*新增至Volume存取群組*」。
+. 在「新增至Volume存取群組」對話方塊中、從* Volume存取群組*清單中選取存取群組。
+. 按一下「 * 新增 * 」。
+

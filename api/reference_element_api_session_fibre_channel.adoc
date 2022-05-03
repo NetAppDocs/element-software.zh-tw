@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_session_fibre_channel.html 
+sidebar: sidebar 
+keywords: object,objects,session 
+summary: 工作階段物件包含叢集可見的每個Fibre Channel工作階段資訊、以及可在其中看到的目標連接埠。您可以使用listfrifellChannelSessions API方法擷取此資訊。 
+---
+= 工作階段（光纖通道）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+工作階段物件包含叢集可見的每個Fibre Channel工作階段資訊、以及可在其中看到的目標連接埠。您可以使用「listfellannelSsessions」API方法擷取此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+初始化者WWPN
+ a| 
+登入目標連接埠之啟動器的全球連接埠名稱（WWPN）。
+ a| 
+字串
+
+
+
+ a| 
+節點ID
+ a| 
+擁有Fibre Channel工作階段的節點。
+ a| 
+整數
+
+
+
+ a| 
+啟動器
+ a| 
+有關此Fibre Channel工作階段伺服器啟動器的資訊。成員：
+
+* 別名：指派給啟動器的易記名稱。
+* 屬性：此啟動器的屬性。
+* 初始器ID：此啟動器的ID。
+* 初始器名稱：此啟動器的名稱。
+* Volume存取群組：與此啟動器相關聯的Volume存取群組清單。
+
+ a| 
+Json物件
+
+
+
+ a| 
+服務代號
+ a| 
+此工作階段所涉及之目標連接埠的服務ID。
+ a| 
+整數
+
+
+
+ a| 
+目標WWPN
+ a| 
+此工作階段所涉及的目標連接埠WWPN。
+ a| 
+字串
+
+
+
+ a| 
+Volume存取群組ID
+ a| 
+初始器WWPN所屬的Volume存取群組ID。如果不在Volume存取群組中、則此值為null。
+ a| 
+整數
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_listfibrechannelsessions.adoc[ListFIBreChannelSessions]

@@ -1,0 +1,61 @@
+---
+permalink: api/reference_element_api_removenodesslcertificate.html 
+sidebar: sidebar 
+keywords: ssl,cert,certificate,remove,removing,node,management,removenodesslcertificate 
+summary: 您可以使用RemoveNodeSSLCertificate方法移除管理節點的使用者SSL憑證和私密金鑰。移除憑證和私密金鑰之後、管理節點會設定為使用預設的憑證和私密金鑰。 
+---
+= 遠端節點SSLCertificate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「RemoveNodeSSLCertificate」方法移除管理節點的使用者SSL憑證和私密金鑰。移除憑證和私密金鑰之後、管理節點會設定為使用預設的憑證和私密金鑰。
+
+
+
+== 參數
+
+
+NOTE: 您必須針對管理節點呼叫此方法。例如：
+
+[listing]
+----
+https://<management node IP>:442/json-rpc/10.0
+----
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method" : "RemoveNodeSSLCertificate",
+    "params" : {},
+    "id" : 3
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id" : 3,
+    "result" : {}
+}
+----

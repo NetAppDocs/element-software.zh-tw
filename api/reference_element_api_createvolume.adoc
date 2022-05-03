@@ -1,0 +1,234 @@
+---
+permalink: api/reference_element_api_createvolume.html 
+sidebar: sidebar 
+keywords: create,volume,volumes,creating,CreateVolume 
+summary: 您可以使用Create Volume方法在叢集上建立新的空白磁碟區。磁碟區建立完成後、即可透過iSCSI連線至磁碟區。 
+---
+= 建立Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Create Volume」（建立磁碟區）方法、在叢集上建立新的空白磁碟區。一旦建立磁碟區、即可透過iSCSI連線至該磁碟區。
+
+未指定QoS值所建立的磁碟區會使用預設值。您可以使用「GetDefaultQoS」方法來檢視磁碟區的預設值。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+| 存取權 | Volume的存取模式。如果包含此參數、則唯一支援的值為「napMirrorTarget」。 | 字串 | 無 | 否 
+
+
+| 《AccountID》 | 擁有此磁碟區的帳戶ID。 | 整數 | 無 | 是的 
+
+
+| 「associateWithQoSPolicy」  a| 
+將磁碟區與指定的QoS原則建立關聯。可能值：
+
+* 「true」：將磁碟區與QoSPolicyID參數中指定的QoS原則建立關聯。
+* 「假」：請勿將磁碟區與QoSPolicyID參數中指定的QoS原則建立關聯。如果為假、則會移除任何現有的原則關聯、無論您是否在QoSPolicy參數中指定QoS原則。
+
+| 布林值 | 是的 | 否 
+
+
+| 屬性 | Json物件格式的名稱-值配對清單。總屬性大小必須小於1000B或1KB、包括Json格式化字元。 | Json物件 | 無 | 否 
+
+
+| 「enable512e」  a| 
+啟用512位元組區段模擬。可能值：
+
+* 「真」：磁碟區提供512位元組區段模擬。
+* 「假」：未啟用512e模擬。
+
+| 布林值 | 無 | 是的 
+
+
+| 「enableSnapMirrorReplication」  a| 
+決定磁碟區是否可用於SnapMirror端點的複寫。可能值：
+
+* "真的"
+* 「假」
+
+| 布林值 | 錯 | 否 
+
+
+| 《五大規模》 | 指定Volume支援的先進先出（FIFO）快照數量上限。請注意、FIFO和非FIFO快照都使用同一個磁碟區上可用的快照插槽集區。使用此選項可限制可用快照插槽的FIFO快照使用量。如果省略、此值預設為24。 | 整數 | 24 | 否 
+
+
+| 《我的快來大》 | 指定磁碟區保留的最小先進先出（FIFO）快照插槽數。這可確保如果您在非FIFO快照不會意外佔用過多的FIFO插槽的磁碟區上同時使用FIFO快照和非FIFO快照、它也能確保至少有這麼多的FIFO快照永遠可用。由於FIFO和非FIFO快照共享同一個資源池、因此「manifoSizes」可將可能的非FIFO快照總數減少相同數量。如果省略、則值預設為0。 | 整數 | 0 | 否 
+
+
+| 名稱 | Volume存取群組名稱（可由使用者指定）。不需要是獨一無二的、但值得推薦。長度必須為1到64個字元。 | 字串 | 無 | 是的 
+
+
+| QoS  a| 
+此Volume的初始服務品質設定。如果未指定任何值、則會使用預設值。可能值：
+
+* 《IOPS》
+* 《MaxIOPS》
+* 《burstIOPS》
+
+| QoS物件 | 無 | 否 
+
+
+| 《qosPolicyID》 | 應將QoS設定套用至指定磁碟區的原則ID。此參數與「QoS」參數互不相容。 | 整數 | 無 | 否 
+
+
+| "totalSiz" | Volume的總大小（以位元組為單位）。大小會四捨五入至最接近的百萬位元組。 | 整數 | 無 | 是的 
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume
+ a| 
+包含新建立磁碟區相關資訊的物件。
+ a| 
+xref:reference_element_api_volume.adoc[Volume]
+
+
+
+ a| 
+Volume ID
+ a| 
+新建立磁碟區的磁碟區ID。
+ a| 
+整數
+
+
+
+ a| 
+曲線
+ a| 
+曲線是一組金鑰值配對。金鑰是以位元組為單位的I/O大小。這些值代表以特定I/O大小執行IOP的成本。曲線的計算方式是以100 IOPS設定為4096位元組的作業方式。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "CreateVolume",
+   "params": {
+      "name": "mysqldata",
+      "accountID": 1,
+      "totalSize": 107374182400,
+      "enable512e": false,
+      "attributes": {
+         "name1": "value1",
+         "name2": "value2",
+         "name3": "value3"
+      },
+      "qos": {
+         "minIOPS": 50,
+         "maxIOPS": 500,
+         "burstIOPS": 1500,
+         "burstTime": 60
+      }
+   },
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "curve": {
+            "4096": 100,
+            "8192": 160,
+            "16384": 270,
+            "32768": 500,
+            "65536": 1000,
+            "131072": 1950,
+            "262144": 3900,
+            "524288": 7600,
+            "1048576": 15000
+        },
+        "volume": {
+            "access": "readWrite",
+            "accountID": 1,
+            "attributes": {
+                "name1": "value1",
+                "name2": "value2",
+                "name3": "value3"
+            },
+            "blockSize": 4096,
+            "createTime": "2016-03-31T22:20:22Z",
+            "deleteTime": "",
+            "enable512e": false,
+            "iqn": "iqn.2010-01.com.solidfire:mysqldata.677",
+            "name": "mysqldata",
+            "purgeTime": "",
+            "qos": {
+                "burstIOPS": 1500,
+                "burstTime": 60,
+                "curve": {
+                    "4096": 100,
+                    "8192": 160,
+                    "16384": 270,
+                    "32768": 500,
+                    "65536": 1000,
+                    "131072": 1950,
+                    "262144": 3900,
+                    "524288": 7600,
+                    "1048576": 15000
+                },
+                "maxIOPS": 500,
+                "minIOPS": 50
+            },
+            "scsiEUIDeviceID": "6a796179000002a5f47acc0100000000",
+            "scsiNAADeviceID": "6f47acc1000000006a796179000002a5",
+            "sliceCount": 0,
+            "status": "active",
+            "totalSize": 107374182400,
+            "virtualVolumeID": null,
+            "volumeAccessGroups": [],
+            "volumeID": 677,
+            "volumePairs": []
+        },
+        "volumeID": 677
+    }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS]

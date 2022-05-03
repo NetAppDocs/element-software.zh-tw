@@ -1,0 +1,27 @@
+---
+permalink: storage/task_data_protection_roll_back_a_volume_to_a_snapshot.html 
+sidebar: sidebar 
+keywords: volume to snapshot roll back, snapshot roll back, revert changes 
+summary: 您可以隨時將磁碟區復原至先前的快照。這會還原自建立快照以來對磁碟區所做的任何變更。 
+---
+= 將磁碟區復原為快照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以隨時將磁碟區復原至先前的快照。這會還原自建立快照以來對磁碟區所做的任何變更。
+
+.步驟
+. 按一下*資料保護*>*快照*。
+. 按一下要用於磁碟區復原的快照*「Actions」（動作）*圖示。
+. 在產生的功能表中、選取*復原磁碟區至Snapshot *。
+. *選用：*若要在回溯至快照之前儲存磁碟區的目前狀態：
++
+.. 在「*復原至Snapshot *」對話方塊中、選取*「將磁碟區的目前狀態儲存為Snapshot」*。
+.. 輸入新快照的名稱。
+
+
+. 按一下*復原Snapshot *。
+

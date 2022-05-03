@@ -1,0 +1,112 @@
+---
+permalink: api/reference_element_api_snapmirrorluninfo.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorLunInfo 
+summary: snapMirrorlunInfo物件包含ONTAP 有關物件的資訊。 
+---
+= snapMirrorlunInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorlunInfo物件包含ONTAP 有關物件的資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目的地ONTAP 資訊系統的ID。
+ a| 
+整數
+
+
+
+ a| 
+建立時間戳記
+ a| 
+LUN的建立時間。
+ a| 
+ISO 8601日期字串
+
+
+
+ a| 
+LunName
+ a| 
+LUN的名稱。
+ a| 
+字串
+
+
+
+ a| 
+路徑
+ a| 
+LUN的路徑。
+ a| 
+字串
+
+
+
+ a| 
+尺寸
+ a| 
+LUN大小（以位元組為單位）。
+ a| 
+整數
+
+
+
+ a| 
+已使用
+ a| 
+LUN使用的位元組數。
+ a| 
+整數
+
+
+
+ a| 
+州/省
+ a| 
+LUN的目前存取狀態。可能值：
+
+* 線上
+* 離線
+* Foreign（外部）LUN錯誤
+* nvFail
+* 空間錯誤
+
+ a| 
+字串
+
+
+
+ a| 
+Volume
+ a| 
+包含LUN的磁碟區名稱。
+ a| 
+字串
+
+
+
+ a| 
+Vserver
+ a| 
+包含LUN的Vserver。
+ a| 
+字串
+
+|===

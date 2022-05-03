@@ -1,0 +1,30 @@
+---
+permalink: storage/task_replication_pair_clusters_using_mvip_or_a_pairing_key.html 
+sidebar: sidebar 
+keywords: pair cluster, mvip, pairing key, cluster pairing 
+summary: 如果叢集管理員可以存取兩個叢集、您可以使用目標叢集的MVIP來配對來源與目標叢集。如果叢集管理員存取只能在叢集配對中的一個叢集上使用、則可在目標叢集上使用配對金鑰來完成叢集配對。 
+---
+= 使用MVIP或配對金鑰配對叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果叢集管理員可以存取兩個叢集、您可以使用目標叢集的MVIP來配對來源與目標叢集。如果叢集管理員存取只能在叢集配對中的一個叢集上使用、則可在目標叢集上使用配對金鑰來完成叢集配對。
+
+. 選取下列其中一種方法來配對叢集：
++
+** 使用MVIP配對叢集：如果叢集管理員同時存取兩個叢集、請使用此方法。此方法使用遠端叢集的MVIP配對兩個叢集。
+** 使用配對金鑰配對叢集：如果叢集管理員只能存取其中一個叢集、請使用此方法。此方法會產生配對金鑰、可用於目標叢集以完成叢集配對。
+
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_replication_pair_cluster_using_mvip.adoc[使用MVIP配對叢集]
+* xref:task_replication_pair_cluster_using_pairing_key.adoc[使用配對金鑰配對叢集]
+

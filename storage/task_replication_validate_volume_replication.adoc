@@ -1,0 +1,24 @@
+---
+permalink: storage/task_replication_validate_volume_replication.html 
+sidebar: sidebar 
+keywords: volume pairings, replication, validate volume replication 
+summary: 複寫磁碟區之後、您應該確定來源與目標磁碟區處於作用中狀態。處於作用中狀態時、磁碟區會配對、資料會從來源傳送至目標磁碟區、而且資料會同步。 
+---
+= 驗證Volume複寫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+複寫磁碟區之後、您應該確定來源與目標磁碟區處於作用中狀態。處於作用中狀態時、磁碟區會配對、資料會從來源傳送至目標磁碟區、而且資料會同步。
+
+. 在兩個叢集中、選取*資料保護*>*磁碟區配對*。
+. 驗證Volume狀態是否為「Active（作用中）」。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_replication_volume_pairing_warnings.adoc[Volume配對警告]

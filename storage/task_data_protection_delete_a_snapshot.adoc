@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_protection_delete_a_snapshot.html 
+sidebar: sidebar 
+keywords: snapshot, delete, volume snapshot, storage cluster, remove snapshot 
+summary: 您可以從執行Element軟體的儲存叢集刪除Volume Snapshot。刪除快照時、系統會立即將其移除。 
+---
+= 刪除快照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從執行Element軟體的儲存叢集刪除Volume Snapshot。刪除快照時、系統會立即將其移除。
+
+您可以刪除從來源叢集複寫的快照。刪除快照時、如果快照正在同步至目標叢集、則同步複寫會完成、並從來源叢集刪除快照。不會從目標叢集刪除快照。
+
+您也可以刪除已從目標叢集複寫至目標的快照。刪除的快照會保留在目標上的已刪除快照清單中、直到系統偵測到您已刪除來源叢集上的快照為止。當目標偵測到您已刪除來源快照時、目標會停止複寫快照。
+
+從來源叢集刪除快照時、目標叢集快照不會受到影響（反之亦然）。
+
+. 按一下*資料保護*>*快照*。
+. 按一下您要刪除之快照的*「Actions」（動作）*圖示。
+. 在產生的功能表中、選取*刪除*。
+. 確認行動。
+

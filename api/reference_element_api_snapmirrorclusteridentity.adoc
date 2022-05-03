@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_snapmirrorclusteridentity.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorClusterIdentity 
+summary: SnapMirrorClusterIdentity物件包含ONTAP SnapMirror關係中遠端叢集的識別資訊。 
+---
+= snapMirrorClusterIdentity
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirrorClusterIdentity物件包含ONTAP SnapMirror關係中遠端叢集的識別資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目的地ONTAP 資訊系統的ID。
+ a| 
+整數
+
+
+
+ a| 
+叢集名稱
+ a| 
+目的地ONTAP 資訊叢集的名稱。
+ a| 
+字串
+
+
+
+ a| 
+叢集UUID
+ a| 
+目的地ONTAP 叢集的128位元通用唯一識別碼。
+ a| 
+字串
+
+
+
+ a| 
+叢集序號
+ a| 
+目的地ONTAP 叢集的序號。
+ a| 
+字串
+
+|===

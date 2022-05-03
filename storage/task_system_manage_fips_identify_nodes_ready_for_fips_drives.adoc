@@ -1,0 +1,47 @@
+---
+permalink: storage/task_system_manage_fips_identify_nodes_ready_for_fips_drives.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2 
+summary: 您應該檢查儲存叢集中的所有節點是否都已準備好使用NetApp Element 此軟體GetFipsReport API方法來支援FIPS磁碟機。 
+---
+= 識別節點是否已準備好使用FIPS磁碟機功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該檢查儲存叢集中的所有節點是否都已準備好使用NetApp Element 此軟體GetFipsReport API方法來支援FIPS磁碟機。
+
+產生的報告會顯示下列其中一種狀態：
+
+* 無：節點無法支援FIPS磁碟機功能。
+* 部分：節點支援FIPS、但並非所有磁碟機都是FIPS磁碟機。
+* 就緒：節點支援FIPS、所有磁碟機均為FIPS磁碟機、或沒有磁碟機。
+
+
+.步驟
+. 使用Element API、輸入下列命令、檢查儲存叢集中的節點和磁碟機是否能夠使用FIPS磁碟機：
++
+《GetFipsReport》（《GetFipsReport》）
+
+. 檢閱結果、並記下任何未顯示「Ready（就緒）」狀態的節點。
+. 對於未顯示「Ready（就緒）」狀態的任何節點、請檢查磁碟機是否能夠支援FIPS磁碟機功能：
++
+** 使用元素API、輸入：「GetHardwareList」
+** 請注意* DriveEncryptionCapabilityType *的值。如果是「FIPS」、硬體就能支援FIPS磁碟機功能。
++
+請參閱中的「GetFipsReport」或「ListDriveHardware」詳細資料 link:../api/index.html["Element API參考"]。
+
+
+
+. 如果磁碟機無法支援FIPS磁碟機功能、請以FIPS硬體（節點或磁碟機）更換硬體。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

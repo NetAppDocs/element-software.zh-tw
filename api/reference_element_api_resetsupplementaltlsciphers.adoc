@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_resetsupplementaltlsciphers.html 
+sidebar: sidebar 
+keywords: tls,cipher,reset,supplemental,resetsupplementaltlsciphers,restore,restoring,supplemental 
+summary: 您可以使用ResetSupplementalTlsCiphers方法、將補充TLS密碼清單還原為預設值。您可以在整個叢集上使用此方法。 
+---
+= ResetSupplementalTlsCiphers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ResetSupplementalTlsCiphers」方法、將補充TLS密碼清單還原為預設值。您可以在整個叢集上使用此方法。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ResetSupplementalTlsCiphers",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 新的自版本
+
+11.3

@@ -1,0 +1,100 @@
+---
+permalink: api/reference_element_api_getkeyproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key provider,retrieving,get,retrieve 
+summary: 您可以使用GetKeyProviderKmip方法擷取指定金鑰管理互通性傳輸協定（KMIP）金鑰提供者的相關資訊。 
+---
+= GetKeyProviderKmip
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetKeyProviderKmip」方法來擷取有關指定金鑰管理互通性傳輸協定（KMIP）金鑰提供者的資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+KeyProviderID
+ a| 
+要傳回的KMIP金鑰提供者物件ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+kmipKeyProvider
+ a| 
+包含所要求金鑰提供者詳細資料的物件。
+ a| 
+link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetKeyProviderKmip",
+  "params": {
+    "keyProviderID": 15
+    },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+    {
+    "kmipKeyProvider": {
+        "keyProviderID": 15,
+        "kmipCapabilities": "SSL",
+        "keyProviderIsActive": true,
+        "keyServerIDs": [
+            1
+        ],
+        "keyProviderName": "ProviderName"
+    }
+   }
+}
+----
+
+
+== 新的自版本
+
+11.7

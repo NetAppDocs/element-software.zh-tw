@@ -1,0 +1,140 @@
+---
+permalink: api/reference_element_api_pendingactivenode.html 
+sidebar: sidebar 
+keywords: object,objects,pendingActiveNode 
+summary: 暫掛ActiveNode物件包含目前處於暫掛作用中狀態之節點在擱置和作用中狀態之間的相關資訊。這些節點目前正傳回原廠軟體映像。使用ListPendingActiveNode API方法、傳回所有PendingActive節點的此資訊清單。 
+---
+= pendingActiveNode
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+暫掛ActiveNode物件包含目前處於暫掛作用中狀態之節點在擱置和作用中狀態之間的相關資訊。這些節點目前正傳回原廠軟體映像。使用「ListPendingActiveNode」API方法、傳回所有PendingActive節點的此資訊清單。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+activeNodeKey
+ a| 
+唯一金鑰、可讓節點在成功安裝軟體後自動加入叢集。
+ a| 
+字串
+
+
+
+ a| 
+受派者節點ID
+ a| 
+節點的指派節點ID。
+ a| 
+字串
+
+
+
+ a| 
+asyncdle
+ a| 
+可用來查詢作業狀態的非同步方法處理。
+ a| 
+整數
+
+
+
+ a| 
+CIP
+ a| 
+指派給節點的叢集IP位址。
+ a| 
+字串
+
+
+
+ a| 
+MIP
+ a| 
+指派給節點的管理IP位址。
+ a| 
+字串
+
+
+
+ a| 
+節點插槽
+ a| 
+對於HCI平台、與此節點所在機箱插槽對應的字母（「A」、「B」、「C」或「D」）。對於儲存平台、此值為null。
+ a| 
+字串
+
+
+
+ a| 
+pendingActiveNodeID
+ a| 
+節點的擱置節點ID。
+ a| 
+整數
+
+
+
+ a| 
+平台資訊
+ a| 
+節點的硬體資訊。成員：
+
+* chassetType：節點的硬體平台。
+* cpuModel：硬體平台的CPU模式。
+* 節點記憶體GB：實體平台上安裝的記憶體容量（單位：GB）。
+* 節點類型：節點模型名稱。
+* platformConfigVersion：為此節點硬體設定的軟體版本。
+
+ a| 
+Json物件
+
+
+
+ a| 
+角色
+ a| 
+節點在叢集中的角色。可能值：
+
+* 管理
+* 儲存設備
+* 運算
+* 見證人
+
+ a| 
+
+
+
+ a| 
+Sip
+ a| 
+指派給節點的儲存設備（iSCSI）IP位址。
+ a| 
+字串
+
+
+
+ a| 
+軟體版本
+ a| 
+節點上執行的元素軟體目前版本。
+ a| 
+字串
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_listpendingactivenodes.adoc[ListPendingActiveNode]

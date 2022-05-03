@@ -1,0 +1,28 @@
+---
+permalink: storage/task_data_protection_roll_back_volumes_to_a_group_snapshot.html 
+sidebar: sidebar 
+keywords: volumes, rollback, group snapshot, purge 
+summary: 您可以隨時將一組磁碟區復原至群組快照。 
+---
+= 將磁碟區復原至群組快照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以隨時將一組磁碟區復原至群組快照。
+
+當您回溯一組磁碟區時、群組中的所有磁碟區都會還原至建立群組快照時所處的狀態。回溯也會將磁碟區大小還原至原始快照中記錄的大小。如果系統已清除磁碟區、則該磁碟區的所有快照也會在清除時刪除；系統不會還原任何已刪除的磁碟區快照。
+
+. 按一下*資料保護*>*群組快照*。
+. 按一下要用於磁碟區復原之群組快照的「動作」圖示。
+. 在產生的功能表中、選取*「將磁碟區復原至群組Snapshot」*。
+. *選用*：若要在回溯至快照之前儲存磁碟區的目前狀態：
++
+.. 在「*復原至Snapshot *」對話方塊中、選取「*將磁碟區的目前狀態儲存為群組Snapshot *」。
+.. 輸入新快照的名稱。
+
+
+. 按一下*復原群組Snapshot *。
+

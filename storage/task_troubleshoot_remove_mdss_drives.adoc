@@ -1,0 +1,24 @@
+---
+permalink: storage/task_troubleshoot_remove_mdss_drives.html 
+sidebar: sidebar 
+keywords: mdss, remove, multi-drive slice service 
+summary: 您可以移除多個磁碟機分片服務（MDSS）磁碟機。此程序僅適用於節點有多個磁碟機的情況。 
+---
+= 移除MDSS磁碟機
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以移除多個磁碟機分片服務（MDSS）磁碟機。此程序僅適用於節點有多個磁碟機的情況。
+
+
+NOTE: 如果系統磁碟機與插槽2磁碟機故障、系統將關閉磁碟片服務並移除磁碟機。如果沒有故障且您移除磁碟機、則必須同時移除兩個磁碟機。
+
+. 按一下*叢集*>*磁碟機*。
+. 從* Available（可用）* drives（磁碟機）索引標籤中、按一下要移除的磁碟片磁碟機核取方塊。
+. 按一下*大量動作*。
+. 按一下「*移除*」。
+. 確認行動。
+

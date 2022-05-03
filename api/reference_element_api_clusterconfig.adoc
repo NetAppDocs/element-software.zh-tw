@@ -1,0 +1,150 @@
+---
+permalink: api/reference_element_api_clusterconfig.html 
+sidebar: sidebar 
+keywords: objects,object,clusterConfig 
+summary: clusterconfig物件會傳回節點用來與叢集通訊的資訊。 
+---
+= 叢集組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterconfig物件會傳回節點用來與叢集通訊的資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+西文
+ a| 
+用於叢集通訊的網路介面。
+ a| 
+字串
+
+
+
+ a| 
+叢集
+ a| 
+叢集的唯一名稱。
+ a| 
+字串
+
+
+
+ a| 
+可加密的Capable
+ a| 
+指定節點是否支援加密。
+ a| 
+布林值
+
+
+
+ a| 
+頻道群
+ a| 
+參與叢集的節點。
+ a| 
+字串陣列
+
+
+
+ a| 
+FpsDriveConfiguration
+ a| 
+指定節點是否支援FIPS 140-2認證磁碟機。
+ a| 
+布林值
+
+
+
+ a| 
+HasLocalAdmin
+ a| 
+指定叢集是否有本機管理員。
+ a| 
+布林值
+
+
+
+ a| 
+MIPI
+ a| 
+用於節點管理的網路介面。
+ a| 
+字串
+
+
+
+ a| 
+名稱
+ a| 
+叢集的唯一識別碼。
+ a| 
+字串
+
+
+
+ a| 
+節點ID
+ a| 
+節點的唯一識別碼。
+ a| 
+整數
+
+
+
+ a| 
+pendingNodeID
+ a| 
+擱置節點的唯一識別碼。
+ a| 
+整數
+
+
+
+ a| 
+角色
+ a| 
+識別節點的角色。
+ a| 
+字串
+
+
+
+ a| 
+SIPI
+ a| 
+用於儲存的網路介面。
+ a| 
+字串
+
+
+
+ a| 
+州/省
+ a| 
+表示節點的狀態。
+ a| 
+字串
+
+
+
+ a| 
+版本
+ a| 
+指出節點的版本。
+ a| 
+字串
+
+|===

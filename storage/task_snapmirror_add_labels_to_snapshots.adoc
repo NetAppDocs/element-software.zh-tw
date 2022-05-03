@@ -1,0 +1,31 @@
+---
+permalink: storage/task_snapmirror_add_labels_to_snapshots.html 
+sidebar: sidebar 
+keywords: snapmirror labels, add labels to snapshots, specify retention policies, group snapshots 
+summary: SnapMirror標籤指定SnapMirror端點上的快照保留原則。您可以新增標籤至快照和群組快照。 
+---
+= 將SnapMirror標籤新增至快照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror標籤指定SnapMirror端點上的快照保留原則。您可以新增標籤至快照和群組快照。
+
+您可以從現有的SnapMirror關係對話方塊或NetApp ONTAP SnapMirror系統管理程式中檢視可用的標籤。
+
+
+IMPORTANT: 將標籤新增至群組快照時、會覆寫個別快照的任何現有標籤。
+
+.您需要的是 #8217 ；需要的是什麼
+* SnapMirror已在叢集上啟用。
+* 您要新增的標籤已存在ONTAP 於資訊技術中。
+
+
+.步驟
+. 按一下「*資料保護*>*快照*」或「*群組快照*」頁面。
+. 按一下您要新增SnapMirror標籤的快照或群組快照*動作*圖示。
+. 在「*編輯Snapshot *」對話方塊中、於「* SnapMirror Label *」欄位中輸入文字。標籤必須符合套用至SnapMirror關係之原則中的規則標籤。
+. 按一下*儲存變更*。
+

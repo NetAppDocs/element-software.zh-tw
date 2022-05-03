@@ -1,0 +1,72 @@
+---
+permalink: setup/task_setup_create_a_storage_cluster.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在設定所有個別節點之後建立儲存叢集。建立叢集時、系統會自動為您建立叢集管理員使用者帳戶。叢集管理員擁有管理所有叢集屬性的權限、並可建立其他叢集管理員帳戶。 
+---
+= 建立儲存叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在設定所有個別節點之後建立儲存叢集。建立叢集時、系統會自動為您建立叢集管理員使用者帳戶。叢集管理員擁有管理所有叢集屬性的權限、並可建立其他叢集管理員帳戶。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您已安裝管理節點。
+* 您已設定所有個別節點。
+
+
+在新節點組態期間、會將1G或10G管理IP（MIP）位址指派給每個節點。您必須使用在組態期間建立的其中一個節點IP位址、才能開啟「Create a New Cluster」（建立新叢集）頁面。您使用的IP位址取決於您選擇用於叢集管理的網路。
+
+
+IMPORTANT: 如果您想要啟用整個叢集 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["軟體加密功能"]、您必須使用建立叢集 link:../api/reference_element_api_createcluster.html["建立叢集"] 改用API方法、並將enableSoftwareEncryptionAtRest參數變更為「true」。啟用閒置軟體加密之後、就無法在叢集上停用。靜止時的軟體加密功能預設為SolidFire 啟用、適用於不支援的ESDS叢集。閒置時可採用硬體式加密 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["已啟用和停用"] 建立叢集之後。
+
+[NOTE]
+====
+建立新叢集時、請考慮下列事項：
+
+* 如果您使用的儲存節點位於共享機箱中、可能需要考慮使用保護網域功能來設計機箱層級的故障保護。
+* 如果共享機箱未在使用中、您可以定義自訂保護網域配置。
+
+
+====
+.步驟
+. 在瀏覽器視窗中、輸入「https://MIP:443`」、其中MIP為管理節點IP位址。
+. 在「Create a New Cluster（建立新叢集）」中、輸入下列資訊：
++
+** 管理VIP：1GbE或10GbE網路上可路由傳送的虛擬IP、適用於網路管理工作。
++
+
+NOTE: 您可以使用IPv4或IPv6位址來建立新叢集。
+
+** iSCSI（儲存設備）VIP：10GbE網路上的虛擬IP、用於儲存設備和iSCSI探索。
++
+
+NOTE: 您無法在建立叢集後變更MVIP、SVIP或叢集名稱。
+
+** 使用者名稱：用於驗證叢集存取的主要叢集管理員使用者名稱。您必須儲存使用者名稱以供日後參考。
++
+
+NOTE: 使用者名稱和密碼可以使用大小寫字母、特殊字元和數字。
+
+** 密碼：已驗證的叢集存取密碼。您必須儲存密碼以供日後參考。預設會啟用雙向資料保護。您無法變更此設定。
+
+
+. 閱讀終端使用者授權合約、然後選取*我同意*。
+. *選用*：在節點清單中、確保未選取不應包含在叢集內之節點的核取方塊。
+. 選取*建立叢集*。
++
+根據叢集中的節點數量、系統可能需要數分鐘才能建立叢集。在正確設定的網路上、由五個節點組成的小型叢集所需時間應不到一分鐘。建立叢集之後、「Create a New Cluster」（建立新叢集）視窗會重新導向至叢集的MVIP URL位址、並顯示元素UI。
+
+
+
+
+
+== 以取得更多資訊
+
+* link:../api/index.html["使用Element API管理儲存設備"]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

@@ -1,0 +1,37 @@
+---
+section: setup
+title: 設定儲存設備
+url: "/setup/concept_setup_overview.html"
+entries:
+- title: 設定具有儲存節點的叢集
+  url: "/setup/task_setup_cluster_with_storage_nodes.html"
+  entries:
+  - title: 設定儲存節點
+    url: "/setup/concept_setup_configure_a_storage_node.html"
+  - title: 建立儲存叢集
+    url: "/setup/task_setup_create_a_storage_cluster.html"
+  - title: 登入Element軟體使用者介面
+    url: "/setup/task_post_deploy_access_the_element_software_user_interface.html"
+  - title: 將磁碟機新增至叢集
+    url: "/setup/task_setup_add_drives_to_a_cluster.html"
+- title: 設定具有Fibre Channel節點的叢集
+  url: "/setup/task_setup_cluster_with_fibre_channel_nodes.html"
+  entries:
+  - title: 設定Fibre Channel節點
+    url: "/setup/concept_setup_fc_configure_a_fibre_channel_node.html"
+  - title: 使用Fibre Channel節點建立新叢集
+    url: "/setup/task_setup_fc_create_a_new_cluster_with_fibre_channel_nodes.html"
+  - title: 將Fibre Channel節點新增至叢集
+    url: "/setup/task_setup_fc_add_fibre_channel_nodes_to_a_cluster.html"
+  - title: 設定光纖通道節點的區域
+    url: "/setup/concept_setup_fc_set_up_zones_for_fibre_channel_nodes.html"
+  - title: 為Fibre Channel用戶端建立Volume存取群組
+    url: "/setup/task_setup_create_a_volume_access_group_for_fibre_channel_clients.html"
+- title: 判斷SolidFire 要安裝哪些元件
+  url: "/setup/task_setup_determine_which_solidfire_components_to_install.html"
+- title: 設定管理節點
+  url: "/setup/task_setup_gh_redirect_set_up_a_management_node.html"
+- title: 設定完整網域名稱Web UI存取
+  url: "/setup/task_setup_configure_fqdn_web_ui_access.html"
+- title: 接下來呢？
+  url: "/setup/concept_setup_whats_next.html"

@@ -1,0 +1,99 @@
+---
+permalink: api/reference_element_api_deletesnapshot.html 
+sidebar: sidebar 
+keywords: snapshot,snapshots,delete,deleting,DeleteSnapshot 
+summary: 您可以使用刪除Snapshot方法來刪除快照。 
+---
+= 刪除Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「刪除Snapshot」方法來刪除快照。
+
+目前為作用中快照的快照無法刪除。您必須復原並啟用另一個快照、才能刪除目前的快照。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Snapshot ID
+ a| 
+要刪除的快照ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+超越SnapMirrorHold
+ a| 
+覆寫複寫期間快照上的鎖定。您可以使用此參數刪除關聯的SnapMirror關係之後、刪除過時的SnapMirror快照。
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "DeleteSnapshot",
+"params": {
+"snapshotID": 8,
+"overrideSnapMirrorHold": true
+},
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {}
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_rollbacktosnapshot.adoc[RollbackToSnapshot]

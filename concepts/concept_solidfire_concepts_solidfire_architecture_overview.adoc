@@ -1,0 +1,77 @@
+---
+permalink: concepts/concept_solidfire_concepts_solidfire_architecture_overview.html 
+sidebar: sidebar 
+keywords: solidfire, element, aiq, cluster, active iq, vcenter plugin, vcp, storage, what is 
+summary: 包含獨立式硬體元件（磁碟機和節點）的整個支援系統、可透過在每個節點上獨立執行的更新軟體、將其整合到單一儲存資源池中。SolidFire NetApp Element此統一化叢集可作為單一儲存系統供外部用戶端使用、並透過Element軟體UI、API及其他管理工具、以單一實體的形式進行管理。 
+---
+= 架構總覽SolidFire
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+包含獨立硬體元件（磁碟機和節點）的支援系統、可將其整合至儲存資源池中、並在每個節點上獨立執行相關的支援軟體。SolidFire NetApp Element此單一儲存系統是以單一實體的形式、使用Element軟體UI、API及其他管理工具進行管理。
+
+包含下列硬體元件的一套系統：SolidFire
+
+* *叢集*：SolidFire 由節點集合而成的整個過程。
+* *節點*：組成叢集的硬體元件。節點有兩種類型：
++
+** 儲存節點、即包含磁碟機集合的伺服器
+** 光纖通道（FC）節點、用於連線至FC用戶端
+
+
+* *磁碟機*：用於儲存節點、以儲存叢集的資料。儲存節點包含兩種磁碟機：
++
+** Volume中繼資料磁碟機儲存定義叢集內磁碟區和其他物件的資訊。
+** 區塊磁碟機儲存磁碟區的資料區塊。
+
+
+
+
+image::../media/solidfire_concepts_guide_architecture_image.gif[Element軟體架構圖]
+
+您可以使用Element Web UI和其他相容工具來管理、監控及更新系統：
+
+* link:../concepts/concept_intro_solidfire_software_interfaces.html["軟體介面SolidFire"]
+* link:../concepts/concept_intro_solidfire_active_iq.html["SolidFire Active IQ"]
+* link:../concepts/concept_intro_management_node.html["Element軟體的管理節點"]
+* link:../concepts/concept_intro_management_services_for_afa.html["管理服務"]
+
+
+
+
+== 通用URL
+
+以下是SolidFire 您搭配使用的通用URL：
+
+[cols="2*"]
+|===
+| URL | 說明 
+
+
+| https://[storage叢集MVIP位址] | 存取NetApp Element 這個軟件UI。 
+
+
+| https://activeiq.solidfire.com` | 監控資料並接收任何效能瓶頸或潛在系統問題的警示。 
+
+
+| https://[management節點IP位址 | 存取NetApp混合雲控制、升級您的儲存安裝與更新管理服務。 
+
+
+| https://[IP地址：4442 | 從每個節點的UI存取網路和叢集設定、並利用系統測試和公用程式。 link:../storage/task_per_node_access_settings.html["深入瞭解。"] 
+
+
+| https://[management節點IP位址：/mnode' | 使用管理服務REST API及管理節點的其他功能。link:../mnode/task_mnode_work_overview.html["深入瞭解。"] 
+
+
+| https://[management節點IP位址：9443 | 在vSphere Web Client中登錄vCenter外掛程式套件。link:https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html["深入瞭解。"^] 
+|===
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

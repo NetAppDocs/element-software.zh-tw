@@ -1,0 +1,198 @@
+---
+permalink: api/reference_element_api_rollbacktosnapshot.html 
+sidebar: sidebar 
+keywords: rollbacktosnapshot,snapshot,creating,create,roll,back,rollback,roll back,existing 
+summary: 您可以使用RollbackToSnapshot方法來建立作用中Volume映像的現有快照。此方法會從現有的快照建立新的快照。 
+---
+= RollbackToSnapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「RollbackToSnapshot」方法來建立作用中Volume映像的現有快照。此方法會從現有的快照建立新的快照。
+
+新的快照會變成作用中、並保留現有的快照、直到手動刪除為止。除非您將SaveCurrentState參數設定為true、否則會刪除先前作用中的快照。
+
+*叢集完整度*
+
+
+NOTE: 如果叢集完整度處於階段1、2或3、您可以建立快照。叢集完整度達到階段4或5時、您無法建立快照。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume ID
+ a| 
+Volume的Volume ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+JSON屬性
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+名稱
+ a| 
+快照的名稱。如果未指定名稱、則會使用回溯至的快照名稱、並在名稱結尾加上「- copy」。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+Snapshot ID
+ a| 
+先前在指定磁碟區上建立的快照ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+SaveCurrentState
+ a| 
+指定是否要儲存先前的作用中Volume映像。有效值：
+
+* 是：保留上一個作用中Volume映像。
+* 否：刪除上一個作用中Volume映像。
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Checksum
+ a| 
+儲存快照中資料的小字串表示。
+ a| 
+字串
+
+
+
+ a| 
+Snapshot ID
+ a| 
+如果已將SaveCurrentState設為假、則此值為null。
+
+如果已將SaveCurrentState設為true、則為新建立的快照的唯一ID。
+ a| 
+整數
+
+
+
+ a| 
+Snapshot
+ a| 
+如果已將SaveCurrentState設為假、則此值為null。
+
+如果已將SaveCurrentState設為true、則表示物件含有新建立之快照的相關資訊。
+ a| 
+xref:reference_element_api_snapshot.adoc[Snapshot]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+ "method": "RollbackToSnapshot",
+ "params": {
+    "volumeID": 1,
+    "snapshotID": 3114,
+    "saveCurrentState": true
+  },
+  "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "checksum": "0x0",
+    "snapshot": {
+      "attributes": {},
+      "checksum": "0x0",
+      "createTime": "2016-04-04T17:27:32Z",
+      "enableRemoteReplication": false,
+      "expirationReason": "None",
+      "expirationTime": null,
+      "groupID": 0,
+      "groupSnapshotUUID": "00000000-0000-0000-0000-000000000000",
+      "name": "test1-copy",
+      "snapshotID": 1,
+      "snapshotUUID": "30d7e3fe-0570-4d94-a8d5-3cc8097a6bfb",
+      "status": "done",
+      "totalSize": 5000658944,
+      "virtualVolumeID": null,
+      "volumeID": 1
+    },
+    "snapshotID": 1
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

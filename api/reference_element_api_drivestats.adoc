@@ -1,0 +1,191 @@
+---
+permalink: api/reference_element_api_drivestats.html 
+sidebar: sidebar 
+keywords: object,objects,driveStats 
+summary: driveStats物件包含單一磁碟機的高層活動量測。您可以使用API方法GetDriveStats擷取測量資訊。 
+---
+= 磁碟統計資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+driveStats物件包含單一磁碟機的高層活動量測。您可以使用API方法「GetDriveStats」擷取測量資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+行動工作階段
+ a| 
+目前使用此磁碟機的iSCSI工作階段數目（僅適用於中繼資料磁碟機）。
+ a| 
+整數
+
+
+
+ a| 
+DriveID
+ a| 
+叢集中磁碟機的唯一ID。
+ a| 
+整數
+
+
+
+ a| 
+失敗DieCount
+ a| 
+故障磁碟機硬體元素數量。
+ a| 
+整數
+
+
+
+ a| 
+《生命的重製》Percent
+ a| 
+磁碟機媒體耗損指標。
+ a| 
+整數
+
+
+
+ a| 
+lifetimeReadBytes
+ a| 
+此磁碟機在磁碟機壽命期間讀取的總位元組數。
+ a| 
+整數
+
+
+
+ a| 
+lifimeWriteBytes
+ a| 
+此磁碟機在磁碟機壽命期間寫入的總位元組數。
+ a| 
+整數
+
+
+
+ a| 
+PowerOnHours
+ a| 
+此磁碟機已開機的小時數。
+ a| 
+整數
+
+
+
+ a| 
+readBytes
+ a| 
+由於用戶端作業而從磁碟機讀取的總位元組數。
+ a| 
+整數
+
+
+
+ a| 
+readOps
+ a| 
+由於用戶端作業、磁碟機上的讀取作業總計。
+ a| 
+整數
+
+
+
+ a| 
+重新分配的區段
+ a| 
+此磁碟機中更換的壞磁碟區數目。
+ a| 
+整數
+
+
+
+ a| 
+保留容量百分比
+ a| 
+磁碟機的可用保留容量。
+ a| 
+整數
+
+
+
+ a| 
+時間戳記
+ a| 
+目前的時間格式為UTC + 0。
+ a| 
+ISO 8601日期字串
+
+
+
+ a| 
+累計容量
+ a| 
+磁碟機總容量（以位元組為單位）。
+ a| 
+整數
+
+
+
+ a| 
+無法修正的錯誤
+ a| 
+磁碟機中自我監控、分析與報告技術（SMART）監控系統所報告的「無法修正的錯誤」值。
+ a| 
+整數
+
+
+
+ a| 
+使用容量
+ a| 
+磁碟機的已用容量（以位元組為單位）。
+ a| 
+整數
+
+
+
+ a| 
+使用記憶體
+ a| 
+裝載此磁碟機的節點目前使用的記憶體容量。
+ a| 
+整數
+
+
+
+ a| 
+文章Bytes
+ a| 
+由於用戶端活動而寫入磁碟機的總位元組數。
+ a| 
+整數
+
+
+
+ a| 
+寫入作業
+ a| 
+由於用戶端活動而對磁碟機進行的寫入作業總計。
+ a| 
+整數
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_getdrivestats.adoc[GetDriveStats]

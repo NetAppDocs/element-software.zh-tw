@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_manage_accounts_overview.html 
+sidebar: sidebar 
+keywords: element, solidfire, accounts, manage, cluster, admin, administrator, node 
+summary: 在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。 
+---
+= 管理帳戶
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。
+
+* link:storage/concept_system_manage_manage_cluster_administrator_users.html["使用使用者帳戶"]
+* link:storage/concept_system_manage_manage_cluster_administrator_users.html["管理叢集管理員使用者帳戶"]
+
+
+
+
+== 以取得更多資訊
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

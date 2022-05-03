@@ -1,0 +1,28 @@
+---
+permalink: storage/reference_system_manage_snmp_snmp_details.html 
+sidebar: sidebar 
+keywords: snmp, overview, reference, mib, settings, trap 
+summary: 在「叢集」索引標籤的「SNMP」頁面上、您可以檢視下列資訊。 
+---
+= SNMP詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在「叢集」索引標籤的「SNMP」頁面上、您可以檢視下列資訊。
+
+* * SNMP MIBS*
++
+您可以檢視或下載的mib檔案。
+
+* *一般SNMP設定*
++
+您可以啟用或停用SNMP。啟用SNMP之後、您可以選擇要使用的版本。如果使用版本2、您可以新增申請者、如果使用版本3、您可以設定USM使用者。
+
+* * SNMP設陷設定*
++
+您可以識別要擷取的陷阱。您可以為每個陷阱收件者設定主機、連接埠和社群字串。
+
+

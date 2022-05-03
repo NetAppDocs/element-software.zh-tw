@@ -1,0 +1,101 @@
+---
+sidebar: sidebar 
+permalink: mnode/task_mnode_add_assets.html 
+summary: 您可以使用REST API UI將控制器資產新增至管理節點組態。 
+keywords: netapp, mnode, management node, rest api, Element 
+---
+= 將控制器資產新增至管理節點
+:allow-uri-read: 
+
+
+[role="lead"]
+您可以使用REST API UI將控制器資產新增至管理節點組態。
+
+如果您最近調整了安裝規模、但新資產並未自動新增至組態、則可能需要新增資產。使用這些API新增最近新增至安裝的資產。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您的叢集版本執行NetApp Element 的是更新版本的Software 11.3。
+* 您已部署執行11.3版或更新版本的管理節點。
+* 您已在vCenter中建立新的NetApp HCC角色、將管理節點服務檢視限制為僅適用於NetApp的資產。請參閱 link:task_mnode_create_netapp_hcc_role_vcenter.html["在vCenter中建立NetApp HCC角色"]
+
+
+.步驟
+. 取得安裝的基礎資產ID：
++
+.. 在管理節點上開啟庫存服務REST API UI：
++
+[listing]
+----
+https://<ManagementNodeIP>/inventory/1/
+----
+.. 選擇*授權*並完成下列項目：
++
+... 輸入叢集使用者名稱和密碼。
+... 輸入用戶端ID為「mnode-client」。
+... 選取*授權*以開始工作階段。
+... 關閉視窗。
+
+
+.. 從REST API UI中、選取*「Get Rise/Installations」*。
+.. 選擇*試用*。
+.. 選擇*執行*。
+.. 從代碼200回應本文中、複製「id」以供安裝之用。
++
+[listing, subs="+quotes"]
+----
+{
+  "installations": [
+    {
+      "_links": {
+        "collection": "https://10.111.211.111/inventory/1/installations",
+        "self": "https://10.111.217.111/inventory/1/installations/abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"
+      },
+      *"id": "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x",*
+----
++
+
+NOTE: 您的安裝具有在安裝或升級期間建立的基礎資產組態。
+
+.. 從REST API UI中選取* Get /Installations/{id}*。
+.. 選擇*試用*。
+.. 將安裝資產ID貼到* id*欄位。
+.. 選擇*執行*。
+.. 從回應中、複製並儲存叢集控制器ID（「controllerId」）以供後續步驟使用。
+
+
+. 若要將控制器子資產新增至現有的基礎資產、請選取：
++
+[listing]
+----
+POST /assets/{asset_id}/controllers
+----
++
+.. 在管理節點上開啟mNode服務REST API UI：
++
+[listing]
+----
+https://<ManagementNodeIP>/mnode
+----
+.. 選擇*授權*並完成下列項目：
++
+... 輸入叢集使用者名稱和密碼。
+... 輸入用戶端ID為「mnode-client」。
+... 選取*授權*以開始工作階段。
+... 關閉視窗。
+
+
+.. 選取* POST /Assets /｛asset_id｝/ controller*。
+.. 選擇*試用*。
+.. 在「* asset_id*」欄位中輸入父基礎資產ID。
+.. 將所需的值新增至有效負載。
+.. 選擇*執行*。
+
+
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+

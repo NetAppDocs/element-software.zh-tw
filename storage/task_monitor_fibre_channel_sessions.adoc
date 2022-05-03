@@ -1,0 +1,24 @@
+---
+permalink: storage/task_monitor_fibre_channel_sessions.html 
+sidebar: sidebar 
+keywords: fibre channel sessions, fc, FC, sessions 
+summary: 您可以檢視連接至叢集的光纖通道（FC）工作階段。您可以篩選資訊、只包括您想要顯示在視窗中的連線。 
+---
+= 檢視Fibre Channel工作階段
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視連接至叢集的光纖通道（FC）工作階段。您可以篩選資訊、只包括您想要顯示在視窗中的連線。
+
+. 在Element UI中、選取* Reports*>* FC工作階段*。
+. 若要查看篩選條件欄位、請按一下*篩選*。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_monitor_fibre_channel_session_details.adoc[Fibre Channel工作階段詳細資料]

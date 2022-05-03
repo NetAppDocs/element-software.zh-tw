@@ -1,0 +1,71 @@
+---
+permalink: api/reference_element_api_getlldpconfig.html 
+sidebar: sidebar 
+keywords: lldp,config,configuration,get,getting,getlldpinfo,storage 
+summary: 您可以使用GetLldpConfig方法、為儲存叢集的每個節點取得連結層探索傳輸協定（LLDP）組態。 
+---
+= GetLldpConfig
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetLldpConfig」方法、為儲存叢集的每個節點取得連結層探索通訊協定（LLDP）組態。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+LLDPConfig
+ a| 
+儲存叢集LLDP組態的相關資訊。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetLldpConfig",
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id": null,
+		"result": {
+			"lldpConfig": {
+				"enableLldp": true,
+				"enableMed": false,
+				"enableOtherProtocols": true
+		}
+	}
+}
+----

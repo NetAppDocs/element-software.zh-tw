@@ -1,0 +1,56 @@
+---
+section: mnode
+title: 使用管理節點
+entries:
+- title: 管理節點總覽
+  url: "/mnode/task_mnode_work_overview.html"
+- title: 安裝或恢復管理節點
+  entries:
+  - title: 安裝管理節點
+    url: "/mnode/task_mnode_install.html"
+  - title: 在vCenter中建立NetApp HCC角色
+    url: "/mnode/task_mnode_create_netapp_hcc_role_vcenter.html"
+  - title: 設定儲存網路介面控制器（NIC）
+    url: "/mnode/task_mnode_install_add_storage_NIC.html"
+  - title: 恢復管理節點
+    url: "/mnode/task_mnode_recover.html"
+- title: 存取管理節點
+  url: "/mnode/task_mnode_access_ui.html"
+- title: 使用管理節點UI
+  entries:
+  - title: 管理節點UI總覽
+    url: "/mnode/task_mnode_work_overview_UI.html"
+  - title: 設定警示監控
+    url: "/mnode/task_mnode_enable_alerts.html"
+  - title: 修改及測試管理節點網路、叢集及系統設定
+    url: "/mnode/task_mnode_settings.html"
+  - title: 從管理節點執行系統公用程式
+    url: "/mnode/task_mnode_run_system_utilities.html"
+- title: 使用管理節點REST API
+  entries:
+  - title: 管理節點REST API UI總覽
+    url: "/mnode/task_mnode_work_overview_API.html"
+  - title: 取得使用REST API的授權
+    url: "/mnode/task_mnode_api_get_authorizationtouse.html"
+  - title: 啟用Active IQ 功能支援功能與NetApp監控
+    url: "/mnode/task_mnode_enable_activeIQ.html"
+  - title: 為多個vCenter設定NetApp混合雲控制
+    url: "/mnode/task_mnode_multi_vcenter_config.html"
+  - title: 將控制器資產新增至管理節點
+    url: "/mnode/task_mnode_add_assets.html"
+  - title: 建立及管理儲存叢集資產
+    url: "/mnode/task_mnode_manage_storage_cluster_assets.html"
+  - title: 檢視或編輯現有的控制器資產
+    url: "/mnode/task_mnode_edit_vcenter_assets.html"
+  - title: 設定Proxy伺服器
+    url: "/mnode/task_mnode_configure_proxy_server.html"
+  - title: 驗證管理節點作業系統和服務版本
+    url: "/mnode/task_mnode_api_find_mgmt_svcs_version.html"
+  - title: 從管理服務取得記錄
+    url: "/mnode/task_mnode_logs.html"
+- title: 管理支援連線
+  entries:
+  - title: 啟動遠端NetApp支援工作階段
+    url: "/mnode/task_mnode_enable_remote_support_connections.html"
+  - title: 管理管理節點上的SSH功能
+    url: "/mnode/task_mnode_ssh_management.html"

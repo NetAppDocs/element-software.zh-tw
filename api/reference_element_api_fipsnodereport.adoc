@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_fipsnodereport.html 
+sidebar: sidebar 
+keywords: objects,object,fipsNodeReport 
+summary: FpsNodeReport物件包含有關FIPS 140-2支援儲存叢集中單一節點的資訊。您可以使用GetFipsReport方法擷取此資訊。 
+---
+= FpsNodeReport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FpsNodeReport物件包含有關FIPS 140-2支援儲存叢集中單一節點的資訊。您可以使用「GetFipsReport」方法擷取此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+節點ID
+ a| 
+報告資訊的節點ID。
+ a| 
+整數
+
+
+
+ a| 
+FpsDrives
+ a| 
+是否為此節點啟用FIPS 140-2磁碟機加密。可能值：
+
+* 無：此節點無法進行FIPS磁碟機加密。
+* 部分：節點能夠進行FIPS磁碟機加密、但並非所有磁碟機都能使用FIPS功能的磁碟機。
+* 就緒：節點能夠進行FIPS磁碟機加密、且所有磁碟機均為FIPS相容磁碟機、或沒有磁碟機存在。
+
+ a| 
+FipsDrivesStatus類型
+
+
+
+ a| 
+https已啟用
+ a| 
+是否為此節點啟用FIPS 140-2 HTTPS加密。可能值：
+
+* true：已啟用
+* 否：停用
+
+ a| 
+布林值
+
+|===

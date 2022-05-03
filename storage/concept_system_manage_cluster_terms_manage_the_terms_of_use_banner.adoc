@@ -1,0 +1,72 @@
+---
+permalink: storage/concept_system_manage_cluster_terms_manage_the_terms_of_use_banner.html 
+sidebar: sidebar 
+keywords: element, terms of use, banner, config, edit, terms of use, disable, enable 
+summary: 您可以啟用、編輯或設定包含使用者訊息的橫幅。 
+---
+= 管理使用條款橫幅
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以啟用、編輯或設定包含使用者訊息的橫幅。
+
+<<Enable the Terms of Use banner>>
+<<Edit the Terms of Use banner>>
+<<Disable the Terms of Use banner>>
+
+
+
+== 啟用使用條款橫幅
+
+您可以啟用使用者登入Element UI時出現的「使用條款」橫幅。當使用者按一下橫幅時、會出現一個文字對話方塊、其中包含您為叢集設定的訊息。橫幅可隨時關閉。
+
+您必須擁有叢集管理員權限、才能啟用「使用條款」功能。
+
+. 按一下「*使用者*>*使用條款*」。
+. 在「*使用條款*」表單中、輸入要在「使用條款」對話方塊中顯示的文字。
++
+
+NOTE: 不得超過4096個字元。
+
+. 按一下「*啟用*」。
+
+
+
+
+== 編輯使用條款橫幅
+
+您可以編輯使用者在選取「使用條款」登入橫幅時看到的文字。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須擁有叢集管理員權限、才能設定使用條款。
+* 確認已啟用「使用條款」功能。
+
+
+.步驟
+. 按一下「*使用者*>*使用條款*」。
+. 在*使用條款*對話方塊中、編輯您要顯示的文字。
++
+
+NOTE: 不得超過4096個字元。
+
+. 按一下*儲存變更*。
+
+
+
+
+== 停用使用條款橫幅
+
+您可以停用「使用條款」橫幅。停用橫幅時、使用者不再需要接受元素UI的使用條款。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須擁有叢集管理員權限、才能設定使用條款。
+* 確認已啟用使用條款。
+
+
+.步驟
+. 按一下「*使用者*>*使用條款*」。
+. 按一下*停用*。
+

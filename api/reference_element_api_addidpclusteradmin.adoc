@@ -1,0 +1,132 @@
+---
+permalink: api/reference_element_api_addidpclusteradmin.html 
+sidebar: sidebar 
+keywords: IdP,idp,cluster,admin,add,adding,addIdpclusteradmin 
+summary: 您可以使用AddIpdClusterAdmin方法來新增由協力廠商身分識別提供者（IDP）驗證的叢集管理員使用者。IDP叢集管理帳戶是根據IDP中與使用者相關的SAML聲明所提供的SAML屬性值資訊來設定。如果使用者已成功驗證IDP、且SAML聲明中的SAML屬性陳述與多個IDP叢集管理帳戶相符、則使用者將擁有符合IDP叢集管理帳戶的合併存取層級。 
+---
+= AddIdpClusterAdmin
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「AddIpdClusterAdmin」方法來新增由協力廠商身分識別供應商（IDP）驗證的叢集管理員使用者。IDP叢集管理帳戶是根據IDP中與使用者相關聯的SAML聲明所提供的SAML屬性值資訊來設定。如果使用者已成功驗證IDP、且SAML聲明中的SAML屬性陳述與多個IDP叢集管理帳戶相符、則使用者將擁有符合IDP叢集管理帳戶的合併存取層級。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+存取
+ a| 
+控制此IDP叢集管理員可以使用的方法。
+ a| 
+字串陣列
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+接受Eula
+ a| 
+接受終端使用者授權合約。設為true可將叢集管理員帳戶新增至系統。如果省略或設為假、則方法呼叫會失敗。
+ a| 
+布林值
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+使用者名稱
+ a| 
+對應至IDP叢集管理員的SAML屬性值（例如、email=test@example.com）。您可以使用「NameID」或SAML屬性聲明中的項目（例如「eDuPersonAffetion」）、來定義這項功能。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集管理ID
+ a| 
+新建立叢集管理員的唯一識別碼。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method": "AddIdpClusterAdmin",
+    "params": {
+        "username": "email=test@example.com",
+        "acceptEula": true,
+        "access": ["administrator"]
+    }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "result": {
+        "clusterAdminID": 13
+    }
+}
+----
+
+
+== 新的自版本
+
+12.0

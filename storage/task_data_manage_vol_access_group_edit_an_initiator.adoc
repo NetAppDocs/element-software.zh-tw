@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_manage_vol_access_group_edit_an_initiator.html 
+sidebar: sidebar 
+keywords: initiator, edit, change alias, chap, credentials 
+summary: 您可以變更現有啟動器的別名、或是新增別名（如果別名不存在）。 
+---
+= 編輯啟動器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以變更現有啟動器的別名、或是新增別名（如果別名不存在）。
+
+若要為每個啟動器新增CHAP帳戶名稱和認證、您必須使用「modifyInitiator」API呼叫來移除和新增CHAP存取和屬性。
+
+請參閱 link:../api/index.html["使用Element API管理儲存設備"]。
+
+.步驟
+. 按一下*管理*>*啟動器*。
+. 按一下您要編輯之啟動器的「動作」圖示。
+. 按一下 * 編輯 * 。
+. 在「*別名*」欄位中輸入啟動器的新別名。
+. 按一下*儲存變更*。
+

@@ -1,0 +1,37 @@
+---
+permalink: storage/task_data_manage_vol_access_group_view_individual_access_group_details.html 
+sidebar: sidebar 
+keywords: access group details, view, view details, initiators 
+summary: 您可以以圖形格式檢視個別存取群組的詳細資料、例如附加的磁碟區和啟動器。 
+---
+= 檢視個別存取群組詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以以圖形格式檢視個別存取群組的詳細資料、例如附加的磁碟區和啟動器。
+
+. 按一下*管理*>*存取群組*。
+. 按一下存取群組的「動作」圖示。
+. 按一下*檢視詳細資料*。
+
+
+
+
+== Volume存取群組詳細資料
+
+「管理」索引標籤上的「存取群組」頁面提供有關Volume存取群組的資訊。
+
+將顯示下列資訊：
+
+* * ID*：系統產生的存取群組ID。
+* *名稱*：建立存取群組時所指定的名稱。
+* *作用中磁碟區*：存取群組中作用中磁碟區的數量。
+* *壓縮*：存取群組的壓縮效率分數。
+* *重複資料刪除*：存取群組的重複資料刪除效率分數。
+* *精簡配置*：存取群組的精簡配置效率分數。
+* *整體效率*：存取群組的整體效率分數。
+* *啟動器*：連線至存取群組的啟動器數目。
+

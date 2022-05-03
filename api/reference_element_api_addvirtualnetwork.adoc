@@ -1,0 +1,206 @@
+---
+permalink: api/reference_element_api_addvirtualnetwork.html 
+sidebar: sidebar 
+keywords: addvirtualnetwork,cluster,add,adding,virtual,network 
+summary: 您可以使用AddVirtualNetwork方法將新的虛擬網路新增至叢集組態。 
+---
+= AddVirtualNetwork
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「AddVirtualNetwork」方法、將新的虛擬網路新增至叢集組態。
+
+新增虛擬網路時、會為每個節點建立一個介面、而且每個介面都需要一個虛擬網路IP位址。您為此API方法指定為參數的IP位址數目、必須等於或大於叢集中的節點數。系統大量配置虛擬網路位址、並自動將其指派給個別節點。您不需要手動指派虛擬網路位址給節點。
+
+
+NOTE: AddVirtualNetwork方法僅用於建立新的虛擬網路。如果您想要變更現有的虛擬網路、請使用 xref:reference_element_api_modifyvirtualnetwork.adoc[ModifyVirtualNetwork] 方法。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+定址鎖定
+ a| 
+虛擬網路中要包含的IP位址範圍不重複。物件的必要成員：
+
+* Start（開始）：IP位址範圍的開頭。（字串）
+* 大小：要包含在區塊中的IP位址數目。（整數）
+
+ a| 
+Json物件陣列
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+閘道
+ a| 
+虛擬網路閘道的IP位址。此參數僅在命名空間參數設定為true時有效。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+名稱
+ a| 
+新虛擬網路的使用者定義名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+命名空間
+ a| 
+設為true時、可建立及設定命名空間及其中所包含的虛擬網路、以啟用可路由的儲存VLAN功能。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+網路遮罩
+ a| 
+所建立虛擬網路的唯一網路遮罩。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+服務
+ a| 
+所建立虛擬網路的唯一儲存IP位址。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+虛擬化網路標籤
+ a| 
+獨特的虛擬網路（VLAN）標記。支援的值為1到4094。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+*注意：*將命名空間設為假時、虛擬網路參數必須對每個虛擬網路都是唯一的。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+虛擬網路ID
+ a| 
+新虛擬網路的虛擬網路ID。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "AddVirtualNetwork",
+  "params": {
+    "virtualNetworkTag": 2010,
+    "name": "network1",
+    "addressBlocks" : [
+        { "start": "192.86.5.1", "size": 10 },
+        { "start": "192.86.5.50", "size": 20 }
+    ],
+    "netmask" : "255.255.192.0",
+    "gateway" : "10.0.1.254",
+    "svip" : "192.86.5.200",
+    "attributes" : {}
+    "namespace" : true
+  },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "virtualNetworkID": 5
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,53 @@
+---
+permalink: api/concept_element_api_snapmirror_api_methods.html 
+sidebar: sidebar 
+keywords: SnapMirror,API,method 
+summary: SnapMirror API方法由Element Web UI使用、用於管理鏡射於遠端ONTAP 支援系統的快照。這些方法僅供元素Web UI使用。如果您需要API存取SnapMirror功能、請使用ONTAP Isrror API。SnapMirror API方法不提供申請和退貨範例。 
+---
+= SnapMirror API方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror API方法由Element Web UI使用、用於管理鏡射於遠端ONTAP 支援系統的快照。這些方法僅供元素Web UI使用。如果您需要API存取SnapMirror功能、請使用ONTAP Isrror API。SnapMirror API方法不提供申請和退貨範例。
+
+* xref:reference_element_api_abortsnapmirrorrelationship.adoc[AbortSnapMirrorRelationationations]
+* xref:reference_element_api_breaksnapmirrorrelationship.adoc[BreakSnapMirrorRelationationations.]
+* xref:reference_element_api_breaksnapmirrorvolume.adoc[BreakSnapMirrorVolume]
+* xref:reference_element_api_createsnapmirrorendpoint.adoc[建立SnapMirrorEndpoint]
+* xref:reference_element_api_createsnapmirrorendpoint_unmanaged.adoc[不受管理的CreSnapMirrorEndpoint]
+* xref:reference_element_api_createsnapmirrorrelationship.adoc[建立SnapMirrorRelationationationationationship]
+* xref:reference_element_api_createsnapmirrorvolume.adoc[建立SnapMirrorVolume]
+* xref:reference_element_api_deletesnapmirrorendpoints.adoc[刪除SnapMirrorEndpoints]
+* xref:reference_element_api_deletesnapmirrorrelationships.adoc[刪除SnapMirrorRelationships]
+* xref:reference_element_api_getontapversioninfo.adoc[GetOnTapVersion資訊]
+* xref:reference_element_api_getsnapmirrorclusteridentity.adoc[GetSnapMirrorClusterIdentity]
+* xref:reference_element_api_initializesnapmirrorrelationship.adoc[初始化SnapMirrorRelationationations]
+* xref:reference_element_api_listsnapmirroraggregates.adoc[ListSnapMirrorAgggregates]
+* xref:reference_element_api_listsnapmirrorendpoints.adoc[列出SnapMirrorEndpoints]
+* xref:reference_element_api_listsnapmirrorluns.adoc[LISTSnapMirrorLuns]
+* xref:reference_element_api_listsnapmirrornetworkinterfaces.adoc[ListSnapMirrorNetwork介面]
+* xref:reference_element_api_listsnapmirrornodes.adoc[清單SnapMirrorNode]
+* xref:reference_element_api_listsnapmirrorpolicies.adoc[清單SnapMirrorPolicy]
+* xref:reference_element_api_listsnapmirrorschedules.adoc[清單SnapMirrorSchedules]
+* xref:reference_element_api_listsnapmirrorrelationships.adoc[ListSnapMirrorRelationships]
+* xref:reference_element_api_listsnapmirrorvolumes.adoc[ListSnapMirrorVolumes]
+* xref:reference_element_api_listsnapmirrorvservers.adoc[LISTSnapMirrorVservers]
+* xref:reference_element_api_modifysnapmirrorendpoint.adoc[ModifySnapMirrorEndpoint]
+* xref:reference_element_api_modifysnapmirrorendpoint_unmanaged.adoc[ModifySnapMirrorEndpoint（非託管）]
+* xref:reference_element_api_modifysnapmirrorrelationship.adoc[ModifySnapMirrorRelationationations]
+* xref:reference_element_api_updatesnapmirrorrelationship.adoc[更新SnapMirrorRelationationations.]
+* xref:reference_element_api_quiescesnapmirrorrelationship.adoc[QuiesceSnapMirrorRelationationationation]
+* xref:reference_element_api_resumesnapmirrorrelationship.adoc[ResumeSnapMirrorRelationationationation]
+* xref:reference_element_api_resyncsnapmirrorrelationship.adoc[重新建立SnapMirrorRelationationationationationation]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

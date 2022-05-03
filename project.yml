@@ -1,0 +1,135 @@
+---
+settings:
+  name: Element Software
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: 零件與元件軟體12.3.x文件SolidFire
+    url: "/index.html"
+  - title: 版本資訊
+    url: "/concepts/concept_rn_relatedrn_element.html"
+    entries:
+    - title: 新增功能
+      url: "/concepts/concept_rn_whats_new_element.html"
+  - section: concepts
+  - title: 需求
+    url: "/setup/concept_requirements_overview.html"
+    entries:
+    - title: 網路需求
+      url: "/storage/concept_prereq_networking.html"
+    - title: 執行Element軟體的叢集交換器組態
+      url: "/storage/concept_prereq_switch_configuration_for_solidfire_clusters.html"
+    - title: 網路連接埠需求
+      url: "/storage/reference_prereq_network_port_requirements.html"
+  - section: try
+  - section: hardware
+  - section: esds
+  - section: setup
+  - section: storage
+  - section: hccstorage
+  - section: api
+  - title: 使用Element Plug-in for vCenter Server管理儲存設備（連結）
+    url: https://docs.netapp.com/us-en/vcp/
+  - section: mnode
+  - section: upgrade
+  - title: 舊版
+    url: "/element-earlierversions.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 產品總覽
+      url: "/concepts/concept_intro_product_overview.html"
+    - title: 版本資訊
+      url: "/concepts/concept_rn_relatedrn_element.html"
+    - title: 新增功能
+      url: "/concepts/concept_rn_whats_new_element.html"
+    - title: 需求
+      url: "/setup/concept_requirements_overview.html"
+    - title: 設定總覽
+      url: "/setup/concept_setup_overview.html"
+  - title: 安裝維護硬體
+    links:
+    - title: H410S和H610S硬體資訊
+      url: "/hardware/concept_h410s_h610s_info.html"
+    - title: SF系列硬體資訊
+      url: "/hardware/concept_sfseries_info.html"
+  - title: 管理儲存設備
+    links:
+    - title: 使用Element軟體UI
+      url: "/storage/index.html"
+    - title: 使用NetApp混合雲控管
+      url: "/hccstorage/index.html"
+    - title: 使用Element軟體API
+      url: "/api/index.html"
+    - title: 使用vCenter Server的元素外掛程式
+      url: https://docs.netapp.com/us-en/vcp/
+    - title: 使用管理節點
+      url: "/mnode/task_mnode_work_overview.html"
+  - title: 安裝及使用SolidFire 企業版SDS
+    links:
+    - title: 介紹ESDS SolidFire
+      url: "/esds/concept_get_started_esds.html"
+    - title: 快速入門
+      url: https://review.docs.netapp.com/us-en/element-software_element_tile_restructure_doc-3473/media/SDS_Quick_Start_Guide.pdf
+    - title: 安裝需求
+      url: "/esds/concept_esds_prerequisite_tasks.html"
+    - title: 管理儲存設備
+      url: "/esds/reference_esds_element_links.html"
+    - title: 維護SolidFire 功能
+      url: "/esds/concept_esds_maintain.html"
+  - title: 使用整合工具（需要登入）
+    links:
+    - title: Element CLI
+      url: https://mysupport.netapp.com/site/tools/tool-eula/elem-cli
+    - title: Element PowerShell工具
+      url: https://mysupport.netapp.com/site/tools/tool-eula/elem-powershell-tools
+    - title: 元素SDK（Java、.NET、Python）
+      url: https://mysupport.netapp.com/site/products/all/details/netapphci-solidfire-elementsoftware/tools-tab
+    - title: 以測試套件為設計目標SolidFire
+      url: https://github.com/solidfire/postman
+    - title: 儲存複製介面卡SolidFire
+      url: https://mysupport.netapp.com/site/products/all/details/elementsra/downloads-tab
+    - title: HRO SolidFire
+      url: https://mysupport.netapp.com/site/products/all/details/solidfire-vro/downloads-tab
+    - title: VSS Provider SolidFire
+      url: https://mysupport.netapp.com/site/products/all/details/solidfire-vss-provider/downloads-tab
+  - title: 解決方案
+    links:
+    - title: "「資源」頁面SolidFire"
+      url: https://www.netapp.com/data-storage/solidfire/documentation/
+    - title: NetApp解決方案
+      url: https://docs.netapp.com/us-en/netapp-solutions/index.html
+  - title: 示範教學課程
+    links:
+    - title: NetApp University SolidFire 技術訓練（需登入）
+      url: https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/common/searchresults/solidfire/LEARNINGEVENT%2COFFERINGTEMPLATE%2CCERTIFICATION%2CCURRICULUM%2COFFERING%2CPACKAGE
+    - title: 如何安裝及擴充NetApp SolidFire 的叢集（影片）
+      url: http://tv.netapp.com/detail/video/5778540099001?autoStart=true&page=1&q=solidfire
+    - title: NetApp SolidFire 安裝（影片）
+      url: https://youtu.be/YKGK5nNSL68
+  - title: 部落格社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/AFF-NVMe-EF-Series-and-SolidFire-Discussions/bd-p/flash-storage-systems-discussions
+    - title: 取得協助的地方
+      url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
+  - title: 舊版
+    links:
+    - title: Element 12.2文件
+      url: https://docs.netapp.com/sfe-122/index.jsp
+    - title: Element 12.0文件
+      url: https://docs.netapp.com/sfe-120/index.jsp
+    - title: Element 11.8文件
+      url: https://docs.netapp.com/sfe-118/index.jsp
+    - title: Element 11.5文件
+      url: https://docs.netapp.com/sfe-115/index.jsp
+    - title: Element 11.3文件
+      url: https://docs.netapp.com/sfe-113/index.jsp

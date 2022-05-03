@@ -1,0 +1,39 @@
+---
+permalink: api/concept_element_api_asynchronous_methods.html 
+sidebar: sidebar 
+keywords: async,asynchronous,methods,API 
+summary: 有些API方法是非同步的、這表示當方法傳回時、它們執行的作業可能不完整。非同步方法會傳回可查詢以查看作業狀態的處理代碼；某些作業的狀態資訊可能會包含完成百分比。 
+---
+= 非同步方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+有些API方法是非同步的、這表示當方法傳回時、它們執行的作業可能不完整。非同步方法會傳回可查詢以查看作業狀態的處理代碼；某些作業的狀態資訊可能會包含完成百分比。
+
+查詢非同步作業時、其結果可能是下列其中一種：
+
+* 「DiveAdd」：系統正在將磁碟機新增至叢集。
+* 「BulkVolume」：系統正在執行磁碟區之間的複製作業、例如備份或還原。
+* 「Clone（複製）」：系統正在複製磁碟區。
+* 「刪除」：系統正在從磁碟機複製資料、準備將其從叢集移除。
+* 「RtfiPendingNode」：系統將相容軟體新增至叢集之前、正在節點上安裝相容軟體。
+
+
+使用非同步方法或取得執行中非同步作業的狀態時、請注意下列幾點：
+
+* 非同步方法會在個別方法文件中指出。
+* 非同步方法會傳回「asyncdyle」、這是發行API方法所知道的句點。您可以使用控制代碼輪詢非同步作業的狀態或結果。
+* 您可以使用Getynprynresult方法取得個別非同步方法的結果。當您使用GetSuccessynresult查詢完成的作業時、系統會傳回結果並自動清除系統的結果。當您使用Getynprynresult查詢不完整的作業時、系統會傳回結果、但不會清除結果。
+* 您可以使用list非 同步結果方法、取得所有執行中或已完成非同步方法的狀態和結果。在此情況下、系統不會清除已完成作業的結果。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

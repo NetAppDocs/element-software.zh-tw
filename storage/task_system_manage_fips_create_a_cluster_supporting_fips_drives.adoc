@@ -1,0 +1,22 @@
+---
+permalink: storage/task_system_manage_fips_create_a_cluster_supporting_fips_drives.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2, cluster, create 
+summary: 在許多客戶環境中部署解決方案、安全性變得越來越重要。聯邦資訊處理標準（FIPS）是電腦安全性與互通性的標準。FIPS 140-2認證的靜止資料加密是整體安全解決方案的一項元件。 
+---
+= 建立支援FIPS磁碟機的叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在許多客戶環境中部署解決方案、安全性變得越來越重要。聯邦資訊處理標準（FIPS）是電腦安全性與互通性的標準。FIPS 140-2認證的靜止資料加密是整體安全解決方案的一項元件。
+
+* link:task_system_manage_fips_avoid_mixing_nodes_for_fips_drives.html["避免混用FIPS磁碟機的節點"]
+* link:task_system_manage_fips_enable_encryption_at_rest.html["在靜止狀態下啟用加密"]
+* link:task_system_manage_fips_identify_nodes_ready_for_fips_drives["識別節點是否已準備好使用FIPS磁碟機功能"]
+* link:task_system_manage_fips_enable_the_fips_drives_feature.html["啟用FIPS磁碟機功能"]
+* link:task_system_manage_fips_check_the_fips_drive_status.html["檢查FIPS磁碟機狀態"]
+* link:task_system_manage_fips_troubleshoot_the_fips_drive_feature["疑難排解FIPS磁碟機功能"]
+

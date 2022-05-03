@@ -1,0 +1,146 @@
+---
+permalink: api/reference_element_api_testaddressavailability.html 
+sidebar: sidebar 
+keywords: ip,address,availability,test,testing,ensemble,cluster,testaddressavailability 
+summary: 您可以使用TestAddressAvailability方法檢查儲存叢集內的介面是否正在使用特定IP位址。 
+---
+= TestAddressAvailability
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「TestAddressAvailability」（測試位址可用度）方法來檢查儲存叢集內的介面是否正在使用特定IP位址。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+介面
+ a| 
+目標網路介面（例如eth0、Bond10G等）。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+地址
+ a| 
+目標介面上要掃描的IP位址。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+虛擬化網路標籤
+ a| 
+目標VLAN ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+逾時
+ a| 
+測試目標位址的逾時（以秒為單位）。
+ a| 
+整數
+ a| 
+5.
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+地址
+ a| 
+測試的IP位址。
+ a| 
+字串
+
+
+
+ a| 
+可用
+ a| 
+如果要求的IP位址正在使用中、則為true；如果不是、則為假。
+ a| 
+布林值
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+	"method": "TestAddressAvailability",
+	"params": {
+		"interface": "Bond10G",
+		"address": "10.0.0.1",
+		"virtualNetworkTag": 1234
+	}
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"address":"10.0.0.1",
+		"available": true
+	}
+}
+----
+
+
+== 新的自版本
+
+11.0

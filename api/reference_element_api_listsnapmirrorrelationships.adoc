@@ -1,0 +1,114 @@
+---
+permalink: api/reference_element_api_listsnapmirrorrelationships.html 
+sidebar: sidebar 
+keywords: snapmirror,endpoints,endpoint,list,listing,listsnapmirrorrelationships 
+summary: Element軟體Web UI使用清單SnapMirrorRelationships方法、列出元素儲存叢集上的一或所有SnapMirror關係。 
+---
+= ListSnapMirrorRelationships
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ListSnapMirrorRelationships」方法、列出元素儲存叢集上的一或所有SnapMirror關係。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+僅列出與指定端點ID相關的關係。如果未提供端點ID、系統會列出所有已知SnapMirror端點的關係。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+destinationVolume
+ a| 
+列出與指定目的地Volume相關的關係。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+來源磁碟區
+ a| 
+列出與指定來源Volume相關的關係。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+Vserver
+ a| 
+列出指定Vserver上的關係。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+關係ID
+ a| 
+列出與指定關係ID相關的關係。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorRelationships
+ a| 
+包含SnapMirror關係相關資訊的物件清單。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationationationationship] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

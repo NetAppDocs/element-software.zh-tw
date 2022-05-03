@@ -1,0 +1,109 @@
+---
+permalink: api/reference_element_api_getnodesupportedtlsciphers.html 
+sidebar: sidebar 
+keywords: tls,cipher,ciphers,get,getting,supported,getnodesupportedtlsciphers 
+summary: 您可以在單一節點上使用GetNodeSupportedTlsCiphers方法、取得此節點目前支援的TLS加密器清單。您可以在管理和儲存節點上使用此方法。 
+---
+= GetNodeSupportedTlsCiphers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在單一節點上使用「GetNodeSupportedTlsCiphers」方法、取得此節點目前支援的TLS加密器清單。您可以在管理和儲存節點上使用此方法。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+MandatoryCiphers
+ a| 
+節點的強制TLS加密套件清單。這些是在節點上永遠處於作用中狀態的加密器。
+ a| 
+字串
+
+
+
+ a| 
+預設補充密碼
+ a| 
+節點的預設補充TLS加密套件清單。當您執行ResetNodeSupplementalTlsCiphers API方法時、補充密碼會還原至此清單。
+ a| 
+字串
+
+
+
+ a| 
+支援的補充加密
+ a| 
+可用的補充TLS加密套件清單、您可以使用SetNodeSupplementalTlsCiphers API方法進行設定。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetNodeSupportedTlsCiphers",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+	"defaultSupplementalCiphers": [
+		"DHE-RSA-AES128-SHA256",
+		"DHE-RSA-AES128-GCM-SHA256",
+		"ECDHE-RSA-AES128-SHA256",
+		"ECDHE-RSA-AES128-GCM-SHA256"
+	],
+	"mandatoryCiphers": [
+		"DHE-RSA-AES256-SHA256",
+		"DHE-RSA-AES256-GCM-SHA384",
+		"ECDHE-RSA-AES256-SHA384",
+		"ECDHE-RSA-AES256-GCM-SHA384"
+	],
+	"supportedSupplementalCiphers": [
+		"DHE-RSA-AES128-SHA256",
+		"DHE-RSA-AES128-GCM-SHA256",
+		"ECDHE-RSA-AES128-SHA256",
+		"ECDHE-RSA-AES128-GCM-SHA256",
+		"DHE-RSA-AES256-SHA",
+		"ECDHE-RSA-AES256-SHA",
+		"DHE-RSA-CAMELLIA256-SHA",
+		"DHE-RSA-AES128-SHA",
+		"ECDHE-RSA-AES128-SHA",
+		"DHE-RSA-CAMELLIA128-SHA"
+	]
+}
+}
+----

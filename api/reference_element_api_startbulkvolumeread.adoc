@@ -1,0 +1,191 @@
+---
+permalink: api/reference_element_api_startbulkvolumeread.html 
+sidebar: sidebar 
+keywords: volume,read,session,start,starting,bulk,startbulkvolumeread 
+summary: 您可以使用StartBulkVolume Read方法、在指定的Volume上啟動大量Volume讀取工作階段。 
+---
+= StartBulkVolume Read
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「tartBulkVolume Read」方法、在指定的磁碟區上啟動大量Volume讀取工作階段。
+
+一個Volume上只能同時執行兩個大量Volume程序。當您初始化工作階段時、資料會從SolidFire 一個用來儲存在外部備份來源的儲存磁碟區讀取。外部資料是由在元素儲存節點上執行的Web伺服器存取。外部資料存取的伺服器互動資訊會由儲存系統上執行的指令碼傳遞。
+
+在大量磁碟區讀取作業開始時、會建立磁碟區的快照、並在讀取完成時刪除快照。您也可以輸入快照的ID作為參數、來讀取磁碟區的快照。讀取先前的快照時、系統不會建立新的磁碟區快照、也不會在讀取完成時刪除先前的快照。
+
+
+NOTE: 如果未提供現有快照的ID、此程序會建立新的快照。如果叢集完整度處於階段2或3、則可以建立快照。叢集完整度處於第4或第5階段時、不會建立快照。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+格式
+ a| 
+Volume資料的格式。可以是：
+
+* 「未壓縮」：傳回磁碟區的每個位元組、不進行任何壓縮。
+* 「原生」：傳回的不透明資料會較小、且會更有效率地儲存及寫入後續的大量Volume寫入。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+Volume ID
+ a| 
+要讀取的磁碟區ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+Snapshot ID
+ a| 
+先前建立的快照ID、用於大量磁碟區讀取。如果未輸入ID、則會建立目前作用中Volume映像的快照。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+指令碼
+ a| 
+可執行指令碼的名稱。如果未指定指令碼名稱、則必須輸入金鑰和URL才能存取元素儲存節點。指令碼會在主要節點上執行、然後將金鑰和URL傳回指令碼、以便聯絡本機Web伺服器。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+指令碼參數
+ a| 
+要傳遞至指令碼的Json參數。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+屬性
+ a| 
+大量Volume工作的Json屬性。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+asyncdle
+ a| 
+要檢查完成的非同步程序ID。
+ a| 
+整數
+
+
+
+ a| 
+金鑰
+ a| 
+不透明金鑰可唯一識別工作階段。
+ a| 
+字串
+
+
+
+ a| 
+URL
+ a| 
+存取節點Web伺服器的URL。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "StartBulkVolumeRead",
+   "params": {
+      "volumeID" : 5,
+      "format"  : "native",
+      "snapshotID" : 2
+   },
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+      "id" : 1,
+   "result" : {
+      "asyncHandle" : 1,
+      "key" : "11eed8f086539205beeaadd981aad130",
+      "url" : "https://127.0.0.1:44000/"
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,232 @@
+---
+permalink: api/reference_element_api_node.html 
+sidebar: sidebar 
+keywords: object,objects,node 
+summary: 節點物件包含叢集中每個節點的相關資訊。您可以使用listActiveNode和listAllNode方法擷取此資訊。 
+---
+= 節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+節點物件包含叢集中每個節點的相關資訊。您可以使用「listActiveNode」和「listAllNode」方法來擷取此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+AssociatedFServiceID
+ a| 
+節點的Fibre Channel服務ID。如果節點不是光纖通道節點、則為「0」。
+ a| 
+整數
+
+
+
+ a| 
+AssociatedMasterServiceID
+ a| 
+節點的主要服務ID。
+ a| 
+整數
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+
+
+
+ a| 
+ChassetName
+ a| 
+唯一識別機箱；在單一機箱中、所有節點皆相同。
+ a| 
+字串
+
+
+
+ a| 
+CIP
+ a| 
+指派給節點的叢集IP位址。
+ a| 
+字串
+
+
+
+ a| 
+西文
+ a| 
+用於叢集通訊的網路介面。
+ a| 
+字串
+
+
+
+ a| 
+customProtectionDomain名稱
+ a| 
+唯一識別自訂保護網域。此名稱與指定自訂保護網域中所有機箱內的所有儲存節點相同。
+ a| 
+字串
+
+
+
+ a| 
+fiberChannelTargetPortGroup
+ a| 
+與此節點相關聯的目標群組。如果節點不是光纖通道節點、則為「null」。
+ a| 
+整數
+
+
+
+ a| 
+維護模式
+ a| 
+指出節點用於維護的模式。
+ a| 
+不適用
+
+
+
+ a| 
+MIP
+ a| 
+用於節點管理的IP位址。
+ a| 
+字串
+
+
+
+ a| 
+MIPI
+ a| 
+用於節點管理的網路介面。
+ a| 
+字串
+
+
+
+ a| 
+名稱
+ a| 
+節點的主機名稱。
+ a| 
+字串
+
+
+
+ a| 
+節點ID
+ a| 
+此節點的節點ID。
+ a| 
+整數
+
+
+
+ a| 
+節點插槽
+ a| 
+對於HCI平台、與此節點所在機箱插槽對應的字母（「A」、「B」、「C」或「D」）。對於儲存平台、此值為null。
+ a| 
+字串
+
+
+
+ a| 
+平台資訊
+ a| 
+節點的硬體資訊。成員：
+
+* chassetType：節點的硬體平台。
+* cpuModel：硬體平台的CPU模式。
+* 節點記憶體GB：實體平台上安裝的記憶體容量（單位：GB）。
+* 節點類型：節點模型名稱。
+* platformConfigVersion：為此節點硬體設定的軟體版本。
+
+ a| 
+Json物件
+
+
+
+ a| 
+角色
+ a| 
+節點在叢集中的角色。可能值：
+
+* 管理
+* 儲存設備
+* 運算
+* 見證人
+
+ a| 
+
+
+
+ a| 
+Sip
+ a| 
+指派給節點的儲存IP位址。
+ a| 
+字串
+
+
+
+ a| 
+SIPI
+ a| 
+用於儲存流量的網路介面。
+ a| 
+字串
+
+
+
+ a| 
+軟體版本
+ a| 
+傳回節點上執行的元素軟體目前版本。
+ a| 
+字串
+
+
+
+ a| 
+UUID
+ a| 
+與此節點相關聯的通用唯一識別碼。
+ a| 
+字串
+
+
+
+ a| 
+虛擬化網路
+ a| 
+包含虛擬網路IP位址和ID的物件。
+ a| 
+xref:reference_element_api_virtualnetwork.adoc[虛擬化網路] 陣列
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_listactivenodes.adoc[ListActiveNode]
+* xref:reference_element_api_listallnodes.adoc[listAllNode]
+

@@ -1,0 +1,161 @@
+---
+permalink: api/reference_element_api_createkeyserverkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,creating,create 
+summary: 您可以使用CreeKeyServerKmip方法、建立具有指定屬性的金鑰管理互通性傳輸協定（KMIP）金鑰伺服器。在建立期間、伺服器不會連絡；使用此方法之前不需要存在伺服器。對於叢集式金鑰伺服器組態、您必須在kmipKeyServerHostnames參數中提供所有伺服器節點的主機名稱或IP位址。您可以使用TestKeyServerKmip方法來測試金鑰伺服器。 
+---
+= CreKeyServerKmip
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Create KeyServerKmip」方法、建立具有指定屬性的金鑰管理互通性傳輸協定（KMIP）金鑰伺服器。在建立期間、伺服器不會連絡；使用此方法之前不需要存在伺服器。對於叢集式金鑰伺服器組態、您必須在kmipKeyServerHostnames參數中提供所有伺服器節點的主機名稱或IP位址。您可以使用「TestKeyServerKmip」方法來測試金鑰伺服器。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+KmipCaCertificate
+ a| 
+外部金鑰伺服器根CA的公開金鑰憑證。這將用來驗證外部金鑰伺服器在TLS通訊中所提供的憑證。對於個別伺服器使用不同CA的金鑰伺服器叢集、請提供包含所有CA根憑證的串聯字串。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+kmipClientCertificate
+ a| 
+由WSIKMIP用戶端使用的PEE格式Base64編碼的PKCS#10 X．509憑證SolidFire 。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+kmipKeyServerHostnames
+ a| 
+與此KMIP金鑰伺服器相關聯的主機名稱或IP位址陣列。只有當主要伺服器位於叢集式組態時、才能提供多個主機名稱或IP位址。
+ a| 
+字串陣列
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+kmipKeyServerName
+ a| 
+KMIP金鑰伺服器的名稱。此名稱僅供顯示用途使用、不需要唯一名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+kmipKeyServerPort
+ a| 
+與此KMIP金鑰伺服器相關的連接埠號碼（通常為5696）。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+kmipKeyServer
+ a| 
+包含新建立金鑰伺服器詳細資料的物件。
+ a| 
+link:reference_element_api_keyserverkmip.md#["KeyServerKmip"]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "CreateKeyServerKmip",
+  "params": {
+    "kmipCaCertificate": "MIICPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+    "kmipClientCertificate": "dKkkirWmnWXbj9T/UWZYB2oK0z5...",
+    "kmipKeyServerHostnames" : ["server1.hostname.com", "server2.hostname.com"],
+    "kmipKeyServerName" : "keyserverName",
+    "kmipKeyServerPort" : 5696
+  },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "kmipKeyServer": {
+            "kmipCaCertificate":"MIICPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+            "kmipKeyServerHostnames":[
+                "server1.hostname.com", "server2.hostname.com"
+            ],
+            "keyProviderID":1,
+            "kmipKeyServerName":"keyserverName",
+            "keyServerID":1
+            "kmipKeyServerPort":1,
+            "kmipClientCertificate":"dKkkirWmnWXbj9T/UWZYB2oK0z5...",
+            "kmipAssignedProviderIsActive":true
+        }
+    }
+}
+----
+
+
+== 新的自版本
+
+11.7

@@ -1,0 +1,25 @@
+---
+permalink: storage/concept_per_node_work_with_utilities.html 
+sidebar: sidebar 
+keywords: troubleshooting network issues, using per-node utilities, storage node UI 
+summary: 如果使用者介面中的標準監控工具NetApp Element 無法提供足夠的疑難排解資訊、您可以使用每個節點的公用程式來疑難排解網路問題。每節點公用程式提供特定的資訊和工具、可協助您疑難排解節點之間或管理節點之間的網路問題。 
+---
+= 使用儲存節點的每節點公用程式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果使用者介面中的標準監控工具NetApp Element 無法提供足夠的疑難排解資訊、您可以使用每個節點的公用程式來疑難排解網路問題。每節點公用程式提供特定的資訊和工具、可協助您疑難排解節點之間或管理節點之間的網路問題。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_per_node_access_settings.adoc[使用每個節點的UI存取每個節點的設定]
+* xref:reference_per_node_network_settings_details.adoc[每個節點UI的網路設定詳細資料]
+* xref:reference_per_node_cluster_settings_details.adoc[每個節點UI的叢集設定詳細資料]
+* xref:task_per_node_run_system_tests.adoc[使用每節點UI執行系統測試]
+* xref:task_per_node_run_system_utilities.adoc[使用每節點UI執行系統公用程式]
+

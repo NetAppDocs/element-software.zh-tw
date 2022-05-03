@@ -1,0 +1,62 @@
+---
+permalink: storage/reference_monitor_iscsi_session_details.html 
+sidebar: sidebar 
+keywords: iscsi sessions, monitor 
+summary: 您可以檢視連線至叢集的iSCSI工作階段相關資訊。 
+---
+= iSCSI工作階段詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視連線至叢集的iSCSI工作階段相關資訊。
+
+下列清單說明您可以找到的iSCSI工作階段相關資訊：
+
+* *節點*
++
+主控磁碟區主要中繼資料分割的節點。
+
+* *帳戶*
++
+擁有該磁碟區的帳戶名稱。如果值為空白、則會顯示破折號（-）。
+
+* * Volume *
++
+節點上識別的磁碟區名稱。
+
+* * Volume ID*
++
+與目標IQN相關聯的Volume ID。
+
+* *啟動器ID*
++
+啟動器的系統產生ID。
+
+* *啟動器別名*
++
+啟動器的選用名稱、可讓您在長清單中更容易找到啟動器。
+
+* *譯員IP*
++
+啟動工作階段之端點的IP位址。
+
+* *啟動器IQN*
++
+啟動工作階段的端點IQN。
+
+* *目標IP*
++
+主控磁碟區之節點的IP位址。
+
+* *目標IQN*
++
+Volume的IQN。
+
+* *建立日期*
++
+建立工作階段的日期。
+
+

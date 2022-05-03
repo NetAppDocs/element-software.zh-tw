@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_abortsnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords:  
+summary: Element軟體Web UI使用AbortSnapMirrorRelationship方法來停止已啟動但尚未完成的SnapMirror傳輸。 
+---
+= AbortSnapMirrorRelationationations
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「AbortSnapMirrorRelationship」方法來停止已開始但尚未完成的SnapMirror傳輸。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+遠端ONTAP 不整合式儲存系統的端點ID、可與元件儲存叢集通訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+destinationVolume
+ a| 
+SnapMirror關係中的目的地Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+清除檢查點
+ a| 
+決定是否清除重新啟動檢查點。可能值：
+
+* 是的
+* 錯
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorRelationationationationship
+ a| 
+包含中止SnapMirror關係相關資訊的物件。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationationationationship]
+
+|===
+
+
+== 新的自版本
+
+10.1

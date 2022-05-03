@@ -1,0 +1,227 @@
+---
+permalink: api/reference_element_api_clustercapacity.html 
+sidebar: sidebar 
+keywords: objects,object,clusterCapacity 
+summary: 叢集容量物件包含叢集的高層容量測量。您可以使用GetClusterCapacity API方法取得叢集容量資訊。物件成員中的空間測量值以位元組為單位計算。 
+---
+= 叢集容量
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+叢集容量物件包含叢集的高層容量測量。您可以使用GetClusterCapacity API方法取得叢集容量資訊。物件成員中的空間測量值以位元組為單位計算。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+活動區塊空間
+ a| 
+區塊磁碟機上的空間量。這包括可清除的其他資訊、例如中繼資料項目和空間。
+ a| 
+整數
+
+
+
+ a| 
+行動工作階段
+ a| 
+與叢集通訊的作用中iSCSI工作階段數目。
+ a| 
+整數
+
+
+
+ a| 
+平均IOPS
+ a| 
+自午夜協調世界時間（UTC）以來、叢集的平均IOPS。
+ a| 
+整數
+
+
+
+ a| 
+叢集重新建立作業系統
+ a| 
+叢集中所有磁碟區的IOPS平均大小。
+ a| 
+整數
+
+
+
+ a| 
+目前的IOPS
+ a| 
+過去5秒內、叢集中所有磁碟區的平均IOPS。
+ a| 
+整數
+
+
+
+ a| 
+最大IOPS
+ a| 
+目前叢集的預估最大IOPS功能。
+ a| 
+整數
+
+
+
+ a| 
+MaxOverProvisionableSpace
+ a| 
+可配置空間的最大容量。這是計算值。如果目前已配置的空間加上新的Volume大小超過此數目、則無法建立新的Volume。此值的計算方式如下：「MaxOverProvisionableSpace = MaxProvisionedSpace * MaxMetadata OverProvisionFactor」
+ a| 
+整數
+
+
+
+ a| 
+最大資源配置空間
+ a| 
+如果所有磁碟區都已滿100%、則可配置空間的總容量（無精簡配置的中繼資料）。
+ a| 
+整數
+
+
+
+ a| 
+最大已用中繼資料空間
+ a| 
+磁碟區磁碟機上用於儲存中繼資料的位元組數。
+ a| 
+整數
+
+
+
+ a| 
+最大已用空間
+ a| 
+所有作用中區塊磁碟機的總空間量。
+ a| 
+整數
+
+
+
+ a| 
+非零區塊
+ a| 
+上次垃圾回收作業完成後、包含資料的4KiB區塊總數。
+ a| 
+整數
+
+
+
+ a| 
+PeakActiveSessions
+ a| 
+自午夜UTC以來iSCSI連線的尖峰數量。
+ a| 
+整數
+
+
+
+ a| 
+PakIOPS
+ a| 
+自午夜UTC以來、目前IOPS的最高值。
+ a| 
+整數
+
+
+
+ a| 
+資源配置空間
+ a| 
+叢集上所有磁碟區中已配置的空間總量。
+ a| 
+整數
+
+
+
+ a| 
+時間戳記
+ a| 
+此叢集容量範例的日期和時間（以UTC +0格式）。
+ a| 
+ISO 8601字串
+
+
+
+ a| 
+累計營運
+ a| 
+在叢集整個生命週期內執行的I/O作業總數。
+ a| 
+整數
+
+
+
+ a| 
+單一功能鎖
+ a| 
+區塊磁碟機上儲存的區塊總數。此值包括複寫區塊。
+ a| 
+整數
+
+
+
+ a| 
+UniqueBlocksUsedSpace
+ a| 
+單一quebLocks在區塊磁碟機上處理的資料總量。請參閱GetclusterCapacity方法、以取得此號碼與uniquebLocks值的關聯資訊。
+ a| 
+整數
+
+
+
+ a| 
+usedMetadata空間
+ a| 
+用於儲存中繼資料的磁碟區磁碟機上的位元組總數。
+ a| 
+整數
+
+
+
+ a| 
+usedMetadata空間即時資料
+ a| 
+磁碟區磁碟機上用於在快照中儲存獨特資料的位元組數。此數字可預估刪除系統上的所有快照後、可重新取得多少中繼資料空間。
+ a| 
+整數
+
+
+
+ a| 
+使用空間
+ a| 
+系統中所有區塊磁碟機所使用的空間總量。
+ a| 
+整數
+
+
+
+ a| 
+零位調整鎖定
+ a| 
+上次完成垃圾回收作業後、無資料的空白4KiB區塊總數。
+ a| 
+整數
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity]

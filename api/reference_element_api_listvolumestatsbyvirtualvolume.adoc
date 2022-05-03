@@ -1,0 +1,131 @@
+---
+permalink: api/reference_element_api_listvolumestatsbyvirtualvolume.html 
+sidebar: sidebar 
+keywords: volumes,volume,virtual,stats,list,listing,listvolumestatsbyvirtualvolume,activity 
+summary: 您可以使用listVolumesStatsByVirtualVolume方法、列出系統中任何與虛擬Volume相關聯之磁碟區的磁碟區統計資料。統計資料是從建立磁碟區所累積而來的。 
+---
+= listVolumesStatsByVirtualVolume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listVolume StatsByVirtualVolume」方法、列出系統中任何與虛擬磁碟區相關聯之磁碟區的磁碟區統計資料。統計資料是從建立磁碟區所累積而來的。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+虛擬化Volume ID
+ a| 
+可擷取資訊的一或多個虛擬Volume ID清單。如果您指定此參數、此方法只會傳回這些虛擬磁碟區的相關資訊。
+ a| 
+UUID字串陣列
+ a| 
+否
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume統計資料
+ a| 
+包含系統中每個虛擬磁碟區活動資訊的物件清單。
+ a| 
+xref:reference_element_api_volumestats.adoc[Volume統計資料] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListVolumeStatsByVirtualVolume",
+  "params": {},
+  "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 17,
+        "actualIOPS": 0,
+        "asyncDelay": null,
+        "averageIOPSize": 1074265444,
+        "burstIOPSCredit": 0,
+        "clientQueueDepth": 0,
+        "desiredMetadataHosts": null,
+        "latencyUSec": 0,
+        "metadataHosts": {
+          "deadSecondaries": [],
+          "liveSecondaries": [
+            26
+          ],
+          "primary": 56
+        },
+        "nonZeroBlocks": 36,
+        "readBytes": 18366464,
+        "readBytesLastSample": 0,
+        "readLatencyUSec": 0,
+        "readOps": 156,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "throttle": 0,
+        "timestamp": "2016-10-10T17:46:35.914642Z",
+        "unalignedReads": 156,
+        "unalignedWrites": 185,
+        "virtualVolumeID": "070ac0ba-f344-4f4c-b79c-142efa3642e8",
+        "volumeAccessGroups": [],
+        "volumeID": 12518,
+        "volumeSize": 91271200768,
+        "volumeUtilization": 0,
+        "writeBytes": 23652213248,
+        "writeBytesLastSample": 0,
+        "writeLatencyUSec": 0,
+        "writeOps": 185,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 22282972
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

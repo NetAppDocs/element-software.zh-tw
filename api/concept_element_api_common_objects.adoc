@@ -1,0 +1,106 @@
+---
+permalink: api/concept_element_api_common_objects.html 
+sidebar: sidebar 
+keywords: common,objects 
+summary: Element軟體API使用Json物件來呈現組織化的資料概念。其中許多API方法會將這些物件用於資料輸入和輸出。本節將記錄這些常用物件；只在單一方法中使用的物件會以該方法記錄、而非本節。 
+---
+= 通用物件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體API使用Json物件來呈現組織化的資料概念。其中許多API方法會將這些物件用於資料輸入和輸出。本節將記錄這些常用物件；只在單一方法中使用的物件會以該方法記錄、而非本節。
+
+* xref:reference_element_api_account.adoc[帳戶]
+* xref:reference_element_api_authsessioninfo.adoc[驗證工作階段資訊]
+* xref:reference_element_api_bulkvolumejob.adoc[艙壁Volume工作]
+* xref:reference_element_api_binding_vvols.adoc[繫結（虛擬磁碟區）]
+* xref:reference_element_api_certificatedetails.adoc[認證詳細資料]
+* xref:reference_element_api_cluster.adoc[叢集]
+* xref:reference_element_api_clusteradmin.adoc[叢集管理]
+* xref:reference_element_api_clustercapacity.adoc[叢集容量]
+* xref:reference_element_api_clusterconfig.adoc[叢集組態]
+* xref:reference_element_api_clusterinfo.adoc[叢集資訊]
+* xref:reference_element_api_clusterpair.adoc[叢集空氣]
+* xref:reference_element_api_clusterstats.adoc[叢集統計資料]
+* xref:reference_element_api_clusterstructure.adoc[叢集結構]
+* xref:reference_element_api_drive.adoc[磁碟機]
+* xref:reference_element_api_drivestats.adoc[磁碟統計資料]
+* xref:reference_element_api_error.adoc[錯誤]
+* xref:reference_element_api_event.adoc[活動]
+* xref:reference_element_api_fault.adoc[故障]
+* xref:reference_element_api_fibrechannelport.adoc[光纖通道連接埠]
+* xref:reference_element_api_fipserrornodereport.adoc[FpsErrorNodeReport]
+* xref:reference_element_api_fipsnodereport.adoc[FpsNodeReport]
+* xref:reference_element_api_fipsreport.adoc[FpsReport]
+* xref:reference_element_api_groupsnapshot.adoc[群組Snapshot]
+* xref:reference_element_api_hardwareinfo.adoc[硬體資訊]
+* xref:reference_element_api_host.adoc[主機（虛擬磁碟區）]
+* xref:reference_element_api_idpconfiginfo.adoc[idpConfigInfo]
+* xref:reference_element_api_initiator.adoc[啟動器]
+* xref:reference_element_api_keyproviderkmip.adoc[KeyProviderKmip]
+* xref:reference_element_api_keyserverkmip.adoc[KeyServerKmip]
+* xref:reference_element_api_ldapconfiguration.adoc[LDAPConfiguration]
+* xref:reference_element_api_loggingserver.adoc[記錄伺服器]
+* xref:reference_element_api_network_bonded_interfaces.adoc[網路（連結介面）]
+* xref:reference_element_api_network_all_interfaces.adoc[網路（所有介面）]
+* xref:reference_element_api_network_ethernet_interfaces.adoc[網路（乙太網路介面）]
+* xref:reference_element_api_network_local_interfaces.adoc[網路（本機介面）]
+* xref:reference_element_api_network_snmp.adoc[網路（SNMP）]
+* xref:reference_element_api_networkinterface.adoc[網路介面]
+* xref:reference_element_api_node.adoc[節點]
+* xref:reference_element_api_nodeprotectiondomains.adoc[節點保護網域]
+* xref:reference_element_api_nodestats.adoc[節點統計資料]
+* xref:reference_element_api_ontapversioninfo.adoc[版本資訊]
+* xref:reference_element_api_pendingactivenode.adoc[pendingActiveNode]
+* xref:reference_element_api_pendingnode.adoc[pendingNode]
+* xref:reference_element_api_protectiondomain.adoc[保護網域]
+* xref:reference_element_api_protectiondomainlevel.adoc[保護網域層級]
+* xref:reference_element_api_protectiondomainresiliency.adoc[保護網域恢復能力]
+* xref:reference_element_api_protectiondomaintolerance.adoc[保護網域容忍度]
+* xref:reference_element_api_protectionschemeresiliency.adoc[保護架構恢復能力]
+* xref:reference_element_api_protectionschemetolerance.adoc[保護架構容錯度]
+* xref:reference_element_api_protocolendpoint.adoc[通訊協定端點]
+* xref:reference_element_api_qos.adoc[QoS]
+* xref:reference_element_api_qospolicy.adoc[QoSPolicy]
+* xref:reference_element_api_remoteclustersnapshotstatus.adoc[遠端叢集SnapshotStatus]
+* xref:reference_element_api_schedule.adoc[排程]
+* xref:reference_element_api_session_fibre_channel.adoc[工作階段（光纖通道）]
+* xref:reference_element_api_session_iscsi.adoc[工作階段（iSCSI）]
+* xref:reference_element_api_snapmirroraggregate.adoc[snapMirrorAggrate]
+* xref:reference_element_api_snapmirrorclusteridentity.adoc[snapMirrorClusterIdentity]
+* xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint]
+* xref:reference_element_api_snapmirrorjobschedulecroninfo.adoc[snapMirrorJobScheduleCronInfo]
+* xref:reference_element_api_snapmirrorluninfo.adoc[snapMirrorlunInfo]
+* xref:reference_element_api_snapmirrornetworkinterface.adoc[SnapMirror網路介面]
+* xref:reference_element_api_snapmirrornode.adoc[snapMirrorNode]
+* xref:reference_element_api_snapmirrorpolicy.adoc[snapMirrorPolicy]
+* xref:reference_element_api_snapmirrorpolicyrule.adoc[snapMirrorPolicyRule]
+* xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationationationationship]
+* xref:reference_element_api_snapmirrorvolume.adoc[snapMirrorVolume]
+* xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+* xref:reference_element_api_snapmirrorvserver.adoc[snapMirrorVserver]
+* xref:reference_element_api_snapmirrorvserveraggregateinfo.adoc[snapMirrorVserverAggregateInfo]
+* xref:reference_element_api_snapshot.adoc[Snapshot]
+* xref:reference_element_api_snmptraprecipient.adoc[snmpTrapRecipient]
+* xref:reference_element_api_storagecontainer.adoc[storageContainer]
+* xref:reference_element_api_syncjob.adoc[SyncJob]
+* xref:reference_element_api_task_virtual_volumes.adoc[工作（虛擬磁碟區）]
+* xref:reference_element_api_usmuser.adoc[使用者]
+* xref:reference_element_api_virtualnetwork.adoc[虛擬化網路]
+* xref:reference_element_api_virtualvolume.adoc[虛擬化Volume]
+* xref:reference_element_api_volume.adoc[Volume]
+* xref:reference_element_api_volumeaccessgroup.adoc[Volume存取群組]
+* xref:reference_element_api_volumepair.adoc[Volume]
+* xref:reference_element_api_volumestats.adoc[Volume統計資料]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

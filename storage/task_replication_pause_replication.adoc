@@ -1,0 +1,25 @@
+---
+permalink: storage/task_replication_pause_replication.html 
+sidebar: sidebar 
+keywords: replication, pause, volume pairs 
+summary: 如果需要在短時間內停止I/O處理、您可以手動暫停複寫。如果I/O處理量激增、而且您想要減少處理負載、您可能需要暫停複寫。 
+---
+= 暫停複寫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果需要在短時間內停止I/O處理、您可以手動暫停複寫。如果I/O處理量激增、而且您想要減少處理負載、您可能需要暫停複寫。
+
+. 選擇*資料保護*>*磁碟區配對*。
+. 按一下Volume配對的「Actions（動作）」圖示。
+. 按一下 * 編輯 * 。
+. 在*編輯Volume Pair*窗格中、手動暫停複寫程序。
++
+
+IMPORTANT: 手動暫停或恢復磁碟區複寫會導致資料傳輸停止或恢復。請確定您已在兩個站台協調這些變更。
+
+. 按一下*儲存變更*。
+

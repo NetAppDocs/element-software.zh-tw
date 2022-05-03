@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_startclusterpairing.html 
+sidebar: sidebar 
+keywords: cluster,pair,pairing,start,starting,startclusterpairing 
+summary: 您可以使用StartClusterPairing方法、從用來與其他叢集配對的叢集建立編碼金鑰。此API方法所建立的金鑰用於完成叢集配對方法、以建立叢集配對。您可以將叢集與最多四個其他叢集配對。 
+---
+= StartClusterPairing
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「tartClusterPairing」方法、從叢集建立編碼金鑰、以便與其他叢集配對。此API方法所建立的金鑰會用於「完成叢集配對」方法、以建立叢集配對。您可以將叢集與最多四個其他叢集配對。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集PairingKey
+ a| 
+使用的字元字串 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] API方法。
+ a| 
+字串
+
+
+
+ a| 
+叢集PairID
+ a| 
+叢集配對的唯一識別碼。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "StartClusterPairing",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "clusterPairID": 1,
+     "clusterPairingKey": "7b22636c7573746572506169724944223a312c22636c75737465725061697255554944223a2231636561313336322d346338662d343631612d626537322d373435363661393533643266222c22636c7573746572556e697175654944223a2278736d36222c226d766970223a223139322e3136382e3133392e313232222c226e616d65223a224175746f54657374322d63307552222c2270617373776f7264223a22695e59686f20492d64774d7d4c67614b222c22727063436f6e6e656374696f6e4944223a3931333134323634392c22757365726e616d65223a225f5f53465f706169725f50597a796647704c7246564432444a42227d"
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]

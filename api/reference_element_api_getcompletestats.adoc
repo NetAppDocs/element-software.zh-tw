@@ -1,0 +1,28 @@
+---
+permalink: api/reference_element_api_getcompletestats.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp工程設計使用GetCompleteStats API方法來測試新功能。從GetCompleteStats傳回的資料不會記錄下來、而且會頻繁變更、而且無法保證準確無誤。您不應使用GetCompleteStats來收集效能資料、或是與執行Element軟體的儲存叢集進行任何其他管理整合。 
+---
+= GetCompleteStats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp工程部門使用「GetCompleteStats」API方法來測試新功能。從「GetCompleteStats」傳回的資料不會記錄下來、經常變更、而且無法保證準確無誤。您不應使用「GetCompleteStats」來收集效能資料、或是與執行Element軟體的儲存叢集進行任何其他管理整合。
+
+使用下列支援的API方法擷取統計資訊：
+
+* xref:reference_element_api_getvolumestats.adoc[GetVolume統計資料]
+* xref:reference_element_api_getclusterstats.adoc[GetClusterStats]
+* xref:reference_element_api_getnodestats.adoc[GetNodeStats]
+* xref:reference_element_api_getdrivestats.adoc[GetDriveStats]
+
+
+
+
+== 新的自版本
+
+9.6

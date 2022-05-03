@@ -1,0 +1,98 @@
+---
+permalink: api/reference_element_api_listbulkvolumejobs.html 
+sidebar: sidebar 
+keywords: bulk,volume,job,jobs,volumes,read,write,operation,list,listing,listbulkvolumejobs 
+summary: 您可以使用清單BulkVolume工作方法、取得系統中每個大量磁碟區讀取或寫入作業的相關資訊。 
+---
+= ListBulkVolume工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ListBulkVolume Jobs」方法來取得系統中每個大量磁碟區讀取或寫入作業的相關資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+已完成的所有工作
+ a| 
+每個大量Volume工作的資訊陣列。
+ a| 
+xref:reference_element_api_bulkvolumejob.adoc[艙壁Volume工作] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListBulkVolumeJobs",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "bulkVolumeJobs": [
+        {
+          "attributes": {
+            "blocksPerTransfer": 1024,
+            "firstPendingLba": 216064,
+            "nLbas": 2441472,
+            "nextLba": 226304,
+            "pendingLbas": "[220160, 223232, 221184, 224256, 217088, 225280, 222208, 218112, 219136, 216064]",
+            "percentComplete": 8,
+            "startLba": 0
+          },
+          "bulkVolumeID": 2,
+          "createTime": "2015-05-07T14:52:17Z",
+          "elapsedTime": 44,
+          "format": "native",
+          "key": "eaffb0526d4fb47107061f09bfc9a806",
+          "percentComplete": 8,
+          "remainingTime": 506,
+          "script": "bv_internal.py",
+          "snapshotID": 509,
+          "srcVolumeID": 3,
+          "status": "running",
+          "type": "read"
+       }
+     ]
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

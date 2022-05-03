@@ -1,0 +1,109 @@
+---
+permalink: api/reference_element_api_setnetworkconfig.html 
+sidebar: sidebar 
+keywords: network,config,configuration,set,setting,node,setnetworkconfig 
+summary: 您可以使用SetNetworkConfig方法來設定節點的網路組態。若要顯示節點的目前網路設定、請執行GetNetwork Config API方法。 
+---
+= 設定網路組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「etNetwork Config」（網路組態）方法來設定節點的網路組態。若要顯示節點目前的網路設定、請執行「GetNetwork Config」API方法。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+注意：
+
+變更節點上的連結模式可能會導致網路連線暫時中斷。
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+網路
+ a| 
+包含要修改之節點網路設定的物件。您只需在此參數中新增您要變更為此方法的欄位做為屬性。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[網路（所有介面）]
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+網路
+ a| 
+節點的新和目前網路組態。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[網路（所有介面）]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+	"method": "SetNetworkConfig",
+		"params": {
+			"network": {
+				"Bond10G": {
+					"bond-mode": "ALB"
+				},
+				"Bond1G": {
+					"netmask": "255.255.224.0"
+				},
+				"eth0": {
+					"method": "bond"
+				},
+				"lo": {
+					"method": "loopback"
+				}
+			}
+		}
+}
+----
+
+
+== 回應範例
+
+此方法的回應與GetNetwork Config方法的回應相同。此方法會顯示每個物件的所有成員、並包含任何變更成員的新值。
+
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetwork組態]
+* xref:reference_element_api_response_example_getnetworkconfig.adoc[GetNetwork組態]
+

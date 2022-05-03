@@ -1,0 +1,221 @@
+---
+permalink: concepts/concept_rn_whats_new_element.html 
+sidebar: sidebar 
+keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
+summary: NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。 
+---
+= 新功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 123引進軟體加密功能來增強靜止狀態、增強安全性、更新儲存韌體、增強快照功能、以及改善故障磁碟機的行為。
+
+
+
+== NetApp線上錯誤包含已知且已解決的問題
+
+已知和已解決的問題現已列在NetApp錯誤線上工具中。您可以瀏覽這些問題以找出元素和其他產品。
+
+. 前往 https://mysupport.netapp.com/site/products/all/details/solidfire-elementos/bugsonline-tab["NetApp線上錯誤"^]。
+. 在「*搜尋關鍵字*」欄位中輸入產品名稱、例如「Element」。
+. 選取 image:plus_icon.PNG["加號圖示"] 圖示、選取*「在版本*中固定」、然後選取*「確定」*。
++
+image:bol_filters.PNG["Bol篩選器、對齊「中心」"]
+
+. 若要依版本篩選、請在「*修正於版本*」欄位中輸入版本。
+
+
+
+
+== 元素12.3.2
+
+深入瞭解元素12.3.2的新功能。
+
+Element軟體12.3.2版本包含的緩和措施可關閉元素軟體曝險於Apache log4j弱點。已啟用虛擬Volume（VVols）功能的NetApp SolidFire 支援區儲存叢集、會暴露於此弱點之中。
+
+
+
+== 元素12.3.1
+
+深入瞭解元素12.3.1的新功能。
+
+
+
+=== 儲存韌體產品組合2.99.2
+
+Element 12.3.1版本包含儲存韌體套件2.99.2版。如果您的儲存叢集已位於Element 123、您可以選擇只安裝新的2.99.2韌體套裝組合。
+
+
+
+== 支援SolidFire Dynamic CPU節點額定值、適用於整套ESDS主機平台
+
+現在、支援全系列的Intel Gold和Silver Cascade Lake世代CPU、24種機型。SolidFire動態節點分級功能會根據CPU、將QoS IOPS額定值指派至50K至100K之間的主機伺服器。
+
+[cols="100,100"]
+|===
+| CPU核心數 | ESDS節點IOPS額定值 
+
+
+ a| 
+8.
+ a| 
+50K
+
+
+
+ a| 
+10.
+ a| 
+60k
+
+
+
+ a| 
+12.
+ a| 
+75K
+
+
+
+ a| 
+16+
+ a| 
+100K
+
+|===
+
+
+=== 支援SolidFire 單一連結網路組態以利實現EESDS
+
+您現在可以使用SolidFire 單一連結網路組態、將其用於使用支援EESDS的主機。
+
+
+
+=== 全新伺服器支援SolidFire 功能
+
+HPE DL380伺服器現在提供了RESDS。SolidFire請參閱 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["NetApp互通性對照表工具IMT （不含）"^] 如需支援組態的詳細資訊、請參閱。
+
+
+
+== 元件12.3.
+
+深入瞭解元素123的新功能。
+
+
+
+=== 支援FIFO快照佇列
+
+元素123可讓您建立Volume快照的先進先出（FIFO）佇列。使用Element API、您可以指定建立Volume時應保留的最小和最大FIFO快照插槽數。當某個磁碟區的FIFO快照佇列已滿時、您為該磁碟區所建立的下一個快照會從系統中移除該磁碟區最舊的快照。FIFO和非FIFO快照均使用同一個磁碟區上可用的快照插槽集區。
+
+下列元素API方法與FIFO快照有關（請參閱 link:../api/index.html["Element API文件"] 如需每種API方法的詳細資訊）：
+
+* CreatGroupSnapshot
+* 建立排程
+* 建立Snapshot
+* 建立Volume
+* ModifyGroupSnapshot
+* 修改排程
+* ModifySnapshot
+* ModifyVolume
+* ModifyVolumes
+
+
+
+
+=== Snapshot序列化支援
+
+Element 123支援序列化快照建立。使用Element API建立新的快照時、您可以指定如果先前的快照複寫仍在進行中、則不應建立快照。
+
+下列元素API方法與Snapshot序列化有關（請參閱 link:../api/index.html["Element API文件"] 如需每種API方法的詳細資訊）：
+
+* CreatGroupSnapshot
+* 建立排程
+* 建立Snapshot
+* 修改排程
+
+
+
+
+=== 支援Snapshot保留
+
+Element 123可讓您指定快照的保留時間。如果您未指定快照的保留時間或到期時間、則快照會永遠保留。
+
+下列元素API方法與快照保留有關（請參閱 link:../api/index.html["Element API文件"] 如需每種API方法的詳細資訊）：
+
+* CreatGroupSnapshot
+* 建立排程
+* 建立Snapshot
+* ModifyGroupSnapshot
+* 修改排程
+* ModifySnapshot
+
+
+
+
+=== 軟體加密功能的靜止增強功能
+
+對於靜止時的軟體加密功能、Element 123引進外部金鑰管理（EKM）、並能重新鎖定軟體加密主金鑰。您可以在建立儲存叢集時啟用閒置的軟體加密。當您建立SolidFire 一個「企業版」SDS儲存叢集時、預設會啟用閒置的軟體加密功能。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。
+
+下列元素API方法與閒置時的軟體加密有關（請參閱 link:../api/index.html["Element API文件"] 如需每種API方法的詳細資訊）：
+
+* 建立叢集
+* DisableEncryptionAtRest
+* 啟用EncryptionAtRest
+* GetSoftwareEncryptionAt恢復 資訊
+* RekeySoftwareEncryptionAt恢復 主金鑰
+
+
+
+
+=== 儲存節點韌體更新
+
+Element 123包含儲存節點的韌體更新。 link:../concepts/concept_rn_relatedrn_element.html#storage-firmware["深入瞭解"]。
+
+
+
+=== 安全性增強功能
+
+Element 123可解決儲存節點和管理節點的安全性弱點。 https://security.netapp.com/["深入瞭解"] 關於這些安全性增強功能。
+
+
+
+=== 改善故障磁碟機的行為
+
+Element 123 SolidFire 會使用磁碟機的智慧型健全狀況資料、定期檢查各種應用程式磁碟機的健全狀況。未通過SMART健全狀況檢查的磁碟機可能會接近故障。如果磁碟機未通過SMART健全狀況檢查、磁碟機將轉換為*故障*狀態、並出現嚴重的叢集故障：「Drive with serial：<序號> in slides><磁碟機插槽>未通過智慧型整體健全狀況檢查。若要解決此問題、請更換磁碟機
+
+
+
+=== 全新伺服器支援SolidFire 功能
+
+現在可在Dell R640伺服器上使用ESXDS。SolidFire請參閱 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["NetApp互通性對照表工具IMT （不含）"^] 如需支援組態的詳細資訊、請參閱。
+
+
+
+=== 更新文件以供SolidFire 參考
+
+下列新文件適用於SolidFire EESDS：
+
+* https://docs.netapp.com/us-en/element-software/esds/task_esds_r640_drive_repl.html["更換Dell R640的磁碟機"^]：提供更換Dell R640伺服器磁碟機的步驟。
+* https://kb.netapp.com/Special:Search?query=solidfire+enterprise+SDS&type=wiki["知識庫文章（需登入）"^]：提供SolidFire 有關解決您的EESDS系統問題的資訊。
+
+
+
+
+=== 針對一些已知問題的新位置SolidFire
+
+您現在可以在上搜尋已知問題 https://mysupport.netapp.com/site/products/all/details/solidfire-enterprise-sds/bugsonline-tab["錯誤線上工具（需要登入）"^]。
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["NetApp混合雲控制與管理服務版本說明"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"^]
+* http://docs.netapp.com/sfe-122/index.jsp["適用於舊版的VMware及Element軟體文件中心SolidFire"^]
+* https://www.netapp.com/us/documentation/hci.aspx["「資源」頁面NetApp HCI"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["適用於更新及更新的韌體與驅動程式版本NetApp HCI NetApp Element"^]
+

@@ -1,0 +1,42 @@
+---
+permalink: storage/task_data_protection_back_up_volume_snapshot_to_solidfire.html 
+sidebar: sidebar 
+keywords: volume snapshot, backup, solidfire cluster 
+summary: 您可以將駐留SolidFire 在某個故障叢集上的Volume快照備份到遠端SolidFire 故障叢集。 
+---
+= 將Volume Snapshot備份到SolidFire 一個不正常的叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將駐留SolidFire 在某個故障叢集上的Volume快照備份到遠端SolidFire 故障叢集。
+
+確保來源叢集和目標叢集已配對。
+
+當從一個叢集備份或還原至另一個叢集時、系統會產生金鑰、作為叢集之間的驗證。此大量Volume寫入金鑰可讓來源叢集向目的地叢集進行驗證、在寫入目的地Volume時提供一定程度的安全性。在備份或還原程序中、您需要先從目的地Volume產生大量Volume寫入金鑰、然後再開始作業。
+
+. 在目的地叢集上、按一下*管理*>*磁碟區*。
+. 按一下目標Volume的*「Actions」（動作）*圖示。
+. 在產生的功能表中、按一下*還原來源*。
+. 在*整合式還原*對話方塊的*還原自*下、選取* SolidFire 還原*。
+. 在*資料格式*下選取資料格式：
++
+** *原生*：只SolidFire 有透過不兼容的儲存系統才能讀取的壓縮格式。
+** *未壓縮*：與其他系統相容的未壓縮格式。
+
+
+. 按一下「*產生金鑰*」。
+. 將金鑰從*大量磁碟區寫入金鑰*方塊複製到剪貼簿。
+. 在來源叢集上、按一下*資料保護*>*快照*。
+. 按一下您要用於備份的快照「動作」圖示。
+. 在產生的功能表中、按一下*備份至*。
+. 在「*備份至*」下的「*整合式備份*」對話方塊中、選取* SolidFire 還原*。
+. 在*資料格式*欄位中、選取您先前選取的相同資料格式。
+. 在*遠端叢集MVIP*欄位中輸入目的地Volume叢集的管理虛擬IP位址。
+. 在*遠端叢集使用者名稱*欄位中輸入遠端叢集使用者名稱。
+. 在*遠端叢集密碼*欄位中輸入遠端叢集密碼。
+. 在*大量磁碟區寫入金鑰*欄位中、貼上您先前在目的地叢集上產生的金鑰。
+. 按一下「*開始讀取*」。
+

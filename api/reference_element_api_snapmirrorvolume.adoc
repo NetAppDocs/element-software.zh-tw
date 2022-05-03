@@ -1,0 +1,107 @@
+---
+permalink: api/reference_element_api_snapmirrorvolume.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVolume 
+summary: snapMirrorVolume物件包含ONTAP 有關某個不全區的資訊。 
+---
+= snapMirrorVolume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVolume物件包含ONTAP 有關某個不全區的資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目的地ONTAP 資訊系統的ID。
+ a| 
+整數
+
+
+
+ a| 
+名稱
+ a| 
+Volume的名稱。
+ a| 
+字串
+
+
+
+ a| 
+類型
+ a| 
+Volume的類型。可能值：
+
+* RW：讀寫Volume
+* ls：負載共用磁碟區
+* DP：資料保護磁碟區
+
+ a| 
+字串
+
+
+
+ a| 
+Vserver
+ a| 
+擁有此磁碟區的Vserver名稱。
+ a| 
+字串
+
+
+
+ a| 
+AggrName
+ a| 
+包含Aggregate名稱。
+ a| 
+字串
+
+
+
+ a| 
+州/省
+ a| 
+Volume的狀態。可能值：
+
+* 線上
+* 受限
+* 離線
+* 混合
+
+ a| 
+字串
+
+
+
+ a| 
+尺寸
+ a| 
+磁碟區的檔案系統總大小（以位元組為單位）。
+ a| 
+字串
+
+
+
+ a| 
+可用大小
+ a| 
+Volume中可用空間的大小（以位元組為單位）。
+ a| 
+字串
+
+|===

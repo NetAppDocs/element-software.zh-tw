@@ -1,0 +1,206 @@
+---
+permalink: api/reference_element_api_clonemultiplevolumes.html 
+sidebar: sidebar 
+keywords: volume,volumes,clone,cloning,multiple,CloneMultipleVolumes 
+summary: 您可以使用CloneMultiploVolumes方法來建立一組指定磁碟區的複本。當多個磁碟區一起複製時、您可以將一組一致的特性指派給一組。 
+---
+= CloneMultiploVolumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「CloneMultiploVolumes」方法來建立一組指定磁碟區的複本。當多個磁碟區一起複製時、您可以將一組一致的特性指派給一組。
+
+在使用群組SnapshotID參數複製群組快照中的磁碟區之前、您必須先使用建立群組快照 xref:reference_element_api_creategroupsnapshot.adoc[CreatGroupSnapshot] API方法或Web UI。複製多個磁碟區時、可使用群組SnapshotID為選用功能。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+存取
+ a| 
+新磁碟區的新預設存取方法（如果未被磁碟區陣列中傳遞的資訊覆寫）。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+已啓用SnapMirrorReplication
+ a| 
+決定磁碟區是否可用於SnapMirror端點的複寫。可能值：
+
+* 是的
+* 錯
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+ a| 
+群組SnapshotID
+ a| 
+要做為複本基礎的群組快照ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+newAccountID
+ a| 
+磁碟區的新帳戶ID（如果未被磁碟區陣列中傳遞的資訊覆寫）。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+磁碟區
+ a| 
+您為新磁碟區指定的成員集合。成員：
+
+* Volume ID：（必填）
+* 存取：（選用）可以是唯讀、讀寫、鎖定或複製目標。
+* 屬性：（選用）Json物件格式的名稱值配對清單。
+* 名稱：（選用）實體複本的新名稱。
+* newAccountID：（選用）新磁碟區的帳戶ID。
+* newSizes：（選用）Volume的總大小（以位元組為單位）。大小會四捨五入至最接近的百萬位元組。
+
+
+如果未指定選用成員、則會從來源磁碟區繼承這些值。
+ a| 
+Json物件陣列
+ a| 
+無
+ a| 
+是（Volume ID）
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+asyncdle
+ a| 
+非同步方法呼叫傳回的值。
+ a| 
+整數
+
+
+
+ a| 
+群組CloneID
+ a| 
+新群組實體複本的唯一ID。
+ a| 
+整數
+
+
+
+ a| 
+成員
+ a| 
+來源與目的地Volume配對的Volume ID清單。
+ a| 
+Json物件陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "CloneMultipleVolumes",
+   "params": {
+       "volumes": [
+           {
+              "volumeID": 5
+              "name":"foxhill",
+              "access":"readOnly"
+              },
+           {
+              "volumeID": 18
+              },
+           {
+             "volumeID": 20
+              }
+     ]
+   },
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "asyncHandle": 12,
+    "groupCloneID": 4,
+    "members": [
+     {
+      "srcVolumeID": 5,
+      "volumeID": 29
+     },
+     {
+      "srcVolumeID": 18,
+      "volumeID": 30
+     },
+     {
+      "srcVolumeID": 20,
+      "volumeID": 31
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

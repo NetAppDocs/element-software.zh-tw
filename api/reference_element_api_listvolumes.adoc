@@ -1,0 +1,235 @@
+---
+permalink: api/reference_element_api_listvolumes.html 
+sidebar: sidebar 
+keywords: volume,volumes,list,listing,listvolumes 
+summary: 您可以使用清單磁碟區方法來取得叢集中的磁碟區清單。您可以使用可用的參數、在清單中指定要傳回的磁碟區。 
+---
+= 清單Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listVolumes」（清單磁碟區）方法取得叢集中的磁碟區清單。您可以使用可用的參數、在清單中指定要傳回的磁碟區。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+帳戶
+ a| 
+只會傳回此處指定帳戶所擁有的磁碟區。與volumeID參數互不相容。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+包括虛擬磁碟區
+ a| 
+虛擬磁碟區預設會包含在回應中。若要排除虛擬磁碟區、請設定為假。
+ a| 
+布林值
+ a| 
+是的
+ a| 
+否
+
+
+
+ a| 
+isPoic
+ a| 
+傳回已配對或未配對的Volume。可能值：
+
+* true：傳回所有配對的Volume。
+* 否：傳回所有未配對的Volume。
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+限制
+ a| 
+可讓您設定傳回的最大Volume結果數。與volumeID參數互不相容。
+ a| 
+整數
+ a| 
+10000
+ a| 
+否
+
+
+
+ a| 
+startVolume ID
+ a| 
+只會傳回ID大於或等於此值的磁碟區。與volumeID參數互不相容。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+Volume ID
+ a| 
+Volume ID清單。如果您指定此參數、其他參數只會在這組磁碟區上運作。與帳戶、startVolume ID和限制參數互不相容。
+ a| 
+整數陣列
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+Volume名稱
+ a| 
+只會傳回符合磁碟區名稱的Volume物件資訊。
+ a| 
+字串
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+Volume狀態
+ a| 
+只會傳回狀態等於狀態值的磁碟區。可能值：
+
+* 建立
+* 快照
+* 使用中
+* 已刪除
+
+ a| 
+字串
+ a| 
+否
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+磁碟區
+ a| 
+Volume清單。
+ a| 
+xref:reference_element_api_volume.adoc[Volume] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListVolumes",
+    "params": {
+        "volumeIDs": [1],
+        "volumeStatus": "active",
+        "isPaired": "false"
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "volumes": [
+            {
+                "access": "readWrite",
+                "accountID": 1,
+                "attributes": {},
+                "blockSize": 4096,
+                "createTime": "2016-03-28T14:39:05Z",
+                "deleteTime": "",
+                "enable512e": true,
+                "iqn": "iqn.2010-01.com.solidfire:testvolume1.1",
+                "name": "testVolume1",
+                "purgeTime": "",
+                "qos": {
+                    "burstIOPS": 15000,
+                    "burstTime": 60,
+                    "curve": {
+                        "4096": 100,
+                        "8192": 160,
+                        "16384": 270,
+                        "32768": 500,
+                        "65536": 1000,
+                        "131072": 1950,
+                        "262144": 3900,
+                        "524288": 7600,
+                        "1048576": 15000
+                    },
+                    "maxIOPS": 15000,
+                    "minIOPS": 50
+                },
+                "scsiEUIDeviceID": "6a79617900000001f47acc0100000000",
+                "scsiNAADeviceID": "6f47acc1000000006a79617900000001",
+                "sliceCount": 1,
+                "status": "active",
+                "totalSize": 5000658944,
+                "virtualVolumeID": null,
+                "volumeAccessGroups": [],
+                "volumeID": 1,
+                "volumePairs": []
+            }
+        ]
+    }
+}
+----
+
+
+== 新的自版本
+
+9.6

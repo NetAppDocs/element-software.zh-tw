@@ -1,0 +1,64 @@
+---
+permalink: api/reference_element_api_snapmirrorvolumeinfo.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVolumeInfo 
+summary: SnapMirrorVolume Info物件包含SnapMirror關係中磁碟區位置的相關資訊、例如其名稱和類型。 
+---
+= snapMirrorVolume資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirrorVolume Info物件包含SnapMirror關係中磁碟區位置的相關資訊、例如其名稱和類型。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+類型
+ a| 
+Volume的類型。可能值：
+
+* 支援：磁碟區位於執行Element軟體的儲存叢集上。SolidFire
+* 來源：Volume位於遠端的不全叢集上。ONTAP ONTAP
+
+ a| 
+字串
+
+
+
+ a| 
+Volume ID
+ a| 
+Volume的ID。僅在「type」為SolidFire 「fid」時有效。
+ a| 
+整數
+
+
+
+ a| 
+Vserver
+ a| 
+擁有此磁碟區的Vserver名稱。僅在「type」為ONTAP 「fid」時有效。
+ a| 
+字串
+
+
+
+ a| 
+名稱
+ a| 
+Volume的名稱。
+ a| 
+字串
+
+|===

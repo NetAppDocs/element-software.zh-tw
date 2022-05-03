@@ -1,0 +1,169 @@
+---
+permalink: api/reference_element_api_modifysnapshot.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapshot,attributes,attribute 
+summary: 您可以使用ModifySnapshot來變更目前指派給快照的屬性。您也可以使用此方法、將在讀寫（來源）磁碟區上建立的快照、從遠端複寫到執行Element軟體的目標儲存叢集。 
+---
+= ModifySnapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「多重快照」來變更目前指派給快照的屬性。您也可以使用此方法、將在讀寫（來源）磁碟區上建立的快照、從遠端複寫到執行Element軟體的目標儲存叢集。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+
+
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+enableRemoteReplication
+ a| 
+用於將建立的快照複寫到遠端儲存叢集。可能值：
+
+* 「真的」：快照將複寫到遠端儲存設備。
+* 「假」：快照不會複寫到遠端儲存設備。
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+ a| 
+過期時間
+ a| 
+指定快照可移除的時間。無法與保留一起使用。如果未指定過期時間或保留原始快照、則快照不會過期。時間格式為ISO 8601日期字串、適用於基於時間的到期日、否則將不會過期。如果值為null、則會永久保留快照。如果值為fifo、則快照會以先進先出（FIFO）為基準、相對於磁碟區上的其他FIFO快照來保留。如果沒有可用的FIFO空間、API將會失敗。
+ a| 
+ISO 8601日期字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+名稱
+ a| 
+快照的名稱。如果未輸入名稱、則會使用拍攝快照的日期和時間。名稱長度上限為255個字元。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+snapMirrorLabel
+ a| 
+SnapMirror軟體用來指定SnapMirror端點上的快照保留原則的標籤。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+Snapshot ID
+ a| 
+快照的識別碼。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Snapshot
+ a| 
+包含新修改快照資訊的物件。
+ a| 
+xref:reference_element_api_snapshot.adoc[Snapshot]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ModifySnapshot",
+  "params": {
+    "snapshotID": 3114,
+    "enableRemoteReplication": "true",
+    "name" : "Chicago"
+  },
+  "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "snapshot": {
+      "attributes": {},
+      "checksum": "0x0",
+      "createTime": "2016-04-04T17:26:20Z",
+      "enableRemoteReplication": true,
+      "expirationReason": "None",
+      "expirationTime": null,
+      "groupID": 0,
+      "groupSnapshotUUID": "00000000-0000-0000-0000-000000000000",
+      "name": "test1",
+      "snapshotID": 3114,
+      "snapshotUUID": "5809a671-4ad0-4a76-9bf6-01cccf1e65eb",
+      "status": "done",
+      "totalSize": 5000658944,
+      "virtualVolumeID": null,
+      "volumeID": 1
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,130 @@
+---
+permalink: api/reference_element_api_getvolumestats.html 
+sidebar: sidebar 
+keywords: volume,volumes,get,getting,stats,measurements,activity,getvolumestats 
+summary: 您可以使用GetVolume Stats方法來取得單一Volume的高層級活動量測。這些值是從建立磁碟區而來的累計值。 
+---
+= GetVolume統計資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetVolume Stats」方法來取得單一Volume的高層活動量測結果。這些值是從建立磁碟區而來的累計值。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume ID
+ a| 
+指定收集統計資料的磁碟區。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume統計資料
+ a| 
+Volume活動資訊。
+ a| 
+xref:reference_element_api_volumestats.adoc[Volume統計資料]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetVolumeStats",
+   "params": {
+      "volumeID": 32
+   },
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": {
+      "accountID": 1,
+      "actualIOPS": 0,
+      "asyncDelay": null,
+      "averageIOPSize": 0,
+      "burstIOPSCredit": 0,
+      "clientQueueDepth": 0,
+      "desiredMetadataHosts": null,
+      "latencyUSec": 0,
+      "metadataHosts": {
+        "deadSecondaries": [],
+        "liveSecondaries": [
+          32
+        ],
+        "primary": 60
+      },
+      "nonZeroBlocks": 0,
+      "readBytes": 0,
+      "readBytesLastSample": 0,
+      "readLatencyUSec": 0,
+      "readOps": 0,
+      "readOpsLastSample": 0,
+      "samplePeriodMSec": 0,
+      "throttle": 0,
+      "timestamp": "2016-04-01T21:01:39.130840Z",
+      "unalignedReads": 0,
+      "unalignedWrites": 0,
+      "volumeAccessGroups": [],
+      "volumeID": 1,
+      "volumeSize": 5000658944,
+      "volumeUtilization": 0,
+      "writeBytes": 0,
+      "writeBytesLastSample": 0,
+      "writeLatencyUSec": 0,
+      "writeOps": 0,
+      "writeOpsLastSample": 0,
+      "zeroBlocks": 1220864
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,68 @@
+---
+permalink: api/reference_element_api_getidpauthenticationstate.html 
+sidebar: sidebar 
+keywords: IdP,idp,authentication,retrieve get,idp state 
+summary: 您可以使用GetIdpAuthenticationState方法傳回使用協力廠商IDP進行驗證狀態的相關資訊。 
+---
+= GetIdpAuthenticationState
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetIdpAuthenticationState」方法、傳回使用第三方IDP進行驗證狀態的相關資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+已啟用
+ a| 
+指出是否已啟用協力廠商IDP驗證。
+ a| 
+布林值
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetIdpAuthenticationState"
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "result": {"enabled": true}
+}
+----
+
+
+== 新的自版本
+
+12.0

@@ -1,0 +1,27 @@
+---
+section: hardware
+title: 安裝及維護硬體
+url: "/hardware/index.html"
+entries:
+- title: H410S和H610S硬體資訊
+  url: "/hardware/concept_h410s_h610s_info.html"
+  entries:
+  - title: 安裝H410S和H610S節點
+    url: "/hardware/task_h410s_h610s_install.html"
+  - title: 更換H410S節點
+    url: "/hardware/task_h410s_repl.html"
+  - title: 更換H610S節點
+    url: "/hardware/task_h610s_repl.html"
+  - title: 更換磁碟機
+    url: "/hardware/task_hseries_driverepl.html"
+  - title: 更換電源供應器
+    url: "/hardware/task_psu_repl.html"
+- title: SF系列硬體資訊
+  url: "/hardware/concept_sfseries_info.html"
+  entries:
+  - title: 更換機箱
+    url: "/hardware/task_sfseries_chassisrepl.html"
+  - title: 更換磁碟機
+    url: "/hardware/task_sfseries_driverepl.html"
+  - title: 更換電源供應器
+    url: "/hardware/task_sfseries_psurepl.html"

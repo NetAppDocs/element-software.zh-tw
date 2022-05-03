@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_disableldapauthentication.html 
+sidebar: sidebar 
+keywords: LDAP,authentication,auth,disable,disabling,DisableLdapAuthentication 
+summary: 您可以使用DisableLdapAuthentication方法停用LDAP驗證、並移除所有LDAP組態設定。此方法不會移除使用者或群組的任何已設定叢集管理帳戶。停用LDAP驗證後、設定為使用LDAP驗證的叢集管理員將無法再存取叢集。 
+---
+= 已停用Ldap驗 證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「disableLdapAuthentication」方法來停用LDAP驗證、並移除所有LDAP組態設定。此方法不會移除使用者或群組的任何已設定叢集管理帳戶。停用LDAP驗證後、設定為使用LDAP驗證的叢集管理員將無法再存取叢集。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "DisableLdapAuthentication",
+  "params": {},
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+"id": 1,
+"result": {}
+}
+----
+
+
+== 新的自版本
+
+9.6

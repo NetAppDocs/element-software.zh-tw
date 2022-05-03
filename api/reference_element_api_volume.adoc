@@ -1,0 +1,303 @@
+---
+permalink: api/reference_element_api_volume.html 
+sidebar: sidebar 
+keywords: object,objects,volume 
+summary: Volume物件包含有關未配對或配對磁碟區的組態資訊。它不包含執行時間或使用資訊、也不包含虛擬磁碟區的相關資訊。 
+---
+= Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume物件包含有關未配對或配對磁碟區的組態資訊。它不包含執行時間或使用資訊、也不包含虛擬磁碟區的相關資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+存取
+ a| 
+該磁碟區允許的存取類型。可能值：
+
+* 「ReadOnly」：只允許讀取作業。
+* 「ReadWrite」：允許讀取和寫入。
+* 「鎖定」：不允許讀取或寫入。
+* 「重複目標」：在複寫的Volume配對中指定為目標Volume。
+
+ a| 
+字串
+
+
+
+ a| 
+帳戶ID
+ a| 
+包含Volume之帳戶的帳戶帳戶ID。
+ a| 
+整數
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+
+
+
+ a| 
+區塊大小
+ a| 
+磁碟區上區塊的大小。
+ a| 
+整數
+
+
+
+ a| 
+CREATETIM
+ a| 
+建立磁碟區的UTC + 0格式化時間。
+ a| 
+ISO 8601字串
+
+
+
+ a| 
+目前保護方案
+ a| 
+用於此Volume的保護方案。如果某個磁碟區從一個保護方案轉換為另一個保護方案、此成員會反映該磁碟區正在轉換的保護方案。
+ a| 
+字串
+
+
+
+ a| 
+刪除時間
+ a| 
+刪除磁碟區的UTC + 0格式化時間。
+ a| 
+ISO 8601字串
+
+
+
+ a| 
+已啓用512e
+ a| 
+如果設為true、則Volume可提供512位元組區段模擬。
+ a| 
+布林值
+
+
+
+ a| 
+已啓用SnapMirrorReplication
+ a| 
+該磁碟區是否可用於與SnapMirror端點進行複寫。
+ a| 
+布林值
+
+
+
+| 五分大小 | 指定使用先進先出（FIFO）快照保留模式時、要同時維護的磁碟區快照數量上限。 | 整數 
+
+
+ a| 
+IQN
+ a| 
+磁碟區的iSCSI合格名稱。
+ a| 
+字串
+
+
+
+ a| 
+最後存取時間
+ a| 
+上次存取磁碟區（包括I/O）的時間（格式化為UTC+0）。如果不知道上次存取時間、此值為null。
+ a| 
+ISO 8601字串
+
+
+
+ a| 
+lastAccessTimerIO
+ a| 
+上次發生磁碟區的任何I/O（格式化為UTC+0）。如果不知道上次存取時間、此值為null。
+ a| 
+ISO 8601字串
+
+
+
+| 最小大小 | 指定使用先進先出（FIFO）快照保留模式時、Volume同時保留的最小先進先出（FIFO）快照插槽數。 | 整數 
+
+
+ a| 
+名稱
+ a| 
+建立時所提供的磁碟區名稱。
+ a| 
+字串
+
+
+
+ a| 
+上一頁保護方案
+ a| 
+如果磁碟區從一個保護方案轉換為另一個保護方案、此成員會反映磁碟區正在轉換的保護方案。在轉換開始之前、此成員不會變更。如果尚未轉換磁碟區、則此成員為null。
+ a| 
+字串
+
+
+
+ a| 
+使用時間
+ a| 
+從系統中清除磁碟區的UTC + 0格式化時間。
+ a| 
+ISO 8601字串
+
+
+
+ a| 
+QoS
+ a| 
+此Volume的服務品質設定。
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+
+
+
+ a| 
+qosPolicyID
+ a| 
+與磁碟區相關聯的QoS原則ID。如果磁碟區未與原則關聯、則此值為null。
+ a| 
+整數
+
+
+
+ a| 
+scsiEUIDeviceID
+ a| 
+磁碟區的全域唯一SCSI裝置識別碼、採用EUI-64型16位元組格式。
+ a| 
+字串
+
+
+
+ a| 
+scsiAADeviceID
+ a| 
+NAA IEEE註冊延伸格式之磁碟區的全域唯一SCSI裝置識別碼。
+ a| 
+字串
+
+
+
+ a| 
+交叉分析篩選器eCount
+ a| 
+Volume上的切片數。此值一律為「1」。
+ a| 
+整數
+
+
+
+ a| 
+狀態
+ a| 
+Volume的目前狀態。可能值：
+
+* 初始化：正在初始化且尚未準備好連線的磁碟區。
+* 作用中：已準備好連線的作用中Volume。
+* 刪除：已標記為刪除但尚未清除的磁碟區。
+
+ a| 
+字串
+
+
+
+ a| 
+累計大小
+ a| 
+已配置容量的總位元組。
+ a| 
+整數
+
+
+
+ a| 
+虛擬Volume ID
+ a| 
+與磁碟區相關聯的唯一虛擬Volume ID（如果有）。
+ a| 
+UUID
+
+
+
+ a| 
+Volume存取群組
+ a| 
+磁碟區所屬的ID pf磁碟區存取群組清單。如果某個Volume不屬於任何Volume存取群組、則此值為空白清單。
+ a| 
+整數陣列
+
+
+
+ a| 
+Volume ConsistencyGroupUUID
+ a| 
+磁碟區所屬之磁碟區一致性群組的通用唯一ID。
+ a| 
+UUID
+
+
+
+ a| 
+Volume ID
+ a| 
+Volume的唯一Volume ID。
+ a| 
+整數
+
+
+
+ a| 
+Volume網頁
+ a| 
+配對Volume的相關資訊。僅在已配對Volume時顯示。如果Volume未配對、則此值為空白清單。
+ a| 
+xref:reference_element_api_volumepair.adoc[Volume] 陣列
+
+
+
+ a| 
+Volume UUID
+ a| 
+Volume的通用唯一ID。
+ a| 
+UUID
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_listactivevolumes.adoc[listActiveVolumes]
+* xref:reference_element_api_listdeletedvolumes.adoc[listDeletedVolumes]
+* xref:reference_element_api_listvolumes.adoc[清單Volume]
+* xref:reference_element_api_listvolumesforaccount.adoc[listVolumesForAccount]
+* xref:reference_element_api_qos.adoc[QoS]
+

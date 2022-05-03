@@ -1,0 +1,41 @@
+---
+permalink: storage/task_system_manage_cluster_ntp_configure.html 
+sidebar: sidebar 
+keywords: ntp, cluster, query, fqdn, dns server 
+summary: 您可以指示叢集中的每個節點查詢網路時間傳輸協定（NTP）伺服器以取得更新。叢集只會連絡已設定的伺服器、並向其要求NTP資訊。 
+---
+= 設定叢集要查詢的網路時間傳輸協定伺服器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以指示叢集中的每個節點查詢網路時間傳輸協定（NTP）伺服器以取得更新。叢集只會連絡已設定的伺服器、並向其要求NTP資訊。
+
+在叢集上設定NTP、以指向本機NTP伺服器。您可以使用IP位址或FQDN主機名稱。叢集建立時的預設NTP伺服器設為us.pool.ntp.org、但無法一律連線至此站台、視SolidFire 乎此叢集的實體位置而定。
+
+使用FQDN取決於個別儲存節點的DNS設定是否已就緒且可正常運作。若要這麼做、請在每個儲存節點上設定DNS伺服器、並檢閱「網路連接埠需求」頁面、確保連接埠已開啟。
+
+最多可輸入五個不同的NTP伺服器。
+
+
+NOTE: 您可以同時使用IPv4和IPv6位址。
+
+您必須擁有叢集管理員權限才能設定此設定。
+
+.步驟
+. 在伺服器設定中設定IP和/或FQDN清單。
+. 請確定已在節點上正確設定DNS。
+. 按一下*叢集*>*設定*。
+. 在「Network Time Protocol Settings（網路時間傳輸協定設定）」下、選取「* No*（否*）」、這會使用標準NTP組態。
+. 按一下*儲存變更*。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

@@ -1,0 +1,33 @@
+---
+permalink: storage/task_replication_pair_clusters.html 
+sidebar: sidebar 
+keywords: pair clusters, replication, connect clusters, data protection 
+summary: 您必須將兩個叢集配對、作為使用即時複寫功能的第一步。配對並連線兩個叢集之後、您可以將一個叢集上的作用中磁碟區設定為持續複寫到第二個叢集、以提供持續的資料保護（CDP）。 
+---
+= 配對叢集以進行複寫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須將兩個叢集配對、作為使用即時複寫功能的第一步。配對並連線兩個叢集之後、您可以將一個叢集上的作用中磁碟區設定為持續複寫到第二個叢集、以提供持續的資料保護（CDP）。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須擁有叢集管理員權限、才能配對一個或兩個叢集。
+* 所有節點的MIP和SIP都會彼此路由傳送。
+* 叢集之間的往返延遲低於2000毫秒。
+* 兩個儲存叢集都應該具有唯一的叢集名稱、MVIP、SVIP和所有節點IP位址。
+* 叢集上元素軟體版本之間的差異不超過一個主要版本。如果差異較大、則必須升級其中一個叢集、才能執行資料複寫。
+
+
+
+NOTE: 叢集配對需要在管理網路上的節點之間建立完整連線。複寫需要在儲存叢集網路上的個別節點之間建立連線。
+
+您可以將一個叢集與最多四個其他叢集配對、以便複寫磁碟區。您也可以將叢集群組內的叢集彼此配對。
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_prereq_network_port_requirements.adoc[網路連接埠需求]

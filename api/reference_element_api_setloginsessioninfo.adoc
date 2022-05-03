@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_setloginsessioninfo.html 
+sidebar: sidebar 
+keywords: authentication,login,session,info,timeout,setloginsessioninfo 
+summary: 您可以使用SetLoginSessionInfo方法來設定階段作業的登入驗證有效期間。登入期間結束後、系統上沒有任何活動、驗證就會過期。登入期間結束後、若要繼續存取叢集、必須提供新的登入認證。 
+---
+= SetLoginSessionInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「etLoginSessionInfo」方法來設定階段作業的登入驗證有效期間。登入期間結束後、系統上沒有任何活動、驗證就會過期。登入期間結束後、若要繼續存取叢集、必須提供新的登入認證。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+逾時
+ a| 
+叢集驗證過期期間。格式化格式為：hh：mms：s例如：01：30：00、00：90：00和00：00：5400均可用於等於90分鐘的逾時期間。最小逾時值為1分鐘。如果未提供值或設定為零、則登入工作階段不會有逾時值。
+ a| 
+字串
+ a| 
+30分鐘
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "SetLoginSessionInfo",
+  "params": {
+    "timeout" : "01:30:00"
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 新的自版本
+
+9.6

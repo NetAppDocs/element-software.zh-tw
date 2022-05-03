@@ -1,0 +1,34 @@
+---
+permalink: storage/task_replication_pair_volumes_using_volume_id_or_pairing_key.html 
+sidebar: sidebar 
+keywords: volume pairings, pairing key, volume id, replication 
+summary: 配對程序包括使用Volume ID或配對金鑰來配對兩個Volume。 
+---
+= 使用Volume ID或配對金鑰配對Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配對程序包括使用Volume ID或配對金鑰來配對兩個Volume。
+
+. 選取下列其中一種方法來配對磁碟區：
++
+** 使用Volume ID：如果叢集管理員能存取要配對磁碟區的兩個叢集、請使用此方法。此方法會使用遠端叢集上磁碟區的Volume ID來啟動連線。
+** 使用配對金鑰：如果叢集管理員只能存取來源叢集、請使用此方法。此方法會產生配對金鑰、可用於遠端叢集以完成Volume配對。
++
+
+NOTE: Volume配對金鑰包含加密版本的Volume資訊、可能包含敏感資訊。只能以安全的方式共用此金鑰。
+
+
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_replication_pair_volumes_using_a_volume_id.adoc[使用Volume ID配對磁碟區]
+* xref:task_replication_pair_volumes_using_a_pairing_key.adoc[使用配對金鑰配對磁碟區]
+

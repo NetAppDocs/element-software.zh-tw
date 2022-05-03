@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_attributes.html 
+sidebar: sidebar 
+keywords: QoS,object,Quality,Service 
+summary: 許多API要求和回應都使用物件和簡單類型。物件是金鑰值配對的集合、其中的值是簡單類型或可能是其他物件。屬性是自訂的名稱值配對、可由使用者在Json物件中設定。有些方法可讓您在建立或修改物件時新增屬性。 
+---
+= 屬性
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+許多API要求和回應都使用物件和簡單類型。物件是金鑰值配對的集合、其中的值是簡單類型或可能是其他物件。屬性是自訂的名稱值配對、可由使用者在Json物件中設定。有些方法可讓您在建立或修改物件時新增屬性。
+
+編碼屬性物件的長度上限為1000位元組。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+下列要求範例使用AddClusterAdmin方法：
+
+[listing]
+----
+{
+   "method": "AddClusterAdmin",
+   "params": {
+      "username": "joeadmin",
+      "password": "68!5Aru268)$",
+      "access": [
+         "volume",
+         "reporting"
+      ],
+      "attributes": {
+         "name1": "value1",
+         "name2": "value2",
+         "name3": "value3"
+      }
+   }
+}
+----

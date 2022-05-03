@@ -1,0 +1,929 @@
+---
+section: api
+title: 使用Element API管理儲存設備
+url: "/api/index.html"
+entries:
+- title: 關於Element軟體API
+  url: "/api/concept_element_api_about_the_api.html"
+  entries:
+  - title: 要求物件成員
+    url: "/api/reference_element_api_request_object_members.html"
+  - title: 回應物件成員
+    url: "/api/reference_element_api_response_object_members.html"
+  - title: 要求端點
+    url: "/api/concept_element_api_request_endpoints.html"
+  - title: API驗證
+    url: "/api/concept_element_api_authentication.html"
+  - title: 非同步方法
+    url: "/api/concept_element_api_asynchronous_methods.html"
+  - title: 屬性
+    url: "/api/reference_element_api_attributes.html"
+- title: 通用物件
+  url: "/api/concept_element_api_common_objects.html"
+  entries:
+  - title: 帳戶
+    url: "/api/reference_element_api_account.html"
+  - title: 驗證工作階段資訊
+    url: "/api/reference_element_api_authsessioninfo.html"
+  - title: 艙壁Volume工作
+    url: "/api/reference_element_api_bulkvolumejob.html"
+  - title: 繫結（虛擬磁碟區）
+    url: "/api/reference_element_api_binding_vvols.html"
+  - title: 認證詳細資料
+    url: "/api/reference_element_api_certificatedetails.html"
+  - title: 叢集
+    url: "/api/reference_element_api_cluster.html"
+  - title: 叢集管理
+    url: "/api/reference_element_api_clusteradmin.html"
+  - title: 叢集容量
+    url: "/api/reference_element_api_clustercapacity.html"
+  - title: 叢集組態
+    url: "/api/reference_element_api_clusterconfig.html"
+  - title: 叢集資訊
+    url: "/api/reference_element_api_clusterinfo.html"
+  - title: 叢集空氣
+    url: "/api/reference_element_api_clusterpair.html"
+  - title: 叢集統計資料
+    url: "/api/reference_element_api_clusterstats.html"
+  - title: 叢集結構
+    url: "/api/reference_element_api_clusterstructure.html"
+  - title: 磁碟機
+    url: "/api/reference_element_api_drive.html"
+  - title: 磁碟統計資料
+    url: "/api/reference_element_api_drivestats.html"
+  - title: 錯誤
+    url: "/api/reference_element_api_error.html"
+  - title: 活動
+    url: "/api/reference_element_api_event.html"
+  - title: 故障
+    url: "/api/reference_element_api_fault.html"
+  - title: 光纖通道連接埠
+    url: "/api/reference_element_api_fibrechannelport.html"
+  - title: FpsErrorNodeReport
+    url: "/api/reference_element_api_fipserrornodereport.html"
+  - title: FpsNodeReport
+    url: "/api/reference_element_api_fipsnodereport.html"
+  - title: FpsReport
+    url: "/api/reference_element_api_fipsreport.html"
+  - title: 群組Snapshot
+    url: "/api/reference_element_api_groupsnapshot.html"
+  - title: 硬體資訊
+    url: "/api/reference_element_api_hardwareinfo.html"
+  - title: 主機（虛擬磁碟區）
+    url: "/api/reference_element_api_host.html"
+  - title: idpConfigInfo
+    url: "/api/reference_element_api_idpconfiginfo.html"
+  - title: 啟動器
+    url: "/api/reference_element_api_initiator.html"
+  - title: KeyProviderKmip
+    url: "/api/reference_element_api_keyproviderkmip.html"
+  - title: KeyServerKmip
+    url: "/api/reference_element_api_keyserverkmip.html"
+  - title: LDAPConfiguration
+    url: "/api/reference_element_api_ldapconfiguration.html"
+  - title: 記錄伺服器
+    url: "/api/reference_element_api_loggingserver.html"
+  - title: 網路（連結介面）
+    url: "/api/reference_element_api_network_bonded_interfaces.html"
+  - title: 網路（所有介面）
+    url: "/api/reference_element_api_network_all_interfaces.html"
+  - title: 網路（乙太網路介面）
+    url: "/api/reference_element_api_network_ethernet_interfaces.html"
+  - title: 網路（本機介面）
+    url: "/api/reference_element_api_network_local_interfaces.html"
+  - title: 網路（SNMP）
+    url: "/api/reference_element_api_network_snmp.html"
+  - title: 網路介面
+    url: "/api/reference_element_api_networkinterface.html"
+  - title: 網路連網統計資料
+    url: "/api/reference_element_api_networkinterfacestats.html"
+  - title: 節點
+    url: "/api/reference_element_api_node.html"
+  - title: 節點保護網域
+    url: "/api/reference_element_api_nodeprotectiondomains.html"
+  - title: 節點統計資料
+    url: "/api/reference_element_api_nodestats.html"
+  - title: 版本資訊
+    url: "/api/reference_element_api_ontapversioninfo.html"
+  - title: pendingActiveNode
+    url: "/api/reference_element_api_pendingactivenode.html"
+  - title: pendingNode
+    url: "/api/reference_element_api_pendingnode.html"
+  - title: 保護網域
+    url: "/api/reference_element_api_protectiondomain.html"
+  - title: 保護網域層級
+    url: "/api/reference_element_api_protectiondomainlevel.html"
+  - title: 保護網域恢復能力
+    url: "/api/reference_element_api_protectiondomainresiliency.html"
+  - title: 保護網域容忍度
+    url: "/api/reference_element_api_protectiondomaintolerance.html"
+  - title: 保護架構恢復能力
+    url: "/api/reference_element_api_protectionschemeresiliency.html"
+  - title: 保護架構容錯度
+    url: "/api/reference_element_api_protectionschemetolerance.html"
+  - title: 通訊協定端點
+    url: "/api/reference_element_api_protocolendpoint.html"
+  - title: QoS
+    url: "/api/reference_element_api_qos.html"
+  - title: QoSPolicy
+    url: "/api/reference_element_api_qospolicy.html"
+  - title: 遠端叢集SnapshotStatus
+    url: "/api/reference_element_api_remoteclustersnapshotstatus.html"
+  - title: 排程
+    url: "/api/reference_element_api_schedule.html"
+  - title: 工作階段（光纖通道）
+    url: "/api/reference_element_api_session_fibre_channel.html"
+  - title: 工作階段（iSCSI）
+    url: "/api/reference_element_api_session_iscsi.html"
+  - title: snapMirrorAggrate
+    url: "/api/reference_element_api_snapmirroraggregate.html"
+  - title: snapMirrorClusterIdentity
+    url: "/api/reference_element_api_snapmirrorclusteridentity.html"
+  - title: snapMirrorEndpoint
+    url: "/api/reference_element_api_snapmirrorendpoint.html"
+  - title: snapMirrorJobScheduleCronInfo
+    url: "/api/reference_element_api_snapmirrorjobschedulecroninfo.html"
+  - title: snapMirrorlunInfo
+    url: "/api/reference_element_api_snapmirrorluninfo.html"
+  - title: SnapMirror網路介面
+    url: "/api/reference_element_api_snapmirrornetworkinterface.html"
+  - title: snapMirrorNode
+    url: "/api/reference_element_api_snapmirrornode.html"
+  - title: snapMirrorPolicy
+    url: "/api/reference_element_api_snapmirrorpolicy.html"
+  - title: snapMirrorPolicyRule
+    url: "/api/reference_element_api_snapmirrorpolicyrule.html"
+  - title: snapMirrorRelationationationationship
+    url: "/api/reference_element_api_snapmirrorrelationship.html"
+  - title: snapMirrorVolume
+    url: "/api/reference_element_api_snapmirrorvolume.html"
+  - title: snapMirrorVolume資訊
+    url: "/api/reference_element_api_snapmirrorvolumeinfo.html"
+  - title: snapMirrorVserver
+    url: "/api/reference_element_api_snapmirrorvserver.html"
+  - title: snapMirrorVserverAggregateInfo
+    url: "/api/reference_element_api_snapmirrorvserveraggregateinfo.html"
+  - title: Snapshot
+    url: "/api/reference_element_api_snapshot.html"
+  - title: snmpTrapRecipient
+    url: "/api/reference_element_api_snmptraprecipient.html"
+  - title: storageContainer
+    url: "/api/reference_element_api_storagecontainer.html"
+  - title: SyncJob
+    url: "/api/reference_element_api_syncjob.html"
+  - title: 工作（虛擬磁碟區）
+    url: "/api/reference_element_api_task_virtual_volumes.html"
+  - title: 使用者
+    url: "/api/reference_element_api_usmuser.html"
+  - title: 虛擬化網路
+    url: "/api/reference_element_api_virtualnetwork.html"
+  - title: 虛擬化Volume
+    url: "/api/reference_element_api_virtualvolume.html"
+  - title: Volume
+    url: "/api/reference_element_api_volume.html"
+  - title: Volume存取群組
+    url: "/api/reference_element_api_volumeaccessgroup.html"
+  - title: Volume
+    url: "/api/reference_element_api_volumepair.html"
+  - title: Volume統計資料
+    url: "/api/reference_element_api_volumestats.html"
+- title: 常見方法
+  url: "/api/concept_element_api_common_methods.html"
+  entries:
+  - title: GetAPI
+    url: "/api/reference_element_api_getapi.html"
+  - title: Get非 同步結果
+    url: "/api/reference_element_api_getasyncresult.html"
+  - title: GetCompleteStats
+    url: "/api/reference_element_api_getcompletestats.html"
+  - title: GetLimits
+    url: "/api/reference_element_api_getlimits.html"
+  - title: GetOrigin
+    url: "/api/reference_element_api_getorigin.html"
+  - title: GetRawStats
+    url: "/api/reference_element_api_getrawstats.html"
+  - title: 列表同步結果
+    url: "/api/reference_element_api_listasyncresults.html"
+- title: 帳戶API方法
+  url: "/api/concept_element_api_account_api_methods.html"
+  entries:
+  - title: AddAccount
+    url: "/api/reference_element_api_addaccount.html"
+  - title: GetAccountByID
+    url: "/api/reference_element_api_getaccountbyid.html"
+  - title: GetAccountByName
+    url: "/api/reference_element_api_getaccountbyname.html"
+  - title: GetAccountEfficiency
+    url: "/api/reference_element_api_getaccountefficiency.html"
+  - title: 清單帳戶
+    url: "/api/reference_element_api_listaccounts.html"
+  - title: 修改帳戶
+    url: "/api/reference_element_api_modifyaccount.html"
+  - title: 遠端帳戶
+    url: "/api/reference_element_api_removeaccount.html"
+- title: 系統管理員API方法
+  url: "/api/concept_element_api_administrator_api_methods.html"
+  entries:
+  - title: AddClusterAdmin
+    url: "/api/reference_element_api_addclusteradmin.html"
+  - title: GetCurrentClusterAdmin
+    url: "/api/reference_element_api_getcurrentclusteradmin.html"
+  - title: GetLoginBanner
+    url: "/api/reference_element_api_getloginbanner.html"
+  - title: listClusterAdmins
+    url: "/api/reference_element_api_listclusteradmins.html"
+  - title: ModifyClusterAdmin
+    url: "/api/reference_element_api_modifyclusteradmin.html"
+  - title: 遠端叢集管理
+    url: "/api/reference_element_api_removeclusteradmin.html"
+  - title: SetLoginBanner
+    url: "/api/reference_element_api_setloginbanner.html"
+- title: 叢集API方法
+  url: "/api/concept_element_api_cluster_api_methods.html"
+  entries:
+  - title: 附加節點
+    url: "/api/reference_element_api_addnodes.html"
+  - title: ClearClusterFaults
+    url: "/api/reference_element_api_clearclusterfaults.html"
+  - title: 建立ClusterInterfacePreference
+    url: "/api/reference_element_api_createclusterinterfacepreference.html"
+  - title: 刪除ClusterInterfacePreference
+    url: "/api/reference_element_api_deleteclusterinterfacepreference.html"
+  - title: 啟用功能
+    url: "/api/reference_element_api_enablefeature.html"
+  - title: GetClusterCapacity
+    url: "/api/reference_element_api_getclustercapacity.html"
+  - title: GetClusterFullThreshold
+    url: "/api/reference_element_api_getclusterfullthreshold.html"
+  - title: GetClusterHardwareInfo
+    url: "/api/reference_element_api_getclusterhardwareinfo.html"
+  - title: GetClusterInfo
+    url: "/api/reference_element_api_getclusterinfo.html"
+  - title: GetClusterInterfacePreference
+    url: "/api/reference_element_api_getclusterinterfacepreference.html"
+  - title: GetClusterMasterNodeID
+    url: "/api/reference_element_api_getclustermasternodeid.html"
+  - title: GetClusterStats
+    url: "/api/reference_element_api_getclusterstats.html"
+  - title: GetClusterVersion資訊
+    url: "/api/reference_element_api_getclusterversioninfo.html"
+  - title: GetFeatureStatus
+    url: "/api/reference_element_api_getfeaturestatus.html"
+  - title: GetLicenseKey
+    url: "/api/reference_element_api_getlicensekey.html"
+  - title: GetLoginSessionInfo
+    url: "/api/reference_element_api_getloginsessioninfo.html"
+  - title: GetNodeHardwareInfo
+    url: "/api/reference_element_api_getnodehardwareinfo.html"
+  - title: GetNodeStats
+    url: "/api/reference_element_api_getnodestats.html"
+  - title: ListActiveNode
+    url: "/api/reference_element_api_listactivenodes.html"
+  - title: listAllNode
+    url: "/api/reference_element_api_listallnodes.html"
+  - title: listClusterFaults
+    url: "/api/reference_element_api_listclusterfaults.html"
+  - title: listClusterInterface喜好 設定
+    url: "/api/reference_element_api_listclusterinterfacepreferences.html"
+  - title: 清單事件
+    url: "/api/reference_element_api_listevents.html"
+  - title: 清單節點統計資料
+    url: "/api/reference_element_api_listnodestats.html"
+  - title: 清單
+    url: "/api/reference_element_api_listiscsisessions.html"
+  - title: 列表服務
+    url: "/api/reference_element_api_listservices.html"
+  - title: ListVendingNode
+    url: "/api/reference_element_api_listpendingnodes.html"
+  - title: ListPendingActiveNode
+    url: "/api/reference_element_api_listpendingactivenodes.html"
+  - title: ModifyClusterFull閥 值
+    url: "/api/reference_element_api_modifyclusterfullthreshold.html"
+  - title: ModifyClusterInterfacePreference
+    url: "/api/reference_element_api_modifyclusterinterfacepreference.html"
+  - title: 遠端節點
+    url: "/api/reference_element_api_removenodes.html"
+  - title: SetLicenseKey
+    url: "/api/reference_element_api_setlicensekey.html"
+  - title: SetLoginSessionInfo
+    url: "/api/reference_element_api_setloginsessioninfo.html"
+  - title: 關機
+    url: "/api/reference_element_api_shutdown.html"
+- title: 叢集建立API方法
+  url: "/api/concept_element_api_create_cluster_api_methods.html"
+  entries:
+  - title: 檢查ProposedCluster
+    url: "/api/reference_element_api_checkproposedcluster.html"
+  - title: 建立叢集
+    url: "/api/reference_element_api_createcluster.html"
+  - title: GetBootstrapConfig
+    url: "/api/reference_element_api_getbootstrapconfig.html"
+- title: 磁碟機API方法
+  url: "/api/concept_element_api_drive_api_methods.html"
+  entries:
+  - title: 新增磁碟機
+    url: "/api/reference_element_api_adddrives.html"
+  - title: GetDriveHardwareInfo
+    url: "/api/reference_element_api_getdrivehardwareinfo.html"
+  - title: GetDriveStats
+    url: "/api/reference_element_api_getdrivestats.html"
+  - title: 清單磁碟機
+    url: "/api/reference_element_api_listdrives.html"
+  - title: ListDriveStats
+    url: "/api/reference_element_api_listdrivestats.html"
+  - title: 遠端磁碟機
+    url: "/api/reference_element_api_removedrives.html"
+  - title: SecureEraseDrives
+    url: "/api/reference_element_api_secureerasedrives.html"
+- title: Fibre Channel API方法
+  url: "/api/concept_element_api_fibre_channel_api_methods.html"
+  entries:
+  - title: GetVolume存取群組LUN指派
+    url: "/api/reference_element_api_getvolumeaccessgrouplunassignments.html"
+  - title: ListFibreChannelPortInfo
+    url: "/api/reference_element_api_listfibrechannelportinfo.html"
+  - title: ListFIBreChannelSessions
+    url: "/api/reference_element_api_listfibrechannelsessions.html"
+  - title: 清單節點光纖通道連接埠資訊
+    url: "/api/reference_element_api_listnodefibrechannelportinfo.html"
+  - title: ModifyVolume存取群組LUN指派
+    url: "/api/reference_element_api_modifyvolumeaccessgrouplunassignments.html"
+- title: 啟動器API方法
+  url: "/api/concept_element_api_initiator_api_methods.html"
+  entries:
+  - title: 建立啟動器
+    url: "/api/reference_element_api_createinitiators.html"
+  - title: 刪除啟動器
+    url: "/api/reference_element_api_deleteinitiators.html"
+  - title: 清單啟動器
+    url: "/api/reference_element_api_listinitiators.html"
+  - title: ModifyInitiator
+    url: "/api/reference_element_api_modifyinitiators.html"
+- title: LDAP API方法
+  url: "/api/concept_element_api_ldap_api_methods.html"
+  entries:
+  - title: AddLdapClusterAdmin
+    url: "/api/reference_element_api_addldapclusteradmin.html"
+  - title: 啟用Ldap驗 證
+    url: "/api/reference_element_api_enableldapauthentication.html"
+  - title: 已停用Ldap驗 證
+    url: "/api/reference_element_api_disableldapauthentication.html"
+  - title: GetLdapConfiguration
+    url: "/api/reference_element_api_getldapconfiguration.html"
+  - title: TestLdap驗 證
+    url: "/api/reference_element_api_testldapauthentication.html"
+- title: 多因素驗證API方法
+  url: "/api/concept_element_api_multi_factor_authentication_api_methods.html"
+  entries:
+  - title: AddIdpClusterAdmin
+    url: "/api/reference_element_api_addidpclusteradmin.html"
+  - title: 建立IdpConfiguration
+    url: "/api/reference_element_api_createidpconfiguration.html"
+  - title: 刪除驗證工作階段
+    url: "/api/reference_element_api_deleteauthsession.html"
+  - title: 刪除驗證sessionsByClusterAdmin
+    url: "/api/reference_element_api_deleteauthsessionsbyclusteradmin.html"
+  - title: 刪除驗證使用者名稱
+    url: "/api/reference_element_api_deleteauthsessionsbyusername.html"
+  - title: 刪除Idp組態
+    url: "/api/reference_element_api_deleteidpconfiguration.html"
+  - title: 停用Idp驗 證
+    url: "/api/reference_element_api_disableidpauthentication.html"
+  - title: 啟用Idp驗 證
+    url: "/api/reference_element_api_enableidpauthentication.html"
+  - title: GetIdpAuthenticationState
+    url: "/api/reference_element_api_getidpauthenticationstate.html"
+  - title: listActiveAuthSessions
+    url: "/api/reference_element_api_listactiveauthsessions.html"
+  - title: 清單組態
+    url: "/api/reference_element_api_listidpconfigurations.html"
+  - title: 更新IdpConfiguration
+    url: "/api/reference_element_api_updateidpconfiguration.html"
+- title: 工作階段驗證API方法
+  url: "/api/concept_element_api_session_authentication_api_methods.html"
+  entries:
+  - title: listAuthSessionsByClusterAdmin
+    url: "/api/reference_element_api_listauthsessionbyclusteradmin.html"
+  - title: list驗 證使用者名稱
+    url: "/api/reference_element_api_listauthsessionbyusername.html"
+- title: 節點API方法
+  url: "/api/concept_element_api_node_api_methods.html"
+  entries:
+  - title: CheckPingOnVlan
+    url: "/api/reference_element_api_checkpingonvlan.html"
+  - title: 檢查ProposedNodeAddition
+    url: "/api/reference_element_api_checkproposednodeadditions.html"
+  - title: CreClusterSupportBundle
+    url: "/api/reference_element_api_createclustersupportbundle.html"
+  - title: 建立支援產品組合
+    url: "/api/reference_element_api_createsupportbundle.html"
+  - title: 刪除AllSupportBundles
+    url: "/api/reference_element_api_deleteallsupportbundles.html"
+  - title: 停用維護模式
+    url: "/api/reference_element_api_disablemaintenancemode.html"
+  - title: 停用Ssh
+    url: "/api/reference_element_api_disablessh.html"
+  - title: 啟用維護模式
+    url: "/api/reference_element_api_enablemaintenancemode.html"
+  - title: 啟用Ssh
+    url: "/api/reference_element_api_enablessh.html"
+  - title: GetClusterConfig
+    url: "/api/reference_element_api_getclusterconfig.html"
+  - title: GetClusterState
+    url: "/api/reference_element_api_getclusterstate.html"
+  - title: 組態設定
+    url: "/api/reference_element_api_getconfig.html"
+  - title: GetDriveConfig
+    url: "/api/reference_element_api_getdriveconfig.html"
+  - title: GetHardwareConfig
+    url: "/api/reference_element_api_gethardwareconfig.html"
+  - title: GetHardwareInfo
+    url: "/api/reference_element_api_gethardwareinfo.html"
+  - title: GetIpmiConfig
+    url: "/api/reference_element_api_getipmiconfig.html"
+  - title: GetIpmiInfo
+    url: "/api/reference_element_api_getipmiinfo.html"
+  - title: GetNetwork組態
+    url: "/api/reference_element_api_getnetworkconfig.html"
+  - title: GetNetwork介面
+    url: "/api/reference_element_api_getnetworkinterface.html"
+  - title: GetNodeActiveTlsCiphers
+    url: "/api/reference_element_api_getnodeactivetlsciphers.html"
+  - title: GetNodeFipsDrivesReport
+    url: "/api/reference_element_api_getnodefipsdrivesreport.html"
+  - title: GetNodeSSLCertificate
+    url: "/api/reference_element_api_getnodesslcertificate.html"
+  - title: GetNodeSupportedTlsCiphers
+    url: "/api/reference_element_api_getnodesupportedtlsciphers.html"
+  - title: GetPatchInfo
+    url: "/api/reference_element_api_getpatchinfo.html"
+  - title: GetPendingOperation
+    url: "/api/reference_element_api_getpendingoperation.html"
+  - title: GetSshInfo
+    url: "/api/reference_element_api_getsshinfo.html"
+  - title: 清單硬體
+    url: "/api/reference_element_api_listdrivehardware.html"
+  - title: 列表網路介面
+    url: "/api/reference_element_api_listnetworkinterfaces.html"
+  - title: 列表網路互聯統計資料
+    url: "/api/reference_element_api_listnetworkinterfacestats.html"
+  - title: 清單測試
+    url: "/api/reference_element_api_listtests.html"
+  - title: 清單公用程式
+    url: "/api/reference_element_api_listutilities.html"
+  - title: 遠端節點SSLCertificate
+    url: "/api/reference_element_api_removenodesslcertificate.html"
+  - title: 重新設定磁碟機
+    url: "/api/reference_element_api_resetdrives.html"
+  - title: ResetNode
+    url: "/api/reference_element_api_resetnode.html"
+  - title: ResetNodeSupplementalTlsCiphers
+    url: "/api/reference_element_api_resetnodesupplementaltlsciphers.html"
+  - title: 恢復網路
+    url: "/api/reference_element_api_restartnetworking.html"
+  - title: 恢復服務
+    url: "/api/reference_element_api_restartservices.html"
+  - title: SetClusterConfig
+    url: "/api/reference_element_api_setclusterconfig.html"
+  - title: 設定組態
+    url: "/api/reference_element_api_setconfig.html"
+  - title: 設定網路組態
+    url: "/api/reference_element_api_setnetworkconfig.html"
+  - title: SetNodeSSLCertificate
+    url: "/api/reference_element_api_setnodesslcertificate.html"
+  - title: SetNodeSupplementalTlsCiphers
+    url: "/api/reference_element_api_setnodesupplementaltlsciphers.html"
+  - title: 關機
+    url: "/api/reference_element_api_shutdown.html"
+  - title: TestConnectEntemble
+    url: "/api/reference_element_api_testconnectensemble.html"
+  - title: TestConnectMvip
+    url: "/api/reference_element_api_testconnectmvip.html"
+  - title: TestConnectSvip
+    url: "/api/reference_element_api_testconnectsvip.html"
+  - title: 測試磁碟機
+    url: "/api/reference_element_api_testdrives.html"
+  - title: 測試硬體組態
+    url: "/api/reference_element_api_testhardwareconfig.html"
+  - title: TestLocateCluster
+    url: "/api/reference_element_api_testlocatecluster.html"
+  - title: TestLocalConnectivity
+    url: "/api/reference_element_api_testlocalconnectivity.html"
+  - title: 測試網路組態
+    url: "/api/reference_element_api_testnetworkconfig.html"
+  - title: 測試Ping
+    url: "/api/reference_element_api_testping.html"
+  - title: 測試RemoteConnectivity
+    url: "/api/reference_element_api_testremoteconnectivity.html"
+- title: 複寫API方法
+  url: "/api/concept_element_api_replication_api_methods.html"
+  entries:
+  - title: 叢集配對作業順序
+    url: "/api/reference_element_api_cluster_pairing_order_of_operations.html"
+  - title: Volume配對作業順序
+    url: "/api/reference_element_api_volume_pairing_order_of_operations.html"
+  - title: 配對叢集支援的複寫模式
+    url: "/api/reference_element_api_supported_modes_of_replication.html"
+  - title: CompleteClusterPairing
+    url: "/api/reference_element_api_completeclusterpairing.html"
+  - title: 完成Volume配對
+    url: "/api/reference_element_api_completevolumepairing.html"
+  - title: listClusterPaairs
+    url: "/api/reference_element_api_listclusterpairs.html"
+  - title: listActivePaedVolumes
+    url: "/api/reference_element_api_listactivepairedvolumes.html"
+  - title: ModifyVolume空氣
+    url: "/api/reference_element_api_modifyvolumepair.html"
+  - title: RemoveClusterPair
+    url: "/api/reference_element_api_removeclusterpair.html"
+  - title: RemoveVolume Pair
+    url: "/api/reference_element_api_removevolumepair.html"
+  - title: StartClusterPairing
+    url: "/api/reference_element_api_startclusterpairing.html"
+  - title: StartVolume配對
+    url: "/api/reference_element_api_startvolumepairing.html"
+- title: 安全API方法
+  url: "/api/concept_element_api_security_api_methods.html"
+  entries:
+  - title: AddKeyServerToProviderKmip
+    url: "/api/reference_element_api_addkeyservertoproviderkmip.html"
+  - title: CreeKeyProviderKmip
+    url: "/api/reference_element_api_createkeyproviderkmip.html"
+  - title: CreKeyServerKmip
+    url: "/api/reference_element_api_createkeyserverkmip.html"
+  - title: 建立PublicPrivate KeyPair
+    url: "/api/reference_element_api_createpublicprivatekeypair.html"
+  - title: 刪除KeyProviderKmip
+    url: "/api/reference_element_api_deletekeyproviderkmip.html"
+  - title: 刪除KeyServerKmip
+    url: "/api/reference_element_api_deletekeyserverkmip.html"
+  - title: DisableEncryptionAtRest
+    url: "/api/reference_element_api_disableencryptionatrest.html"
+  - title: 啟用EncryptionAtRest
+    url: "/api/reference_element_api_enableencryptionatrest.html"
+  - title: GetClientCertificateSignRequest
+    url: "/api/reference_element_api_getclientcertificatesignrequest.html"
+  - title: GetKeyProviderKmip
+    url: "/api/reference_element_api_getkeyproviderkmip.html"
+  - title: GetKeyServerKmip
+    url: "/api/reference_element_api_getkeyserverkmip.html"
+  - title: GetSoftwareEncryptionatRestInfo
+    url: "/api/reference_element_api_getsoftwareencryptionatrestinfo.html"
+  - title: listKeyProvidersKmip
+    url: "/api/reference_element_api_listkeyproviderskmip.html"
+  - title: listKeyServersKmip
+    url: "/api/reference_element_api_listkeyserverskmip.html"
+  - title: ModifyKeyServerKmip
+    url: "/api/reference_element_api_modifykeyserverkmip.html"
+  - title: RekeySoftwareEncryptionAt恢復 主金鑰
+    url: "/api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html"
+  - title: RemoveKeyServerFromProviderKmip
+    url: "/api/reference_element_api_removekeyserverfromproviderkmip.html"
+  - title: TestKeyProviderKmip
+    url: "/api/reference_element_api_testkeyproviderkmip.html"
+  - title: TestKeyServerKmip
+    url: "/api/reference_element_api_testkeyserverkmip.html"
+- title: SnapMirror API方法
+  url: "/api/concept_element_api_snapmirror_api_methods.html"
+  entries:
+  - title: AbortSnapMirrorRelationationations
+    url: "/api/reference_element_api_abortsnapmirrorrelationship.html"
+  - title: BreakSnapMirrorRelationationations.
+    url: "/api/reference_element_api_breaksnapmirrorrelationship.html"
+  - title: BreakSnapMirrorVolume
+    url: "/api/reference_element_api_breaksnapmirrorvolume.html"
+  - title: 建立SnapMirrorEndpoint
+    url: "/api/reference_element_api_createsnapmirrorendpoint.html"
+  - title: 不受管理的CreSnapMirrorEndpoint
+    url: "/api/reference_element_api_createsnapmirrorendpoint_unmanaged.html"
+  - title: 建立SnapMirrorRelationationationationationship
+    url: "/api/reference_element_api_createsnapmirrorrelationship.html"
+  - title: 建立SnapMirrorVolume
+    url: "/api/reference_element_api_createsnapmirrorvolume.html"
+  - title: 刪除SnapMirrorEndpoints
+    url: "/api/reference_element_api_deletesnapmirrorendpoints.html"
+  - title: 刪除SnapMirrorRelationships
+    url: "/api/reference_element_api_deletesnapmirrorrelationships.html"
+  - title: GetOnTapVersion資訊
+    url: "/api/reference_element_api_getontapversioninfo.html"
+  - title: GetSnapMirrorClusterIdentity
+    url: "/api/reference_element_api_getsnapmirrorclusteridentity.html"
+  - title: 初始化SnapMirrorRelationationations
+    url: "/api/reference_element_api_initializesnapmirrorrelationship.html"
+  - title: ListSnapMirrorAgggregates
+    url: "/api/reference_element_api_listsnapmirroraggregates.html"
+  - title: 列出SnapMirrorEndpoints
+    url: "/api/reference_element_api_listsnapmirrorendpoints.html"
+  - title: LISTSnapMirrorLuns
+    url: "/api/reference_element_api_listsnapmirrorluns.html"
+  - title: ListSnapMirrorNetwork介面
+    url: "/api/reference_element_api_listsnapmirrornetworkinterfaces.html"
+  - title: 清單SnapMirrorNode
+    url: "/api/reference_element_api_listsnapmirrornodes.html"
+  - title: 清單SnapMirrorPolicy
+    url: "/api/reference_element_api_listsnapmirrorpolicies.html"
+  - title: 清單SnapMirrorSchedules
+    url: "/api/reference_element_api_listsnapmirrorschedules.html"
+  - title: ListSnapMirrorRelationships
+    url: "/api/reference_element_api_listsnapmirrorrelationships.html"
+  - title: ListSnapMirrorVolumes
+    url: "/api/reference_element_api_listsnapmirrorvolumes.html"
+  - title: LISTSnapMirrorVservers
+    url: "/api/reference_element_api_listsnapmirrorvservers.html"
+  - title: ModifySnapMirrorEndpoint
+    url: "/api/reference_element_api_modifysnapmirrorendpoint.html"
+  - title: ModifySnapMirrorEndpoint（非託管）
+    url: "/api/reference_element_api_modifysnapmirrorendpoint_unmanaged.html"
+  - title: ModifySnapMirrorRelationationations
+    url: "/api/reference_element_api_modifysnapmirrorrelationship.html"
+  - title: 更新SnapMirrorRelationationations.
+    url: "/api/reference_element_api_updatesnapmirrorrelationship.html"
+  - title: QuiesceSnapMirrorRelationationationation
+    url: "/api/reference_element_api_quiescesnapmirrorrelationship.html"
+  - title: ResumeSnapMirrorRelationationationation
+    url: "/api/reference_element_api_resumesnapmirrorrelationship.html"
+  - title: 重新建立SnapMirrorRelationationationationationation
+    url: "/api/reference_element_api_resyncsnapmirrorrelationship.html"
+- title: 系統組態API方法
+  url: "/api/concept_element_api_system_configuration_api_methods.html"
+  entries:
+  - title: 停用Bmc/ColdReset
+    url: "/api/reference_element_api_disablebmccoldreset.html"
+  - title: DisableClusterSsh
+    url: "/api/reference_element_api_disableclusterssh.html"
+  - title: 停用Snmp
+    url: "/api/reference_element_api_disablesnmp.html"
+  - title: 啟用Bmc/ColdReset
+    url: "/api/reference_element_api_enablebmccoldreset.html"
+  - title: 啟用ClusterSsh
+    url: "/api/reference_element_api_enableclusterssh.html"
+  - title: 啟用Snmp
+    url: "/api/reference_element_api_enablesnmp.html"
+  - title: GetBinAssignmentProperties
+    url: "/api/reference_element_api_getbinassignmentproperties.html"
+  - title: GetClusterSshInfo
+    url: "/api/reference_element_api_getclustersshinfo.html"
+  - title: GetCluster結構
+    url: "/api/reference_element_api_getclusterstructure.html"
+  - title: GetFipsReport
+    url: "/api/reference_element_api_getfipsreport.html"
+  - title: GetLldpConfig
+    url: "/api/reference_element_api_getlldpconfig.html"
+  - title: GetLldpInfo
+    url: "/api/reference_element_api_getlldpinfo.html"
+  - title: GetNodeFipsDrivesReport
+    url: "/api/reference_element_api_getnodefipsdrivesreport.html"
+  - title: GetNtpInfo
+    url: "/api/reference_element_api_getntpinfo.html"
+  - title: GetNvramInfo
+    url: "/api/reference_element_api_getnvraminfo.html"
+  - title: GetProtectionDomainLayout
+    url: "/api/reference_element_api_getprotectiondomainlayout.html"
+  - title: GetRemoteLoggingHos
+    url: "/api/reference_element_api_getremotelogginghosts.html"
+  - title: GetSnmpACL
+    url: "/api/reference_element_api_getsnmpacl.html"
+  - title: GetSnmpInfo
+    url: "/api/reference_element_api_getsnmpinfo.html"
+  - title: GetSnmpState
+    url: "/api/reference_element_api_getsnmpstate.html"
+  - title: GetSnmpTrapInfo
+    url: "/api/reference_element_api_getsnmptrapinfo.html"
+  - title: GetSSLCertificate
+    url: "/api/reference_element_api_getsslcertificate.html"
+  - title: 清單保護網域層級
+    url: "/api/reference_element_api_listprotectiondomainlevels.html"
+  - title: 遠端SSLCertificate
+    url: "/api/reference_element_api_removesslcertificate.html"
+  - title: 重新設定網路組態
+    url: "/api/reference_element_api_resetnetworkconfig.html"
+  - title: ResetSupplementalTlsCiphers
+    url: "/api/reference_element_api_resetsupplementaltlsciphers.html"
+  - title: SetCluster結構
+    url: "/api/reference_element_api_setclusterstructure.html"
+  - title: SetLldpConfig
+    url: "/api/reference_element_api_setlldpconfig.html"
+  - title: SetNtpInfo
+    url: "/api/reference_element_api_setntpinfo.html"
+  - title: SetProtectionDomainLayout
+    url: "/api/reference_element_api_setprotectiondomainlayout.html"
+  - title: SetRemoteLoggingHos
+    url: "/api/reference_element_api_setremotelogginghosts.html"
+  - title: SetSnmpACL
+    url: "/api/reference_element_api_setsnmpacl.html"
+  - title: SetSnmpInfo
+    url: "/api/reference_element_api_setsnmpinfo.html"
+  - title: SetSnmpTrapInfo
+    url: "/api/reference_element_api_setsnmptrapinfo.html"
+  - title: SetSSLCertificate
+    url: "/api/reference_element_api_setsslcertificate.html"
+  - title: SnmpSendTestTraps
+    url: "/api/reference_element_api_snmpsendtesttraps.html"
+  - title: TestAddressAvailability
+    url: "/api/reference_element_api_testaddressavailability.html"
+- title: 多租戶網路API方法
+  url: "/api/concept_element_api_multitenant_networking_api_methods.html"
+  entries:
+  - title: 虛擬網路命名慣例
+    url: "/api/concept_element_api_virtual_network_naming_conventions.html"
+  - title: AddVirtualNetwork
+    url: "/api/reference_element_api_addvirtualnetwork.html"
+  - title: ModifyVirtualNetwork
+    url: "/api/reference_element_api_modifyvirtualnetwork.html"
+  - title: 清單虛擬網路
+    url: "/api/reference_element_api_listvirtualnetworks.html"
+  - title: 遠端虛擬網路
+    url: "/api/reference_element_api_removevirtualnetwork.html"
+- title: Volume API方法
+  url: "/api/concept_element_api_volume_api_methods.html"
+  entries:
+  - title: CancelClone
+    url: "/api/reference_element_api_cancelclone.html"
+  - title: CancelGroupClone
+    url: "/api/reference_element_api_cancelgroupclone.html"
+  - title: CloneMultiploVolumes
+    url: "/api/reference_element_api_clonemultiplevolumes.html"
+  - title: CloneVolume
+    url: "/api/reference_element_api_clonevolume.html"
+  - title: CopyVolume
+    url: "/api/reference_element_api_copyvolume.html"
+  - title: 建立QoSPolicy
+    url: "/api/reference_element_api_createqospolicy.html"
+  - title: 建立Volume
+    url: "/api/reference_element_api_createvolume.html"
+  - title: 建立備份目標
+    url: "/api/reference_element_api_createbackuptarget.html"
+  - title: 刪除QoSPolicy
+    url: "/api/reference_element_api_deleteqospolicy.html"
+  - title: 刪除Volume
+    url: "/api/reference_element_api_deletevolume.html"
+  - title: 刪除Volumes
+    url: "/api/reference_element_api_deletevolumes.html"
+  - title: GetBackup目標
+    url: "/api/reference_element_api_getbackuptarget.html"
+  - title: GetVolume統計資料
+    url: "/api/reference_element_api_getvolumestats.html"
+  - title: GetDefaultQoS
+    url: "/api/reference_element_api_getdefaultqos.html"
+  - title: GetQoSPolicy
+    url: "/api/reference_element_api_getqospolicy.html"
+  - title: GetVolume計數
+    url: "/api/reference_element_api_getvolumecount.html"
+  - title: GetVolume效率
+    url: "/api/reference_element_api_getvolumeefficiency.html"
+  - title: listActiveVolumes
+    url: "/api/reference_element_api_listactivevolumes.html"
+  - title: 清單備份目標
+    url: "/api/reference_element_api_listbackuptargets.html"
+  - title: ListBulkVolume工作
+    url: "/api/reference_element_api_listbulkvolumejobs.html"
+  - title: listDeletedVolumes
+    url: "/api/reference_element_api_listdeletedvolumes.html"
+  - title: 清單政策
+    url: "/api/reference_element_api_listqospolicies.html"
+  - title: listSyncJobs
+    url: "/api/reference_element_api_listsyncjobs.html"
+  - title: listVolume QoSHisthoSILettes
+    url: "/api/reference_element_api_listvolumeqoshistograms.html"
+  - title: 清單Volume
+    url: "/api/reference_element_api_listvolumes.html"
+  - title: listVolume統計資料
+    url: "/api/reference_element_api_listvolumestats.html"
+  - title: listVolumesForAccount
+    url: "/api/reference_element_api_listvolumesforaccount.html"
+  - title: listVolume狀態ByAccount
+    url: "/api/reference_element_api_listvolumestatsbyaccount.html"
+  - title: listVolumesStatsByVirtualVolume
+    url: "/api/reference_element_api_listvolumestatsbyvirtualvolume.html"
+  - title: listVolumesStatsByVolume
+    url: "/api/reference_element_api_listvolumestatsbyvolume.html"
+  - title: listVolume狀態ByVolume存取群組
+    url: "/api/reference_element_api_listvolumestatsbyvolumeaccessgroup.html"
+  - title: ModifyBackup目標
+    url: "/api/reference_element_api_modifybackuptarget.html"
+  - title: ModifyQoSPolicy
+    url: "/api/reference_element_api_modifyqospolicy.html"
+  - title: ModifyVolume
+    url: "/api/reference_element_api_modifyvolume.html"
+  - title: ModifyVolumes
+    url: "/api/reference_element_api_modifyvolumes.html"
+  - title: PurgeDeletedVolume
+    url: "/api/reference_element_api_purgedeletedvolume.html"
+  - title: PurgeDeletedVolumes
+    url: "/api/reference_element_api_purgedeletedvolumes.html"
+  - title: 遠端備份目標
+    url: "/api/reference_element_api_removebackuptarget.html"
+  - title: 恢復刪除Volume
+    url: "/api/reference_element_api_restoredeletedvolume.html"
+  - title: SetDefaultQoS
+    url: "/api/reference_element_api_setdefaultqos.html"
+  - title: StartBulkVolume Read
+    url: "/api/reference_element_api_startbulkvolumeread.html"
+  - title: StartBulkVolume寫入
+    url: "/api/reference_element_api_startbulkvolumewrite.html"
+  - title: 更新BulkVolume狀態
+    url: "/api/reference_element_api_updatebulkvolumestatus.html"
+- title: Volume存取群組API方法
+  url: "/api/concept_element_api_volume_access_group_api_methods.html"
+  entries:
+  - title: AddInitiatorsToVolume存取群組
+    url: "/api/reference_element_api_addinitiatorstovolumeaccessgroup.html"
+  - title: AddVolumesToVolume存取群組
+    url: "/api/reference_element_api_addvolumestovolumeaccessgroup.html"
+  - title: 建立Volume存取群組
+    url: "/api/reference_element_api_createvolumeaccessgroup.html"
+  - title: 刪除Volume存取群組
+    url: "/api/reference_element_api_deletevolumeaccessgroup.html"
+  - title: listVolume存取群組
+    url: "/api/reference_element_api_listvolumeaccessgroups.html"
+  - title: RemoveVolumesFromVolume存取群組
+    url: "/api/reference_element_api_removevolumesfromvolumeaccessgroup.html"
+  - title: RemoveInitialatorsFromVolume存取群組
+    url: "/api/reference_element_api_removeinitiatorsfromvolumeaccessgroup.html"
+  - title: ModifyVolume存取群組
+    url: "/api/reference_element_api_modifyvolumeaccessgroup.html"
+  - title: GetVolume存取群組效率
+    url: "/api/reference_element_api_getvolumeaccessgroupefficiency.html"
+- title: Volume Snapshot API方法
+  url: "/api/concept_element_api_volume_snapshot_api_methods.html"
+  entries:
+  - title: Snapshot總覽
+    url: "/api/concept_element_api_snapshots_overview.html"
+  - title: CreatGroupSnapshot
+    url: "/api/reference_element_api_creategroupsnapshot.html"
+  - title: 建立排程
+    url: "/api/reference_element_api_createschedule.html"
+  - title: 建立Snapshot
+    url: "/api/reference_element_api_createsnapshot.html"
+  - title: 刪除GroupSnapshot
+    url: "/api/reference_element_api_deletegroupsnapshot.html"
+  - title: 刪除Snapshot
+    url: "/api/reference_element_api_deletesnapshot.html"
+  - title: Get排 程
+    url: "/api/reference_element_api_getschedule.html"
+  - title: 清單群組快照
+    url: "/api/reference_element_api_listgroupsnapshots.html"
+  - title: 清單排程
+    url: "/api/reference_element_api_listschedules.html"
+  - title: 列表快照
+    url: "/api/reference_element_api_listsnapshots.html"
+  - title: ModifyGroupSnapshot
+    url: "/api/reference_element_api_modifygroupsnapshot.html"
+  - title: 修改排程
+    url: "/api/reference_element_api_modifyschedule.html"
+  - title: ModifySnapshot
+    url: "/api/reference_element_api_modifysnapshot.html"
+  - title: RollbackToGroupSnapshot
+    url: "/api/reference_element_api_rollbacktogroupsnapshot.html"
+  - title: RollbackToSnapshot
+    url: "/api/reference_element_api_rollbacktosnapshot.html"
+- title: 虛擬Volume API方法
+  url: "/api/concept_element_api_vvols_api_methods.html"
+  entries:
+  - title: CreStorageContainer
+    url: "/api/reference_element_api_createstoragecontainer.html"
+  - title: 刪除StorageContainer
+    url: "/api/reference_element_api_deletestoragecontainers.html"
+  - title: GetStorageContainerEfficiency
+    url: "/api/reference_element_api_getstoragecontainerefficiency.html"
+  - title: GetVirtualVolume計數
+    url: "/api/reference_element_api_getvirtualvolumecount.html"
+  - title: 列出通訊協定端點
+    url: "/api/reference_element_api_listprotocolendpoints.html"
+  - title: 清單StorageContainer
+    url: "/api/reference_element_api_liststoragecontainers.html"
+  - title: 清單虛擬磁碟區繫結
+    url: "/api/reference_element_api_listvirtualvolumebindings.html"
+  - title: ListVirtualVolume最新資訊
+    url: "/api/reference_element_api_listvirtualvolumehosts.html"
+  - title: 列出虛擬磁碟區
+    url: "/api/reference_element_api_listvirtualvolumes.html"
+  - title: listVirtualVolume工作
+    url: "/api/reference_element_api_listvirtualvolumetasks.html"
+  - title: ModifyStorageContainer
+    url: "/api/reference_element_api_modifystoragecontainer.html"
+- title: 存取控制
+  url: "/api/reference_element_api_app_b_access_control.html"
+- title: 回應範例
+  url: "/api/concept_element_api_response_examples.html"
+  entries:
+  - title: 組態設定
+    url: "/api/reference_element_api_response_example_getconfig.html"
+  - title: GetClusterHardwareInfo
+    url: "/api/reference_element_api_response_example_getclusterhardwareinfo.html"
+  - title: GetLldpInfo
+    url: "/api/reference_element_api_response_example_getlldpinfo.html"
+  - title: GetNetwork組態
+    url: "/api/reference_element_api_response_example_getnetworkconfig.html"
+  - title: GetNodeHardwareInfo（iSCSI輸出）
+    url: "/api/reference_element_api_response_example_getnodehardwareinfo.html"
+  - title: GetNodeHardwareInfo（光纖通道節點的輸出）
+    url: "/api/reference_element_api_response_example_getnodehardwareinfo_fibre_channel.html"
+  - title: GetNvramInfo
+    url: "/api/reference_element_api_response_example_getnvraminfo.html"
+  - title: ListActiveNode
+    url: "/api/reference_element_api_response_example_listactivenodes.html"
+  - title: listActiveVolumes
+    url: "/api/reference_element_api_response_example_listactivevolumes.html"
+  - title: 測試硬體組態
+    url: "/api/reference_element_api_response_example_testhardwareconfig.html"

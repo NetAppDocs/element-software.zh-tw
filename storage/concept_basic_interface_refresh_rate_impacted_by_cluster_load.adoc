@@ -1,0 +1,18 @@
+---
+permalink: storage/concept_basic_interface_refresh_rate_impacted_by_cluster_load.html 
+sidebar: sidebar 
+keywords: data refresh interval, cluster, interval controls, API requests, heavy load cluster, cluster credentials 
+summary: 視API回應時間而定、叢集可能會自動調整NetApp Element 您正在檢視之「介紹」軟體頁面的特定部分的資料重新整理時間間隔。 
+---
+= 介面重新整理速度受叢集負載影響
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+視API回應時間而定、叢集可能會自動調整NetApp Element 您正在檢視之「介紹」軟體頁面的特定部分的資料重新整理時間間隔。
+
+當您在瀏覽器中重新載入頁面時、重新整理時間間隔會重設為預設值。按一下頁面右上角的叢集名稱、即可查看目前的重新整理時間間隔。請注意、此時間間隔會控制API要求的執行頻率、而非資料從伺服器傳回的速度。
+
+當叢集負載過重時、它可能會將來自元素UI的API要求排入佇列。在極少數情況下、當系統回應大幅延遲（例如緩慢的網路連線加上忙碌的叢集）時、如果系統無法迅速回應佇列中的API要求、您可能會登出Element UI。如果您重新導向至登出畫面、則可在取消任何初始瀏覽器驗證提示後再次登入。返回總覽頁面後、如果瀏覽器未儲存叢集認證、系統可能會提示您輸入這些認證。

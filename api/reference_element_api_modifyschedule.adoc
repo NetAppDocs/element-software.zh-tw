@@ -1,0 +1,349 @@
+---
+permalink: api/reference_element_api_modifyschedule.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapshot,schedule,scheduled,delete,pause,modifyschedule 
+summary: 您可以使用Modify排 程來變更排程快照發生的時間間隔。您也可以使用此方法刪除或暫停排程。 
+---
+= 修改排程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「多重排程」來變更排程快照的發生時間間隔。您也可以使用此方法刪除或暫停排程。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+
+
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+屬性
+ a| 
+用於變更快照發生頻率。可能值：
+
+* 《星期幾》
+* 《月份數》
+* 《時間間隔》
+
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+時數
+ a| 
+快照之間的時數或快照發生的時數（以週數天或月數天為單位）。有效值為0到24。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+名稱
+ a| 
+快照的名稱。如果未輸入名稱、則會使用拍攝群組快照的日期和時間。名稱長度上限為24個字元。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+分鐘
+ a| 
+快照之間的分鐘數或快照將以每週數天或每月數天模式執行的分鐘數。有效值為0至59。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+| 最後執行狀態 | 上次排程快照建立的結果或狀態。 | 字串 | 無 | 否 
+
+
+ a| 
+已暫停
+ a| 
+指出排程是否應暫停。有效值：
+
+* "真的"
+* 「假」
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+重複發生
+ a| 
+指出排程是否為週期性。有效值包括：
+
+* "真的"
+* 「假」
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+RunNextInterval
+ a| 
+用於選擇是否在下次排程器啟用時執行快照。有效值：
+
+* "真的"
+* 「假」
+
+
+設為true時、排程快照會在排程器下次作用時執行、然後重設回假。
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+ a| 
+scheduleID
+ a| 
+排程的唯一ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+scheduleName
+ a| 
+排程的唯一名稱。允許的排程名稱長度上限為24個字元。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+scheduleType
+ a| 
+指出要建立的排程類型。唯一支援的值是「快照」。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+「排定資訊」
+ a| 
+排程的唯一名稱、所建立快照的保留期間、以及建立快照的磁碟區Volume ID。有效值：
+
+* 「volumeID」：快照中要包含的磁碟區ID。（整數）
+* 「Volume」（磁碟區）：要包含在群組快照中的磁碟區ID清單。（整數陣列）
+* 「名稱」：要使用的快照名稱。（字串）
+* 「enableRemoteReplication」：指出是否應將快照包含在遠端複寫中。（布林值）
+* 「快照」：快照保留的時間長度、以小時：分：秒表示如果為空白、則快照會永遠保留。（字串）
+* 「fifo」：快照會以先進先出（FIFO）的方式保留。（字串）
+* 「enureSerialCreation」：指定如果正在進行先前的快照複寫、是否應允許建立新的快照。（布林值）
+
+ a| 
+link:reference_element_api_schedule.html["排程"^]
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+snapMirrorLabel
+ a| 
+SnapMirror軟體用來指定SnapMirror端點上的快照保留原則的標籤。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+以刪除
+ a| 
+指出排程是否標記為刪除。有效值：
+
+* "真的"
+* 「假」
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+開始日期
+ a| 
+表示排程第一次開始或開始的日期。
+ a| 
+ISO 8601日期字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+每月
+ a| 
+每月快照的日期。有效值為1到31。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+工作日
+ a| 
+快照將在一週中的某天建立。一週中的某天從星期日開始、其值為0、偏移值為1。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+排程
+ a| 
+包含已修改排程屬性的物件。
+ a| 
+xref:reference_element_api_schedule.adoc[排程]
+
+|===
+
+
+== 申請範例
+
+[listing]
+----
+{
+  "method": "ModifySchedule",
+  "params": {
+    "scheduleName" : "Chicago",
+    "scheduleID" : 3
+    },
+  "id": 1
+}
+----
+
+
+== 回應範例
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Days Of Week"
+            },
+      "hasError": false,
+      "hours": 5,
+      "lastRunStatus": "Success",
+      "lastRunTimeStarted": null,
+      "minutes": 0,
+      "monthdays": [],
+      "paused": false,
+      "recurring": true,
+      "runNextInterval": false,
+      "scheduleID": 3,
+      "scheduleInfo": {
+        "volumeID": "2"
+            },
+      "scheduleName": "Chicago",
+      "scheduleType": "Snapshot",
+      "startingDate": null,
+      "toBeDeleted": false,
+      "weekdays": [
+        {
+          "day": 2,
+          "offset": 1
+      }
+      ]
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

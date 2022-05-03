@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_listkeyserverskmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,key,server,listing,list,listkeyserverskmip 
+summary: 您可以使用listKeyServersKmip方法列出已建立的所有金鑰管理互通性傳輸協定（KMIP）金鑰伺服器。您可以指定其他參數來篩選結果。 
+---
+= listKeyServersKmip
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ListKeyServersKmip」方法、列出已建立的所有金鑰管理互通性傳輸協定（KMIP）金鑰伺服器。您可以指定其他參數來篩選結果。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+KeyProviderID
+ a| 
+指定時、方法只會傳回指派給指定KMIP金鑰提供者的KMIP金鑰伺服器。如果省略、傳回的KMIP金鑰伺服器將不會根據是否指派給指定的KMIP金鑰提供者來篩選。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+kmipAssignedProviderIsActive
+ a| 
+篩選器會根據金鑰伺服器物件是否處於作用中狀態而傳回KMIP金鑰伺服器物件。可能值：
+
+* true：僅傳回作用中的KMIP金鑰伺服器（提供目前使用中的金鑰）。
+* 否：僅傳回非作用中的KMIP金鑰伺服器（不提供任何金鑰且可刪除）。
+
+
+如果省略、傳回的KMIP金鑰伺服器將不會根據其是否處於作用中狀態而加以篩選。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+kmipHasProviderAssigned
+ a| 
+篩選器會根據是否指派KMIP金鑰提供者而傳回KMIP金鑰伺服器。可能值：
+
+* true：僅傳回已指派KMIP金鑰提供者的KMIP金鑰伺服器。
+* 否：僅傳回未指派KMIP金鑰提供者的KMIP金鑰伺服器。
+
+
+如果省略、傳回的KMIP金鑰伺服器將不會根據是否指派KMIP金鑰提供者來篩選。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+kmipKeyServers
+ a| 
+已建立的KMIP金鑰伺服器完整清單。
+ a| 
+link:reference_element_api_keyserverkmip.md#["KeyServerKmip"] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListKeyServersKmip",
+  "params": {},
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "kmipKeyServers": [
+        {
+            "kmipKeyServerName": "keyserverName",
+            "kmipClientCertificate": "dKkkirWmnWXbj9T/UWZYB2oK0z5...",
+            "keyServerID": 15,
+            "kmipAssignedProviderIsActive": true,
+            "kmipKeyServerPort": 5696,
+            "kmipCaCertificate": "MIICPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+            "kmipKeyServerHostnames": [
+                "server1.hostname.com", "server2.hostname.com"
+            ],
+            "keyProviderID": 1
+        }
+    ]
+}
+----
+
+
+== 新的自版本
+
+11.7

@@ -1,0 +1,108 @@
+---
+permalink: api/reference_element_api_testhardwareconfig.html 
+sidebar: sidebar 
+keywords: node,test,testing,hardware,config,configuration,testhardwareconfig 
+summary: 您可以使用TestHardwareConfig方法在節點上執行硬體測試。測試選項包括驗證硬體組態、韌體版本、以及所有磁碟機是否都存在。 
+---
+= 測試硬體組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「TestHardwareConfig」方法在節點上執行硬體測試。測試選項包括驗證硬體組態、韌體版本、以及所有磁碟機是否都存在。
+
+
+
+== 參數
+
+
+NOTE: 這些測試並非用來偵測硬體故障。
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+乾淨
+ a| 
+以乾淨的快取開始硬體組態測試。可能值：
+
+* 是：刪除快取的測試結果檔案、然後重新執行測試。
+* 否：擷取快取的測試結果。
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+ a| 
+力
+ a| 
+此方法必須包含force參數、才能成功重設節點。
+ a| 
+布林值
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+詳細資料
+ a| 
+硬體組態詳細資料。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "TestHardwareConfig",
+   "params": {
+      "force": true
+     },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+由於此回應範例的長度很長、因此會在補充主題中予以記錄。
+
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_response_example_testhardwareconfig.adoc[測試硬體組態]

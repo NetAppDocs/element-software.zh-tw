@@ -1,0 +1,134 @@
+---
+permalink: api/reference_element_api_removeinitiatorsfromvolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: initiators,initiator,volume,access,group,remove,removing,removeinitiatorsfromvolumeaccessgroup 
+summary: 您可以使用RemoveInitialatorsFromVolume存取群組方法、從指定的Volume存取群組移除啟動器。 
+---
+= RemoveInitialatorsFromVolume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「RemoveInitialatorsFromVolume存取群組」方法、從指定的Volume存取群組中移除啟動器。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume存取群組ID
+ a| 
+從其中移除啟動器的Volume存取群組ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+啟動器
+ a| 
+要納入Volume存取群組的啟動器ID或名稱（IQN和WWPN）清單。如果您通過啟動器名稱清單、則會在啟動器尚未存在時建立啟動器。如果您通過啟動器ID清單、則當任何啟動器不存在時、該方法會傳回錯誤。傳遞啟動器名稱已過時；您應盡可能使用啟動器ID。
+ a| 
+整數陣列（建議）或字串陣列（已過時）
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+刪除OrphanInitiator
+ a| 
+指定是否要在啟動器物件從Volume存取群組中移除之後刪除。可能值：
+
+* 是：從Volume存取群組移除啟動器物件後、請將其刪除。
+* 假：從Volume存取群組移除啟動器物件後、請勿刪除這些物件。這是預設值。
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume存取群組
+ a| 
+包含新修改磁碟區存取群組相關資訊的物件。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[Volume存取群組]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 13171,
+  "method": "RemoveInitiatorsFromVolumeAccessGroup",
+  "params": {
+    "initiators": [114,115],
+    "volumeAccessGroupID": 96
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 13171,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [
+        327
+      ],
+      "initiatorIDs": [],
+      "initiators": [],
+      "name": "test",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        346
+      ]
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

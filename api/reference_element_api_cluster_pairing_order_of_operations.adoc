@@ -1,0 +1,38 @@
+---
+permalink: api/reference_element_api_cluster_pairing_order_of_operations.html 
+sidebar: sidebar 
+keywords: cluster,pairing,pair,order,operations,clusters 
+summary: 您必須先在執行Element軟體的一對儲存叢集之間建立連線、才能使用遠端複寫。 
+---
+= 叢集配對作業順序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先在執行Element軟體的一對儲存叢集之間建立連線、才能使用遠端複寫。
+
+使用下列一組API方法建立叢集連線：
+
+* xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing]：
++
+此API方法會建立並傳回用於建立叢集配對的配對金鑰。金鑰已編碼、內含用於建立叢集間通訊的資訊。單一叢集最多可與四個其他叢集配對。不過、每個叢集配對都必須產生新的金鑰。。 xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing] 方法會在每次呼叫方法時產生新的金鑰。使用每個唯一的金鑰 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] 配對每個額外叢集的方法。
+
++
+
+NOTE: 基於安全考量、不應透過電子郵件將配對金鑰傳送給其他使用者。金鑰包含使用者名稱和密碼。
+
+* xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]：
++
+此方法使用與建立的配對金鑰 xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing] 建立叢集配對的API方法。發行 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] API方法搭配叢集傳送金鑰參數至目的地。原始叢集是建立金鑰的叢集。
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing]
+* xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]
+

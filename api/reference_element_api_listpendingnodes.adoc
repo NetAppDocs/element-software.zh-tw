@@ -1,0 +1,106 @@
+---
+permalink: api/reference_element_api_listpendingnodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,pending,nodes,node,listpendingnodes 
+summary: 您可以使用ListPendingNode方法列出系統中待處理的儲存節點。暫掛節點是指正在執行並設定加入儲存叢集的儲存節點、但尚未使用addnodes API方法新增。 
+---
+= ListVendingNode
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ListPendingNode」方法列出系統中的擱置儲存節點。暫掛節點是指正在執行並設定加入儲存叢集的儲存節點、但尚未使用addnodes API方法新增。
+
+
+
+== IPV4和IPv6管理位址
+
+請注意、「ListPendingNode」（清單節點）不會列出具有不同位址類型的擱置節點、以供管理IP位址（MIP）和管理虛擬IP位址（MVIP）使用。例如、如果擱置的節點具有IPv6 MVIP和IPV4 MIP、則結果中不會包含「ListPendingNode」。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+pendingNode
+ a| 
+叢集中擱置節點的清單。
+ a| 
+xref:reference_element_api_pendingnode.adoc[pendingNode] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListPendingNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 3,
+  "result": {
+    "pendingNodes": [
+      {
+        "assignedNodeID": 0,
+        "cip": "10.26.65.101",
+        "cipi": "Bond10G",
+        "compatible": true,
+        "mip": "172.26.65.101",
+        "mipi": "Bond1G",
+        "name": "VWC-EN101",
+        "pendingNodeID": 1,
+        "platformInfo": {
+          "chassisType": "R620",
+          "cpuModel": "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+          "nodeMemoryGB": 72,
+          "nodeType": "SF3010"
+        },
+        "sip": "10.26.65.101",
+        "sipi": "Bond10G",
+        "softwareVersion": "9.0.0.1554",
+        "uuid": "4C4C4544-0048-4410-8056-C7C04F395931"
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_addnodes.adoc[附加節點]

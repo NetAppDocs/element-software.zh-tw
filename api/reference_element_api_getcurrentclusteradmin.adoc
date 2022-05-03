@@ -1,0 +1,80 @@
+---
+permalink: api/reference_element_api_getcurrentclusteradmin.html 
+sidebar: sidebar 
+keywords: cluster,admin,get,getting,current,getcurrentclusteradmin 
+summary: 您可以使用GetCurrentClusterAdmin方法傳回目前主要叢集管理的資訊主叢集管理是在建立叢集時建立的。 
+---
+= GetCurrentClusterAdmin
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetCurrentClusterAdmin」方法來傳回目前主要叢集管理的資訊主叢集管理是在建立叢集時建立的。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集管理
+ a| 
+叢集管理的相關資訊。
+ a| 
+xref:reference_element_api_clusteradmin.adoc[叢集管理]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+"method": "GetCurrentClusterAdmin",
+"id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+    "clusterAdmin":
+        "access": [
+           "administrator"
+        ],
+         "attributes": null,
+         "authMethod": "Cluster"
+         "clusterAdminID": 1,
+         "username": "admin"
+     }
+   }
+}
+----
+
+
+== 新的自版本
+
+10.0%

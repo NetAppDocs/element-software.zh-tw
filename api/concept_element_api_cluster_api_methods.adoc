@@ -1,0 +1,60 @@
+---
+permalink: api/concept_element_api_cluster_api_methods.html 
+sidebar: sidebar 
+keywords: cluster,API,methods,method,manage 
+summary: Element軟體叢集API方法可讓您管理儲存叢集的組態和拓撲、以及屬於儲存叢集的節點。 
+---
+= 叢集API方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體叢集API方法可讓您管理儲存叢集的組態和拓撲、以及屬於儲存叢集的節點。
+
+某些叢集API方法會在屬於叢集一部分的節點上運作、或是已設定加入叢集。您可以將節點新增至新叢集或現有叢集。準備新增至叢集的節點處於「擱置中」狀態、表示已設定這些節點、但尚未新增至叢集。
+
+* xref:reference_element_api_addnodes.adoc[附加節點]
+* xref:reference_element_api_clearclusterfaults.adoc[ClearClusterFaults]
+* xref:reference_element_api_createclusterinterfacepreference.adoc[建立ClusterInterfacePreference]
+* xref:reference_element_api_deleteclusterinterfacepreference.adoc[刪除ClusterInterfacePreference]
+* xref:reference_element_api_enablefeature.adoc[啟用功能]
+* xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity]
+* xref:reference_element_api_getclusterfullthreshold.adoc[GetClusterFullThreshold]
+* xref:reference_element_api_getclusterhardwareinfo.adoc[GetClusterHardwareInfo]
+* xref:reference_element_api_getclusterinfo.adoc[GetClusterInfo]
+* xref:reference_element_api_getclusterinterfacepreference.adoc[GetClusterInterfacePreference]
+* xref:reference_element_api_getclustermasternodeid.adoc[GetClusterMasterNodeID]
+* xref:reference_element_api_getclusterstats.adoc[GetClusterStats]
+* xref:reference_element_api_getclusterversioninfo.adoc[GetClusterVersion資訊]
+* xref:reference_element_api_getfeaturestatus.adoc[GetFeatureStatus]
+* xref:reference_element_api_getlicensekey.adoc[GetLicenseKey]
+* xref:reference_element_api_getloginsessioninfo.adoc[GetLoginSessionInfo]
+* xref:reference_element_api_getnodehardwareinfo.adoc[GetNodeHardwareInfo]
+* xref:reference_element_api_getnodestats.adoc[GetNodeStats]
+* xref:reference_element_api_listactivenodes.adoc[ListActiveNode]
+* xref:reference_element_api_listallnodes.adoc[listAllNode]
+* xref:reference_element_api_listclusterfaults.adoc[listClusterFaults]
+* xref:reference_element_api_listclusterinterfacepreferences.adoc[listClusterInterface喜好 設定]
+* xref:reference_element_api_listevents.adoc[清單事件]
+* xref:reference_element_api_listnodestats.adoc[清單節點統計資料]
+* xref:reference_element_api_listiscsisessions.adoc[清單]
+* xref:reference_element_api_listservices.adoc[列表服務]
+* xref:reference_element_api_listpendingnodes.adoc[ListVendingNode]
+* xref:reference_element_api_listpendingactivenodes.adoc[ListPendingActiveNode]
+* xref:reference_element_api_modifyclusterfullthreshold.adoc[ModifyClusterFull閥 值]
+* xref:reference_element_api_modifyclusterinterfacepreference.adoc[ModifyClusterInterfacePreference]
+* xref:reference_element_api_removenodes.adoc[遠端節點]
+* xref:reference_element_api_setlicensekey.adoc[SetLicenseKey]
+* xref:reference_element_api_setloginsessioninfo.adoc[SetLoginSessionInfo]
+* xref:reference_element_api_shutdown.adoc[關機]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

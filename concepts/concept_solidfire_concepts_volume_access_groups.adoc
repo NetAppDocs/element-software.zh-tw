@@ -1,0 +1,25 @@
+---
+permalink: concepts/concept_solidfire_concepts_volume_access_groups.html 
+sidebar: sidebar 
+keywords: volume access groups, volumes, access volumes 
+summary: NetApp SolidFire 的Volume存取群組功能可讓iSCSI啟動器IQN或Fibre Channel WWPN存取一組磁碟區。您新增至存取群組的每個IQN都可以存取群組中的每個Volume、而無需使用CHAP驗證。您新增至存取群組的每個WWPN都可讓光纖通道網路存取存取存取群組中的磁碟區。 
+---
+= Volume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+藉由建立及使用Volume存取群組、您可以控制對一組Volume的存取。當您將一組磁碟區和一組啟動器與Volume存取群組建立關聯時、存取群組會授予這些啟動器存取該組磁碟區的權限。
+
+NetApp SolidFire 的Volume存取群組功能可讓iSCSI啟動器IQN或Fibre Channel WWPN存取一組磁碟區。您新增至存取群組的每個IQN都可以存取群組中的每個Volume、而無需使用CHAP驗證。您新增至存取群組的每個WWPN都可讓光纖通道網路存取存取存取群組中的磁碟區。
+
+Volume存取群組具有下列限制：
+
+* 每個Volume存取群組最多可有128個啟動器。
+* 每個磁碟區最多可有64個存取群組。
+* 存取群組最多可由2000個磁碟區組成。
+* IQN或WWPN只能屬於一個Volume存取群組。
+* 對於光纖通道叢集、單一磁碟區最多可屬於四個存取群組。
+

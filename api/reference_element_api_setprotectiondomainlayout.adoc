@@ -1,0 +1,193 @@
+---
+permalink: api/reference_element_api_setprotectiondomainlayout.html 
+sidebar: sidebar 
+keywords: layout,custom,protection domain,protection domains,setting protection domains 
+summary: 您可以使用SetProtectionDomainLayout方法將節點指派給自訂保護網域。 
+---
+= SetProtectionDomainLayout
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「etprotectionDomainLayout」方法將節點指派給自訂保護網域。
+
+必須為叢集中的所有作用中節點提供資訊、且無法為非作用中節點提供任何資訊。指定機箱中的所有節點都必須指派給相同的自訂保護網域。所有節點都必須提供相同的保護網域類型。不應包含非自訂的保護網域類型、例如節點和機箱。如果提供上述任一項、則會忽略自訂保護網域、並傳回適當的錯誤。
+
+
+NOTE: 下列組態不支援自訂保護網域：
+
+* 包含共享機箱的儲存叢集
+* 雙節點儲存叢集
+
+
+此方法會在具有這些組態的儲存叢集上使用時傳回錯誤。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+保護網域配置
+ a| 
+每個節點的保護網域資訊。
+ a| 
+的JSON.清單 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["節點保護網域"] 物件：
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+保護網域配置
+ a| 
+節點清單、每個節點及其相關的保護網域。
+ a| 
+的JSON.清單 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["節點保護網域"] 物件：
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "SetProtectionDomainLayout",
+  "params": {
+    "protectionDomainLayout": [
+      {
+        "nodeID": 1,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 2,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 3,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 4,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+
+{
+  "id": 1,
+  "result": {
+    "protectionDomainLayout": [
+      {
+        "nodeID": 1,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR2914008D",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 2,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR291500EA",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 3,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR291500C3",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 4,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR291400E6",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+12.0

@@ -1,0 +1,193 @@
+---
+permalink: api/reference_element_api_nodestats.html 
+sidebar: sidebar 
+keywords: object,objects,nodestats 
+summary: nodeStats物件包含節點的高層活動量測。您可以使用GetNodeStats和ListNodeStats API方法來取得部分或全部的nodeStats物件。 
+---
+= 節點統計資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+nodeStats物件包含節點的高層活動量測。您可以使用「GetNodeStats」和「ListNodeStats」API方法來取得部分或全部的nodeStats物件。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+數
+ a| 
+nodeStats物件中的樣本總數。
+ a| 
+整數
+
+
+
+ a| 
+CPU
+ a| 
+CPU使用率、以%為單位。
+ a| 
+整數
+
+
+
+ a| 
+cputTotal
+ a| 
+單一增加CPU使用率的價值。
+ a| 
+整數
+
+
+
+ a| 
+cBytesIn
+ a| 
+叢集介面上的位元組。
+ a| 
+整數
+
+
+
+ a| 
+cBytesOut
+ a| 
+叢集介面上的位元組數。
+ a| 
+整數
+
+
+
+ a| 
+sBytesIn
+ a| 
+儲存介面上的位元組。
+ a| 
+整數
+
+
+
+ a| 
+SBytesOut
+ a| 
+儲存介面上的位元組。
+ a| 
+整數
+
+
+
+ a| 
+MBytesIn
+ a| 
+管理介面上的位元組。
+ a| 
+整數
+
+
+
+ a| 
+MBytesOut
+ a| 
+管理介面上的位元組。
+ a| 
+整數
+
+
+
+ a| 
+網路公用程式叢集
+ a| 
+叢集網路介面的網路介面使用率（%）。
+ a| 
+整數
+
+
+
+ a| 
+網路公用程式儲存設備
+ a| 
+儲存網路介面的網路介面使用率（%）。
+ a| 
+整數
+
+
+
+ a| 
+readLatency總計
+ a| 
+對節點執行讀取作業所花費的總時間值會以等量方式增加。
+ a| 
+整數
+
+
+
+ a| 
+readOps
+ a| 
+單一增加節點讀取作業總數的值。
+ a| 
+整數
+
+
+
+ a| 
+ssLoad柱 狀圖
+ a| 
+長條圖資料、說明隨時間而產生的切片服務負載。
+ a| 
+Json物件
+
+
+
+ a| 
+時間戳記
+ a| 
+目前的時間格式為UTC + 0。
+ a| 
+ISO 8601日期字串
+
+
+
+ a| 
+使用記憶體
+ a| 
+總記憶體使用量（位元組）。
+ a| 
+整數
+
+
+
+ a| 
+寫入儲存USecTotal
+ a| 
+將執行寫入作業的總時間值等量增加至節點。
+ a| 
+整數
+
+
+
+ a| 
+寫入作業
+ a| 
+單一增加節點寫入作業總數的值。
+ a| 
+整數
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_getnodestats.adoc[GetNodeStats]
+* xref:reference_element_api_listnodestats.adoc[清單節點統計資料]
+

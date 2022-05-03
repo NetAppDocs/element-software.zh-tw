@@ -1,0 +1,80 @@
+---
+permalink: esds/task_esds_get_license_key.html 
+sidebar: sidebar 
+keywords: solidfire esds, capacity model, license key, get license key 
+summary: 在聯絡NetApp支援部門以尋求疑難排解問題的協助之前、您應該先取得SolidFire 您的RESEUREESDS叢集授權金鑰資訊。適用於EESDS叢集的授權金鑰SolidFire 是由叢集的訂單編號和序號所組成。 
+---
+= 取得授權金鑰
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在聯絡NetApp支援部門以尋求疑難排解問題的協助之前、您應該先取得SolidFire 您的RESEUREESDS叢集授權金鑰資訊。適用於EESDS叢集的授權金鑰SolidFire 是由叢集的訂單編號和序號所組成。
+
+您可以使用「GetLicenseKey」方法來取得SolidFire 有關這個ESDS儲存叢集的授權金鑰資訊。「GetLicenseKey」方法沒有輸入參數。此方法具有下列傳回值：
+
+[cols="3*"]
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+「orderNumber」
+ a| 
+儲存叢集的新銷售訂單編號。
+ a| 
+字串
+
+
+
+ a| 
+「週期號碼」
+ a| 
+儲存叢集的新序號。
+ a| 
+字串
+
+|===
+.步驟
+. 執行「GetLicenseKey」API方法、如下列範例所示：
++
+此方法的要求類似於下列範例：
+
++
+[listing]
+----
+
+{
+   "method": "GetLicenseKey",
+   "params": {
+   },
+   "id": 1
+}
+----
++
+此方法會傳回類似下列範例的回應：
+
++
+[listing]
+----
+
+{
+   "id" : 1,
+   "result" : {
+      "serialNumber": "30G56E3WV",
+      "orderNumber": "33601"
+     }
+   }
+}
+----
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

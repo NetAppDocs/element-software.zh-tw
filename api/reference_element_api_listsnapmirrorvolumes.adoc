@@ -1,0 +1,106 @@
+---
+permalink: api/reference_element_api_listsnapmirrorvolumes.html 
+sidebar: sidebar 
+keywords: snapmirror,volume,list,listing,volumes,listsnapmirrorvolumes,ontap 
+summary: Element軟體Web UI使用ListSnapMirrorVolumes方法列出遠端ONTAP 系統上所有可用的SnapMirror Volume。 
+---
+= ListSnapMirrorVolumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ListSnapMirrorVolumes」方法、列出遠端ONTAP 系統上所有可用的SnapMirror Volume。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+僅列出與指定端點ID相關聯的磁碟區。如果未提供端點ID、系統會列出所有已知SnapMirror端點的磁碟區。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+Vserver
+ a| 
+列出託管在指定Vserver上的Volume。Vserver的類型必須為「data」（資料）。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+名稱
+ a| 
+僅列出ONTAP 具有指定名稱的不完整資料。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+類型
+ a| 
+僅列出ONTAP 指定類型的部分。可能值：
+
+* RW：讀寫磁碟區
+* ls：負載共用磁碟區
+* DP：資料保護磁碟區
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorVolumes
+ a| 
+SnapMirror Volume清單、可在ONTAP 不完善的儲存系統上使用。
+ a| 
+xref:reference_element_api_snapmirrorvolume.adoc[snapMirrorVolume] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

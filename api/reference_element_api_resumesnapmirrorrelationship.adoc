@@ -1,0 +1,73 @@
+---
+permalink: api/reference_element_api_resumesnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: ResumeSnapMirrorRelationship,resume,SnapMirror,relationship,resuming 
+summary: Element軟體Web UI使用ResumeSnapMirrorRelationship方法、以利日後傳輸靜止的SnapMirror關係。 
+---
+= ResumeSnapMirrorRelationationationation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ResumeSnapMirrorRelationationship」方法、以利日後傳輸靜止的SnapMirror關係。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+遠端ONTAP 不整合式儲存系統的端點ID、可與元件儲存叢集通訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+destinationVolume
+ a| 
+SnapMirror關係中的目的地Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorRelationationationationship
+ a| 
+包含恢復SnapMirror關係相關資訊的物件。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationationationationship]
+
+|===
+
+
+== 新的自版本
+
+10.1

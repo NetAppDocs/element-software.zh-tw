@@ -1,0 +1,225 @@
+---
+permalink: api/reference_element_api_session_iscsi.html 
+sidebar: sidebar 
+keywords: object,objects,session 
+summary: 工作階段（iSCSI）物件包含每個磁碟區iSCSI工作階段的詳細資訊。您可以使用listISCSISSessions API方法擷取iSCSI工作階段資訊。 
+---
+= 工作階段（iSCSI）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+工作階段（iSCSI）物件包含每個磁碟區iSCSI工作階段的詳細資訊。您可以使用「ListISCSISS歷程 記錄」API方法擷取iSCSI工作階段資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+帳戶ID
+ a| 
+用於CHAP驗證的帳戶帳戶ID（如果有）。
+ a| 
+整數
+
+
+
+ a| 
+帳戶名稱
+ a| 
+用於CHAP驗證的帳戶名稱（如果有）。
+ a| 
+字串
+
+
+
+ a| 
+CREATETIM
+ a| 
+建立iSCSI工作階段的時間、格式為UTC + 0。
+ a| 
+ISO 8601日期字串
+
+
+
+ a| 
+DriveID
+ a| 
+與裝載工作階段之傳輸服務相關的DriveID。
+ a| 
+整數
+
+
+
+ a| 
+磁碟機ID
+ a| 
+報告故障之磁碟機的磁碟機ID清單。空白清單（若不適用）。
+ a| 
+整數陣列
+
+
+
+ a| 
+啟動器
+ a| 
+有關此iSCSI工作階段伺服器啟動器的資訊。成員：
+
+* 別名：指派給啟動器的易記名稱。
+* 屬性：此啟動器的屬性。
+* 初始器ID：此啟動器的ID。
+* 初始器名稱：此啟動器的名稱。
+* Volume存取群組：與此啟動器相關聯的Volume存取群組清單。
+
+ a| 
+Json物件
+
+
+
+ a| 
+初始器IP
+ a| 
+iSCSI伺服器啟動器的IP位址和連接埠號碼。
+ a| 
+字串
+
+
+
+ a| 
+初始器名稱
+ a| 
+iSCSI伺服器啟動器的iSCSI合格名稱（IQN）。
+ a| 
+字串
+
+
+
+ a| 
+初始化程序PortName
+ a| 
+與初始器工作階段ID結合使用的初始器名稱、可識別啟動器連接埠。
+ a| 
+字串
+
+
+
+ a| 
+初始化程序工作階段ID
+ a| 
+由啟動器提供的48位元ID、可識別iSCSI工作階段屬於該啟動器。
+ a| 
+整數
+
+
+
+ a| 
+msSinceastIscsPDU
+ a| 
+此工作階段自上次接收iSCSI PDU以來的時間（以毫秒為單位）。
+ a| 
+整數
+
+
+
+ a| 
+msSinceastScsiCommand
+ a| 
+自上次收到此工作階段的SCSI命令以來的時間（以毫秒為單位）。
+ a| 
+整數
+
+
+
+ a| 
+節點ID
+ a| 
+與裝載工作階段之傳輸服務相關聯的節點ID。
+ a| 
+整數
+
+
+
+ a| 
+服務代號
+ a| 
+裝載工作階段之傳輸服務的ServiceId。
+ a| 
+整數
+
+
+
+ a| 
+工作階段ID
+ a| 
+iSCSI工作階段ID。
+ a| 
+整數
+
+
+
+ a| 
+目標IP
+ a| 
+iSCSI儲存目標的IP位址和連接埠號碼。
+ a| 
+字串
+
+
+
+ a| 
+目標名稱
+ a| 
+iSCSI目標的IQN。
+ a| 
+字串
+
+
+
+ a| 
+目標PortName
+ a| 
+與目標入口網站群組標籤結合使用的目標名稱、可識別目標連接埠。
+ a| 
+字串
+
+
+
+ a| 
+虛擬網路ID
+ a| 
+與工作階段相關聯的虛擬網路ID。
+ a| 
+整數
+
+
+
+ a| 
+Volume ID
+ a| 
+與工作階段相關聯之磁碟區的Volume ID（若有）。
+ a| 
+整數
+
+
+
+ a| 
+Volume執行個體
+ a| 
+識別與iSCSI工作階段相關聯的Volume物件（如果有）。
+ a| 
+整數
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_listiscsisessions.adoc[清單]

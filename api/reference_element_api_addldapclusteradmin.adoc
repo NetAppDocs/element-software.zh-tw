@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_addldapclusteradmin.html 
+sidebar: sidebar 
+keywords: LDAP,cluster,admin,add,adding,addldapclusteradmin 
+summary: 您可以使用AddLdapClusterAdmin來新增LDAP叢集管理員使用者。LDAP叢集管理員可使用API和管理工具來管理叢集。LDAP叢集管理帳戶完全獨立、與標準租戶帳戶無關。 
+---
+= AddLdapClusterAdmin
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「AddLdapClusterAdmin」來新增LDAP叢集管理員使用者。LDAP叢集管理員可使用API和管理工具來管理叢集。LDAP叢集管理帳戶完全獨立、與標準租戶帳戶無關。
+
+
+
+== 參數
+
+您也可以使用此方法新增Active Directory®中定義的LDAP群組。指派給群組的存取層級會傳遞給LDAP群組中的個別使用者。
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+存取
+ a| 
+控制此叢集管理員可以使用的方法。
+ a| 
+字串陣列
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+接受Eula
+ a| 
+接受終端使用者授權合約。設為true可將叢集管理員帳戶新增至系統。如果省略或設為假、則方法呼叫會失敗。
+ a| 
+布林值
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+使用者名稱
+ a| 
+新LDAP叢集管理的辨別使用者名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "AddLdapClusterAdmin",
+  "params": {"username":"cn=mike jones,ou=ptusers,dc=prodtest,dc=solidfire,dc=net",
+    "access": ["administrator", "read"
+    ]
+  },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+ "id": 1,
+ "result": {}
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_app_b_access_control.adoc[存取控制]

@@ -1,0 +1,83 @@
+---
+permalink: api/reference_element_api_host.html 
+sidebar: sidebar 
+keywords: object,objects,host 
+summary: 主機物件包含虛擬Volume主機的相關資訊。您可以使用清單虛擬Volume Hosps方法來取得所有虛擬Volume主機的此資訊。 
+---
+= 主機（虛擬磁碟區）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+主機物件包含虛擬Volume主機的相關資訊。您可以使用「listVirtualVolume Hosps」方法、取得所有虛擬Volume主機的相關資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+綁定
+ a| 
+描述虛擬Volume主機繫結的物件清單。
+ a| 
+整數陣列
+
+
+
+ a| 
+叢集ID
+ a| 
+此主機所關聯之叢集的唯一ID。
+ a| 
+UUID
+
+
+
+ a| 
+HOSTADDRESS
+ a| 
+虛擬Volume主機的IP位址或DNS名稱。
+ a| 
+字串
+
+
+
+ a| 
+初始化程序名稱
+ a| 
+虛擬Volume主機的啟動器IQN清單。
+ a| 
+字串陣列
+
+
+
+ a| 
+虛擬化Volume HostID
+ a| 
+此虛擬Volume主機的唯一ID。
+ a| 
+UUID
+
+
+
+ a| 
+可視性通訊協定EndpointID
+ a| 
+此主機上可見的傳輸協定端點ID清單。
+ a| 
+UUID陣列
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_listvirtualvolumehosts.adoc[ListVirtualVolume最新資訊]

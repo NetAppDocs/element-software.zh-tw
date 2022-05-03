@@ -1,0 +1,24 @@
+---
+section: upgrade
+title: 升級SolidFire 適用於Element 12.3.x的NetApp全快閃儲存系統
+entries:
+- title: 升級順序總覽
+  url: "/upgrade/concept_element_upgrade_overview.html"
+- title: 系統升級程序
+  entries:
+  - title: 更新管理服務
+    url: "/upgrade/task_hcc_update_management_services.html"
+  - title: 升級至最新的HealthTools
+    url: "/upgrade/task_upgrade_element_latest_healthtools.html"
+  - title: 升級儲存設備之前、請先執行Element儲存設備健全狀況檢查
+    url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
+  - title: 升級Element軟體
+    url: "/upgrade/task_hcc_upgrade_element_software.html"
+  - title: 升級儲存韌體
+    url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
+  - title: 升級管理節點
+    url: "/upgrade/task_hcc_upgrade_management_node.html"
+  - title: 升級vCenter Server的Element外掛程式
+    url: "/upgrade/task_vcp_upgrade_plugin.html"
+- title: 使用SolidFire vCenter Server的Element外掛程式、升級NetApp支援的vSphere元件、以利NetApp支援儲存系統
+  url: "/upgrade/task_sf_upgrade_all_vsphere.html"

@@ -1,0 +1,217 @@
+---
+permalink: api/reference_element_api_syncjob.html 
+sidebar: sidebar 
+keywords: object,objects,syncjob 
+summary: SyncJob物件包含有關叢集上執行的複本、遠端複寫或分片同步工作的資訊。 
+---
+= SyncJob
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SyncJob物件包含有關叢集上執行的複本、遠端複寫或分片同步工作的資訊。
+
+您可以使用「listSyncJobs」API方法擷取同步處理資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+區塊PerSecond
+ a| 
+每秒從來源叢集傳輸至目標叢集的資料區塊數。僅當類型成員設定為遠端時才顯示。
+ a| 
+浮動
+
+
+
+ a| 
+分公司類型
+ a| 
+僅針對遠端複寫同步工作傳回。可能值：
+
+* Snapshot
+* Volume
+
+ a| 
+字串
+
+
+
+ a| 
+字節第二
+ a| 
+每秒複本處理的位元組數。僅當類型成員設定為Clone或Slice時才顯示。
+ a| 
+浮動
+
+
+
+ a| 
+cloneID
+ a| 
+進行中之實體複本作業的識別碼。僅當類型成員設定為Clone時才顯示。
+ a| 
+整數
+
+
+
+ a| 
+目前使用者
+ a| 
+在來源磁碟區中、該實體複本已處理的位元組數。僅當類型成員設定為Clone或Slice時才顯示。
+ a| 
+整數
+
+
+
+ a| 
+dstServiceID
+ a| 
+主控Volume主要複本的服務識別碼。僅當類型成員設定為遠端時才顯示。
+ a| 
+整數
+
+
+
+ a| 
+dstVolume ID
+ a| 
+目的地Volume ID。僅當類型成員設定為複製或遠端時才顯示。
+ a| 
+整數
+
+
+
+ a| 
+所經過的時間
+ a| 
+同步工作開始後經過的時間（以秒為單位）。
+ a| 
+浮動
+
+
+
+ a| 
+群組CloneID
+ a| 
+進行中的群組複製作業ID。
+ a| 
+整數
+
+
+
+ a| 
+節點ID
+ a| 
+指定複製所在的節點。僅當類型成員設定為Clone時才顯示。
+ a| 
+整數
+
+
+
+ a| 
+完成百分比
+ a| 
+同步工作完成百分比。
+ a| 
+整數
+
+
+
+ a| 
+剩餘時間
+ a| 
+完成作業的預估時間（以秒為單位）。
+ a| 
+整數
+
+
+
+ a| 
+交叉分析eID
+ a| 
+正在同步的磁碟區磁碟機ID。
+ a| 
+整數
+
+
+
+ a| 
+階段
+ a| 
+僅當類型成員設定為遠端或複製時才顯示。可能值：
+
+* 中繼資料：複寫正在判斷哪些資料需要傳輸到遠端叢集。此複寫程序階段不會報告狀態。
+* 資料：複寫正在將大量資料傳輸到遠端叢集。
+* Whole：表示Slice同步工作的Slice相容性向後。
+
+ a| 
+字串
+
+
+
+ a| 
+Snapshot ID
+ a| 
+建立複本的快照ID。僅當類型成員設定為Clone時才顯示。
+ a| 
+整數
+
+
+
+ a| 
+srcServiceID
+ a| 
+來源服務ID。
+ a| 
+整數
+
+
+
+ a| 
+srcVolume ID
+ a| 
+來源Volume ID。
+ a| 
+整數
+
+
+
+ a| 
+累計
+ a| 
+實體複本的位元組總數。僅當類型成員設定為Clone或Slice時才顯示。
+ a| 
+整數
+
+
+
+ a| 
+類型
+ a| 
+同步作業的類型。可能值：
+
+* 複製
+* 分割區
+* 區塊
+* 遠端
+
+ a| 
+字串
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_listsyncjobs.adoc[listSyncJobs]

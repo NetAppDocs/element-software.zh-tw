@@ -1,0 +1,115 @@
+---
+permalink: api/reference_element_api_setlicensekey.html 
+sidebar: sidebar 
+keywords: set,setting,license,key 
+summary: 在「企業版SDS」儲存叢集上SolidFire 、您可以使用SetLicenseKey方法來設定儲存叢集的授權金鑰。儲存叢集的授權金鑰包含叢集的訂單編號與序號、並啟動您為Element軟體購買的容量模式。 
+---
+= SetLicenseKey
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在「企業SDS」儲存叢集上SolidFire 、您可以使用「etLicenseKey」方法來設定儲存叢集的授權金鑰。儲存叢集的授權金鑰包含叢集的訂單編號與序號、可啟動您為Element軟體購買的容量模式。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+訂單編號
+ a| 
+此儲存叢集的新銷售訂單編號。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+序號
+ a| 
+此儲存叢集的新序號。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+訂單編號
+ a| 
+儲存叢集的新銷售訂單編號。
+ a| 
+字串
+
+
+
+ a| 
+序號
+ a| 
+儲存叢集的新序號。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "SetLicenseKey",
+  "params": {
+    "orderNumber": "33601",
+    "serialNumber": "30G56E3WV"   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+      "serialNumber": "30G56E3WV",
+      "orderNumber": "33601"
+     }
+   }
+}
+----
+
+
+== 新的自版本
+
+12.2

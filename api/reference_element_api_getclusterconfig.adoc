@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_getclusterconfig.html 
+sidebar: sidebar 
+keywords: cluster,configuration,get,getting,config,getclusterconfig 
+summary: 您可以使用GetClusterConfig API方法傳回節點用來與其叢集通訊的叢集組態資訊。 
+---
+= GetClusterConfig
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetClusterConfig」API方法、傳回節點用來與其叢集通訊的叢集組態相關資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集
+ a| 
+節點用來與叢集通訊的叢集組態資訊。
+ a| 
+xref:reference_element_api_cluster.adoc[叢集]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetClusterConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "cluster": {
+      "cipi": "Bond10G",
+      "cluster": "ClusterName",
+      "ensemble": [
+        "1:10.30.65.139",
+        "2:10.30.65.140",
+        "3:10.30.65.141"
+      ],
+      "fipsDriveConfiguration": true,
+      "mipi": "Bond1G",
+      "name": "xxx-en142",
+      "nodeID": 4,
+      "pendingNodeID": 0,
+      "role": "Storage",
+      "sipi": "Bond10G",
+      "state": "Active",
+      "version": "9.1.0"
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

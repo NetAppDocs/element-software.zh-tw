@@ -1,0 +1,132 @@
+---
+permalink: api/reference_element_api_ldapconfiguration.html 
+sidebar: sidebar 
+keywords: object,objects,ldapConfiguration 
+summary: LDAPConfiguration物件包含儲存系統上LDAP組態的相關資訊。您可以使用GetLdapConfiguration API方法擷取LDAP資訊。 
+---
+= LDAPConfiguration
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LDAPConfiguration物件包含儲存系統上LDAP組態的相關資訊。您可以使用「GetLdapConfiguration」API方法擷取LDAP資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+驗證類型
+ a| 
+識別要使用的使用者驗證方法。可能值：
+
+* DirectBind
+* SearchAndBind
+
+ a| 
+字串
+
+
+
+ a| 
+已啟用
+ a| 
+識別系統是否設定為LDAP。可能值：
+
+* 是的
+* 錯
+
+ a| 
+布林值
+
+
+
+ a| 
+群組搜尋基DN
+ a| 
+用於開始群組搜尋的樹狀結構基礎DN（系統會從這裡執行子樹狀結構搜尋）。
+ a| 
+字串
+
+
+
+ a| 
+群組搜尋CustomFilter
+ a| 
+使用的自訂搜尋篩選器。
+ a| 
+字串
+
+
+
+ a| 
+群組搜尋類型
+ a| 
+控制使用的預設群組搜尋篩選器。可能值：
+
+* NoGroups：不支援群組。
+* ActiveDirectory：使用者所有AD群組的巢狀成員資格。
+* 成員DN：成員DN樣式群組（單一層級）。
+
+ a| 
+字串
+
+
+
+ a| 
+searchBindDN
+ a| 
+完整的DN、用於登入以執行使用者的LDAP搜尋（需要LDAP目錄的讀取存取權）。
+ a| 
+字串
+
+
+
+ a| 
+伺服器URI
+ a| 
+以逗號分隔的LDAP伺服器URI清單（例如：「LDAP//1.2.3.4」和「LDAPS：//1.2.3.4.1:123」）。
+ a| 
+字串
+
+
+
+ a| 
+使用者DNS範本
+ a| 
+用來形成完整使用者DN的字串。
+ a| 
+字串
+
+
+
+ a| 
+使用者搜尋基DN
+ a| 
+用於開始搜尋的樹狀結構基礎DN（將從這裡執行子樹狀結構搜尋）。
+ a| 
+字串
+
+
+
+ a| 
+使用者搜尋篩選器
+ a| 
+使用的LDAP篩選器。
+ a| 
+字串
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_getldapconfiguration.adoc[GetLdapConfiguration]

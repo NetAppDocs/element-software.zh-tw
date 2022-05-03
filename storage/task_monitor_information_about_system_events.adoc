@@ -1,0 +1,88 @@
+---
+permalink: storage/task_monitor_information_about_system_events.html 
+sidebar: sidebar 
+keywords: system events, monitor, view event log 
+summary: 您可以檢視系統中偵測到的各種事件相關資訊。系統每30秒會重新整理一次事件訊息。事件記錄會顯示叢集的重要事件。 
+---
+= 檢視系統事件的相關資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視系統中偵測到的各種事件相關資訊。系統每30秒會重新整理一次事件訊息。事件記錄會顯示叢集的重要事件。
+
+. 在元素UI中、選取*報告*>*事件記錄*。
++
+每個活動都會看到下列資訊：
+
++
+|===
+
+
+| 項目 | 說明 
+
+
+ a| 
+ID
+ a| 
+與每個事件相關的唯一ID。
+
+
+
+ a| 
+事件類型
+ a| 
+記錄的事件類型、例如API事件或複製事件。
+
+
+
+ a| 
+訊息
+ a| 
+與事件相關的訊息。
+
+
+
+ a| 
+詳細資料
+ a| 
+協助識別事件發生原因的資訊。
+
+
+
+ a| 
+服務ID
+ a| 
+報告事件的服務（若適用）。
+
+
+
+ a| 
+節點
+ a| 
+報告事件的節點（如果適用）。
+
+
+
+ a| 
+磁碟機ID
+ a| 
+報告事件的磁碟機（若適用）。
+
+
+
+ a| 
+活動時間
+ a| 
+事件發生的時間。
+
+|===
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_monitor_event_types.adoc[事件類型]

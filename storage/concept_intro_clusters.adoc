@@ -1,0 +1,23 @@
+---
+permalink: storage/concept_intro_clusters.html 
+sidebar: sidebar 
+keywords: clusters, about clusters, collection of nodes, nodes in a cluster, block storage, logical group, add nodes, access cluster 
+summary: 叢集是SolidFire 一套由節點集合所組成的不同步儲存系統中樞。叢集中必須至少有四個節點、SolidFire 才能實現不必要的儲存效率。叢集會以單一邏輯群組的形式出現在網路上、然後可作為區塊儲存設備進行存取。 
+---
+= 叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+叢集是SolidFire 一套由節點集合所組成的不同步儲存系統中樞。叢集中必須至少有四個節點、SolidFire 才能實現不必要的儲存效率。叢集會以單一邏輯群組的形式出現在網路上、然後可作為區塊儲存設備進行存取。
+
+建立新叢集時、會將節點初始化為叢集的通訊擁有者、並為叢集中的每個節點建立網路通訊。此程序僅會針對每個新叢集執行一次。您可以使用元素UI或API來建立叢集。
+
+您可以新增其他節點來橫向擴充叢集。新增節點時、不會中斷服務、而且叢集會自動使用新節點的效能和容量。
+
+系統管理員和主機可以使用虛擬IP位址來存取叢集。叢集中的任何節點都可以裝載虛擬IP位址。管理虛擬IP（MVIP）可透過1GbE連線來進行叢集管理、而儲存虛擬IP（SVIP）則可透過10GbE連線、讓主機存取儲存設備。無論SolidFire 什麼規模或組成的叢集、這些虛擬IP位址都能實現一致的連線。如果託管虛擬IP位址的節點故障、叢集中的另一個節點就會開始託管虛擬IP位址。
+
+
+NOTE: 從Element 11.0版開始、節點可設定為使用IPv4、IPv6或兩者的管理網路位址。這適用於儲存節點和管理節點、但不支援IPv6的管理節點11.3及更新版本除外。建立叢集時、MVIP只能使用單一的IPv4或IPv6位址、而且必須在所有節點上設定對應的位址類型。

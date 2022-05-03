@@ -1,0 +1,116 @@
+---
+permalink: api/reference_element_api_getschedule.html 
+sidebar: sidebar 
+keywords: snapshot,schedule,get,getting,getschedule 
+summary: 您可以使用GetSchedule取得排程快照的相關資訊。 
+---
+= Get排 程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Getschedule」取得排程快照的相關資訊。
+
+如果系統中有許多快照排程、您可以查看特定排程的相關資訊。您也可以使用此方法擷取多個排程的相關資訊、方法是在scheduleID參數中指定其他ID。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+scheduleID
+ a| 
+排程的唯一ID或要顯示的多個排程。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+排程
+ a| 
+排程屬性的陣列。
+ a| 
+xref:reference_element_api_schedule.adoc[排程] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+"method": "GetSchedule",
+  "params": {
+              "scheduleID" : 2
+      },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Time Interval"
+      },
+       "hasError": false,
+       "hours": 0,
+       "lastRunStatus": "Success",
+       "lastRunTimeStarted": "2015-03-23T21:25:00Z",
+       "minutes": 2,
+       "monthdays": [],
+       "paused": false,
+       "recurring": true,
+       "runNextInterval": false,
+       "scheduleID": 2,
+       "scheduleInfo": {
+          "name": "MCA2",
+          "volumeID": "3"
+       },
+       "scheduleName": "MCAsnapshot2",
+       "scheduleType": "Snapshot",
+       "startingDate": "2015-03-23T19:28:57Z",
+       "toBeDeleted": false,
+       "weekdays": []
+      }
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

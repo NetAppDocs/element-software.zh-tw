@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_manage_vol_access_group_add_volumes.html 
+sidebar: sidebar 
+keywords: access group, add volumes to 
+summary: 您可以將磁碟區新增至磁碟區存取群組。每個Volume可屬於多個Volume存取群組、您可以在「Active Volumes」（作用中磁碟區）頁面上看到每個Volume所屬的群組。 
+---
+= 新增磁碟區至存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將磁碟區新增至磁碟區存取群組。每個磁碟區可以屬於多個Volume存取群組、您可以在「* Active* Volume」（* Active * Volume）頁面上看到每個磁碟區所屬的群組。
+
+您也可以使用此程序將磁碟區新增至Fibre Channel Volume存取群組。
+
+. 按一下*管理*>*存取群組*。
+. 按一下您要新增磁碟區之存取群組的「動作」圖示。
+. 按一下*編輯*按鈕。
+. 在「Add Volumes（新增磁碟區）」下、從* Volumes（*磁碟區）*清單中選取
++
+您可以重複此步驟來新增更多Volume。
+
+. 按一下*儲存變更*。
+

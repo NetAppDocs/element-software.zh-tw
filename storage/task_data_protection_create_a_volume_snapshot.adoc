@@ -1,0 +1,48 @@
+---
+permalink: storage/task_data_protection_create_a_volume_snapshot.html 
+sidebar: sidebar 
+keywords: volume snapshot, create, active volume, preserve volume 
+summary: 您可以建立作用中磁碟區的快照、隨時保留磁碟區映像。單一磁碟區最多可建立32個快照。 
+---
+= 建立磁碟區快照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立作用中磁碟區的快照、隨時保留磁碟區映像。單一磁碟區最多可建立32個快照。
+
+. 按一下*管理*>*磁碟區*。
+. 單擊要用於快照的卷的* Actions（操作）*圖標。
+. 在產生的功能表中、選取* Snapshot *。
+. 在「*建立磁碟區的Snapshot *」對話方塊中、輸入新的快照名稱。
+. *選用：*選取*配對時在複寫中加入Snapshot *核取方塊、以確保父磁碟區配對時、快照會在複寫中擷取。
+. 若要設定快照的保留時間、請從下列其中一個選項中選取：
++
+** 按一下*「永遠保留」*、即可無限期保留系統上的快照。
+** 按一下*設定保留期間*、然後使用日期微調方塊來選擇系統保留快照的時間長度。
+
+
+. 若要立即執行單一快照、請執行下列步驟：
++
+.. 單擊*立即拍攝快照*。
+.. 按一下「建立Snapshot」。
+
+
+. 若要排定快照在未來執行、請執行下列步驟：
++
+.. 按一下*建立Snapshot排程*。
+.. 輸入*新排程名稱*。
+.. 從清單中選擇*排程類型*。
+.. *選用：*選取「*週期性排程*」核取方塊、定期重複排程的快照。
+.. 按一下*建立排程*。
+
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:task_data_protection_schedule_a_snapshot_task.adoc[排程快照]

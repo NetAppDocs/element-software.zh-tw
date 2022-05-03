@@ -1,0 +1,98 @@
+---
+permalink: api/reference_element_api_getaccountbyid.html 
+sidebar: sidebar 
+keywords: accounts,account,get,getting,GetAccountByID,ID 
+summary: 您可以使用GetAccountByID取得特定帳戶的詳細資料、並提供帳戶ID。 
+---
+= GetAccountByID
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetAccountByID」取得特定帳戶的詳細資料、並提供帳戶ID。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+帳戶ID
+ a| 
+要取得資訊之帳戶的帳戶ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+帳戶
+ a| 
+帳戶詳細資料。
+ a| 
+xref:reference_element_api_account.adoc[帳戶]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetAccountByID",
+   "params": {
+     "accountID"  : 3
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "account": {
+        "attributes": {},
+        "username": "account3",
+        "targetSecret": "targetsecret",
+        "volumes": [],
+        "enableChap": true,
+        "status": "active",
+        "accountID": 3,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "initiatorsecret"
+    }
+}
+----
+
+
+== 新的自版本
+
+9.6

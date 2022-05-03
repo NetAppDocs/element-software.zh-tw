@@ -1,0 +1,51 @@
+---
+permalink: api/reference_element_api_protectionschemeresiliency.html 
+sidebar: sidebar 
+keywords: object,objects,protectionSchemeResiliency 
+summary: protectionSchemeResiliency物件包含有關儲存叢集（針對特定的保護方案）是否能在其相關的protectionDomain Type中、自動從一或多個故障中自我修復的資訊。儲存叢集在任何單一儲存節點（稱為節點容錯性）發生故障時、若能繼續讀取及寫入資料、則視為已修復。 
+---
+= 保護架構恢復能力
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionSchemeResiliency物件包含有關儲存叢集（針對特定的保護方案）是否能在其相關的protectionDomain Type中、自動從一或多個故障中自我修復的資訊。儲存叢集在任何單一儲存節點（稱為節點容錯）發生故障時、若能繼續讀取及寫入資料、則視為已修復。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+保護方案
+ a| 
+此儲存叢集目前的保護方案。唯一可能的值是雙螺旋曲線。
+ a| 
+字串
+
+
+
+ a| 
+可持續的故障ForBlockData
+ a| 
+預測在不喪失自動恢復到節點容許資料狀態的能力的情況下、同時發生的故障數。
+ a| 
+整數
+
+
+
+ a| 
+可持續故障的中繼資料
+ a| 
+可在不喪失自動恢復到中繼資料節點容錯狀態的能力的情況下、同時發生的預期故障數。
+ a| 
+整數
+
+|===

@@ -1,0 +1,118 @@
+---
+permalink: api/reference_element_api_modifyvolumepair.html 
+sidebar: sidebar 
+keywords: volume,pair,pairs,modify,modifying,edit,editing,changing,change,modifyvolumepair,paired 
+summary: 您可以使用ModifyVolume Paair方法、在一對磁碟區之間暫停或重新啟動複寫。此方法是在來源磁碟區（具有讀寫存取權限的磁碟區）上設定。 
+---
+= ModifyVolume空氣
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「磁碟區Pair」方法、在一對磁碟區之間暫停或重新啟動複寫。此方法是在來源磁碟區（具有讀寫存取權的磁碟區）上設定。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+
+
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume ID
+ a| 
+要修改之Volume的識別編號。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+PausedManual
+ a| 
+遠端複寫可在來源（讀取/寫入）磁碟區上暫停或重新啟動。可能值：
+
+* 是：暫停磁碟區複寫。
+* 否：重新啟動Volume複寫。
+
+
+如果未指定任何值、則不會執行複寫變更。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+模式
+ a| 
+Volume複寫模式。可能值：
+
+* 非同步：寫入作業在本機完成時會予以確認。叢集不會等待寫入作業複寫到目標叢集。
+* 同步：當資料儲存在本機和遠端叢集上時、來源會確認寫入。
+* SnapshotsOnly：僅複寫在來源叢集上建立的快照。不會複寫來源Volume的作用中寫入內容。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ModifyVolumePair",
+  "params": {
+    "pausedManual": false,
+    "volumeID": 5,
+    "mode": "sync"
+   },
+  "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {}
+}
+----
+
+
+== 新的自版本
+
+9.6

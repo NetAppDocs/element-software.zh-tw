@@ -1,0 +1,165 @@
+---
+permalink: api/reference_element_api_deletevolumes.html 
+sidebar: sidebar 
+keywords: volumes,volume,delete,deleting,multiple,DeleteVolumes 
+summary: 您可以使用刪除Volumes方法來標記多個（最多500個）作用中磁碟區以供刪除。標記後、磁碟區會在清除時間間隔結束後清除（永久刪除）。 
+---
+= 刪除Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「刪除磁碟區」方法來標記多個（最多500個）作用中磁碟區以供刪除。標記後、磁碟區會在經過清除時間間隔後清除（永久刪除）。
+
+要求刪除磁碟區之後、磁碟區的任何作用中iSCSI連線都會立即終止、而且當磁碟區處於此狀態時、不允許進一步連線。目標探索要求不會傳回標記的Volume。
+
+已標示為刪除的磁碟區快照不受影響。快照會一直保留、直到磁碟區從系統中清除為止。如果磁碟區已標記為刪除、且正在執行大量磁碟區讀取或大量磁碟區寫入作業、則會停止大量磁碟區讀取或寫入作業。
+
+如果您刪除的磁碟區已與磁碟區配對、配對磁碟區之間的複寫將會暫停、而且在刪除狀態下、不會將資料傳輸到磁碟區或從中傳輸。刪除的磁碟區配對的遠端磁碟區進入PausedMisconfigured狀態、資料將不再傳送給它們或從刪除的磁碟區傳送。在刪除磁碟區之前、可以還原這些磁碟區、並恢復資料傳輸。如果刪除的磁碟區從系統中清除、則與之配對的磁碟區會進入「已停止設定的磁碟區」狀態、且磁碟區配對狀態會移除。清除的磁碟區將永遠無法使用。
+
+
+
+== 參數
+
+此方法具有下列輸入參數。
+
+
+NOTE: 至少需要下列其中一個參數、而且您只能使用其中一個參數（它們彼此互不相容）。
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume ID
+ a| 
+要從系統刪除之磁碟區的ID清單。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+請參閱附註。
+
+
+
+ a| 
+Volume存取群組ID
+ a| 
+Volume存取群組ID清單。您在此清單中指定的所有Volume存取群組中的所有Volume都會從系統中刪除。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+請參閱附註。
+
+
+
+ a| 
+帳戶ID
+ a| 
+帳戶ID清單。系統會刪除這些帳戶中的所有磁碟區。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+請參閱附註。
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+磁碟區
+ a| 
+新刪除磁碟區的相關資訊。
+ a| 
+xref:reference_element_api_volume.adoc[Volume]
+
+
+
+ a| 
+曲線
+ a| 
+曲線是一組金鑰值配對。金鑰是以位元組為單位的I/O大小。這些值代表以特定I/O大小執行IOP的成本。曲線的計算方式是以100 IOPS設定為4096位元組的作業方式。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "DeleteVolumes",
+   "params": {
+      "accountIDs" : [1, 2, 3]
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+
+{
+  "id" : 1,
+  "result": {
+    "volumes" : [ {
+      "access": "readWrite",
+      "accountID": 1,
+      "attributes": {},
+      "blockSize": 4096,
+      "createTime": "2015-03-06T18:50:56Z",
+      "deleteTime": "",
+      "enable512e": False,
+      "iqn": "iqn.2010-01.com.solidfire:pzsr.vclient-030-v00001.1",
+      "name": "vclient-030-v00001",
+      "qos": {
+        "burstIOPS": 15000,
+        "burstTime": 60,
+        "curve": {},
+        "maxIOPS": 15000,
+        "minIOPS": 100
+      },
+      "purgeTime": "",
+      "sliceCount": 1,
+      "scsiEUIDeviceID": "707a737200000001f47acc0100000000",
+      "scsiNAADeviceID": "6f47acc100000000707a737200000001",
+      "status": "active",
+      "totalSize": 10000003072,
+      "virtualVolumeID": 5,
+      "volumeAccessGroups": [],
+      "volumePairs": [],
+      "volumeID": 1
+    } ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

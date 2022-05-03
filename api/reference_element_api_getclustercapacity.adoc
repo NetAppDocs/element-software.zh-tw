@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_getclustercapacity.html 
+sidebar: sidebar 
+keywords: cluster,capacity,getting,get,measurements,measure,deduplication,GetClusterCapacity 
+summary: 您可以使用GetClusterCapacity傳回整個儲存叢集的高層容量測量值。此方法會傳回可用來計算元素Web UI所示效率率的欄位。您可以使用指令碼中的效率計算來傳回精簡配置、重複資料刪除、壓縮及整體效率的效率率。 
+---
+= GetClusterCapacity
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetClusterCapacity」傳回整個儲存叢集的高層容量測量值。此方法會傳回可用來計算元素Web UI所示效率率的欄位。您可以使用指令碼中的效率計算來傳回精簡配置、重複資料刪除、壓縮及整體效率的效率率。
+
+
+
+== 效率計算
+
+使用下列方程式來計算精簡配置、重複資料刪除和壓縮。這些方程式適用於元素8.2及更新版本。
+
+* thinProvisioningFactor =（非零件鎖+零件鎖）/非零件鎖
+* 重複資料係數=（非零件鎖+快照非零件鎖）/單一問題鎖定
+* 壓縮係數=（uniquebLocks * 4096）/（uniqueBlocksUsedSpace * 0.93）
+
+
+
+
+== 整體效率率計算
+
+使用下列方程式、使用精簡配置、重複資料刪除和壓縮效率計算結果來計算整體叢集效率。
+
+* 效率係數= thinpleworingFactor * dedDuplicationFactor *壓縮係數
+
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集容量
+ a| 
+儲存叢集的容量測量。
+ a| 
+xref:reference_element_api_clustercapacity.adoc[叢集容量]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetClusterCapacity",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterCapacity": {
+      "activeBlockSpace": 236015557096,
+      "activeSessions": 20,
+      "averageIOPS": 0,
+      "clusterRecentIOSize": 0,
+      "currentIOPS": 0,
+      "maxIOPS": 150000,
+      "maxOverProvisionableSpace": 259189767127040,
+      "maxProvisionedSpace": 51837953425408,
+      "maxUsedMetadataSpace": 404984011161,
+      "maxUsedSpace": 12002762096640,
+      "nonZeroBlocks": 310080350,
+      "peakActiveSessions": 20,
+      "peakIOPS": 0,
+      "provisionedSpace": 1357931085824,
+      "snapshotNonZeroBlocks": 0,
+      "timestamp": "2016-10-17T21:24:36Z",
+      "totalOps": 1027407650,
+      "uniqueBlocks": 108180156,
+      "uniqueBlocksUsedSpace": 244572686901,
+      "usedMetadataSpace": 8745762816,
+      "usedMetadataSpaceInSnapshots": 8745762816,
+      "usedSpace": 244572686901,
+      "zeroBlocks": 352971938
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,19 @@
+---
+permalink: storage/concept_data_protection_volume_snapshot_backup_operations.html 
+sidebar: sidebar 
+keywords: volume snapshot, backup operations, back up volume snapshot, cluster, object store 
+summary: 您可以使用整合式備份功能來備份磁碟區快照。您可以將快照從SolidFire 一個實體叢集備份到一個外部物件存放區、或是另SolidFire 一個實體叢集。當您將快照備份到外部物件存放區時、必須連線到允許讀取/寫入作業的物件存放區。 
+---
+= Volume Snapshot備份作業
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用整合式備份功能來備份磁碟區快照。您可以將快照從SolidFire 一個實體叢集備份到一個外部物件存放區、或是另SolidFire 一個實體叢集。當您將快照備份到外部物件存放區時、必須連線到允許讀取/寫入作業的物件存放區。
+
+* link:task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store["將磁碟區快照備份到Amazon S3物件存放區"]
+* link:task_data_protection_back_up_a_volume_snapshot_to_openstack_swift["將Volume Snapshot備份到OpenStack Swift物件存放區"]
+* link:task_data_protection_back_up_volume_to_solidfire["將Volume Snapshot備份到SolidFire 一個不正常的叢集"]
+

@@ -1,0 +1,33 @@
+---
+permalink: storage/task_system_manage_virtual_enable_virtual_routing_and_forwarding.html 
+sidebar: sidebar 
+keywords: virtual routing, forwarding, enable, vrf, storage networks, create a vlan 
+summary: 您可以啟用虛擬路由和轉送（VRF）、讓路由器中存在多個路由表執行個體、並同時運作。此功能僅適用於儲存網路。 
+---
+= 啟用虛擬路由和轉送
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以啟用虛擬路由和轉送（VRF）、讓路由器中存在多個路由表執行個體、並同時運作。此功能僅適用於儲存網路。
+
+您只能在建立VLAN時啟用VRF。若要切換回非VRF、您必須刪除並重新建立VLAN。
+
+. 按一下*叢集*>*網路*。
+. 若要在新的VLAN上啟用VRF、請選取*建立VLAN*。
++
+.. 輸入新VRF/VLAN的相關資訊。請參閱新增虛擬網路。
+.. 選取*啟用VRF*核取方塊。
+.. *選用*：輸入閘道。
+
+
+. 單擊* Create vlan-*。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:task_system_manage_virtual_add_a_virtual_network.adoc[新增虛擬網路]

@@ -1,0 +1,29 @@
+---
+permalink: storage/task_data_protection_using_volume_snapshots.html 
+sidebar: sidebar 
+keywords: data protection, volume snapshots, roll back volume, replicate snapshots 
+summary: Volume Snapshot是Volume的時間點複本。如果您需要將磁碟區復原至建立快照時的狀態、可以擷取磁碟區的快照、稍後再使用快照。 
+---
+= 使用Volume快照來保護資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume Snapshot是Volume的時間點複本。如果您需要將磁碟區復原至建立快照時的狀態、可以擷取磁碟區的快照、稍後再使用快照。
+
+快照類似於磁碟區複製。不過、快照只是Volume中繼資料的複本、因此您無法掛載或寫入快照。建立磁碟區快照也只需要少量的系統資源和空間、因此建立快照的速度比複製快照快。
+
+您可以擷取個別磁碟區或一組磁碟區的快照。
+
+您也可以將快照複寫到遠端叢集、並將其作為磁碟區的備份複本。這可讓您使用複寫的快照、將磁碟區復原至特定時間點。或者、您也可以從複寫的快照建立磁碟區的複本。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_data_protection_use_individual_volume_snapshots.adoc[使用個別Volume快照來保護資料]
+* xref:task_data_protection_use_group_snapshots_for_data_protection.adoc[使用群組快照來執行資料保護工作]
+* xref:task_data_protection_schedule_a_snapshot_task.adoc[排程快照]
+

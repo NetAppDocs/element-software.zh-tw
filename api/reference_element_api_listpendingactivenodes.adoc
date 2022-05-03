@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_listpendingactivenodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,pending,active,node,nodes,listpendingactivenodes 
+summary: 您可以使用ListPendingActiveNode方法、列出叢集中處於「PendingActive」狀態、處於「擱置中」與「作用中」狀態的節點。處於此狀態的節點將會返回原廠映像。 
+---
+= ListPendingActiveNode
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ListPendingActiveNode」方法、列出叢集中處於「PendingActive」狀態、處於擱置狀態與作用中狀態之間的節點。處於此狀態的節點將會返回原廠映像。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+pendingActiveNode
+ a| 
+物件清單、詳述系統中所有「啟用中」節點的相關資訊。
+ a| 
+xref:reference_element_api_pendingactivenode.adoc[pendingActiveNode] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListPendingActiveNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  id: null,
+  result: {
+    pendingActiveNodes: [
+    {
+      activeNodeKey: "5rPHP3lTAO",
+      assignedNodeID: 5,
+      asyncHandle: 2,
+      cip: "10.10.5.106",
+      mip: "192.168.133.106",
+      pendingNodeID: 1,
+      platformInfo: {
+        chassisType: "R620",
+        cpuModel: "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+        nodeMemoryGB: 72,
+        nodeType: "SF3010"
+      },
+     sip: "10.10.5.106",
+     softwareVersion: "9.0.0.1077"
+    }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

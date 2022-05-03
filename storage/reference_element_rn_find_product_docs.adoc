@@ -1,0 +1,26 @@
+---
+permalink: storage/reference_element_rn_find_product_docs.html 
+sidebar: sidebar 
+keywords: HCI documentation, SolidFire documentation 
+summary: 您可以NetApp HCI 從兩種產品的「文件中心與資源」頁面所提供的資源中、深入瞭SolidFire 解如何使用及管理功能齊全的功能。 
+---
+= 何處可找到產品文件及其他資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以NetApp HCI 從兩種產品的「文件中心與資源」頁面所提供的資源中、深入瞭SolidFire 解如何使用及管理功能齊全的功能。
+
+在文件中心中、您也可以找到硬體安裝與維護、可用的其他內容資源、已知問題與已解決問題的連結、以及最新版本說明等相關資訊。在「資源」頁面上、您可以找到資料表、技術報告、白皮書和影片的連結。
+
+* https://docs.netapp.com/us-en/hci/["資訊文件NetApp HCI"^]
+* https://www.netapp.com/us/documentation/hci.aspx["「資源」頁面NetApp HCI"^]
+* http://docs.netapp.com/sfe-122/index.jsp["元件及元件12.2文件中心SolidFire"^]
+* http://docs.netapp.com/sfe-120/index.jsp["元件與元件12.0文件中心SolidFire"^]
+* http://docs.netapp.com/sfe-118/index.jsp["支援元件11.8文件中心SolidFire"^]
+* http://docs.netapp.com/sfe-117/index.jsp["元件11.7文件中心SolidFire"^]
+* http://docs.netapp.com/sfe-115/index.jsp["元件與元件11.5文件中心SolidFire"^]
+* https://www.netapp.com/us/documentation/solidfire.aspx["「資源」頁面SolidFire"^]
+

@@ -1,0 +1,31 @@
+---
+permalink: esds/reference_esds_troubleshoot_links.html 
+sidebar: sidebar 
+keywords: element, solidfire esds, troubleshooting, KB articles, knowledge base 
+summary: 如需SolidFire 協助疑難排解您的EESDS系統的相關資訊、請參閱知識庫文章的連結。 
+---
+= 疑難排解KB文章的連結
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如需SolidFire 協助疑難排解您的EESDS系統的相關資訊、請參閱知識庫文章的連結。
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/SolidFire_Enterprise_SDS/How_to_make_interface_names_the_same_for_all_the_nodes_in_a_SolidFire_eSDS_cluster["如何使叢集中所有節點的介面名稱相同（需要登入）"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/SolidFire_Enterprise_SDS/How_to_change_the_MTU_size_on_SolidFire_eSDS_nodes["如何變更MTU大小（需要登入）"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/SolidFire_Enterprise_SDS/How_to_resolve_Podman_container_crash_issues_for_SolidFire_Enterprise_SDS["如何解決Podman Container當機問題（需要登入）"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/SolidFire_Enterprise_SDS/How_to_disable_IPv6_for_SolidFire_eSDS["如何停用IPv6 for SolidFire EESDS（需要登入）"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/SolidFire_Enterprise_SDS/How_to_change_the_Bonded_interfaces_on_an_eSDS_cluster_while_in_Production["如何在正式作業時變更ESDS叢集上的繫結介面（需要登入）"^]
+
+
+這不是完整的清單。您可以搜尋 https://kb.netapp.com/Special:Search?query=solidfire+esds&type=wiki["知識庫"^] 以取得更多文章。
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

@@ -1,0 +1,63 @@
+---
+permalink: hardware/task_sfseries_psurepl.html 
+sidebar: sidebar 
+keywords: solidfire chassis, power supply replacement, sf-series nodes 
+summary: 每SolidFire 個支援電源供應器的機箱均包含兩個電源供應器單元、以提供電源備援。如果某個電源供應器發生故障、您應該儘快更換、以確保機箱具有備援電源。 
+---
+= 更換電源供應器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每SolidFire 個支援電源供應器的機箱均包含兩個電源供應器單元、以提供電源備援。如果某個電源供應器發生故障、您應該儘快更換、以確保機箱具有備援電源。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您已確定需要更換電源供應器。
+* 您有替換的電源供應器。
+* 您已確認第二個電源供應器裝置正在運作。
+* 您有一個防靜電（ESD）腕帶、或是您已採取其他防靜電預防措施。
+
+
+如果您的機架單元（1U）機箱具有下列任一節點、則適用此指示：
+
+* SF2405
+* SF3010
+* SF4805
+* SF6010
+* SF9605
+* SF9608
+* SF9010
+* SF19210
+* SF38410
+* SF-FCN-01
+* FC0025
+
+
+.步驟
+. 從要更換的電源供應器裝置上拔下電源線。
+. 按下釋放按鈕、將電源供應器從機箱中滑出。
++
+
+IMPORTANT: 請確定您使用兩隻手支撐電源供應器的重量。
+
+. 用兩隻手將替換電源供應器的邊緣與機箱的開孔對齊、然後將裝置輕推入機箱。
++
+
+IMPORTANT: 將電源供應器滑入機箱時、請勿過度施力、以免損壞硬體。
+
+. 插入電源線。
+. 請依照隨附於您的包裝盒中的指示、將故障設備退回NetApp。
++
+您可以聯絡NetApp支援部門、以取得更換程序的協助。
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

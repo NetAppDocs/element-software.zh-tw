@@ -1,0 +1,119 @@
+---
+permalink: storage/concept_data_manage_vvol_manage_storage_containers.html 
+sidebar: sidebar 
+keywords: storage container, storage containers, about storage containers, cluster, vvols, create, view details, chap, edit, delete 
+summary: 儲存容器是在執行Element軟體的叢集上所建立的vSphere資料存放區表示。 
+---
+= 管理儲存容器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儲存容器是在執行Element軟體的叢集上所建立的vSphere資料存放區表示。
+
+儲存容器會建立並繫結NetApp Element 至等號帳戶。在元素儲存設備上建立的儲存容器會在vCenter和ESXi中顯示為vSphere資料存放區。儲存容器不會在元素儲存設備上配置任何空間。它們只是用來邏輯關聯虛擬磁碟區。
+
+每個叢集最多支援四個儲存容器。至少需要一個儲存容器才能啟用VVols功能。
+
+
+
+== 建立儲存容器
+
+您可以在Element UI中建立儲存容器、然後在vCenter中探索。您必須至少建立一個儲存容器、才能開始配置VVOL備份的虛擬機器。
+
+開始之前、請先在叢集的元素UI中啟用VVols功能。
+
+.步驟
+. 選擇* VVols *>* Storage Containers*。
+. 按一下「*建立儲存容器*」按鈕。
+. 在「*建立新的儲存Container *」對話方塊中輸入儲存Container資訊：
++
+.. 輸入儲存容器的名稱。
+.. 設定CHAP的啟動器和目標機密。
++
+
+TIP: 將「CHAP設定」欄位保留空白、以自動產生機密。
+
+.. 按一下「*建立儲存Container *」按鈕。
+
+
+. 驗證新的儲存容器是否出現在「*儲存容器*」子索引標籤的清單中。
++
+
+NOTE: 由於會自動建立一個更新帳戶ID並指派給儲存容器、因此不需要手動建立帳戶。NetApp Element
+
+
+
+
+
+== 檢視儲存容器詳細資料
+
+在VVols索引標籤的Storage Container（儲存容器）頁面上、您可以檢視叢集上所有作用中儲存容器的資訊。
+
+* *帳戶ID*：與儲存容器相關聯的NetAppElement帳戶ID。
+* *名稱*：儲存容器的名稱。
+* *狀態*：儲存容器的狀態。可能值：
++
+** 作用中：儲存容器正在使用中。
+** 鎖定：儲存容器已鎖定。
+
+
+* * PE類型*：傳輸協定端點類型（SCSI是Element軟體唯一可用的傳輸協定）。
+* *儲存Container ID*：虛擬Volume儲存Container的UUID。
+* *作用中虛擬磁碟區*：與儲存容器相關聯的作用中虛擬磁碟區數目。
+
+
+
+
+== 檢視個別儲存容器詳細資料
+
+您可以從VVols索引標籤的Storage Container（儲存容器）頁面選取個別儲存容器的儲存容器資訊、以檢視該資訊。
+
+* *帳戶ID*：NetApp Element 與儲存容器相關聯的支援帳戶ID。
+* *名稱*：儲存容器的名稱。
+* *狀態*：儲存容器的狀態。可能值：
++
+** 作用中：儲存容器正在使用中。
+** 鎖定：儲存容器已鎖定。
+
+
+* * CHAP啟動器機密*：啟動器的獨特CHAP機密。
+* * CHAP目標機密*：目標的獨特CHAP機密。
+* *儲存Container ID*：虛擬Volume儲存Container的UUID。
+* *傳輸協定端點類型*：表示傳輸協定端點類型（SCSI是唯一可用的傳輸協定）。
+
+
+
+
+== 編輯儲存容器
+
+您可以在Element UI中修改儲存容器CHAP驗證。
+
+. 選擇* VVols *>* Storage Containers*。
+. 單擊要編輯的儲存容器的* Actions（操作）*圖標。
+. 在產生的功能表中、選取*編輯*。
+. 在CHAP設定下、編輯用於驗證的啟動器密碼和目標密碼認證。
++
+
+TIP: 如果您未變更CHAP設定認證、則其維持不變。如果您將認證欄位設為空白、系統會自動產生新的機密。
+
+. 按一下*儲存變更*。
+
+
+
+
+== 刪除儲存容器
+
+您可以從Element UI刪除儲存容器。
+
+確保所有虛擬機器都已從VVOL資料存放區移除。
+
+.步驟
+. 選擇* VVols *>* Storage Containers*。
+. 單擊要刪除的儲存容器的* Actions（操作）*圖標。
+. 在產生的功能表中、選取*刪除*。
+. 確認行動。
+. 重新整理* Storage Containers*子索引標籤中的儲存容器清單、確認儲存容器已移除。
+

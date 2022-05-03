@@ -1,0 +1,24 @@
+---
+permalink: storage/task_data_protection_copy_a_snapshot_schedule.html 
+sidebar: sidebar 
+keywords: snapshot schedule, copy, maintain, schedule attributes 
+summary: 您可以複製排程並維護其目前屬性。 
+---
+= 複製快照排程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以複製排程並維護其目前屬性。
+
+. 按一下*資料保護*>*排程*。
+. 按一下您要複製之排程的「動作」圖示。
+. 在產生的功能表中、按一下*製作複本*。
++
+「*建立排程*」對話方塊隨即出現、其中會填入排程的目前屬性。
+
+. *選用：*輸入新排程的名稱和更新屬性。
+. 按一下*建立排程*。
+

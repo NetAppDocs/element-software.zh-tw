@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_getclusterinfo.html 
+sidebar: sidebar 
+keywords: cluster,get,info,getting,getclusterinfo 
+summary: 您可以使用GetClusterInfo方法傳回叢集的組態資訊。 
+---
+= GetClusterInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetClusterInfo」方法來傳回叢集的組態資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集資訊
+ a| 
+叢集資訊：
+ a| 
+xref:reference_element_api_clusterinfo.adoc[叢集資訊]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetClusterInfo",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "clusterInfo": {
+            "attributes": {},
+            "defaultProtectionScheme": "doubleHelix",
+            "enabledProtectionSchemes": [
+                "doubleHelix"
+            ],
+            "encryptionAtRestState": "disabled",
+            "ensemble": [
+                "10.10.10.32",
+                "10.10.10.34",
+                "10.10.10.35",
+                "10.10.10.36",
+                "10.10.10.37"
+            ],
+            "mvip": "10.10.11.225",
+            "mvipInterface": "team1G",
+            "mvipNodeID": 3,
+            "mvipVlanTag": "0",
+            "name": "eSDS-1",
+            "repCount": 2,
+            "softwareEncryptionAtRestState": "enabled",
+            "supportedProtectionSchemes": [
+                "doubleHelix"
+            ],
+            "svip": "10.10.10.111",
+            "svipInterface": "team10G",
+            "svipNodeID": 3,
+            "svipVlanTag": "0",
+            "uniqueID": "psmp",
+            "uuid": "2f575d0c-36fe-406d-9d10-dbc1c306ade7"
+        }
+    }
+}
+----
+
+
+== 新的自版本
+
+9.6

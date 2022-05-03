@@ -1,0 +1,16 @@
+---
+permalink: storage/concept_data_manage_vvol_bindings.html 
+sidebar: sidebar 
+keywords: bindings, vvols, bound virtual volumes 
+summary: 若要對虛擬磁碟區執行I/O作業、ESXi主機必須先繫結虛擬磁碟區。 
+---
+= 綁定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要對虛擬磁碟區執行I/O作業、ESXi主機必須先繫結虛擬磁碟區。
+
+此VMware ESXi叢集會選擇最佳的傳輸協定端點、建立關聯ESXi主機和虛擬Volume與傳輸協定端點的連結、並傳回與ESXi主機的連結。SolidFire綁定之後、ESXi主機就能對繫結的虛擬Volume執行I/O作業。

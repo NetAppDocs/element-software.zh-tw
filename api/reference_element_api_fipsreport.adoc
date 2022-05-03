@@ -1,0 +1,42 @@
+---
+permalink: api/reference_element_api_fipsreport.html 
+sidebar: sidebar 
+keywords: object,objects,fipsReport,FIPS,140-2 
+summary: FpsReport物件包含FIPS 140-2支援儲存叢集中所有節點的相關資訊。您可以使用GetFipsReport方法擷取此資訊。 
+---
+= FpsReport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FpsReport物件包含FIPS 140-2支援儲存叢集中所有節點的相關資訊。您可以使用「GetFipsReport」方法擷取此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+節點
+ a| 
+儲存叢集中每個節點的FIPS 140-2支援狀態報告。
+ a| 
+FpsNodeReport
+
+
+
+ a| 
+錯誤節點
+ a| 
+未回應FIPS 140-2支援狀態的每個節點的錯誤資訊。
+ a| 
+FpsErrorNodeReport
+
+|===

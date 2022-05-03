@@ -1,0 +1,40 @@
+---
+section: concepts
+title: 概念
+url: "/concepts/index.html"
+entries:
+- title: 產品總覽
+  url: "/concepts/concept_intro_product_overview.html"
+- title: 架構與元件
+  url: "/concepts/concept_solidfire_concepts_solidfire_architecture_overview.html"
+  entries:
+  - title: 軟體介面SolidFire
+    url: "/concepts/concept_intro_solidfire_software_interfaces.html"
+  - title: SolidFire Active IQ
+    url: "/concepts/concept_intro_solidfire_active_iq.html"
+  - title: Element軟體的管理節點
+    url: "/concepts/concept_intro_management_node.html"
+  - title: 管理服務SolidFire 、適用於整合式All Flash儲存設備
+    url: "/concepts/concept_intro_management_services_for_afa.html"
+- title: 節點
+  url: "/concepts/concept_solidfire_concepts_nodes.html"
+- title: 叢集
+  url: "/concepts/concept_intro_clusters.html"
+- title: 安全性
+  url: "/concepts/concept_solidfire_concepts_security.html"
+- title: 帳戶與權限
+  url: "/concepts/concept_solidfire_concepts_accounts_and_permissions.html"
+- title: 儲存設備
+  entries:
+  - title: 磁碟區
+    url: "/concepts/concept_solidfire_concepts_volumes.html"
+  - title: 虛擬磁碟區（vVols）
+    url: "/concepts/concept_solidfire_concepts_vvols.html"
+  - title: Volume存取群組
+    url: "/concepts/concept_solidfire_concepts_volume_access_groups.html"
+  - title: 啟動器
+    url: "/concepts/concept_solidfire_concepts_initiators.html"
+- title: 資料保護
+  url: "/concepts/concept_solidfire_concepts_data_protection.html"
+- title: 效能與服務品質
+  url: "/concepts/concept_data_manage_volumes_solidfire_quality_of_service.html"

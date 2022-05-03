@@ -1,0 +1,98 @@
+---
+permalink: api/reference_element_api_getaccountbyname.html 
+sidebar: sidebar 
+keywords: accounts,account,name,username,GetAccountByName 
+summary: 您可以使用GetAccountByName取得特定帳戶的詳細資料、並提供其使用者名稱。 
+---
+= GetAccountByName
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetAccountByName」取得特定帳戶的詳細資料、並提供其使用者名稱。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+使用者名稱
+ a| 
+帳戶的使用者名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+帳戶
+ a| 
+帳戶詳細資料。
+ a| 
+xref:reference_element_api_account.adoc[帳戶]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetAccountByName",
+   "params": {
+     "username"  : "jimmyd"
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "account": {
+        "attributes": {},
+        "username": "jimmyd",
+        "targetSecret": "targetsecret",
+        "volumes": [],
+        "enableChap": true,
+        "status": "active",
+        "accountID": 1,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "initiatorsecret"
+    }
+}
+----
+
+
+== 新的自版本
+
+9.6

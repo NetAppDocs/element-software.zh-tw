@@ -1,0 +1,19 @@
+---
+permalink: api/reference_element_api_supported_modes_of_replication.html 
+sidebar: sidebar 
+keywords: supported,replication,modes,clusters,paired,pair,pairs 
+summary: 配對叢集支援下列複寫模式： 
+---
+= 配對叢集支援的複寫模式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配對叢集支援下列複寫模式：
+
+* 非同步複寫資料：傳送至複寫目標磁碟區的資料會以非同步方式傳送。系統不會等待在寫入資料之前傳送確認訊息。
+* 資料的同步複寫：傳送至複寫目標磁碟區的資料會同步傳送。當系統確認從主機傳送的I/O作業時、系統會將系統確認訊息傳回主機、並將資料傳送至複寫目標磁碟區。
+* 純快照資料複寫：只有磁碟區快照會複寫到目標叢集。
+

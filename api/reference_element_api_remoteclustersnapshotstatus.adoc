@@ -1,0 +1,48 @@
+---
+permalink: api/reference_element_api_remoteclustersnapshotstatus.html 
+sidebar: sidebar 
+keywords: object,objects,remoteClusterSnapshotStatus 
+summary: remoteClusterSnapshotStatus物件包含儲存在遠端儲存叢集上之快照的UUID和狀態。您可以使用清單快照或清單群組快照API方法來取得此資訊。 
+---
+= 遠端叢集SnapshotStatus
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「remoteClusterSnapshotStatus」物件包含儲存在遠端儲存叢集上之快照的UUID和狀態。您可以使用「listsnapshots」或「listGroupSnapshots」API方法來取得此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+遠端狀態
+ a| 
+從來源叢集所見的目標叢集上遠端快照的複寫狀態。可能值：
+
+* Present：快照存在於遠端叢集上。
+* NotPresent：快照不存在於遠端叢集上。
+* 同步：這是目標叢集、目前正在複寫快照。
+* 刪除：這是目標叢集。快照已刪除、但仍存在於來源中。
+
+ a| 
+字串
+
+
+
+ a| 
+Volume PairUUID
+ a| 
+Volume配對的通用識別碼。
+ a| 
+UUID
+
+|===

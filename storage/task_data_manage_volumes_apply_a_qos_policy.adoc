@@ -1,0 +1,30 @@
+---
+permalink: storage/task_data_manage_volumes_apply_a_qos_policy.html 
+sidebar: sidebar 
+keywords: qos policy, apply to volumes 
+summary: 您可以將現有的QoS原則大量套用至一或多個磁碟區。 
+---
+= 將QoS原則套用至磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將現有的QoS原則大量套用至一或多個磁碟區。
+
+您要大量套用的QoS原則必須存在。
+
+. 選擇*管理*>*磁碟區*。
+. 在磁碟區清單中、核取您要套用QoS原則的任何磁碟區旁的方塊。
+. 按一下*大量動作*。
+. 在結果功能表中、按一下*套用QoS原則*。
+. 從下拉式清單中選取QoS原則。
+. 按一下「 * 套用 * 」。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:concept_data_manage_volumes_quality_of_service_policies.adoc[服務品質原則]

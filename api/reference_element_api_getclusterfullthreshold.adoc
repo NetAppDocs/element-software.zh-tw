@@ -1,0 +1,300 @@
+---
+permalink: api/reference_element_api_getclusterfullthreshold.html 
+sidebar: sidebar 
+keywords: cluster,get,getting,full,threshold,level,fullness,storage,capacity,getclusterfullthreshold 
+summary: 您可以使用GetClusterFullThreshold方法來檢視針對叢集完整度層級所設定的階段。此方法會傳回叢集的所有完整度量。 
+---
+= GetClusterFullThreshold
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetClusterFullThreshold」方法來檢視叢集完整度層級的設定階段。此方法會傳回叢集的所有完整度量。
+
+
+NOTE: 當叢集達到區塊叢集完整度的錯誤階段時、所有磁碟區上的最大IOPS會隨著叢集接近「關鍵」階段而線性降低至磁碟區的最低IOPS。這有助於防止叢集達到區塊叢集完整度的臨界階段。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+區塊完整度
+ a| 
+叢集目前的區塊完整度計算層級。
+
+* stage1Hjappy：無警示或錯誤情況。對應於Web UI中的*健全*狀態。
+* stage2Aware：無警示或錯誤情況。對應於Web UI中的*健全*狀態。
+* stage3低：您的系統無法針對兩個非同步節點故障提供備援資料保護。對應於Web UI中的*警告*狀態。您可以在網路UI中設定此層級（依預設、系統會在低於錯誤狀態3%的容量下觸發此警示）。
+* stage4關鍵：系統無法針對單一節點故障提供備援資料保護。無法建立新的磁碟區或複本。對應於元素UI中的*錯誤*狀態。
+* stage5已完成：已完全耗用。叢集為唯讀且iSCSI連線維持不變、但所有寫入作業都會暫停。對應於元素UI中的*臨界*狀態。
+
+ a| 
+字串
+
+
+
+ a| 
+完整度
+ a| 
+反映「區塊完整度」和「metadata完整度」之間的最高完整度。
+ a| 
+字串
+
+
+
+ a| 
+MaxMetadataOverProvisionFactor
+ a| 
+代表中繼資料空間相對於可用空間量而言、可能過度配置的次數值。例如、如果有足夠的中繼資料空間來儲存100個TiB的磁碟區、而此數字設為5、則可以建立500個TiB值的磁碟區。
+ a| 
+整數
+
+
+
+ a| 
+metadata全功能性
+ a| 
+叢集目前的中繼資料完整度計算層級。
+
+* stage1Hjappy：無警示或錯誤情況。對應於Web UI中的*健全*狀態。
+* stage2Aware：無警示或錯誤情況。對應於Web UI中的*健全*狀態。
+* stage3低：您的系統無法針對兩個非同步節點故障提供備援資料保護。對應於Web UI中的*警告*狀態。您可以在網路UI中設定此層級（依預設、系統會在低於錯誤狀態3%的容量下觸發此警示）。
+* stage4關鍵：系統無法針對單一節點故障提供備援資料保護。無法建立新的磁碟區或複本。對應於元素UI中的*錯誤*狀態。
+* stage5已完成：已完全耗用。叢集為唯讀且iSCSI連線維持不變、但所有寫入作業都會暫停。對應於元素UI中的*臨界*狀態。
+
+ a| 
+字串
+
+
+
+ a| 
+交叉分析eReserveUsedTholholdPct
+ a| 
+錯誤條件。如果保留的分片使用率大於此值、就會觸發系統警示。
+ a| 
+整數
+
+
+
+ a| 
+stage2Awareworreshold
+ a| 
+認知條件：為階段2叢集臨界值層級設定的值。
+ a| 
+整數
+
+
+
+ a| 
+stage2區塊閾值Bytes
+ a| 
+叢集所使用的位元組數、其中將存在階段2條件。
+ a| 
+整數
+
+
+
+ a| 
+stage2Metadata閾值Bytes
+ a| 
+叢集所使用的中繼資料位元組數、其中將存在階段2完整條件。
+ a| 
+
+
+
+ a| 
+stage3區塊保留Bytes
+ a| 
+叢集使用的儲存位元組數、其中存在階段3完整條件。
+ a| 
+整數
+
+
+
+ a| 
+stage3封鎖閾值百分比
+ a| 
+階段3設定的百分比值。警示日誌中會顯示警示、但警示百分比已滿。
+ a| 
+整數
+
+
+
+ a| 
+stage3低臨界值
+ a| 
+錯誤條件。由於叢集上的容量過低而產生系統警示的臨界值。
+ a| 
+整數
+
+
+
+ a| 
+stage3Metadata閾值Bytes
+ a| 
+叢集所使用的中繼資料位元組數、其中將存在階段3完整條件。
+ a| 
+整數
+
+
+
+ a| 
+stage3Metadata閾值百分比
+ a| 
+中繼資料完整度stage3設定的百分比值。在這個百分比已滿時、警示會在警示記錄中張貼警告。
+ a| 
+整數
+
+
+
+ a| 
+stage4區塊閾值Bytes
+ a| 
+叢集所使用的儲存位元組數、其中將存在階段4完整度條件。
+ a| 
+整數
+
+
+
+ a| 
+stage4臨界值
+ a| 
+錯誤條件。建立系統警示的臨界值、以警告叢集的嚴重低容量。
+ a| 
+整數
+
+
+
+ a| 
+stage4Metadata閾值Bytes
+ a| 
+叢集所使用的中繼資料位元組數、其中將存在階段4完整條件。
+ a| 
+整數
+
+
+
+ a| 
+stage5區塊閾值Bytes
+ a| 
+叢集所使用的儲存位元組數、其中將存在階段5完整度條件。
+ a| 
+整數
+
+
+
+ a| 
+stage5Metadata閾值Bytes
+ a| 
+叢集所使用的中繼資料位元組數、其中將存在階段5完整度條件。
+ a| 
+整數
+
+
+
+ a| 
+sumTotalClusterBytes
+ a| 
+叢集的實體容量（以位元組為單位）。
+ a| 
+整數
+
+
+
+ a| 
+sumTotalMetadata ClusterBytes
+ a| 
+可用於儲存中繼資料的空間總量。
+ a| 
+整數
+
+
+
+ a| 
+sumUsedClusterBytes
+ a| 
+叢集上使用的儲存位元組數。
+ a| 
+整數
+
+
+
+ a| 
+sumUsedMetadata ClusterBytes
+ a| 
+磁碟區磁碟機用於儲存中繼資料的空間量。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method" : "GetClusterFullThreshold",
+   "params" : {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id":1,
+  "result":{
+    "blockFullness":"stage1Happy",
+    "fullness":"stage3Low",
+    "maxMetadataOverProvisionFactor":5,
+    "metadataFullness":"stage3Low",
+    "sliceReserveUsedThresholdPct":5,
+    "stage2AwareThreshold":3,
+    "stage2BlockThresholdBytes":2640607661261,
+    "stage3BlockThresholdBytes":8281905846682,
+    "stage3BlockThresholdPercent":5,
+    "stage3LowThreshold":2,
+    "stage4BlockThresholdBytes":8641988709581,
+    "stage4CriticalThreshold":1,
+    "stage5BlockThresholdBytes":12002762096640,
+    "sumTotalClusterBytes":12002762096640,
+    "sumTotalMetadataClusterBytes":404849531289,
+    "sumUsedClusterBytes":45553617581,
+    "sumUsedMetadataClusterBytes":31703113728
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_modifyclusterfullthreshold.adoc[ModifyClusterFull閥 值]

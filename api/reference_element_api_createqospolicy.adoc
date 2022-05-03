@@ -1,0 +1,132 @@
+---
+permalink: api/reference_element_api_createqospolicy.html 
+sidebar: sidebar 
+keywords: QoS,policy,policies,create,creating 
+summary: 您可以使用Create QoSPolicy方法來建立QoSPolicy物件、以便日後在建立或修改磁碟區時套用該物件。QoS原則具有唯一的ID、名稱和QoS設定。 
+---
+= 建立QoSPolicy
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Create QoSPolicy」（建立QoSPolicy）方法來建立QoSPolicy物件、以便日後在建立或修改磁碟區時套用該物件。QoS原則具有唯一的ID、名稱和QoS設定。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+名稱
+ a| 
+QoS原則的名稱、例如Gold、Platinum或Silver。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+QoS
+ a| 
+此原則所代表的QoS設定。
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+qosPolicy
+ a| 
+新建立的QoSPolicy物件。
+ a| 
+xref:reference_element_api_qospolicy.adoc[QoSPolicy]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 68,
+  "method": "CreateQoSPolicy",
+  "params": {
+    "name": "bronze",
+    "qos": {
+      "minIOPS": 50,
+      "maxIOPS": 15000,
+      "burstIOPS": 15000
+    }
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 68,
+  "result": {
+    "qosPolicy": {
+      "name": "bronze",
+      "qos": {
+        "burstIOPS": 15000,
+        "burstTime": 60,
+        "curve": {
+          "4096": 100,
+          "8192": 160,
+          "16384": 270,
+          "32768": 500,
+          "65536": 1000,
+          "131072": 1950,
+          "262144": 3900,
+          "524288": 7600,
+          "1048576": 15000
+        },
+        "maxIOPS": 15000,
+        "minIOPS": 50
+      },
+      "qosPolicyID": 2,
+      "volumeIDs": []
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+10.0%

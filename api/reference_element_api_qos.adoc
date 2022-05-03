@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_qos.html 
+sidebar: sidebar 
+keywords: object,objects,QoS 
+summary: QoS物件包含磁碟區服務品質（QoS）設定的相關資訊。未指定QoS值所建立的磁碟區會使用預設值建立。您可以使用GetDefaultQoS方法尋找預設值。 
+---
+= QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+QoS物件包含有關Volume的服務品質（QoS）設定資訊。未指定QoS值所建立的磁碟區會使用預設值建立。您可以使用「GetDefaultQoS」方法來尋找預設值。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+burstIOPS
+ a| 
+短時間內允許的最大「尖峰」4KB IOPS。可讓I/O活動在正常的最大IOPS值上進行突發。
+ a| 
+整數
+
+
+
+ a| 
+BurstTime
+ a| 
+允許的待處理IOPS時間長度。傳回的值以秒為單位表示。此值由系統根據QoS的IOPS設定來計算。
+ a| 
+整數
+
+
+
+ a| 
+曲線
+ a| 
+曲線是一組金鑰值配對。這些金鑰是以位元組為單位的I/O大小。這些值代表在特定I/O大小下執行一個IOP的成本。曲線的計算方式是以100 IOPS設定為4096位元組的作業方式。
+ a| 
+Json物件
+
+
+
+ a| 
+最大IOPS
+ a| 
+在一段較長的時間內、所需的最大4 KB IOPS。
+ a| 
+整數
+
+
+
+ a| 
+最低IOPS
+ a| 
+所需的最低4 KB IOPS保證。只有當所有磁碟區的IOPS上限為最低IOPS值、而且效能容量仍不足時、允許的IOPS才會降至低於此層級。
+ a| 
+整數
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS]

@@ -1,0 +1,82 @@
+---
+permalink: api/reference_element_api_listclusterinterfacepreferences.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用listClusterInterfacePreference方法、可讓與執行Element軟體的儲存叢集整合的系統、列出儲存在系統上的現有叢集介面喜好設定。此方法僅供內部使用。 
+---
+= listClusterInterface喜好 設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「listClusterInterfacePreference」方法可讓與執行Element軟體的儲存叢集整合的系統、列出儲存在系統上的現有叢集介面偏好設定。此方法僅供內部使用。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+偏好設定
+ a| 
+目前儲存在儲存叢集上的叢集介面物件清單、每個物件都包含喜好設定的名稱和值。
+ a| 
+Json物件陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+	"method": "ListClusterInterfacePreferences",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"preferences": [
+			{
+				"name": "prefname",
+				"value": "testvalue"
+			}
+		]
+	}
+}
+----
+
+
+== 新的自版本
+
+11.0

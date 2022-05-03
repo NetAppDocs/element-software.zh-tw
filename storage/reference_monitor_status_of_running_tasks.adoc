@@ -1,0 +1,19 @@
+---
+permalink: storage/reference_monitor_status_of_running_tasks.html 
+sidebar: sidebar 
+keywords: running tasks, view progress of 
+summary: 您可以在由ListSyncJobs和ListBulkVolume Jobs API方法所報告的Web UI中檢視執行工作的進度和完成狀態。您可以從元素UI的「報告」索引標籤存取「執行中的工作」頁面。 
+---
+= 檢視執行中工作的狀態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在由ListSyncJobs和ListBulkVolume Jobs API方法所報告的Web UI中檢視執行工作的進度和完成狀態。您可以從元素UI的「報告」索引標籤存取「執行中的工作」頁面。
+
+如果有大量工作、系統可能會將其排入佇列、並以批次方式執行。「執行中的工作」頁面會顯示目前正在同步的服務。工作完成後、會被下一個佇列中的同步工作取代。同步處理工作可能會繼續出現在「執行中的工作」頁面上、直到沒有其他工作要完成為止。
+
+
+NOTE: 您可以在包含目標磁碟區的叢集「執行中工作」頁面上、查看正在進行複寫的磁碟區複寫同步處理資料。

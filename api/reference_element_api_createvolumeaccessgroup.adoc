@@ -1,0 +1,178 @@
+---
+permalink: api/reference_element_api_createvolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: volume,access,groups,group,create,creating,CreateVolumeAccessGroup 
+summary: 您可以使用Create Volume AccessGroup建立新的Volume存取群組。建立Volume存取群組時、您需要為其命名、也可以選擇性地輸入啟動器和磁碟區。 
+---
+= 建立Volume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Create Volume AccessGroup」建立新的Volume存取群組。建立Volume存取群組時、您需要為其命名、也可以選擇性地輸入啟動器和磁碟區。
+
+您新增至Volume存取群組的任何啟動器IQN、都能存取群組中的任何磁碟區、而無需CHAP驗證。
+
+
+NOTE: 複製的磁碟區不會從來源磁碟區繼承Volume存取群組成員資格。
+
+建立Volume存取群組時、請考量下列事項：
+
+* Volume存取群組最多可包含64個啟動器IQN。
+* 啟動器只能屬於一個Volume存取群組。
+* Volume存取群組最多可包含2000個磁碟區。
+* 每個Volume存取群組最多可屬於四個其他Volume存取群組。
+
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+啟動器
+ a| 
+要納入Volume存取群組的啟動器ID或名稱（IQN和WWPN）清單。如果您通過啟動器名稱清單、則會在啟動器尚未存在時建立啟動器。如果您通過啟動器ID清單、則當任何啟動器不存在時、該方法會傳回錯誤。傳遞啟動器名稱已過時；您應盡可能使用啟動器ID。
+ a| 
+整數陣列或字串陣列（已過時）
+ a| 
+ a| 
+否
+
+
+
+ a| 
+名稱
+ a| 
+Volume存取群組名稱。不需要是獨一無二的、但值得推薦。長度必須為1到64個字元。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+磁碟區
+ a| 
+要納入Volume存取群組的Volume ID清單。
+ a| 
+整數陣列
+ a| 
+ a| 
+否
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+｛｝
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume存取群組
+ a| 
+包含新建立之Volume存取群組相關資訊的物件。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[Volume存取群組]
+
+
+
+ a| 
+Volume存取群組ID
+ a| 
+新建立的Volume存取群組ID。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "CreateVolumeAccessGroup",
+   "params": {
+      "name": "myaccessgroup",
+      "initiators": ["iqn.1993-08.org.debian: 01: a31b1d799d5c"],
+      "volumes": [327],
+      "attributes": {}
+   }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [],
+      "initiatorIDs": [
+        95
+      ],
+      "initiators": [
+        "iqn.1993-08.org.debian: 01: a31b1d799d5c"
+      ],
+      "name": "myaccessgroup",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        327
+      ]
+    },
+    "volumeAccessGroupID": 96
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_getasyncresult.adoc[Get非 同步結果]
+* xref:reference_element_api_listsyncjobs.adoc[listSyncJobs]
+* xref:reference_element_api_modifyvolume.adoc[ModifyVolume]
+

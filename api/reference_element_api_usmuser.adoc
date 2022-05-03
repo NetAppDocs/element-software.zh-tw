@@ -1,0 +1,83 @@
+---
+permalink: api/reference_element_api_usmuser.html 
+sidebar: sidebar 
+keywords: object,objects,usmUser 
+summary: 您可以使用SNMP usmUser物件搭配SetSnmpInfo API方法、在儲存叢集上設定SNMP。 
+---
+= 使用者
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用SNMP usmUser物件搭配「etSnmpInfo」API方法、在儲存叢集上設定SNMP。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+存取
+ a| 
+此使用者的SNMP存取類型。可能值：
+
+* rouser：唯讀存取。
+* rwuser:讀寫存取權。所有Element軟體的mib物件均為唯讀。
+
+ a| 
+字串
+
+
+
+ a| 
+名稱
+ a| 
+使用者名稱。
+ a| 
+字串
+
+
+
+ a| 
+密碼
+ a| 
+使用者的密碼。
+ a| 
+字串
+
+
+
+ a| 
+通關密碼
+ a| 
+使用者的通關密碼。
+ a| 
+字串
+
+
+
+ a| 
+secLevel
+ a| 
+此使用者所需的認證類型。可能值：
+
+* Noauth：不需要密碼或通關密碼。
+* 驗證：使用者存取需要密碼。
+* PRIV：使用者存取時需要密碼和通關密碼。
+
+ a| 
+字串
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_setsnmpinfo.adoc[SetSnmpInfo]

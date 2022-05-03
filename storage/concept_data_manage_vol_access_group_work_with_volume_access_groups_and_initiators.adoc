@@ -1,0 +1,51 @@
+---
+permalink: storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html 
+sidebar: sidebar 
+keywords: volume access groups, initiators, working with, chap, fc, iscsi 
+summary: 您可以使用iSCSI啟動器或Fibre Channel啟動器來存取在Volume存取群組中定義的磁碟區。 
+---
+= 使用Volume存取群組和啟動器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用iSCSI啟動器或Fibre Channel啟動器來存取在Volume存取群組中定義的磁碟區。
+
+您可以在磁碟區集合中對應iSCSI啟動器IQN或Fibre Channel WWPN來建立存取群組。您新增至存取群組的每個IQN都可存取群組中的每個Volume、而不需要CHAP驗證。
+
+CHAP驗證方法有兩種類型：
+
+* 帳戶層級CHAP驗證：您可以為帳戶指派CHAP驗證。
+* 啟動器層級CHAP驗證：您可以為特定啟動器指派獨特的CHAP目標和機密、而不需在單一帳戶中綁定到單一CHAP。此啟動器層級的CHAP驗證會取代帳戶層級認證。
+
+
+您也可以選擇使用每個啟動器CHAP來強制執行啟動器授權和每個啟動器CHAP驗證。這些選項可根據每個啟動器來定義、而存取群組可包含多個具有不同選項的啟動器。
+
+您新增至存取群組的每個WWPN都可讓光纖通道網路存取存取存取群組中的磁碟區。
+
+
+NOTE: Volume存取群組具有下列限制：
+
+* 存取群組最多允許64 IQN或WWPN。
+* 存取群組最多可由2000個磁碟區組成。
+* IQN或WWPN只能屬於一個存取群組。
+* 單一磁碟區最多可屬於四個存取群組。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_data_manage_vol_access_group_create_a_volume_access_group.adoc[建立Volume存取群組]
+* xref:task_data_manage_vol_access_group_add_volumes.adoc[新增磁碟區至存取群組]
+* xref:task_data_manage_vol_access_group_remove_volumes.adoc[從存取群組移除磁碟區]
+* xref:task_data_manage_vol_access_group_create_an_initiator.adoc[建立啟動器]
+* xref:task_data_manage_vol_access_group_edit_an_initiator.adoc[編輯啟動器]
+* xref:task_data_manage_vol_access_group_add_a_single_initiator.adoc[將單一啟動器新增至Volume存取群組]
+* xref:task_data_manage_vol_access_group_add_multiple_initiators.adoc[將多個啟動器新增至磁碟區存取群組]
+* xref:task_data_manage_vol_access_group_remove_initiators_from_an_access_group.adoc[從存取群組移除啟動器]
+* xref:task_data_manage_vol_access_group_delete.adoc[刪除存取群組]
+* xref:task_data_manage_vol_access_group_delete_an_initiator.adoc[刪除啟動器]
+

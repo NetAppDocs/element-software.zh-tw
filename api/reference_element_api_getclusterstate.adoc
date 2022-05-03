@@ -1,0 +1,85 @@
+---
+permalink: api/reference_element_api_getclusterstate.html 
+sidebar: sidebar 
+keywords: cluster,state,getting,get,getclusterstate 
+summary: 您可以使用GetClusterState API方法來指出節點是否為叢集的一部分。 
+---
+= GetClusterState
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetClusterState」API方法來指出節點是否為叢集的一部分。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集
+ a| 
+叢集名稱。
+ a| 
+字串
+
+
+
+ a| 
+州/省
+ a| 
+* 可用：節點尚未設定叢集名稱。
+* 擱置中：特定命名叢集的節點正在擱置中、可以新增。
+* 作用中：節點是叢集的作用中成員、不得新增至其他叢集。
+
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetClusterState",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" :
+      "cluster" :  "Cluster101"
+      "state" : "Active"
+}
+----
+
+
+== 新的自版本
+
+9.6

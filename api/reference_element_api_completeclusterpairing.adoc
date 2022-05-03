@@ -1,0 +1,99 @@
+---
+permalink: api/reference_element_api_completeclusterpairing.html 
+sidebar: sidebar 
+keywords: CompleteClusterPairing,cluster,pair,pairing,complete,completing 
+summary: 「完成叢集配對」方法是叢集配對程序的第二個步驟。使用此方法搭配從StartClusterPairing方法接收到的編碼金鑰、以完成叢集配對程序。 
+---
+= CompleteClusterPairing
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「完成叢集配對」方法是叢集配對程序的第二步驟。使用此方法搭配從「TartClusterPairing」方法收到的編碼金鑰、即可完成叢集配對程序。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+叢集PairingKey
+ a| 
+從傳回的字元字串 xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing] API方法。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集PairID
+ a| 
+叢集配對的唯一識別碼。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "CompleteClusterPairing",
+   "params": {
+        "clusterPairingKey" : "7b22636c7573746572506169724944223a312c22636c75737465725061697255554944223a2231636561313336322d346338662d343631612d626537322d373435363661393533643266222c22636c7573746572556e697175654944223a2278736d36222c226d766970223a223139322e3136382e3133392e313232222c226e616d65223a224175746f54657374322d63307552222c2270617373776f7264223a22695e59686f20492d64774d7d4c67614b222c22727063436f6e6e656374696f6e4944223a3931333134323634392c22757365726e616d65223a225f5f53465f706169725f50597a796647704c7246564432444a42227d"
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+       "clusterPairID" : 1
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_startclusterpairing.adoc[StartClusterPairing]

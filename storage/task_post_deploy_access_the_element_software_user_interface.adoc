@@ -1,0 +1,46 @@
+---
+permalink: storage/task_post_deploy_access_the_element_software_user_interface.html 
+sidebar: sidebar 
+keywords: Element UI, accessing, using MVIP, blockers, host name, certificate, messages 
+summary: 您可以使用主叢集節點的管理虛擬IP（MVIP）位址來存取元素UI。 
+---
+= 存取Element軟體使用者介面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用主叢集節點的管理虛擬IP（MVIP）位址來存取元素UI。
+
+您必須確保在瀏覽器中停用快顯封鎖程式和NoScript設定。
+
+根據叢集建立期間的組態、您可以使用IPv4或IPv6位址來存取UI。
+
+. 請選擇下列其中一項：
++
+** IPv6：輸入https://[IPv6 MVIP位址]例如：
++
+[listing]
+----
+https://[fd20:8b1e:b256:45a::1234]/
+----
+** IPV4：輸入https://[IPv4 MVIP位址]例如：
++
+[listing]
+----
+https://10.123.456.789/
+----
+
+
+. 若為DNS、請輸入主機名稱。
+. 按一下任何驗證憑證訊息。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

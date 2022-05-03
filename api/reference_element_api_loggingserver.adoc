@@ -1,0 +1,42 @@
+---
+permalink: api/reference_element_api_loggingserver.html 
+sidebar: sidebar 
+keywords: object,objects,loggingServer 
+summary: 記錄伺服器物件包含任何為儲存叢集設定的記錄主機相關資訊。您可以使用GetRemoteLoggingHist來判斷目前的記錄主機為何、然後使用SetRemoteLoggingHist來設定所需的目前和新記錄主機清單。 
+---
+= 記錄伺服器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+記錄伺服器物件包含任何為儲存叢集設定的記錄主機相關資訊。您可以使用「GetRemoteLoggingHosS」來判斷目前的記錄主機、然後使用「etRemoteLoggingHosS」來設定所需的目前和新記錄主機清單。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+主機
+ a| 
+記錄伺服器的IP位址。
+ a| 
+字串
+
+
+
+ a| 
+連接埠
+ a| 
+用於與記錄伺服器通訊的連接埠號碼。
+ a| 
+整數
+
+|===

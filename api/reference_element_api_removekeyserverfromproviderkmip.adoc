@@ -1,0 +1,79 @@
+---
+permalink: api/reference_element_api_removekeyserverfromproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,unassigning,removing,remove,unassign,removekeyserverfromproviderkmip 
+summary: 您可以使用RemoveKeyServerFromProviderKmip方法、從指派給它的供應商中取消指派指定的金鑰管理互通性傳輸協定（KMIP）金鑰伺服器。您可以取消指派金鑰伺服器給其供應商、除非該金鑰伺服器是最後一個、而且其供應商處於作用中狀態（提供目前正在使用的金鑰）。如果指定的金鑰伺服器未指派給供應商、則不會採取任何行動、也不會傳回錯誤。 
+---
+= RemoveKeyServerFromProviderKmip
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「RemoveKeyServerFromProviderKmip」方法、將指定的金鑰管理互通性傳輸協定（KMIP）金鑰伺服器從指派給它的供應商中取消指派。您可以取消指派金鑰伺服器給其供應商、除非該金鑰伺服器是最後一個、而且其供應商處於作用中狀態（提供目前使用中的金鑰）。如果指定的金鑰伺服器未指派給供應商、則不會採取任何行動、也不會傳回錯誤。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+KeyServerID
+ a| 
+要取消指派的KMIP金鑰伺服器ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。只要沒有傳回錯誤、就會將移除視為成功。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "RemoveKeyServerFromProviderKmip",
+  "params": {
+    "keyServerID": 1
+   },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+    }
+}
+----
+
+
+== 新的自版本
+
+11.7

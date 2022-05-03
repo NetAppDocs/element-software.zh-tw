@@ -1,0 +1,136 @@
+---
+permalink: api/reference_element_api_disablemaintenancemode.html 
+sidebar: sidebar 
+keywords: disable,maintenance,mode 
+summary: 您可以使用「停用維護模式」方法、將儲存節點從維護模式中移出。只有在完成維護且節點已上線之後、才應停用維護模式。 
+---
+= 停用維護模式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「顯示維護模式」方法、將儲存節點從維護模式中移出。只有在完成維護且節點已上線之後、才應停用維護模式。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+節點
+ a| 
+要從維護模式中移出的儲存節點ID清單。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+asyncdle
+ a| 
+您可以使用Getynprynet方法擷取此asyncdyle、並判斷維護模式轉換何時完成。
+ a| 
+整數
+
+
+
+ a| 
+目前模式
+ a| 
+節點目前的維護模式狀態。可能值：
+
+* 停用：未要求維護。
+* 容錯移轉：節點無法從維護模式中恢復。
+* 非預期：節點已被發現離線、但處於「已停用」模式。
+* RecoveringFromMaintenance：節點正在從維護模式中恢復。
+* 準備維護：正在採取行動、準備節點執行維護作業。
+* ReadyForMaintenance：節點已準備好進行維護。
+
+ a| 
+維護模式（字串）
+
+
+
+ a| 
+申請模式
+ a| 
+節點要求的維護模式狀態。可能值：
+
+* 停用：未要求維護。
+* 容錯移轉：節點無法從維護模式中恢復。
+* 非預期：節點已被發現離線、但處於「已停用」模式。
+* RecoveringFromMaintenance：節點正在從維護模式中恢復。
+* 準備維護：正在採取行動、準備節點執行維護作業。
+* ReadyForMaintenance：節點已準備好進行維護。
+
+ a| 
+維護模式（字串）
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "DisableMaintenanceMode",
+  "params": {
+    "nodes": [6]
+  },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "requestedMode": "Disabled",
+        "asyncHandle": 1,
+        "currentMode": "Enabled"
+    }
+}
+----
+
+
+== 新的自版本
+
+12.2
+
+
+
+== 如需詳細資訊、請參閱
+
+http://docs.netapp.com/us-en/hci/docs/concept_hci_storage_maintenance_mode.html["儲存維護模式概念NetApp HCI"^]

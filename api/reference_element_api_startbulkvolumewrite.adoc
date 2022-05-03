@@ -1,0 +1,172 @@
+---
+permalink: api/reference_element_api_startbulkvolumewrite.html 
+sidebar: sidebar 
+keywords: volume,bulk,start,starting,write,session,startbulkvolumewrite 
+summary: 您可以使用StartBulkVolume Write方法、在指定的磁碟區上啟動大量磁碟區寫入工作階段。 
+---
+= StartBulkVolume寫入
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「tartBulkVolume Write」方法、在指定的磁碟區上啟動大量磁碟區寫入工作階段。
+
+一個Volume上只能同時執行兩個大量Volume程序。初始化工作階段時、資料會從外部備份來源寫入元素儲存磁碟區。外部資料是由在元素儲存節點上執行的Web伺服器存取。外部資料存取的伺服器互動資訊會由儲存系統上執行的指令碼傳遞。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+格式
+ a| 
+Volume資料的格式。可以是：
+
+* 「未壓縮」：傳回磁碟區的每個位元組、不進行任何壓縮。
+* 「原生」：傳回的不透明資料會較小、且會更有效率地儲存及寫入後續的大量Volume寫入。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+Volume ID
+ a| 
+要寫入的磁碟區ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+指令碼
+ a| 
+可執行指令碼的名稱。如果未指定指令碼名稱、則必須輸入金鑰和URL才能存取元素儲存節點。指令碼會在主要節點上執行、然後將金鑰和URL傳回指令碼、以便聯絡本機Web伺服器。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+指令碼參數
+ a| 
+要傳遞至指令碼的Json參數。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+屬性
+ a| 
+大量Volume工作的Json屬性。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+asyncdle
+ a| 
+要檢查完成的非同步程序ID。
+ a| 
+整數
+
+
+
+ a| 
+金鑰
+ a| 
+不透明金鑰可唯一識別工作階段。
+ a| 
+字串
+
+
+
+ a| 
+URL
+ a| 
+存取節點Web伺服器的URL。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "StartBulkVolumeWrite",
+   "params": {
+      "volumeID" : 5,
+      "format"  : "native",
+   },
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+      "asyncHandle" : 1,
+      "key" : "11eed8f086539205beeaadd981aad130",
+      "url" : "https://127.0.0.1:44000/"
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,127 @@
+---
+permalink: api/reference_element_api_listkeyproviderskmip.html 
+sidebar: sidebar 
+keywords: KMIP,key providers,key,provider,retrieving,listing,list,retrieve,listkeyproviderskmip 
+summary: 您可以使用清單金鑰提供者Kmip方法擷取所有現有金鑰管理互通性傳輸協定（KMIP）金鑰提供者的清單。您可以指定其他參數來篩選清單。 
+---
+= listKeyProvidersKmip
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ListKeyProvidersKmip」方法擷取所有現有金鑰管理互通性傳輸協定（KMIP）金鑰供應商的清單。您可以指定其他參數來篩選清單。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+KeyProviderIsActive
+ a| 
+篩選器會根據金鑰伺服器物件是否處於作用中狀態而傳回KMIP金鑰伺服器物件。可能值：
+
+* true：僅傳回作用中的KMIP金鑰提供者（提供目前使用中的金鑰）。
+* 否：僅傳回非作用中的KMIP金鑰提供者（不提供任何金鑰且可刪除）。
+
+
+如果省略、則不會根據傳回的KMIP金鑰提供者是否處於作用中狀態來篩選。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+kmipKeyProviderHasServerAssigned
+ a| 
+篩選器會根據是否指派KMIP金鑰伺服器而傳回KMIP金鑰提供者。可能值：
+
+* true：僅傳回已指派KMIP金鑰伺服器的KMIP金鑰提供者。
+* 否：僅傳回未指派KMIP金鑰伺服器的KMIP金鑰提供者。
+
+
+如果省略、則不會根據傳回的KMIP金鑰提供者是否已指派KMIP金鑰伺服器來篩選。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+kmipKeyProviders
+ a| 
+已建立的KMIP金鑰提供者清單。
+ a| 
+link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListKeyProvidersKmip",
+  "params": {},
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+    {
+    "kmipKeyProviders": [
+        {
+            "keyProviderID": 15,
+            "kmipCapabilities": "SSL",
+            "keyProviderIsActive": true,
+            "keyServerIDs": [
+                1
+            ],
+            "keyProviderName": "KeyProvider1"
+        }
+    ]
+}
+}
+----
+
+
+== 新的自版本
+
+11.7

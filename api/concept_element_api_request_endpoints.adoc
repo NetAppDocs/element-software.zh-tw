@@ -1,0 +1,54 @@
+---
+permalink: api/concept_element_api_request_endpoints.html 
+sidebar: sidebar 
+keywords: request,endpoints 
+summary: API（儲存叢集、儲存叢集建立和每節點）中使用三種類型的要求端點。您應該永遠使用Element軟體版本所支援的最新端點。 
+---
+= 要求端點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+API中使用三種類型的要求端點（儲存叢集、儲存叢集建立和每個節點）。您應該永遠使用Element軟體版本所支援的最新端點。
+
+API中的三個要求端點會以下列方式指定：
+
+
+
+== 叢集API方法
+
+用於儲存叢集範圍API要求的HTTPS端點為「+https://<mvip>/json-rpc/<api-version>+`」、其中：
+
+* 「<mvip>'是儲存叢集的管理虛擬IP位址。
+* 「API版本」是您所使用的API版本。
+
+
+
+
+== 叢集建立與啟動API方法
+
+用於建立儲存叢集及存取自舉API要求的HTTPS端點為「+https://<nodeIP>/json-rpc/<api-version>+`」、其中：
+
+* 「<節點IP >」是您要新增至叢集之節點的IP位址。
+* 「API版本」是您所使用的API版本。
+
+
+
+
+== 每節點API方法
+
+用於個別儲存節點API要求的HTTPS端點為「+https://<nodeIP>:442/json-rpc/<api-version>+`」、其中：
+
+* 「<節點IP>」是儲存節點的管理IP位址、而「442」是HTTPS伺服器執行的連接埠。
+* 「API版本」是您所使用的API版本。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

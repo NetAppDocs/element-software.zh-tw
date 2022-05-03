@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_listclusteradmins.html 
+sidebar: sidebar 
+keywords: admin,admins,cluster,list,listing,listclusteradmins 
+summary: 您可以使用listClusterAdmins方法傳回叢集的所有叢集管理員清單。 
+---
+= listClusterAdmins
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listClusterAdmins」方法來傳回叢集的所有叢集管理員清單。
+
+可以有多個具有不同權限層級的叢集管理員帳戶。系統中只能有一位主叢集管理員。主叢集管理員是建立叢集時所建立的管理員。在叢集上設定LDAP系統時、也可以建立LDAP系統管理員。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+顯示隱藏的
+ a| 
+顯示隱藏的叢集管理員使用者、例如SNMP admin。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集管理員
+ a| 
+叢集的所有叢集與LDAP管理員相關資訊。
+ a| 
+xref:reference_element_api_clusteradmin.adoc[叢集管理] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListClusterAdmins",
+   "params": {},
+    "showHidden": true
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+"id":1,
+"result":{
+  "clusterAdmins":[
+     {
+       "access":[
+           "administrator"
+       ],
+       "attributes":null,
+       "authMethod":"Cluster",
+       "clusterAdminID":1,
+       "username":"admin"
+   },
+   {
+       "access":[
+           "read",
+           "administrator"
+       ],
+       "attributes":{
+       },
+       "authMethod":"Ldap",
+       "clusterAdminID":7,
+       "username":"john.smith"
+   },
+   {
+       "access":[
+           "read",
+           "administrator"
+       ],
+       "attributes":{},
+       "authMethod":"Ldap",
+       "clusterAdminID":6,
+       "username":"cn=admin1 jones,ou=ptusers,c=prodtest,dc=solidfire,dc=net"
+       }
+     ]
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

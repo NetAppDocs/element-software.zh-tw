@@ -1,0 +1,37 @@
+---
+permalink: api/reference_element_api_volume_pairing_order_of_operations.html 
+sidebar: sidebar 
+keywords: volume,pairing,order,operations,volumes,pairing,pair,pairs 
+summary: 您必須先在兩個對應的叢集之間建立叢集配對、才能配對磁碟區。 
+---
+= Volume配對作業順序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先在兩個對應的叢集之間建立叢集配對、才能配對磁碟區。
+
+使用下列一組API方法建立叢集連線：
+
+* xref:reference_element_api_startvolumepairing.adoc[StartVolume配對]：
++
+此API方法會建立並傳回用於建立Volume配對的Volume配對金鑰。金鑰包含用於在磁碟區之間建立通訊的資訊。
+
+* xref:reference_element_api_completevolumepairing.adoc[完成Volume配對]：
++
+此方法使用與建立的配對金鑰 xref:reference_element_api_startvolumepairing.adoc[StartVolume配對] 建立Volume配對的API方法。發行 xref:reference_element_api_completevolumepairing.adoc[完成Volume配對] API方法、其中包含目的地Volume的volumeID和volumePairingKey參數。
+
+
+
+只能將配對的其中一個磁碟區識別為複寫目標磁碟區。使用 xref:reference_element_api_modifyvolumepair.adoc[ModifyVolume空氣] API方法、識別哪個磁碟區是目標、藉此建立磁碟區資料複寫的方向。資料會從來源磁碟區複寫到目標磁碟區。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_startvolumepairing.adoc[StartVolume配對]
+* xref:reference_element_api_completevolumepairing.adoc[完成Volume配對]
+* xref:reference_element_api_modifyvolumepair.adoc[ModifyVolume空氣]
+

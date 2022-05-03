@@ -1,0 +1,40 @@
+---
+permalink: concepts/reference_solidfire_element_ug_where_to_find_additional_information.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在SolidFire NetApp SolidFire VMware文件中心深入瞭解與VMware支援系統相關的工作、以及NetApp SolidFire 資源頁面上提供的資源。 
+---
+= 何處可找到其他資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在SolidFire NetApp SolidFire VMware文件中心深入瞭解與VMware支援系統相關的工作、以及NetApp SolidFire 資源頁面上提供的資源。
+
+您也可以在文件中心中找到硬體安裝與維護、其他可用內容資源、已知問題與已解決問題的連結、以及最新版本說明等相關資訊。
+
+* * NetApp SolidFire 《資源》頁面*
++
+提供有關Element軟體的資源、包括影片內容和技術報告的連結。
+
++
+https://www.netapp.com/us/documentation/solidfire.aspx["《All Flash儲存資源》（All Flash Storage Resources）SolidFire"]
+
+* * NetApp SolidFire 產品資料中心*
++
+提供硬體安裝與維護、可用的其他內容資源、已知問題與已解決問題的連結、以及最新版本說明等相關資訊。
+
++
+https://docs.netapp.com/sfe-113/index.jsp["元件11.3文件中心SolidFire"]
+
+* * https://kb.netapp.com/app/answers/answer_view/a_id/1000941/loc/en_US[NetApp SolidFire 《支援元件已知問題》*
++
+提供Element軟體目前和舊版的已知問題清單。
+
+* * https://kb.netapp.com/app/answers/answer_view/a_id/1000933[NetApp SolidFire 解決的問題*
++
+提供Element軟體目前和舊版中已解決的問題清單。
+
+

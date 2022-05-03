@@ -1,0 +1,186 @@
+---
+permalink: api/reference_element_api_getnetworkinterface.html 
+sidebar: sidebar 
+keywords: nodes,node,network,interface,get,getting,getnetworkinterface 
+summary: 您可以使用GetNetwork介面方法來取得節點上網路介面的相關資訊。 
+---
+= GetNetwork介面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetNetwork介面」方法來取得節點上網路介面的相關資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+介面
+ a| 
+可取得每個節點相關資訊的介面名稱。可能值：
+
+* 邦迪1G
+* Bond10G
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+力
+ a| 
+將此參數設為true可在叢集中的所有節點上執行。
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+節點
+ a| 
+一組物件、說明儲存叢集中每個儲存節點的介面。陣列中的每個物件都包含下列項目：
+
+* 節點ID：（整數）介面資訊所套用之儲存叢集中儲存節點的ID。
+* 結果：（xref:reference_element_api_networkinterface.adoc[網路介面]）此儲存節點的介面組態資訊。
+
+ a| 
+Json物件陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+	"method": "GetNetworkInterface",
+	"params": {
+		"interface": "Bond1G",
+		"force": true
+		},
+	"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"nodes": [
+			{
+				"nodeID": 1,
+				"result": {
+					"interface": {
+						"address": "10.117.64.32",
+						"addressV6": "::",
+						"broadcast": "10.117.79.255",
+						"macAddress": "90:b1:1c:42:e0:1e",
+						"mtu": 1500,
+						"name": "Bond1G",
+						"namespace": false,
+						"netmask": "255.255.240.0",
+						"status": "UpAndRunning",
+						"type": "BondMaster",
+						"virtualNetworkTag": 0
+					}
+				}
+			},
+			{
+				"nodeID": 2,
+				"result": {
+					"interface": {
+						"address": "10.117.64.35",
+						"addressV6": "::",
+						"broadcast": "10.117.79.255",
+						"macAddress": "d4:ae:52:7a:ae:23",
+						"mtu": 1500,
+						"name": "Bond1G",
+						"namespace": false,
+						"netmask": "255.255.240.0",
+						"status": "UpAndRunning",
+						"type": "BondMaster",
+						"virtualNetworkTag": 0
+					}
+				}
+			},
+			{
+				"nodeID": 3,
+				"result": {
+					"interface": {
+						"address": "10.117.64.39",
+						"addressV6": "::",
+						"broadcast": "10.117.79.255",
+						"macAddress": "c8:1f:66:f0:9d:17",
+						"mtu": 1500,
+						"name": "Bond1G",
+						"namespace": false,
+						"netmask": "255.255.240.0",
+						"status": "UpAndRunning",
+						"type": "BondMaster",
+						"virtualNetworkTag": 0
+					}
+				}
+			},
+			{
+				"nodeID": 4,
+				"result": {
+					"interface": {
+						"address": "10.117.64.107",
+						"addressV6": "::",
+						"broadcast": "10.117.79.255",
+						"macAddress": "b8:ca:3a:f5:24:f8",
+						"mtu": 1500,
+						"name": "Bond1G",
+						"namespace": false,
+						"netmask": "255.255.240.0",
+						"status": "UpAndRunning",
+						"type": "BondMaster",
+						"virtualNetworkTag": 0
+					}
+				}
+			}
+		]
+	}
+}
+----
+
+
+== 新的自版本
+
+9.6

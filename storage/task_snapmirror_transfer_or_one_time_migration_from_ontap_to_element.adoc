@@ -1,0 +1,79 @@
+---
+permalink: storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html 
+sidebar: sidebar 
+keywords: transfer, perform, source volume, snapmirror, dr, disaster recovery, one-time migration 
+summary: 一般而言、當您使用SnapMirror從SolidFire 執行NetApp Element 各種功能的支援資料儲存叢集到ONTAP 支援各種功能的軟體進行災難恢復時、元素就是來源ONTAP 、而不只是目的地。不過ONTAP 、在某些情況下、由於來源和元素是目的地、所以不能使用此功能。 
+---
+= 執行ONTAP 從功能性到元件的傳輸或一次性移轉
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+一般而言、當您使用SnapMirror從SolidFire 執行NetApp Element 各種功能的支援資料儲存叢集到ONTAP 支援各種功能的軟體進行災難恢復時、元素就是來源ONTAP 、而不只是目的地。不過ONTAP 、在某些情況下、由於來源和元素是目的地、所以不能使用此功能。
+
+* 存在兩種情況：
++
+** 不存在先前的災難恢復關係。請遵循本程序中的所有步驟。
+** 先前的災難恢復關係確實存在、但在用於此緩解的磁碟區之間卻沒有關係。在此情況下、請僅執行下列步驟3和4。
+
+
+
+
+.您需要的是 #8217 ；需要的是什麼
+* 元素目的地節點必須已可供ONTAP 不必要的人存取。
+* 必須已啟用元素Volume才能進行SnapMirror複寫。
+
+
+您必須以hostip：/LUN/<id_number>格式指定元素目的地路徑、其中LUN為實際字串「'lun'」、id_number為元素Volume的ID。
+
+.步驟
+. 使用NetApp建立與元素叢集的關係：ONTAP
++
+[listing]
+----
+snapmirror create -source-path SVM:volume|cluster://SVM/volume
+-destination-path hostip:/lun/name -type XDP -schedule schedule -policy
+    policy
+----
++
+[listing]
+----
+cluster_dst::> snapmirror create -source-path svm_1:volA_dst
+-destination-path 10.0.0.11:/lun/0005 -type XDP -schedule my_daily -policy MirrorLatest
+----
+. 使用ONTAP SnapMirror show命令驗證SnapMirror關係是否已建立。
++
+如需建立複寫關係的詳細資訊、請參閱ONTAP 《關於建立複寫關係的資訊》文件、以及完整的命令語法、請參閱ONTAP 《關於建立複寫關係的資訊》手冊頁。
+
+. 使用「ElementCreate Volume」API建立目標Volume、並將目標Volume存取模式設定為SnapMirror：
++
+使用Element API建立Element Volume
+
++
+[listing]
+----
+{
+   "method": "CreateVolume",
+   "params": {
+        "name": "SMTargetVolumeTest2",
+        "accountID": 1,
+        "totalSize": 100000000000,
+        "enable512e": true,
+        "attributes": {},
+        "qosPolicyID": 1,
+        "enableSnapMirrorReplication": true,
+        "access": "snapMirrorTarget"
+    },
+    "id": 1
+}
+----
+. 使用ONTAP fitshapmirror initialize命令初始化複寫關係：
++
+[listing]
+----
+snapmirror initialize -source-path hostip:/lun/name
+-destination-path SVM:volume|cluster://SVM/volume
+----
+

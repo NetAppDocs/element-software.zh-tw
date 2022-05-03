@@ -1,0 +1,172 @@
+---
+permalink: api/reference_element_api_addaccount.html 
+sidebar: sidebar 
+keywords: addaccount,add,adding,account,accounts 
+summary: 您可以使用AddAccount將新帳戶新增至系統。您也可以在建立帳戶時、使用此方法在新帳戶下建立新的磁碟區。您為帳戶指定的Challenge（挑戰）握手驗證傳輸協定（CHAP）設定、會套用至帳戶所擁有的所有磁碟區。 
+---
+= AddAccount
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「AddAccount」（新增帳戶）將新帳戶新增至系統。您也可以在建立帳戶時、使用此方法在新帳戶下建立新的磁碟區。您為帳戶指定的Challenge（挑戰）握手驗證傳輸協定（CHAP）設定會套用至帳戶所擁有的所有磁碟區。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+「enableChap」
+ a| 
+指定啟動器是否可以使用CHAP帳戶認證來存取磁碟區。
+ a| 
+布林值
+ a| 
+是的
+ a| 
+否
+
+
+
+ a| 
+「初始者秘密」
+ a| 
+用於啟動器的CHAP機密。此機密長度必須為12至16個字元、且不可滲透。啟動器CHAP密碼必須是唯一的、不得與目標CHAP密碼相同。如果未指定、則會建立隨機密碼。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+《目標祕密》
+ a| 
+用於目標的CHAP機密（交互CHAP驗證）。此機密長度必須為12至16個字元、且不可滲透。目標CHAP機密必須是唯一的、不得與啟動器CHAP機密相同。如果未指定、則會建立隨機密碼。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+《使用者名稱》
+ a| 
+此帳戶的唯一使用者名稱。（長度必須為1到64個字元）。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+帳戶
+ a| 
+包含新建立帳戶相關資訊的物件。
+ a| 
+xref:reference_element_api_account.adoc[帳戶]
+
+
+
+ a| 
+帳戶ID
+ a| 
+新建立帳戶物件的ID。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+	"method": "AddAccount",
+    "params": {
+     "username"  : "bobsmith",
+     "initiatorSecret" : "168[#5A757ru268)",
+     "targetSecret" : "tlt&lt;,8TUYa7bC",
+     "attributes" : {
+       "billingcode" : 2345
+     }
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "account": {
+      "accountID": 90,
+      "attributes": {
+        "billingcode": 2345
+      },
+      "initiatorSecret": "168[#5A757ru268)",
+      "status": "active",
+      "storageContainerID": "00000000-0000-0000-0000-000000000000",
+      "targetSecret": "tlt&lt;,8TUYa7bC",
+      "username": "bobsmith",
+      "volumes": [],
+      "enableChap": true
+    },
+    "accountID": 90
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

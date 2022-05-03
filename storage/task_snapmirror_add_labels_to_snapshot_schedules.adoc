@@ -1,0 +1,55 @@
+---
+permalink: storage/task_snapmirror_add_labels_to_snapshot_schedules.html 
+sidebar: sidebar 
+keywords: snapmirror labels, add labels to snapshot schedules, snapmirror policies 
+summary: 您可以將SnapMirror標籤新增至快照排程、以確保已套用SnapMirror原則。您可以從現有的SnapMirror關係對話方塊或NetApp ONTAP System Manager檢視可用的標籤。 
+---
+= 在快照排程中新增SnapMirror標籤
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將SnapMirror標籤新增至快照排程、以確保已套用SnapMirror原則。您可以從現有的SnapMirror關係對話方塊或NetApp ONTAP System Manager檢視可用的標籤。
+
+.您需要的是 #8217 ；需要的是什麼
+* SnapMirror必須在叢集層級啟用。
+* 您要新增的標籤已存在ONTAP 於資訊技術中。
+
+
+.步驟
+. 按一下*資料保護*>*排程*。
+. 以下列其中一種方式將SnapMirror標籤新增至排程：
++
+[cols="25,75"]
+|===
+| 選項 | 步驟 
+
+
+ a| 
+建立新排程
+ a| 
+.. 選取*建立排程*。
+.. 輸入所有其他相關詳細資料。
+.. 選取*建立排程*。
+
+
+
+
+ a| 
+修改現有排程
+ a| 
+.. 按一下您要新增標籤的排程*動作*圖示、然後選取*編輯*。
+.. 在產生的對話方塊中、於* SnapMirror Label *欄位中輸入文字。
+.. 選取*儲存變更*。
+
+
+|===
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:task_data_protection_create_a_snapshot_schedule.adoc[建立快照排程]

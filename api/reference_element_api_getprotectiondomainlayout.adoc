@@ -1,0 +1,127 @@
+---
+permalink: api/reference_element_api_getprotectiondomainlayout.html 
+sidebar: sidebar 
+keywords: layout,custom,protection domain,protection domains,retrieve protection domains 
+summary: 您可以使用GetProtectionDomainLayout方法傳回叢集的所有保護網域資訊、包括每個節點所在的機箱和自訂保護網域。 
+---
+= GetProtectionDomainLayout
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetprotectionDomainLayout」方法來傳回叢集的所有保護網域資訊、包括每個節點所在的機箱和自訂保護網域。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+保護網域配置
+ a| 
+節點清單、每個節點及其相關的保護網域。
+ a| 
+的JSON.清單 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["節點保護網域"] 物件：
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetProtectionDomainLayout",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+
+{
+  "id": 1,
+  "result": {
+    "protectionDomainLayout": [
+      {
+        "nodeID": 1,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR2914008D",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 2,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR291500EA",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-1",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 3,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR291500C3",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      },
+      {
+        "nodeID": 4,
+        "protectionDomains": [
+          {
+            "protectionDomainName": "QTFCR291400E6",
+            "protectionDomainType": "chassis"
+          },
+          {
+            "protectionDomainName": "Rack-2",
+            "protectionDomainType": "custom"
+          }
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+12.0

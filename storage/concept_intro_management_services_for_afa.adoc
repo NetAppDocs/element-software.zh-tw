@@ -1,0 +1,14 @@
+---
+permalink: storage/concept_intro_management_services_for_afa.html 
+sidebar: sidebar 
+keywords: management services, aff 
+summary: 管理服務可為SolidFire 不完整的Flash儲存設備提供集中和延伸的管理功能。這些服務包括Active IQ 不支援的系統遙測、記錄和服務更新、以及針對Element Plug-in for vCenter的QoSSIOC服務。 
+---
+= 管理服務SolidFire 、適用於整合式All Flash儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理服務可為SolidFire 不完整的Flash儲存設備提供集中和延伸的管理功能。這些服務包括Active IQ 不支援的系統遙測、記錄和服務更新、以及針對Element Plug-in for vCenter的QoSSIOC服務。

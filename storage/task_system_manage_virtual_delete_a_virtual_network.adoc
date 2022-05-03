@@ -1,0 +1,26 @@
+---
+permalink: storage/task_system_manage_virtual_delete_a_virtual_network.html 
+sidebar: sidebar 
+keywords: virtual network delete, remove, object, address blocks, vlan 
+summary: 您可以移除虛擬網路物件。在移除虛擬網路之前、您必須先將位址區塊新增至其他虛擬網路。 
+---
+= 刪除虛擬網路
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以移除虛擬網路物件。在移除虛擬網路之前、您必須先將位址區塊新增至其他虛擬網路。
+
+. 按一下*叢集*>*網路*。
+. 按一下您要刪除之VLAN的「動作」圖示。
+. 按一下*刪除*。
+. 確認訊息。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:task_system_manage_virtual_edit_a_virtual_network.adoc[編輯虛擬網路]

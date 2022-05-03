@@ -1,0 +1,128 @@
+---
+permalink: api/reference_element_api_listschedules.html 
+sidebar: sidebar 
+keywords: snapshot,snapshots,list,listing,information,schedule,schedules,listschedules 
+summary: 您可以使用清單排程來取得已建立之所有排程快照的相關資訊。 
+---
+= 清單排程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「清單排程」來取得已建立之所有排程快照的相關資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+排程
+ a| 
+叢集上目前的排程清單。
+ a| 
+xref:reference_element_api_schedule.adoc[排程] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListSchedules",
+    "params": {},
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedules": [
+      {
+       "attributes": {
+         "frequency": "Days Of Week"
+       },
+       "hasError": false,
+       "hours": 0,
+       "lastRunStatus": "Success",
+       "lastRunTimeStarted": null,
+       "minutes": 1,
+       "monthdays": [],
+       "paused": false,
+       "recurring": false,
+       "runNextInterval": false,
+       "scheduleID": 3,
+       "scheduleInfo": {
+            "name": "Wednesday Schedule",
+            "retention": "00:02:00",
+            "volumeID": "2"
+      },
+      "scheduleName": "Vol2Schedule",
+      "scheduleType": "Snapshot",
+      "startingDate": "2015-03-23T20:08:33Z",
+      "toBeDeleted": false,
+      "weekdays": [
+          {
+            "day": 3,
+            "offset": 1
+          }
+     ]
+   },
+   {
+      "attributes": {
+          "frequency": "Time Interval"
+      },
+       "hasError": false,
+       "hours": 0,
+       "lastRunStatus": "Success",
+       "lastRunTimeStarted": "2015-03-23T21:40:00Z",
+       "minutes": 2,
+       "monthdays": [],
+       "paused": false,
+       "recurring": true,
+       "runNextInterval": false,
+       "scheduleID": 2,
+       "scheduleInfo": {
+            "name": "MCA2",
+            "volumeID": "3"
+       },
+       "scheduleName": "MCAsnapshot2",
+       "scheduleType": "Snapshot",
+       "startingDate": "2015-03-23T19:28:57Z",
+       "toBeDeleted": false,
+       "weekdays": []
+       }
+     ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

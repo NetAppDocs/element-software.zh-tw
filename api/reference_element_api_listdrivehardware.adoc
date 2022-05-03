@@ -1,0 +1,130 @@
+---
+permalink: api/reference_element_api_listdrivehardware.html 
+sidebar: sidebar 
+keywords: drive,hardware,list,listing,listdrivehardware,drives 
+summary: 您可以使用清單磁碟機硬體方法來列出所有連接至節點的磁碟機。在個別節點上使用時、此方法會傳回磁碟機硬體資訊。在叢集主節點MVIP上使用時、此方法會傳回所有節點上所有磁碟機的資訊。 
+---
+= 清單硬體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ListDriveHardware」方法列出所有連接至節點的磁碟機。在個別節點上使用時、此方法會傳回磁碟機硬體資訊。在叢集主節點MVIP上使用時、此方法會傳回所有節點上所有磁碟機的資訊。
+
+
+
+== 參數
+
+
+NOTE: 「安全性支援」：方法回應的真實行並不表示磁碟機能夠加密、只能查詢安全性狀態。如果您的節點類型的型號以「-NE」結尾、則在這些磁碟機上啟用安全功能的命令將會失敗。
+
+此方法具有下列參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+力
+ a| 
+設為true可在所有節點上執行此方法。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+磁碟機硬體
+ a| 
+已傳回節點的磁碟機硬體資訊。
+ a| 
+Json物件陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+"method": "ListDriveHardware",
+"params": {},
+"id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "driveHardware": [
+      {
+        "canonicalName": "sda",
+        "connected": true,
+        "dev": 2048,
+        "devPath": "/dev/slot0",
+        "driveEncryptionCapability": "fips",
+        "driveType": "Slice",
+        "lifeRemainingPercent": 98,
+        "lifetimeReadBytes": 0,
+        "lifetimeWriteBytes": 14012129542144,
+        "name": "scsi-SATA_SAMSUNG_MZ7GE24S1M9NWAG501251",
+        "path": "/dev/sda",
+        "pathLink": "/dev/slot0",
+        "powerOnHours": 15489,
+        "product": "SAMSUNG MZ7GE240HMGR-00003",
+        "reallocatedSectors": 0,
+        "reserveCapacityPercent": 100,
+        "scsiCompatId": "scsi-SATA_SAMSUNG_MZ7GE24S1M9NWAG501251",
+        "scsiState": "Running",
+        "securityAtMaximum": false,
+        "securityEnabled": true,
+        "securityFrozen": false,
+        "securityLocked": false,
+        "securitySupported": true,
+        "serial": "S1M9NWAG501251",
+        "size": 240057409536,
+        "slot": 0,
+        "uncorrectableErrors": 0,
+        "uuid": "789aa05d-e49b-ff4f-f821-f60eed8e43bd",
+        "vendor": "Samsung",
+        "version": "EXT1303Q"
+      }
+   ]
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_enableencryptionatrest.adoc[啟用EncryptionAtRest]

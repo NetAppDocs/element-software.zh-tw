@@ -1,0 +1,81 @@
+---
+permalink: api/reference_element_api_getloginsessioninfo.html 
+sidebar: sidebar 
+keywords: cluster,get,getting,login,session,info,getloginsessioninfo 
+summary: 您可以使用GetLoginSessionInfo方法、傳回登入驗證工作階段對登入Shell和TUI均有效的期間。 
+---
+= GetLoginSessionInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetLoginSessionInfo」方法、傳回登入驗證工作階段對登入Shell和TUI均有效的時間段。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+登入工作階段資訊
+ a| 
+包含驗證到期期間的物件。可能傳回的物件：
+
+* 逾時：
++
+此工作階段逾時和過期的時間（以分鐘為單位）。格式化為H：MM：s例如：1：30：00、20：00、5：00。無論輸入的逾時格式為何、都會移除所有前置零和分欄。
+
+
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetLoginSessionInfo",
+    "params": {},
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+"id": 1,
+  "result" : {
+    "loginSessionInfo" : {
+      "timeout" : "30:00"
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,51 @@
+---
+permalink: api/index.html 
+sidebar: sidebar 
+keywords: element, api, storage, manage, cluster, volumes, json, rpc, https 
+summary: 瞭NetApp Element 解如何使用Element API來管理不實的儲存叢集。 
+---
+= 使用Element API管理儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Element軟體API來管理元素儲存叢集。
+
+元素API是以透過HTTPS的JSON-RPC傳輸協定為基礎。JSON-RPC是以輕量化JSON資料交換格式為基礎的簡單文字型RPC傳輸協定。用戶端程式庫適用於所有主要的程式設計語言。
+
+* xref:concept_element_api_about_the_api.adoc[關於Element軟體API]
+* xref:concept_element_api_common_objects.adoc[通用物件]
+* xref:concept_element_api_common_methods.adoc[常見方法]
+* xref:concept_element_api_account_api_methods.adoc[帳戶API方法]
+* xref:concept_element_api_administrator_api_methods.adoc[系統管理員API方法]
+* xref:concept_element_api_cluster_api_methods.adoc[叢集API方法]
+* xref:concept_element_api_create_cluster_api_methods.adoc[叢集建立API方法]
+* xref:concept_element_api_drive_api_methods.adoc[磁碟機API方法]
+* xref:concept_element_api_fibre_channel_api_methods.adoc[Fibre Channel API方法]
+* xref:concept_element_api_initiator_api_methods.adoc[啟動器API方法]
+* xref:concept_element_api_ldap_api_methods.adoc[LDAP API方法]
+* xref:concept_element_api_multi_factor_authentication_api_methods.adoc[多因素驗證API方法]
+* xref:concept_element_api_session_authentication_api_methods.adoc[工作階段驗證API方法]
+* xref:concept_element_api_node_api_methods.adoc[節點API方法]
+* xref:concept_element_api_replication_api_methods.adoc[複寫API方法]
+* xref:concept_element_api_security_api_methods.adoc[安全API方法]
+* xref:concept_element_api_snapmirror_api_methods.adoc[SnapMirror API方法]
+* xref:concept_element_api_system_configuration_api_methods.adoc[系統組態API方法]
+* xref:concept_element_api_multitenant_networking_api_methods.adoc[多租戶網路API方法]
+* xref:concept_element_api_volume_api_methods.adoc[Volume API方法]
+* xref:concept_element_api_volume_access_group_api_methods.adoc[Volume存取群組API方法]
+* xref:concept_element_api_volume_snapshot_api_methods.adoc[Volume Snapshot API方法]
+* xref:concept_element_api_vvols_api_methods.adoc[虛擬Volume API方法]
+* xref:reference_element_api_app_b_access_control.adoc[存取控制]
+* xref:concept_element_api_response_examples.adoc[回應範例]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["「All Flash儲存資源」頁面SolidFire"^]
+* http://docs.netapp.com/sfe-122/index.jsp["元件與元件軟體文件中心SolidFire"^]
+

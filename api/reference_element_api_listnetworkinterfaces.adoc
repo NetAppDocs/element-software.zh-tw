@@ -1,0 +1,158 @@
+---
+permalink: api/reference_element_api_listnetworkinterfaces.html 
+sidebar: sidebar 
+keywords: network,interface,interfaces,list,listing,listnetworkinterfaces 
+summary: 您可以使用清單網路介面方法、列出節點上每個網路介面的相關資訊。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面。 
+---
+= 列表網路介面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「清單網路介面」方法來列出節點上每個網路介面的相關資訊。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+力
+ a| 
+可能值：
+
+* true：傳回叢集中所有網路介面的相關資訊。
+* 否：未傳回任何資訊。
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+介面
+ a| 
+儲存節點（或整個儲存叢集、如果force =「true」）的每個網路介面組態資訊清單。
+ a| 
+xref:reference_element_api_networkinterface.adoc[網路介面] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+"method": "ListNetworkInterfaces",
+"params": {},
+"id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"nodes": [
+			{
+				"nodeID": 1,
+				"result": {
+					"interfaces": [
+						{
+							"address": "10.117.80.32",
+							"addressV6": "::",
+							"broadcast": "10.117.95.255",
+							"macAddress": "90:b1:1c:42:e0:1a",
+							"mtu": 9000,
+							"name": "Bond10G",
+							"namespace": false,
+							"netmask": "255.255.240.0",
+							"status": "UpAndRunning",
+							"type": "BondMaster",
+							"virtualNetworkTag": 0
+						},
+						{
+							"address": "10.117.64.32",
+							"addressV6": "::",
+							"broadcast": "10.117.79.255",
+							"macAddress": "90:b1:1c:42:e0:1e",
+							"mtu": 1500,
+							"name": "Bond1G",
+							"namespace": false,
+							"netmask": "255.255.240.0",
+							"status": "UpAndRunning",
+							"type": "BondMaster",
+							"virtualNetworkTag": 0
+						},
+						{
+							"address": "0.0.0.0",
+							"addressV6": "::",
+							"broadcast": "0.0.0.0",
+							"macAddress": "90:b1:1c:42:e0:1a",
+							"mtu": 9000,
+							"name": "eth0",
+							"namespace": false,
+							"netmask": "0.0.0.0",
+							"status": "UpAndRunning",
+							"type": "BondSlave",
+							"virtualNetworkTag": 0
+						},
+						{
+							"address": "127.0.0.1",
+							"addressV6": "::",
+							"broadcast": "0.0.0.0",
+							"macAddress": "00:00:00:00:00:00",
+							"mtu": 0,
+							"name": "lo",
+							"namespace": false,
+							"netmask": "0.0.0.0",
+							"status": "UpAndRunning",
+							"type": "Loopback",
+							"virtualNetworkTag": 0
+						}
+					]
+				}
+			}
+		]
+	}
+}
+----
+
+
+== 新的自版本
+
+9.6

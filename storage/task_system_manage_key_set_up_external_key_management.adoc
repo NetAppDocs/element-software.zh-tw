@@ -1,0 +1,61 @@
+---
+permalink: storage/task_system_manage_key_set_up_external_key_management.html 
+sidebar: sidebar 
+keywords: sign request, certificate authority, software encryption at rest, ear, eks, csr 
+summary: 您可以遵循下列步驟、並使用列出的Element API方法來設定外部金鑰管理功能。 
+---
+= 設定外部金鑰管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以遵循下列步驟、並使用列出的Element API方法來設定外部金鑰管理功能。
+
+.您需要的是 #8217 ；需要的是什麼
+* 如果您要設定外部金鑰管理、並在閒置時搭配軟體加密、則已使用啟用軟體加密功能 link:../api/reference_element_api_createcluster.html["建立叢集"] 不含磁碟區的新叢集方法。
+
+
+.步驟
+. 與外部金鑰伺服器（EKS）建立信任關係。
++
+.. 針對元素叢集建立公開/私密金鑰配對、以呼叫下列API方法來建立與金鑰伺服器的信任關係： link:../api/reference_element_api_createpublicprivatekeypair.html["建立PublicPrivate KeyPair"]
+.. 取得認證機構需要簽署的認證簽名要求（CSR）。CSR可讓金鑰伺服器驗證要存取金鑰的元素叢集是否已驗證為元素叢集。請撥打下列API方法： link:../api/reference_element_api_getclientcertificatesignrequest.html["GetClientCertificateSignRequest"]
+.. 使用EKS/Certificate Authority簽署擷取的CSR。如需詳細資訊、請參閱第三方文件。
+
+
+. 在叢集上建立伺服器和供應商、以便與EKS通訊。金鑰供應商會定義金鑰的取得位置、而伺服器則會定義要與之通訊的EKS特定屬性。
++
+.. 透過呼叫下列API方法、建立主要伺服器詳細資料所在的主要供應商： link:../api/reference_element_api_createkeyproviderkmip.html["CreeKeyProviderKmip"]
+.. 透過呼叫下列API方法來建立金鑰伺服器、以提供已簽署的憑證和憑證授權單位的公開金鑰憑證： link:../api/reference_element_api_createkeyserverkmip.html["CreKeyServerKmip"]
+link:../api/reference_element_api_testkeyserverkmip.html["TestKeyServerKmip"]
++
+如果測試失敗、請確認您的伺服器連線能力和組態。然後重複測試。
+
+.. 透過呼叫下列API方法、將金鑰伺服器新增至金鑰提供者容器：link:../api/reference_element_api_addkeyservertoproviderkmip.html["AddKeyServerToProviderKmip"]
+link:../api/reference_element_api_testkeyproviderkmip.html["TestKeyProviderKmip"]
++
+如果測試失敗、請確認您的伺服器連線能力和組態。然後重複測試。
+
+
+
+. 請執行下列其中一項、做為靜止加密的下一步：
++
+.. （用於靜止時的硬體加密）啟用 link:../concepts/concept_solidfire_concepts_security.html["硬體加密功能"] 提供金鑰提供者的ID、其中包含用來透過呼叫來儲存金鑰的金鑰伺服器 link:../api/reference_element_api_enableencryptionatrest.html["啟用EncryptionAtRest"] API方法。
++
+
+NOTE: 您必須透過啟用加密功能 link:../api/reference_element_api_enableencryptionatrest.html["API"]。使用現有元素UI按鈕啟用靜止加密、將會導致功能回復為使用內部產生的金鑰。
+
+.. （用於閒置時的軟體加密） link:../concepts/concept_solidfire_concepts_security.html["軟體加密功能"] 若要使用新建立的金鑰提供者、請將金鑰提供者ID傳送至 link:../api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html["RekeySoftwareEncryptionAt恢復 主金鑰"] API方法。
+
+
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* link:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["啟用及停用叢集的加密"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

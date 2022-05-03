@@ -1,0 +1,18 @@
+---
+permalink: concepts/concept_intro_management_node.html 
+sidebar: sidebar 
+keywords: what is, element mnode, management node, mnode 
+summary: 管理節點（mNode）是與一或多個元件軟體型儲存叢集平行執行的虛擬機器。它用於升級和提供系統服務、包括監控和遙測、管理叢集資產和設定、執行系統測試和公用程式、以及啟用NetApp支援存取來進行疑難排解。 
+---
+= Element軟體的管理節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+。 link:../mnode/task_mnode_work_overview.html["管理節點（mNode）"] 是與一或多個元件軟體型儲存叢集平行執行的虛擬機器。它用於升級和提供系統服務、包括監控和遙測、管理叢集資產和設定、執行系統測試和公用程式、以及啟用NetApp支援存取來進行疑難排解。
+
+管理節點會與儲存叢集互動以執行管理動作、但不是儲存叢集的成員。管理節點會透過API呼叫定期收集叢集相關資訊、並將此資訊回報Active IQ 給VMware以供遠端監控（若已啟用）。管理節點也負責協調叢集節點的軟體升級。
+
+從Element 11.3版本開始、管理節點就能做為微服務主機、以便在主要版本之外更快更新精選軟體服務。這些微服務或 link:../concepts/concept_intro_management_services_for_afa.html["管理服務"] 會經常更新為服務組合。

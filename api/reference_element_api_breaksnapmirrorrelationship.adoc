@@ -1,0 +1,81 @@
+---
+permalink: api/reference_element_api_breaksnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: SnapMirror,volume,volumes,break,breaking,relationship,ONTAP 
+summary: 元素Web UI使用BreakSnapMirrorRelationship方法來打破SnapMirror關係。當SnapMirror關係中斷時、目的地磁碟區會變成讀寫且獨立的磁碟區、然後可能會與來源不同。您可以重新建立與ResyncdSnapMirrorRelationship API方法的關係。此方法需要ONTAP 使用無法使用的叢集。 
+---
+= BreakSnapMirrorRelationationations.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI使用「BreakSnapMirrorRelationship」方法來打破SnapMirror關係。當SnapMirror關係中斷時、目的地磁碟區會變成讀寫且獨立的磁碟區、然後可能會與來源不同。您可以重新建立與「ResyncdSnapMirrorRelationationationship」API方法的關係。此方法需要ONTAP 使用無法使用的叢集。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+遠端ONTAP 不整合式儲存系統的端點ID、可與元件儲存叢集通訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+destinationVolume
+ a| 
+SnapMirror關係中的目的地Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorRelationationationationship
+ a| 
+包含中斷SnapMirror關係相關資訊的物件。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationationationationship]
+
+|===
+
+
+== 新的自版本
+
+10.1
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_breaksnapmirrorvolume.adoc[BreakSnapMirrorVolume]

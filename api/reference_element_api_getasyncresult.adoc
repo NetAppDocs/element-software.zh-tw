@@ -1,0 +1,223 @@
+---
+permalink: api/reference_element_api_getasyncresult.html 
+sidebar: sidebar 
+keywords: async,asynchronous,results,result,get,getting,GetAsyncResult 
+summary: 您可以使用Get非 同步還原來擷取非同步方法呼叫的結果。有些方法呼叫需要一段時間才能執行、而且系統傳送初始回應時可能尚未完成。若要取得方法呼叫的狀態或結果、請使用Getynprynet來輪詢方法傳回的asyncdyle值。 
+---
+= Get非 同步結果
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Getynresult」擷取非同步方法呼叫的結果。有些方法呼叫需要一段時間才能執行、而且系統傳送初始回應時可能尚未完成。若要取得方法呼叫的狀態或結果、請使用「Getynresult」來輪詢方法傳回的asyncdyle值。
+
+「GetSuccession Result」會以標準方式傳回作業的整體狀態（進行中、已完成或錯誤）、但針對作業傳回的實際資料則取決於原始方法呼叫、而且每種方法都會記錄傳回資料。
+
+如果缺少keepResult參數或參數為假、則傳回結果時asyncdyle會變成非作用中狀態、之後會嘗試查詢該asyncdle傳回錯誤。您可以將keepResult參數設定為true、讓asyncdyle在未來的查詢中保持作用狀態。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+asyncdle
+ a| 
+從原始非同步方法呼叫傳回的值。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+keepResult
+ a| 
+如果為true、Getynpre Result在傳回時不會移除非同步結果、因此日後會對該asyncdle進行查詢。
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+狀態
+ a| 
+非同步方法呼叫的狀態。可能值：
+
+* 執行中：方法仍在執行中。
+* 完成：方法已完成、且有結果或錯誤可供使用。
+
+ a| 
+字串
+
+
+
+ a| 
+結果
+ a| 
+如果非同步方法成功完成、這是非同步作業的結果。如果非同步作業失敗、則此成員不存在。
+ a| 
+字串
+
+
+
+ a| 
+錯誤
+ a| 
+如果狀態為「完整」、且非同步方法失敗、則此成員會包含錯誤詳細資料。如果非同步作業成功、則此成員不存在。
+ a| 
+字串
+
+
+
+ a| 
+結果類型
+ a| 
+非同步方法呼叫正在執行或正在執行的操作類型。
+ a| 
+字串
+
+
+
+ a| 
+詳細資料
+ a| 
+如果狀態為執行中、則此成員會包含與方法目前作業相關的資訊。如果非同步方法未執行、則此成員不存在。
+ a| 
+Json物件
+
+
+
+ a| 
+CREATETIM
+ a| 
+以UTC +0格式呼叫非同步方法的時間。
+ a| 
+ISO 8601日期字串
+
+
+
+ a| 
+最後更新時間
+ a| 
+非同步方法狀態上次更新的時間、格式為UTC+0。
+ a| 
+ISO 8601日期字串
+
+|===
+*附註：* GetSuccessynresult的傳回值基本上是標準Json回應的巢狀版本、並具有額外的狀態欄位。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetAsyncResult",
+  "params": {
+      "asyncHandle" : 389
+},
+"id" : 1
+}
+----
+
+
+== 回應範例：方法錯誤
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "error": {
+      "code": 500,
+      "message": "DBClient operation requested on a non-existent path at [/asyncresults/1]",
+      "name": "xDBNoSuchPath"
+   },
+   "id": 1
+}
+----
+如果「response」是來自Getynprynet呼叫的Json回應物件、則「response.error」會對應至Getynprynet方法本身的錯誤（例如查詢不存在的asyncdyle）。
+
+
+
+== 回應範例：非同步工作錯誤
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "createTime": "2016-01-01T02:05:53Z",
+     "error": {
+       "bvID": 1,
+       "message": "Bulk volume job failed",
+       "name": "xBulkVolumeScriptFailure",
+       "volumeID": 34
+     },
+     "lastUpdateTime": "2016-01-21T02:06:56Z",
+     "resultType": "BulkVolume",
+     "status": "complete"
+   }
+}
+----
+「回應.result.error'」對應於原始方法呼叫所產生的錯誤。
+
+
+
+== 回應範例：非同步工作成功
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "createTime": "2016-01-01T22:29:18Z",
+     "lastUpdateTime": "2016-01-01T22:45:51Z",
+     "result": {
+       "cloneID": 25,
+       "message": "Clone complete.",
+       "volumeID": 47
+     },
+     "resultType": "Clone",
+     "status": "complete"
+   }
+}
+----
+如果通話成功完成、「respose．resresult.result」是原始方法通話的傳回值。
+
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,66 @@
+---
+permalink: storage/task_system_manage_enable_ldap_authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以設定儲存系統與現有LDAP伺服器的整合。這可讓LDAP管理員集中管理使用者的儲存系統存取。 
+---
+= 使用元素使用者介面啟用LDAP驗證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定儲存系統與現有LDAP伺服器的整合。這可讓LDAP管理員集中管理使用者的儲存系統存取。
+
+您可以使用元素使用者介面或元素API來設定LDAP。本程序說明如何使用Element UI來設定LDAP。
+
+本範例說明如何在SolidFire 列舉的功能上設定LDAP驗證、並使用「實作連結」作為驗證類型。範例使用單一Windows Server 2012 R2 Active Directory伺服器。
+
+. 按一下*叢集*>* LDAP *。
+. 按一下「*是*」以啟用LDAP驗證。
+. 按一下*「新增伺服器*」。
+. 輸入*主機名稱/IP位址*。
++
+
+NOTE: 您也可以輸入選用的自訂連接埠號碼。
+
++
+例如、若要新增自訂連接埠號碼、請輸入：
+
+. 選擇*使用LDAPS傳輸協定*。
+. 在*一般設定*中輸入必要資訊。
++
+link:reference_system_manage_ldap_details.md#["LDAP詳細資料"]
+
++
+image::../media/element_new_ldap_servers.jpg[元素新的LDAP伺服器]
+
+. 按一下*啟用LDAP*。
+. 如果您要測試使用者的伺服器存取、請按一下*測試使用者驗證*。
+. 複製建立叢集管理員時、顯示的辨別名稱和使用者群組資訊、以供日後使用。
+. 按一下*儲存變更*以儲存任何新設定。
+. 若要在此群組中建立使用者、讓任何人都能登入、請完成下列步驟：
++
+.. 按一下*使用者*>*檢視*。
++
+image::../media/element_new_cluster_admin.jpg[Element新叢集管理]
+
+.. 對於新使用者、請按一下「使用者類型」的「* LDAP*」、然後將複製的群組貼到「辨別名稱」欄位。
+.. 選取權限、通常是所有權限。
+.. 向下捲動至「使用者授權合約」、然後按一下「*我接受*」。
+.. 按一下「*建立叢集管理*」。
++
+現在您的使用者擁有Active Directory群組的值。
+
+
+
+
+
+若要測試、請登出Element UI、然後以該群組中的使用者身分重新登入。
+
+*相關資訊*
+
+xref:task_system_manage_create_a_cluster_administrator_account.adoc[建立叢集管理員帳戶]
+
+xref:reference_system_manage_ldap_details.adoc[LDAP詳細資料]

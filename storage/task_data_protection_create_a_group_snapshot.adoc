@@ -1,0 +1,44 @@
+---
+permalink: storage/task_data_protection_create_a_group_snapshot.html 
+sidebar: sidebar 
+keywords: group snapshot, create, volumes, schedule, automate group snapshots 
+summary: 您可以建立一組磁碟區的快照、也可以建立群組快照排程來自動化群組快照。單一群組快照一次最多可持續快照32個磁碟區。 
+---
+= 建立群組快照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立一組磁碟區的快照、也可以建立群組快照排程來自動化群組快照。單一群組快照一次最多可持續快照32個磁碟區。
+
+.步驟
+. 按一下*管理*>*磁碟區*。
+. 使用核取方塊為一組磁碟區選取多個磁碟區。
+. 按一下*大量動作*。
+. 按一下*群組Snapshot *。
+. 在Create Group Snapshot of Volumes（建立磁碟區的群組快照）對話方塊中輸入新的群組快照名稱。
+. *選用：*選取*在配對後將每個群組Snapshot成員加入複寫*核取方塊、以確保在配對父Volume時、複寫時擷取每個快照。
+. 選取群組快照的保留選項：
++
+** 按一下*「永遠保留」*、即可無限期保留系統上的快照。
+** 按一下*設定保留期間*、然後使用日期微調方塊來選擇系統保留快照的時間長度。
+
+
+. 若要立即執行單一快照、請執行下列步驟：
++
+.. 按一下*立即取得群組Snapshot *。
+.. 按一下*建立群組Snapshot *。
+
+
+. 若要排定快照在未來執行、請執行下列步驟：
++
+.. 按一下「*建立群組Snapshot排程*」。
+.. 輸入*新排程名稱*。
+.. 從清單中選取*排程類型*。
+.. *選用：*選取「*週期性排程*」核取方塊、定期重複排程的快照。
+.. 按一下*建立排程*。
+
+
+

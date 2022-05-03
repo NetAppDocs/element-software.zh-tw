@@ -1,0 +1,151 @@
+---
+permalink: api/reference_element_api_listservices.html 
+sidebar: sidebar 
+keywords: storage,cluster,services,list,listing,listservices 
+summary: 您可以使用清單服務方法、列出叢集上執行之節點、磁碟機、目前軟體及其他服務的服務資訊。 
+---
+= 列表服務
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「清單服務」方法、列出叢集上執行之節點、磁碟機、目前軟體及其他服務的服務資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+服務
+ a| 
+在磁碟機和節點上執行的服務。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListServices",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+"id": 1,
+"result": {
+	"services": [
+		{
+			"drive": {
+				"assignedService": 22,
+				"asyncResultIDs": [],
+				"attributes": {},
+				"capacity": 300069052416,
+				"customerSliceFileCapacity": 0,
+				"driveID": 5,
+				"driveStatus": "assigned",
+				"driveType": "block",
+				"failCount": 0,
+				"nodeID": 4,
+				"reservedSliceFileCapacity": 0,
+				"serial": "scsi-SATA_INTEL_SSDSC2",
+				"slot": 3
+			},
+			"drives": [
+				{
+					"assignedService": 22,
+					"asyncResultIDs": [],
+					"attributes": {},
+					"capacity": 300069052416,
+					"customerSliceFileCapacity": 0,
+					"driveID": 5,
+					"driveStatus": "assigned",
+					"driveType": "Block",
+					"failCount": 0,
+					"nodeID": 4,
+					"reservedSliceFileCapacity": 0,
+					"serial": "scsi-SATA_INTEL_SSDSC2",
+					"slot": 3
+				}
+			],
+			"node": {
+				"associatedFServiceID": 0,
+				"associatedMasterServiceID": 1,
+				"attributes": {},
+				"cip": "10.117.63.18",
+				"cipi": "Bond10G",
+				"fibreChannelTargetPortGroup": null,
+				"mip": "10.117.61.18",
+				"mipi": "Bond1G",
+				"name": "node4",
+				"nodeID": 4,
+				"nodeSlot": "",
+				"platformInfo": {
+					"chassisType": "R620",
+					"cpuModel": "Intel(R) Xeon(R) CPU",
+					"nodeMemoryGB": 72,
+					"nodeType": "SF3010",
+					"platformConfigVersion": "10.0"
+				},
+				"sip": "10.117.63.18",
+				"sipi": "Bond10G",
+				"softwareVersion": "10.0",
+				"uuid": "4C4C4544-0053",
+				"virtualNetworks": []
+			},
+			"service": {
+				"associatedBV": 0,
+				"associatedTS": 0,
+				"associatedVS": 0,
+				"asyncResultIDs": [
+					1
+				],
+				"driveID": 5,
+				"driveIDs": [
+					5
+				],
+				"firstTimeStartup": true,
+				"ipcPort": 4008,
+				"iscsiPort": 0,
+				"nodeID": 4,
+				"serviceID": 22,
+				"serviceType": "block",
+				"startedDriveIDs": [],
+				"status": "healthy"
+			}
+		}
+	]
+}
+----
+
+
+== 新的自版本
+
+9.6

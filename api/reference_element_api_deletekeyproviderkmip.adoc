@@ -1,0 +1,78 @@
+---
+permalink: api/reference_element_api_deletekeyproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key provider,deleting,delete 
+summary: 您可以使用刪除KeyProviderKmip方法刪除指定的非作用中金鑰管理互通性傳輸協定（KMIP）金鑰提供者。 
+---
+= 刪除KeyProviderKmip
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「刪除KeyProviderKmip」方法刪除指定的非作用中金鑰管理互通性傳輸協定（KMIP）金鑰提供者。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+KeyProviderID
+ a| 
+要刪除的金鑰提供者ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。只要沒有錯誤、刪除作業就會被視為成功。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "DeleteKeyProviderKmip",
+  "params": {
+    "keyProviderID": "1"
+    },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+}
+----
+
+
+== 新的自版本
+
+11.7

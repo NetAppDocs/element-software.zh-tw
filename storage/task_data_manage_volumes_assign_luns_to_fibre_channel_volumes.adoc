@@ -1,0 +1,24 @@
+---
+permalink: storage/task_data_manage_volumes_assign_luns_to_fibre_channel_volumes.html 
+sidebar: sidebar 
+keywords: volumes, fc, luns, access group, assign 
+summary: 您可以變更Volume存取群組中光纖通道磁碟區的LUN指派。您也可以在建立磁碟區存取群組時、進行Fibre Channel Volume LUN指派。 
+---
+= 將LUN指派給光纖通道磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以變更Volume存取群組中光纖通道磁碟區的LUN指派。您也可以在建立磁碟區存取群組時、進行Fibre Channel Volume LUN指派。
+
+指派新的光纖通道LUN是一項進階功能、可能會對連線主機造成不明的後果。例如、新的LUN ID可能不會在主機上自動探索、主機可能需要重新掃描才能探索新的LUN ID。
+
+. 選擇*管理*>*存取群組*。
+. 按一下您要編輯之存取群組的「動作」圖示。
+. 在產生的功能表中、選取「*編輯*」。
+. 在「*編輯Volume存取群組*」對話方塊的「*指派LUN ID*」下、按一下「* LUN指派*」清單上的箭頭。
+. 針對清單中您要指派LUN的每個Volume、在對應的「* LUN *」欄位中輸入新值。
+. 按一下*儲存變更*。
+

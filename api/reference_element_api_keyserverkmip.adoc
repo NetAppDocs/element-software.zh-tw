@@ -1,0 +1,96 @@
+---
+permalink: api/reference_element_api_keyserverkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,keys 
+summary: KeyServerKmip物件說明金鑰管理互通性傳輸協定（KMIP）金鑰伺服器、這是擷取驗證金鑰以搭配叢集功能（例如靜止加密）使用的位置。 
+---
+= KeyServerKmip
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+KeyServerKmip物件說明金鑰管理互通性傳輸協定（KMIP）金鑰伺服器、此金鑰伺服器是擷取驗證金鑰以搭配叢集功能（例如靜止加密）使用的位置。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+KeyProviderID
+ a| 
+如果此KMIP金鑰伺服器已指派給供應商、則此成員會包含指派給它的KMIP金鑰提供者ID。否則此成員為null。
+ a| 
+整數
+
+
+
+ a| 
+KeyServerID
+ a| 
+KMIP金鑰伺服器的ID。這是叢集在建立金鑰伺服器期間指派的唯一值。此值無法變更。
+ a| 
+整數
+
+
+
+ a| 
+kmipAssignedProviderIsActive
+ a| 
+如果此KMIP金鑰伺服器已指派給供應商（KeyProviderID不是null）、則此成員會指出該供應商是否處於作用中狀態（提供目前正在使用的金鑰）。否則、此成員為null。
+ a| 
+布林值
+
+
+
+ a| 
+KmipCaCertificate
+ a| 
+外部金鑰伺服器根CA的公開金鑰憑證。這是用來驗證外部金鑰伺服器在TLS通訊中提供的憑證。對於個別伺服器使用不同CA的金鑰伺服器叢集、此成員包含所有CA根憑證的串連字串。
+ a| 
+字串
+
+
+
+ a| 
+kmipClientCertificate
+ a| 
+元素儲存設備KMIP用戶端所使用的PEE格式Base64編碼的PKCS#10 X．509憑證。
+ a| 
+字串
+
+
+
+ a| 
+kmipKeyServerHostnames
+ a| 
+與此KMIP金鑰伺服器相關聯的主機名稱或IP位址。
+ a| 
+字串陣列
+
+
+
+ a| 
+kmipKeyServerName
+ a| 
+KMIP金鑰伺服器的名稱。此名稱僅供顯示用途使用、不需要唯一名稱。
+ a| 
+字串
+
+
+
+ a| 
+kmipKeyServerPort
+ a| 
+與此KMIP金鑰伺服器相關的連接埠號碼（通常為5696）。
+ a| 
+整數
+
+|===

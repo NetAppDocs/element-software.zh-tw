@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_setdefaultqos.html 
+sidebar: sidebar 
+keywords: qos,value,configure,configuring,default,set,setting,setdefaultqos 
+summary: 您可以使用SetDefaultQoS方法來設定磁碟區的預設服務品質（QoS）值（以每秒輸入和輸出量或IOPS測量）。 
+---
+= SetDefaultQoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「預設QoS」方法來設定磁碟區的預設服務品質（QoS）值（以每秒輸入和輸出量或IOPS測量）。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+最低IOPS
+ a| 
+叢集提供給磁碟區的持續IOPS下限。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+最大IOPS
+ a| 
+叢集提供給磁碟區的持續IOPS上限。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+burstIOPS
+ a| 
+在短時間脈衝案例中允許的IOPS上限。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+最低IOPS
+ a| 
+叢集提供給磁碟區的持續IOPS下限。
+ a| 
+整數
+
+
+
+ a| 
+最大IOPS
+ a| 
+叢集提供給磁碟區的持續IOPS上限。
+ a| 
+整數
+
+
+
+ a| 
+burstIOPS
+ a| 
+在短時間脈衝案例中允許的IOPS上限。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "SetDefaultQoS",
+    "params": {
+        "burstIOPS":8000,
+        "maxIOPS":1000,
+        "minIOPS":200
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id":1,
+    "result": {
+        "burstIOPS":8000,
+        "maxIOPS":1000,
+        "minIOPS":200
+    ​}
+}
+----
+
+
+== 新的自版本
+
+9.6

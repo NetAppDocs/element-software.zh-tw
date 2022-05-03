@@ -1,0 +1,14 @@
+---
+permalink: concepts/concept_solidfire_concepts_initiators.html 
+sidebar: sidebar 
+keywords: netapp, element, initiator, storage volume, element volume, access group 
+summary: 瞭解啟動器、以及如何使用它們來允許存取Volume存取群組中的儲存設備。 
+---
+= 啟動器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+啟動器可讓外部用戶端存取叢集中的磁碟區、做為用戶端與磁碟區之間通訊的入口點。您可以使用啟動器進行CHAP型存取、而非帳戶型存取儲存磁碟區。新增至Volume存取群組的單一啟動器、可讓Volume存取群組成員存取新增至群組的所有儲存磁碟區、而無需驗證。啟動器只能屬於一個存取群組。

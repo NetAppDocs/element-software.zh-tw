@@ -1,0 +1,35 @@
+---
+permalink: storage/task_system_manage_snmp_configure_an_snmp_requestor.html 
+sidebar: sidebar 
+keywords: SNMP requestor, config, enable, disable, snmp requests 
+summary: 啟用SNMP版本2時、您可以啟用或停用申請者、並設定申請者接收授權的SNMP要求。 
+---
+= 設定SNMP申請者
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+啟用SNMP版本2時、您可以啟用或停用申請者、並設定申請者接收授權的SNMP要求。
+
+. 按一下功能表：叢集[SNMP]。
+. 在「*一般SNMP設定*」下、按一下「*是*」以啟用SNMP。
+. 從*版本*清單中、選取*版本2 *。
+. 在*申請者*區段中、輸入*社群字串*和*網路*資訊。
++
+
+NOTE: 根據預設、社群字串為公用、網路為localhost。您可以變更這些預設設定。
+
+. *選用：*若要新增其他申請者、請按一下*新增申請者*、然後輸入*社群字串*和*網路*資訊。
+. 按一下*儲存變更*。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_system_manage_snmp_configure_snmp_traps.adoc[設定SNMP設陷]
+* xref:task_system_manage_snmp_view_managed_object_data.adoc[使用管理資訊基礎檔案檢視託管物件資料]
+

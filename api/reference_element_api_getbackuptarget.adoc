@@ -1,0 +1,123 @@
+---
+permalink: api/reference_element_api_getbackuptarget.html 
+sidebar: sidebar 
+keywords: backup,target,targets,get,getting,GetBackupTarget 
+summary: 您可以使用GetBackupTarget方法傳回所建立之特定備份目標的相關資訊。 
+---
+= GetBackup目標
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetBackupTarget」方法來傳回您所建立之特定備份目標的相關資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+備份目標ID
+ a| 
+指派給備份目標的唯一識別碼。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+名稱
+ a| 
+備份目標的名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+備份目標
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "GetBackupTarget",
+  "params": {
+      "backupTargetID": 1
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "backupTarget": {
+     "attributes" : {
+        "size" : 100
+     },
+     "backupTargetID" : 1,
+     "name" : "mytargetbackup"
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,36 @@
+---
+permalink: storage/task_data_protection_restore_volume_from_backup_on_openstack_swift.html 
+sidebar: sidebar 
+keywords: volume restore, openstack swift object store 
+summary: 您可以從OpenStack Swift物件存放區的備份還原磁碟區。 
+---
+= 從OpenStack Swift物件存放區的備份還原磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從OpenStack Swift物件存放區的備份還原磁碟區。
+
+. 按一下「*報告*>*事件記錄*」。
+. 找出建立您需要還原之備份的備份事件。
+. 在事件的*詳細資料*欄中、按一下*顯示詳細資料*。
+. 將資訊清單資訊複製到剪貼簿。
+. 按一下*管理*>*磁碟區*。
+. 針對您要還原的磁碟區、按一下「動作」圖示。
+. 在產生的功能表中、按一下*還原來源*。
+. 在「*整合式還原*」對話方塊的「*還原自*」下、選取「* Swift *」。
+. 在*資料格式*下選取符合備份的選項：
++
+** *原生*：只SolidFire 有透過不兼容的儲存系統才能讀取的壓縮格式。
+** *未壓縮*：與其他系統相容的未壓縮格式。
+
+
+. 在「* URL*」欄位中輸入用於存取物件存放區的URL。
+. 在*使用者名稱*欄位中輸入帳戶的使用者名稱。
+. 在*驗證金鑰*欄位中輸入帳戶的驗證金鑰。
+. 在「* Container *」欄位中輸入儲存備份的容器名稱。
+. 將資訊清單資訊貼到*資訊清單*欄位。
+. 單擊*開始寫入*。
+

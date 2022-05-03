@@ -1,0 +1,26 @@
+---
+permalink: storage/reference_snapmirror_relationship_actions.html 
+sidebar: sidebar 
+keywords: relationships, snapmirror, actions, configure relationships 
+summary: 您可以從Data Protection（資料保護）索引標籤的SnapMirror Relationships（SnapMirror關係）頁面設定關係。此處說明「動作」圖示的選項。 
+---
+= SnapMirror關係行動
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從Data Protection（資料保護）索引標籤的SnapMirror Relationships（SnapMirror關係）頁面設定關係。此處說明「動作」圖示的選項。
+
+* *編輯*：編輯關係使用的原則或排程。
+* *刪除*：刪除SnapMirror關係。此功能不會刪除目的地Volume。
+* *初始化*：執行第一次的資料基礎傳輸、以建立新關係。
+* *更新*：執行關係的隨需更新、複寫自上次更新至目的地後所含的任何新資料與Snapshot複本。
+* *靜止*：防止關係的任何進一步更新。
+* *恢復*：恢復靜止的關係。
+* *中斷*：讓目的地Volume讀寫、並停止所有目前和未來的傳輸。判斷用戶端未使用原始來源Volume、因為反轉重新同步作業會使原始來源Volume成為唯讀。
+* *重新同步*：在發生中斷之前、以相同方向重新建立中斷的關係。
+* *反轉重新同步*：自動執行必要步驟、以相反方向建立及初始化新關係。只有在現有關係處於中斷狀態時、才能執行此動作。此作業不會刪除目前的關係。原始來源磁碟區會還原為最新的常見Snapshot複本、並與目的地重新同步。自上次成功的SnapMirror更新後、對原始來源Volume所做的任何變更都會遺失。對目前目的地磁碟區所做的任何變更或寫入的新資料、都會傳回原始來源磁碟區。
+* *中止*：取消目前正在進行的傳輸。如果針對中止的關係發佈SnapMirror更新、關係會繼續進行上次重新啟動檢查點的傳輸、而上次重新啟動檢查點是在中止發生之前建立的。
+

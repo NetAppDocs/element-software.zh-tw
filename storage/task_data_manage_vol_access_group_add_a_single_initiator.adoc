@@ -1,0 +1,66 @@
+---
+permalink: storage/task_data_manage_vol_access_group_add_a_single_initiator.html 
+sidebar: sidebar 
+keywords: initiator, add to volume access group, access groups, add single initiator, create initiator 
+summary: 您可以將啟動器新增至現有的Volume存取群組。 
+---
+= 將單一啟動器新增至Volume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將啟動器新增至現有的Volume存取群組。
+
+當您將啟動器新增至Volume存取群組時、啟動器可存取該Volume存取群組中的所有Volume。
+
+
+TIP: 您可以按一下「動作」圖示、然後在「作用中磁碟區」清單中選取磁碟區的*「檢視詳細資料」*、以找到每個磁碟區的啟動器。
+
+如果您使用以啟動器為基礎的CHAP、則可在Volume存取群組中為單一啟動器新增CHAP認證、以提供更高的安全性。這可讓您將此選項套用至已存在的Volume存取群組。
+
+.步驟
+. 按一下*管理*>*存取群組*。
+. 按一下您要編輯之存取群組的*「Actions」（動作）*圖示。
+. 按一下 * 編輯 * 。
+. 若要將光纖通道啟動器新增至磁碟區存取群組、請執行下列步驟：
++
+.. 在「Add Initiator（新增啟動器）」下、從「* Unbound Fibre Channel Initiator（*未綁定的Fibre Channel啟動器）」*清單中選取現有的Fibre Channel啟動器。
+.. 單擊* Add FC Initiator（添加FC啓動程序）*。
++
+
+NOTE: 如果您按一下「*建立啟動器*」連結、輸入啟動器名稱、然後按一下「*建立*」、即可在此步驟中建立啟動器。系統會在您建立啟動器後、自動將其新增至*啟動器*清單。
+
++
+格式範例如下：
+
+
+
++
+[listing]
+----
+5f:47:ac:c0:5c:74:d4:02
+----
+. 若要將iSCSI啟動器新增至磁碟區存取群組、請在「新增啟動器」下、從*啟動器*清單中選取現有的啟動器。
++
+
+NOTE: 如果您按一下「*建立啟動器*」連結、輸入啟動器名稱、然後按一下「*建立*」、即可在此步驟中建立啟動器。系統會在您建立啟動器後、自動將其新增至*啟動器*清單。
+
++
+啟動器IQN的可接受格式如下：IQN.yyyy-MM、其中y和m為數字、後面接著只能包含數字、大小寫字母、句點（.）、分號（：）或破折號（-）的文字。
+
++
+格式範例如下：
+
++
+[listing]
+----
+iqn.2010-01.com.solidfire:c2r9.fc0.2100000e1e09bb8b
+----
++
+
+TIP: 您可以在「*管理*>*磁碟區*作用中磁碟區」頁面中、按一下「動作」圖示、然後選取「*檢視詳細資料*」來尋找每個磁碟區的啟動器IQN。
+
+. 按一下*儲存變更*。
+

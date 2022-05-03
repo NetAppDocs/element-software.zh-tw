@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_listsnapmirrornodes.html 
+sidebar: sidebar 
+keywords: snapmirror,node,nodes,list,listing,listsnapmirrornodes 
+summary: Element軟體Web UI使用ListSnapMirrorNode方法取得遠端ONTAP 故障叢集中的節點清單。 
+---
+= 清單SnapMirrorNode
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ListSnapMirrornodes」方法取得遠端ONTAP 故障叢集中的節點清單。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+如果提供、系統會列出端點的節點、以及指定的snapMirrorEndpointID。如果未提供、系統會列出所有已知SnapMirror端點的節點。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorNode
+ a| 
+列舉了叢集上的節點ONTAP 。
+ a| 
+xref:reference_element_api_snapmirrornode.adoc[snapMirrorNode] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

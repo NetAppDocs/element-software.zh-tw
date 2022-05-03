@@ -1,0 +1,30 @@
+---
+permalink: setup/task_setup_cluster_with_storage_nodes.html 
+sidebar: sidebar 
+keywords: element, solidfire, install, setup, node, cluster 
+summary: 瞭解使用儲存節點設定叢集的順序。 
+---
+= 設定具有元素儲存節點的叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在機架單元中安裝及連接節點並開啟電源之後、使用Element軟體來設定具有儲存節點的叢集、並加以管理。然後、您可以在儲存系統中安裝及設定其他元件。
+
+.步驟
+. link:concept_setup_configure_a_storage_node.html["設定儲存節點"]
+. link:task_setup_create_a_storage_cluster.html["建立儲存叢集"]
+. link:task_post_deploy_access_the_element_software_user_interface.html["登入Element軟體使用者介面"]
+. link:task_setup_add_drives_to_a_cluster.html["將磁碟機新增至叢集"]
+. link:task_setup_determine_which_solidfire_components_to_install.html["判斷SolidFire 要安裝哪些元件"]
+. link:task_setup_gh_redirect_set_up_a_management_node.html["設定管理節點"]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+

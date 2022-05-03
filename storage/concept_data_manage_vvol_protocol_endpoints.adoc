@@ -1,0 +1,18 @@
+---
+permalink: storage/concept_data_manage_vvol_protocol_endpoints.html 
+sidebar: sidebar 
+keywords: protocol endpoint, access, cluster, storage node, iscsi supported 
+summary: 傳輸協定端點是主機用來處理執行NetApp Element 支援軟體之叢集上的儲存問題的存取點。使用者無法刪除或修改傳輸協定端點、無法與帳戶建立關聯、也無法新增至磁碟區存取群組。 
+---
+= 傳輸協定端點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+傳輸協定端點是主機用來處理執行NetApp Element 支援軟體之叢集上的儲存問題的存取點。使用者無法刪除或修改傳輸協定端點、無法與帳戶建立關聯、也無法新增至磁碟區存取群組。
+
+執行Element軟體的叢集會自動為叢集中的每個儲存節點建立一個傳輸協定端點。例如、六節點儲存叢集有六個對應至每個ESXi主機的傳輸協定端點。傳輸協定端點是由Element軟體動態管理、可視需要建立、移動或移除、無需任何介入。傳輸協定端點是多重路徑的目標、可做為輔助LUN的I/O Proxy。每個傳輸協定端點都會使用可用的SCSI位址、就像標準iSCSI目標一樣。傳輸協定端點在vSphere用戶端中顯示為單一區塊（512位元組）儲存設備、但此儲存設備無法格式化或作為儲存設備使用。
+
+iSCSI是唯一受支援的傳輸協定。不支援Fibre Channel傳輸協定。

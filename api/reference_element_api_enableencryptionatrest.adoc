@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_enableencryptionatrest.html 
+sidebar: sidebar 
+keywords: encryption,enable,enabling,EnableEncryptionAtRest 
+summary: 您可以使用EnablEncryptionAtRest方法、在叢集上啟用「進階加密標準」（AES）256位元加密、讓叢集能夠管理用於每個節點上磁碟機的加密金鑰。此功能預設為未啟用。 
+---
+= 啟用EncryptionAtRest
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「EnablEncryptionAtRest」方法、在叢集上啟用閒置的進階加密標準（AES）256位元加密、讓叢集能夠管理用於每個節點磁碟機的加密金鑰。此功能預設為未啟用。
+
+
+TIP: 若要查看叢集上閒置加密和/或軟體加密的目前狀態、請使用 link:../api/reference_element_api_getclusterinfo["取得叢集資訊方法"^]。您可以使用「GetSoftwareEncryptionAtRestInfo」 link:../api/reference_element_api_getsoftwareencryptionatrestinfo["取得叢集用來加密閒置資料的資訊方法"^]。
+
+
+NOTE: 此方法無法在閒置時啟用軟體加密。這只能使用來完成 link:../api/reference_element_api_createcluster.html["建立叢集方法"^] 將「enableSoftwareEncryptionAtRest」設為「true」。
+
+在閒置時啟用加密時、叢集會自動在叢集中每個節點的磁碟機內部管理加密金鑰。
+
+如果指定了keyProviderID、則會根據金鑰提供者的類型產生和擷取密碼。這通常是使用金鑰管理互通性傳輸協定（KMIP）金鑰伺服器（KMIP金鑰提供者）來完成。執行此作業之後、指定的供應商會被視為作用中、且在使用「disableEncryptionAtRest」方法停用靜止加密之前、無法刪除。
+
+
+NOTE: 如果您的節點類型的型號以「-NE」結尾、則「EnablEncryptionAtRest」方法呼叫將會失敗、並回應「不允許加密」。叢集偵測到非加密節點"。
+
+
+NOTE: 只有在叢集執行且狀態良好時、才應啟用或停用加密。您可以自行決定、視需要隨時啟用或停用加密功能。
+
+
+NOTE: 此程序是非同步的、會在啟用加密之前傳回回應。您可以使用「GetClusterInfo」方法輪詢系統、查看程序何時完成。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+KeyProviderID
+ a| 
+要使用的KMIP金鑰提供者ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "EnableEncryptionAtRest",
+   "params": {},
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似於下列來自於EnablEncryptionAtRest方法的回應。沒有報告結果。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+在叢集上啟用靜止加密時、GetClusterInfo會傳回將靜止加密狀態（「加密AtRestState」）描述為「啟用」的結果。完全啟用「靜止加密」之後、傳回的狀態會變更為「已啟用」。
+
+[listing]
+----
+{
+   "id": 1,
+      "result": {
+         "clusterInfo": {
+            "attributes": { },
+               "encryptionAtRestState": "enabling",
+            "ensemble": [
+               "10.10.5.94",
+               "10.10.5.107",
+               "10.10.5.108"
+            ],
+            "mvip": "192.168.138.209",
+            "mvipNodeID": 1,
+            "name": "Marshall",
+            "repCount": 2,
+            "svip": "10.10.7.209",
+            "svipNodeID": 1,
+            "uniqueID": "91dt"
+      }
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* link:reference_element_api_secureerasedrives.html["SecureEraseDrives"]
+* link:reference_element_api_getclusterinfo.html["GetClusterInfo"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

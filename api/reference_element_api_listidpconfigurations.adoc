@@ -1,0 +1,130 @@
+---
+permalink: api/reference_element_api_listidpconfigurations.html 
+sidebar: sidebar 
+keywords: configs configurations,idp configs,list 
+summary: 您可以使用清單IdpConfigurations方法來列出協力廠商IDP的組態。或者、您可以提供enabledOnly旗標來擷取目前啟用的IDP組態、或提供IDP中繼資料UUID或IDP名稱、以查詢特定IDP組態的資訊。 
+---
+= 清單組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listIdpConfigurations」方法來列出協力廠商IDP的組態。或者、您可以提供「enabledOnly」旗標來擷取目前啟用的IDP組態、或是IDP中繼資料UUID或IDP名稱、以查詢特定IDP組態的資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+僅限enabledOnly
+ a| 
+篩選結果以傳回目前啟用的IDP組態。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+idpConfiguration ID
+ a| 
+協力廠商IDP組態的UUID。
+ a| 
+UUID
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+idpName
+ a| 
+擷取特定IDP名稱的IDP組態資訊。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+idpConfigInfos
+ a| 
+第三方IDP組態的相關資訊。
+ a| 
+link:reference_element_api_idpconfiginfo.md#GUID-7DAF8B5D-7803-417F-822B-F5B1A4E3EA93["idpConfigInfo"] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ListIdpConfigurations",
+  "params": {}
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "result": {
+        "idpConfigInfo": {
+        "enabled": true,
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "idpMetadata": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n
+        <EntityDescriptor xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\"\r\n
+        xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\"\r\n
+        xmlns:shibmd=\"urn:mace:shibboleth:metadata:1.0\"\r\n
+        xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\r\n
+        ...</Organization>\r\n
+        </EntityDescriptor>",
+        "idpName": "https://privider.name.url.com",
+        "serviceProviderCertificate": "-----BEGIN CERTIFICATE-----\n
+        MI...BHi\n
+        -----END CERTIFICATE-----\n",
+        "spMetadataUrl": "https://10.193.100.100/auth/ui/saml2"
+        }
+    }
+}
+----
+
+
+== 新的自版本
+
+12.0

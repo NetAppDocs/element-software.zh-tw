@@ -1,0 +1,299 @@
+---
+permalink: api/reference_element_api_clonevolume.html 
+sidebar: sidebar 
+keywords: volumes,volume,cloning,clone,CloneVolume 
+summary: 您可以使用CloneVolume方法來建立Volume的複本。這種方法是非同步的、可能需要大量的時間才能完成。 
+---
+= CloneVolume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「CloneVolume」方法來建立Volume的複本。這種方法是非同步的、可能需要大量的時間才能完成。
+
+當您提出「CloneVolume」要求時、即會立即開始複製程序、並代表發行API方法時的磁碟區狀態。您可以使用 xref:reference_element_api_getasyncresult.adoc[Get非 同步結果] 判斷複製程序何時完成、以及新磁碟區何時可供連線的方法。您可以使用 xref:reference_element_api_listsyncjobs.adoc[listSyncJobs] 以查看建立實體複本的進度。磁碟區的初始屬性和服務品質設定會從要複製的磁碟區繼承而來。您可以使用變更這些設定 xref:reference_element_api_modifyvolume.adoc[ModifyVolume]。
+
+
+NOTE: 複製的磁碟區不會從來源磁碟區繼承Volume存取群組成員資格。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+存取
+ a| 
+新磁碟區允許存取。如果未指定值、則存取值不會變更。可能值：
+
+* 「ReadOnly」（唯讀）：（選用）僅允許讀取作業。
+* 「ReadWrite」（讀寫）：（選用）允許讀取和寫入。
+* 「Locked」（鎖定）：（選用）不允許讀取或寫入。如果未指定、則會使用要複製的磁碟區存取值。
+* 「REplicationTarget」（重新編製目標）：（選用）將Volume識別為配對一組Volume的目標Volume。如果Volume未配對、存取狀態會鎖定。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+已啓用512e
+ a| 
+指定新磁碟區是否應使用512位元組區段模擬。如果未指定、則會使用要複製的Volume設定。
+ a| 
+布林值
+ a| 
+原始Volume的設定
+ a| 
+否
+
+
+
+ a| 
+已啓用SnapMirrorReplication
+ a| 
+決定磁碟區是否可用於SnapMirror端點的複寫。可能值：
+
+* 是的
+* 錯
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+ a| 
+名稱
+ a| 
+新複製Volume的名稱；長度必須為1到64個字元。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+newAccountID
+ a| 
+新Volume擁有者的AccountID。如果未指定、則會使用要複製之磁碟區擁有者的帳戶ID。
+ a| 
+整數
+ a| 
+原始Volume擁有者的帳戶ID
+ a| 
+否
+
+
+
+ a| 
+新的規模
+ a| 
+磁碟區的新大小（以位元組為單位）。可能大於或小於所複製的Volume大小。如果未指定、則不會變更磁碟區大小。大小會四捨五入至最接近的1MB大小。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+Snapshot ID
+ a| 
+作為實體複本來源的快照ID。如果未提供ID、則會使用目前作用中的Volume。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+Volume ID
+ a| 
+要複製之磁碟區的Volume ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+asyncdle
+ a| 
+用於獲取操作結果的句柄值。
+ a| 
+整數
+
+
+
+ a| 
+cloneID
+ a| 
+新複製磁碟區的cloneID。
+ a| 
+整數
+
+
+
+ a| 
+曲線
+ a| 
+套用至實體複本的QoS曲線值。
+ a| 
+Json物件
+
+
+
+ a| 
+Volume
+ a| 
+包含新複製Volume相關資訊的物件。
+ a| 
+xref:reference_element_api_volume.adoc[Volume]
+
+
+
+ a| 
+Volume ID
+ a| 
+新複製Volume的Volume ID。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "CloneVolume",
+   "params": {
+      "volumeID" : 5,
+      "name"  : "mysqldata-snapshot1",
+      "access" : "readOnly"
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+      "asyncHandle": 42,
+      "cloneID": 37,
+      "volume": {
+          "access": "readOnly",
+          "accountID": 1,
+          "attributes": {},
+          "blockSize": 4096,
+          "createTime": "2016-03-31T22:26:03Z",
+          "deleteTime": "",
+          "enable512e": true,
+          "iqn": "iqn.2010-01.com.solidfire:jyay.mysqldata-snapshot1.680",
+          "name": "mysqldata-snapshot1",
+          "purgeTime": "",
+          "qos": {
+              "burstIOPS": 100,
+              "burstTime": 60,
+              "curve": {
+                  "4096": 100,
+                  "8192": 160,
+                  "16384": 270,
+                  "32768": 500,
+                  "65536": 1000,
+                  "131072": 1950,
+                  "262144": 3900,
+                  "524288": 7600,
+                  "1048576": 15000
+              },
+              "maxIOPS": 100,
+              "minIOPS": 50
+          },
+          "scsiEUIDeviceID": "6a796179000002a8f47acc0100000000",
+          "scsiNAADeviceID": "6f47acc1000000006a796179000002a8",
+          "sliceCount": 0,
+          "status": "init",
+          "totalSize": 1000341504,
+          "virtualVolumeID": null,
+          "volumeAccessGroups": [],
+          "volumeID": 680,
+          "volumePairs": []
+      },
+      "volumeID": 680
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_getasyncresult.adoc[Get非 同步結果]
+* xref:reference_element_api_listsyncjobs.adoc[listSyncJobs]
+* xref:reference_element_api_modifyvolume.adoc[ModifyVolume]
+

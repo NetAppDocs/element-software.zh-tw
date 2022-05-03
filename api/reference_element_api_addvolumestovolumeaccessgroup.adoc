@@ -1,0 +1,126 @@
+---
+permalink: api/reference_element_api_addvolumestovolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: volume,volumes,adding,add,access,group,addvolumestovolumeaccessgroup 
+summary: 您可以使用AddVolumesToVolume存取群組方法、將磁碟區新增至指定的磁碟區存取群組。 
+---
+= AddVolumesToVolume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「AddVolumesToVolume存取群組」方法、將磁碟區新增至指定的磁碟區存取群組。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+磁碟區
+ a| 
+要新增至Volume存取群組的Volume ID清單。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+Volume存取群組ID
+ a| 
+Volume存取群組的Volume存取群組ID、用於新增磁碟區。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume存取群組
+ a| 
+包含新修改磁碟區存取群組相關資訊的物件。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[Volume存取群組]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "AddVolumesToVolumeAccessGroup",
+   "params": {
+      "volumeAccessGroupID": 96,
+      "volumes": [1,2]
+   },
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [
+        346
+      ],
+      "initiatorIDs": [
+        116,
+        117
+      ],
+      "initiators": [
+        "iqn.1993-08.org.debian:01:181324777",
+        "iqn.1993-08.org.debian:01:181324888"
+      ],
+      "name": "northbanktest",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        1,
+        2
+      ]
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

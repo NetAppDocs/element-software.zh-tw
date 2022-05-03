@@ -1,0 +1,122 @@
+---
+permalink: api/reference_element_api_listauthsessionbyusername.html 
+sidebar: sidebar 
+keywords: username,sessions,authentication sessions,list 
+summary: 您可以使用listauthSessionByUsername方法列出指定使用者的所有驗證工作階段。非存取群組ClusterAdmins /系統管理員權限的呼叫者、只能列出自己的工作階段。具有ClusterAdmins / Administrator權限的呼叫者可以列出屬於任何使用者的工作階段。 
+---
+= list驗 證使用者名稱
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listauthSessionByUsername」方法列出指定使用者的所有驗證工作階段。非存取群組ClusterAdmins /系統管理員權限的呼叫者、只能列出自己的工作階段。具有ClusterAdmins / Administrator權限的呼叫者可以列出屬於任何使用者的工作階段。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+驗證方法
+ a| 
+要列出之使用者工作階段的驗證方法。只有ClusterAdmins / Administrator存取群組中的呼叫者可以提供此參數。可能的值包括：
+
+* *authMethod=Cluster*指定ClusterAdmin使用者名稱。
+* *authMethod=LDAP*指定使用者的LDAP DN。
+* *authMethod=IDP *指定使用者的IDP UUID或NameID。如果IDP未設定為傳回任一選項、則會指定建立工作階段時發出的隨機UUID。
+
+ a| 
+驗證方法
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+使用者名稱
+ a| 
+使用者的唯一識別碼。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+工作階段
+ a| 
+驗證工作階段的工作階段資訊清單。
+ a| 
+link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["驗證工作階段資訊"]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method": "ListAuthSessionsByUsername",
+    "authMethod": "Cluster",
+    "username": "admin"
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+"sessions": [
+      {
+        "accessGroupList": [
+          "administrator"
+        ],
+        "authMethod": "Cluster",
+        "clusterAdminIDs": [
+          1
+        ],
+        "finalTimeout": "2020-03-14T19:21:24Z",
+        "idpConfigVersion": 0,
+        "lastAccessTimeout": "2020-03-11T19:51:24Z",
+        "sessionCreationTime": "2020-03-11T19:21:24Z",
+        "sessionID": "b12bfc64-f233-44df-8b9f-6fb6c011abf7",
+        "username": "admin"
+      }
+    ]
+}
+----
+
+
+== 新的自版本
+
+12.0

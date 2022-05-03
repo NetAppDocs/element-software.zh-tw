@@ -1,0 +1,35 @@
+---
+permalink: api/concept_element_api_vvols_api_methods.html 
+sidebar: sidebar 
+keywords: virtual,volume,vvol,API,method 
+summary: Element軟體虛擬Volume API方法可讓您管理虛擬磁碟區（VVols）。您可以使用這些API方法來檢視現有的VVols、以及建立、修改及刪除虛擬Volume儲存容器。雖然您無法使用這些方法在一般磁碟區上運作、但您可以使用一般Volume API方法來列出VVols的相關資訊。 
+---
+= 虛擬Volume API方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體虛擬Volume API方法可讓您管理虛擬磁碟區（VVols）。您可以使用這些API方法來檢視現有的VVols、以及建立、修改及刪除虛擬Volume儲存容器。雖然您無法使用這些方法在一般磁碟區上運作、但您可以使用一般Volume API方法來列出VVols的相關資訊。
+
+* xref:reference_element_api_createstoragecontainer.adoc[CreStorageContainer]
+* xref:reference_element_api_deletestoragecontainers.adoc[刪除StorageContainer]
+* xref:reference_element_api_getstoragecontainerefficiency.adoc[GetStorageContainerEfficiency]
+* xref:reference_element_api_getvirtualvolumecount.adoc[GetVirtualVolume計數]
+* xref:reference_element_api_listprotocolendpoints.adoc[列出通訊協定端點]
+* xref:reference_element_api_liststoragecontainers.adoc[清單StorageContainer]
+* xref:reference_element_api_listvirtualvolumebindings.adoc[清單虛擬磁碟區繫結]
+* xref:reference_element_api_listvirtualvolumehosts.adoc[ListVirtualVolume最新資訊]
+* xref:reference_element_api_listvirtualvolumes.adoc[列出虛擬磁碟區]
+* xref:reference_element_api_listvirtualvolumetasks.adoc[listVirtualVolume工作]
+* xref:reference_element_api_modifystoragecontainer.adoc[ModifyStorageContainer]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

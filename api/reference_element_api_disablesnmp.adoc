@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_disablesnmp.html 
+sidebar: sidebar 
+keywords: SNMP,disable,disabling,DisableSnmp 
+summary: 您可以使用DisableSnMP方法停用叢集節點上的SNMP。 
+---
+= 停用Snmp
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「disableSnmp"方法來停用叢集節點上的SNMP。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "DisableSnmp",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "result" : {},
+  "id" : 1
+}
+----
+
+
+== 新的自版本
+
+9.6

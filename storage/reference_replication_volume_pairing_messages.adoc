@@ -1,0 +1,44 @@
+---
+permalink: storage/reference_replication_volume_pairing_messages.html 
+sidebar: sidebar 
+keywords: volume pairing, messages, replication, data protection 
+summary: 您可以從「Data Protection（資料保護）」索引標籤下的Volume Pairs（磁碟區配對）頁面、檢視初始配對程序期間的Volume配對訊息。這些訊息可顯示在「複製磁碟區」清單檢視的配對來源和目標端點上。 
+---
+= Volume配對訊息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從「Data Protection（資料保護）」索引標籤下的Volume Pairs（磁碟區配對）頁面、檢視初始配對程序期間的Volume配對訊息。這些訊息可顯示在「複製磁碟區」清單檢視的配對來源和目標端點上。
+
+* *暫停已中斷連線*
++
+來源複寫或同步RPC逾時。與遠端叢集的連線已中斷。檢查與叢集的網路連線。
+
+* *重新連線*
++
+遠端複寫同步現在已啟用。開始同步程序並等待資料。
+
+* *重新解析RRRrsyn*
++
+正在為配對的叢集建立Volume中繼資料的單一helix複本。
+
+* *重新解析本地同步*
++
+正在將Volume中繼資料的雙helix複本複製到配對的叢集。
+
+* *重新解析DataTransfer*
++
+資料傳輸已恢復。
+
+* *主動*
++
+磁碟區會配對、資料會從來源傳送到目標磁碟區、而且資料會同步。
+
+* *閒置*
++
+沒有發生複寫活動。
+
+

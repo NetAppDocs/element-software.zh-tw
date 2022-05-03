@@ -1,0 +1,130 @@
+---
+permalink: api/reference_element_api_modifystoragecontainer.html 
+sidebar: sidebar 
+keywords: virtual,volume,storage,container,vvol,modify,modifying,change,changing,edit,editing 
+summary: 您可以使用ModifyStorageContainer方法來變更現有的虛擬Volume儲存容器。 
+---
+= ModifyStorageContainer
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「共享儲存容器」方法來變更現有的虛擬Volume儲存容器。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+
+
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+storageContainerID
+ a| 
+要修改的虛擬Volume儲存容器的唯一ID。
+ a| 
+UUID
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+初始化者機密
+ a| 
+啟動器CHAP驗證的新秘密。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+目標機密
+ a| 
+目標的CHAP驗證新秘密。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+storageContainer
+ a| 
+新建立儲存容器的相關資訊。
+ a| 
+xref:reference_element_api_storagecontainer.adoc[storageContainer]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ModifyStorageContainer",
+    "params": {
+      "storageContainerID": "6c95e24f-9f0b-4793-affb-5a4bc6c3d7e1",
+      "targetSecret": "O,IM;tOQdn9$JJ*8"
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "storageContainer": {
+      "accountID": 8,
+      "initiatorSecret": "T$|5TO>2IY5sk4@k",
+      "name": "doctest1",
+      "protocolEndpointType": "SCSI",
+      "status": "active",
+      "storageContainerID": "6c95e24f-9f0b-4793-affb-5a4bc6c3d7e1",
+      "targetSecret": "O,IM;tOQdn9$JJ*8"
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

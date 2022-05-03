@@ -1,0 +1,34 @@
+---
+permalink: api/concept_element_api_response_examples.html 
+sidebar: sidebar 
+keywords: response,example 
+summary: 此處提供完整的回應範例。 
+---
+= 回應範例
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此處提供完整的回應範例。
+
+* xref:reference_element_api_response_example_getconfig.adoc[組態設定]
+* xref:reference_element_api_response_example_getclusterhardwareinfo.adoc[GetClusterHardwareInfo]
+* xref:reference_element_api_response_example_getlldpinfo.adoc[GetLldpInfo]
+* xref:reference_element_api_response_example_getnetworkconfig.adoc[GetNetwork組態]
+* xref:reference_element_api_response_example_getnodehardwareinfo.adoc[GetNodeHardwareInfo（iSCSI輸出）]
+* xref:reference_element_api_response_example_getnodehardwareinfo_fibre_channel.adoc[GetNodeHardwareInfo（光纖通道節點的輸出）]
+* xref:reference_element_api_response_example_getnvraminfo.adoc[GetNvramInfo]
+* xref:reference_element_api_response_example_listactivenodes.adoc[ListActiveNode]
+* xref:reference_element_api_response_example_listactivevolumes.adoc[listActiveVolumes]
+* xref:reference_element_api_response_example_testhardwareconfig.adoc[測試硬體組態]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

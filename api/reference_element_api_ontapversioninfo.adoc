@@ -1,0 +1,78 @@
+---
+permalink: api/reference_element_api_ontapversioninfo.html 
+sidebar: sidebar 
+keywords: object,objects,ontapVersionInfo 
+summary: ontapVersionInfo物件包含ONTAP SnapMirror關係中有關API版本的物件。元素Web UI使用GetOnTapVerionInfo API方法來取得此資訊。 
+---
+= 版本資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ontapVersionInfo物件包含ONTAP SnapMirror關係中有關API版本的物件。元素Web UI使用「GetOnTapVersion Info」API方法來取得此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目的地ONTAP 資訊系統的ID。
+ a| 
+整數
+
+
+
+ a| 
+用戶端APIMAimorVesion
+ a| 
+Element API用戶端正在使用的部分API主要版本。ONTAP
+ a| 
+字串
+
+
+
+ a| 
+用戶端APIMinorVesion
+ a| 
+Element API用戶端正在使用的部分版。ONTAP
+ a| 
+字串
+
+
+
+ a| 
+OnTapAPIMajorVersion
+ a| 
+目前支援ONTAP 的API主要版本。
+ a| 
+字串
+
+
+
+ a| 
+《關於我們的最新發展》
+ a| 
+目前支援ONTAP 的API次要版本。
+ a| 
+字串
+
+
+
+ a| 
+ontapVersion
+ a| 
+目前在ONTAP 叢集上執行的軟體版本。
+ a| 
+字串
+
+|===

@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_listsnapmirrorpolicies.html 
+sidebar: sidebar 
+keywords: snapmirror,policy,policies,list,listing,ontap,listsnapmirrorpolicies 
+summary: Element軟體Web UI使用ListSnapMirrorPolicies方法、列出遠端ONTAP 系統上的所有SnapMirror原則。 
+---
+= 清單SnapMirrorPolicy
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ListSnapMirrorPolicies」方法、列出遠端ONTAP 系統上的所有SnapMirror原則。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+僅列出與指定端點ID相關的原則。如果未提供端點ID、系統會列出所有已知SnapMirror端點的原則。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorPolicies
+ a| 
+列舉關於整個不完善儲存系統的SnapMirror原則ONTAP 。
+ a| 
+xref:reference_element_api_snapmirrorpolicy.adoc[snapMirrorPolicy] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

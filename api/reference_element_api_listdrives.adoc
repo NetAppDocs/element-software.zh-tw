@@ -1,0 +1,94 @@
+---
+permalink: api/reference_element_api_listdrives.html 
+sidebar: sidebar 
+keywords: drives,drive,list,listing,listdrives,cluster 
+summary: 您可以使用清單磁碟機方法來列出叢集作用中節點中的磁碟機。此方法會傳回已新增為Volume中繼資料或區塊磁碟機的磁碟機、以及尚未新增且可供使用的磁碟機。 
+---
+= 清單磁碟機
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listDrives」（清單磁碟機）方法列出叢集作用中節點中的磁碟機。此方法會傳回已新增為Volume中繼資料或區塊磁碟機的磁碟機、以及尚未新增且可供使用的磁碟機。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+磁碟機
+ a| 
+叢集中的磁碟機清單。
+ a| 
+xref:reference_element_api_drive.adoc[磁碟機] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListDrives",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+     "drives" : [
+       {
+         "attributes" : {},
+         "capacity" : 299917139968,
+         "driveID" : 35,
+         "nodeID" : 5,
+         "serial" : "scsi-SATA_INTEL_SSDSA2CW6CVPR141502R3600FGN-part2",
+         "slot" : 0,
+         "status" : "active",
+         "type" : "volume"
+       },
+       {
+         "attributes" : {},
+         "capacity" : 600127266816,
+         "driveID" : 36,
+         "nodeID" : 5,
+         "serial" : "scsi-SATA_INTEL_SSDSA2CW6CVPR1415037R600FGN",
+         "slot" : 6,
+         "status" : "active",
+         "type" : "block"
+       }
+     }
+   ]
+}
+----
+
+
+== 新的自版本
+
+9.6

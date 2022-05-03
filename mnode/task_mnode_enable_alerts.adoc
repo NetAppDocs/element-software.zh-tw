@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: mnode/task_mnode_enable_alerts.html 
+summary: 您無法設定設定來監控SolidFire 您的不完整Flash儲存系統上的警示。 
+keywords: netapp, Element, management node, mnode, ui, alerts, alert monitoring 
+---
+= 設定警示監控
+:allow-uri-read: 
+
+
+[role="lead"]
+警示監控工具已設定為NetApp HCI 進行不必要的警示監控。這些工具並未設定SolidFire 或使用於不完整的Flash儲存設備。執行這些叢集的工具會產生下列的405錯誤、這是預期的設定：「webUIParse錯誤：伺服器的回應無效。405'
+
+如需設定NetApp HCI for效益警示監控的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/hci/docs/task_mnode_enable_alerts.html["設定警示監控"^]

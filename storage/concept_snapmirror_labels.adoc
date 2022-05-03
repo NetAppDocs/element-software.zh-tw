@@ -1,0 +1,18 @@
+---
+permalink: storage/concept_snapmirror_labels.html 
+sidebar: sidebar 
+keywords: labels, snapmirror, retention rules 
+summary: SnapMirror標籤可做為根據關係的保留規則、傳輸指定快照的標記。 
+---
+= SnapMirror標籤
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror標籤可做為根據關係的保留規則、傳輸指定快照的標記。
+
+將標籤套用至快照、可將其標示為SnapMirror複寫的目標。此關係的角色是在資料傳輸時執行規則、方法是選取相符的標記快照、將其複製到目的地Volume、並確保保留正確數量的複本。這是指決定保留數和保留期間的原則。原則可以有任意數量的規則、而且每個規則都有唯一的標籤。此標籤可作為快照與保留規則之間的連結。
+
+SnapMirror標籤會指出所選的快照、群組快照或排程所適用的規則。

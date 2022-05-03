@@ -1,0 +1,32 @@
+---
+permalink: storage/task_data_protection_back_up_a_volume_snapshot_to_openstack_swift.html 
+sidebar: sidebar 
+keywords: volume snapshot, backup, openstack swift S3 object store 
+summary: 您可以將SolidFire 無法更新的快照備份到與OpenStack Swift相容的次要物件存放區。 
+---
+= 將Volume Snapshot備份到OpenStack Swift物件存放區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將SolidFire 無法更新的快照備份到與OpenStack Swift相容的次要物件存放區。
+
+. 按一下*資料保護*>*快照*。
+. 按一下您要備份之快照的*「Actions」（動作）*圖示。
+. 在產生的功能表中、按一下*備份至*。
+. 在「*整合式備份*」對話方塊的「*備份至*」下、選取「* Swift *」。
+. 在*資料格式*下選取一個選項：
++
+** *原生*：只SolidFire 有透過不兼容的儲存系統才能讀取的壓縮格式。
+** *未壓縮*：與其他系統相容的未壓縮格式。
+
+
+. 輸入* URL*以用於存取物件存放區。
+. 輸入*使用者名稱*作為帳戶。
+. 輸入帳戶的*驗證金鑰*。
+. 輸入要儲存備份的* Container *。
+. *可選*：輸入*名稱標記*。
+. 按一下「*開始讀取*」。
+

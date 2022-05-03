@@ -1,0 +1,107 @@
+---
+permalink: api/reference_element_api_clusterpair.html 
+sidebar: sidebar 
+keywords: objects,object,clusterPair 
+summary: clusterPair物件包含與本機叢集配對的叢集相關資訊。您可以使用listClusterPas方法擷取本機叢集的叢集式物件清單。 
+---
+= 叢集空氣
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterPair物件包含與本機叢集配對的叢集相關資訊。您可以使用listClusterPas方法擷取本機叢集的叢集式物件清單。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集名稱
+ a| 
+配對中其他叢集的名稱。
+ a| 
+字串
+
+
+
+ a| 
+叢集PairID
+ a| 
+為配對中的每個叢集提供唯一ID。
+ a| 
+整數
+
+
+
+ a| 
+叢集PairUUID
+ a| 
+叢集配對的通用唯一識別碼。
+ a| 
+字串
+
+
+
+ a| 
+UUID
+ a| 
+叢集配對中遠端叢集的唯一識別碼。
+ a| 
+整數
+
+
+
+ a| 
+延遲
+ a| 
+叢集之間的延遲（以毫秒為單位）。
+ a| 
+整數
+
+
+
+ a| 
+mvip
+ a| 
+配對叢集的管理連線IP位址。
+ a| 
+字串
+
+
+
+ a| 
+狀態
+ a| 
+配對叢集之間的連線狀態。可能值：
+
+* 未設定
+* 連線
+* 設定錯誤
+* 已中斷連線
+
+ a| 
+字串
+
+
+
+ a| 
+版本
+ a| 
+配對中其他叢集的元素版本。
+ a| 
+字串
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_listclusterpairs.adoc[listClusterPaairs]

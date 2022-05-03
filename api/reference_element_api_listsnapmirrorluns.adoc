@@ -1,0 +1,73 @@
+---
+permalink: api/reference_element_api_listsnapmirrorluns.html 
+sidebar: sidebar 
+keywords: snapmirror,lun,luns,list,listing,listsnapmirrorluns 
+summary: Element軟體Web UI使用清單SnapMirrorLuns方法、列出遠端ONTAP 故障叢集SnapMirror關係的LUN資訊。 
+---
+= LISTSnapMirrorLuns
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ListSnapMirrorluns」方法、列出遠端ONTAP 叢集SnapMirror關係的LUN資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+僅列出與指定端點ID相關的LUN資訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+destinationVolume
+ a| 
+SnapMirror關係中的目的地Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorLunInfos
+ a| 
+包含SnapMirror LUN相關資訊的物件清單。
+ a| 
+xref:reference_element_api_snapmirrorluninfo.adoc[snapMirrorlunInfo] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

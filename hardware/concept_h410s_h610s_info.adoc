@@ -1,0 +1,31 @@
+---
+permalink: hardware/concept_h410s_h610s_info.html 
+sidebar: sidebar 
+keywords: h410s, h610s, hardware installation, hardware maintenance 
+summary: 您可以找到安裝及維護H系列儲存節點的相關資訊。 
+---
+= H410S和H610S硬體資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以找到安裝及維護H系列儲存節點的相關資訊。
+
+以下是安裝與維護內容的連結：
+
+* link:task_h410s_h610s_install.html["安裝H系列儲存節點"^]
+* link:task_h410s_repl.html["更換H410S節點"^]
+* link:task_h610s_repl.html["更換H610S節點"^]
+* link:task_hseries_driverepl.html["更換磁碟機"^]
+* link:task_psu_repl.html["更換電源供應器"^]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

@@ -1,0 +1,243 @@
+---
+permalink: api/reference_element_api_snapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorRelationship 
+summary: SnapMirrorRelationship物件包含有關元素Volume與ONTAP SnapMirror Volume之間SnapMirror關係的資訊。 
+---
+= snapMirrorRelationationationationship
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirrorRelationship物件包含有關元素Volume與ONTAP SnapMirror Volume之間SnapMirror關係的資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目的地ONTAP 資訊系統的ID。
+ a| 
+整數
+
+
+
+ a| 
+snapMirrorRelationshipID
+ a| 
+陣列中每個SnapMirrorRelationship物件的唯一識別碼、如同在ListSnapMirrorRelationships中傳回的識別碼。此UUID是從ONTAP 作業系統建立並傳回的。
+ a| 
+字串
+
+
+
+ a| 
+來源磁碟區
+ a| 
+描述來源Volume的物件。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+
+
+
+ a| 
+destinationVolume
+ a| 
+描述目的地Volume的物件。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+
+
+
+ a| 
+目前的MaxTransferRate
+ a| 
+來源與目的地磁碟區之間目前的最大傳輸率、以每秒KB為單位。
+ a| 
+整數
+
+
+
+ a| 
+希斯希西
+ a| 
+關係是否健全。可能值：
+
+* 對：關係健全。
+* 假：關係不健全。這可能是因為手動或排程的更新失敗或中止、或是上次排程的更新延遲所致。
+
+ a| 
+布林值
+
+
+
+ a| 
+落後時間
+ a| 
+目的地磁碟區上的資料延遲到來源磁碟區上的資料所需時間（以秒為單位）。
+ a| 
+整數
+
+
+
+ a| 
+LastTransferDuration
+ a| 
+最後一次傳輸完成所需的時間（以秒為單位）。
+ a| 
+整數
+
+
+
+ a| 
+LastTransfer錯誤
+ a| 
+說明上次傳輸失敗原因的訊息。
+ a| 
+字串
+
+
+
+ a| 
+LastTransferSize..
+ a| 
+上次傳輸期間傳輸的位元組總數。
+ a| 
+整數
+
+
+
+ a| 
+最後交易結束時間戳記
+ a| 
+上次傳輸結束的時間戳記。
+ a| 
+ISO 8601日期字串
+
+
+
+ a| 
+LastTransferType
+ a| 
+關係中的上一筆轉帳類型。
+ a| 
+字串
+
+
+
+ a| 
+最大傳輸率
+ a| 
+指定各磁碟區之間的最大資料傳輸率（以每秒千位元組為單位）。預設值0為無限、並允許SnapMirror關係充分利用可用的網路頻寬。
+ a| 
+整數
+
+
+
+ a| 
+鏡射狀態
+ a| 
+SnapMirror關係的鏡射狀態。可能值：
+
+* 未初始化：目的地Volume尚未初始化。
+* SnapMirror:目的地Volume已初始化、準備好接收SnapMirror更新。
+* 中斷：目的地磁碟區為讀寫、且快照存在。
+
+ a| 
+字串
+
+
+
+ a| 
+NEwestSnapshot
+ a| 
+目的地磁碟區上最新的Snapshot複本名稱。
+ a| 
+字串
+
+
+
+ a| 
+PolicyName
+ a| 
+指定ONTAP 關聯的SnapMirror原則名稱。您可以使用清單SnapMirrorPolicies來擷取可用原則的清單。範例值為「鏡像Latest」和「鏡像AndVault」。
+ a| 
+字串
+
+
+
+ a| 
+策略類型
+ a| 
+關係適用的SnapMirror原則類型ONTAP 。請參閱清單SnapMirrorPolicy.範例包括：「asunize_mirror」或「mirmirror_Vault」。
+ a| 
+字串
+
+
+
+ a| 
+關係進展
+ a| 
+關係狀態中傳回之關聯目前活動迄今已處理的位元組總數。只有當「關係狀態」成員指出某個活動正在進行時、才會設定此選項。
+ a| 
+整數
+
+
+
+ a| 
+關係狀態
+ a| 
+SnapMirror關係的狀態。可能值：
+
+* 閒置
+* 傳輸中
+* 正在檢查
+* 靜止
+* 靜止不動
+* 已佇列
+* 準備
+* 正在完成
+* 正在中止
+* 突破
+
+ a| 
+字串
+
+
+
+ a| 
+關係類型
+ a| 
+SnapMirror關係的類型。在執行Element軟體的儲存叢集上、此值永遠是「extended _data_protection」。
+ a| 
+字串
+
+
+
+ a| 
+scheduleName
+ a| 
+用來更新SnapMirror關係的目前在SnapMirror系統上的cron排程名稱ONTAP 。您可以使用「清單SnapMirrorSchedules」來擷取可用排程清單。
+ a| 
+字串
+
+
+
+ a| 
+無法治癒的百里香
+ a| 
+關係不健全的原因。
+ a| 
+字串
+
+|===

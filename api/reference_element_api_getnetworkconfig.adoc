@@ -1,0 +1,70 @@
+---
+permalink: api/reference_element_api_getnetworkconfig.html 
+sidebar: sidebar 
+keywords: network,config,configuration,get,getting,getnetworkconfig 
+summary: 您可以使用GetNetwork Config方法來顯示節點的網路組態資訊。 
+---
+= GetNetwork組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetNetwork Config」方法來顯示節點的網路組態資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+網路
+ a| 
+節點每個網路介面的網路連線類型和目前設定。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[網路（所有介面）]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetNetworkConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+由於此回應範例的長度很長、因此會在補充主題中予以記錄。
+
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_response_example_getnetworkconfig.adoc[GetNetwork組態]

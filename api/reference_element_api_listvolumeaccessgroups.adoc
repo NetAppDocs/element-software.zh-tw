@@ -1,0 +1,138 @@
+---
+permalink: api/reference_element_api_listvolumeaccessgroups.html 
+sidebar: sidebar 
+keywords: volume,access,group,groups,list,listing,listvolumeaccessgroups 
+summary: 您可以使用listVolume存取群組方法來取得目前系統中磁碟區存取群組的相關資訊。 
+---
+= listVolume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listVolume存取群組」方法來取得目前系統中磁碟區存取群組的相關資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+限制
+ a| 
+要傳回的Volume存取群組物件數目上限。與volumeAccessGroups參數互不相容。
+ a| 
+整數
+ a| 
+無限
+ a| 
+否
+
+
+
+ a| 
+startVolume存取群組ID
+ a| 
+開始列出的Volume存取群組ID。與volumeAccessGroups參數互不相容。
+ a| 
+整數
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+Volume存取群組
+ a| 
+要擷取的Volume存取GroupID值清單。與startVolume存取群組ID和限制參數互不相容。
+ a| 
+整數陣列
+ a| 
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume存取群組
+ a| 
+描述每個Volume存取群組的物件清單。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[Volume存取群組] 陣列
+
+
+
+ a| 
+Volume存取群組NotFound
+ a| 
+系統找不到Volume存取群組清單。如果您使用volumeAccessGroups參數、但系統找不到您指定的一或多個Volume存取群組、則顯示此選項。
+ a| 
+整數陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListVolumeAccessGroups",
+   "params": {
+      "startVolumeAccessGroupID": 3,
+      "limit"   : 1
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeAccessGroups": [
+      {
+        "attributes": {},
+        "deletedVolumes": [],
+        "initiatorIDs": [],
+        "initiators": [],
+        "name": "example1",
+        "volumeAccessGroupID": 3,
+        "volumes": []
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

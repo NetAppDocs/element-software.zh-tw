@@ -1,0 +1,48 @@
+---
+permalink: api/reference_element_api_clusterstructure.html 
+sidebar: sidebar 
+keywords: objects,cluster,structure,clusterStructure,object 
+summary: cluster結構 物件包含GetCluster結構 方法所建立的叢集組態備份資訊。您可以使用SetCluster結構 方法、將此資訊還原至正在重建的儲存叢集。 
+---
+= 叢集結構
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+cluster結構 物件包含GetCluster結構 方法所建立的叢集組態備份資訊。您可以使用SetCluster結構 方法、將此資訊還原至正在重建的儲存叢集。
+
+
+
+== 物件成員
+
+此物件包含下列方法的合併傳回資訊：
+
+* xref:reference_element_api_getclusterinfo.adoc[GetClusterInfo]
+* xref:reference_element_api_listaccounts.adoc[清單帳戶]
+* xref:reference_element_api_listinitiators.adoc[清單啟動器]
+* xref:reference_element_api_listvolumes.adoc[清單Volume] （含includedVirtualVolumes=假）
+* xref:reference_element_api_listvolumeaccessgroups.adoc[listVolume存取群組]
+* xref:reference_element_api_liststoragecontainers.adoc[清單StorageContainer]
+* xref:reference_element_api_listqospolicies.adoc[清單政策]
+* xref:reference_element_api_getsnmpinfo.adoc[GetSnmpInfo]
+* xref:reference_element_api_getntpinfo.adoc[GetNtpInfo]
+* xref:reference_element_api_listvirtualnetworks.adoc[清單虛擬網路]
+* xref:reference_element_api_listclusteradmins.adoc[listClusterAdmins]
+* xref:reference_element_api_listschedules.adoc[清單排程]
+* xref:reference_element_api_listsnapmirrorendpoints.adoc[列出SnapMirrorEndpoints]
+* xref:reference_element_api_getfeaturestatus.adoc[GetFeatureStatus]
+* xref:reference_element_api_getldapconfiguration.adoc[GetLdapConfiguration]
+* xref:reference_element_api_getremotelogginghosts.adoc[GetRemoteLoggingHos]
+* xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS]
+* xref:reference_element_api_getvolumeaccessgrouplunassignments.adoc[GetVolume存取群組LUN指派]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_getclusterstructure.adoc[GetCluster結構]
+* xref:reference_element_api_setclusterstructure.adoc[SetCluster結構]
+

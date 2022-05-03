@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_manage_vol_access_group_remove_initiators_from_an_access_group.html 
+sidebar: sidebar 
+keywords: initiator, remove from volume access group, access groups, remove initiator 
+summary: 當您從存取群組中移除啟動器時、它將無法再存取該Volume存取群組中的磁碟區。正常帳戶存取磁碟區不會中斷。 
+---
+= 從存取群組移除啟動器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您從存取群組中移除啟動器時、它將無法再存取該Volume存取群組中的磁碟區。正常帳戶存取磁碟區不會中斷。
+
+在帳戶中修改CHAP設定、或是從存取群組移除啟動器或磁碟區、可能會導致啟動器在非預期情況下失去對磁碟區的存取權。若要驗證Volume存取不會意外遺失、請務必登出會受帳戶或存取群組變更影響的iSCSI工作階段、並在完成啟動器設定和叢集設定的任何變更後、確認啟動器可以重新連線至磁碟區。
+
+.步驟
+. 按一下*管理*>*存取群組*。
+. 按一下您要移除之存取群組的*「Actions」（動作）*圖示。
+. 在產生的功能表中、選取*編輯*。
+. 在「*編輯Volume Access Group*」對話方塊的「新增啟動器」下、按一下「*啟動器*」清單上的箭頭。
+. 選取要從存取群組中移除的每個啟動器的x圖示。
+. 按一下*儲存變更*。
+

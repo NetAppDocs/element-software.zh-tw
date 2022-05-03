@@ -1,0 +1,83 @@
+---
+permalink: storage/concept_data_manage_volumes_quality_of_service_policies.html 
+sidebar: sidebar 
+keywords: qos policies, manage, volumes, create, edit, delete 
+summary: 服務品質（QoS）原則可讓您建立及儲存標準化的服務品質設定、以便套用至許多磁碟區。您可以從「管理」索引標籤的「QoS原則」頁面建立、編輯及刪除QoS原則。 
+---
+= 管理服務品質原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+服務品質（QoS）原則可讓您建立及儲存標準化的服務品質設定、以便套用至許多磁碟區。您可以從「管理」索引標籤的「QoS原則」頁面建立、編輯及刪除QoS原則。
+
+
+NOTE: 如果您使用的是QoS原則、請勿在磁碟區上使用自訂QoS。自訂QoS會覆寫及調整Volume QoS設定的QoS原則值。
+
+https://www.youtube.com/embed/q9VCBRDtrnI?rel=0["NetApp影片：SolidFire 服務品質保證"]
+
+請參閱 link:../concepts/concept_data_manage_volumes_solidfire_quality_of_service.html["效能與服務品質"]。
+
+* 建立QoS原則
+* 編輯QoS原則
+* 刪除QoS原則
+
+
+
+
+== 建立QoS原則
+
+您可以建立QoS原則、並在建立磁碟區時加以套用。
+
+. 選擇*管理*>* QoS原則*。
+. 按一下「*建立QoS原則*」。
+. 輸入* Policy Name*。
+. 輸入「*最小IOPS *」、「*最大IOPS *」及「*爆發IOPS *」值。
+. 按一下「*建立QoS原則*」。
+
+
+
+
+== 編輯QoS原則
+
+您可以變更現有QoS原則的名稱、或編輯與原則相關的值。變更QoS原則會影響與原則相關的所有磁碟區。
+
+. 選擇*管理*>* QoS原則*。
+. 按一下您要編輯之QoS原則的「動作」圖示。
+. 在產生的功能表中、選取「*編輯*」。
+. 在*編輯QoS原則*對話方塊中、視需要修改下列內容：
++
+** 原則名稱
+** 最小IOPS
+** 最大IOPS
+** 暴增IOPS
+
+
+. 按一下*儲存變更*。
+
+
+
+
+== 刪除QoS原則
+
+您可以刪除不再需要的QoS原則。刪除QoS原則時、與原則相關聯的所有磁碟區都會維持QoS設定、但會與原則無關聯。
+
+
+NOTE: 如果您正嘗試將某個Volume與QoS原則解除關聯、可以將該Volume的QoS設定變更為自訂。
+
+. 選擇*管理*>* QoS原則*。
+. 按一下您要刪除之QoS原則的「動作」圖示。
+. 在產生的功能表中、選取*刪除*。
+. 確認行動。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* link:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html["移除磁碟區的QoS原則關聯"]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

@@ -1,0 +1,343 @@
+---
+permalink: api/reference_element_api_modifyclusterfullthreshold.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,cluster,full,fullness,threshold,modifyclusterfullthreshold 
+summary: 您可以使用ModifyClusterFullThreshold方法、變更儲存叢集接近特定容量使用率時、系統產生事件的層級。您可以使用臨界值設定、在系統產生警告之前、先指出可接受的已使用區塊儲存量。 
+---
+= ModifyClusterFull閥 值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「多層叢集全臨界值」方法、變更儲存叢集接近特定容量使用率時、系統產生事件的層級。您可以使用臨界值設定、在系統產生警告之前、先指出可接受的已使用區塊儲存量。
+
+例如、如果您想要在系統達到低於「錯誤」層級區塊儲存使用率3%時收到警示、請在stage3Block長 保留百分比參數中輸入值「3」。如果達到此層級、系統會將警示傳送至叢集管理主控台的事件記錄檔。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+
+NOTE: 您必須選取至少一個參數。
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+MaxMetadataOverProvisionFactor
+ a| 
+代表中繼資料空間相對於可用空間量而言、可能過度配置的次數值。例如、如果有足夠的中繼資料空間來儲存100個TiB的磁碟區、而此數字設為5、則可以建立500個TiB值的磁碟區。
+ a| 
+整數
+ a| 
+5.
+ a| 
+否
+
+
+
+ a| 
+stage2Awareworreshold
+ a| 
+系統觸發容量通知之前、叢集中剩餘容量的節點數。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+stage3封鎖閾值百分比
+ a| 
+區塊儲存使用率低於「錯誤」臨界值的百分比、導致系統觸發叢集「警告」警示。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+stage3Metadata閾值百分比
+ a| 
+中繼資料儲存使用率低於「錯誤」臨界值、導致系統觸發叢集「警告」警示的百分比。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+區塊完整度
+ a| 
+叢集目前的區塊完整度計算層級。
+
+* stage1Hjappy：無警示或錯誤情況。對應於Web UI中的*健全*狀態。
+* stage2Aware：無警示或錯誤情況。對應於Web UI中的*健全*狀態。
+* stage3低：您的系統無法針對兩個非同步節點故障提供備援資料保護。對應於Web UI中的*警告*狀態。您可以在網路UI中設定此層級（依預設、系統會在低於錯誤狀態3%的容量下觸發此警示）。
+* stage4關鍵：系統無法針對單一節點故障提供備援資料保護。無法建立新的磁碟區或複本。對應於元素UI中的*錯誤*狀態。
+* stage5已完成：已完全耗用。叢集為唯讀且iSCSI連線維持不變、但所有寫入作業都會暫停。對應於元素UI中的*臨界*狀態。
+
+ a| 
+字串
+
+
+
+ a| 
+完整度
+ a| 
+反映「區塊完整度」和「metadata完整度」之間的最高完整度。
+ a| 
+字串
+
+
+
+ a| 
+MaxMetadataOverProvisionFactor
+ a| 
+代表中繼資料空間相對於可用空間量而言、可能過度配置的次數值。例如、如果有足夠的中繼資料空間來儲存100個TiB的磁碟區、而此數字設為5、則可以建立500個TiB值的磁碟區。
+ a| 
+整數
+
+
+
+ a| 
+metadata全功能性
+ a| 
+叢集目前的中繼資料完整度計算層級。
+
+* stage1Hjappy：無警示或錯誤情況。對應於Web UI中的*健全*狀態。
+* stage2Aware：無警示或錯誤情況。對應於Web UI中的*健全*狀態。
+* stage3低：您的系統無法針對兩個非同步節點故障提供備援資料保護。對應於Web UI中的*警告*狀態。您可以在網路UI中設定此層級（依預設、系統會在低於錯誤狀態3%的容量下觸發此警示）。
+* stage4關鍵：系統無法針對單一節點故障提供備援資料保護。無法建立新的磁碟區或複本。對應於元素UI中的*錯誤*狀態。
+* stage5已完成：已完全耗用。叢集為唯讀且iSCSI連線維持不變、但所有寫入作業都會暫停。對應於元素UI中的*臨界*狀態。
+
+ a| 
+字串
+
+
+
+ a| 
+交叉分析eReserveUsedTholholdPct
+ a| 
+錯誤條件。如果保留的分片使用率大於傳回的交叉分析eReserveUedThresholdPct值、就會觸發系統警示。
+ a| 
+整數
+
+
+
+ a| 
+stage2Awareworreshold
+ a| 
+認知條件：設定為「第2階段」叢集臨界值層級的值。
+ a| 
+整數
+
+
+
+ a| 
+stage2區塊閾值Bytes
+ a| 
+叢集所使用的位元組數、其中存在階段2完整條件。
+ a| 
+整數
+
+
+
+ a| 
+stage2Metadata閾值Bytes
+ a| 
+叢集所使用的中繼資料位元組數、其中將存在階段2完整條件。
+ a| 
+
+
+
+ a| 
+stage3區塊保留Bytes
+ a| 
+叢集使用的儲存位元組數、其中存在階段3完整條件。
+ a| 
+整數
+
+
+
+ a| 
+stage3封鎖閾值百分比
+ a| 
+階段3設定的百分比值。警示日誌中會顯示警示、但警示百分比已滿。
+ a| 
+整數
+
+
+
+ a| 
+stage3低臨界值
+ a| 
+錯誤條件。由於叢集上的容量過低而產生系統警示的臨界值。
+ a| 
+整數
+
+
+
+ a| 
+stage3Metadata閾值Bytes
+ a| 
+叢集所使用的中繼資料位元組數、其中將存在階段3完整條件。
+ a| 
+
+
+
+ a| 
+stage4區塊閾值Bytes
+ a| 
+叢集所使用的儲存位元組數、其中將存在階段4完整度條件。
+ a| 
+整數
+
+
+
+ a| 
+stage4臨界值
+ a| 
+錯誤條件。建立系統警示的臨界值、以警告叢集的嚴重低容量。
+ a| 
+整數
+
+
+
+ a| 
+stage4Metadata閾值Bytes
+ a| 
+叢集所使用的中繼資料位元組數、其中將存在階段4完整條件。
+ a| 
+
+
+
+ a| 
+stage5區塊閾值Bytes
+ a| 
+叢集所使用的儲存位元組數、其中將存在階段5完整度條件。
+ a| 
+整數
+
+
+
+ a| 
+stage5Metadata閾值Bytes
+ a| 
+叢集所使用的中繼資料位元組數、其中將存在階段5完整度條件。
+ a| 
+
+
+
+ a| 
+sumTotalClusterBytes
+ a| 
+叢集的實體容量（以位元組為單位）。
+ a| 
+整數
+
+
+
+ a| 
+sumTotalMetadata ClusterBytes
+ a| 
+可用於儲存中繼資料的空間總量。
+ a| 
+整數
+
+
+
+ a| 
+sumUsedClusterBytes
+ a| 
+叢集上使用的儲存位元組數。
+ a| 
+整數
+
+
+
+ a| 
+sumUsedMetadata ClusterBytes
+ a| 
+磁碟區磁碟機用於儲存中繼資料的空間量。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method" : "ModifyClusterFullThreshold",
+   "params" : {
+              "stage3BlockThresholdPercent" : 3
+              },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "blockFullness": "stage1Happy",
+    "fullness": "stage3Low",
+    "maxMetadataOverProvisionFactor": 5,
+    "metadataFullness": "stage3Low",
+    "sliceReserveUsedThresholdPct": 5,
+    "stage2AwareThreshold": 3,
+    "stage2BlockThresholdBytes": 2640607661261,
+    "stage3BlockThresholdBytes": 8281905846682,
+    "stage3BlockThresholdPercent": 3,
+    "stage3LowThreshold": 2,
+    "stage4BlockThresholdBytes": 8641988709581,
+    "stage4CriticalThreshold": 1,
+    "stage5BlockThresholdBytes": 12002762096640,
+    "sumTotalClusterBytes": 12002762096640,
+    "sumTotalMetadataClusterBytes": 404849531289,
+    "sumUsedClusterBytes": 45553617581,
+    "sumUsedMetadataClusterBytes": 31703113728
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

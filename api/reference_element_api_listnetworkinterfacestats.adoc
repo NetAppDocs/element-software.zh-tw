@@ -1,0 +1,84 @@
+---
+permalink: api/reference_element_api_listnetworkinterfacestats.html 
+sidebar: sidebar 
+keywords: network,interface,stats,statistics,interfaces,list,listing,listnetworkinterfacestats 
+summary: 您可以使用清單網路介面統計方法、列出節點上每個網路介面的統計資料。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面。 
+---
+= 列表網路互聯統計資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listNetworkInterfaceStats」方法來列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+| 網路連網統計資料 | 儲存節點每個網路介面的網路統計資訊清單、例如丟棄的封包數和各種網路錯誤類型。 | xref:reference_element_api_networkinterfacestats.adoc[網路連網統計資料] 陣列 
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+"method": "ListNetworkInterfaceStats",
+"params": {},
+"id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "networkInterfaceStats": [
+        {
+            "rxErrors": 1,
+            "rxPackets": 1,
+            "txErrors": 1,
+            "rxDropped": 1,
+            "txCarrierErrors": 1,
+            "rxOverErrors": 1,
+            "rxMissedErrors": 1,
+            "txPackets": 1,
+            "name": "if_name",
+            "rxLengthErrors": 1,
+            "collisions": 1,
+            "rxFifoErrors": 1,
+            "txBytes": 1,
+            "rxBytes": 1,
+            "rxFrameErrors": 1,
+            "rxCrcErrors": 1,
+            "txFifoErrors": 1
+        }
+    ]
+}
+----
+
+
+== 新的自版本
+
+12.3.

@@ -1,0 +1,547 @@
+---
+permalink: storage/reference_prereq_network_port_requirements.html 
+sidebar: sidebar 
+keywords: network port requirements, TCP ports, firewall, utilities, URL, access attempt, ICMP, MIP, SIP, MVIP, SVIP 
+summary: 您可能需要允許下列TCP連接埠通過資料中心的邊緣防火牆、以便從遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。 
+---
+= 網路連接埠需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要允許下列TCP連接埠通過資料中心的邊緣防火牆、以便從遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。
+
+除非另有說明、否則所有連接埠均為TCP、且應允許NetApp Support Server、管理節點和執行Element軟體的節點之間進行雙向通訊。
+
+
+IMPORTANT: NetApp正在重建線上儲存庫、以裝載支援NetApp混合雲控制自動化升級工作流程的軟體與韌體套裝組合下載。 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU474["深入瞭解"]
+
+[NOTE]
+====
+NetApp混合雲控制網路UI和API可從NetApp線上軟體儲存庫下載軟體套件、此儲存庫使用JFrog Artifactory Cloud做為配送中樞、並使用CDN技術來進行檔案託管。因此、部分URL或IP位址可能會根據內容傳輸網路解析為其他URL或IP位址。如有可能、您應與網路工程師合作、使用下列一般步驟、將這些URL或IP位址新增至防火牆規則：
+
+.步驟
+. 使用wGet或Curl公用程式存取URL（例如repo.netapp.com）。
+. 無法存取URL（與repo.netapp.com不同）。
+. 編輯防火牆規則以允許新的URL。
+. 重複上述步驟、直到存取嘗試成功為止。
+
+
+====
+
+TIP: 在管理節點、執行Element軟體的節點和叢集MVIP之間啟用ICMP。
+
+下表使用下列縮寫：
+
+* MIP：管理IP位址、每節點位址
+* Sip：儲存IP位址、每節點位址
+* MVIP：管理虛擬IP位址
+* SVIP：儲存虛擬IP位址
+
+
+[cols="25,25,15,35"]
+|===
+| 來源 | 目的地 | 連接埠 | 說明 
+
+
+ a| 
+iSCSI用戶端
+ a| 
+儲存叢集MVIP
+ a| 
+443..
+ a| 
+（選用）UI和API存取
+
+
+
+ a| 
+iSCSI用戶端
+ a| 
+儲存叢集SVIP
+ a| 
+3260
+ a| 
+用戶端iSCSI通訊
+
+
+
+ a| 
+iSCSI用戶端
+ a| 
+儲存節點Sip
+ a| 
+3260
+ a| 
+用戶端iSCSI通訊
+
+
+
+ a| 
+管理節點
+ a| 
+sfsupport.solidfire.com
+ a| 
+22
+ a| 
+反轉SSH通道以支援存取
+
+
+
+ a| 
+管理節點
+ a| 
+儲存節點MIP
+ a| 
+22
+ a| 
+SSH存取以取得支援
+
+
+
+ a| 
+管理節點
+ a| 
+DNS伺服器
+ a| 
+53個TCP / udp
+ a| 
+DNS查詢
+
+
+
+ a| 
+管理節點
+ a| 
+儲存節點MIP
+ a| 
+442-44
+ a| 
+使用者介面和API存取儲存節點和元件軟體升級
+
+
+
+ a| 
+管理節點
+ a| 
+儲存叢集MVIP
+ a| 
+442-44
+ a| 
+使用者介面和API存取儲存節點和元件軟體升級
+
+
+
+ a| 
+管理節點
+ a| 
+線上軟體儲存庫：
+
+* https://repo.netapp.com/bintray/api/package`
+* https://repo.netapp.com/downloads`
+* https://netappdownloads.jfrog.io:443`
+
+ a| 
+443..
+ a| 
+管理節點服務升級
+
+
+
+ a| 
+管理節點
+ a| 
+monitoring.solidfire.com
+ a| 
+443..
+ a| 
+儲存叢集報告Active IQ 功能
+
+
+
+ a| 
+管理節點
+ a| 
+儲存叢集MVIP
+ a| 
+443..
+ a| 
+使用者介面和API存取儲存節點和元件軟體升級
+
+
+
+ a| 
+管理節點
+ a| 
+repo.netapp.com
+ a| 
+443..
+ a| 
+提供必要元件的存取權限、以便在內部部署中安裝/更新。
+
+
+
+ a| 
+管理節點
+ a| 
+見證節點
+ a| 
+9442.
+ a| 
+每節點組態API服務
+
+
+
+ a| 
+管理節點
+ a| 
+vCenter Server
+ a| 
+9443
+ a| 
+vCenter外掛程式登錄。登錄完成後、即可關閉連接埠。
+
+
+
+ a| 
+SNMP伺服器
+ a| 
+儲存叢集MVIP
+ a| 
+161udp
+ a| 
+SNMP輪詢
+
+
+
+ a| 
+SNMP伺服器
+ a| 
+儲存節點MIP
+ a| 
+161udp
+ a| 
+SNMP輪詢
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+DNS伺服器
+ a| 
+53個TCP / udp
+ a| 
+DNS查詢
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+管理節點
+ a| 
+80
+ a| 
+Element軟體升級
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+S3/Swift端點
+ a| 
+80
+ a| 
+（選用）與S3/Swift端點之間的HTTP通訊、以供備份與還原
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+NTP伺服器
+ a| 
+123 udp
+ a| 
+NTP
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+管理節點
+ a| 
+162 udp
+ a| 
+（選用）SNMP設陷
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+SNMP伺服器
+ a| 
+162 udp
+ a| 
+（選用）SNMP設陷
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+LDAP伺服器
+ a| 
+389個TCP/IP
+ a| 
+（選用）LDAP查詢
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+管理節點
+ a| 
+443..
+ a| 
+元素儲存韌體升級
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+遠端儲存叢集MVIP
+ a| 
+443..
+ a| 
+遠端複寫叢集配對通訊
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+遠端儲存節點MIP
+ a| 
+443..
+ a| 
+遠端複寫叢集配對通訊
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+S3/Swift端點
+ a| 
+443..
+ a| 
+（選用）與S3/Swift端點之間的HTTPS通訊、以供備份與還原
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+管理節點
+ a| 
+514個TCP/IP / udp
+
+10514 TCP/IP / udp
+ a| 
+系統記錄轉送
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+系統記錄伺服器
+ a| 
+514個TCP/IP / udp
+
+10514 TCP/IP / udp
+ a| 
+系統記錄轉送
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+LDAPS伺服器
+ a| 
+636 TCP / udp
+ a| 
+LDAPS查詢
+
+
+
+ a| 
+儲存節點MIP
+ a| 
+遠端儲存節點MIP
+ a| 
+2181
+ a| 
+叢集間通訊、以進行遠端複寫
+
+
+
+ a| 
+儲存節點Sip
+ a| 
+遠端儲存節點Sip
+ a| 
+2181
+ a| 
+叢集間通訊、以進行遠端複寫
+
+
+
+ a| 
+儲存節點Sip
+ a| 
+儲存節點Sip
+ a| 
+3260
+ a| 
+節點間iSCSI
+
+
+
+ a| 
+儲存節點Sip
+ a| 
+遠端儲存節點Sip
+ a| 
+4000至4020
+ a| 
+遠端複寫節點對節點資料傳輸
+
+
+
+ a| 
+系統管理員PC
+ a| 
+管理節點
+ a| 
+442-44
+ a| 
+HTTPS UI存取管理節點
+
+
+
+ a| 
+系統管理員PC
+ a| 
+儲存節點MIP
+ a| 
+442-44
+ a| 
+HTTPS UI和API存取儲存節點
+
+
+
+ a| 
+系統管理員PC
+ a| 
+管理節點
+ a| 
+443..
+ a| 
+HTTPS UI和API存取管理節點
+
+
+
+ a| 
+系統管理員PC
+ a| 
+儲存叢集MVIP
+ a| 
+443..
+ a| 
+HTTPS UI和API存取儲存叢集
+
+
+
+ a| 
+系統管理員PC
+ a| 
+儲存節點MIP
+ a| 
+443..
+ a| 
+HTTPS儲存叢集建立、部署後UI存取儲存叢集
+
+
+
+ a| 
+系統管理員PC
+ a| 
+見證節點
+ a| 
+8080
+ a| 
+見證節點個別節點的Web UI
+
+
+
+ a| 
+vCenter Server
+ a| 
+儲存叢集MVIP
+ a| 
+443..
+ a| 
+vCenter外掛程式API存取
+
+
+
+ a| 
+vCenter Server
+ a| 
+管理節點
+ a| 
+8443.
+ a| 
+（選用）vCenter外掛程式QoSSIOC服務。
+
+
+
+ a| 
+vCenter Server
+ a| 
+儲存叢集MVIP
+ a| 
+844
+ a| 
+vCenter VASA供應商存取（僅VVols）
+
+
+
+ a| 
+vCenter Server
+ a| 
+管理節點
+ a| 
+9443
+ a| 
+vCenter外掛程式登錄。登錄完成後、即可關閉連接埠。
+
+|===
+
+
+== 以取得更多資訊
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

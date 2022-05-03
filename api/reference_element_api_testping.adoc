@@ -1,0 +1,245 @@
+---
+permalink: api/reference_element_api_testping.html 
+sidebar: sidebar 
+keywords: ping,test,TestPing 
+summary: 您可以使用TestPing方法、使用ICMP封包、在1G和10G介面上測試與叢集中所有節點的網路連線。測試會根據網路組態中的MTU設定、針對每個封包使用適當的MTU大小。TestPing不會建立暫用的VLAN介面。 
+---
+= 測試Ping
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「TestPing」方法、使用ICMP封包、在1G和10G介面上測試與叢集中所有節點的網路連線。測試會根據網路組態中的MTU設定、針對每個封包使用適當的MTU大小。「TestPing」不會建立暫用的VLAN介面。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+嘗試
+ a| 
+指定系統重複測試ping的次數。
+ a| 
+整數
+ a| 
+5.
+ a| 
+否
+
+
+
+ a| 
+主機
+ a| 
+指定要ping之裝置的位址或主機名稱、以逗號分隔。如果未指定主機、則ping儲存叢集中的主機的方法。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+介面
+ a| 
+應該從中傳送ping的現有（基礎）介面。可能值：
+
+* 「Bond10G」：從Bond10G介面傳送ping。
+* 「Bond1G」：從Bond1G介面傳送ping。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+封裝大小
+ a| 
+指定要在傳送給每個IP的ICMP封包中傳送的位元組數。位元組數必須小於網路組態中指定的最大MTU。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+pingTimoutMsec
+ a| 
+指定每個ping回應的等待毫秒數。
+ a| 
+整數
+ a| 
+500毫秒
+ a| 
+否
+
+
+
+ a| 
+禁止：片段
+ a| 
+啟用ICMP封包的DF（請勿分段）旗標。
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+ a| 
+來源位址V4
+ a| 
+要用於ICMP Ping封包的來源IPV4位址。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+sourceAddressV6
+ a| 
+要用於ICMP Ping封包的來源IPv6位址。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+累計逾時秒
+ a| 
+指定ping在發出下一次ping嘗試或結束程序之前、等待系統回應的時間（以秒為單位）。
+ a| 
+整數
+ a| 
+5.
+ a| 
+否
+
+
+
+ a| 
+虛擬化網路標籤
+ a| 
+傳送ping封包時要使用的VLAN ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+詳細資料
+ a| 
+節點能夠通訊的每個IP清單、以及ping回應統計資料。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method": "TestPing",
+    "params": {
+        "interface": "Bond1G",
+        "hosts": "192.168.0.1"
+    },
+    "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "details": {
+      "192.168.0.1": {
+        "individualResponseCodes": [
+          "Success",
+          "Success",
+          "Success",
+          "Success",
+          "Success"
+        ],
+        "individualResponseTimes": [
+          "00:00:00.000304",
+          "00:00:00.000123",
+          "00:00:00.000116",
+          "00:00:00.000113",
+          "00:00:00.000111"
+        ],
+        "individualStatus": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "interface": "Bond1G",
+        "responseTime": "00:00:00.000154",
+        "sourceAddressV4": "192.168.0.5",
+        "successful": true
+      }
+    },
+    "duration": "00:00:00.001747",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 新的自版本
+
+5.0

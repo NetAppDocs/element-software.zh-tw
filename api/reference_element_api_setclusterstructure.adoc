@@ -1,0 +1,85 @@
+---
+permalink: api/reference_element_api_setclusterstructure.html 
+sidebar: sidebar 
+keywords: storage,cluster,configuration,info,restore,set,setting,setclusterstructure 
+summary: 您可以使用SetCluster結構 方法、從備份還原儲存叢集組態資訊。當您呼叫方法時、會傳遞叢集結構物件、其中包含您要還原為參數的組態資訊。 
+---
+= SetCluster結構
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「etCluster結構」方法、從備份還原儲存叢集組態資訊。當您呼叫方法時、會傳遞叢集結構物件、其中包含您要還原為參數的組態資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+參數
+ a| 
+包含目前儲存叢集組態資訊的Json物件。
+ a| 
+xref:reference_element_api_clusterstructure.adoc[叢集結構]
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+結果
+ a| 
+非同步結果處理。
+ a| 
+asyncdle
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "SetClusterStructure",
+  "params": <insert clusterStructure object here>,
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id": 1,
+	"result" : {
+	"asyncHandle": 1
+	}
+}
+----
+
+
+== 新的自版本
+
+10.3.1

@@ -1,0 +1,40 @@
+---
+permalink: api/concept_element_api_about_the_api.html 
+sidebar: sidebar 
+keywords: SolidFire,API,overview,about,Element 
+summary: 元素API是以透過HTTPS的JSON-RPC傳輸協定為基礎。JSON-RPC是以輕量化JSON資料交換格式為基礎的簡單文字型RPC傳輸協定。用戶端程式庫適用於所有主要的程式設計語言。 
+---
+= 關於Element軟體API
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+元素API是以透過HTTPS的JSON-RPC傳輸協定為基礎。JSON-RPC是以輕量化JSON資料交換格式為基礎的簡單文字型RPC傳輸協定。用戶端程式庫適用於所有主要的程式設計語言。
+
+您可以透過HTTPS POST要求、向API端點提出API要求。POST要求的本文是JSON-RPC要求物件。API目前不支援批次要求（單一POST中有多個要求物件）。提交API要求時、您必須使用「application/json-rpc」做為要求的內容類型、並確保實體未編碼格式。
+
+
+NOTE: Element Web UI會使用本文所述的API方法。您可以啟用API記錄來監控UI中的API作業；如此可讓您查看發行給系統的方法。您可以同時啟用要求和回應、以查看系統如何回覆所發佈的方法。
+
+除非另有說明、否則API回應中的所有日期字串均為UTC+0格式。
+
+
+NOTE: 當儲存叢集負載沉重、或是您提交許多連續的API要求而沒有介入延遲時、某種方法可能會失敗、並傳回錯誤「xDBVERionm不符」。如果發生這種情況、請重試方法呼叫。
+
+* xref:reference_element_api_request_object_members.adoc[要求物件成員]
+* xref:reference_element_api_response_object_members.adoc[回應物件成員]
+* xref:concept_element_api_request_endpoints.adoc[要求端點]
+* xref:concept_element_api_authentication.adoc[API驗證]
+* xref:concept_element_api_asynchronous_methods.adoc[非同步方法]
+* xref:reference_element_api_attributes.adoc[屬性]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

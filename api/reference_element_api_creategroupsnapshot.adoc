@@ -1,0 +1,272 @@
+---
+permalink: api/reference_element_api_creategroupsnapshot.html 
+sidebar: sidebar 
+keywords: volume,volumes,snapshot,snapshots,CreateGroupSnapshot,group,create,creating 
+summary: 您可以使用Create GroupSnapshot建立一組磁碟區的時間點複本。 
+---
+= CreatGroupSnapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Create GroupSnapshot」建立一組磁碟區的時間點複本。
+
+您可以稍後使用此快照做為備份或復原、以確保磁碟區群組中的資料在您建立快照的時間點保持一致。
+
+*叢集完整度*
+
+
+NOTE: 如果叢集完整度處於階段1、2或3、您可以建立快照。叢集完整度達到階段4或5時、您無法建立快照。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+「enableRemoteReplication」
+ a| 
+指定是否將快照複寫至遠端儲存設備。可能值：
+
+* 「真的」：快照將複寫到遠端儲存設備。
+* 「假」：快照不會複寫到遠端儲存設備。
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+| 「EnureSerialCreation」  a| 
+指定如果正在進行先前的快照複寫、則不應建立快照。可能的值包括：
+
+* 「真的」：這可確保一次只複寫一個快照。如果先前的快照複寫仍在進行中、建立新快照將會失敗。
+* 「假」：預設。如果另一個快照複寫仍在進行中、則允許建立此快照。
+
+| 布林值 | 「假」 | 否 
+
+
+ a| 
+「過期時間」
+ a| 
+指定快照可移除的時間。無法與"REtion"一起使用。如果未指定「過期時間」或「快照」、則快照不會過期。時間格式為ISO 8601日期字串、適用於基於時間的到期日、否則將不會過期。如果值為「null」、則會永久保留快照。如果值為「fifo」、則快照會以先進先出（FIFO）為基準、相對於磁碟區上的其他FIFO快照來保留。如果沒有可用的FIFO空間、API將會失敗。
+ a| 
+ISO 8601日期字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+名稱
+ a| 
+群組快照的名稱。如果未輸入名稱、則會使用拍攝群組快照的日期和時間。名稱長度上限為255個字元。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+《狀態》
+ a| 
+此參數與「過期時間」參數相同、但時間格式為hh：mms如果既未指定「過期時間」、也未指定「保留時間」、則快照不會過期。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+「napMirrorLabel」
+ a| 
+SnapMirror軟體用來指定SnapMirror端點上的快照保留原則的標籤。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+《Volume》（Volume）
+ a| 
+要複製之Volume映像的唯一ID。
+ a| 
+Volume ID陣列
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+成員
+ a| 
+群組每個成員的Checksum、volumeID和snapshotID清單。有效值：
+
+* Checksum：儲存快照中資料的小字串表示。此Checksum稍後可用於比較其他快照、以偵測資料中的錯誤。（字串）
+* SnapshotID：用於建立新快照的快照的唯一ID。SnapshotID必須來自給定磁碟區上的快照。（整數）
+* Volume ID：快照的來源Volume ID。（整數）
+
+ a| 
+Json物件陣列
+
+
+
+ a| 
+群組SnapshotID
+ a| 
+新群組快照的唯一ID。
+ a| 
+群組Snapshot ID
+
+
+
+ a| 
+群組Snapshot
+ a| 
+包含新建立之群組快照相關資訊的物件。
+ a| 
+xref:reference_element_api_groupsnapshot.adoc[群組Snapshot]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "CreateGroupSnapshot",
+   "params": {
+      "volumes": [1,2]
+   },
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "groupSnapshot": {
+      "attributes": {},
+      "createTime": "2016-04-04T22:43:29Z",
+      "groupSnapshotID": 45,
+      "groupSnapshotUUID": "473b78a3-ef85-4541-9438-077306b2d3ca",
+      "members": [
+        {
+          "attributes": {},
+          "checksum": "0x0",
+          "createTime": "2016-04-04T22:43:29Z",
+          "enableRemoteReplication": false,
+          "expirationReason": "None",
+          "expirationTime": null,
+          "groupID": 45,
+          "groupSnapshotUUID": "473b78a3-ef85-4541-9438-077306b2d3ca",
+          "name": "2016-04-04T22:43:29Z",
+          "snapshotID": 3323,
+          "snapshotUUID": "7599f200-0092-4b41-b362-c431551937d1",
+          "status": "done",
+          "totalSize": 5000658944,
+          "virtualVolumeID": null,
+          "volumeID": 1
+        },
+        {
+          "attributes": {},
+          "checksum": "0x0",
+          "createTime": "2016-04-04T22:43:29Z",
+          "enableRemoteReplication": false,
+          "expirationReason": "None",
+          "expirationTime": null,
+          "groupID": 45,
+          "groupSnapshotUUID": "473b78a3-ef85-4541-9438-077306b2d3ca",
+          "name": "2016-04-04T22:43:29Z",
+          "snapshotID": 3324,
+          "snapshotUUID": "a0776a48-4142-451f-84a6-5315dc37911b",
+          "status": "done",
+          "totalSize": 6001000448,
+          "virtualVolumeID": null,
+          "volumeID": 2
+        }
+      ],
+      "name": "2016-04-04T22:43:29Z",
+      "status": "done"
+    },
+    "groupSnapshotID": 45,
+    "members": [
+      {
+        "checksum": "0x0",
+        "snapshotID": 3323,
+        "snapshotUUID": "7599f200-0092-4b41-b362-c431551937d1",
+        "volumeID": 1
+      },
+      {
+        "checksum": "0x0",
+        "snapshotID": 3324,
+        "snapshotUUID": "a0776a48-4142-451f-84a6-5315dc37911b",
+        "volumeID": 2
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

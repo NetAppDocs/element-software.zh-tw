@@ -1,0 +1,27 @@
+---
+permalink: storage/task_replication_change_the_mode.html 
+sidebar: sidebar 
+keywords: volume pairings, replication mode, change, volume pair properties 
+summary: 您可以編輯Volume配對內容、以變更Volume配對關係的複寫模式。 
+---
+= 變更複寫模式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以編輯Volume配對內容、以變更Volume配對關係的複寫模式。
+
+. 選擇*資料保護*>*磁碟區配對*。
+. 按一下Volume配對的「Actions（動作）」圖示。
+. 按一下 * 編輯 * 。
+. 在*編輯Volume Pair*窗格中、選取新的複寫模式：
++
+** *即時（非同步）*：寫入作業在來源叢集上提交後、便會對用戶端進行認可。
+** *即時（同步）*：寫入作業會在來源叢集和目標叢集上提交後、確認寫入至用戶端。
+** *僅快照*：僅複寫在來源叢集上建立的快照。不會複寫來源Volume的作用中寫入內容。*注意：*變更複寫模式會立即變更模式。請確定您已在兩個站台協調這些變更。
+
+
+. 按一下*儲存變更*。
+

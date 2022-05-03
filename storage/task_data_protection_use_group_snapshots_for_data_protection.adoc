@@ -1,0 +1,27 @@
+---
+permalink: storage/task_data_protection_use_group_snapshots_for_data_protection.html 
+sidebar: sidebar 
+keywords: group snapshots, data protection, set of volumes, backup, rollback 
+summary: 您可以建立一組相關磁碟區的群組快照、以保留每個磁碟區中繼資料的時間點複本。未來您可以使用群組快照做為備份或復原、將磁碟區群組的狀態還原為先前的狀態。 
+---
+= 使用群組快照來執行資料保護工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以建立一組相關磁碟區的群組快照、以保留每個磁碟區中繼資料的時間點複本。未來您可以使用群組快照做為備份或復原、將磁碟區群組的狀態還原為先前的狀態。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_data_protection_create_a_group_snapshot.adoc[建立群組快照]
+* xref:task_data_protection_edit_group_snapshots.adoc[編輯群組快照]
+* xref:task_data_protection_edit_members_of_group_snapshot.adoc[編輯群組快照的成員]
+* xref:task_data_protection_delete_a_group_snapshot.adoc[刪除群組快照]
+* xref:task_data_protection_roll_back_volumes_to_a_group_snapshot.adoc[將磁碟區復原至群組快照]
+* xref:task_data_protection_clone_multiple_volumes.adoc[複製多個Volume]
+* xref:task_data_protection_clone_multiple_volumes_from_a_group_snapshot.adoc[從群組快照複製多個磁碟區]
+

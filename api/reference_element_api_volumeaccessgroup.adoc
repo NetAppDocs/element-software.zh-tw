@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_volumeaccessgroup.html 
+sidebar: sidebar 
+keywords: object,objects,volumeAccessGroup 
+summary: volumeAccessGroup物件包含特定Volume存取群組的相關資訊。您可以使用API方法ListVolume存取群組擷取所有存取群組的此資訊清單。 
+---
+= Volume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+volumeAccessGroup物件包含特定Volume存取群組的相關資訊。您可以使用API方法「listVolume存取群組」來擷取所有存取群組的此資訊清單。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+
+
+
+ a| 
+刪除磁碟區
+ a| 
+已從尚未從系統中清除的Volume存取群組中刪除的磁碟區陣列。
+ a| 
+整數陣列
+
+
+
+ a| 
+初始化者ID
+ a| 
+對應至Volume存取群組之啟動器的ID清單。
+ a| 
+整數陣列
+
+
+
+ a| 
+啟動器
+ a| 
+對應至磁碟區存取群組的獨特IQN/WWPN啟動器陣列。
+ a| 
+字串陣列
+
+
+
+ a| 
+名稱
+ a| 
+Volume存取群組名稱。
+ a| 
+字串
+
+
+
+ a| 
+Volume存取群組ID
+ a| 
+Volume存取群組的唯一Volume存取GroupID識別碼。
+ a| 
+整數
+
+
+
+ a| 
+磁碟區
+ a| 
+屬於Volume存取群組的Volume ID清單。
+ a| 
+整數陣列
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_listvolumeaccessgroups.adoc[listVolume存取群組]

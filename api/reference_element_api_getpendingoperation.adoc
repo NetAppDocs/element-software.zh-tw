@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_getpendingoperation.html 
+sidebar: sidebar 
+keywords: get,getting,pending,operation,getpendingoperation 
+summary: 您可以使用GetPendingOperation方法來偵測目前正在進行中之節點上的作業。此方法也可用於在作業完成時回報。 
+---
+= GetPendingOperation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetPendingOperation」方法來偵測目前正在進行中之節點上的作業。此方法也可用於在作業完成時回報。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+擱置中
+ a| 
+可能值：
+
+* 對：作業仍在進行中。
+* 假：
++
+此作業不再進行中。
+
+
+ a| 
+布林值
+
+
+
+ a| 
+營運
+ a| 
+進行中或已完成的作業名稱。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetPendingOperation",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+      "pendingOperation" : {
+         "pending" : "true",
+         "operation" : "TestDrivesInternal",
+      }
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

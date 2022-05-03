@@ -1,0 +1,78 @@
+---
+permalink: api/reference_element_api_snapmirrorendpoint.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorEndpoint 
+summary: SnapMirrorEndpoint物件包含遠端SnapMirror儲存系統與元素儲存叢集通訊的相關資訊。您可以使用listSnapMirrorEndpoints API方法擷取此資訊。 
+---
+= snapMirrorEndpoint
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirrorEndpoint物件包含遠端SnapMirror儲存系統與元素儲存叢集通訊的相關資訊。您可以使用listSnapMirrorEndpoints API方法擷取此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+本機叢集中物件的唯一識別碼。
+ a| 
+整數
+
+
+
+ a| 
+管理IP
+ a| 
+端點的叢集管理IP位址。
+ a| 
+字串
+
+
+
+ a| 
+叢集名稱
+ a| 
+此為整個叢集的名稱。 ONTAP此值會自動填入來自snapMirrorClusterIdentity物件的「'clustername'」值。
+ a| 
+字串
+
+
+
+ a| 
+使用者名稱
+ a| 
+適用於整個系統的管理使用者名稱ONTAP 。
+ a| 
+字串
+
+
+
+ a| 
+IP地址
+ a| 
+叢集內所有節點的叢集間儲存IP位址清單。您可以使用ListSnapMirrorNetworkInterfaces方法來取得這些IP位址。
+ a| 
+字串陣列
+
+
+
+ a| 
+已中斷連線
+ a| 
+連接ONTAP 至該叢集的控制連結的連線狀態。
+ a| 
+布林值
+
+|===

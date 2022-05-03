@@ -1,0 +1,94 @@
+---
+permalink: api/reference_element_api_listsnapmirrorvservers.html 
+sidebar: sidebar 
+keywords: snapmirror,vserver,vservers,list,listing,listsnapmirrorvservers 
+summary: Element軟體Web UI會使用ListSnapMirrorVservers方法列出遠端ONTAP 系統上所有可用的SnapMirror Vserver。 
+---
+= LISTSnapMirrorVservers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ListSnapMirrorVservers」方法、列出遠端ONTAP 無法使用的所有SnapMirror Vserver。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+僅列出與指定端點ID相關聯的Vserver。如果未提供端點ID、系統會列出所有已知SnapMirror端點的Vserver。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+VserverType
+ a| 
+僅列出指定類型的Vserver。可能值：
+
+* 管理
+* 資料
+* 節點
+* 系統
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+VserverName
+ a| 
+僅列出具有指定名稱的Vserver。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorVservers
+ a| 
+SnapMirror Vserver清單、可在ONTAP 不完善的儲存系統上使用。
+ a| 
+xref:reference_element_api_snapmirrorvserver.adoc[snapMirrorVserver] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

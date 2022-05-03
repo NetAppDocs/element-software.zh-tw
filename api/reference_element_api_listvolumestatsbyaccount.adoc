@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_listvolumestatsbyaccount.html 
+sidebar: sidebar 
+keywords: volumes,volume,stats,list,listing,account,listvolumestatsbyaccount,activity 
+summary: 您可以使用listVolume StatsByAccount方法、列出每個帳戶的高層級Volume活動量測。值會從帳戶擁有的所有磁碟區加總。 
+---
+= listVolume狀態ByAccount
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listVolume StatsByAccount」方法、列出每個帳戶的高層級Volume活動量測。值會從帳戶擁有的所有磁碟區加總。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+包括虛擬磁碟區
+ a| 
+虛擬磁碟區預設會包含在回應中。若要排除虛擬磁碟區、請設定為假。
+ a| 
+布林值
+ a| 
+是的
+ a| 
+否
+
+
+
+ a| 
+帳戶
+ a| 
+要傳回Volume統計資料的帳戶ID清單。如果省略、則會傳回所有帳戶的統計資料。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume統計資料
+ a| 
+每個帳戶的Volume活動資訊清單。*附註：*每個項目的volumeID成員為0、因為這些值代表帳戶所有Volume的總和。
+ a| 
+xref:reference_element_api_volumestats.adoc[Volume統計資料] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+"method": "ListVolumeStatsByAccount",
+  "params": {"accounts": [3]},
+  "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 3,
+        "nonZeroBlocks": 155040175,
+        "readBytes": 3156273328128,
+        "readBytesLastSample": 0,
+        "readOps": 770574543,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "timestamp": "2016-10-17T20:42:26.231661Z",
+        "unalignedReads": 0,
+        "unalignedWrites": 0,
+        "volumeAccessGroups": [],
+        "volumeID": 0,
+        "volumeSize": 1127428915200,
+        "writeBytes": 1051988406272,
+        "writeBytesLastSample": 0,
+        "writeOps": 256833107,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 120211025
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

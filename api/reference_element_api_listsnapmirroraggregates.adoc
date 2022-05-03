@@ -1,0 +1,62 @@
+---
+permalink: api/reference_element_api_listsnapmirroraggregates.html 
+sidebar: sidebar 
+keywords: snapmirror,aggregate,aggregates,list,listing,listsnapmirroraggregates 
+summary: Element軟體Web UI使用ListSnapMirrorAggregate方法列出遠端ONTAP 無法使用的所有SnapMirror集合體。Aggregate說明一組實體儲存資源。 
+---
+= ListSnapMirrorAgggregates
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ListSnapMirrorAggregate」方法、列出遠端ONTAP 作業系統上可用的所有SnapMirror集合體。Aggregate說明一組實體儲存資源。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+僅傳回與指定端點ID相關聯的集合體。如果未提供端點ID、系統會列出來自所有已知SnapMirror端點的集合體。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorAgggregates
+ a| 
+可在ONTAP 不完善儲存系統上使用的集合體清單。
+ a| 
+xref:reference_element_api_snapmirroraggregate.adoc[snapMirrorAggrate] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

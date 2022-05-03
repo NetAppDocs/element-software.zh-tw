@@ -1,0 +1,26 @@
+---
+permalink: hardware/index.html 
+sidebar: sidebar 
+keywords: soldifre hardware, h-series hardware, install hardware, maintain hardware, h410s, h610s 
+summary: 深入瞭解H系列和SF系列硬體的安裝與維護。 
+---
+= 安裝及維護硬體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+深入瞭解H系列和SF系列硬體的安裝與維護。
+
+* xref:concept_h410s_h610s_info.adoc[H410S和H610S硬體資訊]
+* xref:concept_sfseries_info.adoc[SF系列硬體資訊]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

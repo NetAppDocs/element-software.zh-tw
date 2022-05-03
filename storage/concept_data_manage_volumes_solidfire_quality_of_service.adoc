@@ -1,0 +1,66 @@
+---
+permalink: storage/concept_data_manage_volumes_solidfire_quality_of_service.html 
+sidebar: sidebar 
+keywords: qos policies, iops 
+summary: 支援以每個磁碟區為基礎、提供服務品質（QoS）參數的功能。SolidFire您可以使用三個可設定的參數來定義QoS、以每秒輸入和輸出數（IOPS）來保證叢集效能：最小IOPS、最大IOPS和爆發IOPS。 
+---
+= 服務品質
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援以每個磁碟區為基礎、提供服務品質（QoS）參數的功能。SolidFire您可以使用三個可設定的參數來定義QoS、以每秒輸入和輸出（IOPS）為單位來保證叢集效能：最小IOPS、最大IOPS和爆發IOPS。
+
+
+NOTE: 支援QoS建議頁面、提供最佳組態和QoS設定的建議。SolidFire Active IQ
+
+IOPS參數的定義方式如下：
+
+* *最低IOPS *
++
+儲存叢集提供給磁碟區的每秒持續輸入和輸出（IOPS）最小數量。為磁碟區設定的最小IOPS是保證磁碟區效能的等級。效能不會低於此等級。
+
+* *最大IOPS *
++
+儲存叢集提供給磁碟區的持續IOPS上限。當叢集IOPS等級極高時、不會超過此等級的IOPS效能。
+
+* *爆發IOPS *
++
+在短時間脈衝案例中允許的IOPS上限。如果某個磁碟區的執行量低於最大IOPS、則會累積大量資源。當效能等級變得非常高、並推升至最大層級時、磁碟區上就會允許短暫的IOPS突發。
+
++
+當叢集執行的叢集IOPS使用率低時、Element軟體會使用Burst IOPS。
+
++
+單一磁碟區可以累積爆發IOPS、並使用這些積分在設定的「爆發期間」內、以超過其最高IOPS的爆發IOPS等級。如果叢集具有容納突發量的容量、則磁碟區最多可暴增60秒。
+
++
+Volume每秒累積一秒的暴增信用額度（最高60秒）、使磁碟區的執行量低於其最大IOPS限制。
+
++
+暴增IOPS有兩種限制：
+
++
+** 磁碟區可以在數秒內暴增超過其最大IOPS、等於磁碟區已累積的突發量數。
+** 當磁碟區超過其最大IOPS設定時、其「爆發IOPS」設定將會受到限制。因此、尖峰IOPS永遠不會超過Volume的「尖峰IOPS」設定。
+
+
+* *有效最大頻寬*
++
+最大頻寬的計算方法是將IOPS數（根據QoS曲線）乘以IO大小。
+
++
+範例：
+
++
+QoS參數設定為100分鐘IOPS、1000最大IOPS及1500個爆發IOPs、對效能品質有下列影響：
+
++
+** 工作負載能夠達到並維持最高1000 IOPS、直到叢集上出現工作負載爭用IOPS的情況為止。然後逐漸減少IOPS、直到所有磁碟區的IOPS都在指定的QoS範圍內、並消除效能爭用。
+** 所有磁碟區的效能都推向100的最低IOPS。層級不會低於最低IOPS設定、但在工作負載爭用解除時、仍可能維持高於100 IOPS。
+** 效能絕不會超過1000 IOPS、或持續時間低於100 IOPS。允許執行1500 IOPS（爆發IOPS）的效能、但僅適用於執行低於最大IOPS且只允許短時間內執行的累積暴增積分磁碟區。連串連層級都無法維持。
+
+
+

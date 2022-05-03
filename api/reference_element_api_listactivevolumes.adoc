@@ -1,0 +1,111 @@
+---
+permalink: api/reference_element_api_listactivevolumes.html 
+sidebar: sidebar 
+keywords: active,volume,volumes,list,listing,listactivevolumes,cluster 
+summary: 您可以使用ListActiveVolumes方法取得系統中目前作用中磁碟區的清單。磁碟區清單會依Volume ID順序排序、並可傳回多個部分（頁數）。 
+---
+= listActiveVolumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listActiveVolumes」方法取得系統中目前作用中磁碟區的清單。磁碟區清單會依Volume ID順序排序、並可傳回多個部分（頁面）。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+包括虛擬磁碟區
+ a| 
+根據預設、回應中會包含虛擬磁碟區。若要排除虛擬磁碟區、請設定為假。
+ a| 
+布林值
+ a| 
+是的
+ a| 
+否
+
+
+
+ a| 
+startVolume ID
+ a| 
+正在啟動Volume ID以返回。如果此Volume ID不存在任何Volume、則會使用Volume ID Order下一個Volume做為清單的開頭。若要逐頁瀏覽清單、請傳回上一個回應+ 1中最後一個磁碟區的Volume ID。
+ a| 
+整數
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+限制
+ a| 
+要傳回的Volume資訊物件數目上限。0（零）會傳回所有Volume（無限）。
+ a| 
+整數
+ a| 
+（無限制）
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+磁碟區
+ a| 
+作用中磁碟區清單。
+ a| 
+xref:reference_element_api_volume.adoc[Volume] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListActiveVolumes",
+   "params": {
+      "startVolumeID"  : 0,
+      "limit" : 1000
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+由於此回應範例的長度很長、因此會在補充主題中予以記錄。
+
+
+
+== 新的自版本
+
+9.6

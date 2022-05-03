@@ -1,0 +1,199 @@
+---
+permalink: api/reference_element_api_modifyvolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: volume,access,group,modify,modifying,updating,changing,change,update,edit,editing,modifyvolumeaccessgroup 
+summary: 您可以使用ModifyVolume存取群組方法來更新啟動器、以及從Volume存取群組新增或移除磁碟區。 
+---
+= ModifyVolume存取群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「磁碟區存取群組」方法來更新啟動器、以及從磁碟區存取群組新增或移除磁碟區。
+
+如果指定的啟動器或磁碟區與目前存在的複本相同、則磁碟區存取群組會保持不動。如果未指定磁碟區或啟動器的值、則不會變更目前的啟動器和磁碟區清單。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+
+
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume存取群組ID
+ a| 
+要修改的Volume存取群組ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+名稱
+ a| 
+此Volume存取群組的新名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+啟動器
+ a| 
+要納入Volume存取群組的啟動器ID或名稱（IQN和WWPN）清單。如果您通過啟動器名稱清單、則會在啟動器尚未存在時建立啟動器。如果您通過啟動器ID清單、則當任何啟動器不存在時、該方法會傳回錯誤。傳遞啟動器名稱已過時；您應盡可能使用啟動器ID。
+ a| 
+整數陣列（建議）或字串陣列（已過時）
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+刪除OrphanInitiator
+ a| 
+指定是否要在啟動器物件從Volume存取群組中移除之後刪除。可能值：
+
+* 是：從Volume存取群組移除啟動器物件後、請將其刪除。
+* 假：從Volume存取群組移除啟動器物件後、請勿刪除這些物件。這是預設值。
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+ a| 
+磁碟區
+ a| 
+要修改之磁碟區的Volume ID清單。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[Volume存取群組]
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume存取群組
+ a| 
+包含新修改磁碟區存取群組相關資訊的物件。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[Volume存取群組]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ModifyVolumeAccessGroup",
+   "params": {
+      "volumeAccessGroupID": 96,
+      "name": "accessgrouptest",
+      "initiators": [115,114],
+      "volumes": [
+         346
+    ],
+      "attributes": {}
+   }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [
+        327
+      ],
+      "initiatorIDs": [
+        114,
+        115
+      ],
+      "initiators": [
+        "iqn.1998-01.com.vmware:desk1-esx1-577b283a",
+        "iqn.1998-01.com.vmware:donesq-esx1-421b281b"
+      ],
+      "name": "accessgrouptest",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        346
+      ]
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_addinitiatorstovolumeaccessgroup.adoc[AddInitiatorsToVolume存取群組]
+* xref:reference_element_api_addvolumestovolumeaccessgroup.adoc[AddVolumesToVolume存取群組]
+* xref:reference_element_api_removeinitiatorsfromvolumeaccessgroup.adoc[RemoveInitialatorsFromVolume存取群組]
+* xref:reference_element_api_removevolumesfromvolumeaccessgroup.adoc[RemoveVolumesFromVolume存取群組]
+

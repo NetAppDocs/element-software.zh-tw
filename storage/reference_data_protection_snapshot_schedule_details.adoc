@@ -1,0 +1,57 @@
+---
+permalink: storage/reference_data_protection_snapshot_schedule_details.html 
+sidebar: sidebar 
+keywords: snapshots, snapshot schedules 
+summary: 在「資料保護」->「排程」頁面上、您可以在快照排程清單中檢視下列資訊。 
+---
+= Snapshot排程詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在「Data Protection（資料保護）」>「排程」頁面上、您可以在快照排程清單中檢視下列資訊。
+
+* *識別碼*
++
+系統產生的快照ID。
+
+* *類型*
++
+排程類型。Snapshot目前是唯一支援的類型。
+
+* *名稱*
++
+建立排程時所指定的名稱。Snapshot排程名稱長度最多可達223個字元、且包含a到z、0到9和破折號（-）字元。
+
+* *頻率*
++
+排程執行的頻率。頻率可設定為小時、分鐘、週或月。
+
+* *週期性*
++
+指示排程是只執行一次、還是定期執行。
+
+* *手動暫停*
++
+指示排程是否已手動暫停。
+
+* * Volume IDS*
++
+排程執行時、排程將使用的磁碟區ID。
+
+* *上次執行*
++
+上次執行排程的時間。
+
+* *上次執行狀態*
++
+上次排程執行的結果。可能值：
+
++
+** 成功
+** 故障
+
+
+

@@ -1,0 +1,105 @@
+---
+permalink: api/reference_element_api_getvolumeaccessgrouplunassignments.html 
+sidebar: sidebar 
+keywords: volume,access,group,groups,LUN,mapping,assignment,get,getting,GetVolumeAccessGroupLunAssignments 
+summary: 您可以使用GetVolume AccessGroupLunAssignments方法擷取指定Volume存取群組LUN對應的詳細資料。 
+---
+= GetVolume存取群組LUN指派
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetVolume AccessGroupLunAssignments」方法擷取指定Volume存取群組LUN對應的詳細資料。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume存取群組ID
+ a| 
+用於傳回資訊的唯一Volume存取群組ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume存取群組LUN指派
+ a| 
+所有實體光纖通道連接埠或單一節點的連接埠清單。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetVolumeAccessGroupLunAssignments",
+   "params": {
+      "volumeAccessGroupID": 5
+    },
+  "id" : 1
+   }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+    "volumeAccessGroupLunAssignments" : {
+       "volumeAccessGroupID" : 5,
+       "lunAssignments" : [
+          {"volumeID" : 5, "lun" : 0},
+          {"volumeID" : 6, "lun" : 1},
+          {"volumeID" : 7, "lun" : 2},
+          {"volumeID" : 8, "lun" : 3}
+       ],
+       "deletedLunAssignments" : [
+           {"volumeID" : 44, "lun" : 44}
+       ]
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

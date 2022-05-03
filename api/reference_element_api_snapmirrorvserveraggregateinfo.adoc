@@ -1,0 +1,42 @@
+---
+permalink: api/reference_element_api_snapmirrorvserveraggregateinfo.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVserverAggregateInfo 
+summary: snapMirrorVserverAggregateInfo物件包含目的地ONTAP 叢集上可用資料儲存虛擬機器（也稱為vserver\）的相關資訊。 
+---
+= snapMirrorVserverAggregateInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVserverAggregateInfo物件包含有關目的地ONTAP 叢集上可用資料儲存虛擬機器（也稱為Vserver）的資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+AggrName
+ a| 
+指派給Vserver的Aggregate名稱。
+ a| 
+字串
+
+
+
+ a| 
+AggrAvailable大小
+ a| 
+指派的Aggregate可用大小。
+ a| 
+整數
+
+|===

@@ -1,0 +1,78 @@
+---
+permalink: storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html 
+sidebar: sidebar 
+keywords: enable, disable, encryption at rest, cluster, sed, hardware-based, encryption settings, software-based 
+summary: 有了這個解決方法、您可以使用靜止的軟體或硬體加密、來加密儲存在叢集上的所有資料。SolidFire 
+---
+= 啟用及停用叢集的靜止加密
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用叢集、您可以加密儲存在叢集磁碟機上的所有閒置資料。SolidFire您可以使用任一種方法、啟用全叢集範圍的自我加密磁碟機（SED）保護 link:../concepts/concept_solidfire_concepts_security.html["硬體或軟體式加密"]。
+
+您可以使用Element UI或API在靜止時啟用硬體加密。啟用閒置時的硬體加密功能不會影響叢集的效能或效率。您只能使用Element API在閒置時啟用軟體加密。
+
+在建立叢集期間、預設不會啟用閒置時的硬體加密、而且可以從元素UI啟用和停用。
+
+
+WARNING: 對於支援所有Flash的儲存叢集、在建立叢集期間必須啟用閒置軟體加密功能、而且在建立叢集後無法停用。SolidFire針對「企業版SDS（ESDS）叢集」、預設會啟用閒置時的軟體加密。SolidFire
+
+.您需要的是 #8217 ；需要的是什麼
+* 您有叢集管理員權限可啟用或變更加密設定。
+* 對於閒置的硬體加密、您在變更加密設定之前、已確保叢集處於正常狀態。
+* 如果您停用加密、則必須有兩個節點參與叢集、才能存取金鑰來停用磁碟機上的加密。
+
+
+
+
+== 檢查加密的靜止狀態
+
+若要查看叢集上閒置加密和/或軟體加密的目前狀態、請使用 link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo"^] 方法。您可以使用 link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["GetSoftwareEncryptionAt恢復 資訊"^] 取得叢集用來加密閒置資料的資訊方法。
+
+
+NOTE: 位於https://<MVIP>/`的Element軟體UI儀表板目前僅顯示硬體加密的靜止狀態加密。
+
+.選項
+* <<Enable hardware-based encryption at rest>>
+* <<Enable software-based encryption at rest>>
+* <<Disable hardware-based encryption at rest>>
+
+
+
+
+== 在靜止狀態下啟用硬體式加密
+
+
+NOTE: 若要使用外部金鑰管理組態在閒置時啟用加密、您必須透過啟用加密功能 link:../api/reference_element_api_enableencryptionatrest.html["API"]。使用現有元素UI按鈕啟用時、會回復為使用內部產生的金鑰。
+
+. 在Element UI中、選取*叢集*>*設定*。
+. 選取*「Enable Encryption at REST *（在REST啟用加密*）」。
+
+
+
+
+== 在靜止狀態下啟用軟體式加密
+
+
+NOTE: 閒置的軟體加密無法在叢集上啟用之後停用。
+
+. 在建立叢集期間、執行 link:../api/reference_element_api_createcluster.html["建立叢集方法"] 將「enableSoftwareEncryptionAtRest」設為「true」。
+
+
+
+
+== 停用靜止時的硬體加密
+
+. 在Element UI中、選取*叢集*>*設定*。
+. 選擇*停用REST加密*。
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

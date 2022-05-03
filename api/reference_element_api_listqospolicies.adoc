@@ -1,0 +1,122 @@
+---
+permalink: api/reference_element_api_listqospolicies.html 
+sidebar: sidebar 
+keywords: qos,policy,policies,list,listing,listqospolicies 
+summary: 您可以使用listQoSPolicies方法列出系統上所有QoS原則的設定。 
+---
+= 清單政策
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listQoSPolicys...」方法來列出系統上所有QoS原則的設定。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+qosPolicy
+ a| 
+每個QoS原則的詳細資料清單。
+ a| 
+xref:reference_element_api_qospolicy.adoc[QoSPolicy] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 231,
+  "method": "ListQoSPolicies",
+  "params": {}
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 231,
+  "result": {
+    "qosPolicies": [
+      {
+        "name": "silver",
+        "qos": {
+          "burstIOPS": 15000,
+          "burstTime": 60,
+          "curve": {
+            "4096": 100,
+            "8192": 160,
+            "16384": 270,
+            "32768": 500,
+            "65536": 1000,
+            "131072": 1950,
+            "262144": 3900,
+            "524288": 7600,
+            "1048576": 15000
+          },
+          "maxIOPS": 14000,
+          "minIOPS": 50
+        },
+        "qosPolicyID": 1,
+        "volumeIDs": [
+          1
+        ]
+      },
+      {
+        "name": "bronze",
+        "qos": {
+          "burstIOPS": 15000,
+          "burstTime": 60,
+          "curve": {
+            "4096": 100,
+            "8192": 160,
+            "16384": 270,
+            "32768": 500,
+            "65536": 1000,
+            "131072": 1950,
+            "262144": 3900,
+            "524288": 7600,
+            "1048576": 15000
+          },
+          "maxIOPS": 15000,
+          "minIOPS": 50
+        },
+        "qosPolicyID": 2,
+        "volumeIDs": [
+          2
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+10.0%

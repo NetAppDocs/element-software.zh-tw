@@ -1,0 +1,25 @@
+---
+permalink: storage/task_replication_create_a_target_volume_with_read_write_access.html 
+sidebar: sidebar 
+keywords: target volume, create, read, write access 
+summary: 複寫程序涉及兩個端點：來源和目標磁碟區。建立目標Volume時、磁碟區會自動設定為讀取/寫入模式、以便在複寫期間接受資料。 
+---
+= 建立具有讀取或寫入存取權的目標Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+複寫程序涉及兩個端點：來源和目標磁碟區。建立目標Volume時、磁碟區會自動設定為讀取/寫入模式、以便在複寫期間接受資料。
+
+. 選擇*管理*>*磁碟區*。
+. 按一下「*建立Volume *」。
+. 在Create a New Volume（建立新Volume）對話方塊中、輸入Volume Name（Volume名稱）。
+. 輸入磁碟區的總大小、選取磁碟區的區塊大小、然後選取應可存取該磁碟區的帳戶。
+. 按一下「*建立Volume *」。
+. 在「作用中」視窗中、按一下Volume的「動作」圖示。
+. 按一下 * 編輯 * 。
+. 將帳戶存取層級變更為「複寫目標」。
+. 按一下*儲存變更*。
+

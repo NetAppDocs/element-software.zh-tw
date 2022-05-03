@@ -1,0 +1,106 @@
+---
+permalink: api/reference_element_api_createbackuptarget.html 
+sidebar: sidebar 
+keywords: create,creating,backup,target,CreateBackupTarget 
+summary: 您可以使用Create Backup Target來建立及儲存備份目標資訊、如此一來、每次建立備份時就不需要重新輸入。 
+---
+= 建立備份目標
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「建立備份目標」來建立及儲存備份目標資訊、如此一來、您就不需要在每次建立備份時重新輸入。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+名稱
+ a| 
+備份目標的名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+是（但可以是空的）
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+備份目標ID
+ a| 
+指派給新備份目標的唯一識別碼。
+ a| 
+整數
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "CreateBackupTarget",
+   "params": {
+      "name": "mytargetbackup"
+   },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+      "backupTargetID": 1
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

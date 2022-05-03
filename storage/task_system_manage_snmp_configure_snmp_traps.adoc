@@ -1,0 +1,29 @@
+---
+permalink: storage/task_system_manage_snmp_configure_snmp_traps.html 
+sidebar: sidebar 
+keywords: snmp, config, traps, notifications, monitor, health, enable, disable 
+summary: 系統管理員可使用SNMP設陷（也稱為通知）來監控SolidFire 整個叢集的健全狀況。 
+---
+= 設定SNMP設陷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+系統管理員可使用SNMP設陷（也稱為通知）來監控SolidFire 整個叢集的健全狀況。
+
+啟用SNMP設陷時SolidFire 、Sing叢集會產生與事件記錄項目和系統警示相關的設陷。若要接收SNMP通知、您需要選擇應產生的陷阱、並識別陷阱資訊的收件者。根據預設、不會產生任何設陷。
+
+. 按一下*叢集*>* SNMP *。
+. 在系統應產生的「* SNMP設陷設定*」區段中、選取一或多種設陷類型：
++
+** 叢集故障設陷
+** 叢集已解決的故障設陷
+** 叢集事件設陷
+
+
+. 在「*設陷收件者*」區段中、輸入收件者的主機、連接埠和社群字串資訊。
+. *選用*：若要新增其他設陷收件者、請按一下*「新增設陷收件者」*、然後輸入主機、連接埠和社群字串資訊。
+. 按一下*儲存變更*。
+

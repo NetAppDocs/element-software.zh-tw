@@ -1,0 +1,101 @@
+---
+permalink: api/reference_element_api_resyncsnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: SnapMirror,relationship,resync,resyncing,ResyncSnapMirrorRelationship 
+summary: Element軟體Web UI使用ResyncdSnapMirrorRelationship方法、在來源端點和目的地端點之間建立或重新建立鏡射關係。當您重新同步關係時、系統會移除目的地磁碟區上比一般快照複本新的快照、然後將目的地磁碟區掛載為資料保護磁碟區、並以通用快照複本作為匯出的快照複本。 
+---
+= 重新建立SnapMirrorRelationationationationationation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ResyncdSnapMirrorRelationship」方法、在來源端點和目的地端點之間建立或重新建立鏡射關係。當您重新同步關係時、系統會移除目的地磁碟區上比一般快照複本新的快照、然後將目的地磁碟區掛載為資料保護磁碟區、並以通用快照複本作為匯出的快照複本。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+遠端ONTAP 不整合式儲存系統的端點ID、可與元件儲存叢集通訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+destinationVolume
+ a| 
+SnapMirror關係中的目的地Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+最大傳輸率
+ a| 
+指定各磁碟區之間的最大資料傳輸率（以每秒千位元組為單位）。預設值0為無限、並允許SnapMirror關係充分利用可用的網路頻寬。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+來源磁碟區
+ a| 
+SnapMirror關係中的來源Volume。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolume資訊]
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorRelationationationationship
+ a| 
+包含重新同步SnapMirror關係相關資訊的物件。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationationationationship]
+
+|===
+
+
+== 新的自版本
+
+10.1

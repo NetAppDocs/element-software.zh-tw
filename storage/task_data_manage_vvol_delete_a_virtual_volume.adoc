@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_manage_vvol_delete_a_virtual_volume.html 
+sidebar: sidebar 
+keywords: virtual volume, delete, vvols, use Element UI to delete a vvol 
+summary: 雖然虛擬磁碟區應該一律從VMware管理層刪除、但您可以從元素UI中啟用刪除虛擬磁碟區的功能。您只能在絕對必要時從Element UI刪除虛擬Volume、例如vSphere無法清除SolidFire VMware儲存設備上的虛擬Volume時。 
+---
+= 刪除虛擬Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+雖然虛擬磁碟區應該一律從VMware管理層刪除、但您可以從元素UI中啟用刪除虛擬磁碟區的功能。您只能在絕對必要時從Element UI刪除虛擬Volume、例如vSphere無法清除SolidFire VMware儲存設備上的虛擬Volume時。
+
+. 選擇* VVols *>*虛擬磁碟區*。
+. 針對您要刪除的虛擬磁碟區、按一下「動作」圖示。
+. 在產生的功能表中、選取*刪除*。
++
+
+IMPORTANT: 您應該從VMware管理層刪除虛擬磁碟區、以確保在刪除之前、虛擬磁碟區已正確解除連結。您只能在絕對必要時從Element UI刪除虛擬Volume、例如vSphere無法清除SolidFire VMware儲存設備上的虛擬Volume時。如果您從Element UI刪除虛擬Volume、磁碟區將會立即清除。
+
+. 確認行動。
+. 重新整理虛擬磁碟區清單、確認已移除虛擬磁碟區。
+. *可選*：選擇*報告*>*事件日誌*以確認清除已成功。
+

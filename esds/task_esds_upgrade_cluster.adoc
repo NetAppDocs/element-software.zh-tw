@@ -1,0 +1,114 @@
+---
+permalink: esds/task_esds_upgrade_cluster.html 
+sidebar: sidebar 
+keywords: solidfire esds, upgrading solidfire esds clusters, ansible role, clusters, upgrade clusters, esds upgrade 
+summary: 您可以使用Ansible在SolidFire 您的EESDS叢集上執行不中斷營運的循環升級。Ansible使用NetApp提供的「na_solidfire_SDS升級」角色、一次執行一個節點的循環升級、同時維持所有磁碟區的資料可用度。 
+---
+= 升級叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Ansible在SolidFire 您的EESDS叢集上執行不中斷營運的循環升級。Ansible使用NetApp提供的「na_solidfire_SDS升級」角色、一次執行一個節點的循環升級、同時維持所有磁碟區的資料可用度。
+
+在升級之前、請務必符合下列條件：
+
+* 元素UI中沒有叢集故障。
+* 庫存檔案是最新的、內含目前的RPM檔案建置資訊、以及叢集成員節點的詳細資料。
+* 這些主機是使用IP位址（而非完整網域名稱[FQDN）在庫存檔案中定義。
+
+
+
+IMPORTANT: 如果您使用FQDN來定義主機、升級將會失敗。
+
+* 這些主機是在庫存檔案中使用下列範例中的格式來定義：
++
+[listing]
+----
+hosts:
+  10.117.136.26:
+  10.117.136.27:
+----
+* 庫存檔案中的節點數與您要升級的叢集中節點數相同。如果數字不相符、升級程序將會失敗、並顯示類似以下範例的錯誤：「叢集10.194.79.151所包含的節點數超過指定的升級節點數！」
+* 庫存檔案指定下列變數：SF_mgmt_virt_ip（MVIP）、SF_cluster管理使用者名稱、SF_cluster管理密碼、solidfire_Element（新RPM檔案的路徑）。
+
+
+以下是升級過程中的情況總覽：
+
+* 系統會驗證您在庫存檔案中輸入的資訊。
+* 系統會收集節點資訊。
+* RPM會平行安裝在庫存檔案中的所有節點上。
+* 在每個節點上安裝RPM之後、每SolidFire 個EESDS節點一次升級一個。每個節點都會自動置於維護模式。如果您執行升級教戰手冊、則不需要手動啟用維護模式。
+* 將第一個節點置於維護模式之後、位於SolidFire 該ESXESDS節點上的磁碟區會故障移轉至SolidFire 叢集中的其餘部分。
+* 系統會重新啟動此服務、以取得應用程式的最新版本。SolidFire
+* 節點的維護模式已停用、叢集會等待節點恢復。
+* 節點恢復連線後、叢集就會達到平衡。
+* 叢集中的所有節點都會重複相同的程序。
+* 升級所有節點之後、叢集會顯示最新版本。
+
+
+
+NOTE: 如果在升級期間發生錯誤、或叢集發生故障、升級不會停止。它會繼續進行、並列印已成功且未成功升級的所有節點清單。修正任何錯誤之後、您可以重新執行教戰手冊或拒絕檔案、以完成升級程序。
+
+
+CAUTION: 如果升級因為故障而失敗、您應該解決升級問題、然後繼續升級。在升級完成之前、叢集會維持升級狀態。如果叢集處於升級狀態時、元件未清除故障、請聯絡NetApp支援部門。根據故障的本質及安全性、Support可能會指示您新增「yes_i_want to _ignore叢集錯誤」變數、並在升級版的方針書中設定為true、然後重新執行方針。請勿在未諮詢支援部門的情況下嘗試。
+
+.步驟
+. 執行「Ansible－galletical install」命令、安裝「na_solidfire_SDS升級」角色。
++
+[listing]
+----
+ansible-galaxy install git+https://github.com/NetApp-Automation/nar_solidfire_sds_upgrade.git
+----
++
+您也可以從複製角色、手動安裝角色 https://github.com/NetApp-Automation["NetApp GitHub儲存庫"^] 並將角色放在「~/.Ansible /roses'」目錄中。NetApp提供README檔案、其中包含如何執行角色的相關資訊。
+
++
+
+NOTE: 請務必下載最新版本的角色。
+
+. 將您下載的角色往上移一個目錄、從其中安裝。
++
+[listing]
+----
+ $ mv ~/.ansible/roles/ansible/nar_solidfire_sds_* ~/.ansible/roles/
+----
+. 執行Ansible銀河角色清單命令、確保Ansible已設定為使用新角色。
++
+[listing]
+----
+ $ ansible-galaxy role list
+ # ~/.ansible/roles
+ - nar_solidfire_sds_install, (unknown version)
+ - nar_solidfire_sds_upgrade, (unknown version)
+ - ansible, (unknown version)
+ - nar_solidfire_sds_compliance, (unknown version)
+ - nar_solidfire_cluster_config, (unknown version)
+ - nar_solidfire_sds_uninstall, (unknown version)
+----
+. 建立要用於升級的方針。如果您已經有一本教戰手冊想要使用、請務必在本教戰手冊中指定「na_solidfire_SDS升級」角色。
+. 執行方針：
++
+[listing]
+----
+ $ ansible-playbook -i inventory.yaml playbook_upgrade_sample.yaml
+----
++
+
+NOTE: 此處使用的教戰手冊名稱就是一個範例。您應該將其替換為教戰手冊的名稱。
+
++
+執行實戰手冊會驗證您在庫存檔案中輸入的資訊、並在庫存中列出的所有節點上安裝RPM。您可以檢查Ansible輸出、確認每個節點都已升級。
+
+. 升級完成後、請驗證每個節點、以確保使用Element UI或叢集API執行新版本。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

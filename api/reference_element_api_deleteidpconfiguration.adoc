@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_deleteidpconfiguration.html 
+sidebar: sidebar 
+keywords: IdP,idp,configuration,delete 
+summary: 您可以使用刪除IdpConfiguration方法來刪除叢集的協力廠商IDP現有組態。刪除最後一個IDP組態會從叢集移除SAML服務供應商憑證。 
+---
+= 刪除Idp組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「刪除IdpConfiguration」方法來刪除叢集現有的協力廠商IDP組態。刪除最後一個IDP組態會從叢集移除SAML服務供應商憑證。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+idpConfiguration ID
+ a| 
+協力廠商IDP組態的UUID。
+ a| 
+UUID
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+idpName
+ a| 
+用於識別及擷取SAML 2.0單一登入的IDP供應商名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "DeleteIdpConfiguration",
+  "params": {
+    "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+    "idpName": "https://provider.name.url.com"
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "result":{}
+}
+----
+
+
+== 新的自版本
+
+12.0

@@ -1,0 +1,54 @@
+---
+permalink: storage/task_replication_assign_replication_source_and_target_to_paired_volumes.html 
+sidebar: sidebar 
+keywords: volume pairings, paired volumes, replication source, assign 
+summary: 磁碟區配對之後、您必須指派來源磁碟區及其複寫目標磁碟區。複寫來源或目標可以是Volume配對中的任一Volume。您也可以使用此程序、在來源Volume無法使用時、將傳送至來源Volume的資料重新導向至遠端目標Volume。 
+---
+= 將複寫來源和目標指派給配對的磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+磁碟區配對之後、您必須指派來源磁碟區及其複寫目標磁碟區。複寫來源或目標可以是Volume配對中的任一Volume。您也可以使用此程序、在來源Volume無法使用時、將傳送至來源Volume的資料重新導向至遠端目標Volume。
+
+您可以存取包含來源和目標磁碟區的叢集。
+
+.步驟
+. 準備來源Volume：
++
+.. 從包含要指派為來源之磁碟區的叢集、選取*管理*>*磁碟區*。
+.. 按一下要指派為來源之磁碟區的*「Actions」（動作）*圖示、然後按一下*「Edit」（編輯）*。
+.. 在*存取*下拉式清單中、選取*讀取/寫入*。
++
+
+IMPORTANT: 如果您要反轉來源和目標指派、此動作會導致磁碟區配對顯示下列訊息、直到指派新的複寫目標為止：「PausedMisconfigured」（暫停已設定錯誤）
+
++
+變更存取會暫停磁碟區複寫、並導致資料傳輸停止。請確定您已在兩個站台協調這些變更。
+
+.. 按一下*儲存變更*。
+
+
+. 準備目標Volume：
++
+.. 從包含要指派為目標之磁碟區的叢集、選取*管理*>*磁碟區*。
+.. 按一下要指派為目標之磁碟區的「動作」圖示、然後按一下「*編輯*」。
+.. 在*存取*下拉式清單中、選取*複寫目標*。
++
+
+IMPORTANT: 如果您將現有磁碟區指派為複寫目標、則該磁碟區上的資料將會遭到覆寫。您應該使用不含資料且具有來源磁碟區確切特性的新目標磁碟區、例如大小、512e設定和QoS組態。目標Volume的大小可以大於或等於來源Volume、但不能變小。
+
+.. 按一下*儲存變更*。
+
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_replication_pair_volumes_using_a_volume_id.adoc[使用Volume ID配對磁碟區]
+* xref:task_replication_pair_volumes_using_a_pairing_key.adoc[使用配對金鑰配對磁碟區]
+

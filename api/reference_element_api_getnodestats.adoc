@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_getnodestats.html 
+sidebar: sidebar 
+keywords: node,get,getting,stats,getnodestats 
+summary: 您可以使用GetNodeStats方法擷取單一節點的高層活動量測。 
+---
+= GetNodeStats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetNodeStats」方法擷取單一節點的高層活動量測。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+節點ID
+ a| 
+指定要傳回統計資料的節點ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+節點統計資料
+ a| 
+節點活動資訊。
+ a| 
+xref:reference_element_api_nodestats.adoc[節點統計資料]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetNodeStats",
+   "params": {
+     "nodeID": 5
+   },
+   "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+     "nodeStats" : {
+       "cBytesIn" : 9725856460404,
+       "cBytesOut" : 16730049266858,
+       "cpu" : 98,
+       "mBytesIn" : 50808519,
+       "mBytesOut" : 52040158,
+       "networkUtilizationCluster" : 84,
+       "networkUtilizationStorage" : 0,
+       "sBytesIn" : 9725856460404,
+       "sBytesOut" : 16730049266858,
+       "timestamp" : "2012-05-16T19:14:37.167521Z",
+       "usedMemory" : 41195708000
+     }
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

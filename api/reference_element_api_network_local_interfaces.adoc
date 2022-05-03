@@ -1,0 +1,175 @@
+---
+permalink: api/reference_element_api_network_local_interfaces.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: 網路（本機介面）物件包含儲存節點上本機網路介面的組態資訊、例如迴路介面。您可以使用組態設定和GetNetwork組態方法來取得儲存節點的此資訊。 
+---
+= 網路（本機介面）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+網路（本機介面）物件包含儲存節點上本機網路介面的組態資訊、例如迴路介面。您可以使用「組態」和「GetNetwork組態」方法來取得儲存節點的此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+家庭
+ a| 
+介面設定使用的位址系列。目前支援「inet」for IPV4。
+ a| 
+字串
+
+
+
+ a| 
+MacAddress
+ a| 
+指派給介面並由網路觀察的實際MAC位址。
+ a| 
+字串
+
+
+
+ a| 
+MacAddress永久性
+ a| 
+製造商指派給介面的不可改變的MAC位址。
+ a| 
+字串
+
+
+
+ a| 
+方法
+ a| 
+用於設定介面的方法。可能值：
+
+* 環回：用於定義IPV4環回介面。
+* 手冊：用於定義未自動設定的介面。
+* DHCP：可用於透過DHCP取得IP位址。
+* 靜態：用於定義靜態分配的IPv4位址的乙太網路介面。
+
+ a| 
+字串
+
+
+
+ a| 
+狀態
+ a| 
+介面的狀態。可能值：
+
+* 向下：介面處於非作用中狀態。
+* up：介面已就緒、但沒有連結。
+* UpAndRuning：介面已就緒、並建立連結。
+
+ a| 
+字串
+
+
+
+ a| 
+升級執行
+ a| 
+指出介面是否就緒且具有連結。
+ a| 
+布林值
+
+|===
+
+
+== 成員可修改性和節點狀態
+
+此表格指出是否可在每個可能的節點狀態下修改物件參數。
+
+|===
+
+
+| 參數名稱 | 可用狀態 | 擱置狀態 | 作用中狀態 
+
+
+ a| 
+家庭
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+MacAddress
+ a| 
+由系統設定
+ a| 
+不適用
+ a| 
+不適用
+
+
+
+ a| 
+MacAddress永久性
+ a| 
+由系統設定
+ a| 
+不適用
+ a| 
+不適用
+
+
+
+ a| 
+方法
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+狀態
+ a| 
+是的
+ a| 
+是的
+ a| 
+是的
+
+
+
+ a| 
+升級執行
+ a| 
+由系統設定
+ a| 
+不適用
+ a| 
+不適用
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_getconfig.adoc[組態設定]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetwork組態]
+

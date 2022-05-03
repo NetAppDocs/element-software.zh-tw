@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_cancelclone.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用CancelClone方法來停止進行中的Volume Clone或Volume複製程序。當您取消群組複製作業時、系統會完成並移除相關聯的同步處理。 
+---
+= CancelClone
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「CancelClone」（取消複製）方法來停止進行中的Volume Clone或Volume複製程序。當您取消群組複製作業時、系統會完成並移除相關聯的同步處理。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+cloneID
+ a| 
+持續複製程序的cloneID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "CancelClone",
+   "params": {
+      "cloneID" : 5,
+   },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 新的自版本
+
+9.6

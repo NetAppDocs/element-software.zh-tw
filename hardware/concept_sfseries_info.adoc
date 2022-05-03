@@ -1,0 +1,32 @@
+---
+permalink: hardware/concept_sfseries_info.html 
+sidebar: sidebar 
+keywords: sf-series nodes, hardware installation, hardware maintenance 
+summary: 您可以找到有關安裝及維護SF系列儲存節點的資訊。 
+---
+= SF系列硬體資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以找到有關安裝及維護SF系列儲存節點的資訊。
+
+以下是安裝與維護內容的連結：
+
+* link:../media/c-series-isi.pdf["安裝及設定SolidFire 等C系列節點"^]
+* link:../media/fc-getting-started-guide.pdf["安裝及設定Fibre Channel節點"^]
+* link:../media/solidfire-10-getting-started-guide.pdf["安裝及設定SF系列儲存節點"^]
+* link:task_sfseries_chassisrepl.html["更換機箱"^]
+* link:task_sfseries_driverepl.html["更換磁碟機"^]
+* link:task_sfseries_psurepl.html["更換電源供應器"^]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

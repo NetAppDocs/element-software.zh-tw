@@ -1,0 +1,158 @@
+---
+permalink: api/reference_element_api_resetnode.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用ResetNode方法將節點重設為原廠設定。當您呼叫此方法時、所有資料、套件（軟體升級等）、組態和記錄檔都會從節點刪除。不過、此作業期間會保留節點的網路設定。參與叢集的節點無法重設為原廠設定。 
+---
+= ResetNode
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「ResetNode」方法、將節點重設為原廠設定。當您呼叫此方法時、所有資料、套件（軟體升級等）、組態和記錄檔都會從節點刪除。不過、此作業期間會保留節點的網路設定。參與叢集的節點無法重設為原廠設定。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+ResetNode API只能用於處於「可用」狀態的節點。它無法用於叢集中「作用中」的節點、或處於「擱置中」狀態的節點。
+
+注意：
+
+此方法會清除節點上的任何客戶資料。
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+建置
+ a| 
+用於指定要重設節點之遠端元素軟體映像的URL。
+ a| 
+URL
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+力
+ a| 
+設為true可重設節點。
+ a| 
+布林值
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+選項
+ a| 
+用於輸入執行重設作業的規格。如有需要、請向NetApp支援部門提供詳細資料。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ResetNode",
+   "params": {
+      "build" : "file:///sf/rtfi/image/filesystem.squashfs",
+      "force" : true
+              },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "rtfiInfo": {
+      "build": "file:///sf/rtfi/image/filesystem.squashfs",
+      "generation": "9",
+      "options": {
+        "edebug": "",
+        "sf_auto": "0",
+        "sf_bond_mode": "ActivePassive",
+        "sf_check_hardware": "0",
+        "sf_disable_otpw": "0",
+        "sf_fa_host": "",
+        "sf_hostname": "SF-FA18",
+        "sf_inplace": "1",
+        "sf_inplace_die_action": "kexec",
+        "sf_inplace_safe": "0",
+        "sf_keep_cluster_config": "0",
+        "sf_keep_data": "0",
+        "sf_keep_hostname": "0",
+        "sf_keep_network_config": "0",
+        "sf_keep_paths": "\"/var/log/hardware.xml\"",
+        "sf_max_archives": "5",
+        "sf_nvram_size": "",
+        "sf_oldroot": "",
+        "sf_postinst_erase_root_drive": "0",
+        "sf_root_drive": "",
+        "sf_rtfi_cleanup_state": "",
+        "sf_secure_erase": "1",
+        "sf_secure_erase_retries": "5",
+        "sf_slice_size": "",
+        "sf_ssh_key": "1",
+        "sf_ssh_root": "1",
+        "sf_start_rtfi": "1",
+        "sf_status_httpserver": "1",
+        "sf_status_httpserver_stop_delay": "5m",
+        "sf_status_inject_failure": "",
+        "sf_status_json": "0",
+        "sf_support_host": "sfsupport.solidfire.com",
+        "sf_test_hardware": "0",
+        "sf_upgrade": "0",
+        "sf_upgrade_firmware": "0",
+        "sf_upload_logs_url": ""
+     },
+      "statusUrlAll": "http://192.168.130.20/status/all.json",
+      "statusUrlCurrent": "http://192.168.130.20/status/current.json"
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

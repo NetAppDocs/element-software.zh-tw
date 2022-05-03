@@ -1,0 +1,100 @@
+---
+permalink: api/reference_element_api_getclusterhardwareinfo.html 
+sidebar: sidebar 
+keywords: get,getting,cluster,hardware,getclusterhardwareinfo 
+summary: 您可以使用GetClusterHardwareInfo方法擷取叢集中所有光纖通道節點、iSCSI節點和磁碟機的硬體狀態和資訊。這通常包括製造商、廠商、版本及其他相關的硬體識別資訊。 
+---
+= GetClusterHardwareInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetClusterHardwareInfo」方法擷取叢集中所有光纖通道節點、iSCSI節點和磁碟機的硬體狀態和資訊。這通常包括製造商、廠商、版本及其他相關的硬體識別資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+類型
+ a| 
+回應中只包含下列其中一種硬體資訊。可能值：
+
+* 磁碟機：
++
+僅列出回應中的磁碟機資訊。
+
+* 節點：僅列出回應中的節點資訊。
+* 全部：在回應中同時包含磁碟機和節點資訊。
+
+
+如果省略此參數、則會假設所有類型。
+ a| 
+字串
+ a| 
+全部
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集硬體資訊
+ a| 
+叢集中所有節點和磁碟機的硬體資訊。此輸出中的每個物件都會標示給定節點的節點ID。
+ a| 
+xref:reference_element_api_hardwareinfo.adoc[硬體資訊]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetClusterHardwareInfo",
+    "params": {
+        "type": "all"
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+由於此回應範例的長度很長、因此會在補充主題中予以記錄。
+
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_response_example_getclusterhardwareinfo.adoc[GetClusterHardwareInfo]

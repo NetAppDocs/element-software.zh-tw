@@ -1,0 +1,31 @@
+---
+permalink: storage/task_data_manage_volumes_work_with_volumes_task.html 
+sidebar: sidebar 
+keywords: volumes, work, storage, iscsi, fc, cluster data management, overview of functions 
+summary: 這個系統使用Volume來配置儲存設備。SolidFire磁碟區是透過iSCSI或Fibre Channel用戶端透過網路存取的區塊裝置。在「管理」索引標籤的「磁碟區」頁面中、您可以在節點上建立、修改、複製及刪除磁碟區。您也可以檢視磁碟區頻寬和I/O使用量的統計資料。 
+---
+= 使用Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+這個系統使用Volume來配置儲存設備。SolidFire磁碟區是透過iSCSI或Fibre Channel用戶端透過網路存取的區塊裝置。在「管理」索引標籤的「磁碟區」頁面中、您可以在節點上建立、修改、複製及刪除磁碟區。您也可以檢視磁碟區頻寬和I/O使用量的統計資料。
+
+
+
+== 如需詳細資訊、請參閱
+
+* link:concept_data_manage_volumes_quality_of_service_policies.html["管理服務品質原則"]
+* link:task_data_manage_volumes.html#create-a-volume["建立Volume"]
+* link:task_data_manage_volumes.html#view-volume-details["檢視個別Volume效能詳細資料"]
+* link:task_data_manage_volumes.html#edit-active-volumes["編輯作用中磁碟區"]
+* link:task_data_manage_volumes.html#delete-a-volume["刪除 Volume"]
+* link:task_data_manage_volumes.html#restore-a-deleted-volume["還原刪除的Volume"]
+* link:task_data_manage_volumes.html#purge-a-volume["清除Volume"]
+* link:task_data_manage_volumes.html#clone-a-volume["複製磁碟區"]
+* link:task_data_manage_volumes_assign_luns_to_fibre_channel_volumes.html["將LUN指派給光纖通道磁碟區"]
+* link:task_data_manage_volumes_apply_a_qos_policy.html["將QoS原則套用至磁碟區"]
+* link:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html["移除磁碟區的QoS原則關聯"]
+

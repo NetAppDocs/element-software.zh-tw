@@ -1,0 +1,43 @@
+---
+permalink: storage/task_intro_view_api_activity_in_real_time.html 
+sidebar: sidebar 
+keywords: solidfire api, element api, element os, element, viewing the API log, viewing API calls 
+summary: Element系統使用NetAppElement API作為其功能的基礎。元素UI可讓您在使用介面時、檢視系統上各種類型的即時API活動。有了API記錄、您就能檢視使用者啟動和背景系統API活動、以及在您目前檢視的頁面上所撥打的API呼叫。 
+---
+= 檢視API活動
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element系統使用NetApp Element 不完整的API作為其功能的基礎。元素UI可讓您在使用介面時、檢視系統上各種類型的即時API活動。有了API記錄、您就能檢視使用者啟動和背景系統API活動、以及在您目前檢視的頁面上所撥打的API呼叫。
+
+您可以使用API記錄來識別特定工作所使用的API方法、並瞭解如何使用API方法和物件來建置自訂應用程式。
+
+如需每種方法的相關資訊、請參閱 link:../api/index.html["Element Software API參考"]。
+
+. 在Element UI導覽列中、按一下* API Log*。
+. 若要修改「API記錄」視窗中顯示的API活動類型、請執行下列步驟：
++
+.. 選取*「要求*」以顯示API要求流量。
+.. 選取*回應*以顯示API回應流量。
+.. 選取下列其中一項來篩選API流量類型：
++
+*** *使用者起始*：在此網路UI工作階段期間、您的活動所產生的API流量。
+*** *背景調查*：背景系統活動所產生的API流量。
+*** *目前頁面*：由您目前檢視頁面上的工作所產生的API流量。
+
+
+
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* link:../api/index.html["使用Element API管理儲存設備"]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

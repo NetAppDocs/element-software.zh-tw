@@ -1,0 +1,28 @@
+---
+permalink: esds/concept_esds_monitor_clusters.html 
+sidebar: sidebar 
+keywords: solidfire esds installation, hcc, hybrid cloud control, esds clusters 
+summary: 您可以監控SolidFire 您的VMware ESXDS叢集效能、並使用NetApp混合雲控制UI來檢視詳細目錄。您也可以使用NetApp混合雲控制UI來收集疑難排解記錄。」 
+---
+= 監控叢集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以監控SolidFire 您的VMware ESXDS叢集效能、並使用NetApp混合雲控制UI來檢視詳細目錄。您也可以使用NetApp混合雲控制UI來收集疑難排解記錄。
+
+以下是在NetApp混合雲控制UI中監控叢集的相關資訊連結：
+
+* link:hccstorage/task-hcc-nodes.html["在節點頁面上檢視您的庫存"]
+* link:hccstorage/task-hcc-volumes.html["監控儲存叢集上的磁碟區"]
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

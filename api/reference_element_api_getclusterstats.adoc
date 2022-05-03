@@ -1,0 +1,98 @@
+---
+permalink: api/reference_element_api_getclusterstats.html 
+sidebar: sidebar 
+keywords: cluster,stats,statistics,get,getting,getclusterstats 
+summary: 您可以使用GetClusterStats方法擷取叢集的高層級活動測量值。傳回的值是從建立叢集開始累積的。 
+---
+= GetClusterStats
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetClusterStats」方法來擷取叢集的高層活動測量值。傳回的值是從建立叢集開始累積的。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集統計資料
+ a| 
+叢集活動資訊。
+ a| 
+xref:reference_element_api_clusterstats.adoc[叢集統計資料]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetClusterStats",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterStats": {
+      "actualIOPS": 9376,
+      "averageIOPSize": 4198,
+      "clientQueueDepth": 8,
+      "clusterUtilization": 0.09998933225870132,
+      "latencyUSec": 52,
+      "normalizedIOPS": 15000,
+      "readBytes": 31949074432,
+      "readBytesLastSample": 30883840,
+      "readLatencyUSec": 27,
+      "readLatencyUSecTotal": 182269319,
+      "readOps": 1383161,
+      "readOpsLastSample": 3770,
+      "samplePeriodMsec": 500,
+      "servicesCount": 3,
+      "servicesTotal": 3,
+      "timestamp": "2017-09-09T21:15:39.809332Z",
+      "unalignedReads": 0,
+      "unalignedWrites": 0,
+      "writeBytes": 8002002944,
+      "writeBytesLastSample": 7520256,
+      "writeLatencyUSec": 156,
+      "writeLatencyUSecTotal": 231848965,
+      "writeOps": 346383,
+      "writeOpsLastSample": 918
+    }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

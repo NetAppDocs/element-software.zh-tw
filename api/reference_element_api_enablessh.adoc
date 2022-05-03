@@ -1,0 +1,70 @@
+---
+permalink: api/reference_element_api_enablessh.html 
+sidebar: sidebar 
+keywords: SSH,enable,enabling,single,node,EnableSSH 
+summary: 您可以使用EnablSsh方法為單一節點啟用SSH服務。此方法不會影響整個叢集的SSH逾時持續時間、也不會免除節點在全域SSH逾時時時停用SSH。 
+---
+= 啟用Ssh
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「EnablSsh」方法、為單一節點啟用安全Shell（SSH）服務。此方法不會影響整個叢集的SSH逾時持續時間、也不會免除節點在全域SSH逾時時時停用SSH。
+
+
+NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+已啟用
+ a| 
+此節點的SSH服務狀態。
+ a| 
+布林值
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "EnableSsh",
+  "params": {
+     },
+  "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {"enabled": true}
+}
+----

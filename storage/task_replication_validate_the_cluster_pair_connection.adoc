@@ -1,0 +1,19 @@
+---
+permalink: storage/task_replication_validate_the_cluster_pair_connection.html 
+sidebar: sidebar 
+keywords: cluster pair connection, validate 
+summary: 叢集配對完成後、您可能需要驗證叢集配對連線、以確保複寫成功。 
+---
+= 驗證叢集配對連線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+叢集配對完成後、您可能需要驗證叢集配對連線、以確保複寫成功。
+
+. 在本機叢集上、選取*資料保護*>*叢集配對*。
+. 在*叢集配對*視窗中、確認已連接叢集配對。
+. *可選：*瀏覽回本機叢集和*叢集配對*視窗、確認叢集配對已連線。
+

@@ -1,0 +1,160 @@
+---
+permalink: api/reference_element_api_testconnectsvip.html 
+sidebar: sidebar 
+keywords: storage,connection,svip,test,testing,testconnectsvip 
+summary: 您可以使用TestConnectSvip方法來測試儲存設備與儲存叢集的連線。測試會使用ICMP封包ping SVIP、如果成功、則會以iSCSI啟動器的形式連線。 
+---
+= TestConnectSvip
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「TestConnectSvip」方法來測試儲存設備與儲存叢集的連線。測試會使用ICMP封包ping SVIP、如果成功、則會以iSCSI啟動器的形式連線。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+服務
+ a| 
+您可以通過此值來測試不同SVIP的管理連線。測試與目標叢集的連線時、不需要使用此值。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+詳細資料
+ a| 
+測試作業（Json物件）的相關資訊：
+
+* 「Connected（已連線）」：表示測試是否可連線至SVIP（布林）
+* 「VIP」：通過測試的SVIP（字串）
+* 「pingBytes」：ping測試的詳細資料、包含56位元組和9000位元組（物件）
++
+** 「56」：56位元組ping測試（Json物件）的結果：
++
+*** 「個別回應時間」：每個集合節點的回應時間清單（字串陣列）
+*** 「個別狀態」：每個集合節點的ping狀態清單（布林陣列）
+*** 「回應時間」：平均ping回應時間（字串）
+*** 「成功」：指出ping測試是否成功（布林值）
+
+
+** 「9000」：9000位元組ping測試（Json物件）的結果：
++
+*** 「個別回應時間」：每個集合節點的回應時間清單（字串陣列）
+*** 「個別狀態」：每個集合節點的ping狀態清單（布林陣列）
+*** 「回應時間」：平均ping回應時間（字串）
+*** 「成功」：指出ping測試是否成功（布林值）
+
+
+** 「D飽和度」：執行測試所需的時間長度（字串）
+** 「REsert」：整個測試結果（字串）
+
+
+
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "TestConnectSvip",
+   "params": {
+      "svip" : "172.27.62.50"
+      },
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "details": {
+      "connected": true,
+      "pingBytes": {
+           "56": {
+               "individualResponseTimes": [
+                   "00:00:00.000152",
+                   "00:00:00.000132",
+                   "00:00:00.000119",
+                   "00:00:00.000114",
+                   "00:00:00.000112"
+              ],
+              "individualStatus": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+              ],
+              "responseTime": "00:00:00.000126",
+              "successful": true
+           },
+          "9000": {
+                "individualResponseTimes": [
+                    "00:00:00.000295",
+                    "00:00:00.000257",
+                    "00:00:00.000172",
+                    "00:00:00.000172",
+                    "00:00:00.000267"
+              ],
+              "individualStatus": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+             ],
+             "responseTime": "00:00:00.000233",
+             "successful": true
+           }
+        },
+        "svip": "172.27.62.50"
+      },
+      "duration": "00:00:00.421907",
+      "result": "Passed"
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

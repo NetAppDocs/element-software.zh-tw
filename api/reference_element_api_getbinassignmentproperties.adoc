@@ -1,0 +1,143 @@
+---
+permalink: api/reference_element_api_getbinassignmentproperties.html 
+sidebar: sidebar 
+keywords: bin assignment,assignment properties,retrieve assignment properties 
+summary: 您可以使用GetBinAssignmentProperties方法擷取資料庫中的Bin指派內容。 
+---
+= GetBinAssignmentProperties
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetBinAssignmentProperties」方法擷取資料庫中的Bin指派內容。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+屬性
+ a| 
+詳細說明資料庫中所有目前藥櫃指派的內容。
+ a| 
+BinsignmentProperties Array
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method": "GetBinAssignmentProperties",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "properties": {
+            "algorithmRuntimeMS": 1105,
+            "areReplicasValid": true,
+            "binCount": 65536,
+            "isBalanced": true,
+            "isStable": true,
+            "isWellCoupled": false,
+            "layout": [
+                {
+                    "protectionDomainName": "1",
+                    "services": [
+                        {
+                            "budget": 7281,
+                            "serviceID": 16
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 19
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 24
+                        }
+                    ]
+                },
+                {
+                    "protectionDomainName": "2",
+                    "services": [
+                        {
+                            "budget": 7281,
+                            "serviceID": 17
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 20
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 22
+                        }
+                    ]
+                },
+                {
+                    "protectionDomainName": "3",
+                    "services": [
+                        {
+                            "budget": 7281,
+                            "serviceID": 18
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 21
+                        },
+                        {
+                            "budget": 7281,
+                            "serviceID": 23
+                        }
+                    ]
+                }
+            ],
+            "numSwaps": 0,
+            "numUpdatingBins": 0,
+            "protectionDomainType": "node",
+            "reason": "Final",
+            "replicationCount": 2,
+            "requestRebalance": false,
+            "serviceStrandedCapacities": [],
+            "timePublished": "2020-04-02T18:34:07.807681Z",
+            "validSchemes": []
+        }
+    }
+}
+----
+
+
+== 新的自版本
+
+12.0

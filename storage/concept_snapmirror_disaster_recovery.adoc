@@ -1,0 +1,17 @@
+---
+permalink: storage/concept_snapmirror_disaster_recovery.html 
+sidebar: sidebar 
+keywords: dr, disaster recovery, snapmirror 
+summary: 如果執行NetApp Element 不完善軟體的磁碟區或叢集發生問題、請使用SnapMirror功能來中斷與目的地磁碟區的關係、並將其容錯移轉至目的地磁碟區。 
+---
+= 使用SnapMirror進行災難恢復
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果執行NetApp Element 不完善軟體的磁碟區或叢集發生問題、請使用SnapMirror功能來中斷與目的地磁碟區的關係、並將其容錯移轉至目的地磁碟區。
+
+
+NOTE: 如果原始叢集完全故障或不存在、請聯絡NetApp支援部門以取得進一步協助。

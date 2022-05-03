@@ -1,0 +1,46 @@
+---
+permalink: storage/task_system_manage_mfa_set_up_multi_factor_authentication.html 
+sidebar: sidebar 
+keywords: idp, json, mfa, cluster, metadata, saml 
+summary: 您可以透過Element API使用這些基本步驟、將叢集設定為使用多因素驗證。您可以在Element API參考文件中找到每種API方法的詳細資料。 
+---
+= 設定多因素驗證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以透過Element API使用這些基本步驟、將叢集設定為使用多因素驗證。
+
+如需每種API方法的詳細資料、請參閱 link:../api/index.html["Element API參考"]。
+
+. 透過呼叫下列API方法並以Json格式傳遞IDP中繼資料、為叢集建立新的協力廠商身分識別供應商（IDP）組態：「Create IdpConfiguration」（建立IdpConfiguration）
++
+IDP中繼資料以純文字格式從第三方IDP擷取。此中繼資料必須經過驗證、以確保其在Json中正確格式化。您可以使用許多Json格式化板應用程式、例如：https://freeformatter.com/json-escape.html。
+
+. 透過spmetadata Url擷取叢集中繼資料、以呼叫下列API方法複製到第三方IDP：「ListIdpConfigurations」
++
+SpMetadataUrl是一個URL、用於從叢集擷取IDP的服務供應商中繼資料、以建立信任關係。
+
+. 在協力廠商IDP上設定SAML斷言、以納入「NameID」屬性、以唯一識別使用者進行稽核記錄、並讓「單一登出」正常運作。
+. 建立一或多個由協力廠商IDP驗證的叢集管理員使用者帳戶、以取得授權、方法是呼叫下列API方法：「AddIdpClusterAdmin」
++
+
+NOTE: IDP叢集管理員的使用者名稱應與SAML屬性名稱/值對應相符、以取得所需的效果、如下列範例所示：
+
++
+** email=bob@company.com -其中IDP已設定為在SAML屬性中釋出電子郵件地址。
+** Group=cluster系統管理員：其中IDP設定為釋放所有使用者應有存取權的群組內容。請注意、為了安全起見、SAML屬性名稱/值配對區分大小寫。
+
+
+. 若要為叢集啟用MFA、請呼叫下列API方法：「EnablIdpAuthentication」
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

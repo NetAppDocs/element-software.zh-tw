@@ -1,0 +1,27 @@
+---
+permalink: storage/task_system_manage_fips_enable_encryption_at_rest.html 
+sidebar: sidebar 
+keywords: fips, security, encryption at rest, enable, disable, drives 
+summary: 您可以在閒置時啟用和停用全叢集加密。此功能預設為未啟用。若要支援FIPS磁碟機、您必須在閒置時啟用加密。 
+---
+= 在靜止狀態下啟用加密
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在閒置時啟用和停用全叢集加密。此功能預設為未啟用。若要支援FIPS磁碟機、您必須在閒置時啟用加密。
+
+. 在這個軟件UI中、按一下NetApp Element *叢集*>*設定*。
+. 按一下「*在REST啟用加密*」。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[啟用及停用叢集的加密]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

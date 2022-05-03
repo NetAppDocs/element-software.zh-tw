@@ -1,0 +1,27 @@
+---
+permalink: storage/task_intro_limit_results_by_using_filters.html 
+sidebar: sidebar 
+keywords: filter, filtering, sorting information, viewing lists, unfiltered list 
+summary: 您可以篩選元素UI頁面上的清單資訊。檢視清單（例如Volume和快照）時、您可以新增一或多個篩選器來聚焦資訊、使其更容易放入頁面。 
+---
+= 使用篩選器來限制結果
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以篩選元素UI頁面上的清單資訊。檢視清單（例如磁碟區和快照）時、您可以新增一或多個篩選器來聚焦資訊、使其更容易放入頁面。
+
+. 檢視清單資訊時、請按一下*篩選*。
+. 展開*篩選條件*欄位。
+. 從欄位中最左側的元素中選擇要篩選的欄。
+. 為欄選擇限制。
+. 輸入要篩選的文字。
+. 按一下「 * 新增 * 」。
++
+系統會針對清單中的資訊執行新的篩選、並在篩選條件欄位中暫時儲存新的篩選條件。
+
+. 若要新增其他篩選器、請按一下*「Add*（新增*）」、然後再次選擇篩選器。
+. 按一下「*全部清除*」以移除篩選清單、並顯示未篩選的清單資訊。
+

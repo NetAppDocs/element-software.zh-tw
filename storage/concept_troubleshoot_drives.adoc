@@ -1,0 +1,44 @@
+---
+permalink: storage/concept_troubleshoot_drives.html 
+sidebar: sidebar 
+keywords: troubleshoot, drives, ssd, swappable, solid-state drives 
+summary: 您可以使用更換磁碟機來更換故障的固態硬碟（SSD）。固態硬碟SolidFire 適用於不含硬碟的儲存節點、可熱交換。如果您懷疑SSD故障、請聯絡NetApp支援部門以確認故障、並引導您完成適當的解決程序。NetApp Support也會與您合作、根據您的服務層級協議、取得更換磁碟機。 
+---
+= 疑難排解磁碟機
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用更換磁碟機來更換故障的固態硬碟（SSD）。固態硬碟SolidFire 適用於不含硬碟的儲存節點、可熱交換。如果您懷疑SSD故障、請聯絡NetApp支援部門以確認故障、並引導您完成適當的解決程序。NetApp Support也會與您合作、根據您的服務層級協議、取得更換磁碟機。
+
+在這種情況下、如何切換意味著您可以從作用中節點移除故障磁碟機、然後用NetApp的新SSD磁碟機加以更換。不建議您移除作用中叢集上的非故障磁碟機。
+
+您應該維護NetApp支援部門建議的現場備用磁碟機、以便在磁碟機故障時立即更換。
+
+
+NOTE: 為了進行測試、如果您是從節點拉出磁碟機來模擬磁碟機故障、則必須等待30秒、然後再將磁碟機插回磁碟機插槽。
+
+如果磁碟機故障、雙Helix會將磁碟機上的資料重新分佈到叢集上的其他節點。同一個節點上的多個磁碟機故障並非問題、因為Element軟體可防止位於同一個節點上的兩個資料複本。故障磁碟機會導致下列事件：
+
+* 資料會從磁碟機移轉。
+* 整體叢集容量會因磁碟機容量而降低。
+* 雙重Helix資料保護可確保資料有兩個有效的複本。
+
+
+
+IMPORTANT: 如果磁碟機導致儲存空間不足、無法移轉資料、則不支援移除該磁碟機。SolidFire
+
+
+
+== 以取得更多資訊
+
+* xref:task_troubleshoot_remove_failed_drives.adoc[從叢集移除故障磁碟機]
+* xref:concept_troubleshoot_basic_mdss_drive_troubleshooting.adoc[基本的MDSS磁碟機疑難排解]
+* xref:task_troubleshoot_remove_mdss_drives.adoc[移除MDSS磁碟機]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2844771["更換SolidFire 驅動器以供儲存節點使用"]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2846859["更換H600S系列儲存節點的磁碟機"]
+* link:hardware/concept_h410s_h610s_info.html["H410S和H610S硬體資訊"]
+* link:hardware/concept_sfseries_info.html["SF系列硬體資訊"]
+

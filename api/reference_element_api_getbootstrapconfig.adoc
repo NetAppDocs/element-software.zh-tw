@@ -1,0 +1,173 @@
+---
+permalink: api/reference_element_api_getbootstrapconfig.html 
+sidebar: sidebar 
+keywords: cluster,getting,bootstrap,information,node,GetBootstrapConfig 
+summary: 您可以使用GetBootstrapConfig方法從bootstrap組態檔取得叢集和節點資訊。在個別節點加入叢集之前、請先在該節點上使用此API方法。建立叢集時、會在叢集組態介面中使用此方法傳回的資訊。 
+---
+= GetBootstrapConfig
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetBootstrapConfig」方法、從啟動程序組態檔取得叢集和節點資訊。在個別節點加入叢集之前、請先在該節點上使用此API方法。建立叢集時、會在叢集組態介面中使用此方法傳回的資訊。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集名稱
+ a| 
+叢集名稱。
+ a| 
+字串
+
+
+
+ a| 
+mvip
+ a| 
+叢集MVIP位址。如果節點不是叢集的一部分、則為空白。
+ a| 
+字串
+
+
+
+ a| 
+節點名稱
+ a| 
+節點名稱。
+ a| 
+字串
+
+
+
+ a| 
+節點
+ a| 
+主動等待加入叢集之每個節點的相關資訊清單。可能值：
+
+* chassetType：（字串）節點的硬體平台。
+* CIP：（字串）節點的叢集IP位址。
+* 相容：（布林值）表示節點是否與執行API呼叫的節點相容。
+* 主機名稱：節點的主機名稱（字串）。
+* MIP：（字串）節點的IPv4管理IP位址。
+* mipV6：（字串）節點的IPv6管理IP位址。
+* 節點類型：（字串）節點的模型名稱。
+* 版本：（字串）節點上目前安裝的軟體版本。
+
+ a| 
+Json物件陣列
+
+
+
+ a| 
+服務
+ a| 
+叢集SVIP位址。如果節點不是叢集的一部分、則為null。
+ a| 
+字串
+
+
+
+ a| 
+版本
+ a| 
+目前安裝在此API方法所呼叫之節點上的Element軟體版本。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetBootstrapConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id":1,
+	"result":{
+		"clusterName":"testname",
+		"nodeName":"testnode",
+		"svip": "10.117.1.5",
+		"mvip": "10.117.1.6",
+		"nodes":[
+			{
+				"chassisType":"R630",
+				"cip":"10.117.115.16",
+				"compatible":true,
+				"hostname":"NLABP1132",
+				"mip":"10.117.114.16",
+				"mipV6":"fd20:8b1e:b256:45a::16",
+				"nodeType":"SF2405",
+				"role":"Storage",
+				"version":"11.0"
+			},
+			{
+				"chassisType":"R630",
+				"cip":"10.117.115.17",
+				"compatible":true,
+				"hostname":"NLABP1133",
+				"mip":"10.117.114.17",
+				"mipV6":"fd20:8b1e:b256:45a::17",
+				"nodeType":"SF2405",
+				"role":"Storage",
+				"version":"11.0"
+			},
+			{
+				"chassisType":"R630",
+				"cip":"10.117.115.18",
+				"compatible":true,
+				"hostname":"NLABP1134",
+				"mip":"10.117.114.18",
+				"mipV6":"fd20:8b1e:b256:45a::18",
+				"nodeType":"SF2405",
+				"role":"Storage",
+				"version":"11.0"
+			}
+		],
+		"version":"11.0"
+	}
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_createcluster.adoc[建立叢集]

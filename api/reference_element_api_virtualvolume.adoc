@@ -1,0 +1,155 @@
+---
+permalink: api/reference_element_api_virtualvolume.html 
+sidebar: sidebar 
+keywords: object,objects,virtualVolume 
+summary: 虛擬Volume物件包含虛擬磁碟區的組態資訊、以及虛擬磁碟區快照的相關資訊。不包含執行時間或使用資訊。您可以使用清單虛擬磁碟區方法來擷取叢集的此資訊。 
+---
+= 虛擬化Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+虛擬Volume物件包含虛擬磁碟區的組態資訊、以及虛擬磁碟區快照的相關資訊。不包含執行時間或使用資訊。您可以使用「listVirtualVolumes」方法來擷取叢集的此資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+綁定
+ a| 
+此虛擬磁碟區的連結ID清單。
+ a| 
+UUID陣列
+
+
+
+ a| 
+兒童
+ a| 
+此虛擬Volume子項的虛擬Volume UUID清單。
+ a| 
+UUID陣列
+
+
+
+ a| 
+子系
+ a| 
+當您將rec迴 歸：true傳遞給ListVirtualVolumes方法時、會包含虛擬Volume UUID的清單、這些是此虛擬Volume的子系。
+ a| 
+UUID陣列
+
+
+
+ a| 
+中繼資料
+ a| 
+虛擬磁碟區中繼資料的金鑰值配對、例如虛擬磁碟區類型、客體作業系統類型等。
+ a| 
+Json物件
+
+
+
+ a| 
+parentVirtualVolume ID
+ a| 
+父虛擬Volume的虛擬Volume ID。如果ID全部為零、則此為獨立虛擬磁碟區、沒有父磁碟區的連結。
+ a| 
+UUID
+
+
+
+ a| 
+Snapshot ID
+ a| 
+基礎Volume快照的ID。如果虛擬磁碟區不代表快照、則此值為「0」。
+ a| 
+整數
+
+
+
+ a| 
+Snapshot資訊
+ a| 
+相關快照的快照物件（若非ixestent則為null）。
+ a| 
+xref:reference_element_api_snapshot.adoc[Snapshot]
+
+
+
+ a| 
+狀態
+ a| 
+虛擬Volume的目前狀態。可能值：
+
+* 複製：虛擬磁碟區正在處理、以回應複製或快照作業。
+* 等待中：虛擬磁碟區正在等待快照作業完成。
+* 就緒：虛擬磁碟區已準備就緒、可供一般用途使用。
+
+ a| 
+字串
+
+
+
+ a| 
+storageContainer
+ a| 
+說明擁有此虛擬磁碟區之儲存容器的物件。
+ a| 
+xref:reference_element_api_storagecontainer.adoc[storageContainer]
+
+
+
+ a| 
+虛擬Volume ID
+ a| 
+虛擬Volume的唯一ID。
+ a| 
+UUID
+
+
+
+ a| 
+虛擬Volume類型
+ a| 
+虛擬Volume的類型。
+ a| 
+字串
+
+
+
+ a| 
+Volume ID
+ a| 
+基礎Volume的ID。
+ a| 
+整數
+
+
+
+ a| 
+Volume資訊
+ a| 
+當您傳遞詳細資料：true至listVirtualVolumes方法時、此成員是描述該磁碟區的物件。
+ a| 
+xref:reference_element_api_volume.adoc[Volume]
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+* xref:reference_element_api_listvirtualvolumes.adoc[列出虛擬磁碟區]
+* xref:reference_element_api_snapshot.adoc[Snapshot]
+* xref:reference_element_api_storagecontainer.adoc[storageContainer]
+* xref:reference_element_api_volume.adoc[Volume]
+

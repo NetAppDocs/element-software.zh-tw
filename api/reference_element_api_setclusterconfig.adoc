@@ -1,0 +1,109 @@
+---
+permalink: api/reference_element_api_setclusterconfig.html 
+sidebar: sidebar 
+keywords: cluster,configuration,set,setting,node,setclusterconfig 
+summary: 您可以使用SetClusterConfig方法來設定節點用來與與其相關聯的叢集進行通訊的組態。若要顯示節點目前的叢集介面設定、請執行GetClusterConfig API方法。 
+---
+= SetClusterConfig
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「etClusterConfig」方法來設定節點用來與與其相關聯的叢集進行通訊的組態。若要顯示節點目前的叢集介面設定、請執行「GetClusterConfig」API方法。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+叢集
+ a| 
+應在此方法呼叫期間變更的組態屬性。只有您想要變更的欄位才需要新增至此方法、做為此參數的成員。
+ a| 
+xref:reference_element_api_cluster.adoc[叢集]
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+叢集
+ a| 
+節點用來與叢集通訊的組態資訊。
+ a| 
+xref:reference_element_api_cluster.adoc[叢集]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "SetClusterConfig",
+   "params": {
+      "cluster": {
+         "name": "myhost",
+         "mipi": "Bond10G"
+      },
+    "id" : 1
+   }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+      "cluster" : {
+         "cipi" : "Bond10G",
+         "cluster" : "QoS",
+         "ensemble" : [
+            "1:10.10.5.42",
+            "2:10.10.5.43",
+            "3:10.10.5.44",
+            "4:10.10.5.46",
+            "5:10.10.5.47"
+         ],
+          "hostname" : "myhost",
+          "mipi" : "Bond10G",
+          "nodeID" : 1,
+          "sipi" : "Bond10G",
+          "state" : "Active"
+      }
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

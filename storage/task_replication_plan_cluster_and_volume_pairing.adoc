@@ -1,0 +1,34 @@
+---
+permalink: storage/task_replication_plan_cluster_and_volume_pairing.html 
+sidebar: sidebar 
+keywords: cluster, volume pairing, plan for, real-time replication 
+summary: 即時遠端複寫需要配對兩個執行元素軟體的儲存叢集、在每個叢集上配對磁碟區、以及驗證複寫。複寫完成後、您應該刪除磁碟區關係。 
+---
+= 規劃叢集與Volume配對、以進行即時複寫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+即時遠端複寫需要配對兩個執行元素軟體的儲存叢集、在每個叢集上配對磁碟區、以及驗證複寫。複寫完成後、您應該刪除磁碟區關係。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須擁有叢集管理員權限、才能配對一個或兩個叢集。
+* 配對叢集的管理和儲存網路上的所有節點IP位址都會彼此路由傳送。
+* 所有配對節點的MTU必須相同、且叢集之間必須支援端點對端點。
+* 兩個儲存叢集都應該具有唯一的叢集名稱、MVIP、SVIP和所有節點IP位址。
+* 叢集上元素軟體版本之間的差異不超過一個主要版本。如果差異較大、則必須升級其中一個叢集、才能執行資料複寫。
+
+
+
+NOTE: WAN加速器設備未經NetApp認證、無法在複寫資料時使用。如果在複寫資料的兩個叢集之間部署、這些應用裝置可能會干擾壓縮和重複資料刪除。在正式作業環境中部署任何WAN加速器設備之前、請務必完全符合其效果。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_replication_pair_clusters.adoc[配對叢集以進行複寫]
+* xref:task_replication_pair_volumes.adoc[配對磁碟區]
+* xref:task_replication_assign_replication_source_and_target_to_paired_volumes.adoc[將複寫來源和目標指派給配對的磁碟區]
+

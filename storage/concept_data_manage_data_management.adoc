@@ -1,0 +1,27 @@
+---
+permalink: storage/concept_data_manage_data_management.html 
+sidebar: sidebar 
+keywords: virtual volumes, volumes, manage 
+summary: 您可以從Element UI的Management（管理）索引標籤、管理執行Element軟體的叢集中資料。可用的叢集管理功能包括建立及管理資料磁碟區、使用者帳戶、磁碟區存取群組、啟動器及服務品質（QoS）原則。 
+---
+= 管理磁碟區和虛擬磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從Element UI的Management（管理）索引標籤、管理執行Element軟體的叢集中資料。可用的叢集管理功能包括建立及管理資料磁碟區、磁碟區存取群組、啟動器及服務品質（QoS）原則。
+
+* link:task_data_manage_volumes_work_with_volumes_task.html["使用Volume"]
+* link:concept_data_manage_vvol_work_virtual_volumes.html["使用虛擬磁碟區"]
+* link:concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["使用Volume存取群組和啟動器"]
+
+
+
+
+== 以取得更多資訊
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

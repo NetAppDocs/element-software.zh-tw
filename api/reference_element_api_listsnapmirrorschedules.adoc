@@ -1,0 +1,60 @@
+---
+permalink: api/reference_element_api_listsnapmirrorschedules.html 
+sidebar: sidebar 
+keywords: snapmirror,schedule,schedules,list,listing,listsnapmirrorschedules,ontap 
+summary: Element軟體Web UI使用清單SnapMirrorSchedules方法來取得遠端ONTAP 故障叢集上可用的排程清單。 
+---
+= 清單SnapMirrorSchedules
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體Web UI使用「ListSnapMirrorSchedules」方法來取得遠端ONTAP 故障叢集上可用的排程清單。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+如果提供、系統會列出端點的排程、以及指定的SnapMirror端點ID。如果未提供、系統會列出所有已知SnapMirror端點的排程。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorSchedules
+ a| 
+SnapMirror排程清單、顯示在遠端ONTAP 的SnapMirror叢集上。
+ a| 
+xref:reference_element_api_snapmirrorjobschedulecroninfo.adoc[snapMirrorJobScheduleCronInfo] 陣列
+
+|===
+
+
+== 新的自版本
+
+10.1

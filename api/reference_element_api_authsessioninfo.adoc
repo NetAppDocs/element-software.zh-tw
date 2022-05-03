@@ -1,0 +1,110 @@
+---
+permalink: api/reference_element_api_authsessioninfo.html 
+sidebar: sidebar 
+keywords: objects,object,authSessionInfo 
+summary: 驗證工作階段資訊物件包含驗證工作階段的相關資訊。 
+---
+= 驗證工作階段資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+驗證工作階段資訊物件包含驗證工作階段的相關資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+存取群組清單
+ a| 
+使用者的存取群組清單。
+ a| 
+字串陣列
+
+
+
+ a| 
+驗證方法
+ a| 
+叢集管理使用者擁有的授權類型。可能值：
+
+* LDAP -透過LDAP驗證。
+* 叢集：透過儲存在叢集資料庫中的使用者名稱和密碼進行驗證。
+* IDP -透過第三方身分識別供應商驗證。
+
+ a| 
+字串
+
+
+
+ a| 
+叢集管理ID
+ a| 
+與此工作階段相關聯的叢集管理ID清單。對於與LDAP或協力廠商身分識別供應商（IDP）相關的工作階段、此為與此工作階段相關之相符叢集管理ID的集合清單。
+ a| 
+整數陣列
+
+
+
+ a| 
+finaltimeout
+ a| 
+工作階段變成無效的時間。這是在建立工作階段且無法變更時設定。
+ a| 
+字串
+
+
+
+ a| 
+idpConfigVersion
+ a| 
+建立工作階段時的IDP組態版本。
+ a| 
+整數
+
+
+
+ a| 
+lastAccesstimeout
+ a| 
+工作階段因為閒置而變成無效的時間。當存取工作階段以供使用時、會設定為新值、直到工作階段因達到final超 時而變成無效為止。
+ a| 
+字串
+
+
+
+ a| 
+工作區建立時間
+ a| 
+建立工作階段的時間。
+ a| 
+字串
+
+
+
+ a| 
+工作階段ID
+ a| 
+此工作階段的UUID。
+ a| 
+UUID
+
+
+
+ a| 
+使用者名稱
+ a| 
+與此工作階段相關的使用者名稱。對於LDAP相關的工作階段、此為使用者的LDAP DN。對於與第三方IDP相關的工作階段、這將是任意名稱值配對、用於工作階段內的稽核作業。它不一定符合叢集上的叢集管理名稱。例如、SAML Subject NameID、但這將由IDP的組態和SAML聲明的結果內容來決定。
+ a| 
+字串
+
+|===

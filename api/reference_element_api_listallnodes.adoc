@@ -1,0 +1,120 @@
+---
+permalink: api/reference_element_api_listallnodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,node,nodes,all,listallnodes 
+summary: 您可以使用listAllNode方法列出叢集中的作用中和擱置節點。 
+---
+= listAllNode
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listAllnodes」方法列出叢集中的作用中節點和擱置中節點。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+節點
+ a| 
+描述叢集中作用中節點的物件清單。
+ a| 
+xref:reference_element_api_node.adoc[節點]
+
+
+
+ a| 
+pendingActiveNode
+ a| 
+描述叢集擱置中作用中節點的物件清單。
+ a| 
+xref:reference_element_api_pendingactivenode.adoc[pendingActiveNode] 陣列
+
+
+
+ a| 
+pendingNode
+ a| 
+描述叢集擱置節點的物件清單。
+ a| 
+xref:reference_element_api_pendingnode.adoc[pendingNode] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListAllNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"nodes": [
+			{
+				"associatedFServiceID": 0,
+				"associatedMasterServiceID": 1,
+				"attributes": {},
+				"chassisName": "CT5TV12",
+				"cip": "10.1.1.1",
+				"cipi": "Bond10G",
+				"fibreChannelTargetPortGroup": null,
+				"mip": "10.1.1.1",
+				"mipi": "Bond1G",
+				"name": "NLABP0704",
+				"nodeID": 1,
+				"nodeSlot": "",
+				"platformInfo": {
+					"chassisType": "R620",
+					"cpuModel": "Intel",
+					"nodeMemoryGB": 72,
+					"nodeType": "SF3010",
+					"platformConfigVersion": "0.0.0.0"
+				},
+				"sip": "10.1.1.1",
+				"sipi": "Bond10G",
+				"softwareVersion": "11.0",
+				"uuid": "4C4C4544-0054",
+				"virtualNetworks": []
+			}
+		],
+		"pendingActiveNodes": [],
+		"pendingNodes": []
+	}
+}
+----
+
+
+== 新的自版本
+
+9.6

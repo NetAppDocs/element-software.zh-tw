@@ -1,0 +1,26 @@
+---
+permalink: storage/task_troubleshoot_power_down_a_cluster.html 
+sidebar: sidebar 
+keywords: cluster, power down, mvip 
+summary: 您可以在聯絡NetApp支援部門並完成初步步驟之後、關閉整個叢集的電源。 
+---
+= 關閉叢集電源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在聯絡NetApp支援部門並完成初步步驟之後、關閉整個叢集的電源。
+
+執行下列動作、準備叢集以關機：
+
+* 停止所有I/O
+* 中斷所有iSCSI工作階段的連線。
++
+.. 瀏覽至叢集上的管理虛擬IP（MVIP）位址、以開啟Element UI。
+.. 請注意節點清單中所列的節點。
+.. 使用叢集中每個節點ID上指定的halt選項來執行「關機API」方法。
+
+
+

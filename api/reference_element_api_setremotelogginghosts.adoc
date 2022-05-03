@@ -1,0 +1,91 @@
+---
+permalink: api/reference_element_api_setremotelogginghosts.html 
+sidebar: sidebar 
+keywords: remote,logging,host,hosts,set,setting,setremotelogginghosts 
+summary: 您可以使用SetRemoteLoggingHHosts方法、將遠端記錄從儲存叢集中的節點設定為集中式記錄伺服器或伺服器。遠端記錄是使用預設連接埠514透過TCP執行。此API不會新增至現有的記錄主機。而是以此API方法指定的新值取代目前存在的值。您可以使用GetRemoteLoggingHist來判斷目前的記錄主機為何、然後使用SetRemoteLoggingHist來設定所需的目前和新記錄主機清單。 
+---
+= SetRemoteLoggingHos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「etRemoteLoggingHoses」方法來設定從儲存叢集中節點到集中式記錄伺服器的遠端記錄。遠端記錄是使用預設連接埠514透過TCP執行。此API不會新增至現有的記錄主機。而是以此API方法指定的新值取代目前存在的值。您可以使用「GetRemoteLoggingHosS」來判斷目前的記錄主機、然後使用「etRemoteLoggingHosS」來設定所需的目前和新記錄主機清單。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+遠端系統
+ a| 
+記錄訊息收件者的主機清單。
+ a| 
+xref:reference_element_api_loggingserver.adoc[記錄伺服器] 陣列
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "id": 1,
+   "method": "SetRemoteLoggingHosts",
+   "params": {
+     "remoteHosts": [
+        {
+          "host": "172.16.1.20",
+          "port": 10514
+        },
+        {
+          "host": "172.16.1.25"
+        }
+      ]
+   }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id" : 1,
+    "result" : {}
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_getremotelogginghosts.adoc[GetRemoteLoggingHos]

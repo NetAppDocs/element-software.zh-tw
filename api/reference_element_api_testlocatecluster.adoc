@@ -1,0 +1,94 @@
+---
+permalink: api/reference_element_api_testlocatecluster.html 
+sidebar: sidebar 
+keywords: test,testing,cluster,locate,configuration,TestLocateCluster 
+summary: 您可以使用TestLocateCluster方法來驗證節點是否能找到叢集組態中指定的叢集。輸出會驗證叢集已建立、並列出叢集集合中的節點。 
+---
+= TestLocateCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「TestLocateCluster」方法來驗證節點是否能找到叢集組態中指定的叢集。輸出會驗證叢集已建立、並列出叢集集合中的節點。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+詳細資料
+ a| 
+測試作業成功或失敗的相關資訊。
+ a| 
+Json物件
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "TestLocateCluster",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+      "details": {
+         "complete": true,
+         "ensemble": {
+            "nodes": [
+               {
+                 "IP": "10.10.5.94",
+                 "nodeID": 1
+               },
+               {
+                 "IP": "10.10.5.107",
+                 "nodeID": 2
+               },
+               {
+                 "IP": "10.10.5.108",
+                 "nodeID": 3
+               }
+            ]
+         },
+         "version": "5.749"
+      },
+      "duration": "0.0384478sec",
+      "result": "Passed"
+   }
+}
+----
+
+
+== 新的自版本
+
+9.6

@@ -1,0 +1,57 @@
+---
+permalink: api/reference_element_api_request_object_members.html 
+sidebar: sidebar 
+keywords: request,object,members 
+summary: 每個Element軟體API要求都有下列基本部分： 
+---
+= 要求物件成員
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每個Element軟體API要求都有下列基本部分：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+方法
+ a| 
+要叫用的方法名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+參數
+ a| 
+包含所叫用方法參數的物件。命名參數為必填欄位。不允許位置參數（以陣列形式傳遞）。
+ a| 
+Json物件
+ a| 
+｛｝
+ a| 
+否
+
+
+
+ a| 
+ID
+ a| 
+用於使要求符合回應的識別碼、並傳回結果。
+ a| 
+字串或整數
+ a| 
+｛｝
+ a| 
+否
+
+|===

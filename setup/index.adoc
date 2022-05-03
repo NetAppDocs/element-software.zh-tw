@@ -1,0 +1,48 @@
+---
+permalink: setup/index.html 
+sidebar: sidebar 
+keywords: set up storage, storage system, set up, configure node, configuring storage node, add drives, fibre channel, create cluster 
+summary: 瞭解如何為您的環境設定儲存系統。 
+---
+= 設定儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解如何為您的環境設定儲存系統。
+
+* xref:concept_setup_overview.adoc[設定儲存設備]
++
+** xref:task_setup_cluster_with_storage_nodes.adoc[設定具有儲存節點的叢集]
++
+*** xref:concept_setup_configure_a_storage_node.adoc[設定儲存節點]
+*** xref:task_setup_create_a_storage_cluster.adoc[建立儲存叢集]
+*** xref:task_post_deploy_access_the_element_software_user_interface.adoc[登入Element軟體使用者介面]
+*** xref:task_setup_add_drives_to_a_cluster.adoc[將磁碟機新增至叢集]
+
+
+** xref:task_setup_cluster_with_fibre_channel_nodes.adoc[設定具有Fibre Channel節點的叢集]項目：
++
+*** xref:concept_setup_fc_configure_a_fibre_channel_node.adoc[設定Fibre Channel節點]
+*** xref:task_setup_fc_add_fibre_channel_nodes_to_a_cluster.adoc[將Fibre Channel節點新增至叢集]
+*** xref:task_setup_fc_create_a_new_cluster_with_fibre_channel_nodes.adoc[使用Fibre Channel節點建立新叢集]
+*** xref:concept_setup_fc_set_up_zones_for_fibre_channel_nodes.adoc[設定光纖通道節點的區域]
+*** xref:task_setup_create_a_volume_access_group_for_fibre_channel_clients.adoc[為Fibre Channel用戶端建立Volume存取群組]
+
+
+** xref:task_setup_determine_which_solidfire_components_to_install.adoc[判斷SolidFire 要安裝哪些元件]
+** xref:/task_setup_gh_redirect_set_up_a_management_node.adoc[設定管理節點]
+** xref:concept_setup_whats_next.adoc[接下來呢？]
+
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/["支援All Flash儲存設備總覽SolidFire"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+

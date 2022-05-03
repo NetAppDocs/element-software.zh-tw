@@ -1,0 +1,158 @@
+---
+permalink: api/reference_element_api_createsupportbundle.html 
+sidebar: sidebar 
+keywords: create,creating,support,bundle,CreateSupportBundle 
+summary: 您可以使用Create SupportBundle在節點的目錄下建立支援服務組合檔案。建立後、套件會以tar.gz檔案的形式儲存在節點上。 
+---
+= 建立支援產品組合
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「Create SupportBundle」在節點目錄下建立支援服務組合檔案。建立後、套件會以tar檔案的形式儲存在節點上（gz壓縮選項可透過extraArgs參數取得）。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+套組名稱
+ a| 
+支援服務組合的唯一名稱。如果未提供名稱、則會使用「supportBundle」和節點名稱做為檔案名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+非凡的
+ a| 
+使用「-compress gz」將支援服務組合建立為tar.gz檔案。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+超時秒數
+ a| 
+支援服務包指令碼執行的秒數。
+ a| 
+整數
+ a| 
+1500年
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+詳細資料
+ a| 
+支援服務組合的詳細資料。可能值：
+
+* bundleName：在CreateSupportBundleAPI方法中指定的名稱。如果未指定名稱、則會使用「supportBundle」。
+* extraargs：使用此方法傳遞的引數。
+* 檔案：系統建立的支援服務組合檔案清單。
+* 輸出：建立支援服務包之指令碼的命令列輸出。
+* timeoutSec:停止之前執行支援服務包指令碼的秒數。
+* URL：建立支援服務套裝組合的URL。
+
+ a| 
+Json物件
+
+
+
+ a| 
+持續時間
+ a| 
+建立支援服務組合所用的時間、格式為：hh：mm：ss.sssssssss。
+ a| 
+字串
+
+
+
+ a| 
+結果
+ a| 
+支援服務組合作業的成功或失敗。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+ "method": "CreateSupportBundle",
+"params": {
+  "extraArgs": "--compress gz"
+ },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+  "details": {
+    "bundleName": "supportbundle",
+    "extraArgs": "--compress gz",
+    "files": [
+         "supportbundle.nodehostname.tar.gz"
+     ],
+     "output": "timeout -s KILL 1500s /sf/scripts/sfsupportbundle --quiet --compress gz /tmp/solidfire-dtemp.1L6bdX/supportbundle<br><br>Moved '/tmp/solidfire-dtemp.1L6bdX/supportbundle.nodehostname.tar.gz' to /tmp/supportbundles",
+      "timeoutSec": 1500,
+      "url": [
+          "https://nodeIP:442/config/supportbundles/supportbundle.nodehostname.tar.gz"
+      ]
+    },
+    "duration": "00:00:43.101627",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

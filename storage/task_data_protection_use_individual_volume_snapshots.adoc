@@ -1,0 +1,28 @@
+---
+permalink: storage/task_data_protection_use_individual_volume_snapshots.html 
+sidebar: sidebar 
+keywords: individual volume snapshots, use, volume, snapshot 
+summary: Volume Snapshot是Volume的時間點複本。您可以使用個別磁碟區、而非一組磁碟區來執行快照。 
+---
+= 使用個別Volume快照來保護資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume Snapshot是Volume的時間點複本。您可以使用個別磁碟區、而非一組磁碟區來執行快照。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_data_protection_create_a_volume_snapshot.adoc[建立磁碟區快照]
+* xref:task_data_protection_edit_snapshot_retention.adoc[編輯快照保留]
+* xref:task_data_protection_delete_a_snapshot.adoc[刪除快照]
+* xref:task_data_protection_clone_a_volume_from_a_snapshot.adoc[從快照複製磁碟區]
+* xref:task_data_protection_roll_back_a_volume_to_a_snapshot.adoc[將磁碟區復原為快照]
+* xref:task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store.adoc[將磁碟區快照備份到Amazon S3物件存放區]
+* xref:task_data_protection_back_up_a_volume_snapshot_to_openstack_swift.adoc[將Volume Snapshot備份到OpenStack Swift物件存放區]
+* xref:task_data_protection_back_up_volume_snapshot_to_solidfire.adoc[將Volume Snapshot備份到SolidFire 一個不支援的叢集]
+

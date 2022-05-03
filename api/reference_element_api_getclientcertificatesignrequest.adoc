@@ -1,0 +1,75 @@
+---
+permalink: api/reference_element_api_getclientcertificatesignrequest.html 
+sidebar: sidebar 
+keywords: client certificate,certificate signing request,creating certificate signing request,CSR,CA 
+summary: 您可以使用GetClientCertificateSignRequest方法來產生憑證簽署要求、該要求可由憑證授權單位簽署、以產生叢集的用戶端憑證。需要簽署憑證、才能建立與外部服務互動的信任關係。 
+---
+= GetClientCertificateSignRequest
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetClientCertificateSignRequest」方法來產生憑證簽署要求、並由憑證授權單位簽署以產生叢集的用戶端憑證。需要簽署憑證、才能建立與外部服務互動的信任關係。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+用戶端認證登入要求
+ a| 
+一種PEE格式的Base64編碼的PKCS#10 X．509用戶端憑證簽署要求。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "GetClientCertificateSignRequest",
+  "params": {
+  },
+"id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "clientCertificateSignRequest": "MIIByjCCATMCAQAwgYkxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybm..."
+   }
+}
+----
+
+
+== 新的自版本
+
+11.7

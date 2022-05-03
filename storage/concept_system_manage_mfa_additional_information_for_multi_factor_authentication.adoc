@@ -1,0 +1,32 @@
+---
+permalink: storage/concept_system_manage_mfa_additional_information_for_multi_factor_authentication.html 
+sidebar: sidebar 
+keywords: mfa, idp, certificates, api method 
+summary: 您應該瞭解下列有關多因素驗證的注意事項。 
+---
+= 多因素驗證的其他資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該瞭解下列有關多因素驗證的注意事項。
+
+* 若要重新整理不再有效的IDP憑證、您必須使用非IDP管理使用者來呼叫下列API方法：「更新IdpConfiguration」
+* MFA與長度小於2048位元的憑證不相容。根據預設、會在叢集上建立一個2048位元SSL憑證。在呼叫API方法「etSSLCertificate」時、您應該避免設定較小的憑證
++
+
+NOTE: 如果叢集使用的憑證在升級前低於2048位元、則叢集憑證必須在升級至Element 12或更新版本之後、以2048位元或更高的憑證進行更新。
+
+* IDP管理使用者無法直接（例如透過SDK或Postman）撥打API呼叫、也無法用於其他整合（例如OpenStack Cinder或vCenter外掛程式）。如果您需要建立具有這些功能的使用者、請新增LDAP叢集管理使用者或本機叢集管理使用者。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* link:../api/index.html["使用Element API管理儲存設備"]
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

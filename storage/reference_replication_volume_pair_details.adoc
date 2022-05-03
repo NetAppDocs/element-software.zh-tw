@@ -1,0 +1,71 @@
+---
+permalink: storage/reference_replication_volume_pair_details.html 
+sidebar: sidebar 
+keywords: volume pairs, replication, data protection 
+summary: Data Protection（資料保護）索引標籤上的Volume Pairs（磁碟區配對）頁面提供已配對或正在配對的磁碟區相關資訊。系統會在Volume Status（Volume狀態）欄中顯示配對與進度訊息。 
+---
+= Volume配對詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Data Protection（資料保護）索引標籤上的Volume Pairs（磁碟區配對）頁面提供已配對或正在配對的磁碟區相關資訊。系統會在Volume Status（Volume狀態）欄中顯示配對與進度訊息。
+
+* *識別碼*
++
+系統產生的Volume ID。
+
+* *名稱*
++
+建立磁碟區時指定給該磁碟區的名稱。Volume名稱最多可包含223個字元、並包含a到z、0到9和破折號（-）。
+
+* *帳戶*
++
+指派給磁碟區的帳戶名稱。
+
+* * Volume狀態*
++
+Volume的複寫狀態
+
+* * Snapshot狀態*
++
+快照磁碟區的狀態。
+
+* *模式*
++
+用戶端寫入複寫方法。可能的值如下：
+
++
+** 非同步
+** 純快照
+** 同步
+
+
+* *方向*
++
+Volume資料的方向：
+
++
+** 來源Volume圖示（image:../media/source_icon_for_volume_pairs.png["表示資料正在寫入目標外端叢集"]）表示資料正在寫入叢集外部的目標。
+** 目標Volume圖示（image:../media/target_icon_for_volume_pairs.png["表示資料正從外部來源寫入本機磁碟區的圖示"]）表示正在從外部來源將資料寫入本機磁碟區。
+
+
+* *非同步延遲*
++
+自上次與遠端叢集同步磁碟區以來的時間長度。如果Volume未配對、則值為null。
+
+* *遠端叢集*
++
+磁碟區所在的遠端叢集名稱。
+
+* *遠端Volume ID*
++
+遠端叢集上磁碟區的Volume ID。
+
+* *遠端磁碟區名稱*
++
+建立遠端磁碟區時所指定的名稱。
+
+

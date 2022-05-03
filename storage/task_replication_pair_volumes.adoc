@@ -1,0 +1,29 @@
+---
+permalink: storage/task_replication_pair_volumes.html 
+sidebar: sidebar 
+keywords: volume pairings, replication, cluster, cluster pair 
+summary: 在叢集配對中建立叢集之間的連線之後、您可以將一個叢集上的磁碟區與配對中另一個叢集上的磁碟區配對。建立磁碟區配對關係時、您必須識別哪個磁碟區是複寫目標。 
+---
+= 配對磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在叢集配對中建立叢集之間的連線之後、您可以將一個叢集上的磁碟區與配對中另一個叢集上的磁碟區配對。建立磁碟區配對關係時、您必須識別哪個磁碟區是複寫目標。
+
+您可以配對兩個磁碟區、以進行即時複寫、這些磁碟區儲存在連接的叢集配對中的不同儲存叢集上。配對兩個叢集之後、您可以將一個叢集上的作用中磁碟區設定為持續複寫到第二個叢集、以提供持續的資料保護（CDP）。您也可以將磁碟區指派為複寫的來源或目標。
+
+Volume配對永遠是一對一。當某個磁碟區是與另一個叢集上的某個磁碟區配對的一部分之後、您就無法再將它與任何其他磁碟區配對。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您已在叢集配對中的叢集之間建立連線。
+* 您對配對的一或兩個叢集擁有叢集管理員權限。
+
+
+.步驟
+. xref:task_replication_create_a_target_volume_with_read_write_access.adoc[建立具有讀取或寫入存取權的目標Volume]
+. xref:task_replication_pair_volumes_using_volume_id_or_pairing_key.adoc[使用Volume ID或配對金鑰配對Volume]
+. xref:task_replication_assign_replication_source_and_target_to_paired_volumes.adoc[將複寫來源和目標指派給配對的磁碟區]
+

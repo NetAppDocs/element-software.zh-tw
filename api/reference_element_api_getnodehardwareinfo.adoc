@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_getnodehardwareinfo.html 
+sidebar: sidebar 
+keywords: node,hardware,info,get,getting,getnodehardwareinfo 
+summary: 您可以使用GetNodeHardwareInfo方法來傳回指定節點的所有硬體資訊和狀態。這通常包括製造商、廠商、版本及其他相關的硬體識別資訊。 
+---
+= GetNodeHardwareInfo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「GetNodeHardwareInfo」方法來傳回指定節點的所有硬體資訊和狀態。這通常包括製造商、廠商、版本及其他相關的硬體識別資訊。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+節點ID
+ a| 
+要求硬體資訊的節點ID。如果指定了Fibre Channel節點、則會傳回有關Fibre Channel節點的資訊。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+節點硬體資訊
+ a| 
+指定節點ID的硬體資訊。此輸出中的每個物件都會標示給定節點的節點ID。
+ a| 
+xref:reference_element_api_hardwareinfo.adoc[硬體資訊]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "GetNodeHardwareInfo",
+   "params": {
+     "nodeID": 1
+   },
+"id" : 1
+}
+----
+
+
+== 回應範例
+
+由於此回應範例的長度很長、因此會在補充主題中予以記錄。
+
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_response_example_getnodehardwareinfo_fibre_channel.adoc[GetNodeHardwareInfo（光纖通道節點的輸出）]
+
+xref:reference_element_api_response_example_getnodehardwareinfo.adoc[GetNodeHardwareInfo（iSCSI輸出）]

@@ -1,0 +1,40 @@
+---
+permalink: storage/task_snapmirror_perform_failback_when_source_volume_exists.html 
+sidebar: sidebar 
+keywords: failback, perform, source volume, snapmirror, ui 
+summary: 您可以使用NetAppElement UI重新同步原始來源Volume並容錯回復。此程序適用於原始來源Volume仍存在的情況。 
+---
+= 當來源磁碟區仍存在時、請執行容錯回復
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用NetAppElement UI重新同步原始來源Volume並容錯回復。此程序適用於原始來源Volume仍存在的情況。
+
+. 在Element UI中、找出您在執行容錯移轉時所中斷的關係。
+. 按一下「動作」圖示、然後按一下*「反轉重新同步」*。
+. 確認行動。
++
+
+NOTE: 「反轉重新同步」作業會建立新的關係、使原始來源和目的地磁碟區的角色會反轉（這會在原始關係持續存在時產生兩種關係）。原始目的地Volume中的任何新資料都會傳輸至原始來源Volume、作為反轉重新同步作業的一部分。您可以繼續存取資料、並將資料寫入目的地端的作用中磁碟區、但您必須先中斷所有主機與來源磁碟區的連線、然後執行SnapMirror更新、才能重新導向回原始主要磁碟區。
+
+. 按一下您剛建立的反關聯的「動作」圖示、然後按一下「*更新*」。
++
+現在您已經完成反轉重新同步、並確定目的地端沒有連線到磁碟區的作用中工作階段、而且最新資料位於原始主要磁碟區上、 您可以執行下列步驟來完成容錯回復並重新啟動原始的主要Volume：
+
+. 按一下反轉關係的「動作」圖示、然後按一下「*中斷*」。
+. 按一下原始關聯的「動作」圖示、然後按一下「*重新同步*」。
++
+
+NOTE: 現在、您可以掛載原始的主要Volume、以恢復原始主要Volume上的正式作業工作負載。原始SnapMirror複寫會根據為關係設定的原則和排程恢復。
+
+. 在您確認原始關係狀態為「nap鏡 射」之後、按一下反關係的「動作」圖示、然後按一下「*刪除*」。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:concept_snapmirror_failback_scenarios.adoc[SnapMirror容錯回復案例]

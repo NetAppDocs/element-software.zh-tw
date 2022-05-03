@@ -1,0 +1,36 @@
+---
+permalink: storage/concept_system_monitoring_and_troubleshooting.html 
+sidebar: sidebar 
+keywords: trouble, troubleshoot, monitor, element, alert, event 
+summary: 您必須監控系統以進行診斷、並取得各種系統作業的效能趨勢和狀態資訊。您可能需要更換節點或SSD以進行維護。 
+---
+= 系統疑難排解
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須監控系統以進行診斷、並取得各種系統作業的效能趨勢和狀態資訊。您可能需要更換節點或SSD以進行維護。
+
+* link:task_monitor_information_about_system_events.html["檢視系統事件的相關資訊"]
+* link:reference_monitor_status_of_running_tasks.html["檢視執行中工作的狀態"]
+* link:task_monitor_system_alerts.html["檢視系統警示"]
+* link:task_monitor_node_performance_activity.html["檢視節點效能活動"]
+* link:task_monitor_volume_performance.html["檢視Volume效能"]
+* link:task_monitor_iscsi_sessions.html["檢視iSCSI工作階段"]
+* link:task_monitor_fibre_channel_sessions.html["檢視Fibre Channel工作階段"]
+* link:concept_troubleshoot_drives.html["疑難排解磁碟機"]
+* link:concept_troubleshoot_nodes.html["疑難排解節點"]
+* link:concept_per_node_work_with_utilities.html["使用儲存節點的每節點公用程式"]
+* link:concept_mnode_work_with_the_management_node.html["使用管理節點"]
+* link:concept_monitor_understand_cluster_fullness_levels.html["瞭解叢集完整度層級"]
+
+
+
+
+== 以取得更多資訊
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

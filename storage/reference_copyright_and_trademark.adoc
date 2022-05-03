@@ -1,0 +1,12 @@
+---
+permalink: storage/reference_copyright_and_trademark.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 版權、商標及機器翻譯
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

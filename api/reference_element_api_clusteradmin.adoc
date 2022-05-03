@@ -1,0 +1,79 @@
+---
+permalink: api/reference_element_api_clusteradmin.html 
+sidebar: sidebar 
+keywords: objects,object,clusterAdmin 
+summary: 叢集管理物件包含有關目前叢集管理員使用者的資訊。您可以使用GetCurrentClusterAdmin API方法擷取管理使用者資訊。 
+---
+= 叢集管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+叢集管理物件包含有關目前叢集管理員使用者的資訊。您可以使用GetCurrentClusterAdmin API方法擷取管理使用者資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+存取
+ a| 
+此叢集管理員可以使用的方法。
+ a| 
+字串陣列
+
+
+
+ a| 
+驗證方法
+ a| 
+叢集管理使用者擁有的授權類型。可能值：
+
+* LDAP
+* 叢集
+* 本機
+
+ a| 
+字串
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+
+
+
+ a| 
+叢集管理ID
+ a| 
+此叢集管理使用者的叢集管理員ID。
+ a| 
+整數
+
+
+
+ a| 
+使用者名稱
+ a| 
+此叢集管理員的使用者名稱。
+ a| 
+字串
+
+|===
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_getcurrentclusteradmin.adoc[GetCurrentClusterAdmin]

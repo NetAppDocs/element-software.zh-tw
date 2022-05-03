@@ -1,0 +1,51 @@
+---
+permalink: api/reference_element_api_protectiondomainresiliency.html 
+sidebar: sidebar 
+keywords: object,objects,protectionDomainResiliency 
+summary: protectionDomain Resiliency物件包含此儲存叢集的恢復能力狀態。恢復能力表示儲存叢集能夠自動修復本身的一或多個故障、而且所有故障都在其相關保護網域類型的單一保護網域內。儲存叢集在任何單一儲存節點（稱為節點容錯性）發生故障時、若能繼續讀取及寫入資料、則視為已修復。 
+---
+= 保護網域恢復能力
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomain Resiliency物件包含此儲存叢集的恢復能力狀態。恢復能力表示儲存叢集能夠自動從一或多個故障中自我修復、而這些故障全都位於其相關保護網域類型的單一保護網域內。儲存叢集在任何單一儲存節點（稱為節點容錯）發生故障時、若能繼續讀取及寫入資料、則視為已修復。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+保護架構恢復能力
+ a| 
+物件清單（每個保護方案各一份）、其中包含相關保護網域類型的故障恢復資訊。
+ a| 
+xref:reference_element_api_protectionschemeresiliency.adoc[保護架構恢復能力] 陣列
+
+
+
+ a| 
+單一故障恢復閾值BytesForBlockData
+ a| 
+儲存叢集上可儲存的最大位元組數、之後便無法自動恢復至節點容錯狀態。
+ a| 
+整數
+
+
+
+ a| 
+可持續的故障ForEnemble
+ a| 
+在不喪失自動恢復至節點容錯狀態的情況下、可以同時發生的預測故障數。
+ a| 
+整數
+
+|===

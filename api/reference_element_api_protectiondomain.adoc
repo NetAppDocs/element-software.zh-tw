@@ -1,0 +1,46 @@
+---
+permalink: api/reference_element_api_protectiondomain.html 
+sidebar: sidebar 
+keywords: object,objects,protection domains 
+summary: protectionDomain物件包含保護網域的名稱和類型詳細資料。 
+---
+= 保護網域
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomain物件包含保護網域的名稱和類型詳細資料。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+保護網域名稱
+ a| 
+保護網域的名稱。
+ a| 
+字串
+
+
+
+ a| 
+保護網域類型
+ a| 
+保護網域的類型。可能值：
+
+* 機箱：單一機箱中的所有儲存節點。
+* 自訂：單一客戶定義保護網域中的所有儲存節點。
+
+ a| 
+字串
+
+|===

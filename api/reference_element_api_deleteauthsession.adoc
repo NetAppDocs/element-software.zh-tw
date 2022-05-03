@@ -1,0 +1,107 @@
+---
+permalink: api/reference_element_api_deleteauthsession.html 
+sidebar: sidebar 
+keywords: authentication sessions,delete 
+summary: 您可以使用刪除驗證工作階段方法來刪除個別的驗證工作階段。如果呼叫使用者不在ClusterAdmins / Administrator存取群組中、則只能刪除屬於呼叫使用者的驗證工作階段。 
+---
+= 刪除驗證工作階段
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「刪除驗證工作階段」方法刪除個別的使用者驗證工作階段。如果呼叫使用者不在ClusterAdmins / Administrator存取群組中、則只能刪除屬於呼叫使用者的驗證工作階段。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+工作階段ID
+ a| 
+要刪除之驗證工作階段的唯一識別碼。
+ a| 
+UUID
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+工作階段
+ a| 
+刪除驗證工作階段的工作階段資訊。
+ a| 
+link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["驗證工作階段資訊"]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method": "DeleteAuthSession",
+    "params": {
+        "sessionID": "a862a8bb-2c5b-4774-a592-2148e2304713"
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "session": {
+            "accessGroupList": [
+                "administrator"
+            ],
+            "authMethod": "Cluster",
+            "clusterAdminIDs": [
+                1
+            ],
+            "finalTimeout": "2020-04-09T17:51:30Z",
+            "idpConfigVersion": 0,
+            "lastAccessTimeout": "2020-04-06T18:21:33Z",
+            "sessionCreationTime": "2020-04-06T17:51:30Z",
+            "sessionID": "a862a8bb-2c5b-4774-a592-2148e2304713",
+            "username": "admin"
+        }
+    }
+}
+----
+
+
+== 新的自版本
+
+12.0

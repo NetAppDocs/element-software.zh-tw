@@ -1,0 +1,130 @@
+---
+permalink: api/reference_element_api_snapmirrorvserver.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVserver 
+summary: snapMirrorVserver物件包含目的地ONTAP 叢集上儲存虛擬機器（或vserver\）的相關資訊。 
+---
+= snapMirrorVserver
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVserver物件包含有關目的地ONTAP 叢集上儲存虛擬機器（或Vserver）的資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目的地ONTAP 資訊系統的ID。
+ a| 
+整數
+
+
+
+ a| 
+VserverName
+ a| 
+Vserver的名稱。
+ a| 
+字串
+
+
+
+ a| 
+VserverType
+ a| 
+Vserver的類型。可能值：
+
+* 資料
+* 管理
+* 系統
+* 節點
+
+ a| 
+字串
+
+
+
+ a| 
+VserverSubtype
+ a| 
+Vserver的子類型。可能值：
+
+* 預設
+* dp目的地
+* 資料
+* SYNC_SOURY
+* SYNC_destination
+
+ a| 
+字串
+
+
+
+ a| 
+rootVolume
+ a| 
+Vserver的根Volume。
+ a| 
+字串
+
+
+
+ a| 
+rootVolume Aggregate
+ a| 
+將在其上建立根磁碟區的Aggregate。
+ a| 
+字串
+
+
+
+ a| 
+VserverAggregateInfo
+ a| 
+snapMirrorVserverAggregateInfo物件陣列。
+ a| 
+Json物件
+
+
+
+ a| 
+系統管理狀態
+ a| 
+Vserver的詳細管理狀態。可能值：
+
+* 執行中
+* 已停止
+* 開始
+* 正在停止
+* 正在初始化
+* 刪除
+
+ a| 
+字串
+
+
+
+ a| 
+作業狀態
+ a| 
+Vserver的基本操作狀態。可能值：
+
+* 執行中
+* 已停止
+
+ a| 
+字串
+
+|===

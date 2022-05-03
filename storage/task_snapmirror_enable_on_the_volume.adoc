@@ -1,0 +1,33 @@
+---
+permalink: storage/task_snapmirror_enable_on_the_volume.html 
+sidebar: sidebar 
+keywords: snapmirror, enable, volume, ui, manually enable 
+summary: 您必須在Element UI的磁碟區上啟用SnapMirror。如此可將資料複寫到指定ONTAP 的支援區。這是執行NetApp Element SnapMirror之用的SnapMirror軟體叢集管理員的權限、可用來控制磁碟區。 
+---
+= 在磁碟區上啟用SnapMirror
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須在Element UI的磁碟區上啟用SnapMirror。如此可將資料複寫到指定ONTAP 的支援區。這是執行NetApp Element SnapMirror之用的SnapMirror軟體叢集管理員的權限、可用來控制磁碟區。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您已在叢集的元素UI中啟用SnapMirror。
+* SnapMirror端點可用。
+* Volume必須為512e區塊大小。
+* Volume未參與遠端複寫。
+* Volume存取類型不是Replication Target。
+
+
+
+NOTE: 您也可以在建立或複製磁碟區時設定此內容。
+
+.步驟
+. 按一下*管理*>*磁碟區*。
+. 按一下要啟用SnapMirror的磁碟區*「Actions」（動作）*圖示。
+. 在產生的功能表中、選取*編輯*。
+. 在*編輯Volume *對話方塊中、選取*啟用SnapMirror*核取方塊。
+. 按一下*儲存變更*。
+

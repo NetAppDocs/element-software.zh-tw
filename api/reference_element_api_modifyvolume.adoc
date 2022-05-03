@@ -1,0 +1,341 @@
+---
+permalink: api/reference_element_api_modifyvolume.html 
+sidebar: sidebar 
+keywords: volumes,volume,modifying,modify,change,changing,edit,editing,modifyvolume,settings 
+summary: 您可以使用ModifyVolume方法修改現有磁碟區的設定。您可以一次修改一個磁碟區、並立即進行變更。 
+---
+= ModifyVolume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「磁碟區」方法來修改現有磁碟區的設定。您可以一次修改一個磁碟區、並立即進行變更。
+
+如果您在修改磁碟區時未指定QoS值、則這些值與修改前的相同。您可以執行「GetDefaultQoS」方法來擷取新建立磁碟區的預設QoS值。
+
+當您需要增加正在複寫的磁碟區大小時、請依照下列順序執行此動作、以避免發生複寫錯誤：
+
+. 利用「複製目標」存取來增加磁碟區的大小。
+. 利用讀寫存取權來增加來源或磁碟區的大小。
+
+
+確保目標和來源磁碟區大小相同。
+
+
+NOTE: 如果您將存取狀態變更為鎖定或複製目標、則所有現有的iSCSI連線都會終止。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+Volume ID
+ a| 
+要修改之磁碟區的磁碟區ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+存取
+ a| 
+允許存取磁碟區。可能值：
+
+* 「ReadOnly」：只允許讀取作業。
+* 「ReadWrite」：允許讀取和寫入。
+* 「鎖定」：不允許讀取或寫入。如果未指定、存取值不會變更。
+* 「重新編製目標」：將磁碟區識別為配對一組磁碟區的目標Volume。如果Volume未配對、存取狀態會鎖定。如果未指定值、則存取值不會變更。
+* 「napMirrorTarget」：將磁碟區識別為SnapMirror複寫的目標磁碟區。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+帳戶ID
+ a| 
+重新指派磁碟區的AccountID。如果未指定、則會使用先前的帳戶名稱。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+AssociatedWithQoSPolicy
+ a| 
+將磁碟區與指定的QoS原則建立關聯。可能值：
+
+* 「true」：將磁碟區與QoSPolicyID參數中指定的QoS原則建立關聯。
+* 「假」：請勿將磁碟區與QoSPolicyID參數中指定的QoS原則建立關聯。如果為假、則會移除任何現有的原則關聯、無論您是否在QoSPolicy參數中指定QoS原則。
+
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+CREATETIM
+ a| 
+ISO 8601日期字串、設定為新的Volume建立日期。如果設定為true、則為必要。
+ a| 
+ISO 8601字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+已啓用SnapMirrorReplication
+ a| 
+決定磁碟區是否可用於SnapMirror端點的複寫。可能值：
+
+* "真的"
+* 「假」
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+
+
+| 五分大小 | 指定Volume支援的先進先出（FIFO）快照數量上限。請注意、FIFO和非FIFO快照都使用同一個磁碟區上可用的快照插槽集區。使用此選項可限制可用快照插槽的FIFO快照使用量。請注意、您無法將此值修改為小於目前的FIFO快照計數。 | 整數 | 無 | 否 
+
+
+| 最小大小 | 指定僅保留給先進先出（FIFO）快照的快照插槽數。由於FIFO和非FIFO快照共用相同的資源池、因此minFifoSizer參數會將可能的非FIFO快照總數減少相同數量。請注意、您無法修改此值、使其與目前的非FIFO快照計數發生衝突。 | 整數 | 無 | 否 
+
+
+ a| 
+模式
+ a| 
+Volume複寫模式。可能值：
+
+* 「asynch」：等待系統確認資料儲存在來源、然後再寫入目標。
+* 「Sync」：不需等待來源的資料傳輸確認、即可開始將資料寫入目標。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+QoS
+ a| 
+此磁碟區的新服務品質設定。如果未指定、則不會變更QoS設定。可能值：
+
+* 《IOPS》
+* 《MaxIOPS》
+* 《burstIOPS》
+
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+qosPolicyID
+ a| 
+應將QoS設定套用至指定磁碟區的原則ID。此參數與QoS參數互不相容。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+設定建立時間
+ a| 
+設為true可變更磁碟區建立的記錄日期。
+ a| 
+布林值
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+累計大小
+ a| 
+磁碟區的新大小（以位元組為單位）。1000000000等於1GB。大小會四捨五入至最接近的MB大小。此參數只能用於增加磁碟區的大小。
+ a| 
+整數
+ a| 
+無
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Volume
+ a| 
+包含新修改磁碟區相關資訊的物件。
+ a| 
+xref:reference_element_api_volume.adoc[Volume]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "ModifyVolume",
+  "params": {
+     "volumeID": 5,
+     "attributes": {
+        "name1": "value1",
+        "name2": "value2",
+        "name3": "value3"
+     },
+     "qos": {
+        "minIOPS": 60,
+        "maxIOPS": 100,
+        "burstIOPS": 150,
+        "burstTime": 60
+     },
+      "access" :"readWrite"
+     },
+      "totalSize": 20000000000,
+     "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+      "volume": {
+          "access": "readWrite",
+          "accountID": 1,
+          "attributes": {
+              "name1": "value1",
+              "name2": "value2",
+              "name3": "value3"
+          },
+          "blockSize": 4096,
+          "createTime": "2016-03-28T16:16:13Z",
+          "deleteTime": "",
+          "enable512e": true,
+          "iqn": "iqn.2010-01.com.solidfire:jyay.1459181777648.5",
+          "name": "1459181777648",
+          "purgeTime": "",
+          "qos": {
+              "burstIOPS": 150,
+              "burstTime": 60,
+              "curve": {
+                  "4096": 100,
+                  "8192": 160,
+                  "16384": 270,
+                  "32768": 500,
+                  "65536": 1000,
+                  "131072": 1950,
+                  "262144": 3900,
+                  "524288": 7600,
+                  "1048576": 15000
+              },
+              "maxIOPS": 100,
+              "minIOPS": 60
+          },
+          "scsiEUIDeviceID": "6a79617900000005f47acc0100000000",
+          "scsiNAADeviceID": "6f47acc1000000006a79617900000005",
+          "sliceCount": 1,
+          "status": "active",
+          "totalSize": 1000341504,
+          "virtualVolumeID": null,
+          "volumeAccessGroups": [
+              1
+          ],
+          "volumeID": 5,
+          "volumePairs": []
+      }
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS]

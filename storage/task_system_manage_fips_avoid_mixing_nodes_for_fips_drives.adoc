@@ -1,0 +1,22 @@
+---
+permalink: storage/task_system_manage_fips_avoid_mixing_nodes_for_fips_drives.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2, nodes, drives, ear 
+summary: 為了準備啟用FIPS磁碟機功能、您應該避免在某些節點具有FIPS磁碟機功能、有些節點則不具備FIPS磁碟機功能時混用節點。 
+---
+= 避免混用FIPS磁碟機的節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為了準備啟用FIPS磁碟機功能、您應該避免在某些節點具有FIPS磁碟機功能、有些節點則不具備FIPS磁碟機功能時混用節點。
+
+根據下列條件、叢集被視為符合FIPS磁碟機標準：
+
+* 所有磁碟機均通過FIPS磁碟機認證。
+* 所有節點均為FIPS磁碟機節點。
+* 加密閒置（Ear）已啟用。
+* FIPS磁碟機功能已啟用。所有磁碟機和節點都必須具備FIPS功能、且必須啟用靜止加密功能、才能啟用FIPS磁碟機功能。
+

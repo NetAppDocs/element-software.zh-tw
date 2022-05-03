@@ -1,0 +1,23 @@
+---
+permalink: storage/task_replication_manage_volume_relationships.html 
+sidebar: sidebar 
+keywords: volume pairing reversal, volume pair, replication 
+summary: 您可以透過多種方式來管理磁碟區關係、例如暫停複寫、反轉磁碟區配對、變更複寫模式、刪除磁碟區配對、或刪除叢集配對。 
+---
+= 管理Volume關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以透過多種方式來管理磁碟區關係、例如暫停複寫、反轉磁碟區配對、變更複寫模式、刪除磁碟區配對、或刪除叢集配對。
+
+
+
+== 如需詳細資訊、請參閱
+
+* xref:task_replication_pause_replication.adoc[暫停複寫]
+* xref:task_replication_change_the_mode.adoc[變更複寫模式]
+* xref:task_replication_delete_volume_pairs.adoc[刪除Volume配對]
+

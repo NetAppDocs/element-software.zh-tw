@@ -1,0 +1,205 @@
+---
+permalink: api/reference_element_api_rollbacktogroupsnapshot.html 
+sidebar: sidebar 
+keywords: rollbacktogroupsnapshot,snapshot,group,individual,creating,create,roll,back,rollback,roll back,existing 
+summary: 您可以使用RollbackToGroupSnapshot將快照群組中的所有個別磁碟區復原至每個磁碟區的個別快照。 
+---
+= RollbackToGroupSnapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「復原ToGroupSnapshot」將快照群組中的所有個別磁碟區復原至每個磁碟區的個別快照。
+
+回溯至群組快照會為群組快照中的每個磁碟區建立一個暫用快照。
+
+
+NOTE: 如果叢集完整度處於階段1、2或3、則允許建立快照。叢集完整度處於第4或第5階段時、不會建立快照。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+「GroupSnapshotID」
+ a| 
+群組快照的唯一ID。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+屬性
+ a| 
+Json物件格式的名稱-值配對清單。
+ a| 
+Json物件
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+名稱
+ a| 
+如果將「SaveCurrentState」設為true、則會建立Volume目前狀態的群組快照名稱。如果您未指定名稱、則快照的名稱（群組和個別磁碟區）會設定為復原時間的時間戳記。
+ a| 
+字串
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+《aveCurrentState》
+ a| 
+指定是否要儲存上一個作用中Volume映像。有效值：
+
+* 「真」：保留先前的作用中Volume影像。
+* 「假」：刪除先前使用中的Volume影像。
+
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+成員
+ a| 
+包含群組快照成員磁碟區ID和快照ID的陣列。價值：
+
+* Checksum：儲存快照中資料的小字串表示。此Checksum稍後可用於比較其他快照、以偵測資料中的錯誤。（字串）
+* SnapshotID：用於建立新快照的快照的唯一ID。SnapshotID必須是指定磁碟區上的快照。（整數）
+* Volume ID：快照的來源Volume ID。（整數）
+
+ a| 
+Json物件陣列
+
+
+
+ a| 
+群組SnapshotID
+ a| 
+如果將「SaveCurrentState」設為假、則此值為null。
+
+如果將"SaveCurrentState"設置爲true，則新創建的組快照的唯一ID。
+ a| 
+整數
+
+
+
+ a| 
+群組Snapshot
+ a| 
+如果將「SaveCurrentState」設為假、則此值為null。
+
+如果將"SaveCurrentState"設置爲true，則該對象包含有關組快照的信息，而"RollbackToGroupSnapShot"剛剛回滾到該快照。
+ a| 
+xref:reference_element_api_groupsnapshot.adoc[群組Snapshot]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "id": 438,
+  "method": "RollbackToGroupSnapshot",
+  "params": {
+    "groupSnapshotID": 1,
+    "name": "grpsnap1",
+    "saveCurrentState": true
+  }
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 438,
+  "result": {
+    "groupSnapshot": {
+      "attributes": {},
+      "createTime": "2016-04-06T17:27:17Z",
+      "groupSnapshotID": 1,
+      "groupSnapshotUUID": "468fe181-0002-4b1d-ae7f-8b2a5c171eee",
+      "members": [
+        {
+          "attributes": {},
+          "checksum": "0x0",
+          "createTime": "2016-04-06T17:27:17Z",
+          "enableRemoteReplication": false,
+          "expirationReason": "None",
+          "expirationTime": null,
+          "groupID": 1,
+          "groupSnapshotUUID": "468fe181-0002-4b1d-ae7f-8b2a5c171eee",
+          "name": "2016-04-06T17:27:17Z",
+          "snapshotID": 4,
+          "snapshotUUID": "03563c5e-51c4-4e3b-a256-a4d0e6b7959d",
+          "status": "done",
+          "totalSize": 1000341504,
+          "virtualVolumeID": null,
+          "volumeID": 2
+        }
+      ],
+      "name": "2016-04-06T17:27:17Z",
+      "status": "done"
+    },
+    "groupSnapshotID": 3,
+    "members": [
+      {
+        "checksum": "0x0",
+        "snapshotID": 2,
+        "snapshotUUID": "719b162c-e170-4d80-b4c7-1282ed88f4e1",
+        "volumeID": 2
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

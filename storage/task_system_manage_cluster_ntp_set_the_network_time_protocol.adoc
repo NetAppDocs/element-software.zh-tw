@@ -1,0 +1,19 @@
+---
+permalink: storage/task_system_manage_cluster_ntp_set_the_network_time_protocol.html 
+sidebar: sidebar 
+keywords: set, ntp, broadcasts, query, updates, clocks, synchronize, 
+summary: 設定網路時間傳輸協定（NTP）的方法有兩種：指示叢集中的每個節點聆聽廣播、或指示每個節點查詢NTP伺服器以取得更新。 
+---
+= 設定網路時間傳輸協定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定網路時間傳輸協定（NTP）的方法有兩種：指示叢集中的每個節點聆聽廣播、或指示每個節點查詢NTP伺服器以取得更新。
+
+NTP用於透過網路同步時鐘。連線至內部或外部NTP伺服器應是初始叢集設定的一部分。
+
+
+NOTE: 此功能無法在SolidFire 「企業版SDS叢集」中使用。

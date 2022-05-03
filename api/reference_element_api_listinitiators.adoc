@@ -1,0 +1,145 @@
+---
+permalink: api/reference_element_api_listinitiators.html 
+sidebar: sidebar 
+keywords: initiators,initiator,list,listing,listinitiators,iqn,wwpn,iqns,wwpns 
+summary: 您可以使用清單啟動器方法取得啟動器IQN或全球連接埠名稱（WWPNs）的清單。 
+---
+= 清單啟動器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「清單啟動器」方法取得啟動器IQN或全球連接埠名稱（WWPN）清單。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+啟動器
+ a| 
+要擷取的啟動器ID清單。您可以提供此參數或startInitiator ID參數、但不能同時提供兩者。
+ a| 
+整數陣列
+ a| 
+無
+ a| 
+否
+
+
+
+ a| 
+startInitiator ID
+ a| 
+開始列表的啟動器ID。您可以提供此參數或啟動器參數、但不能同時提供兩者。
+ a| 
+整數
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+限制
+ a| 
+要傳回的啟動器物件數目上限。
+ a| 
+整數
+ a| 
+（無限制）
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+啟動器
+ a| 
+啟動器資訊清單。
+ a| 
+xref:reference_element_api_initiator.adoc[啟動器] 陣列
+
+|===
+
+
+== 例外情況
+
+此方法可能有下列例外狀況：
+
+|===
+
+
+| 名稱 | 說明 
+
+
+ a| 
+xInvalidParerm
+ a| 
+如果在同一方法調用中同時包含startInitiator ID和啓動程序參數，則拋出。
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListInitiators",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "initiators": [
+      {
+        "alias": "",
+        "attributes": {},
+        "initiatorID": 2,
+        "initiatorName": "iqn.1993-08.org.debian:01:c84ffd71216",
+        "volumeAccessGroups": [
+          1
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 新的自版本
+
+9.6

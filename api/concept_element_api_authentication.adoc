@@ -1,0 +1,24 @@
+---
+permalink: api/concept_element_api_authentication.html 
+sidebar: sidebar 
+keywords: API,authentication,auth,SolidFire 
+summary: 使用API時、您可以在所有API要求中加入HTTP Basic驗證標頭、以驗證系統。如果您省略驗證資訊、系統會以HTTP 401回應拒絕未驗證的要求。系統支援透過TLS進行HTTP Basic驗證。 
+---
+= API驗證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用API時、您可以在所有API要求中加入HTTP Basic驗證標頭、以驗證系統。如果您省略驗證資訊、系統會以HTTP 401回應拒絕未驗證的要求。系統支援透過TLS進行HTTP Basic驗證。
+
+使用叢集管理帳戶進行API驗證。
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+

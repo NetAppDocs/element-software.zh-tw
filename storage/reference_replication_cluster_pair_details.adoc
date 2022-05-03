@@ -1,0 +1,40 @@
+---
+permalink: storage/reference_replication_cluster_pair_details.html 
+sidebar: sidebar 
+keywords: cluster pairs, replication, data protection 
+summary: 「資料保護」索引標籤上的「叢集配對」頁面提供已配對或正在配對的叢集相關資訊。系統會在「Status（狀態）」欄中顯示配對和進度訊息。 
+---
+= 叢集配對詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「資料保護」索引標籤上的「叢集配對」頁面提供已配對或正在配對的叢集相關資訊。系統會在「Status（狀態）」欄中顯示配對和進度訊息。
+
+* *識別碼*
++
+為每個叢集配對提供系統產生的ID。
+
+* *遠端叢集名稱*
++
+配對中其他叢集的名稱。
+
+* *遠端MVIP*
++
+配對中其他叢集的管理虛擬IP位址。
+
+* *狀態*
++
+遠端叢集的複寫狀態
+
+* *複寫磁碟區*
++
+叢集所包含的已配對進行複寫的磁碟區數目。
+
+* * UUID *
++
+為配對中的每個叢集提供唯一ID。
+
+

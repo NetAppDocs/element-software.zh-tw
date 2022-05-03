@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_networkinterface.html 
+sidebar: sidebar 
+keywords: object,objects,networkInterface 
+summary: 網路介面物件包含儲存節點上個別網路介面的組態資訊。 
+---
+= 網路介面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+網路介面物件包含儲存節點上個別網路介面的組態資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+地址
+ a| 
+介面的IPv4管理位址。
+ a| 
+字串
+
+
+
+ a| 
+地址V6
+ a| 
+介面的IPv6管理位址。
+ a| 
+字串
+
+
+
+ a| 
+廣播
+ a| 
+介面的廣播位址。
+ a| 
+字串
+
+
+
+ a| 
+MacAddress
+ a| 
+介面的MAC位址。
+ a| 
+字串
+
+
+
+ a| 
+MTU
+ a| 
+介面的最大傳輸單元（以位元組為單位）。
+ a| 
+整數
+
+
+
+ a| 
+名稱
+ a| 
+介面的名稱。
+ a| 
+字串
+
+
+
+ a| 
+命名空間
+ a| 
+是否為此介面指派虛擬網路命名空間。
+ a| 
+布林值
+
+
+
+ a| 
+網路遮罩
+ a| 
+介面的子網路遮罩。
+ a| 
+字串
+
+
+
+ a| 
+狀態
+ a| 
+介面的作業狀態。
+ a| 
+字串
+
+
+
+ a| 
+類型
+ a| 
+介面類型（Bond Master、Bond Slave等）。
+ a| 
+字串
+
+
+
+ a| 
+虛擬化網路標籤
+ a| 
+指派給虛擬網路介面的VLAN ID。
+ a| 
+整數
+
+|===

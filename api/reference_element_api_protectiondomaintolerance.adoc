@@ -1,0 +1,42 @@
+---
+permalink: api/reference_element_api_protectiondomaintolerance.html 
+sidebar: sidebar 
+keywords: object,objects,protectionDomainTolerance 
+summary: Protection Domain Tolerance物件包含儲存叢集在發生一或多個故障時、繼續讀取及寫入資料的能力資訊、這些故障全都位於其相關保護網域類型的單一保護網域內。 
+---
+= 保護網域容忍度
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Protection Domain Tolerance物件包含儲存叢集在發生一或多個故障時、繼續讀取及寫入資料的能力資訊、這些故障全都位於其相關保護網域類型的單一保護網域內。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+保護方案容許範圍
+ a| 
+包含相關保護網域類型之容錯資訊的物件清單（每個保護方案各一份）。
+ a| 
+xref:reference_element_api_protectionschemetolerance.adoc[保護架構容錯度] 陣列
+
+
+
+ a| 
+可持續的故障ForEnemble
+ a| 
+在關聯的保護網域類型中同時發生的故障數、而不會遺失整個仲裁。
+ a| 
+整數
+
+|===

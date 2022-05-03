@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_listauthsessionbyclusteradmin.html 
+sidebar: sidebar 
+keywords: cluster admin,sessions,auth sessions,list 
+summary: 您可以使用listauthSessionsByClusterAdmin方法來列出與指定ClusterAdminID相關聯的所有驗證工作階段。如果指定的ClusterAdminID對應到一組使用者、則會列出該群組所有成員的所有驗證工作階段。 
+---
+= listAuthSessionsByClusterAdmin
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listauthSessionsByClusterAdmin」方法、列出與指定「ClusterAdminID」相關的所有驗證工作階段。如果指定的「ClusterAdminID」對應到一組使用者、則會列出該群組所有成員的所有驗證工作階段。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+叢集管理ID
+ a| 
+叢集管理員的唯一識別碼。
+ a| 
+整數
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+工作階段
+ a| 
+驗證工作階段的工作階段資訊清單。
+ a| 
+link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["驗證工作階段資訊"]
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method": "ListAuthSessionsByClusterAdmin",
+    "clusterAdminID": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+"sessions": [
+      {
+        "accessGroupList": [
+          "administrator"
+        ],
+        "authMethod": "Cluster",
+        "clusterAdminIDs": [
+          1
+        ],
+        "finalTimeout": "2020-03-14T19:21:24Z",
+        "idpConfigVersion": 0,
+        "lastAccessTimeout": "2020-03-11T19:51:24Z",
+        "sessionCreationTime": "2020-03-11T19:21:24Z",
+        "sessionID": "b12bfc64-f233-44df-8b9f-6fb6c011abf7",
+        "username": "admin"
+      }
+    ]
+}
+----
+
+
+== 新的自版本
+
+12.0

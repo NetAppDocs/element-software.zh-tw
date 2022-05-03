@@ -1,0 +1,25 @@
+---
+permalink: storage/task_system_manage_cluster_enable_and_disable_support_access.html 
+sidebar: sidebar 
+keywords: support access, enable, disable 
+summary: 您可以啟用支援存取功能、暫時允許NetApp支援人員透過SSH存取儲存節點進行疑難排解。 
+---
+= 啟用和停用支援存取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以啟用支援存取功能、暫時允許NetApp支援人員透過SSH存取儲存節點進行疑難排解。
+
+您必須擁有叢集管理權限、才能變更支援存取權限。
+
+
+NOTE: 此功能無法在SolidFire 「企業版SDS叢集」中使用。
+
+. 按一下*叢集*>*設定*。
+. 在「啟用/停用支援存取」區段中、輸入您要允許支援人員存取的持續時間（以小時為單位）。
+. 按一下「*啟用支援存取*」。
+. *選用：*若要停用支援存取、請按一下*停用支援存取*。
+

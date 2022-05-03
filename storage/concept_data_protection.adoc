@@ -1,0 +1,52 @@
+---
+permalink: storage/concept_data_protection.html 
+sidebar: sidebar 
+keywords: data protection, protect your data, snapshots, replication, back up 
+summary: 藉助於諸如個別磁碟區或磁碟區群組的快照、在元件上執行的叢集與磁碟區之間進行複寫、以及複寫至等系統等功能、您可以透過各種方式來保護資料。NetApp Element ONTAP 
+---
+= 保護您的資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+藉助於諸如個別磁碟區或磁碟區群組的快照、在元件上執行的叢集與磁碟區之間進行複寫、以及複寫至等系統等功能、您可以透過各種方式來保護資料。NetApp Element ONTAP
+
+* *快照*
++
+純快照資料保護功能會在特定時間點將變更的資料複寫到遠端叢集。只會複寫在來源叢集上建立的快照。來自來源Volume的作用中寫入不會。
+
++
+xref:task_data_protection_using_volume_snapshots.adoc[使用Volume快照來保護資料]
+
+* *在執行於Element *的叢集與磁碟區之間進行遠端複寫
++
+您可以從叢集配對中的任一叢集同步或非同步複寫磁碟區資料、這兩個叢集都是在執行於元素上的環境中執行、以便進行容錯移轉和容錯回復。
+
++
+xref:task_replication_perform_remote_replication_between_element_clusters.adoc[在執行NetApp Element 不中斷軟體的叢集之間執行遠端複寫]
+
+* *使用ONTAP SnapMirror技術在元素與元件叢集之間進行複寫*
++
+有了NetApp SnapMirror技術、您可以複寫使用元素進行ONTAP 的快照、以利災難恢復。在SnapMirror關係中、元素是一個端點、ONTAP 而不只是一個端點、
+
++
+xref:task_snapmirror_use_replication_between_element_and_ontap_clusters.adoc[在元素ONTAP 叢集和叢集之間使用SnapMirror複寫]
+
+* *備份SolidFire 及還原來自於功能區、S3或Swift物件存放區的磁碟區*
++
+您可以將磁碟區備份並還原至其他SolidFire 的不一致儲存設備、以及與Amazon S3或OpenStack Swift相容的次要物件存放區。
+
++
+xref:task_data_protection_back_up_and_restore_volumes.adoc[將Volume備份並還原至SolidFire 物件儲存區、S3或Swift物件儲存區]
+
+
+
+
+
+== 以取得更多資訊
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

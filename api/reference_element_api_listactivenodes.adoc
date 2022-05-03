@@ -1,0 +1,70 @@
+---
+permalink: api/reference_element_api_listactivenodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,active,node,nodes,listactivenodes 
+summary: 您可以使用ListActiveNode方法傳回叢集中目前作用中節點的清單。 
+---
+= ListActiveNode
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「listActiveNode」方法來傳回叢集中目前作用中節點的清單。
+
+
+
+== 參數
+
+此方法沒有輸入參數。
+
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+節點
+ a| 
+叢集中作用中節點的清單。
+ a| 
+xref:reference_element_api_node.adoc[節點] 陣列
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+   "method": "ListActiveNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 回應範例
+
+由於此回應範例的長度很長、因此會在補充主題中予以記錄。
+
+
+
+== 新的自版本
+
+9.6
+
+
+
+== 如需詳細資訊、請參閱
+
+xref:reference_element_api_response_example_listactivenodes.adoc[ListActiveNode]

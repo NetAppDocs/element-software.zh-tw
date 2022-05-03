@@ -1,0 +1,34 @@
+---
+permalink: storage/task_data_protection_clone_multiple_volumes_from_a_group_snapshot.html 
+sidebar: sidebar 
+keywords: multiple volumes, group snapshot, clone, create, data protection 
+summary: 您可以從時間點群組快照複製一組磁碟區。此作業需要已存在磁碟區的群組快照、因為群組快照是用來建立磁碟區的基礎。建立磁碟區之後、您可以像系統中的任何其他磁碟區一樣使用這些磁碟區。 
+---
+= 從群組快照複製多個磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從時間點群組快照複製一組磁碟區。此作業需要已存在磁碟區的群組快照、因為群組快照是用來建立磁碟區的基礎。建立磁碟區之後、您可以像系統中的任何其他磁碟區一樣使用這些磁碟區。
+
+Volume大小和目前叢集負載會影響完成複製作業所需的時間。
+
+. 按一下*資料保護*>*群組快照*。
+. 按一下要用於磁碟區複本之群組快照的「動作」圖示。
+. 在產生的功能表中、選取* Clone Volumes from Group Snapshot（從群組Snapshot複製磁碟區）*。
+. 在「*從群組Snapshot複製磁碟區*」對話方塊中輸入*新的Volume Name Prefix *。
++
+前置碼會套用至從群組快照建立的所有磁碟區。
+
+. *選用：*選取複本所屬的其他帳戶。
++
+如果您未選取帳戶、系統會將新的磁碟區指派給目前的Volume帳戶。
+
+. *選用：*為實體複本中的磁碟區選取不同的存取方法。
++
+如果您未選取存取方法、系統會使用目前的Volume存取。
+
+. 按一下*開始複製*。
+

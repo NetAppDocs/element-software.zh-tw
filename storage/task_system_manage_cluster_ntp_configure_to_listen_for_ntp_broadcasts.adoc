@@ -1,0 +1,35 @@
+---
+permalink: storage/task_system_manage_cluster_ntp_configure_to_listen_for_ntp_broadcasts.html 
+sidebar: sidebar 
+keywords: ntp, broadcasts, server, config, server list, broadcast client 
+summary: 透過廣播模式、您可以指示叢集中的每個節點在網路上聆聽來自特定伺服器的網路時間傳輸協定（NTP）廣播訊息。 
+---
+= 設定叢集以偵聽NTP廣播
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過廣播模式、您可以指示叢集中的每個節點在網路上聆聽來自特定伺服器的網路時間傳輸協定（NTP）廣播訊息。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須擁有叢集管理員權限才能設定此設定。
+* 您必須將網路上的NTP伺服器設定為廣播伺服器。
+
+
+.步驟
+. 按一下*叢集*>*設定*。
+. 將使用廣播模式的NTP伺服器輸入伺服器清單。
+. 在網路時間傳輸協定設定下、選取*是*以使用廣播用戶端。
+. 若要設定廣播用戶端、請在*伺服器*欄位中、輸入您在廣播模式中設定的NTP伺服器。
+. 按一下*儲存變更*。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+

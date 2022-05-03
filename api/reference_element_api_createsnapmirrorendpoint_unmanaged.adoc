@@ -1,0 +1,75 @@
+---
+permalink: api/reference_element_api_createsnapmirrorendpoint_unmanaged.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoint,unmanaged,create,creating,CreateSnapMirrorEndpointUnmanaged 
+summary: Element軟體儲存系統使用CreSnapMirrorEndpointUnmanaged方法、讓遠端、非託管的SnapMirror端點能夠與元素儲存叢集通訊。無法使用元素SnapMirror API來管理未受管理的端點。必須使用ONTAP 不含資訊的管理軟體或API來管理。 
+---
+= 不受管理的CreSnapMirrorEndpoint
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element軟體儲存系統使用「CreSnapMirrorEndpointUnmanaged」方法、可讓遠端、非託管的SnapMirror端點與元素儲存叢集進行通訊。無法使用元素SnapMirror API來管理未受管理的端點。必須使用ONTAP 不含資訊的管理軟體或API來管理。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+叢集名稱
+ a| 
+端點名稱。
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+
+
+ a| 
+IP地址
+ a| 
+應與此元件儲存叢集通訊的一套靜態儲存系統叢集IP位址清單ONTAP 。
+ a| 
+字串陣列
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+
+
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+snapMirrorEndpoint
+ a| 
+新建立的SnapMirror端點。
+ a| 
+xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint]
+
+|===
+
+
+== 新的自版本
+
+10.3.1
