@@ -1,0 +1,172 @@
+---
+permalink: api/reference_element_api_signsshkeys.html 
+sidebar: sidebar 
+keywords: ssh, sign key 
+summary: 在節點或叢集上啟用ssh之後、您可以使用SignSshkeys方法、以sfadmin或sfreadonly的形式存取節點上的Shell。sfreadonly是元素12.5的新使用者帳戶、可在節點上進行初始疑難排解、但缺乏建立提高權限命令的權限。 
+---
+= SignSshKeys
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用在叢集上啟用SSH之後 link:../api/reference_element_api_enablessh.html["啟用SSH方法"]、您可以使用「ignSshKeys」方法來存取節點上的Shell。
+
+「freadonly」是新的系統帳戶、從元件125起、可在節點上進行基本疑難排解。此API可在叢集中的所有節點上使用「sfreadonly」系統帳戶來啟用SSH存取。
+
+
+WARNING: 除非NetApp支援部門告知、否則系統的任何變更均不受支援、會使您的支援合約失效、並可能導致資料不穩定或無法存取。
+
+使用方法之後、您必須從回應複製金鑰鏈、將其儲存至要啟動SSH連線的系統、然後執行下列命令：
+
+[listing]
+----
+ssh -i <identity_file> sfreadonly@<node_ip>
+----
+「identity檔案」是用來讀取公開金鑰驗證身分識別（私密金鑰）的檔案、而「node_IP」是節點的IP位址。如需「identity檔案」的詳細資訊、請參閱SSH手冊頁。
+
+
+
+== 參數
+
+此方法具有下列輸入參數：
+
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+持續時間
+ a| 
+介於1到24之間的整數、反映簽署金鑰有效的小時數。如果未指定持續時間、則會使用預設值。
+ a| 
+整數
+ a| 
+1.
+ a| 
+否
+
+
+
+ a| 
+公共金鑰
+ a| 
+如果提供、此參數只會傳回簽署的_public_key、而不會建立完整的金鑰鏈給使用者。
+
+
+NOTE: 在瀏覽器中使用URL列提交的公開金鑰若使用「+」、則會解譯為間隔和中斷簽署。
+ a| 
+字串
+ a| 
+null
+ a| 
+否
+
+
+
+ a| 
+sfadmin
+ a| 
+當您透過supportAdmin叢集存取進行API呼叫、或當節點不在叢集內時、允許存取sfadmin Shell帳戶。
+ a| 
+布林值
+ a| 
+錯
+ a| 
+否
+
+|===
+
+
+== 傳回值
+
+此方法具有下列傳回值：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+Keygen_STATUS
+ a| 
+包含已簽署金鑰中的身分識別、允許的主體、以及金鑰的有效開始和結束日期。
+ a| 
+字串
+
+
+
+ a| 
+Private金鑰
+ a| 
+只有當API為終端使用者產生完整的金鑰鏈時、才會傳回私有SSH金鑰值。
+
+
+NOTE: 此值為Base64編碼；寫入檔案時必須解碼此值、以確保其讀取為有效的私密金鑰。
+ a| 
+字串
+
+
+
+ a| 
+公開金鑰
+ a| 
+只有當API為終端使用者產生完整的金鑰鏈時、才會傳回公開SSH金鑰值。
+
+
+NOTE: 當您將public_key參數傳遞給API方法時、回應中只會傳回「inized_public_keys」值。
+ a| 
+字串
+
+
+
+ a| 
+簽名的_public_key
+ a| 
+簽署公開金鑰所產生的SSH公開金鑰、無論是由API提供或產生的使用者。
+ a| 
+字串
+
+|===
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+    "method": "SignSshKeys",
+    "params": {
+        "duration": 2,
+        "publicKey":<string>
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "signedKeys": {
+      "keygen_status": <keygen_status>,
+      "signed_public_key": <signed_public_key>
+    }
+  }
+}
+----
+在此範例中、會簽署並傳回有效的公開金鑰（1-24小時）。
+
+
+
+== 新的自版本
+
+12.5%

@@ -28,7 +28,7 @@ link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_c
 另一種閒置加密的軟體閒置加密功能、可將寫入儲存叢集中SSD的所有資料加密。 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["啟用時"^]，它會加密所有寫入的資料，並自動解密在軟體中讀取的所有資料。靜態軟體加密可鏡射硬體中的自我加密磁碟（SED）實作、在沒有SED的情況下提供資料安全性。
 
 
-NOTE: 靜止狀態的軟體加密功能預設適用於SolidFire 所有的「企業版」SDS節點。靜止軟體加密功能可在SolidFire 不含自我加密磁碟機（SED）的企業SDS節點中、提供資料安全加密的主要軟體層。
+NOTE: 靜止狀態的軟體加密功能預設會在SolidFire 所有的「支援企業」SDS節點中啟用。靜止軟體加密功能可在SolidFire 不含自我加密磁碟機（SED）的企業SDS節點中、提供資料安全加密的主要軟體層。
 
 
 WARNING: 對於支援所有Flash的儲存叢集、在建立叢集期間必須啟用閒置軟體加密功能、而且在建立叢集後無法停用。SolidFire

@@ -20,9 +20,11 @@ summary: 您可以在設定所有個別節點之後建立儲存叢集。建立�
 
 在新節點組態期間、會將1G或10G管理IP（MIP）位址指派給每個節點。您必須使用在組態期間建立的其中一個節點IP位址、才能開啟「Create a New Cluster」（建立新叢集）頁面。您使用的IP位址取決於您選擇用於叢集管理的網路。
 
+[IMPORTANT]
+====
+如果您想要啟用整個叢集 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["軟體加密功能"] 對於完整Flash儲存叢集、您必須在建立叢集期間執行此動作。SolidFire從元素12.5開始、您必須在建立叢集期間、於Create Cluster UI中啟用閒置的軟體加密。對於元素12.3.x及更早版本、您必須使用建立叢集 link:../api/reference_element_api_createcluster.html["建立叢集"] API方法、並將enableSoftwareEncryptionAtRest參數變更為「true」。靜止時的軟體加密功能預設為SolidFire 啟用、適用於不支援的ESDS叢集。對於支援完整Flash的儲存叢集和不完整的ESDS叢集、在叢集上啟用靜止軟體加密之後、就無法停用它。SolidFire SolidFire您可以 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["啟用和停用"] 在建立叢集之後、硬體加密會閒置。
 
-IMPORTANT: 如果您想要啟用整個叢集 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["軟體加密功能"]、您必須使用建立叢集 link:../api/reference_element_api_createcluster.html["建立叢集"] 改用API方法、並將enableSoftwareEncryptionAtRest參數變更為「true」。啟用閒置軟體加密之後、就無法在叢集上停用。靜止時的軟體加密功能預設為SolidFire 啟用、適用於不支援的ESDS叢集。閒置時可採用硬體式加密 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["已啟用和停用"] 建立叢集之後。
-
+====
 [NOTE]
 ====
 建立新叢集時、請考慮下列事項：

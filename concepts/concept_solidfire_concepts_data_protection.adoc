@@ -190,10 +190,10 @@ Protection Domain配置會將每個節點指派給特定的Protection Domain。
 
 如果指派多個自訂保護網域、則每個子系統都會將重複項目指派給不同的自訂保護網域。如果無法這麼做、則會回復為將重複項目指派給不同的節點。每個子系統（例如、儲存槽、分片、傳輸協定端點供應商和頻道群）都會獨立執行此作業。
 
-您可以使用下列API方法來設定自訂保護網域：
+您可以使用元素UI來執行 link:..storage/task_data_protection_configure_custom_protection_domains.html["設定自訂保護網域"]或使用下列API方法：
 
-* link:../api/reference_element_api_getprotectiondomainlayout.html["GetProtectionDomainLayout"^] -顯示每個節點所在的機箱和自訂保護網域。
-* link:../api/reference_element_api_setprotectiondomainlayout.html["SetProtectionDomainLayout"^] -可將自訂保護網域指派給每個節點。
+* link:../api/reference_element_api_getprotectiondomainlayout.html["GetProtectionDomainLayout"] -顯示每個節點所在的機箱和自訂保護網域。
+* link:../api/reference_element_api_setprotectiondomainlayout.html["SetProtectionDomainLayout"] -可將自訂保護網域指派給每個節點。
 
 
 

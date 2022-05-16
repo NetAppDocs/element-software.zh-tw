@@ -14,6 +14,7 @@ summary: 如果您未執行最新版本、則可取得先前版本的文件。
 [role="lead"]
 先前版本的文件可在我們的文件中心取得。
 
+* https://docs.netapp.com/us-en/element-software-123/index.html["Element 12.3.x文件"^]
 * https://docs.netapp.com/sfe-122/index.jsp["Element 12.2文件"^]
 * https://docs.netapp.com/sfe-120/index.jsp["Element 12.0文件"^]
 * https://docs.netapp.com/sfe-118/index.jsp["Element 11.8文件"^]

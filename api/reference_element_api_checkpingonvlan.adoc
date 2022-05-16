@@ -169,7 +169,7 @@ sourceAddressV6
 
 
  a| 
-詳細資料
+結果
  a| 
 節點能夠通訊的每個IP清單、以及ping回應統計資料。
  a| 
@@ -206,38 +206,34 @@ Json物件
 {
   "id": 1,
   "result": {
-    "details": {
-      "192.168.41.2": {
-        "individualResponseCodes": [
-          "Success",
-          "Success",
-          "Success",
-          "Success",
-          "Success"
-        ],
-        "individualResponseTimes": [
-          "00:00:00.000373",
-          "00:00:00.000098",
-          "00:00:00.000097",
-          "00:00:00.000074",
-          "00:00:00.000075"
-        ],
-        "individualStatus": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "interface": "Bond10G",
-        "responseTime": "00:00:00.000143",
-        "sourceAddressV4": "192.168.41.4",
-        "successful": true,
-        "virtualNetworkTag": 4001
-      }
-    },
-    "duration": "00:00:00.244379",
-    "result": "Passed"
+    "192.168.41.2": {
+      "individualResponseCodes": [
+        "Success",
+        "Success",
+        "Success",
+        "Success",
+        "Success"
+      ],
+      "individualResponseTimes": [
+        "00:00:00.000373",
+        "00:00:00.000098",
+        "00:00:00.000097",
+        "00:00:00.000074",
+        "00:00:00.000075"
+      ],
+      "individualStatus": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "interface": "Bond10G",
+      "responseTime": "00:00:00.000143",
+      "sourceAddressV4": "192.168.41.4",
+      "successful": true,
+      "virtualNetworkTag": 4001
+    }
   }
 }
 ----

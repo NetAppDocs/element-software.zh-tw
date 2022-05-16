@@ -50,7 +50,6 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 * link:./media/Ember_12.3.pdf["Ember OS 12.3.1注意事項"^]
 * link:./media/Ember_12.3.pdf["Ember OS 12.3.注意事項"^]
-* link:./media/HealthTools_12.3.pdf["HealthTools注意事項"^]
 * link:./media/mNode_12.3.pdf["管理節點12.3.1注意事項"^]
 * link:./media/mNode_12.3.pdf["管理節點12.3.注意事項"^]
 * link:./media/mgmt_svcs_2.18.pdf["管理服務注意事項2.18"^]

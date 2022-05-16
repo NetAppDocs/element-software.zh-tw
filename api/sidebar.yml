@@ -579,6 +579,8 @@ entries:
     url: "/api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html"
   - title: RemoveKeyServerFromProviderKmip
     url: "/api/reference_element_api_removekeyserverfromproviderkmip.html"
+  - title: SignSshKeys
+    url: "/api/reference_element_api_signsshkeys.html"
   - title: TestKeyProviderKmip
     url: "/api/reference_element_api_testkeyproviderkmip.html"
   - title: TestKeyServerKmip

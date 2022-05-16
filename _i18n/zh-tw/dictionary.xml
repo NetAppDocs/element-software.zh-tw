@@ -1868,7 +1868,6 @@
   <block id="de38f9b39645a1819eeb7bfcb11bad84" category="summary">管理節點（mNode）是與一或多個元件軟體型儲存叢集平行執行的虛擬機器。它用於升級和提供系統服務、包括監控和遙測、管理叢集資產和設定、執行系統測試和公用程式、以及啟用NetApp支援存取來進行疑難排解。</block>
   <block id="d3df0f25284b2139f704a93fe81001c6" category="doc">Element軟體的管理節點</block>
   <block id="66c36c8b05fe85645ac29ef19ef65fec" category="paragraph">管理節點（mNode）是與一或多個元件軟體型儲存叢集平行執行的虛擬機器。它用於升級和提供系統服務、包括監控和遙測、管理叢集資產和設定、執行系統測試和公用程式、以及啟用NetApp支援存取來進行疑難排解。</block>
-  <block id="27784185cf7acffff8c4030234913f4f" category="paragraph">從Element 11.3版本開始、管理節點就能做為微服務主機、以便在主要版本之外更快更新精選軟體服務。這些微服務或管理服務（例如Active IQ ：《Sfatfcollector》（資料收集器）、vCenter外掛程式的QoSSIOC和mNode服務）會隨著服務組合而頻繁更新。管理節點也提供其他服務、包括用於儲存節點軟體升級和支援工具（遠端支援通道）的HealthTools。</block>
   <block id="e9065488ba04db892848ac25fd8592aa" category="admonition">最佳實務做法是、僅將一個管理節點與一個VMware vCenter執行個體建立關聯、避免在多個管理節點中定義相同的儲存設備和運算資源或vCenter執行個體。</block>
   <block id="2f1edd33160860f09b662cede0c486a4" category="summary">您可以檢視連接至叢集的光纖通道（FC）工作階段。您可以篩選資訊、只包括您想要顯示在視窗中的連線。</block>
   <block id="82af9662a6c8e6d149d029156715567a" category="doc">檢視Fibre Channel工作階段</block>
@@ -2428,8 +2427,6 @@
   <block id="fe79f0792524a7c0c507a338ba35e1e3" category="paragraph">與磁碟區複製相關的事件。</block>
   <block id="c56ab382746fcbba90c655b02ed8e815" category="list-text">*叢集主辦活動*</block>
   <block id="d5f24510c362d05d24d81a62d3ddc0f9" category="paragraph">叢集初始化時或叢集組態變更時出現的事件、例如新增或移除節點。</block>
-  <block id="f10e21b54c995c991e195a2a27f42e9d" category="list-text">*相撲事件*</block>
-  <block id="0a1864514fbaeb36f910e7c144bf0bad" category="paragraph">與磁碟上無效資料校驗和相關的事件。</block>
   <block id="7abbd925108d1978cb2e6daea6356cd8" category="list-text">*資料事件*</block>
   <block id="b12b6279fe62b653055b62ebe42e2651" category="paragraph">與讀寫資料相關的事件。</block>
   <block id="3908a55848fa4ccc6880df9c6cadfbd1" category="list-text">* db事件*</block>
@@ -2454,8 +2451,6 @@
   <block id="caa6dd020bdf9d14d0b80bb59e7a6fc5" category="paragraph">與帳戶或叢集中的磁碟區或虛擬磁碟區數量接近所允許上限的相關事件。</block>
   <block id="78257ef0d1f0aed00972b85dc317b9ef" category="list-text">*維護模式事件*</block>
   <block id="3922e35dc375cbb6b88d564e915c46b3" category="paragraph">與節點維護模式相關的事件、例如停用節點。</block>
-  <block id="88768de8b8441f3fa275f5d95af9928b" category="list-text">*網路事件*</block>
-  <block id="b668e9f7e7005ea54dafcb6f521325f4" category="paragraph">與虛擬網路狀態相關的事件。</block>
   <block id="902e8483add9c073dff62f67bb489386" category="list-text">*平台硬體事件*</block>
   <block id="dad9c50f43bc31b9709578647d459e1d" category="paragraph">與在硬體裝置上偵測到的問題有關的事件。</block>
   <block id="2df560e647ede4537f65bd4c2c14a4a5" category="list-text">*刪除叢集事件*</block>
@@ -3273,9 +3268,6 @@
   <block id="70bcdf013a13b0190ab271d9007ad2aa" category="paragraph">若要解決此故障、請在SSL憑證過期之前更新。使用帶有「更新憑證ExpirationTimes=true」的Update IdpConfiguration API方法來提供更新的SSL憑證。</block>
   <block id="08e26e7bfc701688316e0238370278ee" category="list-text">*不一致的BondModes *</block>
   <block id="b475deeed44bd779162bd430e996d375" category="paragraph">VLAN裝置上的連結模式遺失。此故障會顯示預期的債券模式和目前使用的債券模式。</block>
-  <block id="f19345bbe5a0ad3a3acf7fe726a309a7" category="list-text">*不一致的InterfaceConfiguration *</block>
-  <block id="e67ee50b41570ca19c0d24303269fae0" category="paragraph">介面組態不一致。</block>
-  <block id="5275fd12100281351af3508175915839" category="paragraph">若要解決此故障、請確保儲存叢集中的節點介面設定一致。</block>
   <block id="fda27fd12d2000d1a0b9936573376fa0" category="list-text">*不一致的Mttus *</block>
   <block id="9c1485d86c325377a29a8d89037f06b2" category="list-text">Bond1G不相符：在Bond1G介面上偵測到不一致的MTU。</block>
   <block id="b58eb7f90dba2f54452894923240eadb" category="list-text">Bond10G不符：在Bond10G介面上偵測到不一致的MTU。此故障會顯示有問題的節點、以及相關的MTU值。</block>
@@ -3411,7 +3403,6 @@
   <block id="9500ebd19c4da1257cd28e00477de660" category="paragraph">一或多個排程活動已執行、但失敗。</block>
   <block id="9de6e03c9f8d0ba909a57aef2119c7d7" category="paragraph">如果排程的活動再次執行並成功、排程的活動已刪除、或活動已暫停並恢復、則會清除故障。</block>
   <block id="ac94a0d9b18bc5b75c35adcecdfe387b" category="list-text">* sensorReadingFailed*</block>
-  <block id="ab526423ddf04ebb1799fbfc4b23359a" category="paragraph">基礎板管理控制器（BMC）自我測試失敗、或感應器無法與BMC通訊。</block>
   <block id="36132f09cafa0470dccbcaaf7c59c33f" category="list-text">*服務未執行*</block>
   <block id="ac64cbfb9f707df1f32da61bec8d7a71" category="paragraph">所需的服務未執行。</block>
   <block id="8a5b1e9990a7cc7d457a1d9e261d373b" category="list-text">*交叉分析eServiceTooFull*</block>
@@ -3466,7 +3457,6 @@
   <block id="667c5d0efc73a199b9e23695b5429560" category="list-text">按一下「*啟用支援存取*」。</block>
   <block id="30875532b2d559210d265a86be834773" category="list-text">*選用：*若要停用支援存取、請按一下*停用支援存取*。</block>
   <block id="c6ad545ed5197a02a4f86759e091d934" category="summary">包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire這個統一化叢集是以NetApp Element 單一儲存系統的形式、以各種功能為其提供管理功能。</block>
-  <block id="feaccfca658600b99fd01ee647d128a7" category="doc">零件與元件軟體12.3.x文件SolidFire</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
@@ -3483,8 +3473,6 @@
   <block id="53b5781a15ca0bf5e3350b448255d082" category="list-text"><block ref="53b5781a15ca0bf5e3350b448255d082" category="inline-link-macro-rx"></block></block>
   <block id="fbcc1cb0e2a70eff701965a5f3e0d76b" category="inline-link-macro">Ember OS 12.3.注意事項</block>
   <block id="fd9a4be3d806a4349b944f9bfba66d2f" category="list-text"><block ref="fd9a4be3d806a4349b944f9bfba66d2f" category="inline-link-macro-rx"></block></block>
-  <block id="9607eb5adaeed1b4ef323e97b2dcb6f8" category="inline-link-macro">HealthTools注意事項</block>
-  <block id="5417db75ab0296db879fb27f51d7211f" category="list-text"><block ref="5417db75ab0296db879fb27f51d7211f" category="inline-link-macro-rx"></block></block>
   <block id="26c74f7a8ac6a7c8cdb0def0e876263d" category="inline-link-macro">管理節點12.3.1注意事項</block>
   <block id="047152327178a19c354a2a92281da90f" category="list-text"><block ref="047152327178a19c354a2a92281da90f" category="inline-link-macro-rx"></block></block>
   <block id="43551c29e9ac231743a69c265f5ef85c" category="inline-link-macro">管理節點12.3.注意事項</block>
@@ -3720,8 +3708,6 @@
   <block id="d22aca95a436f2e616356da4d8b7a09b" category="list-text">您已安裝管理節點。</block>
   <block id="72a552e400bcd5ccf67284956ec6854f" category="list-text">您已設定所有個別節點。</block>
   <block id="092ceaa300960dcd050e6e91e747f4d0" category="paragraph">在新節點組態期間、會將1G或10G管理IP（MIP）位址指派給每個節點。您必須使用在組態期間建立的其中一個節點IP位址、才能開啟「Create a New Cluster」（建立新叢集）頁面。您使用的IP位址取決於您選擇用於叢集管理的網路。</block>
-  <block id="75c86d43c8ba18bab640cd672a74b9d3" category="inline-link-macro">已啟用和停用</block>
-  <block id="b8bdb7ba0c1334b7699168878de5d879" category="admonition">如果您想要啟用整個叢集 <block ref="46beba8112888a31f3c57eea2d458bf9" category="inline-link-macro-rx"></block>、您必須使用建立叢集 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> 改用API方法、並將enableSoftwareEncryptionAtRest參數變更為「true」。啟用閒置軟體加密之後、就無法在叢集上停用。靜止時的軟體加密功能預設為SolidFire 啟用、適用於不支援的ESDS叢集。閒置時可採用硬體式加密 <block ref="711dba7ff3d35a9da9cda53d1c6a58d0" category="inline-link-macro-rx"></block> 建立叢集之後。</block>
   <block id="6e86b6ad131ac8c7f8498a5e9ecc5c65" category="paragraph">建立新叢集時、請考慮下列事項：</block>
   <block id="75fac2bb9ef7c9c0f6864f69d3bc79ba" category="list-text">如果您使用的儲存節點位於共享機箱中、可能需要考慮使用保護網域功能來設計機箱層級的故障保護。</block>
   <block id="408235adcca7b2525751a100610c1f35" category="list-text">如果共享機箱未在使用中、您可以定義自訂保護網域配置。</block>
@@ -4039,7 +4025,6 @@
   <block id="57208611101414fe2f0426e46c1f0d65" category="list-text">如果您要停用IPv6、請依照本節所述的步驟進行<block ref="2a5c78b7a0390cd7a5313c37d3eb2c52" category="inline-link-rx"></block>。</block>
   <block id="1a76b48d9d60fd8364da6ea0eaec3eff" category="list-title">&lt;strong&gt;安裝所需的軟體&lt;/strong&gt;</block>
   <block id="654fdbae1d58bcbbc420ee34e66cbecb" category="list-text">安裝Ansible、Git、Podman和Python 3.0。</block>
-  <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">對於元素123、支援的Podman版本為1.1.4。</block>
   <block id="e1633c03fa0d88ea4ec55f043ee4598c" category="list-title">&lt;strong&gt;驗證您的組態是否符合NetApp&amp;#8217;安裝SolidFire RESTESDS&lt;/strong&gt;的要求</block>
   <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp互通性對照表工具IMT （不含）</block>
   <block id="30ec57363b9938495c0097cd8a0bcbbf" category="list-text">使用SolidFire 中所列的「功能不均」組態<block ref="d73544449e4c516eccc06a758c5e6c47" category="inline-link-rx"></block> 作為參考。</block>
@@ -4501,8 +4486,6 @@
   <block id="068817eddb6802e1d3071e7fe885650f" category="paragraph">您可以SolidFire 使用Ansible等自動化工具來安裝支援功能。</block>
   <block id="b97b11d80b0bcf547bcc133c20febcae" category="paragraph">以下是使用Ansible進行安裝的高階概觀：</block>
   <block id="f87aae9cb20ea2d100efbe63ba40cfdd" category="image-alt">顯示安裝工作流程。</block>
-  <block id="20015149e57b9ea92f4b5090ff7f53b2" category="section-title">動態節點額定值（元素12.3.1的新功能！）</block>
-  <block id="72d9c53a65fad048ea88d9b8be004d24" category="paragraph">動態節點額定值是Element 12.3.1的新功能、可讓您在每個ESDS平台上運用24個支援的CPU、而非現今每個平台只需一個CPU的模式。</block>
   <block id="97536cbfae1b231373bcd97b10deb15c" category="paragraph">ESDS目前支援的所有平台均支援動態節點額定值：dL360、dL380和R640。</block>
   <block id="24bc1a938f18ccc15e42f585341c44d5" category="paragraph">在第一版的動態節點額定值中、任何節點的IOPS最高額定值都是100K IOPS。</block>
   <block id="c7de22498f541c23b73f964b57960cb5" category="summary">在安裝SolidFire 完整套功能之前、請先使用提供的範例和秘訣來設定主機網路。</block>
@@ -5524,7 +5507,6 @@
   <block id="95772984255fd54c3458a948ba42af1a" category="list-text">將ISO附加至虛擬機器、然後開機至.ISO安裝映像。</block>
   <block id="24ed3731d5d0d69a7def7cf60f47e78f" category="list-text">安裝完成後、開啟管理節點的虛擬機器電源。</block>
   <block id="b66fb1111711d1f55f2b9a97ce6e77b2" category="section-title">設定網路</block>
-  <block id="ebb10f305c99ec7bfab143a8e38bdcc7" category="admonition">從元件12.3.1開始、會自動執行子步驟（A）至（e）。若為管理節點12.3.1、請繼續執行 <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 以完成時間同步組態。</block>
   <block id="7dc7cd6c0a9303656eaae96b55f5b653" category="list-text">為您要新增的每個預設時間伺服器新增一行。預設時間伺服器必須與儲存叢集上使用的NTP伺服器相同、您將在中使用 <block ref="37f19ee15c62b224001c3e4e1e425721" category="inline-link-macro-rx"></block>。</block>
   <block id="51aa09599efde7b5f904971077e61890" category="list-text">[Subford_f_recover_config_time_sync-]停用透過Hypervisor與主機進行時間同步（以下為VMware範例）：</block>
   <block id="2402451989cd172cbc3b634b598a7bf7" category="inline-xref">重新部署命令</block>
@@ -5557,8 +5539,6 @@
   <block id="a3b41c5e4b5982a5e45a7cfad493bb3f" category="list-text">將重新整理設為「真」。</block>
   <block id="a52a9f02c0e24c19edaf43a1f495058c" category="list-text">重新整理NetApp混合雲控制瀏覽器、查看變更內容。</block>
   <block id="d40819e9e843e97335bf320aeb8d5ac1" category="summary">您可以使用管理節點來啟用NetApp支援存取、以進行疑難排解。</block>
-  <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">啟動遠端NetApp支援工作階段</block>
-  <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">如果SolidFire 您需要支援您的整套Flash儲存系統的技術支援、NetApp支援中心可遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。</block>
   <block id="8e5cda5f4d9f852ba16378a9749b0fba" category="paragraph">您可以開啟TCP連接埠、以便透過NetApp支援進行SSH反向通道連線。此連線可讓NetApp Support登入您的管理節點。</block>
   <block id="d6ffeb2fc4f82d1d17f906502ee07d86" category="inline-link-macro">管理管理節點上的SSH功能</block>
   <block id="38bfc79ee5a8c36f9e9a8af1c01ba34c" category="list-text">對於管理服務2.18及更新版本、預設會在管理節點上停用遠端存取功能。若要啟用遠端存取功能、請參閱 <block ref="b699ffaa70a5cdf708fca1e6ce6761c0" category="inline-link-macro-rx"></block>。</block>
@@ -5576,7 +5556,6 @@
   <block id="7096254058ea6f4199f3ce2259f65ecd" category="paragraph">《RST——killall》</block>
   <block id="f6da8069b357b9343a5831a68be0524d" category="inline-link-macro">遠端存取功能</block>
   <block id="75be5fb98a5e3aff69e3f0e049934221" category="list-text">（選用）停用 <block ref="b551ebda879d60cf3a0931b9f0e794a7" category="inline-link-macro-rx"></block> 再一次。</block>
-  <block id="88d2fa1cb3e06d29219dc8436ebc814c" category="admonition">如果您未停用SSH、SSH仍會保持啟用狀態。啟用SSH的組態會持續在管理節點上進行更新和升級、直到手動停用為止。</block>
   <block id="728b9f30c45d9b5490bc14eac2e5a7ee" category="summary">您可以使用REST API UI編輯vCenter管理節點控制器。</block>
   <block id="d58033fb958878b21acb4b0e0150fedf" category="paragraph">您可以使用REST API、在管理節點組態中檢視及編輯現有VMware vCenter控制器的相關資訊。控制器是VMware vCenter執行個體、已登錄至管理節點以供NetApp SolidFire 執行安裝。</block>
   <block id="4449c06ccadafd4f881f5cd491f79ffe" category="list-text">請確定您的叢集版本執行NetApp Element 的是更新版本的軟件。</block>
@@ -5673,8 +5652,6 @@
   <block id="07dbcbb813481b1cdf67b10db9d483fb" category="paragraph">使用管理節點REST API執行工作：</block>
   <block id="e3b2c785b4cd6acf01cc3ba75cb8ee69" category="list-text"><block ref="e3b2c785b4cd6acf01cc3ba75cb8ee69" category="inline-link-macro-rx"></block></block>
   <block id="b0475226b0ab3967b6494917c92c571f" category="paragraph">停用或啟用遠端SSH功能、或啟動與NetApp支援的遠端支援通道工作階段、以協助您疑難排解：</block>
-  <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">啟用遠端NetApp支援連線</block>
-  <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="b699ffaa70a5cdf708fca1e6ce6761c0" category="list-text"><block ref="b699ffaa70a5cdf708fca1e6ce6761c0" category="inline-link-macro-rx"></block></block>
   <block id="d1cfb55513d453a2cf4188067d2cf218" category="paragraph">您可以使用REST API在管理節點（mNode）上停用、重新啟用或判斷SSH功能的狀態。提供SSH功能 <block ref="6bb28df38aa0844e287b2e23fc581879" category="inline-link-macro-rx"></block> 在執行管理服務2.18或更新版本的管理節點上、預設為停用。</block>
   <block id="893af10adfc625cc78ae6b31f194e8e2" category="list-text">*叢集管理員權限*：您具有儲存叢集管理員權限。</block>
@@ -6128,45 +6105,8 @@
   <block id="682faa8b9dab1247bb831425cb9ffc7e" category="paragraph">Volume帳戶是在NetApp混合雲控制磁碟區表格中管理。</block>
   <block id="242169bc3cfede608a33f18d694f8ac7" category="summary">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
-  <block id="038a728ceb0425e8312a168eae48c281" category="paragraph">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 123引進軟體加密功能來增強靜止狀態、增強安全性、更新儲存韌體、增強快照功能、以及改善故障磁碟機的行為。</block>
-  <block id="0eb91c90051a8280b5d03272245097b3" category="section-title">NetApp線上錯誤包含已知且已解決的問題</block>
-  <block id="d999c8f91acdda00b7947df4d88bb296" category="paragraph">已知和已解決的問題現已列在NetApp錯誤線上工具中。您可以瀏覽這些問題以找出元素和其他產品。</block>
   <block id="69893000f4da30e1e42922cbcf8dac0e" category="inline-link">NetApp線上錯誤</block>
-  <block id="6fdef1a96dd1317b8f4387931b94852d" category="list-text">前往<block ref="0c12cf8c0cec0405a310594288c146b6" category="inline-link-rx"></block>。</block>
-  <block id="06f64729610d29108de18fcd67a1a763" category="list-text">在「*搜尋關鍵字*」欄位中輸入產品名稱、例如「Element」。</block>
-  <block id="768d18144454e6cec5a96d61cb09fd9c" category="inline-image-macro">加號圖示</block>
-  <block id="7c75467b9025ab54b5203e9be5da57c6" category="list-text">選取 <block ref="0e4f90d154c4fd3ec2823d6eacadfce7" category="inline-image-macro-rx" type="image"></block> 圖示、選取*「在版本*中固定」、然後選取*「確定」*。</block>
-  <block id="63801fa6564f3399ab4e8333c83d2c00" category="inline-image-macro">Bol篩選器、對齊「中心」</block>
-  <block id="9827e0c740afc425e59daef8f234fb98" category="paragraph"><block ref="9827e0c740afc425e59daef8f234fb98" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b12de5800c8fbcca989d128168d70a05" category="list-text">若要依版本篩選、請在「*修正於版本*」欄位中輸入版本。</block>
-  <block id="46b078af9bac91704627a9aca75db024" category="section-title">元素12.3.2</block>
-  <block id="026c4f7e91453952af52a005d7180aec" category="paragraph">深入瞭解元素12.3.2的新功能。</block>
-  <block id="a0e08077e5a0fd5b8a4e6778d5172eae" category="paragraph">Element軟體12.3.2版本包含的緩和措施可關閉元素軟體曝險於Apache log4j弱點。已啟用虛擬Volume（VVols）功能的NetApp SolidFire 支援區儲存叢集、會暴露於此弱點之中。</block>
-  <block id="5b7e7ff4cde603a8e9bda3b0790603ec" category="section-title">元素12.3.1</block>
-  <block id="adf576ac121282dd87a46368c235ab70" category="paragraph">深入瞭解元素12.3.1的新功能。</block>
-  <block id="04aa68617927bbc2709638a86a15ad34" category="section-title">儲存韌體產品組合2.99.2</block>
-  <block id="81686da1b9f8be4c89479031f62bbb25" category="paragraph">Element 12.3.1版本包含儲存韌體套件2.99.2版。如果您的儲存叢集已位於Element 123、您可以選擇只安裝新的2.99.2韌體套裝組合。</block>
-  <block id="605e2776f3071c726f66acc87295d21f" category="section-title">支援SolidFire Dynamic CPU節點額定值、適用於整套ESDS主機平台</block>
-  <block id="61356eb323be4d7b821c93b513166119" category="paragraph">現在、支援全系列的Intel Gold和Silver Cascade Lake世代CPU、24種機型。SolidFire動態節點分級功能會根據CPU、將QoS IOPS額定值指派至50K至100K之間的主機伺服器。</block>
-  <block id="dd08ecb51d2567c0f5d500734aca7aa7" category="cell">CPU核心數</block>
-  <block id="67720d011a8ac675acb512bd68ef1987" category="cell">ESDS節點IOPS額定值</block>
-  <block id="c9f0f895fb98ab9159f51fd0297e236d" category="paragraph">8.</block>
-  <block id="b548533be6ad1379f80ce604a074ef79" category="paragraph">50K</block>
   <block id="d3d9446802a44259755d38e6d163e820" category="paragraph">10.</block>
-  <block id="1a022ef2ed73e2026bbe5167a998bb93" category="paragraph">60k</block>
-  <block id="c20ad4d76fe97759aa27a0c99bff6710" category="paragraph">12.</block>
-  <block id="1c43c5df76609d14304dc2d83182bcf0" category="paragraph">75K</block>
-  <block id="aeaa64cd03e3847df06556f5b70e6271" category="paragraph">16+</block>
-  <block id="70c7acef529834326f5a880ae840b93b" category="paragraph">100K</block>
-  <block id="1481eff19800c0874fe76d7649f000f6" category="section-title">支援SolidFire 單一連結網路組態以利實現EESDS</block>
-  <block id="a00727946846293fe49ce2ad34902fe6" category="paragraph">您現在可以使用SolidFire 單一連結網路組態、將其用於使用支援EESDS的主機。</block>
-  <block id="52f03f4718ce263c343918e7d6dc7572" category="section-title">全新伺服器支援SolidFire 功能</block>
-  <block id="f121abd3775a522314040c9ab3439839" category="paragraph">HPE DL380伺服器現在提供了RESDS。SolidFire請參閱<block ref="bbf12a00ac2004a394e4a5957119453c" category="inline-link-rx"></block> 如需支援組態的詳細資訊、請參閱。</block>
-  <block id="e0076fd5294e757abc41b2328ed8c57d" category="section-title">元件12.3.</block>
-  <block id="c652ab5c8a14b8f08b4625463e56c033" category="paragraph">深入瞭解元素123的新功能。</block>
-  <block id="7e0c9d10dc35dcd647c7fb7b97f5935e" category="section-title">支援FIFO快照佇列</block>
-  <block id="d0de8a7d64b7a1726c0136e09cc34ddc" category="paragraph">元素123可讓您建立Volume快照的先進先出（FIFO）佇列。使用Element API、您可以指定建立Volume時應保留的最小和最大FIFO快照插槽數。當某個磁碟區的FIFO快照佇列已滿時、您為該磁碟區所建立的下一個快照會從系統中移除該磁碟區最舊的快照。FIFO和非FIFO快照均使用同一個磁碟區上可用的快照插槽集區。</block>
-  <block id="2b57ae295e8f78743e323122a24c71a6" category="paragraph">下列元素API方法與FIFO快照有關（請參閱 <block ref="e94222b711e6f47fc75da460ef83937d" category="inline-link-macro-rx"></block> 如需每種API方法的詳細資訊）：</block>
   <block id="19b9aebc333a4f2fd40dbdb629489716" category="list-text">CreatGroupSnapshot</block>
   <block id="cf8796419400dbe7dacd8ab0a637eb0f" category="list-text">建立排程</block>
   <block id="db66912e8bdff8f12b8b75883aeb66ef" category="list-text">建立Snapshot</block>
@@ -6176,32 +6116,9 @@
   <block id="ed47e4e89883b900e6f240804c2c9f4b" category="list-text">ModifySnapshot</block>
   <block id="f188faeeefb6bd4093b442c3b622d049" category="list-text">ModifyVolume</block>
   <block id="cb9c49edf1281e18ddc26ea2b3388bb3" category="list-text">ModifyVolumes</block>
-  <block id="d557f50794be0f042b73012483191ae1" category="section-title">Snapshot序列化支援</block>
-  <block id="dc4eb3a5e4092ca1c1e5c45d96e29ec4" category="paragraph">Element 123支援序列化快照建立。使用Element API建立新的快照時、您可以指定如果先前的快照複寫仍在進行中、則不應建立快照。</block>
-  <block id="90921de2c2ec0cbda61e8400e44e2f2d" category="paragraph">下列元素API方法與Snapshot序列化有關（請參閱 <block ref="e94222b711e6f47fc75da460ef83937d" category="inline-link-macro-rx"></block> 如需每種API方法的詳細資訊）：</block>
-  <block id="322006b47e56994b5f4ae1d0d7a62ac3" category="section-title">支援Snapshot保留</block>
-  <block id="67c902147e7b347809f36c90a2d210d1" category="paragraph">Element 123可讓您指定快照的保留時間。如果您未指定快照的保留時間或到期時間、則快照會永遠保留。</block>
-  <block id="84be242279d562bb29f7196a199a683c" category="paragraph">下列元素API方法與快照保留有關（請參閱 <block ref="e94222b711e6f47fc75da460ef83937d" category="inline-link-macro-rx"></block> 如需每種API方法的詳細資訊）：</block>
-  <block id="1f2a12ce78012d7252b59d4bcd36f440" category="section-title">軟體加密功能的靜止增強功能</block>
-  <block id="4537dde252275645bcaf44762b6ce6c1" category="paragraph">對於靜止時的軟體加密功能、Element 123引進外部金鑰管理（EKM）、並能重新鎖定軟體加密主金鑰。您可以在建立儲存叢集時啟用閒置的軟體加密。當您建立SolidFire 一個「企業版」SDS儲存叢集時、預設會啟用閒置的軟體加密功能。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。</block>
-  <block id="1d2006791f584054887594030c25ddba" category="paragraph">下列元素API方法與閒置時的軟體加密有關（請參閱 <block ref="e94222b711e6f47fc75da460ef83937d" category="inline-link-macro-rx"></block> 如需每種API方法的詳細資訊）：</block>
   <block id="7f3b1babd1f170f73cb0ff4719c65294" category="list-text">DisableEncryptionAtRest</block>
   <block id="a4377e2a5c151e23b56034c95f4a740c" category="section-title">儲存節點韌體更新</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
-  <block id="c8b45772e8df206ed41c847278a2cb23" category="paragraph">Element 123包含儲存節點的韌體更新。 <block ref="0f65f1a5cbc84d01ee508f9ae603c679" category="inline-link-macro-rx"></block>。</block>
-  <block id="5f6c185eb38c56187fc699dfbe62654b" category="section-title">安全性增強功能</block>
-  <block id="f7ee5002ef56f099b9f227649b3ee898" category="paragraph">Element 123可解決儲存節點和管理節點的安全性弱點。<block ref="af1ab9f76ec1c477e46044f8dd68c36d" category="inline-link-rx"></block> 關於這些安全性增強功能。</block>
-  <block id="893da6ab703ccebc0128c2188fce2dfa" category="section-title">改善故障磁碟機的行為</block>
-  <block id="bc8064d6976a4ae417d9071be509d014" category="paragraph">Element 123 SolidFire 會使用磁碟機的智慧型健全狀況資料、定期檢查各種應用程式磁碟機的健全狀況。未通過SMART健全狀況檢查的磁碟機可能會接近故障。如果磁碟機未通過SMART健全狀況檢查、磁碟機將轉換為*故障*狀態、並出現嚴重的叢集故障：「Drive with serial：&lt;序號&gt; in slides&gt;&lt;磁碟機插槽&gt;未通過智慧型整體健全狀況檢查。若要解決此問題、請更換磁碟機</block>
-  <block id="f27e588d7a898f97a40bb017bc0cb67e" category="paragraph">現在可在Dell R640伺服器上使用ESXDS。SolidFire請參閱<block ref="bbf12a00ac2004a394e4a5957119453c" category="inline-link-rx"></block> 如需支援組態的詳細資訊、請參閱。</block>
-  <block id="b4eb0a7d2f620a735a49d295cf464c57" category="section-title">更新文件以供SolidFire 參考</block>
-  <block id="7b23dd0b7e8640cee7cc760aebda33b4" category="paragraph">下列新文件適用於SolidFire EESDS：</block>
-  <block id="0758acb395116abd9e0939201a27edd6" category="list-text"><block ref="cf3efad461dedbcc789786816f0318a6" category="inline-link-rx"></block>：提供更換Dell R640伺服器磁碟機的步驟。</block>
-  <block id="5ecc3fdf34ca55d0377ecf551fdb9635" category="inline-link">知識庫文章（需登入）</block>
-  <block id="4b88ce6903140a7f757c6509c06012dc" category="list-text"><block ref="a047a2b1ef295d12a54302870ed64e97" category="inline-link-rx"></block>：提供SolidFire 有關解決您的EESDS系統問題的資訊。</block>
-  <block id="295216d6678c57d5badf5770238d96b5" category="section-title">針對一些已知問題的新位置SolidFire</block>
-  <block id="4a5792ce9d744e9fb996d5cbb1e303d8" category="inline-link">錯誤線上工具（需要登入）</block>
-  <block id="28bab3e7358cc261a7101ba6a439e4eb" category="paragraph">您現在可以在上搜尋已知問題<block ref="4010019de5d8f9d6e5f30f9d5509ab8d" category="inline-link-rx"></block>。</block>
   <block id="44b0209ace608ab3332e7d7917cfc3c2" category="inline-link">NetApp混合雲控制與管理服務版本說明</block>
   <block id="8c62a8856619185a333cdec6cc116a79" category="list-text"><block ref="8c62a8856619185a333cdec6cc116a79" category="inline-link-rx"></block></block>
   <block id="feaf808951dafefbf9943700efdb4315" category="inline-link">適用於舊版的VMware及Element軟體文件中心SolidFire</block>
@@ -6476,7 +6393,6 @@
   <block id="96ba39f59d895d814d38db0ef8c583fd" category="list-text">容錯能力：儲存叢集有足夠的可用容量、可在其中一個自訂保護網域發生故障後、防止資料遺失。</block>
   <block id="e453e93ae1af3155f2774b6b529f8ed9" category="list-text">容錯能力：儲存叢集在其自訂保護網域之一故障後、有足夠的可用容量可自我修復。修復程序完成後、如果有其他網域發生故障、叢集將受到保護、不會遺失資料。</block>
   <block id="2d50fad3ab9a441a87882c17c13f0bae" category="paragraph">如果指派多個自訂保護網域、則每個子系統都會將重複項目指派給不同的自訂保護網域。如果無法這麼做、則會回復為將重複項目指派給不同的節點。每個子系統（例如、儲存槽、分片、傳輸協定端點供應商和頻道群）都會獨立執行此作業。</block>
-  <block id="84de930499d735c9f8f12a7a5abd09e2" category="paragraph">您可以使用下列API方法來設定自訂保護網域：</block>
   <block id="10763b97bd843488da2bf7ea3d301a99" category="inline-link-macro">GetProtectionDomainLayout</block>
   <block id="bd77f2754e5c1c371ba7793ef5fe29b4" category="list-text"><block ref="6702e5c49e3601276668962e5917edde" category="inline-link-macro-rx"></block> -顯示每個節點所在的機箱和自訂保護網域。</block>
   <block id="76e41f0c5158a7d3c39e70b930570854" category="inline-link-macro">SetProtectionDomainLayout</block>
@@ -6513,7 +6429,6 @@
   <block id="f8baaa336de0b43c94445176248817a5" category="admonition">系統會提示您使用NetApp支援認證登入。</block>
   <block id="3938cfdbe176bad61cedb25bdb572858" category="section-title">軟件NetApp Element</block>
   <block id="56570048e2475ec7b64ee91388743714" category="inline-link">《軟件12.3.2發行說明》NetApp Element</block>
-  <block id="3903fc6a9f0bcbe1f49608f5110cf661" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block> _新_</block>
   <block id="7199e7988a06a61dd6614783601855bd" category="inline-link">《軟件12.3.1發行說明》NetApp Element</block>
   <block id="9add94ad0bafb6a0c0977e09efa22b79" category="list-text"><block ref="9add94ad0bafb6a0c0977e09efa22b79" category="inline-link-rx"></block></block>
   <block id="325c4db41bea4b4c5bc841d336b08e32" category="inline-link">Software 123版本資訊NetApp Element</block>
@@ -6527,7 +6442,6 @@
   <block id="1cace3c036a290ab8ee91dddebd361d0" category="inline-link">Software 12.0版本說明NetApp Element</block>
   <block id="4489a95481ba0e8e951ca2cdc4403b89" category="list-text"><block ref="4489a95481ba0e8e951ca2cdc4403b89" category="inline-link-rx"></block></block>
   <block id="b7fe022e3d13a1a7248fb1583851f437" category="inline-link">《軟件11.8.2發行說明》NetApp Element</block>
-  <block id="96a6137975cbcfe6dbff95b85cf1b6bf" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block> _新_</block>
   <block id="0f0e809fbd346b6319776f0b02355216" category="inline-link">《軟件11.8.1發行說明》NetApp Element</block>
   <block id="6ae2e484807ab9e500e1e9aa73aa6354" category="list-text"><block ref="6ae2e484807ab9e500e1e9aa73aa6354" category="inline-link-rx"></block></block>
   <block id="c238b8c4c43e1a2c0a7fa4b0128df200" category="inline-link">《軟件11.8發行說明》NetApp Element</block>
@@ -6553,8 +6467,6 @@
   <block id="e6f04bc267aa8b790e8358fbcafd13da" category="inline-link">vCenter Plug-in 4.3版本說明</block>
   <block id="b2a1b69fb08bccdb5677884b0a061505" category="list-text"><block ref="b2a1b69fb08bccdb5677884b0a061505" category="inline-link-rx"></block></block>
   <block id="002e74c06881f6eef90f201bb310bbfa" category="section-title">儲存韌體</block>
-  <block id="78f6798eb036b3dd12c871ca38087892" category="inline-link">儲存韌體套裝組合2.146版本說明（最新）</block>
-  <block id="cb459c9e82b22fbd72cf1986df403b4c" category="list-text"><block ref="cb459c9e82b22fbd72cf1986df403b4c" category="inline-link-rx"></block></block>
   <block id="176d9ae1b8e18dc2cedc534e1da45e7c" category="inline-link">儲存韌體產品組合2.99.2版本說明</block>
   <block id="7a90185243c33f6e26c13fa828aa78ae" category="list-text"><block ref="7a90185243c33f6e26c13fa828aa78ae" category="inline-link-rx"></block></block>
   <block id="826ed2a2fd875eeb127f73e48856de14" category="inline-link">儲存韌體產品組合2.76版本說明</block>
@@ -6572,7 +6484,6 @@
   <block id="a3dc930bbe6478d770946b9c65d858ed" category="section-title">閒置加密（軟體）</block>
   <block id="33c5b6122776adc3b7c9d47882391b61" category="inline-link-macro">啟用時</block>
   <block id="f821a90c9663cfba67e5463eaa9dd50b" category="paragraph">另一種閒置加密的軟體閒置加密功能、可將寫入儲存叢集中SSD的所有資料加密。 <block ref="850adab22a7d3ffe35b638d0df9b6cf6" category="inline-link-macro-rx"></block>，它會加密所有寫入的資料，並自動解密在軟體中讀取的所有資料。靜態軟體加密可鏡射硬體中的自我加密磁碟（SED）實作、在沒有SED的情況下提供資料安全性。</block>
-  <block id="43b870e499bdb0387c629bf497770155" category="admonition">靜止狀態的軟體加密功能預設適用於SolidFire 所有的「企業版」SDS節點。靜止軟體加密功能可在SolidFire 不含自我加密磁碟機（SED）的企業SDS節點中、提供資料安全加密的主要軟體層。</block>
   <block id="5ddb1cb96e389bf43231140cde9934cd" category="admonition">對於支援所有Flash的儲存叢集、在建立叢集期間必須啟用閒置軟體加密功能、而且在建立叢集後無法停用。SolidFire</block>
   <block id="7e65cd9d4a4bf4e916488e5827b847c3" category="paragraph">軟體和硬體式的閒置加密均可獨立使用、也可彼此搭配使用。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部金鑰管理</block>
@@ -11680,7 +11591,6 @@
   <block id="0a4b0244a62a3d26a27fd761630e0952" category="inline-link-macro">升級儲存設備之前、請先執行Element儲存設備健全狀況檢查</block>
   <block id="736c409b380383ee8843715d26079c63" category="list-text">*叢集健全狀況*：您已執行健全狀況檢查。請參閱 <block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>。</block>
   <block id="d12abcbed858bffa82e8d643aeac1e4f" category="inline-link-macro">版本說明與升級指示</block>
-  <block id="c1b90d32c435bec1bc30056f56581b76" category="list-text">*更新BMC for H610S nodes *：您已升級H610S節點的BMC版本。請參閱 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
   <block id="7389b01d5fe0e17f5523a7fb85295f91" category="inline-link">這篇知識庫文章</block>
   <block id="b24f3db75077a578765967e0b8ffa295" category="admonition">如需硬體的韌體和驅動程式韌體完整對照表、請參閱<block ref="54a79ab153742147d13ffd4ac16bf6ba" category="inline-link-rx"></block> （需要登入）。</block>
   <block id="5212e4232f93722ce70d3ed042cd25c1" category="paragraph">請選擇下列其中一個儲存韌體升級選項：</block>
@@ -11801,7 +11711,6 @@
   <block id="9ec21c21d51558c2c4720284cc8e9f10" category="summary">您可以SolidFire 升級所有NetApp儲存元件、在部署後將您的現象不再只是最新的儲存系統。</block>
   <block id="59a003ce49b82fe00de09fe03510553f" category="doc">升級順序總覽</block>
   <block id="ce90f7229835d74f781e9e0252243716" category="paragraph">您可以SolidFire 在部署後、依序升級所有NetApp儲存元件、讓您的支援系統保持在最新狀態。</block>
-  <block id="95f9414b6ac8911d498b5b4173c859c7" category="paragraph">這些元件包括管理服務、HealthTools、NetApp混合雲控制、Element軟體、管理節點、以及Element Plug-in for vCenter Server（視安裝而定）。</block>
   <block id="d38f48e8e196e92a833076faf76e21bc" category="inline-xref">系統升級順序</block>
   <block id="fb54f95f1b973757c205d87e6c954cbc" category="paragraph">。 <block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block> 內容說明完成SolidFire 整套功能齊全的全快閃儲存系統升級所需的工作。理想情況下、這些程序是以較大的升級順序執行、而非隔離執行。如果需要元件型升級或更新、請參閱程序先決條件、以確保解決更多複雜性問題。</block>
   <block id="7ce03284a3322764084b916532f7b97d" category="inline-link-macro">vSphere升級順序</block>
@@ -11813,14 +11722,10 @@
   <block id="df3748edc080e7a8ed49863460584cdd" category="paragraph">使用NetApp混合式雲端控制進行升級的舊版服務組合版本無法使用。</block>
   <block id="ced99676ffdce11db0cf7ce2a4a812b8" category="list-text">您已確保所有節點上的系統時間都已同步、且儲存叢集和節點的NTP設定正確。每個節點都必須在每個節點的Web UI（「https://[IP位址」：442`）中設定DNS名稱伺服器、且不會發生與時間偏移相關的未解決叢集故障。</block>
   <block id="6ea7f8d4483b20144d2c82f1ed99c07a" category="section-title">系統升級順序</block>
-  <block id="2ddcbbcdd4f972f2c02a9a2fe92ff535" category="paragraph">您可以使用下列順序來升級SolidFire Element 12.3.x的NetApp全快閃儲存系統</block>
   <block id="524813e84d210a04a3c005022becca08" category="inline-link-macro">從混合雲控制系統更新管理服務</block>
   <block id="c43409e402c491faff614694ff49b45b" category="list-text"><block ref="d96c5e393dc7f7cfcba5644a67a6ff8a" category="inline-link-macro-rx"></block>。</block>
   <block id="9cd44430d13c7f6664a4e628ee6d90e4" category="admonition">如果您要將管理服務更新至2.16版或更新版本、而且執行的是管理節點11.3至11.8、則在更新管理服務之前、必須先增加管理節點VM的RAM。</block>
   <block id="17a2ec8576298e274b3b59e46ff67ea2" category="admonition">您必須先更新至最新的管理服務套裝組合、才能升級Element軟體。</block>
-  <block id="c11f2883e5873fe6014828f863f7ba41" category="inline-link-macro">（選用）升級至最新的HealthTools</block>
-  <block id="49cd70bbae5767fa07e3c247f5bbc6b8" category="list-text"><block ref="e369e337fa7ec72eace155f2553c6f73" category="inline-link-macro-rx"></block>。</block>
-  <block id="60175530d17f19da9530d61fcc12b771" category="admonition">只有在您執行的管理節點和元件軟體為11.1或更早版本時、才需要升級HealthTools。使用NetApp混合式雲端控制進行元素升級時、不需要HealthTools。</block>
   <block id="109d7dba2c92c9420fece3ae278874f4" category="list-text"><block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>。</block>
   <block id="77f5518534e304c43787d59aa8f3ed00" category="inline-link-macro">升級您的Element軟體與儲存韌體</block>
   <block id="35e9c48aa9c5ae2adc6b713d2399dba2" category="list-text"><block ref="1e896f189b3768a955ddd6464b4ba1e2" category="inline-link-macro-rx"></block>。</block>
@@ -11922,37 +11827,24 @@
   <block id="c512caf817d81cdc178fb65c97607344" category="list-text">監控更新狀態：「Get /services / update/Status（取得/服務/更新/狀態）」</block>
   <block id="6649159eb1a5068624f3b70546b1a83c" category="summary">在NetApp SolidFire 的非系統升級中、您可以升級NetApp Element 各種解決方案。</block>
   <block id="c4d41483c4ebb2063097b14712424742" category="doc">升級Element軟體</block>
-  <block id="b62290ff53a518e59ca66a10ffbbe80f" category="paragraph">若要升級NetApp Element VMware軟體、您可以使用NetApp混合雲控制UI、REST API或HealthTools套裝工具。某些作業會在元素軟體升級期間受到抑制、例如新增和移除節點、新增和移除磁碟機、以及與啟動器、Volume存取群組和虛擬網路相關的命令等。</block>
   <block id="992d266839a579e9b62b9fbb2193d3bf" category="inline-link">NetApp知識庫：執行NetApp Element 「更新軟體」之儲存叢集的升級對照表</block>
   <block id="1f530b0c76d9de4275104c651b6d5411" category="list-text">*有效的升級路徑*：您已檢查要升級的元素版本的升級路徑資訊、並確認升級路徑有效。<block ref="b87eae6ace29db9b17ab7b20ed6745f5" category="inline-link-rx"></block></block>
-  <block id="7cccd916bcdac08ea30e7c32df58e516" category="admonition">您必須先升級至最新的管理服務套裝組合、才能將Element軟體升級至12.3.x版如果您要將Element軟體更新至12.3.x版、則需要使用管理服務2.14.60或更新版本才能繼續。</block>
   <block id="eb3ef9d3145086e8447906c0ff28c122" category="list-text">*叢集健全狀況*：您已確認叢集已準備好升級。請參閱 <block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>。</block>
-  <block id="536ecfec86f2361139f65f4014b80536" category="list-text">*更新BMC for H610S nodes *：您已升級H610S節點的BMC版本。請參閱 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
   <block id="0e7647873b3166c20d4bb762ef96b543" category="paragraph">請選擇下列其中一個元素軟體升級選項：</block>
   <block id="f04c2dffe18d2f3b135204db9355705a" category="list-text"><block ref="d671d4153cf8124770baff9fa1830cd7" category="inline-xref-macro-rx"></block></block>
   <block id="c68d0cefaf6daaa0eddd2f2ab63ba5c8" category="list-text"><block ref="910aaaa5a5f6089f423c0c681bb2f1ce" category="inline-xref-macro-rx"></block></block>
-  <block id="96f94eb5604759d8f66835aee38436dc" category="list-text"><block ref="271a86b04483f9a3dd8257e5616dda99" category="inline-xref-macro-rx"></block></block>
-  <block id="46fd0342837386653216785e15172aa8" category="list-text"><block ref="7f0352aaa429921b3305e52393f62807" category="inline-xref-macro-rx"></block></block>
-  <block id="5cd97fe4faf6302b47e426dc527001bd" category="inline-xref">第2階段</block>
-  <block id="18efefbb7dfc549a016b6c88a83bd60d" category="admonition">如果您要將H610S系列節點升級至Element 12.3.x、且節點執行的元件版本早於11.8、則需要執行其他升級步驟（<block ref="705f7add14cc7784392a1a0405b32daa" category="inline-xref-macro-rx"></block>）。如果您執行的是元素11.8或更新版本、則不需要執行其他升級步驟（階段2）。</block>
   <block id="1a1c6d70aec56ed56fdc5c3ac8162a8b" category="section-title">使用NetApp混合雲控制UI來升級元素儲存設備</block>
   <block id="a544a5293c147dec832e983a6fbad504" category="paragraph">您可以使用NetApp混合雲控制UI來升級儲存叢集。</block>
-  <block id="1fe3f0a86f12c07fb4f3cf17d971d675" category="list-text">如果您的管理節點未連線至網際網路、您已從下列位置下載套件：</block>
   <block id="106cc5a0e6a0bb3c0776b3ba8fb64337" category="inline-link">Element軟體升級套件（.tar.gz）、適用於SolidFire 各種儲存叢集</block>
-  <block id="49e349363aad0972c82ddaf25dd30f70" category="paragraph"><block ref="49e349363aad0972c82ddaf25dd30f70" category="inline-link-rx"></block></block>
-  <block id="7fad05c5548f9989eaee59a54633305a" category="admonition">對於非H610S平台、每個節點的升級程序約需30分鐘。</block>
   <block id="eced5161fd4b5a5d98480da44ccabc87" category="paragraph">「*儲存設備*」索引標籤會列出您安裝時所需的儲存叢集。如果NetApp混合雲控制無法存取叢集、則不會顯示在「*升級*」頁面上。</block>
   <block id="28915945fea0308bbd2cdf191b79dd68" category="list-text">選取您要升級之叢集旁的下拉式箭頭、然後從* Element *索引標籤下可用的升級版本中選取。</block>
   <block id="effc57e6ad213336e96f00439b792658" category="paragraph">檔案成功上傳及驗證後、畫面上會顯示一則訊息。驗證可能需要幾分鐘的時間。如果您在此階段離開瀏覽器視窗、檔案上傳會保留下來。</block>
   <block id="2b96c3916188bec9de822541d9cf623f" category="cell">您正在升級執行元素11.8之前版本的H610S叢集。</block>
   <block id="b6d17024c4c99e0348e4d802e2508b6b" category="list-text">選取您要升級之叢集旁的下拉式箭頭、然後從可用的升級版本中選取。</block>
-  <block id="6c0526aed8944efbe6192f67a288210b" category="list-text">選擇*開始升級*。升級完成後、UI會提示您執行程序的階段2。</block>
-  <block id="2351c1e27093e71da7b231f5059cc476" category="list-text">完成中所需的其他步驟（階段2）<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block>並在UI中確認您已完成階段2。</block>
   <block id="d215420632f75acd5be40e1f61fad92e" category="paragraph">您可以在升級完成後下載記錄。如需各種升級狀態變更的相關資訊、請參閱 <block ref="963ffe23b927e51707381f60a050d9f4" category="inline-xref-macro-rx"></block>。</block>
   <block id="80744cb20ac19a71c799d04e9142c0f5" category="cell">叢集已升級至可用的最新元素版本。</block>
   <block id="00bdf0ae9f642cb5870113a82a86b5ba" category="cell">當NetApp混合雲控制系統無法連線至線上軟體儲存庫時、會顯示此狀態、而非*可用版本*。如果您有外部連線功能、但仍看到此訊息、請檢查您的 <block ref="3fa2d0476e68824edbcf4c56be4ac531" category="inline-link-macro-rx"></block>。</block>
   <block id="c25db468e3487f49a3fe8a8fd3ee6fca" category="cell">完成後續追蹤</block>
-  <block id="35be88b3f15b8f03a1b80ac136a5039d" category="cell">僅適用於從11.8之前的元素版本升級的H610S節點。完成升級程序的階段1之後、此狀態會提示您執行升級的階段2（請參閱<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block>）。完成階段2並確認您已完成、狀態會變更為*最新*。</block>
   <block id="c46945f40a6b2e92964b73d6d398f9d3" category="section-title">使用NetApp混合雲控制API來升級元素儲存設備</block>
   <block id="92c655ce479b4404b3a51afa0527fd9b" category="list-text">從回應中、複製並儲存套件ID以供後續步驟使用。</block>
   <block id="1ed5061d3b76fa0c219c1f1d3b386470" category="list-text">將儲存升級套件下載至管理節點可存取的裝置。</block>
@@ -11962,113 +11854,16 @@
   <block id="57d1363358ed907b2a8b4e6fd33958af" category="list-text">執行儲存設備升級：</block>
   <block id="488b3707934837436e2251dfc1801c6c" category="paragraph">有效負載應類似下列範例：</block>
   <block id="e06c90593ff7801dfefdc10b4aa3b913" category="paragraph">回應應指出「initializing」（正在初始化）狀態：</block>
-  <block id="ecfc48ecc069bce7a3654faa3d90f6ba" category="cell">如果您要升級執行11.8之前元素版本的H610S叢集、您會在回應本文中看到「finishedNeedsAck」狀態。您需要為每個H610S儲存節點執行額外的升級步驟（階段2）。</block>
-  <block id="0624b78cd328c0324c28437326d426bc" category="list-text">請參閱 <block ref="c50e0e127d4dd31a05f77777ae6c932f" category="inline-xref-macro-rx"></block> 並完成每個節點的程序。</block>
   <block id="81175df6f619617903d93fd97b35f2a3" category="list-text">在申請本文中輸入「action」：「Acknowledge」（確認）。</block>
-  <block id="f7cb949e38e4d529492a7a05aae8a9db" category="section-title">使用HealthTools升級連線站台的Element軟體</block>
-  <block id="a4a2ed7ca284633b8f6f40c70d9f2816" category="list-text">下載儲存升級套件；前往Element軟體<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 並將最新的儲存節點映像下載至非管理節點的裝置。</block>
-  <block id="2d95a5cefb4bb26e6c4f585e36b7dd0a" category="admonition">您需要最新版本的HealthTools來升級Element儲存軟體。</block>
-  <block id="0ec4573ec12f9825d509316cd1dca61c" category="list-text">將ISO檔案複製到管理節點的可存取位置、例如/tmp.</block>
-  <block id="f2c453451cde52ee9d2593c6e63274eb" category="paragraph">上傳ISO檔案時、請確定檔案名稱未變更、否則後續步驟將會失敗。</block>
-  <block id="897472b951e965022b0064dfc63a0f4a" category="list-text">*選用*：升級前、請從管理節點下載ISO至叢集節點。</block>
-  <block id="8c342106dd75068c48617d5dc840663d" category="paragraph">此步驟可在儲存節點上預先執行ISO、並執行額外的內部檢查、以確保叢集處於良好的升級狀態、進而縮短升級時間。執行此作業不會使叢集進入「升級」模式、也不會限制任何叢集作業。</block>
-  <block id="9fee9abc7b69dd07fa1a831af57ff9f5" category="admonition">在命令行中省略密碼以允許"finshat"提示輸入信息。對於包含特殊字元的密碼、請在每個特殊字元之前加上反斜槓（`\）。例如、「mypass!@1」應輸入為「mypass\!@」。</block>
-  <block id="c0f48060c6a1a380e510690cb8ad23a3" category="paragraph">*範例*請參閱下列範例輸入：</block>
-  <block id="29774ba2969a9ed257824aea7b1d0e83" category="paragraph">範例的輸出顯示、「最小」嘗試驗證是否有較新版的「最小」可用：</block>
-  <block id="6a2b7aeb8ab6b3c4290959fdc9ff1fe4" category="paragraph">請參閱以下成功的準備作業摘錄範例：</block>
-  <block id="5c51b050e2e731f34aacfaae2af1d74c" category="admonition">當接移完成時、訊息會在升級事件後顯示「儲存節點升級接移成功」。</block>
-  <block id="721d0077b7ed51a5880bf327fe87c25e" category="paragraph">升級完成後、階段性ISO會自動刪除。不過、如果升級尚未啟動、需要重新排程、則可使用下列命令手動取消工位ISO：</block>
-  <block id="20e277048d3d0bf030f1632276169fd4" category="paragraph">「finfest&lt;MVIP&gt;-u &lt;cluster使用者名稱&gt;--destage'</block>
-  <block id="c35f4ff71db325d5c3ccaa43e225dab4" category="paragraph">升級開始後、取消階段選項將不再可用。</block>
-  <block id="25dad1338668aacbcb8afbd3cdea0d1f" category="list-text">使用「shfinsh停滯」命令和ISO檔案路徑開始升級：</block>
-  <block id="3297b1b5dfa3e2129f1d657f2c682785" category="paragraph">「finfl攤位&lt;MVIP&gt;-u &lt;cluster使用者名稱&gt;&lt;path-toinstall-file-iso&gt;'</block>
-  <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 範例 *</block>
-  <block id="b429e8489b3eec4ac94daad30d905906" category="paragraph">請參閱下列輸入命令範例：</block>
-  <block id="d91b070c7f8d6b290722e056d7aff9ce" category="paragraph">請參閱下列成功升級的摘錄範例。升級事件可用於監控升級進度。</block>
-  <block id="503d85929978f593abfff70c30d833a9" category="section-title">使用HealthTools升級黑暗站台的Element軟體</block>
-  <block id="dda57880ebc4e427f14795d16b1ee0ad" category="paragraph">您可以使用HealthTools工具套件、在NetApp Element 沒有外部連線的暗處更新VMware軟體。</block>
-  <block id="66605290f00669ae460e8d4ed9f22626" category="list-text">移至Element軟體<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block>。</block>
-  <block id="33ff5a5d635fbe38905932dd4b045967" category="list-text">選取正確的軟體版本、並將最新的儲存節點映像下載到不是管理節點的電腦。</block>
-  <block id="a6c9e3a7671c1fd9d7328c3be5d107b5" category="inline-link">Json 檔案</block>
-  <block id="cabc168d31fc4c314cb500b86813e131" category="list-text">請下載<block ref="747556e0149f6188670059abaeb4fd3e" category="inline-link-rx"></block> <block ref="53034c8197fc6f1049d26569a56db918" category="inline-link-rx"></block> 從非管理節點的電腦上的NetApp支援網站、將其重新命名為「metadata.json」。</block>
-  <block id="d862ce84c0cf2ec154f546bffc1c8204" category="list-text">將ISO檔案複製到可存取位置的管理節點、例如「/tmp」。</block>
-  <block id="22e106a3b8f9362d811fda2079e6b8db" category="admonition">例如、您可以使用scp來執行此作業。上傳ISO檔案時、請確定檔案名稱未變更、否則後續步驟將會失敗。</block>
-  <block id="1ef2f7a3b01bf7110273e9236fe54c5f" category="list-text">執行「shfupdate-healtools-command：</block>
-  <block id="490193edf4b0a3ee585d80801462b05d" category="list-text">檢查安裝的版本：</block>
-  <block id="dbb4aef8d48a834601a0005f61d97520" category="list-text">對照中繼資料Json檔案檢查最新版本：</block>
-  <block id="28eae133d242c1568712c3d66fb589c1" category="list-text">確保叢集已就緒：</block>
-  <block id="5353ac2ddf78bfec1f324dc1ca4a3897" category="list-text">使用ISO檔案路徑和中繼資料Json檔案路徑執行「shfinshet'」命令：</block>
-  <block id="edb52d55fa4e1671264020c943f5d142" category="paragraph">*可選*您可以將"--site"標記添加到"shfinshl"命令中，以便預先準備升級。</block>
-  <block id="ebb27dfdf3051caa1846a27f5d3d2f10" category="admonition">如果您要將H610S系列節點升級至Element 12.3.x、且節點執行的元件版本早於11.8、則需要執行其他升級步驟（<block ref="a5130687e57e8817eb0a5750138c4a5d" category="inline-xref-macro-rx"></block>）。如果您執行的是元素11.8或更新版本、則不需要執行其他升級步驟（階段2）。</block>
-  <block id="b70733b60dd9e413d06436acea52c35f" category="section-title">如果使用HealthTools升級失敗、會發生什麼情況</block>
-  <block id="3b49bce18ca96bf4f13654859689dc77" category="paragraph">如果軟體升級失敗、您可以暫停升級。</block>
-  <block id="fcf06359111371e9dfb5f83b2c9b54e4" category="admonition">您只能使用Ctrl-C暫停升級這可讓系統自行清理。</block>
-  <block id="3c330e1adb1ca6c3bd128f474aaf71a4" category="paragraph">當「finsh延遲」等待叢集故障清除、如果任何故障導致故障持續存在、「finsh延遲」將不會繼續到下一個節點。</block>
-  <block id="36eb9f386bd0dec17f38604d863ef7b5" category="list-text">您應該使用Ctrl+C來停止「finshtrl」</block>
-  <block id="93e83f02023d196b290fe8c8c1561d92" category="list-text">請聯絡NetApp支援部門、以協助調查故障。</block>
-  <block id="55cc2093a3a8b322989ca25e66eaaded" category="list-text">使用相同的"shfinsh回 寫"命令繼續升級。</block>
-  <block id="84d461992a02b71c14698346b8e98ecf" category="list-text">使用Ctrl+C暫停升級時、如果升級目前正在升級節點、請選擇下列其中一個選項：</block>
-  <block id="d167f82509b4775dc2e4f0591d367688" category="list-text">* wait*：在重設叢集常量之前、請先讓目前升級的節點完成。</block>
-  <block id="5bdc5e3ee7757312a04a2fa4277b16fa" category="list-text">*繼續*：繼續升級、取消暫停。</block>
-  <block id="bf47816b7afaf79380fac533b44f3274" category="list-text">*中止*：重設叢集常量、並立即中止升級。</block>
-  <block id="7946671b5ea23ad41d0dc6ba37b5af51" category="section-title">將H610S儲存節點升級至Element 12.3.x（階段2）</block>
-  <block id="dc060618420764cdfc7790fdeb1e33e8" category="paragraph">如果您要將H610S系列節點升級至Element 12.3.x、且節點執行的元素版本早於11.8、則升級程序需要兩個階段。</block>
-  <block id="5e44a1903ec70087cd72eac7efa174b3" category="paragraph">第1階段先執行、步驟與標準升級至元件12.3.x程序相同。它一次在叢集的一個節點上、以循環方式安裝Element Software和所有5個韌體更新。由於韌體有效負載的關係、此程序預計每個H610S節點約需1.5至2小時、包括在升級結束時為每個節點執行單一冷開機週期。</block>
-  <block id="ab57fd0432e25d5b3013133a1c910d56" category="inline-link">KB</block>
-  <block id="7d9b0c6e23092c34bac9505f8cb8d42c" category="paragraph">第2階段包括完成步驟、為所需的每個H610S節點執行完整的節點關機和電源中斷<block ref="30b30908e7d32799d6c615b58aa4901f" category="inline-link-rx"></block>。此階段預計每個H610S節點約需一小時。</block>
-  <block id="da67066390c502751474cd0e4f74740c" category="admonition">完成階段1之後、五個韌體更新中的四個會在每個H610S節點的冷開機期間啟動；不過、複雜的可程式化邏輯裝置（CPLD）韌體需要完全中斷電源並重新連線才能完全安裝。CPLD韌體更新可在未來重新開機或重新開機期間、防止NVDIMM故障和中繼資料磁碟機被逐出。此電力重設預計每個H610S節點約需一小時。它需要關閉節點、拔下電源線或透過智慧型PDU中斷電源、等待約3分鐘、然後重新連接電源。</block>
-  <block id="1b93ab1b5459eb73d25ad06d2fcff83c" category="list-text">您已完成H610S升級程序的第1階段、並已使用標準元素儲存升級程序之一來升級儲存節點。</block>
-  <block id="c74c1e6252d1029f4588b6fffd575b29" category="admonition">第2階段需要現場人員。</block>
-  <block id="b04835ea05c5105d613b7fb4a9101224" category="list-text">（階段2）完成叢集中每個H610S節點所需的電源重設程序：</block>
-  <block id="d11f8cc6c1645d770c8cdaa2a8979e5b" category="admonition">如果叢集也有非H610S節點、則這些非H610S節點可免除階段2的限制、不需要關閉或中斷電源。</block>
-  <block id="933f74a3885353a5d5a55ba2720e3434" category="list-text">請聯絡NetApp支援部門以取得協助、並安排此升級。</block>
-  <block id="370ad5e096ae3a6d595b48d9baa50889" category="list-text">請遵循本節中的第2階段升級程序<block ref="30b30908e7d32799d6c615b58aa4901f" category="inline-link-rx"></block> 這是完成每個H610S節點升級所需的條件。</block>
-  <block id="f1ffb8126e34ff6fabbff0f1306dcd3f" category="summary">在系統升級過程中、您應該升級至NetApp Element 最新的HealthTools for VMware軟體。</block>
-  <block id="65674d989e868e2706984a87202166be" category="doc">升級至最新的HealthTools</block>
-  <block id="bf809731b1c0be0233b39fe81ef846b1" category="inline-link-macro">使用NetApp混合式雲端控制進行元素升級</block>
-  <block id="b35902713b25bf713fe3ad5e9d3eb99e" category="paragraph">在從11.1或更早版本開始元件儲存升級之前、您應該先升級HealthTools套件。只有在您執行的管理節點和元件軟體為11.1或更早版本時、才需要升級HealthTools。不需要HealthTools <block ref="109fec2a48373fee9d14f8ad0b3783ff" category="inline-link-macro-rx"></block>。</block>
-  <block id="f8945dbfb9c59a4484f33852cc6f95c9" category="admonition">Element軟體12.3.2是您可使用NetApp HealthTools升級至的最終版本。如果您執行Element軟體11.3或更新版本、則應使用NetApp混合雲控制來升級Element軟體。您可以使用NetApp HealthTools升級Element版本11.1或更早版本。</block>
-  <block id="497e1101c9e2f864d2e2dda128ecb452" category="list-text">您執行的是管理節點11.0、11.1或更新版本。</block>
-  <block id="dad7cfe229aa9e4b9f9b9cf0e87704cc" category="paragraph">NetApp混合雲控制升級不適用於舊版服務套裝組合。</block>
-  <block id="9def504d64ab69879cb0311556fe8cc3" category="inline-link">HealthTools</block>
-  <block id="36d419edc3b1ab2e45efc2685e55bd65" category="list-text">您已下載最新版本的<block ref="ca5118192781a2e9e031eb3a76fde869" category="inline-link-rx"></block> 並將安裝檔案複製到管理節點。</block>
-  <block id="903d0f97d11dd5ed20516ec36dd2abc7" category="admonition">您可以執行「shipdate、healtools -v」命令來檢查本機安裝的HealthTools版本。</block>
-  <block id="10fbc8fd3ac1a011e7631cdf01332562" category="list-text">若要將HealthTools用於黑暗站台、您需要執行下列額外步驟：</block>
-  <block id="6a2367272d7df1e3bc820ae7cd85cca3" category="list-text">下載 <block ref="a8a51581fa7186019dceaf790825b165" category="inline-link-macro-rx"></block> 從非管理節點的電腦上的NetApp支援網站、將其重新命名為「metadata.json」。</block>
-  <block id="f86ddd2fb45950e1479e5ffde319cb8f" category="list-text">讓管理節點在黑暗站台上啟動並執行。</block>
-  <block id="895333aab6636a8486b9a716f660d6fe" category="paragraph">HealthTools套件中的命令需要提升權限才能執行。您可以使用「show」預先輸入命令、也可以將使用者升級為root權限。</block>
-  <block id="0d692bdd6a5dd4a91353f66453e4d0fa" category="admonition">您使用的HealthTools版本可能比下方的範例輸入和回應更為更新。</block>
-  <block id="30fe2ad230fe89cd62c8899957b80fc0" category="list-text">執行「shupdate、healtools &lt;安裝檔案路徑&gt;」命令、以安裝新的HealthTools軟體。</block>
-  <block id="2b39b17bd91d29a7c2e44d0eb5d9f505" category="paragraph">範例輸入：</block>
-  <block id="6d55356ca8cb9b27cfa6e2bb46ebb089" category="paragraph">回應範例：</block>
-  <block id="52c024f42502475a786f1217e16b22dc" category="list-text">執行「shupdate、healtools-v」命令、確認已升級安裝的版本。</block>
   <block id="d7cc77e1654b4ecc5878545e7bf4f78d" category="summary">在NetApp SolidFire 的不完整儲存系統升級過程中、您需要升級管理節點。</block>
   <block id="1761ea607c3f8d002099290408801187" category="doc">升級管理節點</block>
-  <block id="1d9f05f083ca394b7aa3fbee6b4ba1c9" category="paragraph">您可以從11.0版或更新版本、將管理節點升級至管理節點12.3.x版。</block>
-  <block id="5b6ab4d3c53ec5567002938471c9c120" category="admonition">vCenter外掛程式4.4或更新版本需要以模組化架構建立的管理節點11.3或更新版本、並提供個別的服務。</block>
-  <block id="7876c958d2731a283bba894ce3294f21" category="paragraph">請選擇下列其中一個管理節點升級選項：</block>
-  <block id="728469310b9db013f8d3ad56547efdaa" category="list-text">管理節點12.3.2包含已啟用虛擬磁碟區（VVols）功能之儲存叢集的安全防護措施。如果您的儲存叢集已位於元件123、且已啟用VVols功能、強烈建議升級至12.3.2。</block>
-  <block id="2c191a2c0c7197808c880518728ba922" category="list-text">管理節點12.3.1中沒有其他功能變更或錯誤修正。如果您已經在執行管理節點123、則不需要將其升級至12.3.1。</block>
-  <block id="877752a02a9a723465e45e0699c0408a" category="list-text">如果要從管理節點12．2升級：<block ref="13ca98900fab2e9dc617ec4e80e5ef22" category="inline-xref-macro-rx"></block></block>
-  <block id="c385c319a88b75509bcd9e965511f832" category="list-text">如果要從管理節點12升級：<block ref="837fd47411e60554dd964007e7b1f57c" category="inline-xref-macro-rx"></block></block>
-  <block id="d9ce85fadb1d93ae48ece9ac5d9093f9" category="list-text">如果要從管理節點11.3、11.5、11.7或11.8進行升級：<block ref="3a74f9f0175a11af5a47bdad606bbcd5" category="inline-xref-macro-rx"></block></block>
-  <block id="22b193ec933652dd527b89b17c80d83d" category="list-text">如果您要從管理節點11.0或11.1升級：<block ref="b1903eda12feed7e11fce1fdc8305f3f" category="inline-xref-macro-rx"></block></block>
-  <block id="d227cc2a1a7967b0993aca8c1632ef06" category="list-text">如果要從管理節點10.x版升級：<block ref="ea1d9591bcd49e83ebef91210d8c75f6" category="inline-xref-macro-rx"></block></block>
-  <block id="bc9f9d7d7718066607614ff9ec0392da" category="paragraph">如果您已*連續*更新管理服務版本（1）、以及（2）您的元素儲存版本、而且想要*保留*現有的管理節點、請選擇下列選項：</block>
   <block id="1edc36bdf08bca8bac4f78d104c92780" category="admonition">如果您未依序更新管理服務、接著更新元素儲存設備、則無法使用此程序重新設定重新驗證。請改為執行適當的升級程序。</block>
-  <block id="2317b568bcd918edcf31949bac7267a8" category="list-text">如果您要保留現有的管理節點：<block ref="35b702a8c6556d6de2f367adef3740ff" category="inline-xref-macro-rx"></block></block>
-  <block id="da6d397cfaaa44a28698a3bcfd23a4da" category="section-title">將管理節點升級至12.3.x版、從12.2.</block>
-  <block id="66e1e9a986e9982a40d12dab1294fd2d" category="paragraph">您可以執行管理節點的就地升級、從版本12.2升級至版本12.3.x、而不需要配置新的管理節點虛擬機器。</block>
-  <block id="87c45a5003b849072d83b4e02ba24f38" category="admonition">Element 12.3.x管理節點為選用升級。現有部署不需要此功能。</block>
   <block id="ec29698b029ebdc0e8d965b404b70339" category="list-text">管理節點VM的RAM為24GB。</block>
-  <block id="8546c62730d8cfcda5a49868756174b8" category="list-text">您要升級的管理節點為12版、使用的是IPv6網路。管理節點12.3.x版不支援IPv6。</block>
   <block id="d6db6ab6b83c4d33fe8d22d8155fd5df" category="admonition">若要檢查管理節點的版本、請登入管理節點、然後在登入橫幅中檢視元素版本編號。</block>
   <block id="37a42081cc0d0c72d69723b5792a6c73" category="list-text">您已使用NetApp混合雲控制將管理服務套裝組合更新為最新版本。您可以從下列IP存取NetApp混合雲控制：「\https://&lt;ManagementNodeIP&gt;`」</block>
-  <block id="af893cd5d7f5dc057af51cccbf8db284" category="list-text">如果您要將管理節點更新至12.3.x版、則需要使用管理服務2.14.60或更新版本才能繼續。</block>
   <block id="580c35d1b4dc1d63073ae537ce0f28ab" category="inline-link-macro">設定額外的儲存NIC</block>
   <block id="4733d6f93dbca188e79e25900eaeacb7" category="list-text">您已依照的指示設定其他網路介面卡（如有需要） <block ref="1f5ebd4d6fe6b214007c2692b1a22cfb" category="inline-link-macro-rx"></block>。</block>
   <block id="97badad042e3a18dd496d204994f3a2f" category="admonition">如果eth0無法路由至SVIP、則持續磁碟區可能需要額外的網路介面卡。在iSCSI儲存網路上設定新的網路介面卡、以允許設定持續磁碟區。</block>
-  <block id="2759cbca8a5572fe6fdc10d347df91c2" category="list-text">儲存節點正在執行元素11.3或更新版本。</block>
   <block id="1a6ffd97834fd7495156f52f3058e50b" category="list-text">使用SSH或主控台存取權登入管理節點虛擬機器。</block>
   <block id="303c7d52b5c18e714947ecd4996594a2" category="inline-link">管理節點ISO</block>
   <block id="bc6733dc102d98376848617102ed0352" category="list-text">下載<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> 適用於從NetApp Support網站到管理節點虛擬機器的Element軟體。</block>
@@ -12084,90 +11879,15 @@
   <block id="91f8485e670b52a7db8bd6e03c9ea22c" category="list-text">在管理節點上、執行「部署節點」指令碼、以保留先前的管理服務組態設定：</block>
   <block id="26b94eab828f09c4a896ceea69341e72" category="admonition">指令碼會保留先前的管理服務組態、包括Active IQ 來自於資料收集器服務、控制器（vCenters）或Proxy的組態、視您的設定而定。</block>
   <block id="a2f6f7c35b138d94e9b2424fdbb2d5c7" category="admonition">如果您先前已停用管理節點上的SSH功能、則需要 <block ref="babf2b858a12e4314c7067787e8a0fcb" category="inline-link-macro-rx"></block> 在恢復的管理節點上。提供SSH功能 <block ref="9dd7f5719fe61d2f4608af99c83acda9" category="inline-link-macro-rx"></block> 預設會在管理節點上啟用。</block>
-  <block id="bf4fe82ff2e76a42004dfe57ca39c520" category="section-title">將管理節點升級至12.3.x版、從12.0升級至12.3.x版</block>
-  <block id="1e6acaab5ffbb0dd6933f75ea2a0c42f" category="paragraph">您可以在不需資源配置新的管理節點虛擬機器的情況下、從12.0版就地升級至12.3.x版。</block>
-  <block id="f9412ec565dbf89e3de8549cd6a8b45f" category="list-text">設定管理節點VM RAM：</block>
-  <block id="9a24733d9300f00e2d45d4500a42e32a" category="admonition">提供SSH功能 <block ref="9dd7f5719fe61d2f4608af99c83acda9" category="inline-link-macro-rx"></block> 在執行管理服務2.18及更新版本的管理節點上、預設為停用。如果您先前已在管理節點上啟用SSH功能、則可能需要 <block ref="babf2b858a12e4314c7067787e8a0fcb" category="inline-link-macro-rx"></block> 在升級的管理節點上。</block>
-  <block id="5f3f7ed38dd7e8e5abc2a1b8ebbec089" category="section-title">將管理節點從11.3升級至11.8版12.3.x</block>
-  <block id="7ea6f441f843139309e6039039c14585" category="paragraph">您可以在不需要佈建新管理節點虛擬機器的情況下、從11.3、11.5、11.7或11.8版就地升級至12.3.x版。</block>
-  <block id="c227e5ec21b433f1d94bd39158ccc826" category="list-text">您要升級的管理節點為11.3、11.5、11.7或11.8版、並使用IPv4網路。管理節點12.3.x版不支援IPv6。</block>
-  <block id="4d7fd88dd49b896adac31ac81b579f91" category="list-text">請在下載的檔案上執行md5sum、檢查下載內容的完整性、並將輸出與NetApp Support網站上的Element軟體進行比較、如下列範例所示：</block>
-  <block id="5db80cf9c51d272c8b8ab5662b7656d1" category="list-text">在11.3、11.5、11.7或11.8管理節點上、執行下列命令來升級管理節點OS版本。指令碼會在升級後保留所有必要的組態檔、例如Active IQ 收集器和Proxy設定。</block>
-  <block id="438c35cd352fee993b72c08b374a6acf" category="section-title">將管理節點從11.1或11.0升級至12.3.x版</block>
-  <block id="93ed26ee1117aa5cedb29715f0312265" category="paragraph">您可以執行管理節點的就地升級、從11.0或11.1升級至12.3.x版、而不需要配置新的管理節點虛擬機器。</block>
-  <block id="b6ce91a628d7a7c2eeb09aeb657c0fe7" category="admonition">使用最新的HealthTools來升級Element軟體。</block>
-  <block id="81044b834120f4f6ae976694410c56b7" category="list-text">您要升級的管理節點為11.0或11.1版、使用的是IPv4網路。管理節點12.3.x版不支援IPv6。</block>
-  <block id="f02d775433239dd5573e9a026931277b" category="list-text">對於管理節點11.0、需要手動將VM記憶體增加至12GB。</block>
-  <block id="8f68616172f6cfbee32b6852f5186f55" category="list-text">您已依照管理節點使用者指南中的儲存NIC（eth1）設定說明、設定額外的網路介面卡（若有需要）。</block>
-  <block id="00310028c5a8403863008de7035f409a" category="list-text">切換到主目錄、然後從/mnt:</block>
-  <block id="c50867193a4d12b8bfb87a2df8c47a71" category="list-text">執行下列其中一個指令碼、並提供升級管理節點OS版本的選項。只執行適用於您版本的指令碼。每個指令碼都會在升級後保留所有必要的組態檔、例如Active IQ 收集器和Proxy設定。</block>
-  <block id="8ac775eb8d83e9b53e94ef90e582d8fb" category="list-text">在11.1（11.1.0.73）管理節點上、執行下列命令：</block>
-  <block id="15514a6685b97d4827063f392005ada9" category="list-text">在11.1（11.1.0.72）管理節點上、執行下列命令：</block>
-  <block id="cea70f8d3d71cc93e034ab091aba6cca" category="list-text">在11.0（11.0.0.781）管理節點上、執行下列命令：</block>
-  <block id="c9440d3431e64f8d1456fbd256043dc5" category="list-text">在12.3.x管理節點上、執行「升級mnode-」指令碼、以保留先前的組態設定。</block>
-  <block id="2f6d9d217b8454c59235a5281310e1ac" category="admonition">如果您要從11.0或11.1管理節點移轉、指令碼會將Active IQ 該收集器複製到新的組態格式。</block>
-  <block id="56ca7bc89bee5837759eb13fcc22f8d5" category="list-text">對於由現有管理節點11.0或11.1管理且具有持續磁碟區的單一儲存叢集：</block>
-  <block id="1c36429bc21514f52ce4c34e52699be1" category="list-text">對於由現有管理節點11.0或11.1管理且無持續磁碟區的單一儲存叢集：</block>
-  <block id="1d0dd1d7212314cbec4589ef288c9451" category="list-text">對於由現有管理節點11.0或11.1管理且具有持續磁碟區的多個儲存叢集：</block>
-  <block id="efc71656b9c688dd8b024426e9fac6f5" category="list-text">對於由現有管理節點11.0或11.1管理且無持續磁碟區的多個儲存叢集（「-PVM」旗標是提供叢集的MVIP位址之一）：</block>
-  <block id="1bb66cf108c1250035854b468fb51647" category="list-text">（適用於SolidFire 所有採用NetApp Element VMware vCenter Server的NetApp支援功能的NetApp全快閃儲存設備安裝）請依照中的步驟、更新12.3.x管理節點上的vCenter外掛程式 <block ref="61768f3798a436486dacb908355263cd" category="inline-link-macro-rx"></block> 主題：</block>
-  <block id="49fe4cc83f5673ee4313707be652fb5a" category="list-text">使用管理節點API找出安裝的資產ID：</block>
-  <block id="c1d91df00a0c3fac54e32076a41126ac" category="list-text">前往儲存設備MVIP並登入。此動作會在下一個步驟中接受憑證。</block>
-  <block id="1128aaca3a95604af9f4e6f46e755aa7" category="section-title">從管理節點10.x版移轉至11.x版</block>
-  <block id="aa85ba7b60fc5a8d160bcac4e76602a7" category="inline-link-macro">最新的HealthTools</block>
-  <block id="4fa4a4a88296bc1c5f7da6db9c42ec09" category="paragraph">如果您的管理節點版本為10.x、則無法從10.x升級至11.x您可以改用此移轉程序、將組態從10.x複製到新部署的11.1管理節點。如果您的管理節點目前為11.0以上、則應跳過此程序。您需要管理節點11.0或11.1及 <block ref="3960d1c84dafac3bed344e6af98b8878" category="inline-link-macro-rx"></block> 將Element軟體從10.3+升級到11.x</block>
-  <block id="5ddc21147ef02867c28649242e850a5d" category="list-text">從VMware vSphere介面部署管理節點11.1 OVA並開啟電源。</block>
-  <block id="df97bbffb2e220794d2b919824938c8e" category="list-text">開啟管理節點VM主控台、以開啟終端使用者介面（TUI）。</block>
-  <block id="701707589c0dd91a43f6fc5b1ebe2396" category="list-text">使用TUI建立新的系統管理員ID並指派密碼。</block>
-  <block id="de8fb9a417e5ff3f4cf6f4376300aedb" category="list-text">在管理節點TUI中、使用新的ID和密碼登入管理節點、然後驗證其運作是否正常。</block>
-  <block id="f91d0a737a08806ffd3053b00e324760" category="list-text">從vCenter或管理節點TUI取得管理節點11.1 IP位址、然後瀏覽至連接埠9443上的IP位址、以開啟管理節點UI。</block>
-  <block id="9f9e2eada94a2b513e7ea2fd2070a26f" category="list-text">在vSphere中、選取* NetApp Element 《組態*》&gt;*《mNode設定*》。（在較舊版本中、最上層的功能表是* NetApp SolidFire 點菜組態*。）</block>
-  <block id="94ab457d92269ad56ccbd284e4f2d66e" category="list-text">選擇* Actions *&gt;* Clear*。</block>
-  <block id="d12a393c1ac6d6c4feb3dcc671803e35" category="list-text">若要確認、請選取* Yes *。mNode Status（mNode狀態）欄位應報告未設定。</block>
-  <block id="56a32dd49a6dbb0e0348a840882069b1" category="admonition">第一次移至* mNode Settings*索引標籤時、mNode Status欄位可能會顯示* Not Configured *、而非預期的* Up *；您可能無法選擇* Actions *&gt;* Clear*。重新整理瀏覽器。mNode Status（mNode狀態）字段最終將顯示* up *。</block>
-  <block id="bcc7cd82367090bebeb1a81f71b20707" category="list-text">登出vSphere。</block>
-  <block id="6bc08ff2c798923f83399b466e83828c" category="list-text">在網頁瀏覽器中、開啟管理節點登錄公用程式、然後選取* QoSSIOC Service Management *：</block>
-  <block id="b142f691f9ca32840a06262706751854" category="list-text">設定新的QoSSIOC密碼。</block>
-  <block id="7d175f707658ab8d8d7209eef36c531b" category="admonition">預設密碼為SolidFire 「不一樣」。此密碼是設定新密碼的必要密碼。</block>
-  <block id="7b837430d09749101caac8ac6929be11" category="list-text">選取* vCenter外掛程式登錄*索引標籤。</block>
-  <block id="d620125983dc5f2427e48ef8cf64e05d" category="list-text">選擇*更新外掛程式*。</block>
-  <block id="6387feb1f0b906aebdb1cafedac7cc98" category="list-text">輸入必要的值。完成後、請選取*更新*。</block>
-  <block id="d2ba2536a729c91022a8866cb76aa0d0" category="list-text">登入vSphere、然後選取* NetApp Element 《組態*》&gt;*《mNode設定*》。</block>
-  <block id="f4c7104fec7161266ebc2750f99bf53e" category="list-text">選取*「Actions」（動作）*&gt;*「Configure」（設定）*。</block>
-  <block id="39bcb493b71e1252cc79ed60aca98b72" category="list-text">提供管理節點IP位址、管理節點使用者ID（使用者名稱為「admin」）、您在登錄公用程式的「* QoSSIOC Service Management *」（* QoSSIOC服務管理）標籤上設定的密碼、以及vCenter使用者ID和密碼。</block>
-  <block id="394f33ee158efaf5b14e0d18c2f943ed" category="paragraph">在vSphere中、* mNode Setting*索引標籤應顯示mNode狀態* up *、表示管理節點11.1已登錄至vCenter。</block>
-  <block id="7ac5f314424f01e4c9540460a1f41378" category="list-text">從管理節點登錄公用程式（「https://&lt;mNode 11.1 IP位址&gt;:9443」）、從* QoSSIOC Service Management *重新啟動SIOC服務。</block>
-  <block id="7d9376db0a395aba952d3115a2d3e0a0" category="list-text">等待一分鐘、然後查看* NetApp Element 《組態*》&gt;*《mNode設定*》索引標籤。這應該會將mNode狀態顯示為* up *。</block>
-  <block id="aa6036dbf6cc3ab20918cf83049c5f05" category="paragraph">如果狀態為*向下*、請檢查「/SF/packages/sioc/app.properties`」的權限。檔案擁有者應有讀取、寫入及執行權限。正確的權限應顯示如下：</block>
-  <block id="4055776ed89046d8a419faa68b1ff692" category="list-text">當SIOC程序啟動且vCenter將mNode狀態顯示為* up *之後、請檢查管理節點上的「sf-HCI - nma」服務記錄。不應有錯誤訊息。</block>
-  <block id="9340a1ef5ccd5faf2b0cdde0538a7d6b" category="list-text">（僅適用於管理節點11.1）以root權限將SSH移入管理節點11.1版、然後使用下列命令啟動NMA服務：</block>
-  <block id="fc203d76381532a9354d7843d302c6d2" category="list-text">從vCenter執行移除磁碟機、新增磁碟機或重新開機節點的動作。這會觸發儲存警示、而這些警示應在vCenter中報告。如果此功能正常運作、NMA系統警示將如預期般運作。</block>
-  <block id="2c006b8117a2062434d9558b860cffe9" category="list-text">如果ONTAP Select 在vCenter中設定了VMware vCenter、ONTAP Select 請將「.ots.properties`檔案從先前的管理節點複製到管理節點版本11.1（/SF/packages/nma/conf/.ots.properties`）、然後使用下列命令重新啟動NMA服務、以在NMA中設定VMware提醒：</block>
-  <block id="448a911dfb4872dba88fdc912fe3c930" category="list-text">使用下列命令檢視記錄檔、驗ONTAP Select 證此功能是否正常運作：</block>
-  <block id="d41a50f38b3094e878d30b80d8cb2dd0" category="list-text">執行下列動作來設定Active IQ 功能：</block>
-  <block id="dce36c2de2f9b7e677158933fe286b84" category="list-text">在管理節點11.1版中使用SSH、然後前往「/SF/packages/collector」目錄。</block>
-  <block id="337d79852891a37d41285c9101c3fff4" category="list-text">執行下列命令：</block>
-  <block id="a7e684f6e673c62db23cd556a0bed754" category="list-text">出現提示時、輸入管理節點UI密碼。</block>
-  <block id="62e3899fe2adfc651dc44b617edd0895" category="list-text">執行下列命令：</block>
-  <block id="0de2f4579939a041b4a4bc0b73ea7714" category="list-text">驗證「sfcollector」記錄以確認其運作正常。</block>
-  <block id="c99a89b8b61e8c400aa4ad70d1c419a0" category="list-text">在vSphere中、* NetApp Element 《*效能不均組態*》&gt;*「mNode設定*」索引標籤應顯示mNode狀態為* up *。</block>
-  <block id="a6111d07decd41df4a8fc7d16a7ea211" category="list-text">驗證NMA是否回報系統警示和ONTAP Select 不實警示。</block>
-  <block id="d1c20969ac5c1bd141ec1b70920ff9d8" category="list-text">如果一切正常運作、請關閉並刪除管理節點10.x VM。</block>
   <block id="4b0a80de8336b03c597eb9e339a88503" category="section-title">使用管理節點REST API重新設定驗證</block>
   <block id="3f171b923ed811e8ed015dcad2a9829a" category="paragraph">如果您已依序升級（1）管理服務和（2）元素儲存設備、則可以保留現有的管理節點。如果您已依照不同的升級順序執行、請參閱就地管理節點升級程序。</block>
-  <block id="ef20e9e4192e944ceb425ad094982b81" category="list-text">您已將管理服務更新為2.10.29或更新版本。</block>
-  <block id="7d77f30dd6c3619cac922b1bf9fc7a7c" category="list-text">您的儲存叢集正在執行Element 12.0或更新版本。</block>
-  <block id="69bfe4b77f2e59784e9a7c91881f1161" category="list-text">您的管理節點為11.3或更新版本。</block>
   <block id="69f5442caf6936145cd4f73e7c83f2a4" category="list-text">您已依序更新管理服務、然後升級您的Element儲存設備。除非您依照所述順序完成升級、否則無法使用此程序重新設定驗證。</block>
   <block id="b8e3af673664eb79ebe128d1f309bdd6" category="list-text">從REST API UI中、選取* POST /services / reconfigure驗證*。</block>
   <block id="d4d6be65d679aa54296e16328ec041bf" category="list-text">對於* load_ims*參數、請選取「true」。</block>
   <block id="2a1519db00ab50aa3a0e4964f93a27f8" category="paragraph">回應本文表示重新設定成功。</block>
   <block id="a498167117e7a2196c9adf20f5cb149b" category="summary">在升級NetApp SolidFire 時、您需要執行NetApp Element 有關該軟件的健全狀況檢查。</block>
   <block id="f5734d4e8acdeb186a1c22c351c4a0bf" category="paragraph">您必須在升級元素儲存設備之前執行健全狀況檢查、以確保叢集中的所有儲存節點都已準備好進行下一個元素儲存設備升級。</block>
-  <block id="e8feae6554a0416e918615cc5ee78661" category="paragraph">您可以使用NetApp混合雲控制UI、NetApp混合雲控制API或HealthTools套件執行健全狀況檢查：</block>
   <block id="0096c254c62197f713da16cbb8cf17bf" category="list-text"><block ref="43e2712ac16e77262f42113e91f41bfc" category="inline-xref-macro-rx"></block> （偏好的方法）</block>
-  <block id="c0ce03ffdb1b2eaf2997d4b003a6c398" category="list-text"><block ref="33b5a46d5ad547c7160d2877495cd388" category="inline-xref-macro-rx"></block></block>
-  <block id="2321e5c974e77f58ee923d1e00e01167" category="list-text"><block ref="2afbc4735288b232693d6654f053bf83" category="inline-xref-macro-rx"></block></block>
   <block id="d9072e37167baf145bc5655975039b9c" category="paragraph">您也可以深入瞭解服務執行的儲存健全狀況檢查：</block>
   <block id="62a5effb348b201359f9288178063353" category="list-text"><block ref="b9c91f9aab75a470a42dbb291a17df8d" category="inline-xref-macro-rx"></block></block>
   <block id="dd2a5a4091be5700ab6001e60a9a6483" category="section-title">在升級儲存設備之前、請使用NetApp混合雲控制來執行Element儲存設備健全狀況檢查</block>
@@ -12198,32 +11918,6 @@
   <block id="2531dd1ed0ade9f475e182123de3f411" category="list-text">選取*「Get」（取得）/「health-checksore/｛healstChecksId｝/「log*」</block>
   <block id="d84036b22a23f84fa8de705bbe508b0b" category="list-text">檢閱任何特定錯誤、並取得相關的知識庫文章連結。</block>
   <block id="ebf662609bd0c670a5048adf12e5dd87" category="list-text">解決叢集問題之後、請再次執行*取得RESI/health-checks/｛healChecksId｝/ log*。</block>
-  <block id="59a71894f03a45e8e483f46324a0cbe2" category="section-title">在升級儲存設備之前、請使用HealthTools執行Element儲存設備健全狀況檢查</block>
-  <block id="0d1274d4382b6170548bfed6eb0a1d26" category="paragraph">您可以使用「shupgradecheck」命令來驗證儲存叢集是否已準備好升級。此命令可驗證擱置節點、磁碟空間和叢集故障等資訊。</block>
-  <block id="a1a601d4e91ec78d6ee10f6ac40a77bb" category="inline-link-macro">HealthTools升級</block>
-  <block id="9496f5e851814299d82846f22feafc17" category="paragraph">如果您的管理節點位於沒有外部連線的黑暗站台、則升級整備度檢查需要您在期間下載的「metadata.json」檔案 <block ref="6108af9ca5aa4fda7c0167fbe5ccda18" category="inline-link-macro-rx"></block> 以成功執行。</block>
-  <block id="b862b2474fa07cc404db84c594efce4c" category="paragraph">本程序說明如何因應產生下列其中一項結果的升級檢查：</block>
-  <block id="f57425902a7823604b07d6956e06c26f" category="list-text">成功執行「shupgradecheck」命令。您的叢集已準備好升級。</block>
-  <block id="b0008019e4765a0f5ce8ca1d8597d8b1" category="list-text">在「shupgradecheck」工具中檢查失敗、並顯示錯誤訊息。您的叢集尚未準備好升級、需要執行其他步驟。</block>
-  <block id="6ce8ca8ee619e4a32bceee7175e95782" category="list-text">您的升級檢查失敗、並顯示錯誤訊息指出HealthTools已過期。</block>
-  <block id="9ea9403d66dae4b0e908c51cfd2a7be2" category="list-text">您的升級檢查失敗、因為管理節點位於黑暗站台。</block>
-  <block id="0a69c13118585a503647b3be20d5a08a" category="list-text">執行「shupgradecheck"命令：</block>
-  <block id="fa6045d558d5baa7ab9838009cef768f" category="admonition">對於包含特殊字元的密碼、請在每個特殊字元之前加上反斜槓（`\）。例如、「mypass!@1」應輸入為「mypass\!@」。</block>
-  <block id="0bdc41a025449ddded34db9e8baf2c2f" category="paragraph">範例輸入命令、其中包含範例輸出、不會出現錯誤、您可以準備升級：</block>
-  <block id="8d060391508bf3d854a0dadcdf737f08" category="list-text">如果發生錯誤、則需要採取其他行動。如需詳細資料、請參閱下列子節。</block>
-  <block id="2765a68e0b7fa1dfee8eacec129751a2" category="section-title">您的叢集尚未準備好升級</block>
-  <block id="72ebb859cf858bcc59023f2756c6ea4a" category="paragraph">如果您看到與其中一項健全狀況檢查相關的錯誤訊息、請遵循下列步驟：</block>
-  <block id="d6cedf59cf0dcf37abf8616ab9744ff6" category="list-text">檢閱「shupgradecheck」錯誤訊息。</block>
-  <block id="9d6bc68df898deff926bd4b077e87b8e" category="inline-link">知識庫</block>
-  <block id="d296deed038a1f8a9962fb531a41747b" category="paragraph">在此範例中、節點1的磁碟空間不足。如需詳細資訊、請參閱<block ref="ff839b68b5f4e065b661cc5001da7603" category="inline-link-rx"></block> （KB）錯誤訊息中列出的文章。</block>
-  <block id="af5cc3d7837dbef7c533c7c7ce58c08d" category="section-title">HealthTools已過期</block>
-  <block id="1b0e4c7bd6b181bb824ab983e1072e08" category="paragraph">如果您看到錯誤訊息指出HealthTools並非最新版本、請依照下列指示操作：</block>
-  <block id="ff54cfd9a3047abf13081499a1664fdf" category="list-text">檢閱錯誤訊息、並注意升級檢查失敗。</block>
-  <block id="7dffbd2f21931076fdb29acaf8ae26f0" category="list-text">請遵循回應中所述的指示。</block>
-  <block id="5415d26aa4e82d38e1a9e3b034df122a" category="section-title">您的管理節點位於黑暗站台</block>
-  <block id="58bbc3933c0ddb7478a26f7552520e97" category="list-text">檢閱訊息並注意升級檢查失敗：</block>
-  <block id="fcc491914f2a9b039c0cf0193fff10b3" category="list-text">如需詳細資料、請參閱其他 <block ref="6108af9ca5aa4fda7c0167fbe5ccda18" category="inline-link-macro-rx"></block> 黑暗站台的相關資訊。</block>
-  <block id="611547aaaf1aef29fd97e330f0d053dc" category="list-text">執行下列命令、確認HealthTools套件為最新版本：</block>
   <block id="ebc4fee5e985fa852c3148f175eacd9c" category="section-title">由服務進行儲存健全狀況檢查</block>
   <block id="4e783874df68d59144696858bafed8b7" category="paragraph">儲存健全狀況檢查會針對每個叢集進行下列檢查。</block>
   <block id="d2d05e4a06ebcd5bb81adfc286280a87" category="cell">檢查名稱</block>
@@ -12284,7 +11978,6 @@
   <block id="f3ef8562bc46b3fd5d64fc8a88bab6f9" category="sidebar">安裝H410S和H610S節點</block>
   <block id="9282ad3aef7e124a3b2b9c7eab52b33d" category="sidebar">架構與元件</block>
   <block id="e558a93d8af634916bae37b7136be1d2" category="sidebar">GetSoftwareEncryptionatRestInfo</block>
-  <block id="0156654ae4dc6b09e871c56632755132" category="sidebar">升級SolidFire 適用於Element 12.3.x的NetApp全快閃儲存系統</block>
   <block id="b837bae0f441ebacd86887d737939282" category="sidebar">系統升級程序</block>
   <block id="f9ebc0753ac68177e6d0f29d964386bb" category="list-text">在網頁瀏覽器中開啟管理節點的IP位址。例如：</block>
   <block id="c3dfd82361c52d5d3d1551c20c83f1a6" category="list-text">在Web瀏覽器中開啟管理節點的IP位址：</block>
@@ -12347,4 +12040,251 @@
   <block id="9fc75d41716cfd46199787dcf77473a1" category="list-text">https://support-sg-emea.netapp.com`</block>
   <block id="a1b1a9120bbc7238c7b6088d7223d194" category="list-text">https://support-sg-naeast.netapp.com`</block>
   <block id="219033cd316af31663b173765be6dd78" category="list-text">https://support-sg-nawest.netapp.com`</block>
+  <block id="54aa7f2dcdc54ac5abd932a5b6c8b3d7" category="list-text">*升級程序時間*：您已排定足夠的時間來執行升級。升級至Element軟體12.5時、升級程序時間會因您目前的Element軟體版本和韌體更新而有所不同。</block>
+  <block id="778b8320a31f425d9021c72ba59dd8bd" category="cell">儲存節點</block>
+  <block id="c4303966c5d95835840cedbb4010f17d" category="cell">目前Element軟體版本</block>
+  <block id="0eb587cb5fd7c18c359cc306f978cd9d" category="cell">每個節點的軟體與韌體安裝時間約為1^</block>
+  <block id="67578343d744d824d2ae7f1f0780853f" category="cell">每個節點的資料同步時間約為2^</block>
+  <block id="16ac89e788575fb90e5d952ce28c7d05" category="cell">每個節點的大約總升級時間</block>
+  <block id="ff99582146f5f2ab14948a290d24066e" category="cell">所有包含最新韌體的功能更新與NetApp H系列節點SolidFire</block>
+  <block id="94a391e7535162277a17a069254b24c6" category="cell">12.x</block>
+  <block id="2a7bb67d9681d8b5c8241cd49c734772" category="cell">15分鐘</block>
+  <block id="5e1ee2491e0c0ac6da474bab9124ae95" category="cell">10至15分鐘</block>
+  <block id="a8de7c03d441770c74ae9b9ccba40b67" category="cell">20至30分鐘</block>
+  <block id="f895765237de084e69976cab12f91061" category="cell">H610S和H410S</block>
+  <block id="47d948a57b74ee5b8ebaec952b335efd" category="cell">12.x和11.8</block>
+  <block id="3cd6f0fb46bc2a1cbbe6f6f0d69cd998" category="cell">60分鐘</block>
+  <block id="f856309d24142607d2015bf524e6cfa8" category="cell">30至60分鐘</block>
+  <block id="5b32188537eabd96a4520f00d1209b81" category="cell">90至120分鐘</block>
+  <block id="44544027fae46da7f5ad07a0183d9767" category="cell">11.7及更早版本</block>
+  <block id="83f14533ddbfe1c18f197818300ea1fb" category="cell">90分鐘</block>
+  <block id="a0fc274442d4c69dfe575d357ce015e2" category="cell">40至70分鐘</block>
+  <block id="9b2b1e8f398acbac5493461c590118f6" category="inline-link">執行完整的節點關機和電源中斷</block>
+  <block id="2233d6c0637a0dd985141fefd60451a0" category="cell">您也必須花費130到160分鐘的時間<block ref="b75cb1417453c96f34f9e695ad57b88f" category="inline-link-rx"></block> 針對每個H610S節點。</block>
+  <block id="6ed1151a1c81c87309cd82c96457f044" category="paragraph">^1^如需硬體韌體與驅動程式韌體的完整對照表、請參閱此<block ref="919d0da258d2c9346bfb11f078cfd474" category="inline-link-rx"></block> （需要登入）。</block>
+  <block id="0fe84530e14d6cb77f51c3d2cc85aa18" category="paragraph">^2^如果將叢集與大量寫入IOPS負載結合、並延長韌體更新時間、資料同步時間將會增加。</block>
+  <block id="eb05636c0d5a8e35fae14ecd37584ea8" category="doc">零件與元件軟體12.5文件SolidFire</block>
+  <block id="7275696d9abdd4848d9921861f886410" category="inline-link">Element 12.3.x文件</block>
+  <block id="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="list-text"><block ref="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="inline-link-rx"></block></block>
+  <block id="70a1cc9bac71af783948e9c6d13ed046" category="summary">對於元素12.5及更新版本、您可以在管理節點上啟用sfreadonly使用者帳戶、以便在NetApp支援部門不提供協助的情況下疑難排解系統元件。您也可以啟用及開啟NetApp支援的遠端支援通道存取、以進行進階疑難排解。</block>
+  <block id="87c6849449248757341d19789f0ecb83" category="doc">使用SSH存取儲存節點以進行基本疑難排解</block>
+  <block id="ed66fa0901c1a26113d52acbb6ee20dd" category="paragraph">從元素12.5開始、您可以在儲存節點上使用sfreadonly系統帳戶進行基本疑難排解。您也可以啟用及開啟NetApp支援的遠端支援通道存取、以進行進階疑難排解。</block>
+  <block id="d1ac7db9c842ceaac83404d4d52e800f" category="paragraph">sfreadonly系統帳戶可讓您存取執行基本的Linux系統和網路疑難排解命令、包括「ping」。</block>
+  <block id="3a1fc580350882a0a9b605b74735c248" category="admonition">除非NetApp支援部門告知、否則不支援對此系統的任何變更、使您的支援合約失效、並可能導致資料不穩定或無法存取。</block>
+  <block id="a5ef7afb86451c7e9954e5a809ac2a87" category="list-text">*寫入權限*：確認您對目前工作目錄具有寫入權限。</block>
+  <block id="c561623e221f6dbad3c0e19ae71c7728" category="list-text">*（選用）產生您自己的金鑰組*：從Windows 10、MacOS或Linux發行版本執行「sh-keygen'」。這是建立使用者金鑰配對的一次性動作、可在未來的疑難排解工作階段中重複使用。您可能想要使用與員工帳戶相關的憑證、這也適用於此模式。</block>
+  <block id="28ea45a6a14844d33d4b5e45288adfa5" category="inline-link-macro">本主題</block>
+  <block id="84f4d5b2352d5fb955ba53e8a911d7c2" category="list-text">*在管理節點上啟用SSH功能*：若要在管理模式上啟用遠端存取功能、請參閱 <block ref="e4af5479a3ec350486e7e5fd3f1c47a4" category="inline-link-macro-rx"></block>。對於管理服務2.18及更新版本、預設會在管理節點上停用遠端存取功能。</block>
+  <block id="ed63df282dc645d53e32645c4444580b" category="list-text">*在儲存叢集上啟用SSH功能*：若要在儲存叢集節點上啟用遠端存取功能、請參閱 <block ref="afbf953cfcdeef62456646b69213b224" category="inline-link-macro-rx"></block>。</block>
+  <block id="47bc180a577c3e0223deb1e6142b45c7" category="list-text">*防火牆組態*：如果您的管理節點位於Proxy伺服器之後、則在sshd.config檔案中需要下列TCP連接埠：</block>
+  <block id="348abf39513b323aa2dc264e5c205696" category="list-title">疑難排解選項</block>
+  <block id="b37e93b68b8c9b428122ba20ef6c4865" category="list-text"><block ref="56f7ac4ed8ed9424759396bc231fd050" category="inline-xref-macro-rx"></block></block>
+  <block id="18956e6ce5806c3515be12fa7de72404" category="list-text"><block ref="bb811e763569932361d44657820869d6" category="inline-xref-macro-rx"></block></block>
+  <block id="1ad118897f77fe4445f8b5e4bdcd34aa" category="list-text"><block ref="3bc70ff766b689336979a6d951ae0ea4" category="inline-xref-macro-rx"></block></block>
+  <block id="800c0bc629eb08727bc24085a243b960" category="section-title">疑難排解叢集節點</block>
+  <block id="f21b83721a09178d92dfb1e840457967" category="paragraph">您可以使用sfreadonly系統帳戶執行基本疑難排解：</block>
+  <block id="c506b4117b6c95fb0e7f329b1f1a4f69" category="list-text">使用您在安裝管理節點VM時所選取的帳戶登入認證、以SSH方式連至管理節點。</block>
+  <block id="05a749fa3e7787752396ba0d5fc683b4" category="list-text">在管理節點上、前往「/SF/bin」。</block>
+  <block id="143c3cb1184218a48599afa9023badeb" category="list-text">尋找適合您系統的指令碼：</block>
+  <block id="365c9d26feec2ec737d96ef2221eceef" category="list-text">SignSshKeys.ps1.</block>
+  <block id="04629eac362c6b6b6f477553d2d36bc8" category="list-text">SignSshKeys.py</block>
+  <block id="52312ab9a7224c7cf97465126734ee28" category="list-text">SignSshKeys.sh</block>
+  <block id="ac1b6c4282172efc743a1d7e39cbadd7" category="inline-link">申請模組</block>
+  <block id="2a3895200e96227bba86d58a6fd6113d" category="paragraph">SignSshKeys.ps1依賴PowerShell 7或更新版本、而SignSshKeys.py則依賴Python 3.6.0或更新版本及<block ref="4bba2ee0729f8720ae55163170b0c8a7" category="inline-link-rx"></block>。</block>
+  <block id="3eb1e76273dc714794aa1db30537de6c" category="paragraph">"ignSshKeys"指令碼會將「user"、「user.pub」和「user-cert.pub」檔案寫入目前的工作目錄、然後再由「sh"命令使用。然而、當公開金鑰檔提供給指令碼時、只有「&lt;public_key&gt;'」檔案（以傳遞至指令碼的公開金鑰檔前置碼取代「&lt;public_key&gt;'」）會寫入目錄。</block>
+  <block id="84329c030885a56098f2f97519ce8d3c" category="list-text">在管理節點上執行指令碼、以產生SSH金鑰鏈。指令碼可在叢集中的所有節點上、使用sfreadonly系統帳戶來啟用SSH存取。</block>
+  <block id="46b0f610014ba9957bd5a219a50cd2bb" category="list-text">針對下列每個參數、將[]方塊中的值（包括方括弧）取代：</block>
+  <block id="d85649b7d70fb4245290f8604fe0921b" category="admonition">您可以使用縮寫或完整格式參數。</block>
+  <block id="5b6157213f7cacf661ec061bc39cf0bb" category="list-text">*-IP |-I [IP位址]*：要執行API的目標節點IP位址。</block>
+  <block id="190b40e93c5b9f4eb9c7df7022e7a7f3" category="list-text">*-使用者|-u [使用者名稱]*：用於執行API呼叫的叢集使用者。</block>
+  <block id="c5633ca7f5d55c806312fd09847e0c0e" category="list-text">*（選用）-duration |-d [hings]*：簽署金鑰的持續時間應以小時為整數維持有效。預設為24小時。</block>
+  <block id="0227cc31e2ab9601c5e10c9e6287cc21" category="list-text">*（選用）-publickey |-k [公開金鑰路徑]*：公開金鑰的路徑（若使用者選擇提供）。</block>
+  <block id="3a7769e1553bd767178e54081e9107be" category="list-text">請比較您的輸入內容與下列範例命令。在此範例中、「10.116.139.195」是儲存節點的IP、「admin」是叢集使用者名稱、金鑰有效時間為兩小時：</block>
+  <block id="5b265ffd25a6f631b8b0cf80819f5d9d" category="list-text">執行命令。</block>
+  <block id="55612075294bd86ea8dd5d8568fb9bd4" category="list-text">SSH至節點IP：</block>
+  <block id="01923c0ce6413c900c6d777dcbd88ea9" category="paragraph">您可以執行基本的Linux系統和網路疑難排解命令、例如「ping」和其他唯讀命令。</block>
+  <block id="9a556bf3277c1b8da7fbdbd5329498b6" category="list-text">（選用）停用 <block ref="b551ebda879d60cf3a0931b9f0e794a7" category="inline-link-macro-rx"></block> 疑難排解完成後、請再試一次。</block>
+  <block id="f06b081ec97a787aa25df8b401eb55ea" category="admonition">如果您未停用SSH、則會在管理節點上保持啟用狀態。啟用SSH的組態會持續在管理節點上進行更新和升級、直到手動停用為止。</block>
+  <block id="4d44cda9a9fef47ab0e265026fde19af" category="section-title">使用NetApp支援疑難排解叢集節點</block>
+  <block id="b3eb34126929f793d49169e03a91537b" category="paragraph">NetApp支援中心可利用系統帳戶執行進階疑難排解、讓技術人員執行更深入的元素診斷。</block>
+  <block id="e9b5d8bfdc4925815c5470ba8b79efdb" category="list-text">使用NetApp Support傳送的連接埠號碼執行RST命令、以開啟支援通道：</block>
+  <block id="70c68b3c80cf5714b32331224f743825" category="paragraph">NetApp Support將使用支援通道登入您的管理節點。</block>
+  <block id="af36e60ffcf578cdb1d5ce835e704688" category="list-text">執行指令碼、以「-sfadmin」旗標產生SSH金鑰鏈。指令碼可在所有節點上啟用SSH。</block>
+  <block id="44da7469356cf569b3ebeb6c58c1d3ac" category="paragraph">若要以「-sfadmin」形式將SSH作為叢集節點、您必須使用叢集上具有「supportAdmin」存取權的「-user"來產生SSH金鑰鏈。</block>
+  <block id="13bd61decf950386052234bd13dd5643" category="paragraph">若要設定叢集系統管理員帳戶的「上網管理」存取、您可以使用元素UI或API：</block>
+  <block id="dfba01d25ec5be0299a0b30dcdc03473" category="inline-link-macro">使用Element UI設定「supportAdmin」存取權</block>
+  <block id="1c36a7500140281630255b7fa7c67977" category="list-text"><block ref="1c36a7500140281630255b7fa7c67977" category="inline-link-macro-rx"></block></block>
+  <block id="501dd7c2846130a8ab8baa43147f9e32" category="list-text">使用API設定「實作管理」存取、並在API要求中新增「supportAdmin」作為「存取」類型：</block>
+  <block id="a780eecaa86921f01dca2dc0dc870fa2" category="inline-link-macro">設定新帳戶的「supportAdmin」存取權</block>
+  <block id="4d846db588ee6b95b5104c42090aabbf" category="list-text"><block ref="4d846db588ee6b95b5104c42090aabbf" category="inline-link-macro-rx"></block></block>
+  <block id="d3805613a4cdc5d68f9a6dcbe6e38702" category="inline-link-macro">設定現有帳戶的「supportAdmin」存取權</block>
+  <block id="5f803d5b5fa202a1dcc3388ccb2ed418" category="list-text"><block ref="5f803d5b5fa202a1dcc3388ccb2ed418" category="inline-link-macro-rx"></block></block>
+  <block id="4280137b3245cdbeb68a923443b647e1" category="paragraph">若要取得「clusterAdminID」、您可以使用 <block ref="e11b5852d1df725c00465967678774ed" category="inline-link-macro-rx"></block> API：</block>
+  <block id="bb5a75fead95fd1eb4d8f17a92407a5c" category="paragraph">若要新增「portAdmin」存取權限、您必須擁有叢集管理員或系統管理員權限。</block>
+  <block id="16cdaea74c30757b6fed2ee0bbc9e1c8" category="list-text">請比較您的輸入內容與下列範例命令。在此範例中、「192．168．0．1」是儲存節點的IP、「admin」是叢集使用者名稱、金鑰有效時間為兩小時、而「-sfadmin」則允許NetApp支援節點存取以進行疑難排解：</block>
+  <block id="906214f2e6127440305ee0c298f80105" category="section-title">疑難排解非叢集一部分的節點</block>
+  <block id="88935f8e32d3f781d70b8758aacc2e03" category="paragraph">您可以對尚未新增至叢集的節點執行基本疑難排解。無論是否獲得NetApp支援、您都可以將sfreadonly系統帳戶用於此用途。如果已設定管理節點、您可以將其用於SSH、並執行此工作所提供的指令碼。</block>
+  <block id="39d7e3e1db072701b357f9d1235c66dc" category="list-text">在安裝SSH用戶端的Windows、Linux或Mac機器上、針對NetApp支援所提供的系統執行適當的指令碼。</block>
+  <block id="326d0c521ea9c5fcd0fc04bacc22d618" category="list-text">SSH至節點IP：</block>
+  <block id="a83404b3b2ca8b3c39459b719d7844d7" category="inline-link">參考資源頁面NetApp HCI</block>
+  <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
+  <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">從元件12.3.1開始、會自動執行子步驟（A）至（e）。若為管理節點12.3.1或更新版本、請繼續執行 <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 以完成時間同步組態。</block>
+  <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
+  <block id="fcfc8ec29a85e264572757cf7ff41339" category="inline-link-macro">啟用遠端NetApp支援連線（Element 123及更早版本）</block>
+  <block id="5bda78d943ecf4022539ccee32c6682a" category="list-text"><block ref="5bda78d943ecf4022539ccee32c6682a" category="inline-link-macro-rx"></block></block>
+  <block id="6404341fecbf08f79cd2d05c9800fd53" category="doc">啟動遠端NetApp支援工作階段（Element 123及更早版本）</block>
+  <block id="5dc24222e8b8a9148a6bfcbd2707e07e" category="paragraph">如果您執行Element 123及更早版本、且SolidFire 需要支援您的整套Flash儲存系統、NetApp支援可遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。</block>
+  <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">動態節點額定值</block>
+  <block id="f413d4f1d8e95d29f50c5e04149a3882" category="paragraph">動態節點額定值可讓您在每個ESDS平台上運用24個支援的CPU、而非目前的單一CPU每個平台模式。</block>
+  <block id="c1265bffe835ce4c170f3f9a9a83b18f" category="admonition">對於元素12.5、支援的Podman版本為1.1.4。</block>
+  <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element軟體12.5注意事項</block>
+  <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
+  <block id="fe69a3287756ee47fc4650a84806448a" category="inline-link-macro">NetApp SolidFire 企業SDS 12.5注意事項</block>
+  <block id="a98228377241429f03c99eedec91c522" category="list-text"><block ref="a98228377241429f03c99eedec91c522" category="inline-link-macro-rx"></block></block>
+  <block id="5b86bf0a1903cc9047cd68ef97be17fa" category="inline-link-macro">管理節點12.5注意事項</block>
+  <block id="3dcbe7b9be7ae83a929a25e122289702" category="list-text"><block ref="3dcbe7b9be7ae83a929a25e122289702" category="inline-link-macro-rx"></block></block>
+  <block id="bb1c0a162d9f9097c1240465ee88a28f" category="inline-xref-macro">SignSshKeys</block>
+  <block id="c18a99f1dc2b3908dae3bf0a63b5a439" category="list-text"><block ref="c18a99f1dc2b3908dae3bf0a63b5a439" category="inline-xref-macro-rx"></block></block>
+  <block id="3ae6493bf18ba6963b40d7f9821c1a52" category="summary">在節點或叢集上啟用ssh之後、您可以使用SignSshkeys方法、以sfadmin或sfreadonly的形式存取節點上的Shell。sfreadonly是元素12.5的新使用者帳戶、可在節點上進行初始疑難排解、但缺乏建立提高權限命令的權限。</block>
+  <block id="a7917a2f080408ce1e230f197d5433cd" category="inline-link-macro">啟用SSH方法</block>
+  <block id="6dda290cb72d73d469f631c0dfd2e0f3" category="paragraph">使用在叢集上啟用SSH之後 <block ref="7d9609f81e054cdd171756b31fbc7560" category="inline-link-macro-rx"></block>、您可以使用「ignSshKeys」方法來存取節點上的Shell。</block>
+  <block id="ac22ef258ca6640c6916f485dfb04a12" category="paragraph">「freadonly」是新的系統帳戶、從元件125起、可在節點上進行基本疑難排解。此API可在叢集中的所有節點上使用「sfreadonly」系統帳戶來啟用SSH存取。</block>
+  <block id="4c99bed64e74c6cc1cfc268cdeaa6615" category="admonition">除非NetApp支援部門告知、否則系統的任何變更均不受支援、會使您的支援合約失效、並可能導致資料不穩定或無法存取。</block>
+  <block id="b076eaceedc6422f2cfaa718fed94e69" category="paragraph">使用方法之後、您必須從回應複製金鑰鏈、將其儲存至要啟動SSH連線的系統、然後執行下列命令：</block>
+  <block id="d0bb781e5b5f30c7270f5c59dbe3b4b0" category="paragraph">「identity檔案」是用來讀取公開金鑰驗證身分識別（私密金鑰）的檔案、而「node_IP」是節點的IP位址。如需「identity檔案」的詳細資訊、請參閱SSH手冊頁。</block>
+  <block id="49f196c6cdbcbfc7c632b6d49b093b42" category="paragraph">介於1到24之間的整數、反映簽署金鑰有效的小時數。如果未指定持續時間、則會使用預設值。</block>
+  <block id="c36853ea059e0d71a67557e5ee54b835" category="paragraph">公共金鑰</block>
+  <block id="396a0008e606439f52b1775793b72276" category="paragraph">如果提供、此參數只會傳回簽署的_public_key、而不會建立完整的金鑰鏈給使用者。</block>
+  <block id="b0516141915847e31842e084ae06ff50" category="admonition">在瀏覽器中使用URL列提交的公開金鑰若使用「+」、則會解譯為間隔和中斷簽署。</block>
+  <block id="bbb93ef26e3c101ff11cdd21cab08a94" category="paragraph">null</block>
+  <block id="b4af7a1a16475ab25710768f8856bac9" category="paragraph">sfadmin</block>
+  <block id="fb3613025d49a8183bb03e9493db82a0" category="paragraph">當您透過supportAdmin叢集存取進行API呼叫、或當節點不在叢集內時、允許存取sfadmin Shell帳戶。</block>
+  <block id="33af45f15355271ebf31f6c81d3ff1a2" category="paragraph">Keygen_STATUS</block>
+  <block id="ccd872eff981ebfa29ead269501ac357" category="paragraph">包含已簽署金鑰中的身分識別、允許的主體、以及金鑰的有效開始和結束日期。</block>
+  <block id="156a17333e77a3c504018cae5ada8c3b" category="paragraph">Private金鑰</block>
+  <block id="b470e1299fef82ede6b1079740e4410a" category="paragraph">只有當API為終端使用者產生完整的金鑰鏈時、才會傳回私有SSH金鑰值。</block>
+  <block id="68389821e67f2d8ee9210a8b4c85a4d6" category="admonition">此值為Base64編碼；寫入檔案時必須解碼此值、以確保其讀取為有效的私密金鑰。</block>
+  <block id="e4afe26b5b57083f74b2d01c7066379c" category="paragraph">公開金鑰</block>
+  <block id="3f1d4e18ea902405f99852cbdbdcd87b" category="paragraph">只有當API為終端使用者產生完整的金鑰鏈時、才會傳回公開SSH金鑰值。</block>
+  <block id="18432eb396b2b79898888bdb8e6d9575" category="admonition">當您將public_key參數傳遞給API方法時、回應中只會傳回「inized_public_keys」值。</block>
+  <block id="a66f6fa47046422dd780f1e14af6dc19" category="paragraph">簽名的_public_key</block>
+  <block id="40e6309535725d4314d28ffabe26de2f" category="paragraph">簽署公開金鑰所產生的SSH公開金鑰、無論是由API提供或產生的使用者。</block>
+  <block id="4379e56a99273d480a732e14cfe86d12" category="paragraph">在此範例中、會簽署並傳回有效的公開金鑰（1-24小時）。</block>
+  <block id="cf3e481a44141cabd4e9d46cfbb1f899" category="paragraph">12.5%</block>
+  <block id="1cd7e1f52564ecd1b9b47bf17fe8d192" category="inline-link-macro">啟用和停用</block>
+  <block id="9be1c6c1a5e1d288c79545fe648fce2d" category="paragraph">如果您想要啟用整個叢集 <block ref="46beba8112888a31f3c57eea2d458bf9" category="inline-link-macro-rx"></block> 對於完整Flash儲存叢集、您必須在建立叢集期間執行此動作。SolidFire從元素12.5開始、您必須在建立叢集期間、於Create Cluster UI中啟用閒置的軟體加密。對於元素12.3.x及更早版本、您必須使用建立叢集 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> API方法、並將enableSoftwareEncryptionAtRest參數變更為「true」。靜止時的軟體加密功能預設為SolidFire 啟用、適用於不支援的ESDS叢集。對於支援完整Flash的儲存叢集和不完整的ESDS叢集、在叢集上啟用靜止軟體加密之後、就無法停用它。SolidFire SolidFire您可以 <block ref="c4953cd715ac499bd17d25e3487e7fdb" category="inline-link-macro-rx"></block> 在建立叢集之後、硬體加密會閒置。</block>
+  <block id="90c2dc9b8e4f7b029c80f8c7488a4b58" category="paragraph">您可以從12.3.x版將管理節點升級至管理節點12.5</block>
+  <block id="2ee9526aa61dc0808ea0ccf6ccfa2412" category="paragraph">不再需要升級管理節點作業系統、即可升級儲存叢集上的Element軟體。您只需將管理服務升級至最新版本、即可使用NetApp混合雲控制系統執行元件升級。如果您基於其他理由（例如安全性補救）而想要升級管理節點作業系統、請依照您案例的管理節點升級程序進行。</block>
+  <block id="cd5e8795f7da1b9c55223a753f0c64bd" category="inline-link">Element 12.3.x管理節點升級文件</block>
+  <block id="33fea926c5e46b795ee89cd754264618" category="admonition">如果您需要有關升級管理節點12．2或更早版本的資訊、請參閱<block ref="7510c32e54d32b91989c1cd2810dc6d2" category="inline-link-rx"></block>。</block>
+  <block id="8802b9126d6080e36bb95641f40cfab3" category="list-text"><block ref="54df05cfe3df35112175e19c0aa861b7" category="inline-xref-macro-rx"></block></block>
+  <block id="4ec79ca5d6408d326fb4a58b0c3b2e40" category="list-text"><block ref="35b702a8c6556d6de2f367adef3740ff" category="inline-xref-macro-rx"></block></block>
+  <block id="f3bac24ec8b72ab99e38f7ecb167cc25" category="paragraph">如果您已*連續*更新管理服務版本（1）、以及（2）您的元素儲存版本、而且您想*保留*現有的管理節點、請選擇此選項：</block>
+  <block id="e94fb483edf44bcb1d0066bfff1ffe18" category="section-title">將管理節點從12.3.x升級至版本12.5</block>
+  <block id="e071a52c7e2ea747fe3b237e04bcec11" category="paragraph">您可以在不需要佈建新的管理節點虛擬機器的情況下、從12.3.x版就地升級至12.5版。</block>
+  <block id="cd6641a5f66844b15e37f50c79eafa6e" category="admonition">Element 12.5管理節點為選用升級。現有部署不需要此功能。</block>
+  <block id="02bd6928c03c8f53c18f8a5143bdd5f4" category="list-text">您要升級的管理節點為12版、使用的是IPv6網路。管理節點版本12.5不支援IPv6。</block>
+  <block id="1e92b13cdf15b50caf5e299263e754d4" category="list-text">如果您要將管理節點更新至版本12.5、則需要使用管理服務2.20.69或更新版本才能繼續。</block>
+  <block id="dfa645595ef398bf7b6f3c49d39a3426" category="list-text">儲存節點正在執行元件123或更新版本。</block>
+  <block id="2914d2e1549f2ef461f9b040823e6218" category="list-text">您已將管理服務更新為2.20.69或更新版本。</block>
+  <block id="311e83625ce0c896e7a3f811f3ac48c2" category="list-text">您的儲存叢集正在執行Element 123或更新版本。</block>
+  <block id="0637ebd56fb666abb4197f99ee28a8be" category="list-text">* H610S節點*的更新基板管理控制器（BMC）：您已升級H610S節點的BMC版本。請參閱 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
+  <block id="356747bc1580f5d7e13f9055ae1f02df" category="paragraph">若要升級NetApp Element 功能、您可以使用NetApp混合雲控制UI或REST API。某些作業會在元素軟體升級期間受到抑制、例如新增和移除節點、新增和移除磁碟機、以及與啟動器、Volume存取群組和虛擬網路相關的命令等。</block>
+  <block id="abad8a22ec62bb4befaee820afb760ef" category="inline-link-macro">使用HealthTools升級至Element 123</block>
+  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="admonition">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5。</block>
+  <block id="7970314795c697c589f52cd629d4a341" category="admonition">您必須先升級至最新的管理服務套裝組合、才能將Element軟體升級至版本12.5。如果您要將Element軟體更新至版本12.5、則需要使用管理服務2.20.69或更新版本才能繼續。</block>
+  <block id="649c8d7c132041751dab6da01f1fd9db" category="list-text">* H610S儲存節點*的更新基板管理控制器（BMC）：您已升級H610S節點的BMC版本。請參閱 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
+  <block id="eed743cc753cdf3d22086e7df918db02" category="admonition">如果您要將H610S系列節點升級至元素12．5、且節點執行的元件版本早於11．8、則需要執行本節中的其他升級步驟<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 針對每個儲存節點。如果您執行的是元素11.8或更新版本、則不需要執行其他升級步驟。</block>
+  <block id="02526a9433819b3363fdad9cdfc66a7d" category="list-text">如果您的管理節點未連線至網際網路、則表示您已下載<block ref="0c09c6a7a60b11e622c5ccc20d3a7783" category="inline-link-rx"></block>。</block>
+  <block id="a901d2b8512ddf5cf3b7654718ea92a4" category="admonition">如需使用NetApp混合雲控制及其因應措施升級儲存叢集的潛在問題、請參閱此<block ref="385c83615df1d77fbf0bae3f06fabb3d" category="inline-link-rx"></block>。</block>
+  <block id="981a393a1b5619c45c3545ca7373b5cf" category="list-text">選擇*開始升級*。升級完成後、UI會提示您執行其他升級步驟。</block>
+  <block id="02349aba09cccd8151274ed2d29018b1" category="list-text">完成中所需的其他步驟<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block>並在UI中確認您已完成階段2。</block>
+  <block id="febb8139b827c2864a1cba87f6fe018d" category="cell">僅適用於從11.8之前的元素版本升級的H610S節點。完成升級程序的階段1之後、此狀態會提示您執行其他升級步驟（請參閱<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block>）。完成階段2並確認您已完成、狀態會變更為*最新*。</block>
+  <block id="3d4746a309bd7a3b8011f3a44921dfb6" category="cell">如果您要升級執行11.8之前元素版本的H610S叢集、您會在回應本文中看到「finishedNeedsAck」狀態。您必須為每個H610S儲存節點執行額外的升級步驟。</block>
+  <block id="fb9099604c3233c77b3c8b5487c99eb3" category="list-text">完成本課程的其他升級步驟<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 針對每個節點。</block>
+  <block id="7fdc03d82c29eba6b61c702a58fd28ba" category="paragraph">這些元件包括管理服務、NetApp混合雲控制、Element軟體、管理節點、以及Element Plug-in for vCenter Server（視安裝而定）。</block>
+  <block id="85aed6fa173952d69db4c99c1290921b" category="inline-link-macro">儲存韌體</block>
+  <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">您已為安排足夠的時間 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升級：升級至Element軟體12.5時、升級程序時間會因Element軟體版本和韌體更新而有所不同。</block>
+  <block id="e13d74c2ca8c4f1748afca2eda1fa20f" category="paragraph">您可以使用下列順序來升級SolidFire 適用於Element軟體12.5的NetApp全快閃儲存系統。</block>
+  <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">您可以使用NetApp混合雲控制UI或NetApp混合雲控制API執行健全狀況檢查：</block>
+  <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">設定自訂保護網域</block>
+  <block id="5425a332a34a92102aeaad92cb1cfd47" category="paragraph">您可以使用元素UI來執行 <block ref="6aad22cf2ff364471fbadae1f249e90f" category="inline-link-macro-rx"></block>或使用下列API方法：</block>
+  <block id="b9d7f7d96ba0d7f9fb0ebbfdd76705d5" category="list-text"><block ref="a92b076f4c042891d554c076d8d2ec26" category="inline-link-macro-rx"></block> -顯示每個節點所在的機箱和自訂保護網域。</block>
+  <block id="ed4cb7ef9d0074dd188232c212f3131c" category="list-text"><block ref="79208a7b3d3c86443da0ca3bafbef925" category="inline-link-macro-rx"></block> -可將自訂保護網域指派給每個節點。</block>
+  <block id="61b35a1ffe9df32c3c0e2e4a7969de4b" category="paragraph">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.5引進改良的儲存節點存取功能、增強的自訂保護網域管理功能、全新改良的叢集故障與事件、增強的Create Cluster UI功能、增強的安全性、以及使用Ansible的自動化升級。</block>
+  <block id="38614c843f3a64f496d80e9b3a15ca3c" category="section-title">要點12.5</block>
+  <block id="3841a44fe905d7faa925f35d459015bf" category="paragraph">深入瞭解元素12.5的新功能。</block>
+  <block id="632a0cf5bff2b4038d81ba8a87bedf56" category="section-title">改善儲存節點存取</block>
+  <block id="36c6fef8b472466a86d8c04fae14b83a" category="paragraph">Element 12.5使用簽署的SSH憑證、改善個別節點的遠端存取。為了提供對儲存節點的安全遠端存取、在儲存節點的RTFI期間、現在會建立一個名為「sfreadonly」的有限權限本機使用者帳戶。「sfreadonly」帳戶可存取儲存節點後端、以進行基本維護或疑難排解。您現在可以為叢集管理員使用者設定「最大管理」存取類型、以便NetApp支援視需要存取叢集。</block>
+  <block id="c4850a0256fd94385624e245ebb4e3f5" category="section-title">增強的自訂保護網域管理功能</block>
+  <block id="eb73d06199e0195278a22dc87438e368" category="paragraph">Element 12.5具備新的使用者介面、可讓您快速輕鬆地檢視現有的自訂保護網域、並設定新的自訂保護網域。</block>
+  <block id="0e27b16c9344debf9aac5e256fb5b1ab" category="section-title">新增及改善的叢集故障、事件和警示</block>
+  <block id="f640d8d826d3fbf1d3ca4ade6ad067e7" category="paragraph">Element 12.5採用新的叢集故障代碼「BmcselfTestFailed」和「CpuThermalEventThreshold」、可增強系統疑難排解的能力。元素12.5也包含現有叢集事件和警示的健全性改善、例如「節點離線」、「Volume離線」、「driveHealthFault」、「網路事件」、 和「cSumEvent」。</block>
+  <block id="ca0dff7605fd85912062034c9370dcdd" category="section-title">從Create Cluster UI啟用靜止軟體加密</block>
+  <block id="fa2658a3ab727d225eec2ee50b847fff" category="paragraph">在建立叢集UI中新增核取方塊後、元素12.5可讓您在SolidFire 建立叢集期間、針對整個叢集的All Flash儲存叢集啟用全叢集軟體加密功能。</block>
+  <block id="58fd31fc4a0bf37df4c2efec74cb0f7e" category="paragraph">Element 12.5包含儲存節點的韌體更新。 <block ref="0f65f1a5cbc84d01ee508f9ae603c679" category="inline-link-macro-rx"></block>。</block>
+  <block id="9ae00a023d80f22436817ac40b5dd0e7" category="section-title">增強安全性</block>
+  <block id="4a9cfbb068604f707209b30ffaf09bfd" category="paragraph">元素12.5包含的緩和措施可關閉元素軟體曝險於Apache log4j弱點。啟用虛擬Volume（VVols）功能的NetApp SolidFire 支援區儲存叢集、會暴露於Apache log4j弱點。如需NetApp Element 有關解決方案的資訊、請參閱 <block ref="1a773160f1e444399f0d836f4fb45d69" category="inline-link-macro-rx"></block>。</block>
+  <block id="5b9ef84ab53bc8e514e0cea0dbfd914c" category="paragraph">如果您執行的是Element 11.x、12.0或12.2、或是儲存叢集已在元素123或12.3.1、且已啟用VVols功能、則強烈建議升級至12.5。</block>
+  <block id="7d22dc13d9443150a483a9d1bcc19811" category="paragraph">元素12.5也包含120多項可修復的CVE安全性弱點。</block>
+  <block id="0a4e6eb7e62cc9a7906b041a5daa8314" category="section-title">使用Ansible自動升級</block>
+  <block id="0f3c5d5fd99d58a3db49e358303b6aa1" category="inline-link">NetApp Ansible儲存庫</block>
+  <block id="05815c7d362a881d86d68bc8cfd44ab2" category="paragraph">透過Element 12.5、您可以使用Ansible來執行整個儲存叢集的循環升級、以自動化元件軟體升級工作流程。若要開始使用、請瀏覽至<block ref="6657f4ab7e7e02ccfa155e58f184d7f8" category="inline-link-rx"></block> 在GitHub下載「na_solidfire_SDS升級」角色與文件。</block>
+  <block id="3e295da75c8e1147efb1d40b92bc67b1" category="section-title">NetApp線上錯誤包含已解決且已知的問題</block>
+  <block id="dacb18e4909785f6226e9cc6bcd62371" category="paragraph">NetApp錯誤線上工具中已列出已解決及已知的問題。您可以瀏覽這些問題、以取得Element軟體和其他產品、網址為<block ref="6d0e40d4342f9a7ae6016dd8d3efbf3e" category="inline-link-rx"></block>。</block>
+  <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">《軟件發行說明》（英文）NetApp Element</block>
+  <block id="f8e8ebc61e5eb8b12488dfac5a827259" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block> _新_</block>
+  <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
+  <block id="5ed2b0be7714cf9bfe94c6d0660549bb" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block></block>
+  <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">儲存韌體產品組合2.146版本說明</block>
+  <block id="9f873554ab661acde4027ab646c5aa79" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block> _新_</block>
+  <block id="357bc0086b99b12d4411a85cc4c0c8a2" category="admonition">靜止狀態的軟體加密功能預設會在SolidFire 所有的「支援企業」SDS節點中啟用。靜止軟體加密功能可在SolidFire 不含自我加密磁碟機（SED）的企業SDS節點中、提供資料安全加密的主要軟體層。</block>
+  <block id="efe7c0d4ed04341756689674a3fb46c4" category="list-text">* BMCselfTestFailed*</block>
+  <block id="e14ad5a8fd8d67543e771552b5287d65" category="paragraph">基礎板管理控制器（BMC）自我測試失敗。</block>
+  <block id="f13985a4689ae985836f2d3e56cd1a5f" category="paragraph">如需協助、請聯絡NetApp支援部門。</block>
+  <block id="dfe7f32d919b2362aed8eecc2ad964cf" category="paragraph">在元素12.5升級期間、不會針對具有預先存在故障BMC的節點、或是節點的BMC在升級期間故障時、產生「BMCselfTestFailed」故障。在升級期間、未通過自我測試的BMC會在整個叢集完成升級後、發出「BMCselfTestFailed」警告錯誤。</block>
+  <block id="45a258c05276cacb5b1d7863b0d316e4" category="list-text">* CpuThermalEvent閾 值*</block>
+  <block id="2e83559dc365c7e917e7fba7009ec948" category="paragraph">一個或多個CPU上的CPU散熱事件數超過設定的臨界值。</block>
+  <block id="b045aebb370ef7c237c48505464a66fe" category="paragraph">如果在十分鐘內未偵測到新的CPU熱事件、則警告將自行解決。</block>
+  <block id="fe4a2f5b3e95e18b53005e6372e24cb3" category="paragraph">感應器無法與基礎板管理控制器（BMC）通訊。</block>
+  <block id="b6fc16d1b1e7dc50d7913c36fd2dad9b" category="paragraph">從Element 11.3版本開始、管理節點就能做為微服務主機、以便在主要版本之外更快更新精選軟體服務。這些微服務或管理服務（例如Active IQ ：《Sfatfcollector》（資料收集器）、vCenter外掛程式的QoSSIOC和mNode服務）會隨著服務組合而頻繁更新。管理節點也提供額外的儲存節點軟體升級服務和支援工具（遠端支援通道）。</block>
+  <block id="c135b30bba7b46b44a08cb4ef0ae8547" category="list-text">*主節點ID*：此磁碟區的主節點。</block>
+  <block id="5c2dfac41e0fdae2b2af5a185bd13a44" category="list-text">*次要節點ID*：此磁碟區的次要節點清單。在過渡狀態期間可以是多個值、例如次要節點的變更、但通常只有一個值。</block>
+  <block id="92cbb89e687486d046f0af2031e1de69" category="list-text">* QoS Thrott*：識別主儲存節點上的高負載是否正在抑制磁碟區。</block>
+  <block id="16deeb1542b48d5c3cc48574bd812c77" category="list-text">SupportAdmin</block>
+  <block id="1c99ab1d6f1bd835e71ce34f57021bf2" category="summary">您可以定義自訂的「保護網域」配置、其中每個節點只與一個自訂的「保護網域」相關聯。根據預設、每個節點都會指派給相同的預設自訂保護網域。</block>
+  <block id="5973fb594f77dc8b3479a7d06ec53911" category="paragraph">您可以定義符合特定機箱和節點配置的自訂保護網域配置。</block>
+  <block id="6e599ec445b85acc8e9d5e5e62c0612c" category="paragraph">您可以使用元素UI來執行 <block ref="207ccb2cb37becc35a7f5fde670b328f" category="inline-link-macro-rx"></block>或使用下列API方法：</block>
+  <block id="da55ae5c0f3e2b8fbec3529ced565e0a" category="paragraph"><block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
+  <block id="74fdf94991a3d3c1590a208535b101cc" category="list-text">[[csum_EVATE]]]* cSumEV*</block>
+  <block id="2c33c7444ec9022ae43511db98615b15" category="paragraph">在端點對端點Checksum驗證期間偵測到Checksum不相符的相關事件。</block>
+  <block id="a86825a9c36bcf223a89c3eaa4ee8ad8" category="paragraph">偵測到Checksum不相符的服務會在產生此事件後自動停止、而不會重新啟動。</block>
+  <block id="a570078e9c518c37a72047ac8b43b16c" category="list-text">[[network_EVER]]]*網路事件*</block>
+  <block id="2be1bb993c9eff27ce9178856d5e9dc2" category="paragraph">每個實體網路介面卡（NIC）介面的網路錯誤報告相關事件。</block>
+  <block id="f6f4ac227698b3fdba8236aee82a467f" category="paragraph">在10分鐘的監控時間間隔內、當介面的任何錯誤數超過預設臨界值1000時、就會觸發這些事件。這些事件適用於網路錯誤、例如接收到的遺漏、循環備援檢查（crc）錯誤、長度錯誤、溢位錯誤及框架錯誤。</block>
+  <block id="4d88773c43d7dbc5020c091c9bfeae49" category="summary">您可以設定自訂保護網域、以改善叢集的恢復能力。</block>
+  <block id="831136d74ae0649d6294c33fa3ad531e" category="doc">設定自訂保護網域</block>
+  <block id="9dbeef114139177da982e36d70b1d7ba" category="paragraph">對於包含兩個以上儲存節點的元素叢集、您可以為每個節點設定自訂保護網域。設定自訂保護網域時、您必須將叢集中的所有節點指派給網域。</block>
+  <block id="624ad082406eef004f913cf9be11f14c" category="inline-link-macro">Protection網域文件</block>
+  <block id="867d0856d989388741998c80121faf8b" category="admonition">當您指派Protection Domain時、節點之間的資料會開始同步、某些叢集作業在資料同步完成之前無法使用。為叢集設定自訂保護網域之後、當您新增儲存節點時、除非您為節點指派保護網域並允許資料同步完成、否則無法為新節點新增磁碟機。請造訪 <block ref="f3ad5bc790d9605231c6b7fe5dcc44e4" category="inline-link-macro-rx"></block> 以深入瞭解保護網域。</block>
+  <block id="a502c101a850887b30441d5f8db8a505" category="admonition">若要讓自訂保護網域配置對叢集有用、每個機箱內的所有儲存節點都必須指派給同一個自訂保護網域。您需要建立所需數量的自訂保護網域、才能做到這一點（最小的自訂保護網域配置是三個網域）。最佳做法是設定每個網域的節點數量相等、並嘗試確保指派給特定網域的每個節點都是相同類型。</block>
+  <block id="0ee231af8a749d4f6fe93657d92e8266" category="list-text">按一下*設定保護網域*。</block>
+  <block id="947cc3c1147f094f5cfe3fc868e27a8d" category="paragraph">在「*設定自訂保護網域*」視窗中、您可以看到目前設定的保護網域（若有）、以及個別節點的保護網域指派。</block>
+  <block id="077028c5045f4bacfddea76b9b5acd52" category="list-text">輸入新自訂保護網域的名稱、然後按一下*「Create」（建立）*。</block>
+  <block id="35b73afa49d3e8bed3d471f48691ec32" category="paragraph">針對您需要建立的所有新保護網域重複此步驟。</block>
+  <block id="4034133a53f1cdb2195216eab2ca21a3" category="list-text">針對「*指派節點*」清單中的每個節點、按一下「*保護網域*」欄中的下拉式清單、然後選取要指派給該節點的保護網域。</block>
+  <block id="e207eef9c092e71d9b7f81916b0b647e" category="admonition">在套用變更之前、請務必瞭解您的節點和機箱配置、您已設定的自訂保護網域配置、以及配置對資料保護的影響。如果您套用保護網域配置並立即需要進行變更、可能需要一段時間才能完成、因為套用組態後就會進行資料同步。</block>
+  <block id="c45c269988b0fdbfa5d0bfba39824f73" category="paragraph">視叢集大小而定、網域之間的資料同步資料可能需要一些時間。資料同步完成後、您可以在「*叢集*&gt;*節點*」頁面上檢視自訂保護網域指派、而元素Web UI儀表板則會在「*自訂保護網域健全狀況*」窗格中顯示叢集的保護狀態。</block>
+  <block id="8ad6c7199b3e216cbd7f9fecdbeb98fc" category="paragraph">套用自訂保護網域組態後、您可能會看到下列錯誤：</block>
+  <block id="960246db47f2dd869bb94da50c55385f" category="cell">SetProtectionDomainLayout失敗：保護網域配置會使節點ID｛9｝無法使用。預設和非預設名稱無法同時使用。</block>
+  <block id="b93b7f9e659ceb09e8ca7491f23f3b2c" category="cell">節點未指派保護網域。</block>
+  <block id="419cf1435cb163d8b5d03fbeb1d6bee3" category="cell">將保護網域指派給節點。</block>
+  <block id="07cf8fd6e47576d971bbe1a1f3791d23" category="cell">SetProtectionDomainLayout失敗：保護網域類型「自訂」分割保護網域類型「機箱」。</block>
+  <block id="74edc88174dceefbbbb11b9aba21d425" category="cell">多節點機箱中的節點會被指派與機箱中其他節點不同的保護網域。</block>
+  <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">請確定機箱中的所有節點都已指派相同的保護網域。</block>
+  <block id="29a6f38cbca29e0f3bdeecf96eb0b27a" category="paragraph"><block ref="b58e8d039996e87c7075e998e2dbe5e4" category="inline-link-macro-rx"></block>
+<block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
+  <block id="30486cdfdde2444e4151845599ac5bf5" category="sidebar">Element 12.5文件</block>
+  <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">升級適用於SolidFire Element軟體12.5的NetApp全快閃儲存系統</block>
+  <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">設定自訂保護網域</block>
 </blocks>

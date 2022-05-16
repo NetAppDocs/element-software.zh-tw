@@ -47,9 +47,9 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
 
-* link:./media/Ember_12.3.pdf["Ember OS 12.3.注意事項"^]
-* link:./media/HealthTools_12.3.pdf["HealthTools注意事項"^]
-* link:./media/mNode_12.3.pdf["管理節點12.3.注意事項"^]
+* link:./media/Element_Software_12.5.pdf["Element軟體12.5注意事項"^]
+* link:./media/SolidFire_eSDS_12.5.pdf["NetApp SolidFire 企業SDS 12.5注意事項"^]
+* link:./media/mNode_12.5.pdf["管理節點12.5注意事項"^]
 * link:./media/mgmt_2.20_notice.pdf["管理服務注意事項2.20.69（VCP 4.9.14）"^]
 * link:./media/mgmt_2.19_notice.pdf["管理服務注意事項2.19.48（VCP 4.8.34）"^]
 * link:./media/mgmt_svcs_2.18.pdf["管理服務注意事項2.18.91（VCP 4.7.10）"^]
@@ -58,6 +58,5 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 * link:./media/mgmt-216.pdf["管理服務2.16注意事項（VCP 4.6.29）"^]
 * link:./media/mgmt-214.pdf["管理服務服務2.14注意事項（VCP 4.5.42）"^]
 * link:./media/mgmt-213.pdf["管理服務注意事項2.13（VCP 4.5.42）"^]
-* link:./media/SolidFire_eSDS_12.3.pdf["NetApp SolidFire 解決方案企業SDS注意事項"^]
 * link:./media/storage_firmware_bundle_2.146_notices.pdf["儲存韌體產品組合2.146注意事項"^]
 

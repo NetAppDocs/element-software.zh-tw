@@ -28,6 +28,7 @@ summary: 您可以將Element軟體與外部安全性相關服務（例如外部�
 * xref:reference_element_api_listkeyserverskmip.adoc[listKeyServersKmip]
 * xref:reference_element_api_modifykeyserverkmip.adoc[ModifyKeyServerKmip]
 * xref:reference_element_api_removekeyserverfromproviderkmip.adoc[RemoveKeyServerFromProviderKmip]
+* xref:reference_element_api_signsshkeys.adoc[SignSshKeys]
 * xref:reference_element_api_testkeyproviderkmip.adoc[TestKeyProviderKmip]
 * xref:reference_element_api_testkeyserverkmip.adoc[TestKeyServerKmip]
 

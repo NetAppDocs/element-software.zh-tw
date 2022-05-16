@@ -1,0 +1,234 @@
+---
+sidebar: sidebar 
+permalink: mnode/task_mnode_enable_node_troubleshooting_sessions.html 
+summary: 對於元素12.5及更新版本、您可以在管理節點上啟用sfreadonly使用者帳戶、以便在NetApp支援部門不提供協助的情況下疑難排解系統元件。您也可以啟用及開啟NetApp支援的遠端支援通道存取、以進行進階疑難排解。 
+keywords: netapp, sfreadonly, connect to support, support tunnel, rst, mnode, management node 
+---
+= 使用SSH存取儲存節點以進行基本疑難排解
+:allow-uri-read: 
+
+
+[role="lead"]
+從元素12.5開始、您可以在儲存節點上使用sfreadonly系統帳戶進行基本疑難排解。您也可以啟用及開啟NetApp支援的遠端支援通道存取、以進行進階疑難排解。
+
+sfreadonly系統帳戶可讓您存取執行基本的Linux系統和網路疑難排解命令、包括「ping」。
+
+
+WARNING: 除非NetApp支援部門告知、否則不支援對此系統的任何變更、使您的支援合約失效、並可能導致資料不穩定或無法存取。
+
+.開始之前
+* *寫入權限*：確認您對目前工作目錄具有寫入權限。
+* *（選用）產生您自己的金鑰組*：從Windows 10、MacOS或Linux發行版本執行「sh-keygen'」。這是建立使用者金鑰配對的一次性動作、可在未來的疑難排解工作階段中重複使用。您可能想要使用與員工帳戶相關的憑證、這也適用於此模式。
+* *在管理節點上啟用SSH功能*：若要在管理模式上啟用遠端存取功能、請參閱 link:task_mnode_ssh_management.html["本主題"]。對於管理服務2.18及更新版本、預設會在管理節點上停用遠端存取功能。
+* *在儲存叢集上啟用SSH功能*：若要在儲存叢集節點上啟用遠端存取功能、請參閱 link:https://docs.netapp.com/us-en/element-software/storage/task_system_manage_cluster_enable_and_disable_support_access.html["本主題"]。
+* *防火牆組態*：如果您的管理節點位於Proxy伺服器之後、則在sshd.config檔案中需要下列TCP連接埠：
++
+[cols="15,25,60"]
+|===
+| TCP連接埠 | 說明 | 連線方向 
+
+
+| 443.. | API呼叫/HTTPS可透過開放式支援通道、將反向連接埠轉送至Web UI | 管理節點至儲存節點 
+
+
+| 22 | SSH登入存取權 | 管理節點至儲存節點、或從儲存節點至管理節點 
+|===
+
+
+.疑難排解選項
+* <<Troubleshoot a cluster node>>
+* <<Troubleshoot a cluster node with NetApp Support>>
+* <<Troubleshoot a node that is not part of cluster>>
+
+
+
+
+== 疑難排解叢集節點
+
+您可以使用sfreadonly系統帳戶執行基本疑難排解：
+
+.步驟
+. 使用您在安裝管理節點VM時所選取的帳戶登入認證、以SSH方式連至管理節點。
+. 在管理節點上、前往「/SF/bin」。
+. 尋找適合您系統的指令碼：
++
+** SignSshKeys.ps1.
+** SignSshKeys.py
+** SignSshKeys.sh
++
+[NOTE]
+====
+SignSshKeys.ps1依賴PowerShell 7或更新版本、而SignSshKeys.py則依賴Python 3.6.0或更新版本及 https://docs.python-requests.org/["申請模組"^]。
+
+"ignSshKeys"指令碼會將「user"、「user.pub」和「user-cert.pub」檔案寫入目前的工作目錄、然後再由「sh"命令使用。然而、當公開金鑰檔提供給指令碼時、只有「<public_key>'」檔案（以傳遞至指令碼的公開金鑰檔前置碼取代「<public_key>'」）會寫入目錄。
+
+====
+
+
+. 在管理節點上執行指令碼、以產生SSH金鑰鏈。指令碼可在叢集中的所有節點上、使用sfreadonly系統帳戶來啟用SSH存取。
++
+[listing]
+----
+SignSshKeys --ip [ip address] --user [username] --duration [hours] --publickey [public key path]
+----
++
+.. 針對下列每個參數、將[]方塊中的值（包括方括弧）取代：
++
+
+NOTE: 您可以使用縮寫或完整格式參數。
+
++
+*** *-IP |-I [IP位址]*：要執行API的目標節點IP位址。
+*** *-使用者|-u [使用者名稱]*：用於執行API呼叫的叢集使用者。
+*** *（選用）-duration |-d [hings]*：簽署金鑰的持續時間應以小時為整數維持有效。預設為24小時。
+*** *（選用）-publickey |-k [公開金鑰路徑]*：公開金鑰的路徑（若使用者選擇提供）。
+
+
+.. 請比較您的輸入內容與下列範例命令。在此範例中、「10.116.139.195」是儲存節點的IP、「admin」是叢集使用者名稱、金鑰有效時間為兩小時：
++
+[listing]
+----
+sh /sf/bin/SignSshKeys.sh --ip 10.116.139.195 --user admin --duration 2
+----
+.. 執行命令。
+
+
+. SSH至節點IP：
++
+[listing]
+----
+ssh -i user sfreadonly@[node_ip]
+----
++
+您可以執行基本的Linux系統和網路疑難排解命令、例如「ping」和其他唯讀命令。
+
+. （選用）停用 link:task_mnode_ssh_management.html["遠端存取功能"] 疑難排解完成後、請再試一次。
++
+
+NOTE: 如果您未停用SSH、則會在管理節點上保持啟用狀態。啟用SSH的組態會持續在管理節點上進行更新和升級、直到手動停用為止。
+
+
+
+
+
+== 使用NetApp支援疑難排解叢集節點
+
+NetApp支援中心可利用系統帳戶執行進階疑難排解、讓技術人員執行更深入的元素診斷。
+
+.步驟
+. 使用您在安裝管理節點VM時所選取的帳戶登入認證、以SSH方式連至管理節點。
+. 使用NetApp Support傳送的連接埠號碼執行RST命令、以開啟支援通道：
++
+"RST -r sfsupport.solidfire.com -u Element -p <port_number>'
+
++
+NetApp Support將使用支援通道登入您的管理節點。
+
+. 在管理節點上、前往「/SF/bin」。
+. 尋找適合您系統的指令碼：
++
+** SignSshKeys.ps1.
+** SignSshKeys.py
+** SignSshKeys.sh
++
+[NOTE]
+====
+SignSshKeys.ps1依賴PowerShell 7或更新版本、而SignSshKeys.py則依賴Python 3.6.0或更新版本及 https://docs.python-requests.org/["申請模組"^]。
+
+"ignSshKeys"指令碼會將「user"、「user.pub」和「user-cert.pub」檔案寫入目前的工作目錄、然後再由「sh"命令使用。然而、當公開金鑰檔提供給指令碼時、只有「<public_key>'」檔案（以傳遞至指令碼的公開金鑰檔前置碼取代「<public_key>'」）會寫入目錄。
+
+====
+
+
+. 執行指令碼、以「-sfadmin」旗標產生SSH金鑰鏈。指令碼可在所有節點上啟用SSH。
++
+[listing]
+----
+SignSshKeys --ip [ip address] --user [username] --duration [hours] --sfadmin
+----
++
+[NOTE]
+====
+若要以「-sfadmin」形式將SSH作為叢集節點、您必須使用叢集上具有「supportAdmin」存取權的「-user"來產生SSH金鑰鏈。
+
+若要設定叢集系統管理員帳戶的「上網管理」存取、您可以使用元素UI或API：
+
+** link:../storage/concept_system_manage_manage_cluster_administrator_users.html#view-cluster-admin-details["使用Element UI設定「supportAdmin」存取權"]
+** 使用API設定「實作管理」存取、並在API要求中新增「supportAdmin」作為「存取」類型：
++
+*** link:../api/reference_element_api_addclusteradmin.html["設定新帳戶的「supportAdmin」存取權"]
+*** link:../api/reference_element_api_modifyclusteradmin.html["設定現有帳戶的「supportAdmin」存取權"]
++
+若要取得「clusterAdminID」、您可以使用 link:../api/reference_element_api_listclusteradmins.html["listClusterAdmins"] API：
+
+
+
+
+
+若要新增「portAdmin」存取權限、您必須擁有叢集管理員或系統管理員權限。
+
+====
++
+.. 針對下列每個參數、將[]方塊中的值（包括方括弧）取代：
++
+
+NOTE: 您可以使用縮寫或完整格式參數。
+
++
+*** *-IP |-I [IP位址]*：要執行API的目標節點IP位址。
+*** *-使用者|-u [使用者名稱]*：用於執行API呼叫的叢集使用者。
+*** *（選用）-duration |-d [hings]*：簽署金鑰的持續時間應以小時為整數維持有效。預設為24小時。
+
+
+.. 請比較您的輸入內容與下列範例命令。在此範例中、「192．168．0．1」是儲存節點的IP、「admin」是叢集使用者名稱、金鑰有效時間為兩小時、而「-sfadmin」則允許NetApp支援節點存取以進行疑難排解：
++
+[listing]
+----
+sh /sf/bin/SignSshKeys.sh --ip 192.168.0.1 --user admin --duration 2 --sfadmin
+----
+.. 執行命令。
+
+
+. SSH至節點IP：
++
+[listing]
+----
+ssh -i user sfadmin@[node_ip]
+----
+. 若要關閉遠端支援通道、請輸入下列命令：
++
+《RST——killall》
+
+. （選用）停用 link:task_mnode_ssh_management.html["遠端存取功能"] 疑難排解完成後、請再試一次。
++
+
+NOTE: 如果您未停用SSH、則會在管理節點上保持啟用狀態。啟用SSH的組態會持續在管理節點上進行更新和升級、直到手動停用為止。
+
+
+
+
+
+== 疑難排解非叢集一部分的節點
+
+您可以對尚未新增至叢集的節點執行基本疑難排解。無論是否獲得NetApp支援、您都可以將sfreadonly系統帳戶用於此用途。如果已設定管理節點、您可以將其用於SSH、並執行此工作所提供的指令碼。
+
+. 在安裝SSH用戶端的Windows、Linux或Mac機器上、針對NetApp支援所提供的系統執行適當的指令碼。
+. SSH至節點IP：
++
+[listing]
+----
+ssh -i user sfreadonly@[node_ip]
+----
+. （選用）停用 link:task_mnode_ssh_management.html["遠端存取功能"] 疑難排解完成後、請再試一次。
++
+
+NOTE: 如果您未停用SSH、則會在管理節點上保持啟用狀態。啟用SSH的組態會持續在管理節點上進行更新和升級、直到手動停用為止。
+
+
+
+[discrete]
+== 如需詳細資訊、請參閱
+
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["參考資源頁面NetApp HCI"^]
+

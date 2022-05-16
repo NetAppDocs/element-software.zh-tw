@@ -371,6 +371,8 @@ entries:
       url: "/storage/task_data_protection_restore_volume_from_backup_on_openstack_swift.html"
     - title: 從SolidFire 還原儲存叢集上的備份還原磁碟區
       url: "/storage/task_data_protection_restore_volume_from_backup_on_solidfire.html"
+  - title: 設定自訂保護網域
+    url: "/storage/task_data_protection_configure_custom_protection_domains.html"
 - title: 系統疑難排解
   url: "/storage/concept_system_monitoring_and_troubleshooting.html"
   entries:
