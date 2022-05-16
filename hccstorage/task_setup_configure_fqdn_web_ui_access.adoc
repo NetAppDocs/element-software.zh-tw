@@ -37,7 +37,7 @@ summary: 瞭解如何設定、移除及疑難排解系統FQDN Web UI存取。
 == 使用NetApp混合雲控制設定FQDN Web UI存取
 
 .步驟
-. 開啟網頁瀏覽器並瀏覽至管理節點的IP位址：
+. 在Web瀏覽器中開啟管理節點的IP位址：
 +
 [listing]
 ----

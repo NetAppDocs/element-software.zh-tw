@@ -133,10 +133,12 @@ CAUTION: 選取「*是*」下一步、會從安裝中移除叢集。
 NOTE: 一次只能有一個節點處於維護模式。
 
 .步驟
-. 開啟網頁瀏覽器、然後瀏覽至管理節點的IP位址。例如：
+. 在網頁瀏覽器中開啟管理節點的IP位址。例如：
 +
-https://[management節點IP位址
-
+[listing]
+----
+https://[management node IP address]
+----
 . 提供SolidFire 支援功能齊全的NetApp混合雲控制系統管理員認證資料、以登入NetApp混合雲控制系統。
 +
 
