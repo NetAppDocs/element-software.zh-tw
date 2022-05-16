@@ -12136,7 +12136,6 @@
   <block id="5dc24222e8b8a9148a6bfcbd2707e07e" category="paragraph">如果您執行Element 123及更早版本、且SolidFire 需要支援您的整套Flash儲存系統、NetApp支援可遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。</block>
   <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">動態節點額定值</block>
   <block id="f413d4f1d8e95d29f50c5e04149a3882" category="paragraph">動態節點額定值可讓您在每個ESDS平台上運用24個支援的CPU、而非目前的單一CPU每個平台模式。</block>
-  <block id="c1265bffe835ce4c170f3f9a9a83b18f" category="admonition">對於元素12.5、支援的Podman版本為1.1.4。</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element軟體12.5注意事項</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
   <block id="fe69a3287756ee47fc4650a84806448a" category="inline-link-macro">NetApp SolidFire 企業SDS 12.5注意事項</block>
@@ -12287,4 +12286,5 @@
   <block id="30486cdfdde2444e4151845599ac5bf5" category="sidebar">Element 12.5文件</block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">升級適用於SolidFire Element軟體12.5的NetApp全快閃儲存系統</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">設定自訂保護網域</block>
+  <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">對於元素123、支援的Podman版本為1.1.4。</block>
 </blocks>

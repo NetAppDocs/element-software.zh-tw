@@ -110,7 +110,7 @@ rhel-7-server-extras-rpms
 * 安裝Ansible、Git、Podman和Python 3.0。
 +
 
-NOTE: 對於元素12.5、支援的Podman版本為1.1.4。
+NOTE: 對於元素123、支援的Podman版本為1.1.4。
 
 
 
