@@ -12283,8 +12283,8 @@
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">如果SolidFire 您需要支援您的整套Flash儲存系統的技術支援、NetApp支援中心可遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。</block>
   <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">*靜止時軟體加密增強功能*：SolidFire 元素123引入了靜止時軟體加密功能的增強功能、此功能在您建立一個「企業版SDS」儲存叢集時預設為啟用。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。以下是靜止時與軟體加密相關的元素API方法（請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 如需每種方法的詳細資訊）：</block>
   <block id="a22ab525bece28b87773c244a6f1b3a0" category="list-text">*能夠定義最大數量的快照保留*：元素123加入了快照保留功能的增強功能。下列API已經過修改、以支援此增強功能（請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 如需每種方法的詳細資訊）：</block>
-  <block id="77f50366e209065f549206394239dd15" category="list-text">*取得元件軟體修補程式的相關資訊*：元素123中所採用的「GetPatchInfo」方法、可讓您取得儲存節點上所安裝元件軟體修補程式的相關資訊。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="285252df34d924e87378e352c6c16dc4" category="list-text">*列出節點上每個網路介面的統計資料*：元素123中引進的「清單網路介面統計資料」方法、可讓您列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="7133445de6da05a38825bf323f4a59dd" category="paragraph">元素12.3.1中引進的動態節點額定值、可讓您在每個ESDS平台上運用24個支援的CPU、而非目前每個平台只需一個CPU的模式。</block>
   <block id="7e567302f5ef9349d96e39bff1919742" category="paragraph">您可以使用下列順序來升級SolidFire 適用於Element 12.5的NetApp全快閃儲存系統。</block>
+  <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">*取得元件軟體修補程式的相關資訊*：元素123中引進的「GetPatchInfo」方法可讓您取得有關安裝在儲存節點上的元件軟體修補程式的資訊。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出節點上每個網路介面的統計資料*：元素123中採用的「清單網路介面統計資料」方法可列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">元素12.3.1中引進的動態節點額定值、可讓您在每個ESDS平台上運用24個支援的CPU、而非目前的單一CPU每個平台模式。</block>
 </blocks>
