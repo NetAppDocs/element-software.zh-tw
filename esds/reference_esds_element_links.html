@@ -5849,7 +5849,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/element-software/mnode/task_mnode_enable_node_troubleshooting_sessions.html">
         使用SSH存取儲存節點以進行基本疑難排解
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/element-software/mnode/task_mnode_enable_remote_support_connections.html">
-        啟動遠端NetApp支援工作階段（Element 123及更早版本）
+        啟動遠端NetApp支援工作階段
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/element-software/mnode/task_mnode_ssh_management.html">
         管理管理節點上的SSH功能
       </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
@@ -5939,7 +5939,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 08:14:02 +0000">05/03/2022</time>
+    <time datetime="2022-05-17 20:42:20 +0000">05/17/2022</time>
     
   
 
@@ -6011,7 +6011,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>軟體加密REST增強功能</strong>：Element 123引進軟體加密閒置功能的增強功能、此功能在您建立SolidFire 一套「企業版SDS」儲存叢集時預設為啟用。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。以下是靜止時與軟體加密相關的元素API方法（請參閱 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API文件"</a> 如需每種方法的詳細資訊）：</p>
+<p><strong>靜止時軟體加密增強功能</strong>：SolidFire 元素123引入了靜止時軟體加密功能的增強功能、此功能在您建立一個「企業版SDS」儲存叢集時預設為啟用。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。以下是靜止時與軟體加密相關的元素API方法（請參閱 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API文件"</a> 如需每種方法的詳細資訊）：</p>
 <div class="ulist">
 <ul>
 <li>
@@ -6033,7 +6033,7 @@
 </div>
 </li>
 <li>
-<p><strong>能夠定義最多可保留的快照數量</strong>：元素123增強了快照保留功能。下列API已經過修改、以支援此增強功能（請參閱 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API文件"</a> 如需每種方法的詳細資訊）：</p>
+<p><strong>能夠定義最大數量的快照保留</strong>：元素123加入了快照保留功能的增強功能。下列API已經過修改、以支援此增強功能（請參閱 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API文件"</a> 如需每種方法的詳細資訊）：</p>
 <div class="ulist">
 <ul>
 <li>
@@ -6064,10 +6064,10 @@
 </div>
 </li>
 <li>
-<p><strong>取得元件軟體修補程式的相關資訊</strong>：Element 123引進「GetPatchInfo」方法、可讓您取得儲存節點上安裝元件軟體修補程式的相關資訊。請參閱 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API文件"</a> 以取得詳細資料。</p>
+<p><strong>取得元件軟體修補程式的相關資訊</strong>：元素123中所採用的「GetPatchInfo」方法、可讓您取得儲存節點上所安裝元件軟體修補程式的相關資訊。請參閱 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API文件"</a> 以取得詳細資料。</p>
 </li>
 <li>
-<p><strong>列出節點上每個網路介面的統計資料</strong>：元素123採用「listNetworkInterfaceStats」方法、可讓您列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API文件"</a> 以取得詳細資料。</p>
+<p><strong>列出節點上每個網路介面的統計資料</strong>：元素123中引進的「清單網路介面統計資料」方法、可讓您列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API文件"</a> 以取得詳細資料。</p>
 </li>
 <li>
 <p><strong>元素12.2中引入並更新API以支援SolidFire 功能不全的ESDS</strong>：元素12.2中加入了數個新的API、您可以在SolidFire 支援功能不全的ESDS叢集上使用。</p>
