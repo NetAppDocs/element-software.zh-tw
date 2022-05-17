@@ -44,7 +44,7 @@ TIP: 若要檢查版本、請登入管理節點、並在登入橫幅中檢視元
 
 == 系統升級順序
 
-您可以使用下列順序來升級SolidFire 適用於Element軟體12.5的NetApp全快閃儲存系統。
+您可以使用下列順序來升級SolidFire 適用於Element 12.5的NetApp全快閃儲存系統。
 
 .步驟
 . link:task_hcc_update_management_services.html["從混合雲控制系統更新管理服務"]。

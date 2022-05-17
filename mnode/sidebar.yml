@@ -52,7 +52,7 @@ entries:
   entries:
   - title: 使用SSH存取儲存節點以進行基本疑難排解
     url: "/mnode/task_mnode_enable_node_troubleshooting_sessions.html"
-  - title: 啟動遠端NetApp支援工作階段（Element 123及更早版本）
+  - title: 啟動遠端NetApp支援工作階段
     url: "/mnode/task_mnode_enable_remote_support_connections.html"
   - title: 管理管理節點上的SSH功能
     url: "/mnode/task_mnode_ssh_management.html"

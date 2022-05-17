@@ -4357,12 +4357,10 @@
   <block id="cf01dc47ed79267872b62a626969809c" category="paragraph">您可以從「總覽」頁面瀏覽至特定工作。</block>
   <block id="b6da6eab87d65c4c9297f872afd87022" category="section-title">在SolidFire 不穩定的ESDS叢集上使用Element API</block>
   <block id="c08a6bc5249e5f81c4e136382fe69500" category="inline-link">Element API文件</block>
-  <block id="15f0b4f62899bf3b9a8787207a388277" category="list-text">*軟體加密REST增強功能*：Element 123引進軟體加密閒置功能的增強功能、此功能在您建立SolidFire 一套「企業版SDS」儲存叢集時預設為啟用。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。以下是靜止時與軟體加密相關的元素API方法（請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 如需每種方法的詳細資訊）：</block>
   <block id="389945c09cdda9d478adbb3a47413d5c" category="list-text">"disableEncryptionAtRest"</block>
   <block id="a3c5dec02de1b4c52f4ef9ce2d7e0b2a" category="list-text">《EnablEncryptionAtRest》</block>
   <block id="9474d63d23a163955eb222057663ae5f" category="list-text">「GetSoftwareEncryptionAt恢復 資訊」</block>
   <block id="c68a2d9b7e85236a7846e8479df5eb22" category="list-text">「RekeySoftwareEncryptionAt恢復 金鑰」</block>
-  <block id="f273afdfc9c8da85f2aa65a9f2472291" category="list-text">*能夠定義最多可保留的快照數量*：元素123增強了快照保留功能。下列API已經過修改、以支援此增強功能（請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 如需每種方法的詳細資訊）：</block>
   <block id="05e99937dbfca39a8e79ec1345dc0caf" category="list-text">「建立磁碟區」</block>
   <block id="71a673e3e44f3d66064abf107eecd41b" category="list-text">「磁碟區」</block>
   <block id="16668f69631e97f6454595916b95763c" category="list-text">《建立快照》</block>
@@ -4371,8 +4369,6 @@
   <block id="17527882eae9d5d0fe85324be1ab5b68" category="list-text">《每日行程》</block>
   <block id="971735603f1c15fa2aefaf1cdcffcf38" category="list-text">《每日快照》</block>
   <block id="b4d38d2cfe8361b4706ee65b48cd47e7" category="list-text">《建立群組快照》</block>
-  <block id="110268879887fb27d1a8394d4bc2030a" category="list-text">*取得元件軟體修補程式的相關資訊*：Element 123引進「GetPatchInfo」方法、可讓您取得儲存節點上安裝元件軟體修補程式的相關資訊。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="ebcdf1544f3d1837d74ac7935921840f" category="list-text">*列出節點上每個網路介面的統計資料*：元素123採用「listNetworkInterfaceStats」方法、可讓您列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="b39b4f606b587cbb01f67a7e70186eea" category="list-text">*元素12.2中引入並更新API以支援SolidFire 功能不全的ESDS*：元素12.2中加入了數個新的API、您可以在SolidFire 支援功能不全的ESDS叢集上使用。</block>
   <block id="463224af5ebc7979ed09e40e54613a35" category="paragraph">以下是元素12：2的新API清單：</block>
   <block id="41773f0138486ec234a35d7b9f9a9fbd" category="inline-link-macro">「GetLicenseKey」</block>
@@ -12132,10 +12128,7 @@
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
   <block id="fcfc8ec29a85e264572757cf7ff41339" category="inline-link-macro">啟用遠端NetApp支援連線（Element 123及更早版本）</block>
   <block id="5bda78d943ecf4022539ccee32c6682a" category="list-text"><block ref="5bda78d943ecf4022539ccee32c6682a" category="inline-link-macro-rx"></block></block>
-  <block id="6404341fecbf08f79cd2d05c9800fd53" category="doc">啟動遠端NetApp支援工作階段（Element 123及更早版本）</block>
-  <block id="5dc24222e8b8a9148a6bfcbd2707e07e" category="paragraph">如果您執行Element 123及更早版本、且SolidFire 需要支援您的整套Flash儲存系統、NetApp支援可遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。</block>
   <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">動態節點額定值</block>
-  <block id="f413d4f1d8e95d29f50c5e04149a3882" category="paragraph">動態節點額定值可讓您在每個ESDS平台上運用24個支援的CPU、而非目前的單一CPU每個平台模式。</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element軟體12.5注意事項</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
   <block id="fe69a3287756ee47fc4650a84806448a" category="inline-link-macro">NetApp SolidFire 企業SDS 12.5注意事項</block>
@@ -12204,7 +12197,6 @@
   <block id="7fdc03d82c29eba6b61c702a58fd28ba" category="paragraph">這些元件包括管理服務、NetApp混合雲控制、Element軟體、管理節點、以及Element Plug-in for vCenter Server（視安裝而定）。</block>
   <block id="85aed6fa173952d69db4c99c1290921b" category="inline-link-macro">儲存韌體</block>
   <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">您已為安排足夠的時間 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升級：升級至Element軟體12.5時、升級程序時間會因Element軟體版本和韌體更新而有所不同。</block>
-  <block id="e13d74c2ca8c4f1748afca2eda1fa20f" category="paragraph">您可以使用下列順序來升級SolidFire 適用於Element軟體12.5的NetApp全快閃儲存系統。</block>
   <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">您可以使用NetApp混合雲控制UI或NetApp混合雲控制API執行健全狀況檢查：</block>
   <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">設定自訂保護網域</block>
   <block id="5425a332a34a92102aeaad92cb1cfd47" category="paragraph">您可以使用元素UI來執行 <block ref="6aad22cf2ff364471fbadae1f249e90f" category="inline-link-macro-rx"></block>或使用下列API方法：</block>
@@ -12287,4 +12279,12 @@
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">升級適用於SolidFire Element軟體12.5的NetApp全快閃儲存系統</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">設定自訂保護網域</block>
   <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">對於元素123、支援的Podman版本為1.1.4。</block>
+  <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">啟動遠端NetApp支援工作階段</block>
+  <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">如果SolidFire 您需要支援您的整套Flash儲存系統的技術支援、NetApp支援中心可遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。</block>
+  <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">*靜止時軟體加密增強功能*：SolidFire 元素123引入了靜止時軟體加密功能的增強功能、此功能在您建立一個「企業版SDS」儲存叢集時預設為啟用。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。以下是靜止時與軟體加密相關的元素API方法（請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 如需每種方法的詳細資訊）：</block>
+  <block id="a22ab525bece28b87773c244a6f1b3a0" category="list-text">*能夠定義最大數量的快照保留*：元素123加入了快照保留功能的增強功能。下列API已經過修改、以支援此增強功能（請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 如需每種方法的詳細資訊）：</block>
+  <block id="77f50366e209065f549206394239dd15" category="list-text">*取得元件軟體修補程式的相關資訊*：元素123中所採用的「GetPatchInfo」方法、可讓您取得儲存節點上所安裝元件軟體修補程式的相關資訊。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="285252df34d924e87378e352c6c16dc4" category="list-text">*列出節點上每個網路介面的統計資料*：元素123中引進的「清單網路介面統計資料」方法、可讓您列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="7133445de6da05a38825bf323f4a59dd" category="paragraph">元素12.3.1中引進的動態節點額定值、可讓您在每個ESDS平台上運用24個支援的CPU、而非目前每個平台只需一個CPU的模式。</block>
+  <block id="7e567302f5ef9349d96e39bff1919742" category="paragraph">您可以使用下列順序來升級SolidFire 適用於Element 12.5的NetApp全快閃儲存系統。</block>
 </blocks>
