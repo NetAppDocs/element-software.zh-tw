@@ -3061,7 +3061,6 @@
   <block id="c3a9dc2894664f6aa507a9c3fa9d2f9f" category="paragraph">本產品隨附的VMware軟體儲存系統已停用虛擬磁碟區（VVols）功能。NetApp Element您必須執行一次性工作、透過元素UI手動啟用vSphere VVOL功能。</block>
   <block id="3f0a239e4593681532e35668434b88c0" category="paragraph">啟用VVOL功能之後、VVOL索引標籤會出現在使用者介面中、提供VVOL相關的監控和有限的管理選項。此外、稱為VASA Provider的儲存端軟體元件也可做為vSphere的儲存感知服務。大多數VVOL命令（例如VVOL建立、複製及編輯）都是由vCenter Server或ESXi主機啟動、並由VASA Provider轉譯為Element軟體儲存系統的Element API。您可以使用Element UI來啟動建立、刪除及管理儲存容器及刪除虛擬磁碟區的命令。</block>
   <block id="2ef626e8518f3a0f480ed7e89a8f1574" category="paragraph">在vSphere中、大多數使用虛擬磁碟區功能與元件軟體儲存系統所需的組態都是在vSphere中進行。請參閱《VMware vSphere Virtual Volumes for SolidFire VMware Storage組態指南》_、在vCenter中註冊VASA Provider、建立及管理VVOL資料存放區、以及根據原則管理儲存設備。</block>
-  <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">請勿在NetApp Element 單一vCenter執行個體中登錄多個VMware vCenter供應商。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。</block>
   <block id="583fdc81420816faa41efaba6c508421" category="inline-link">NetApp軟體下載</block>
   <block id="51d8d3b6c9131752107470163b10f17b" category="admonition">如果您已向vCenter註冊VASA供應商、則VASA支援可作為升級修補程式提供多個vCenter。若要安裝、請從下載VSA39 .tar.gz檔案<block ref="a5762658b720f071580221aff2666e02" category="inline-link-rx"></block> 並遵循資訊清單中的指示。該供應商使用NetApp認證。NetApp Element有了這個修補程式、vCenter便會使用未經修改的憑證來支援VASA和VVols使用的多個vCenter。請勿修改憑證。VASA不支援自訂SSL憑證。</block>
   <block id="007c02658ef8b07a1001bafe776df27b" category="list-text"><block ref="007c02658ef8b07a1001bafe776df27b" category="inline-xref-macro-rx"></block></block>
@@ -12287,4 +12286,5 @@
   <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">*取得元件軟體修補程式的相關資訊*：元素123中引進的「GetPatchInfo」方法可讓您取得有關安裝在儲存節點上的元件軟體修補程式的資訊。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出節點上每個網路介面的統計資料*：元素123中採用的「清單網路介面統計資料」方法可列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">元素12.3.1中引進的動態節點額定值、可讓您在每個ESDS平台上運用24個支援的CPU、而非目前的單一CPU每個平台模式。</block>
+  <block id="234a1430825055fe25203429facd267e" category="admonition">請勿在NetApp Element 單一vCenter執行個體中登錄多個VMware vCenter供應商。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。</block>
 </blocks>
