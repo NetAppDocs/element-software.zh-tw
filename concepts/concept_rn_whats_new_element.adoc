@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。 
 ---
-= 新功能
+= Element軟體12.5的新功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

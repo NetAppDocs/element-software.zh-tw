@@ -6099,7 +6099,6 @@
   <block id="d88a2e3b7b7d5ca1d7f837546cb3b31f" category="paragraph">Volume專屬帳戶僅適用於建立帳戶的儲存叢集。這些帳戶可讓您在網路上的特定磁碟區上設定權限、但在這些磁碟區之外並無任何影響。</block>
   <block id="682faa8b9dab1247bb831425cb9ffc7e" category="paragraph">Volume帳戶是在NetApp混合雲控制磁碟區表格中管理。</block>
   <block id="242169bc3cfede608a33f18d694f8ac7" category="summary">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
   <block id="69893000f4da30e1e42922cbcf8dac0e" category="inline-link">NetApp線上錯誤</block>
   <block id="d3d9446802a44259755d38e6d163e820" category="paragraph">10.</block>
   <block id="19b9aebc333a4f2fd40dbdb629489716" category="list-text">CreatGroupSnapshot</block>
@@ -12287,4 +12286,5 @@
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出節點上每個網路介面的統計資料*：元素123中採用的「清單網路介面統計資料」方法可列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">元素12.3.1中引進的動態節點額定值、可讓您在每個ESDS平台上運用24個支援的CPU、而非目前的單一CPU每個平台模式。</block>
   <block id="234a1430825055fe25203429facd267e" category="admonition">請勿在NetApp Element 單一vCenter執行個體中登錄多個VMware vCenter供應商。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。</block>
+  <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Element軟體12.5的新功能</block>
 </blocks>
