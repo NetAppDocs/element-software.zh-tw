@@ -12124,8 +12124,6 @@
   <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">從元件12.3.1開始、會自動執行子步驟（A）至（e）。若為管理節點12.3.1或更新版本、請繼續執行 <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 以完成時間同步組態。</block>
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
-  <block id="fcfc8ec29a85e264572757cf7ff41339" category="inline-link-macro">啟用遠端NetApp支援連線（Element 123及更早版本）</block>
-  <block id="5bda78d943ecf4022539ccee32c6682a" category="list-text"><block ref="5bda78d943ecf4022539ccee32c6682a" category="inline-link-macro-rx"></block></block>
   <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">動態節點額定值</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element軟體12.5注意事項</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
@@ -12287,4 +12285,6 @@
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">元素12.3.1中引進的動態節點額定值、可讓您在每個ESDS平台上運用24個支援的CPU、而非目前的單一CPU每個平台模式。</block>
   <block id="234a1430825055fe25203429facd267e" category="admonition">請勿在NetApp Element 單一vCenter執行個體中登錄多個VMware vCenter供應商。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。</block>
   <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Element軟體12.5的新功能</block>
+  <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">啟用遠端NetApp支援連線</block>
+  <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
 </blocks>
