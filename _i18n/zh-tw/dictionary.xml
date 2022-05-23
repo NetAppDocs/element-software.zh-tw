@@ -919,7 +919,6 @@
   <block id="53afd371e15d648a9aa30b588b004c09" category="paragraph"><block ref="53afd371e15d648a9aa30b588b004c09" category="inline-xref-macro-rx"></block></block>
   <block id="c862058e7345a40a7280afb21deb5070" category="summary">在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。</block>
   <block id="7e5784de66821e5068bc24c9a5c6d1d6" category="doc">使用使用者帳戶</block>
-  <block id="76a60d9f56c68f8cdba13568859cd542" category="paragraph">帳戶包含存取指派給它的磁碟區所需的CHAP驗證。</block>
   <block id="4082f16ece7fe49a6ae9cff89731b948" category="paragraph">帳戶最多可指派2、000個磁碟區、但一個磁碟區只能屬於一個帳戶。</block>
   <block id="2fdfd506efea08144c0794c32ca8250a" category="section-title">建立帳戶</block>
   <block id="4c284224e57855e8f92076f429042030" category="paragraph">您可以建立帳戶以允許存取磁碟區。</block>
@@ -6578,7 +6577,6 @@
   <block id="fc076765cbc4aef219c970ffdd93f443" category="section-title">主機需求</block>
   <block id="03bcd410bd7ead49d08f550bc9a30142" category="list-text">ESXi 6.0或6.5適用於Element示範節點11.7 VM</block>
   <block id="ecb8216baa63e0909aac4fd714e014e1" category="list-text">ESXi 6.5適用於Element示範節點12和12、2 VM</block>
-  <block id="b85a8796b972a55dc7c4bf65dd09fd2e" category="list-text">適用於Element示範節點123 VM的ESXi 6.7和7.0</block>
   <block id="5ac069ffea9781a530fd57c5091c864e" category="list-text">多核心64位元Intel®架構</block>
   <block id="0b1be0c62ecdaf7366d96f912ceb102c" category="section-title">下載Element示範節點</block>
   <block id="8e0427361ae62a632ff8f5f2e0f77488" category="paragraph">Element示範節點軟體是一組VMware檔案、已封裝在.ova檔案中。</block>
@@ -12287,4 +12285,7 @@
   <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Element軟體12.5的新功能</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">啟用遠端NetApp支援連線</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
+  <block id="36d8d20d969c93e2ea2538dca80bb707" category="list-text">適用於Element示範節點12.5 VM的ESXi 6.7和7.0</block>
+  <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP處理帳戶</block>
+  <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire帳戶包含存取指派給該帳戶的磁碟區所需的挑戰握手驗證傳輸協定（CHAP）驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。</block>
 </blocks>

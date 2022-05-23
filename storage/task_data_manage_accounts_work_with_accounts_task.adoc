@@ -4,16 +4,14 @@ sidebar: sidebar
 keywords: element, solidfire, accounts, create, delete, change, chap, view, edit 
 summary: 在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。 
 ---
-= 使用使用者帳戶
+= 使用CHAP處理帳戶
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。
-
-帳戶包含存取指派給它的磁碟區所需的CHAP驗證。
+在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire帳戶包含存取指派給該帳戶的磁碟區所需的挑戰握手驗證傳輸協定（CHAP）驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。
 
 帳戶最多可指派2、000個磁碟區、但一個磁碟區只能屬於一個帳戶。
 
