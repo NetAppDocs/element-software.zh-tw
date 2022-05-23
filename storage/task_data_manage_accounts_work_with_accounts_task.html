@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
   <head class="at-element-marker">
-  <title>使用使用者帳戶</title>
+  <title>使用CHAP處理帳戶</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="使用使用者帳戶" />
+  <meta property="og:title" content="使用CHAP處理帳戶" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_accounts_work_with_accounts_task.html" />
 	<meta property="og:description" content="在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。" />
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[使用使用者帳戶](https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_accounts_work_with_accounts_task.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/element-software/images/discuss-sm.svg" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/element-software/blob/main/storage/task_data_manage_accounts_work_with_accounts_task.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/element-software/images/edit-sm.svg" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/element-software/images/article-sm.svg" class="github-icon" />瞭解如何作出貢獻</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/element-software/issues/new?body=Page%3A%20[使用CHAP處理帳戶](https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_accounts_work_with_accounts_task.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/element-software/images/discuss-sm.svg" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/element-software/blob/main/storage/task_data_manage_accounts_work_with_accounts_task.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/element-software/images/edit-sm.svg" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/element-software/images/article-sm.svg" class="github-icon" />瞭解如何作出貢獻</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此頁面上</div>
@@ -5941,14 +5941,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">使用使用者帳戶</h1>
+  <h1 class="n-doc__component-detail-heading">使用CHAP處理帳戶</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 08:14:02 +0000">05/03/2022</time>
+    <time datetime="2022-05-23 11:43:28 +0000">05/23/2022</time>
     
   
 
@@ -5958,10 +5958,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。</p>
-</div>
-<div class="paragraph">
-<p>帳戶包含存取指派給它的磁碟區所需的CHAP驗證。</p>
+<p>在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire帳戶包含存取指派給該帳戶的磁碟區所需的挑戰握手驗證傳輸協定（CHAP）驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。</p>
 </div>
 <div class="paragraph">
 <p>帳戶最多可指派2、000個磁碟區、但一個磁碟區只能屬於一個帳戶。</p>
