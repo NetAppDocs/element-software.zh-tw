@@ -19,12 +19,12 @@ summary: 安裝SolidFire 完EESDS之前、請務必執行必要的檢查、並�
 
 
 .<strong>設定主機（節點）</strong>
-* 根據中所列的支援版本來安裝RHEL https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp互通性對照表（需登入）"^]。
+* 根據中所列的支援版本來安裝Red Hat套件管理程式 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp互通性對照表（需登入）"^]。
 * 設定網路時間傳輸協定（NTP）伺服器、以搭配網路中的所有主機使用。
 * 選取安裝目的地時、請選取選項按鈕以手動設定檔案系統分割區。在「*手動分割*」頁面上、使用*+*和*-*按鈕移除任何現有的分割區、然後建立新的分割區並依照此處列出的建議調整其大小。使用預設的LVM分割配置可讓您在需要時輕鬆調整大小。
 +
 
-NOTE: 根據預設、RHEL會選擇「xfs」作為您手動建立之分割區的預設檔案系統。您應該將其變更為「ext4」、除了「/boot」和「shwap」分割區之外。您的「/boot」分割區應該使用「ext2」。
+NOTE: 根據預設、Red Hat套件管理員會選擇「xfs」作為您手動建立之分割區的預設檔案系統。您應該將其變更為「ext4」、除了「/boot」和「shwap」分割區之外。您的「/boot」分割區應該使用「ext2」。
 
 +
 如果您的SATA磁碟為250GB、請遵循下列建議的分割區。如果您的SATA磁碟有更多空間、您可以增加/opt和/var磁碟分割區大小。
@@ -88,7 +88,7 @@ NOTE: 根據預設、RHEL會選擇「xfs」作為您手動建立之分割區的�
 NOTE: 任何程序都不會使用「/sdb"磁碟。
 
 * 停用RAID for /boot。
-* 在「軟體選擇」畫面中、選取要安裝的特定套件、然後根據RHEL版本選取*「伺服器*」或*「基礎架構伺服器*」。
+* 在「軟體選擇」畫面中、選取要安裝的特定套件、然後根據Red Hat套件管理程式版本選取*「伺服器*」或*「基礎架構伺服器*」。
 * 第一次開機之後、請執行下列動作：
 +
 ** 安裝Red Hat訂購管理程式、並啟用下列儲存庫：
@@ -109,9 +109,26 @@ rhel-7-server-extras-rpms
 .<strong>安裝所需的軟體</strong>
 * 安裝Ansible、Git、Podman和Python 3.0。
 +
+[NOTE]
+====
+對於Element 12.5、支援的Podman版本取決於您的Red Hat套件管理程式版本：
 
-NOTE: 對於元素123、支援的Podman版本為1.1.4。
+[cols="35,65"]
+|===
+| Red Hat套件管理程式版本 | Podman版本 
 
+
+| 7.x | 1.6.4 
+
+
+| 8.1、8.2、8.3及8.4  a| 
+3.1.x、3.2.x、3.3.x、3.4.1及3.4.2
+
+
+NOTE: 如果有、NetApp建議您接受適用於Podman版本的安全性更新。
+
+|===
+====
 
 
 .<strong>驗證您的組態是否符合NetApp&#8217;安裝SolidFire RESTESDS</strong>的要求
@@ -168,7 +185,7 @@ NOTE: 即使您開始使用SolidFire 完EESDS系統、也應該定期執行法�
 
 
 .<strong>瞭解網路和IP位址需求</strong>
-* 熟悉如何在RHEL中設定及管理網路和網路介面。請參閱 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["RedHat文件"^]。
+* 熟悉如何在Red Hat套件管理程式中設定及管理網路和網路介面。請參閱 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["RedHat文件"^]。
 * 請依照此處詳述的IP需求來設定您的網路：
 +
 [cols="4*"]
@@ -245,7 +262,7 @@ IMPORTANT: 此處提供的圖例是一個範例。實際的硬體可能會因您
 
 
 .<strong>允許特定連接埠透過資料中心和#8217;的防火牆</strong>
-* 如果在執行RHEL的儲存節點上啟用「firewalld」、請確定您已開啟下列連接埠、以便從遠端管理系統、允許資料中心外部的用戶端連線至資源、並確保內部服務能夠正常運作：
+* 如果在執行Red Hat套件管理程式的儲存節點上啟用了「firewalld」、請確定您已開啟下列連接埠、以便從遠端管理系統、允許資料中心外部的用戶端連線至資源、並確保內部服務能夠正常運作：
 +
 [cols="4*"]
 |===

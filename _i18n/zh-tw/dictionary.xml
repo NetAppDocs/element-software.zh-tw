@@ -3994,10 +3994,8 @@
   <block id="dd76252ea7a50def2a98f218cb1505b4" category="inline-link">知識庫文章</block>
   <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">請確定您的硬體組態已達到平衡、而且所有通道均已填入。如需最大化頻寬的詳細資訊、請參閱<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> （需要登入）。</block>
   <block id="2a97471ec199242556431779bd30838a" category="list-title">&lt;strong&gt;設定主機（節點）&lt;/strong&gt;</block>
-  <block id="dfda84dd73a63b7698fcd71a1a191bb4" category="list-text">根據中所列的支援版本來安裝RHEL<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
   <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">設定網路時間傳輸協定（NTP）伺服器、以搭配網路中的所有主機使用。</block>
   <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">選取安裝目的地時、請選取選項按鈕以手動設定檔案系統分割區。在「*手動分割*」頁面上、使用*+*和*-*按鈕移除任何現有的分割區、然後建立新的分割區並依照此處列出的建議調整其大小。使用預設的LVM分割配置可讓您在需要時輕鬆調整大小。</block>
-  <block id="7cf307b4cbb4dc37df69fb730f71704e" category="admonition">根據預設、RHEL會選擇「xfs」作為您手動建立之分割區的預設檔案系統。您應該將其變更為「ext4」、除了「/boot」和「shwap」分割區之外。您的「/boot」分割區應該使用「ext2」。</block>
   <block id="17535771fae0ee390ce31ef42ebc5155" category="paragraph">如果您的SATA磁碟為250GB、請遵循下列建議的分割區。如果您的SATA磁碟有更多空間、您可以增加/opt和/var磁碟分割區大小。</block>
   <block id="3349300356cb3141ea939dcbdf749789" category="cell">分割區</block>
   <block id="6f6cb72d544962fa333e2e34ce64f719" category="cell">尺寸</block>
@@ -4015,7 +4013,6 @@
   <block id="7d8fdfd7c15a233be456f2a7a7f5337a" category="paragraph">/usr</block>
   <block id="876bd0b5b542dbc543a61dd69f527ceb" category="admonition">任何程序都不會使用「/sdb"磁碟。</block>
   <block id="09942c4da908193c21f2c641c4c45cd7" category="list-text">停用RAID for /boot。</block>
-  <block id="d0c957516dbabedfe88742b9e4a4cfdc" category="list-text">在「軟體選擇」畫面中、選取要安裝的特定套件、然後根據RHEL版本選取*「伺服器*」或*「基礎架構伺服器*」。</block>
   <block id="303f5963e3ea829928dcbe2a9317331c" category="list-text">第一次開機之後、請執行下列動作：</block>
   <block id="583f03cc8d89c265cfb974e74e052cc2" category="list-text">安裝Red Hat訂購管理程式、並啟用下列儲存庫：</block>
   <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">在節點上啟用SSH。</block>
@@ -4038,8 +4035,6 @@
   <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">執行法規遵循檢查方針、如下列範例所示：</block>
   <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">即使您開始使用SolidFire 完EESDS系統、也應該定期執行法規遵循檢查、以確保系統符合法規要求。在某些情況下、NetApp支援部門會要求您執行法規遵循檢查、以協助診斷及疑難排解問題。</block>
   <block id="09acbcc09d76195cfde55a1522db4644" category="list-title">&lt;strong&gt;瞭解網路和IP位址需求&lt;/strong&gt;</block>
-  <block id="c8bd9bfc4e58f0125e3130b5e3b58307" category="inline-link">RedHat文件</block>
-  <block id="36a4a4fa850be7aa4008ba57334d681b" category="list-text">熟悉如何在RHEL中設定及管理網路和網路介面。請參閱<block ref="a5d07f73933f9c55909e31f1ce2ee464" category="inline-link-rx"></block>。</block>
   <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">請依照此處詳述的IP需求來設定您的網路：</block>
   <block id="265df7cdddd316ce979aa017f0753e25" category="cell">儲存網路IP位址</block>
   <block id="8cf4bbd9c7217cee301892ceeb548f53" category="cell">管理網路IP位址</block>
@@ -4063,7 +4058,6 @@
   <block id="ebff118a006e94651da911d800279c44" category="admonition">此處提供的圖例是一個範例。實際的硬體可能會因您擁有的伺服器而有所不同。</block>
   <block id="7300079506cb737ad309140b1f56eeda" category="list-text">將交換器連接埠MTU變更為9216位元組。</block>
   <block id="4b7ef9f74fc5d5abcae07ceee277787a" category="list-title">&lt;strong&gt;允許特定連接埠透過資料中心和#8217;的防火牆&lt;/strong&gt;</block>
-  <block id="2c87e2d0f38577f9f5bdce1dc171ae67" category="list-text">如果在執行RHEL的儲存節點上啟用「firewalld」、請確定您已開啟下列連接埠、以便從遠端管理系統、允許資料中心外部的用戶端連線至資源、並確保內部服務能夠正常運作：</block>
   <block id="ab2f4d4dbd7fe86289026b4321e7e53d" category="paragraph">80個TCP/IP</block>
   <block id="f5fc4cfbf6f32dae142bd0f1c443bc13" category="paragraph">叢集升級</block>
   <block id="b0ee3a63a5791163e83df745e5b7b013" category="paragraph">4442 TCP</block>
@@ -12193,7 +12187,6 @@
   <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">您已為安排足夠的時間 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升級：升級至Element軟體12.5時、升級程序時間會因Element軟體版本和韌體更新而有所不同。</block>
   <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">您可以使用NetApp混合雲控制UI或NetApp混合雲控制API執行健全狀況檢查：</block>
   <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">設定自訂保護網域</block>
-  <block id="5425a332a34a92102aeaad92cb1cfd47" category="paragraph">您可以使用元素UI來執行 <block ref="6aad22cf2ff364471fbadae1f249e90f" category="inline-link-macro-rx"></block>或使用下列API方法：</block>
   <block id="b9d7f7d96ba0d7f9fb0ebbfdd76705d5" category="list-text"><block ref="a92b076f4c042891d554c076d8d2ec26" category="inline-link-macro-rx"></block> -顯示每個節點所在的機箱和自訂保護網域。</block>
   <block id="ed4cb7ef9d0074dd188232c212f3131c" category="list-text"><block ref="79208a7b3d3c86443da0ca3bafbef925" category="inline-link-macro-rx"></block> -可將自訂保護網域指派給每個節點。</block>
   <block id="61b35a1ffe9df32c3c0e2e4a7969de4b" category="paragraph">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.5引進改良的儲存節點存取功能、增強的自訂保護網域管理功能、全新改良的叢集故障與事件、增強的Create Cluster UI功能、增強的安全性、以及使用Ansible的自動化升級。</block>
@@ -12272,7 +12265,6 @@
   <block id="30486cdfdde2444e4151845599ac5bf5" category="sidebar">Element 12.5文件</block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">升級適用於SolidFire Element軟體12.5的NetApp全快閃儲存系統</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">設定自訂保護網域</block>
-  <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">對於元素123、支援的Podman版本為1.1.4。</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">啟動遠端NetApp支援工作階段</block>
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">如果SolidFire 您需要支援您的整套Flash儲存系統的技術支援、NetApp支援中心可遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。</block>
   <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">*靜止時軟體加密增強功能*：SolidFire 元素123引入了靜止時軟體加密功能的增強功能、此功能在您建立一個「企業版SDS」儲存叢集時預設為啟用。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。以下是靜止時與軟體加密相關的元素API方法（請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 如需每種方法的詳細資訊）：</block>
@@ -12288,4 +12280,19 @@
   <block id="36d8d20d969c93e2ea2538dca80bb707" category="list-text">適用於Element示範節點12.5 VM的ESXi 6.7和7.0</block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP處理帳戶</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire帳戶包含存取指派給該帳戶的磁碟區所需的挑戰握手驗證傳輸協定（CHAP）驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。</block>
+  <block id="f5c6f9835df083f9a7848584832ffe51" category="list-text">根據中所列的支援版本來安裝Red Hat套件管理程式<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
+  <block id="8297e8d8235ab4d403ff5275f7488f0e" category="admonition">根據預設、Red Hat套件管理員會選擇「xfs」作為您手動建立之分割區的預設檔案系統。您應該將其變更為「ext4」、除了「/boot」和「shwap」分割區之外。您的「/boot」分割區應該使用「ext2」。</block>
+  <block id="e39438a68fb3f711253e9a7370ff67d2" category="list-text">在「軟體選擇」畫面中、選取要安裝的特定套件、然後根據Red Hat套件管理程式版本選取*「伺服器*」或*「基礎架構伺服器*」。</block>
+  <block id="94f57e8fc8a5e98d0aadd2f3fd717077" category="paragraph">對於Element 12.5、支援的Podman版本取決於您的Red Hat套件管理程式版本：</block>
+  <block id="111f3cbd261a94954f796bd076317101" category="cell">Red Hat套件管理程式版本</block>
+  <block id="89c0c976c84a0dc5ae614e09b4cc1c8e" category="cell">Podman版本</block>
+  <block id="b1db54564fe54a4c74a975b18a791532" category="cell">7.x</block>
+  <block id="029b1c7f4aeae9b0d7440388e1b6b30b" category="cell">1.6.4</block>
+  <block id="9b894f3cda522ff568508c500c301f16" category="cell">8.1、8.2、8.3及8.4</block>
+  <block id="f991179eef81959ca4ec71aa86a4df76" category="paragraph">3.1.x、3.2.x、3.3.x、3.4.1及3.4.2</block>
+  <block id="23e29da41b25c9d2df2b9c3e88b4f7e0" category="admonition">如果有、NetApp建議您接受適用於Podman版本的安全性更新。</block>
+  <block id="cd9179614936afe6f50612f0cf8c5615" category="inline-link">RedHat文件</block>
+  <block id="f82fbefaef1108fe81a739d7c43f6e9f" category="list-text">熟悉如何在Red Hat套件管理程式中設定及管理網路和網路介面。請參閱<block ref="a661302e878d4f2065d4f48e5679440c" category="inline-link-rx"></block>。</block>
+  <block id="5cfb8e81e0263340cb87df666ea52280" category="list-text">如果在執行Red Hat套件管理程式的儲存節點上啟用了「firewalld」、請確定您已開啟下列連接埠、以便從遠端管理系統、允許資料中心外部的用戶端連線至資源、並確保內部服務能夠正常運作：</block>
+  <block id="da098b5086ce4e5936074c04efe5aa87" category="paragraph">您可以使用元素UI來執行 <block ref="cbef8289b7bcb52ca0b9a41f4d962912" category="inline-link-macro-rx"></block>或使用下列API方法：</block>
 </blocks>
