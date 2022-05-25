@@ -59,4 +59,7 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 * link:./media/mgmt-214.pdf["管理服務服務2.14注意事項（VCP 4.5.42）"^]
 * link:./media/mgmt-213.pdf["管理服務注意事項2.13（VCP 4.5.42）"^]
 * link:./media/storage_firmware_bundle_2.146_notices.pdf["儲存韌體產品組合2.146注意事項"^]
+* link:./media/storage_firmware_bundle_2.99_notices.pdf["儲存韌體產品組合2.99.2注意事項"^]
+* link:./media/storage_firmware_bundle_2.76_notices.pdf["儲存韌體產品組合2.76注意事項"^]
+* link:./media/storage_firmware_bundle_2.27_notices.pdf["儲存韌體產品組合2.27注意事項"^]
 

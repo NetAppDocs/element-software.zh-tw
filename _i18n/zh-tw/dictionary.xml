@@ -12295,4 +12295,8 @@
   <block id="f82fbefaef1108fe81a739d7c43f6e9f" category="list-text">熟悉如何在Red Hat套件管理程式中設定及管理網路和網路介面。請參閱<block ref="a661302e878d4f2065d4f48e5679440c" category="inline-link-rx"></block>。</block>
   <block id="5cfb8e81e0263340cb87df666ea52280" category="list-text">如果在執行Red Hat套件管理程式的儲存節點上啟用了「firewalld」、請確定您已開啟下列連接埠、以便從遠端管理系統、允許資料中心外部的用戶端連線至資源、並確保內部服務能夠正常運作：</block>
   <block id="da098b5086ce4e5936074c04efe5aa87" category="paragraph">您可以使用元素UI來執行 <block ref="cbef8289b7bcb52ca0b9a41f4d962912" category="inline-link-macro-rx"></block>或使用下列API方法：</block>
+  <block id="927feedbfb9bbc4a93e285ba9504ab0b" category="inline-link-macro">儲存韌體產品組合2.76注意事項</block>
+  <block id="69b7535618573fd609dc8b4663c8b8c0" category="list-text"><block ref="69b7535618573fd609dc8b4663c8b8c0" category="inline-link-macro-rx"></block></block>
+  <block id="30624e21224d847e1b829641269ffe3c" category="inline-link-macro">儲存韌體產品組合2.27注意事項</block>
+  <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
 </blocks>
