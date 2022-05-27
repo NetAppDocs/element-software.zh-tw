@@ -123,7 +123,7 @@ homepage:
       url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
   - title: 舊版
     links:
-    - title: Element 12.5文件
+    - title: Element 123文件
       url: https://docs.netapp.com/us-en/element-software-123/
     - title: Element 12.2文件
       url: https://docs.netapp.com/sfe-122/index.jsp

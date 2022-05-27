@@ -12262,7 +12262,6 @@
   <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">請確定機箱中的所有節點都已指派相同的保護網域。</block>
   <block id="29a6f38cbca29e0f3bdeecf96eb0b27a" category="paragraph"><block ref="b58e8d039996e87c7075e998e2dbe5e4" category="inline-link-macro-rx"></block>
 <block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
-  <block id="30486cdfdde2444e4151845599ac5bf5" category="sidebar">Element 12.5文件</block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">升級適用於SolidFire Element軟體12.5的NetApp全快閃儲存系統</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">設定自訂保護網域</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">啟動遠端NetApp支援工作階段</block>
@@ -12299,4 +12298,5 @@
   <block id="69b7535618573fd609dc8b4663c8b8c0" category="list-text"><block ref="69b7535618573fd609dc8b4663c8b8c0" category="inline-link-macro-rx"></block></block>
   <block id="30624e21224d847e1b829641269ffe3c" category="inline-link-macro">儲存韌體產品組合2.27注意事項</block>
   <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
+  <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 123文件</block>
 </blocks>
