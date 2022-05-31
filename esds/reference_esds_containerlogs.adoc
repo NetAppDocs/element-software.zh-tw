@@ -38,7 +38,7 @@ IMPORTANT: 如果其中一個容器沒有啟動或執行、請勿使用Podman直
 
 
 
-=== 使用NetApp混合雲控制UI來收集記錄
+== 使用NetApp混合雲控制UI來收集記錄
 
 您可以收集記錄以傳送給NetApp支援部門、以協助診斷SolidFire 有關您的EESDS叢集的問題。
 
