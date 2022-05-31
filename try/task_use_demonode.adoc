@@ -57,7 +57,7 @@ NOTE: 所有其他元素軟體限制均適用。如需詳細資料、請參閱�
 
 * ESXi 6.0或6.5適用於Element示範節點11.7 VM
 * ESXi 6.5適用於Element示範節點12和12、2 VM
-* 適用於Element示範節點12.5 VM的ESXi 6.7和7.0
+* ESXi 6.7和7.0、適用於Element示範節點123和12.5 VM
 * 多核心64位元Intel®架構
 
 

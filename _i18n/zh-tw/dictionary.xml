@@ -12276,7 +12276,6 @@
   <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Element軟體12.5的新功能</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">啟用遠端NetApp支援連線</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
-  <block id="36d8d20d969c93e2ea2538dca80bb707" category="list-text">適用於Element示範節點12.5 VM的ESXi 6.7和7.0</block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP處理帳戶</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire帳戶包含存取指派給該帳戶的磁碟區所需的挑戰握手驗證傳輸協定（CHAP）驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。</block>
   <block id="f5c6f9835df083f9a7848584832ffe51" category="list-text">根據中所列的支援版本來安裝Red Hat套件管理程式<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
@@ -12299,4 +12298,5 @@
   <block id="30624e21224d847e1b829641269ffe3c" category="inline-link-macro">儲存韌體產品組合2.27注意事項</block>
   <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
   <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 123文件</block>
+  <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">ESXi 6.7和7.0、適用於Element示範節點123和12.5 VM</block>
 </blocks>
