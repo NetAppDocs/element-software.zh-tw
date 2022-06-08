@@ -12215,7 +12215,6 @@
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="5ed2b0be7714cf9bfe94c6d0660549bb" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block></block>
   <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">儲存韌體產品組合2.146版本說明</block>
-  <block id="9f873554ab661acde4027ab646c5aa79" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block> _新_</block>
   <block id="357bc0086b99b12d4411a85cc4c0c8a2" category="admonition">靜止狀態的軟體加密功能預設會在SolidFire 所有的「支援企業」SDS節點中啟用。靜止軟體加密功能可在SolidFire 不含自我加密磁碟機（SED）的企業SDS節點中、提供資料安全加密的主要軟體層。</block>
   <block id="efe7c0d4ed04341756689674a3fb46c4" category="list-text">* BMCselfTestFailed*</block>
   <block id="e14ad5a8fd8d67543e771552b5287d65" category="paragraph">基礎板管理控制器（BMC）自我測試失敗。</block>
@@ -12299,4 +12298,9 @@
   <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
   <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 123文件</block>
   <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">ESXi 6.7和7.0、適用於Element示範節點123和12.5 VM</block>
+  <block id="f73f11dc118d0773193fe38ff975e133" category="inline-link">儲存韌體產品組合2.150版本說明</block>
+  <block id="4ed157f2adee50f00ed14eca30c23284" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block> _新_</block>
+  <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
+  <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">儲存韌體產品組合2.150注意事項</block>
+  <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
 </blocks>
