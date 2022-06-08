@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/element-software/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/element-software/legal-notices.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/element-software/legal-notices.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/element-software/legal-notices.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/element-software/legal-notices.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/element-software/legal-notices.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/element-software/legal-notices.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/element-software/legal-notices.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/element-software/legal-notices.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/element-software/legal-notices.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/element-software/legal-notices.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -4230,7 +4222,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/element-software/index.html">
         零件與元件軟體12.5文件SolidFire
       </a></li><li class="subfolders "><a href="/zh-tw/element-software/concepts/concept_rn_relatedrn_element.html">
@@ -5939,7 +5931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-25 16:26:39 +0000">05/25/2022</time>
+    <time datetime="2022-06-08 19:56:42 +0000">06/08/2022</time>
     
   
 
@@ -6031,6 +6023,9 @@
 </li>
 <li>
 <p><a href="./media/mgmt-213.pdf" target="_blank" rel="noopener">"管理服務注意事項2.13（VCP 4.5.42）"</a></p>
+</li>
+<li>
+<p><a href="./media/storage_firmware_bundle_2.150_notices.pdf" target="_blank" rel="noopener">"儲存韌體產品組合2.150注意事項"</a></p>
 </li>
 <li>
 <p><a href="./media/storage_firmware_bundle_2.146_notices.pdf" target="_blank" rel="noopener">"儲存韌體產品組合2.146注意事項"</a></p>
@@ -6194,4 +6189,5 @@
     </script>
     <script src='/zh-tw/element-software/js/www-ntap.js'></script>
     <script src='/zh-tw/element-software/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/element-software/js/sidebar.js'></script>
   </body></html>
