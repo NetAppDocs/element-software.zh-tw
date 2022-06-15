@@ -5,7 +5,12 @@ summary: 您可以使用NetApp混合式控制UI來新增、移除、變更及啟
 keywords: netapp, element, storage cluster, hybrid cloud control, hcc, maintenance mode, enable, disable 
 ---
 = 使用NetApp混合雲控制新增及管理儲存叢集
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

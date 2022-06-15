@@ -5,7 +5,12 @@ summary: 您可以升級SolidFire VMware元件以供搭配使用的VMware儲存�
 keywords: netapp, solidfire, vsphere components, upgrade, vCenter, ESXi 
 ---
 = 使用SolidFire vCenter Server的Element外掛程式、升級NetApp支援的vSphere元件、以利NetApp支援儲存系統
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

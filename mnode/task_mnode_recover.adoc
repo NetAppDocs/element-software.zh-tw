@@ -5,7 +5,12 @@ summary: 您可以為執行NetApp Element NetApp軟體的叢集恢復及重新�
 keywords: netapp, element, management node, mnode, disaster recovery, redeploy, VM 
 ---
 = 恢復管理節點
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

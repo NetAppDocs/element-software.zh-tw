@@ -5,7 +5,12 @@ summary: 如果叢集位於Proxy伺服器之後、您必須設定Proxy設定、�
 keywords: netapp, Element, mnode, api, management node, add proxy, proxy server 
 ---
 = 設定Proxy伺服器
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

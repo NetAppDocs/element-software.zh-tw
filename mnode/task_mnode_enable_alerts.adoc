@@ -5,7 +5,12 @@ summary: 您無法設定設定來監控SolidFire 您的不完整Flash儲存系�
 keywords: netapp, Element, management node, mnode, ui, alerts, alert monitoring 
 ---
 = 設定警示監控
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

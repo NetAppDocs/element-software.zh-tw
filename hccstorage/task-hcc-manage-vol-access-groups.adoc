@@ -5,7 +5,12 @@ summary: 瞭SolidFire 解如何新增Volume存取群組以搭配使用各種功�
 keywords: netapp, element, cluster, volume, access 
 ---
 = 建立及管理Volume存取群組
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

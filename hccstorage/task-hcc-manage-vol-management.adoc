@@ -5,7 +5,12 @@ summary: 瞭解如何建立磁碟區、並將磁碟區與特定帳戶建立關�
 keywords: netapp, element, cluster, element, volume 
 ---
 = 使用NetApp混合雲控制來建立及管理磁碟區
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

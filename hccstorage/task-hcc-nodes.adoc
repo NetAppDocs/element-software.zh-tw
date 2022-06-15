@@ -5,7 +5,12 @@ summary: 您可以使用「混合雲控制節點」頁面、檢視系統中的�
 keywords: netapp, element, cluster, inventory, nodes, storage 
 ---
 = 在節點頁面上檢視您的庫存
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

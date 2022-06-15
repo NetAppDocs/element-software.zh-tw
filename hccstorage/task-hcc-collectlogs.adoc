@@ -5,7 +5,12 @@ summary: 您可以使用NetApp混合式雲端控制來收集元素安裝的記�
 keywords: netapp, element, logs, collection, troubleshooting, monitor 
 ---
 = 收集記錄以進行疑難排解
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

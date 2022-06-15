@@ -5,7 +5,12 @@ summary: 您可以在NetApp混合雲控制儀表板上檢視儲存資源。此�
 keywords: netapp, element, hcc, hybrid cloud control, storage, storage performance, capacity 
 ---
 = 監控混合雲控制儀表板上的儲存資源
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -5,7 +5,12 @@ summary: 在NetApp SolidFire 的更新過程中、您可以升級與儲存節點
 keywords: netapp, element, hcc, firmware, storage firmware 
 ---
 = 升級儲存韌體
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -5,7 +5,12 @@ summary: 對於元素12.5及更新版本、您可以在管理節點上啟用sfre
 keywords: netapp, sfreadonly, connect to support, support tunnel, rst, mnode, management node 
 ---
 = 使用SSH存取儲存節點以進行基本疑難排解
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

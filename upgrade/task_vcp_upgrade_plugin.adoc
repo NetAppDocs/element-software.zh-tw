@@ -5,7 +5,12 @@ summary: 在NetApp SolidFire 支援儲存系統升級的過程中、您可以升
 keywords: netapp, vcp, vCenter plug-in, upgrade, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9 
 ---
 = 升級vCenter Server的Element外掛程式
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

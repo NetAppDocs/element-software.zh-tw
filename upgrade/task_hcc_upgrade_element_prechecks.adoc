@@ -5,7 +5,12 @@ summary: 在升級NetApp SolidFire 時、您需要執行NetApp Element 有關該
 keywords: netapp, storage prechecks, element upgrade, sfupgradecheck 
 ---
 = 升級儲存設備之前、請先執行Element儲存設備健全狀況檢查
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -5,7 +5,12 @@ summary: 有SolidFire 了NetApp的全快閃儲存設備、您就能使用NetApp�
 keywords: netapp, element, cluster, element, account, user, volume, hybrid cloud control, hcc 
 ---
 = 利用NetApp混合雲控管來管理及監控儲存設備
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -5,7 +5,12 @@ summary: 瞭解如何新增建立及管理啟動器、以啟用外部用戶端�
 keywords: netapp, initiator, storage, element, access group 
 ---
 = 建立及管理啟動器
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

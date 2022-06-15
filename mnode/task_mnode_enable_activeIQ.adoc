@@ -5,7 +5,12 @@ summary: 您可以使用管理節點（mNode）來啟用Active IQ 適用於Solid
 keywords: netapp, Element, api, enable, active iq, activeiq 
 ---
 = 啟用Active IQ 功能支援功能與NetApp監控
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

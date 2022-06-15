@@ -5,7 +5,12 @@ summary: 您可以修改及測試管理節點網路、叢集及系統設定。
 keywords: netapp, management node ui, mnode ui, network settings, test network, cluster settings 
 ---
 = 修改及測試管理節點網路、叢集及系統設定
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

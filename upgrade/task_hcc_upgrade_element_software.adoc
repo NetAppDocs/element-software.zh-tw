@@ -5,7 +5,12 @@ summary: 在NetApp SolidFire 的非系統升級中、您可以升級NetApp Eleme
 keywords: netapp, solidfire, cluster, element, H610S upgrade, hcc, ansible upgrades, upgrade role 
 ---
 = 升級Element軟體
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]
