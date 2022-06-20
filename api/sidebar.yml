@@ -308,7 +308,7 @@ entries:
   - title: SetLoginSessionInfo
     url: "/api/reference_element_api_setloginsessioninfo.html"
   - title: 關機
-    url: "/api/reference_element_api_shutdown.html"
+    url: "/api/reference_element_api_cluster_shutdown.html"
 - title: 叢集建立API方法
   url: "/api/concept_element_api_create_cluster_api_methods.html"
   entries:
@@ -450,7 +450,7 @@ entries:
   - title: GetNodeActiveTlsCiphers
     url: "/api/reference_element_api_getnodeactivetlsciphers.html"
   - title: GetNodeFipsDrivesReport
-    url: "/api/reference_element_api_getnodefipsdrivesreport.html"
+    url: "/api/reference_element_api_node_getnodefipsdrivesreport.html"
   - title: GetNodeSSLCertificate
     url: "/api/reference_element_api_getnodesslcertificate.html"
   - title: GetNodeSupportedTlsCiphers
@@ -494,7 +494,7 @@ entries:
   - title: SetNodeSupplementalTlsCiphers
     url: "/api/reference_element_api_setnodesupplementaltlsciphers.html"
   - title: 關機
-    url: "/api/reference_element_api_shutdown.html"
+    url: "/api/reference_element_api_node_shutdown.html"
   - title: TestConnectEntemble
     url: "/api/reference_element_api_testconnectensemble.html"
   - title: TestConnectMvip
@@ -674,7 +674,7 @@ entries:
   - title: GetLldpInfo
     url: "/api/reference_element_api_getlldpinfo.html"
   - title: GetNodeFipsDrivesReport
-    url: "/api/reference_element_api_getnodefipsdrivesreport.html"
+    url: "/api/reference_element_api_system_configuration_getnodefipsdrivesreport.html"
   - title: GetNtpInfo
     url: "/api/reference_element_api_getntpinfo.html"
   - title: GetNvramInfo

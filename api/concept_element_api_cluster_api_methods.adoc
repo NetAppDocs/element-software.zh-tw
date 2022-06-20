@@ -48,7 +48,7 @@ Element軟體叢集API方法可讓您管理儲存叢集的組態和拓撲、以�
 * xref:reference_element_api_removenodes.adoc[遠端節點]
 * xref:reference_element_api_setlicensekey.adoc[SetLicenseKey]
 * xref:reference_element_api_setloginsessioninfo.adoc[SetLoginSessionInfo]
-* xref:reference_element_api_shutdown.adoc[關機]
+* xref:reference_element_api_cluster_shutdown.adoc[關機]
 
 
 

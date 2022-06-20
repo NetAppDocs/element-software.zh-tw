@@ -25,7 +25,7 @@ summary: 系統組態API方法可讓您取得及設定適用於叢集中所有�
 * xref:reference_element_api_getfipsreport.adoc[GetFipsReport]
 * xref:reference_element_api_getlldpconfig.adoc[GetLldpConfig]
 * xref:reference_element_api_getlldpinfo.adoc[GetLldpInfo]
-* xref:reference_element_api_getnodefipsdrivesreport.adoc[GetNodeFipsDrivesReport]
+* xref:reference_element_api_system_configuration_getnodefipsdrivesreport.adoc[GetNodeFipsDrivesReport]
 * xref:reference_element_api_getntpinfo.adoc[GetNtpInfo]
 * xref:reference_element_api_getnvraminfo.adoc[GetNvramInfo]
 * xref:reference_element_api_getprotectiondomainlayout.adoc[GetProtectionDomainLayout]

@@ -1,16 +1,7 @@
----
-permalink: api/reference_element_api_shutdown.html 
-sidebar: sidebar 
-keywords: cluster,shutdown,node,shutting,down,shut,restart 
-summary: 您可以使用「關機」方法重新啟動或關閉叢集中的節點。您可以使用此方法來關閉叢集中的單一節點、多個節點或所有節點。 
----
-= 關機
+= 參數
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
 您可以使用「停機」方法重新啟動或關閉叢集中的節點。您可以使用此方法來關閉叢集中的單一節點、多個節點或所有節點。
 
 

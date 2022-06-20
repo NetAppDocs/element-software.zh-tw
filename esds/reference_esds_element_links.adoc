@@ -16,21 +16,21 @@ summary: 在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使�
 以下是各種儲存管理工作內容的連結：
 
 * link:../storage/task_intro_use_basic_options_in_the_element_software_ui.html["在Element軟體UI中使用基本選項"^]
-* link:../storage/task_data_manage_accounts_work_with_accounts_task.html["使用使用者帳戶"^]
-* link:../storage/task_data_manage_volumes_work_with_volumes_task.html["使用Volume"^]
+* link:../storage/task_data_manage_accounts_work_with_accounts_task.html["使用CHAP處理帳戶"]
+* link:../storage/task_data_manage_volumes_work_with_volumes_task.html["使用Volume"]
 +
 您也可以在這裡找到將QoS原則套用至磁碟區的相關資訊。
 
-* link:../storage/concept_data_manage_vvol_work_virtual_volumes.html["使用虛擬磁碟區"^]
-* link:../storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["使用Volume存取群組和啟動器"^]
-* link:../storage/task_data_protection_using_volume_snapshots.html["使用快照"^]
-* link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["開始使用外部金鑰管理"^] _新增！_
-* link:../storage/task_system_manage_key_set_up_external_key_management.html["設定外部金鑰管理"^] _新增！_
-* link:../storage/task_replication_perform_remote_replication_between_element_clusters.html["在叢集之間執行遠端複寫"^]
-* link:../storage/task_data_protection_back_up_and_restore_volumes.html["備份與還原磁碟區"^]
-* link:../api/index.html["使用Element API管理儲存設備"^]
-* link:../storage/concept_system_monitoring_and_troubleshooting.html["系統疑難排解"^]
-* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server適用的插件概述NetApp Element"]
+* link:../storage/concept_data_manage_vvol_work_virtual_volumes.html["使用虛擬磁碟區"]
+* link:../storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["使用Volume存取群組和啟動器"]
+* link:../storage/task_data_protection_using_volume_snapshots.html["使用快照"]
+* link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["開始使用外部金鑰管理"] _新增！_
+* link:../storage/task_system_manage_key_set_up_external_key_management.html["設定外部金鑰管理"] _新增！_
+* link:../storage/task_replication_perform_remote_replication_between_element_clusters.html["在叢集之間執行遠端複寫"]
+* link:../storage/task_data_protection_back_up_and_restore_volumes.html["備份與還原磁碟區"]
+* link:../api/index.html["使用Element API管理儲存設備"]
+* link:../storage/concept_system_monitoring_and_troubleshooting.html["系統疑難排解"]
+* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server適用的插件概述NetApp Element"^]
 +
 您可以從「總覽」頁面瀏覽至特定工作。
 
