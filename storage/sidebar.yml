@@ -222,7 +222,7 @@ entries:
         url: "/storage/task_data_protection_clone_a_volume_from_a_snapshot.html"
       - title: 將磁碟區復原為快照
         url: "/storage/task_data_protection_roll_back_a_volume_to_a_snapshot.html"
-      - title: Volume Snapshot備份作業
+      - title: 備份磁碟區快照
         url: "/storage/concept_data_protection_volume_snapshot_backup_operations.html"
         entries:
         - title: 將磁碟區快照備份到Amazon S3物件存放區

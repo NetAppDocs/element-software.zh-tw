@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: volume snapshot, backup operations, back up volume snapshot, cluster, object store 
 summary: 您可以使用整合式備份功能來備份磁碟區快照。您可以將快照從SolidFire 一個實體叢集備份到一個外部物件存放區、或是另SolidFire 一個實體叢集。當您將快照備份到外部物件存放區時、必須連線到允許讀取/寫入作業的物件存放區。 
 ---
-= Volume Snapshot備份作業
+= 備份磁碟區快照
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

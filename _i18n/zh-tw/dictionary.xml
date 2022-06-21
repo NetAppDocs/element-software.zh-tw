@@ -3094,7 +3094,6 @@
   <block id="24d4dcacc9ee231e8de862294db2f6fc" category="list-text">按一下您要編輯之群組快照成員的「動作」圖示。</block>
   <block id="ea339f6b03ecb49af3bf45b8496f3eec" category="list-text">若要變更快照的複寫設定、請從下列選項中選取：</block>
   <block id="c790184773e8ef26c5af49a38611a471" category="summary">您可以使用整合式備份功能來備份磁碟區快照。您可以將快照從SolidFire 一個實體叢集備份到一個外部物件存放區、或是另SolidFire 一個實體叢集。當您將快照備份到外部物件存放區時、必須連線到允許讀取/寫入作業的物件存放區。</block>
-  <block id="c967cc149224958942b374673d02980e" category="doc">Volume Snapshot備份作業</block>
   <block id="4e385daedad4a81e3776afbca9ea07a7" category="list-text"><block ref="4e385daedad4a81e3776afbca9ea07a7" category="inline-link-macro-rx"></block></block>
   <block id="3a50ce5f4085bd0f74405eb1c25f6cc9" category="list-text"><block ref="3a50ce5f4085bd0f74405eb1c25f6cc9" category="inline-link-macro-rx"></block></block>
   <block id="091f209abc9bb34dfb86fb2328780ca1" category="list-text"><block ref="091f209abc9bb34dfb86fb2328780ca1" category="inline-link-macro-rx"></block></block>
@@ -12307,4 +12306,5 @@
   <block id="dcfa4d00c50a08c56e2319fa3f3d1288" category="list-text"><block ref="dcfa4d00c50a08c56e2319fa3f3d1288" category="inline-link-macro-rx"></block></block>
   <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
   <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
+  <block id="324fcb27182f60b1051fad39c080b193" category="doc">備份磁碟區快照</block>
 </blocks>
