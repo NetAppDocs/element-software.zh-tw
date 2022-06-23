@@ -15,7 +15,7 @@ summary: 在開始之前、您可能需要先瞭解安裝和設定NetApp Element
 
 * link:task_post_deploy_access_the_element_software_user_interface.html["存取Element軟體使用者介面"]
 * link:../storage/task_post_deploy_configure_system_options.html["部署後設定SolidFire 系統選項"]
-* link:../storage/concept_system_manage_account_management.html["管理帳戶"]
+* link:../storage/concept_system_manage_accounts_overview.html["管理帳戶"]
 * link:../storage/concept_system_manage_system_management.html["管理您的系統"]
 * link:../storage/concept_data_manage_data_management.html["管理磁碟區和虛擬磁碟區"]
 * link:../storage/concept_data_protection.html["保護您的資料"]

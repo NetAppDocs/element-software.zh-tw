@@ -1,8 +1,8 @@
 ---
-permalink: storage/concept_system_manage_account_management.html 
+permalink: storage/concept_system_manage_accounts_overview.html 
 sidebar: sidebar 
 keywords: element, chap, cluster, accounts, administrator 
-summary: 您可以在Element UI中管理帳戶。這包括使用CHAP處理帳戶、以及管理叢集管理員使用者帳戶。 
+summary: 在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。 
 ---
 = 管理帳戶
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以在Element UI中管理帳戶。這包括使用CHAP處理帳戶
 
 
 [role="lead"]
-您可以在Element UI中管理系統帳戶。這包括使用挑戰握手驗證傳輸協定（CHAP）來處理帳戶、以及管理叢集管理員使用者帳戶。
+在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定帳戶。您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。
 
 * link:task_data_manage_accounts_work_with_accounts_task.html["使用CHAP處理帳戶"]
 * link:concept_system_manage_manage_cluster_administrator_users.html["管理叢集管理員使用者帳戶"]

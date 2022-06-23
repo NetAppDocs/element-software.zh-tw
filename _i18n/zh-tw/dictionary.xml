@@ -917,7 +917,6 @@
   <block id="d7ed15d6c6333c98d209478507476337" category="inline-xref-macro">iSCSI工作階段詳細資料</block>
   <block id="53afd371e15d648a9aa30b588b004c09" category="paragraph"><block ref="53afd371e15d648a9aa30b588b004c09" category="inline-xref-macro-rx"></block></block>
   <block id="c862058e7345a40a7280afb21deb5070" category="summary">在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。</block>
-  <block id="7e5784de66821e5068bc24c9a5c6d1d6" category="doc">使用使用者帳戶</block>
   <block id="4082f16ece7fe49a6ae9cff89731b948" category="paragraph">帳戶最多可指派2、000個磁碟區、但一個磁碟區只能屬於一個帳戶。</block>
   <block id="2fdfd506efea08144c0794c32ca8250a" category="section-title">建立帳戶</block>
   <block id="4c284224e57855e8f92076f429042030" category="paragraph">您可以建立帳戶以允許存取磁碟區。</block>
@@ -2179,10 +2178,6 @@
   <block id="6351fff1a7185391ce5827ed1a4bc1dd" category="paragraph">正在向來源Volume發出SCSI XCOPY命令。必須先完成命令、才能繼續複寫。訊息僅會顯示在配對的來源端點。</block>
   <block id="4b3301364a2091ba2d601468fd67407c" category="list-text">*停止設定錯誤*</block>
   <block id="1760eda593dbc41002b3d0bb32b11c47" category="paragraph">偵測到永久組態錯誤。遠端Volume已清除或取消配對。不可能採取修正行動；必須建立新的配對。</block>
-  <block id="34fa21de6cec673be30516d925b1ef0a" category="summary">在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。</block>
-  <block id="4dc056b77b799b07e73a3c822af00828" category="paragraph">在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。</block>
-  <block id="f5b0d24b7d0469f0116c13fb8bcbb772" category="list-text"><block ref="f5b0d24b7d0469f0116c13fb8bcbb772" category="inline-link-macro-rx"></block></block>
-  <block id="093667bda42279d43524628d34f5580a" category="list-text"><block ref="093667bda42279d43524628d34f5580a" category="inline-link-macro-rx"></block></block>
   <block id="61e8a19c29f33739276f8181bfc1207a" category="summary">Volume Snapshot是Volume的時間點複本。如果您需要將磁碟區復原至建立快照時的狀態、可以擷取磁碟區的快照、稍後再使用快照。</block>
   <block id="90c3f53c6704e33d96d7a3d79d2818df" category="paragraph">快照類似於磁碟區複製。不過、快照只是Volume中繼資料的複本、因此您無法掛載或寫入快照。建立磁碟區快照也只需要少量的系統資源和空間、因此建立快照的速度比複製快照快。</block>
   <block id="0eba1eaf8f5d64913f7d6195f81bbb44" category="paragraph">您可以擷取個別磁碟區或一組磁碟區的快照。</block>
@@ -12285,12 +12280,8 @@
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">儲存韌體產品組合2.150注意事項</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
-  <block id="372092ac59d2946fc3d092b0e44df82a" category="list-text"><block ref="372092ac59d2946fc3d092b0e44df82a" category="inline-link-macro-rx"></block></block>
-  <block id="26bde7cf1d647a00812ba293427f218c" category="summary">您可以在Element UI中管理帳戶。這包括使用CHAP處理帳戶、以及管理叢集管理員使用者帳戶。</block>
-  <block id="cb7c12b1424a0e6b1be1defaded53de8" category="paragraph">您可以在Element UI中管理系統帳戶。這包括使用挑戰握手驗證傳輸協定（CHAP）來處理帳戶、以及管理叢集管理員使用者帳戶。</block>
   <block id="0de8022e52b232dc0912129174158b7b" category="list-text"><block ref="0de8022e52b232dc0912129174158b7b" category="inline-link-macro-rx"></block></block>
   <block id="93b99f5d3cef7af59adc0f899dddf1e1" category="list-text"><block ref="93b99f5d3cef7af59adc0f899dddf1e1" category="inline-link-macro-rx"></block></block>
-  <block id="5ca104d2b413ecd234583f40c3a808b8" category="list-text"><block ref="5ca104d2b413ecd234583f40c3a808b8" category="inline-link-macro-rx"></block></block>
   <block id="7e33105c99e1040a1b09764052c96bf6" category="list-text"><block ref="7e33105c99e1040a1b09764052c96bf6" category="inline-xref-macro-rx"></block></block>
   <block id="b9d025f755210db0c30935ae2494f820" category="list-text"><block ref="b9d025f755210db0c30935ae2494f820" category="inline-xref-macro-rx"></block></block>
   <block id="9eecd7c0744f77d1f15658bd0a02f1b2" category="list-text"><block ref="9eecd7c0744f77d1f15658bd0a02f1b2" category="inline-xref-macro-rx"></block></block>
@@ -12307,4 +12298,8 @@
   <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
   <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
   <block id="324fcb27182f60b1051fad39c080b193" category="doc">備份磁碟區快照</block>
+  <block id="cd7c96dd340046e8b1a1ed84b73227c0" category="summary">在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。</block>
+  <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定帳戶。您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。</block>
+  <block id="f22f8c5563a22eebf5e40a4e6776b17e" category="list-text"><block ref="f22f8c5563a22eebf5e40a4e6776b17e" category="inline-link-macro-rx"></block></block>
+  <block id="270743fb35c053386e4a4cdf6792cc48" category="list-text"><block ref="270743fb35c053386e4a4cdf6792cc48" category="inline-link-macro-rx"></block></block>
 </blocks>
