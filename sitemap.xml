@@ -377,13 +377,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_custom_protection_domains.html</loc>
-      
-      <lastmod>2022-05-16T16:12:38+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_drives.html</loc>
       
       <lastmod>2022-05-03T08:14:02+00:00</lastmod>
@@ -826,13 +819,6 @@
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/element-earlierversions.html</loc>
-      
-      <lastmod>2022-05-16T16:12:38+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/element-software/element-legal.html</loc>
       
       <lastmod>2022-05-16T16:12:38+00:00</lastmod>
       
@@ -4152,7 +4138,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software//search.html</loc>
       
-      <lastmod>2022-06-23T11:46:43+00:00</lastmod>
+      <lastmod>2022-06-24T14:17:50+00:00</lastmod>
       
     </url>
   
@@ -4460,7 +4446,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_configure_custom_protection_domains.html</loc>
       
-      <lastmod>2022-05-16T16:12:38+00:00</lastmod>
+      <lastmod>2022-06-24T14:17:25+00:00</lastmod>
       
     </url>
   
