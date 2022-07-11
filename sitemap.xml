@@ -78,7 +78,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_vvol_manage_storage_containers.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
@@ -596,7 +596,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_snapmirror_overview.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
@@ -4047,7 +4047,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_post_deploy_change_default_ssl_certificate.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
@@ -4138,7 +4138,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software//search.html</loc>
       
-      <lastmod>2022-06-24T14:17:50+00:00</lastmod>
+      <lastmod>2022-07-11T15:36:14+00:00</lastmod>
       
     </url>
   
@@ -4747,7 +4747,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_intro_view_api_activity_in_real_time.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
@@ -5286,21 +5286,21 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_create_an_endpoint.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_create_snapmirror_relationship.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_enable_on_the_cluster.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
@@ -5321,7 +5321,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_perform_failback_when_source_volume_exists.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
@@ -5335,7 +5335,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_performing_failback_when_source_volume_no_longer_exists.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
@@ -5349,7 +5349,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
@@ -5447,7 +5447,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fips_enable_fips_140_2_for_https.html</loc>
       
-      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
       
     </url>
   
