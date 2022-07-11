@@ -11,7 +11,7 @@ summary: 您可以使用NetApp Element NetApp API變更叢集中儲存節點的�
 
 
 [role="lead"]
-您可以使用NetAppElement API變更叢集中儲存節點的預設SSL憑證和私密金鑰。
+您可以使用NetApp Element NetApp API變更叢集中儲存節點的預設SSL憑證和私密金鑰。
 
 建立一個支援功能的軟體叢集時、叢集會建立一個獨特的自我簽署安全通訊端層（SSL）憑證和私密金鑰、用於透過元素UI、每節點UI或API進行所有HTTPS通訊。NetApp ElementElement軟體支援自我簽署的憑證、以及由信任的憑證授權單位（CA）核發和驗證的憑證。
 

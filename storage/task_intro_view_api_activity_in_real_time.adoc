@@ -2,7 +2,7 @@
 permalink: storage/task_intro_view_api_activity_in_real_time.html 
 sidebar: sidebar 
 keywords: solidfire api, element api, element os, element, viewing the API log, viewing API calls 
-summary: Element系統使用NetAppElement API作為其功能的基礎。元素UI可讓您在使用介面時、檢視系統上各種類型的即時API活動。有了API記錄、您就能檢視使用者啟動和背景系統API活動、以及在您目前檢視的頁面上所撥打的API呼叫。 
+summary: Element系統使用NetApp Element 不完整的API作為其功能的基礎。元素UI可讓您在使用介面時、檢視系統上各種類型的即時API活動。有了API記錄、您就能檢視使用者啟動和背景系統API活動、以及在您目前檢視的頁面上所撥打的API呼叫。 
 ---
 = 檢視API活動
 :allow-uri-read: 

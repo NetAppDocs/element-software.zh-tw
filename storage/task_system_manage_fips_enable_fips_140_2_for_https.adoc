@@ -13,7 +13,7 @@ summary: 您可以使用啟用功能API方法、啟用FIPS 140-2操作模式進�
 [role="lead"]
 您可以使用啟用功能API方法、啟用FIPS 140-2操作模式進行HTTPS通訊。
 
-有了支援的軟體、您可以選擇在叢集上啟用聯邦資訊處理標準（FIPS）140-2操作模式。NetApp Element啟用此模式會啟動NetApp密碼編譯安全性模組（NCSM）、並利用FIPS 140-2 Level 1認證加密、透過HTTPS與NetAppElement UI和API進行所有通訊。
+有了支援的軟體、您可以選擇在叢集上啟用聯邦資訊處理標準（FIPS）140-2操作模式。NetApp Element啟用此模式會啟動NetApp密碼編譯安全模組（NCSM）、並將FIPS 140-2 Level 1認證加密用於透過HTTPS傳輸至NetApp Element 整套UI和API的所有通訊。
 
 
 IMPORTANT: 啟用FIPS 140-2模式之後、就無法停用。啟用FIPS 140-2模式時、叢集中的每個節點都會重新開機並執行自我測試、以確保NCSM已正確啟用、並以FIPS 140-2認證模式運作。這會中斷叢集上的管理和儲存連線。您應該仔細規劃、而且只有在環境需要它提供的加密機制時才啟用此模式。

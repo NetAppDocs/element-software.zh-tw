@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html 
 sidebar: sidebar 
 keywords: replication, snapmirror, data protection 
-summary: 您可以從NetAppElement UI的Data Protection（資料保護）索引標籤建立SnapMirror關係。必須啟用SnapMirror功能、才能在使用者介面中看到這一點。 
+summary: 您可以從NetApp Element 「資訊保護」索引標籤建立SnapMirror關係、此索引標籤位於「資訊保護」UI中。必須啟用SnapMirror功能、才能在使用者介面中看到這一點。 
 ---
 = 在元素ONTAP 叢集和叢集之間使用SnapMirror複寫
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以從NetAppElement UI的Data Protection（資料保護）索引�
 
 
 [role="lead"]
-您可以從NetAppElement UI的Data Protection（資料保護）索引標籤建立SnapMirror關係。必須啟用SnapMirror功能、才能在使用者介面中看到這一點。
+您可以從NetApp Element 「資訊保護」索引標籤建立SnapMirror關係、此索引標籤位於「資訊保護」UI中。必須啟用SnapMirror功能、才能在使用者介面中看到這一點。
 
 不支援IPv6在NetApp Element SnapMirror軟體與ONTAP 叢集之間進行SnapMirror複寫。
 

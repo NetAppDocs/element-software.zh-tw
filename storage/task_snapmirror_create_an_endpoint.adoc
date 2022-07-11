@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_create_an_endpoint.html 
 sidebar: sidebar 
 keywords: endpoints, create, snapmirror, ui 
-summary: 您必須先在NetAppElement UI中建立SnapMirror端點、才能建立關係。 
+summary: 您必須先在NetApp Element 「SnapMirror UI」中建立SnapMirror端點、才能建立關係。 
 ---
 = 建立SnapMirror端點
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您必須先在NetAppElement UI中建立SnapMirror端點、才能建立
 
 
 [role="lead"]
-您必須先在NetAppElement UI中建立SnapMirror端點、才能建立關係。
+您必須先在NetApp Element 「SnapMirror UI」中建立SnapMirror端點、才能建立關係。
 
 SnapMirror端點是ONTAP 執行Element軟體的叢集複寫目標、在建立SnapMirror關係之前、您必須先建立SnapMirror端點。
 

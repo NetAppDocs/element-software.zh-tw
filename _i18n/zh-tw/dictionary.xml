@@ -249,7 +249,6 @@
   <block id="fc71d6f09928b7f83187a6af5d831458" category="paragraph">QoS效能曲線顯示區塊大小增加與IOPS百分比下降之間的關係：</block>
   <block id="eab2f1eb8c2044695127279868598b38" category="image-alt">說明QoS：增加區塊大小與IOPS之間的關係。</block>
   <block id="79e23777b7bae1d58e7d66132ec584e6" category="paragraph">舉例來說、如果區塊大小為4K、頻寬為4000 KB、則IOPS為1000。如果區塊大小增加至8k、頻寬會增加至5000 KB、IOPS則會減少至625。系統將區塊大小納入考量、可確保使用較高區塊大小（例如備份和Hypervisor活動）的較低優先順序工作負載、不會因為使用較小區塊大小的較高優先順序流量而佔用太多效能。</block>
-  <block id="7b610931ca8d2eeb0a73a56e2e8f50f1" category="summary">您必須在NetAppElement UI中建立SnapMirror關係。</block>
   <block id="2de1d87763849258fb54f9bb79e65283" category="doc">建立SnapMirror關係</block>
   <block id="507526c658246388ad3ac5ab8feb0b16" category="admonition">如果尚未針對SnapMirror啟用磁碟區、而您選擇從元素UI建立關係、則會在該磁碟區上自動啟用SnapMirror。</block>
   <block id="d0d72af3850aa3c7f23bae5777534059" category="paragraph">SnapMirror已在磁碟區上啟用。</block>
@@ -311,7 +310,6 @@
   <block id="d5e6af1fd8ded16ac6d7700584a8025a" category="list-text">在產生的功能表中、按一下*刪除*。</block>
   <block id="ad5a54b96d86e967dc2a014c681f9377" category="list-text">確認行動。</block>
   <block id="5c4aa786c8d6a929d49bc23c9378ff6a" category="list-text">從叢集配對的第二個叢集再次執行步驟。</block>
-  <block id="a400e22973320013f60a0fa177f3e08a" category="summary">您可以從NetAppElement UI的Data Protection（資料保護）索引標籤建立SnapMirror關係。必須啟用SnapMirror功能、才能在使用者介面中看到這一點。</block>
   <block id="535a1bef8214ea6639d284226cee5417" category="paragraph">不支援IPv6在NetApp Element SnapMirror軟體與ONTAP 叢集之間進行SnapMirror複寫。</block>
   <block id="cff1ba82911704030dd8ccc8f2c0c6c0" category="inline-link">NetApp影片：SnapMirror for NetApp HCI Element. and Element Software</block>
   <block id="248c4c4df12448050266854cd21cd105" category="paragraph"><block ref="248c4c4df12448050266854cd21cd105" category="inline-link-rx"></block></block>
@@ -355,7 +353,6 @@
   <block id="09bfac84403d33379e533954403b0f94" category="list-text">有關虛擬機器的CPU與儲存相關資訊</block>
   <block id="a5b2d4de2841c516a54a4c4b3db587b1" category="summary">執行NetApp Element 支援SnapMirror功能的系統、可透過NetApp ONTAP ®系統複製及還原快照。</block>
   <block id="908041e9f7dbdfd6dd76e9617f0b3454" category="doc">SnapMirror概述</block>
-  <block id="265f031cee0ea04d5f3ef759b07f4907" category="paragraph">執行元件的系統可直接與ONTAP 位於現象系統9.3或更新版本上的SnapMirror通訊。NetAppElement API提供在叢集、磁碟區和快照上啟用SnapMirror功能的方法。此外、Element UI還包含所有必要功能、可管理Element軟體與ONTAP SnapMirror系統之間的SnapMirror關係。</block>
   <block id="5a5a2d3bbdb5fecdea9055d444ee32af" category="paragraph">您可以在ONTAP 特定使用案例中複寫來源於元素的磁碟區、但功能有限。如需詳細資訊、請參閱ONTAP 《關於我們的資料》。</block>
   <block id="49c8c279b60ab1926e498dd27ba47ce7" category="inline-link">在Element軟體和ONTAP 不支援的情況下進行複寫</block>
   <block id="e01755805869b3d9cedc19fff7c5daae" category="paragraph"><block ref="e01755805869b3d9cedc19fff7c5daae" category="inline-link-rx"></block></block>
@@ -666,7 +663,6 @@
   <block id="83a1a5ceb5398a01a54e7effead0e886" category="admonition">由於會自動建立一個更新帳戶ID並指派給儲存容器、因此不需要手動建立帳戶。NetApp Element</block>
   <block id="5c52fea0e83d9a95a1c098c60ff6b58d" category="section-title">檢視儲存容器詳細資料</block>
   <block id="c24adc0881381170eed28052264ee784" category="paragraph">在VVols索引標籤的Storage Container（儲存容器）頁面上、您可以檢視叢集上所有作用中儲存容器的資訊。</block>
-  <block id="9a14ff246991ca75a508eaad3a696a9c" category="list-text">*帳戶ID*：與儲存容器相關聯的NetAppElement帳戶ID。</block>
   <block id="bb9c607dcd3a4bd18589c06ac12a84a4" category="list-text">*名稱*：儲存容器的名稱。</block>
   <block id="95aeb213f6e0232dfebbeef4d3fabdbb" category="list-text">*狀態*：儲存容器的狀態。可能值：</block>
   <block id="a507855536939dbee1cb704ccef400de" category="list-text">作用中：儲存容器正在使用中。</block>
@@ -877,7 +873,6 @@
   <block id="4928e7510f45da6575b04a28519c09ed" category="paragraph">5128</block>
   <block id="affd4aba1c5f696e972368c9eb698c65" category="paragraph">暴增IOPS</block>
   <block id="f6e1cbdb2c7e86d550e022623d7c9169" category="summary">您可以使用NetApp Element NetApp API變更叢集中儲存節點的預設SSL憑證和私密金鑰。</block>
-  <block id="443d95dd305b59017ca1b34a7df3d4ac" category="paragraph">您可以使用NetAppElement API變更叢集中儲存節點的預設SSL憑證和私密金鑰。</block>
   <block id="1aa8b758f81e4b362f8fc94cd4c2a3ba" category="paragraph">建立一個支援功能的軟體叢集時、叢集會建立一個獨特的自我簽署安全通訊端層（SSL）憑證和私密金鑰、用於透過元素UI、每節點UI或API進行所有HTTPS通訊。NetApp ElementElement軟體支援自我簽署的憑證、以及由信任的憑證授權單位（CA）核發和驗證的憑證。</block>
   <block id="774ce4e623f683d68865c30ea0ac37fa" category="paragraph">您可以使用下列API方法取得有關預設SSL憑證的詳細資訊、並進行變更。</block>
   <block id="5a1085897e38e4e51b92668061c6497c" category="paragraph">如需每種方法的相關資訊、請參閱 <block ref="27df1ddfd415d14d906f38bd54bde22c" category="inline-link-macro-rx"></block>。</block>
@@ -902,7 +897,6 @@
   <block id="242e09edf76ecd4945b7902e7995050a" category="paragraph"><block ref="242e09edf76ecd4945b7902e7995050a" category="inline-xref-macro-rx"></block></block>
   <block id="e7eb95bedcf0e5a384949274771b9090" category="summary">您可以使用啟用功能API方法、啟用FIPS 140-2操作模式進行HTTPS通訊。</block>
   <block id="165f5cc396348414357bfee20fe223ae" category="doc">在叢集上啟用FIPS 140-2 for HTTPS</block>
-  <block id="f7b1c0a6c1bbdeeb75abbfb1e3471656" category="paragraph">有了支援的軟體、您可以選擇在叢集上啟用聯邦資訊處理標準（FIPS）140-2操作模式。NetApp Element啟用此模式會啟動NetApp密碼編譯安全性模組（NCSM）、並利用FIPS 140-2 Level 1認證加密、透過HTTPS與NetAppElement UI和API進行所有通訊。</block>
   <block id="28117dac6dae3b2926b3fa3daa54c622" category="admonition">啟用FIPS 140-2模式之後、就無法停用。啟用FIPS 140-2模式時、叢集中的每個節點都會重新開機並執行自我測試、以確保NCSM已正確啟用、並以FIPS 140-2認證模式運作。這會中斷叢集上的管理和儲存連線。您應該仔細規劃、而且只有在環境需要它提供的加密機制時才啟用此模式。</block>
   <block id="5f29c6b789d473ccf8c4eab2ed0331b5" category="paragraph">如需詳細資訊、請參閱Element API資訊。</block>
   <block id="27f7170bd4fd080bb623675efbd52303" category="paragraph">以下是啟用FIPS的API要求範例：</block>
@@ -1432,7 +1426,6 @@
   <block id="01a99de421fb8a821f16fedb65844d3e" category="paragraph">您可以新增其他節點來橫向擴充叢集。新增節點時、不會中斷服務、而且叢集會自動使用新節點的效能和容量。</block>
   <block id="5142be10fc7a3267c7c30e2052ad028e" category="paragraph">系統管理員和主機可以使用虛擬IP位址來存取叢集。叢集中的任何節點都可以裝載虛擬IP位址。管理虛擬IP（MVIP）可透過1GbE連線來進行叢集管理、而儲存虛擬IP（SVIP）則可透過10GbE連線、讓主機存取儲存設備。無論SolidFire 什麼規模或組成的叢集、這些虛擬IP位址都能實現一致的連線。如果託管虛擬IP位址的節點故障、叢集中的另一個節點就會開始託管虛擬IP位址。</block>
   <block id="463c4cbe0a26b2a2a75fb4f321540d62" category="admonition">從Element 11.0版開始、節點可設定為使用IPv4、IPv6或兩者的管理網路位址。這適用於儲存節點和管理節點、但不支援IPv6的管理節點11.3及更新版本除外。建立叢集時、MVIP只能使用單一的IPv4或IPv6位址、而且必須在所有節點上設定對應的位址類型。</block>
-  <block id="0b3db31a78382ab0be6cb2c1c708acfa" category="summary">您可以使用NetAppElement UI重新同步原始來源Volume並容錯回復。本節適用於原始來源磁碟區已遺失但原始叢集仍不受影響的情況。如需如何還原至新叢集的指示、請參閱NetApp支援網站上的文件。</block>
   <block id="42d57b6f08f8ad59237283315e687c79" category="list-text">您在Element ONTAP 和現象區之間有中斷的複寫關係。</block>
   <block id="7a3a43b13837f525a81135347991edaf" category="list-text">元素磁碟區已不可恢復地遺失。</block>
   <block id="500be7b88a1dd1b15fded97d1897c173" category="list-text">原始Volume名稱顯示為「找不到」。</block>
@@ -1839,7 +1832,6 @@
   <block id="0bcc09ef403795f7b94d2a9b0a1ff7ec" category="admonition">您應該從VMware管理層刪除虛擬磁碟區、以確保在刪除之前、虛擬磁碟區已正確解除連結。您只能在絕對必要時從Element UI刪除虛擬Volume、例如vSphere無法清除SolidFire VMware儲存設備上的虛擬Volume時。如果您從Element UI刪除虛擬Volume、磁碟區將會立即清除。</block>
   <block id="e5744c2dce749bd50c1d9558d989acb9" category="list-text">重新整理虛擬磁碟區清單、確認已移除虛擬磁碟區。</block>
   <block id="a03bea6b44f1fcf0ce4c017762d7b28c" category="list-text">*可選*：選擇*報告*&gt;*事件日誌*以確認清除已成功。</block>
-  <block id="570aab436b512498fd7406a4088e8c43" category="summary">Element系統使用NetAppElement API作為其功能的基礎。元素UI可讓您在使用介面時、檢視系統上各種類型的即時API活動。有了API記錄、您就能檢視使用者啟動和背景系統API活動、以及在您目前檢視的頁面上所撥打的API呼叫。</block>
   <block id="1e022b9ed0afb421ad5cb475bd23e7c5" category="paragraph">Element系統使用NetApp Element 不完整的API作為其功能的基礎。元素UI可讓您在使用介面時、檢視系統上各種類型的即時API活動。有了API記錄、您就能檢視使用者啟動和背景系統API活動、以及在您目前檢視的頁面上所撥打的API呼叫。</block>
   <block id="3c7b529bb5fc2bcf9519f64a68e3cf4e" category="paragraph">您可以使用API記錄來識別特定工作所使用的API方法、並瞭解如何使用API方法和物件來建置自訂應用程式。</block>
   <block id="680951056bdde0e1b96bf280f96ebc5a" category="inline-link-macro">Element Software API參考</block>
@@ -2355,7 +2347,6 @@
   <block id="224193e3eec93cf3958b0cade5c33c4b" category="list-text">選取「在配對的複寫中包含每個群組Snapshot成員*」核取方塊、以確保在配對父磁碟區時、複寫中會擷取每個快照。</block>
   <block id="1076ee531daedb5bc229da789f337067" category="list-text">*選用：*若要變更群組快照的保留設定、請從下列選項中選取：</block>
   <block id="2062fedb7b40edb831de2c57874f133c" category="list-text">按一下*目前保留*旁的*編輯*。</block>
-  <block id="7b5a00f2f339a450a57bb4aaa1f60371" category="summary">您必須先在NetAppElement UI中建立SnapMirror端點、才能建立關係。</block>
   <block id="dedd3700704f998555c9779c076f3d9c" category="doc">建立SnapMirror端點</block>
   <block id="47f8bb61ca87b0a38661fa7bfdece7b4" category="paragraph">SnapMirror端點是ONTAP 執行Element軟體的叢集複寫目標、在建立SnapMirror關係之前、您必須先建立SnapMirror端點。</block>
   <block id="4720a2d6ded47a6e3a7c30b7a024eb83" category="paragraph">您可以在執行Element軟體的儲存叢集上、建立及管理最多四個SnapMirror端點。</block>
@@ -2954,7 +2945,6 @@
   <block id="36acc7bb8bb258bd2a55ba6e3a9f57b8" category="list-text">輸入新VRF/VLAN的相關資訊。請參閱新增虛擬網路。</block>
   <block id="a1b4649ed02d4874d8dc930950bd3756" category="list-text">選取*啟用VRF*核取方塊。</block>
   <block id="28690ef78984499d8ff4d822d15d0940" category="list-text">*選用*：輸入閘道。</block>
-  <block id="5bb220f689bb9c696c552f6b16bf7a7b" category="summary">您可以使用NetAppElement UI重新同步原始來源Volume並容錯回復。此程序適用於原始來源Volume仍存在的情況。</block>
   <block id="dfee99faea9f8bafc9217380d561c98e" category="list-text">按一下「動作」圖示、然後按一下*「反轉重新同步」*。</block>
   <block id="f5143a520c1fda122c346660fb8e2183" category="admonition">「反轉重新同步」作業會建立新的關係、使原始來源和目的地磁碟區的角色會反轉（這會在原始關係持續存在時產生兩種關係）。原始目的地Volume中的任何新資料都會傳輸至原始來源Volume、作為反轉重新同步作業的一部分。您可以繼續存取資料、並將資料寫入目的地端的作用中磁碟區、但您必須先中斷所有主機與來源磁碟區的連線、然後執行SnapMirror更新、才能重新導向回原始主要磁碟區。</block>
   <block id="c2884154f2c93ab3494f7131939e44bf" category="list-text">按一下您剛建立的反關聯的「動作」圖示、然後按一下「*更新*」。</block>
@@ -2978,7 +2968,6 @@
   <block id="97935d188f50889a7e846b1b879f62aa" category="paragraph">系統會開啟Web瀏覽器索引標籤、連接至遠端叢集的元素UI。您可能需要使用叢集管理員認證登入遠端叢集。</block>
   <block id="83d1452b7d5b4bf538f0cb0a274eb95c" category="list-text">在遠端叢集的元素UI中、選取*完整配對*。</block>
   <block id="cd550c7a8266a80d90c125e70af733c0" category="list-text">確認*確認Volume Pair*中的詳細資料。</block>
-  <block id="190cdc01f7fb56224ceac8d08d754e74" category="summary">您必須透過NetAppElement UI、在叢集層級手動啟用SnapMirror功能。系統預設會停用SnapMirror功能、而且不會在新安裝或升級時自動啟用。啟用SnapMirror功能是一次性的組態工作。</block>
   <block id="8c6deb05dad76c6d98756a12280faf11" category="doc">在叢集上啟用SnapMirror</block>
   <block id="c2ced3365f4afea26203cb8baf8d5496" category="paragraph">SnapMirror只能用於執行元素軟體的叢集、並搭配NetApp ONTAP SnapMirror系統上的Volume一起使用。只有當叢集已連線以搭配NetApp ONTAP 功能集區使用時、您才應該啟用SnapMirror功能。</block>
   <block id="1ad412799aee12c3b2a515a4b2c82ddc" category="paragraph">儲存叢集必須執行NetApp Element 不必要的軟體。</block>
@@ -12273,4 +12262,12 @@
   <block id="f22f8c5563a22eebf5e40a4e6776b17e" category="list-text"><block ref="f22f8c5563a22eebf5e40a4e6776b17e" category="inline-link-macro-rx"></block></block>
   <block id="270743fb35c053386e4a4cdf6792cc48" category="list-text"><block ref="270743fb35c053386e4a4cdf6792cc48" category="inline-link-macro-rx"></block></block>
   <block id="d42c0305f510d1b93b9961f158db9d17" category="list-text"><block ref="d42c0305f510d1b93b9961f158db9d17" category="inline-link-macro-rx"></block></block>
+  <block id="b993f1dfdbc58279c2f9905a87a5d1f9" category="summary">您可以使用NetApp Element 這個UI重新同步原始來源Volume並容錯回復。此程序適用於原始來源Volume仍存在的情況。</block>
+  <block id="a9e1805646cc4c8c63ca09ebfe9a934f" category="summary">您必須先在NetApp Element 「SnapMirror UI」中建立SnapMirror端點、才能建立關係。</block>
+  <block id="e132a123dcc09df973758d5a0e1b3ecc" category="paragraph">執行元件的系統可直接與ONTAP 位於現象系統9.3或更新版本上的SnapMirror通訊。利用此解決方案、您可以NetApp Element 在叢集、磁碟區和快照上啟用SnapMirror功能。此外、Element UI還包含所有必要功能、可管理Element軟體與ONTAP SnapMirror系統之間的SnapMirror關係。</block>
+  <block id="143d30e05d618ff708914d3e2d71e227" category="summary">您可以使用NetApp Element 這個UI重新同步原始來源Volume並容錯回復。本節適用於原始來源磁碟區已遺失但原始叢集仍不受影響的情況。如需如何還原至新叢集的指示、請參閱NetApp支援網站上的文件。</block>
+  <block id="fabd7e443e902f1444baa0a8705c8f97" category="summary">您必須透過NetApp Element UI手動啟用叢集層級的SnapMirror功能。系統預設會停用SnapMirror功能、而且不會在新安裝或升級時自動啟用。啟用SnapMirror功能是一次性的組態工作。</block>
+  <block id="f221d4619622735ba1922f6893d26f19" category="summary">您必須在NetApp Element 這個功能介面中建立SnapMirror關係。</block>
+  <block id="bab67863e0374777af0d17961d5b365a" category="paragraph">有了支援的軟體、您可以選擇在叢集上啟用聯邦資訊處理標準（FIPS）140-2操作模式。NetApp Element啟用此模式會啟動NetApp密碼編譯安全模組（NCSM）、並將FIPS 140-2 Level 1認證加密用於透過HTTPS傳輸至NetApp Element 整套UI和API的所有通訊。</block>
+  <block id="549a916860c9d8029a7326d1bc29de0f" category="summary">您可以從NetApp Element 「資訊保護」索引標籤建立SnapMirror關係、此索引標籤位於「資訊保護」UI中。必須啟用SnapMirror功能、才能在使用者介面中看到這一點。</block>
 </blocks>

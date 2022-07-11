@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_performing_failback_when_source_volume_no_longer_exists.html 
 sidebar: sidebar 
 keywords: failback, perform, source volume, snapmirror, dr, disaster recovery 
-summary: 您可以使用NetAppElement UI重新同步原始來源Volume並容錯回復。本節適用於原始來源磁碟區已遺失但原始叢集仍不受影響的情況。如需如何還原至新叢集的指示、請參閱NetApp支援網站上的文件。 
+summary: 您可以使用NetApp Element 這個UI重新同步原始來源Volume並容錯回復。本節適用於原始來源磁碟區已遺失但原始叢集仍不受影響的情況。如需如何還原至新叢集的指示、請參閱NetApp支援網站上的文件。 
 ---
 = 當來源磁碟區不再存在時、請執行容錯回復
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以使用NetAppElement UI重新同步原始來源Volume並容錯�
 
 
 [role="lead"]
-您可以使用NetAppElement UI重新同步原始來源Volume並容錯回復。本節適用於原始來源磁碟區已遺失但原始叢集仍不受影響的情況。如需如何還原至新叢集的指示、請參閱NetApp支援網站上的文件。
+您可以使用NetApp Element 這個UI重新同步原始來源Volume並容錯回復。本節適用於原始來源磁碟區已遺失但原始叢集仍不受影響的情況。如需如何還原至新叢集的指示、請參閱NetApp支援網站上的文件。
 
 .您需要的是 #8217 ；需要的是什麼
 * 您在Element ONTAP 和現象區之間有中斷的複寫關係。

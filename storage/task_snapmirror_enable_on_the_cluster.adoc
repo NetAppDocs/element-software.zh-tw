@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_enable_on_the_cluster.html 
 sidebar: sidebar 
 keywords: snapmirror, enable, cluster, ui, manually enable 
-summary: 您必須透過NetAppElement UI、在叢集層級手動啟用SnapMirror功能。系統預設會停用SnapMirror功能、而且不會在新安裝或升級時自動啟用。啟用SnapMirror功能是一次性的組態工作。 
+summary: 您必須透過NetApp Element UI手動啟用叢集層級的SnapMirror功能。系統預設會停用SnapMirror功能、而且不會在新安裝或升級時自動啟用。啟用SnapMirror功能是一次性的組態工作。 
 ---
 = 在叢集上啟用SnapMirror
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您必須透過NetAppElement UI、在叢集層級手動啟用SnapMirror
 
 
 [role="lead"]
-您必須透過NetAppElement UI、在叢集層級手動啟用SnapMirror功能。系統預設會停用SnapMirror功能、而且不會在新安裝或升級時自動啟用。啟用SnapMirror功能是一次性的組態工作。
+您必須透過NetApp Element UI手動啟用叢集層級的SnapMirror功能。系統預設會停用SnapMirror功能、而且不會在新安裝或升級時自動啟用。啟用SnapMirror功能是一次性的組態工作。
 
 SnapMirror只能用於執行元素軟體的叢集、並搭配NetApp ONTAP SnapMirror系統上的Volume一起使用。只有當叢集已連線以搭配NetApp ONTAP 功能集區使用時、您才應該啟用SnapMirror功能。
 

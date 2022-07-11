@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_create_snapmirror_relationship.html 
 sidebar: sidebar 
 keywords: relationships, create, snapmirror, ui 
-summary: 您必須在NetAppElement UI中建立SnapMirror關係。 
+summary: 您必須在NetApp Element 這個功能介面中建立SnapMirror關係。 
 ---
 = 建立SnapMirror關係
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您必須在NetAppElement UI中建立SnapMirror關係。
 
 
 [role="lead"]
-您必須在NetAppElement UI中建立SnapMirror關係。
+您必須在NetApp Element 這個功能介面中建立SnapMirror關係。
 
 
 NOTE: 如果尚未針對SnapMirror啟用磁碟區、而您選擇從元素UI建立關係、則會在該磁碟區上自動啟用SnapMirror。

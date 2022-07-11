@@ -13,7 +13,7 @@ summary: 執行NetApp Element 支援SnapMirror功能的系統、可透過NetApp 
 [role="lead"]
 執行NetApp Element 支援SnapMirror功能的系統、可透過NetApp ONTAP ®系統複製及還原快照。
 
-執行元件的系統可直接與ONTAP 位於現象系統9.3或更新版本上的SnapMirror通訊。NetAppElement API提供在叢集、磁碟區和快照上啟用SnapMirror功能的方法。此外、Element UI還包含所有必要功能、可管理Element軟體與ONTAP SnapMirror系統之間的SnapMirror關係。
+執行元件的系統可直接與ONTAP 位於現象系統9.3或更新版本上的SnapMirror通訊。利用此解決方案、您可以NetApp Element 在叢集、磁碟區和快照上啟用SnapMirror功能。此外、Element UI還包含所有必要功能、可管理Element軟體與ONTAP SnapMirror系統之間的SnapMirror關係。
 
 您可以在ONTAP 特定使用案例中複寫來源於元素的磁碟區、但功能有限。如需詳細資訊、請參閱ONTAP 《關於我們的資料》。
 
