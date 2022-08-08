@@ -6,6 +6,7 @@ summary: NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶�
 ---
 = Element軟體12.5的新功能
 :allow-uri-read: 
+:url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
 :icons: font
 :imagesdir: ../media/
 
@@ -53,7 +54,7 @@ Element 12.5包含儲存節點的韌體更新。 link:../concepts/concept_rn_rel
 
 === 增強安全性
 
-元素12.5包含的緩和措施可關閉元素軟體曝險於Apache log4j弱點。啟用虛擬Volume（VVols）功能的NetApp SolidFire 支援區儲存叢集、會暴露於Apache log4j弱點。如需NetApp Element 有關解決方案的資訊、請參閱 link:++https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround++["知識庫文章"^]。
+元素12.5包含的緩和措施可關閉元素軟體曝險於Apache log4j弱點。啟用虛擬Volume（VVols）功能的NetApp SolidFire 支援區儲存叢集、會暴露於Apache log4j弱點。如需NetApp Element 有關解決方案的資訊、請參閱｛url-peak｝[KB文章]。
 
 如果您執行的是Element 11.x、12.0或12.2、或是儲存叢集已在元素123或12.3.1、且已啟用VVols功能、則強烈建議升級至12.5。
 

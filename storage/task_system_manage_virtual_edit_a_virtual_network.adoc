@@ -6,6 +6,7 @@ summary: 您可以變更VLAN屬性、例如VLAN名稱、網路遮罩和IP位址�
 ---
 = 編輯虛擬網路
 :allow-uri-read: 
+:url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP%27s_are_in_use_and_which_nodes_those_IP%27s_are_assigned_to_in_Element
 :icons: font
 :imagesdir: ../media/
 
@@ -35,6 +36,6 @@ summary: 您可以變更VLAN屬性、例如VLAN名稱、網路遮罩和IP位址�
 
 連結至知識庫文章、以協助疑難排解管理VLAN IP位址範圍的問題。
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["在元素叢集的VLAN中新增儲存節點後、出現重複的IP警告"]
-* link:++https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP's_are_in_use_and_which_nodes_those_IP's_are_assigned_to_in_Element++["如何判斷哪些VLAN IP正在使用中、以及哪些節點已指派給元素中的IP"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["在元素叢集的VLAN中新增儲存節點後、出現重複的IP警告"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP%27s_are_in_use_and_which_nodes_those_IP%27s_are_assigned_to_in_Element["如何判斷哪些VLAN IP正在使用中、以及哪些節點已指派給元素中的IP"^]
 

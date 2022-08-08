@@ -2,7 +2,7 @@
 permalink: esds/reference_esds_element_links.html 
 sidebar: sidebar 
 keywords: element, solidfire esds, volumes, accounts, snapshots, virtual volumes, remote replication 
-summary: 在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使用Element UI、Element API或NetApp Element vCenter Server的VMware外掛程式（VCP）來管理儲存叢集。 
+summary: 在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使用Element UI、Element API或NetApp Element vCenter Server的VMware外掛程式來管理儲存叢集。 
 ---
 = 管理SolidFire 功能
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使�
 
 
 [role="lead"]
-在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使用Element UI、Element API或NetApp Element vCenter Server的VMware外掛程式（VCP）來管理儲存叢集。
+在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使用Element UI、Element API或NetApp Element vCenter Server的VMware外掛程式來管理儲存叢集。
 
 以下是各種儲存管理工作內容的連結：
 

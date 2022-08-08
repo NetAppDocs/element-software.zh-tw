@@ -1137,9 +1137,6 @@
   <block id="d3bdc2c0a9764cf125483113979d12d2" category="paragraph">不會影響其他元件。</block>
   <block id="095e2c8b26135a469fdae8c0057aead0" category="inline-link-macro">更新NetApp Element vCenter Server的VMware vCenter外掛程式中的QoSSIOC認證</block>
   <block id="ea2794c29716f095ee0310404ccb71f0" category="paragraph"><block ref="a8a16614cbd0ee686a49394371dee0cf" category="inline-link-macro-rx"></block>。 </block>
-  <block id="a97d54dcc3e46eb9176e67a954c0b19c" category="paragraph">VCP SIOC密碼也稱為_QoSSIOC密碼_。 </block>
-  <block id="97e193e7c6e307568ecf402e7b8f0609" category="inline-link-macro">Element Plug-in for vCenter Server知識庫文章</block>
-  <block id="e349ff402c3ffd6ae661a2336ba8cc12" category="paragraph">檢閱 <block ref="543d60c584849597984745ae3361028b" category="inline-link-macro-rx"></block>。</block>
   <block id="2934529b54bf139bea417b927ff80f41" category="paragraph">vCenter Service Appliance認證資料</block>
   <block id="8ce27442944e15f5732cd79f09a76988" category="image-alt">暗灰色鎖定圖示</block>
   <block id="67850677f6be30126bfebf3be4151172" category="paragraph">*適用於*：NetApp HCI 僅當NetApp部署引擎設定時才適用</block>
@@ -1465,9 +1462,7 @@
   <block id="fe4ffa703478427fc75db2f3864d6c8f" category="list-text">選取*新增區塊*、為虛擬網路新增不連續的IP位址區塊。</block>
   <block id="6f7f5f24869c0d0f56e2c2a7b2eddb1d" category="paragraph">連結至知識庫文章、以協助疑難排解管理VLAN IP位址範圍的問題。</block>
   <block id="9b223a2f3cd4c182d23a226cd196dff4" category="inline-link">在元素叢集的VLAN中新增儲存節點後、出現重複的IP警告</block>
-  <block id="42936e9310cd9893aac9639db8c188e5" category="list-text"><block ref="42936e9310cd9893aac9639db8c188e5" category="inline-link-rx"></block></block>
   <block id="dc5d9b72bb1d6136171426bc40800ca1" category="inline-link-macro">如何判斷哪些VLAN IP正在使用中、以及哪些節點已指派給元素中的IP</block>
-  <block id="89e0e9ac99d01ab5c5825cd14a39bf16" category="list-text"><block ref="89e0e9ac99d01ab5c5825cd14a39bf16" category="inline-link-macro-rx"></block></block>
   <block id="ad4f994f46b2918f9140ecbc2a4806e4" category="summary">您可以將SolidFire 無法更新的快照備份到與OpenStack Swift相容的次要物件存放區。</block>
   <block id="eea58b3659596532522a08f03fb583b8" category="doc">將Volume Snapshot備份到OpenStack Swift物件存放區</block>
   <block id="1b1496d44481ddc42d89d7eb9bba04d7" category="list-text">按一下您要備份之快照的*「Actions」（動作）*圖示。</block>
@@ -4284,7 +4279,6 @@
   <block id="c36ade2a8956e853dc457e68e25ce9a2" category="list-text">檢查主控台的Ansible輸出、確保SolidFire 每個節點都已啟動該服務。</block>
   <block id="9c75611c54a1490d7892d192c9aa1f24" category="paragraph">以下是輸出範例：</block>
   <block id="697f1902b372db279956f211f1472f8d" category="list-text">若要驗證SolidFire 是否正確啟動了這個功能、請執行「stystemctl STATUS SolidFire 」命令、然後檢查輸出中是否有「Active:active（outed）...」（作用中：作用中（結束）...）。</block>
-  <block id="096aa1735be602da09e80976ee664490" category="summary">在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使用Element UI、Element API或NetApp Element vCenter Server的VMware外掛程式（VCP）來管理儲存叢集。</block>
   <block id="b708fcb66d2fb4281601a54f0e59184f" category="paragraph">以下是各種儲存管理工作內容的連結：</block>
   <block id="0dafc18315b2055ca29f9f5395b46078" category="list-text"><block ref="0dafc18315b2055ca29f9f5395b46078" category="inline-link-macro-rx"></block></block>
   <block id="7b3b3440fb0f7016b1525de95db91e45" category="paragraph">您也可以在這裡找到將QoS原則套用至磁碟區的相關資訊。</block>
@@ -8199,7 +8193,6 @@
   <block id="b3613bb46ff6f3bafd928342b37b6ad6" category="list-text">Volume存取群組最多可包含64個啟動器IQN。</block>
   <block id="4d457672c8e33fd6ae549d87abe283c7" category="list-text">啟動器只能屬於一個Volume存取群組。</block>
   <block id="d7fa0bcef31af0a4834ebab877035bfc" category="list-text">Volume存取群組最多可包含2000個磁碟區。</block>
-  <block id="5482c1b66b0886da6467e0cf15d54978" category="list-text">每個Volume存取群組最多可屬於四個其他Volume存取群組。</block>
   <block id="7b2981d7eaea69bb973b355474647b7b" category="paragraph">Volume存取群組名稱。不需要是獨一無二的、但值得推薦。長度必須為1到64個字元。</block>
   <block id="734b6e187f5cd2cb72a9707aae7f05c9" category="paragraph">要納入Volume存取群組的Volume ID清單。</block>
   <block id="e3bde16797fc615e632fb3ce0065dbd3" category="paragraph">包含新建立之Volume存取群組相關資訊的物件。</block>
@@ -10721,11 +10714,9 @@
   <block id="fc353e42112a703bf0b9a1298d5437a7" category="paragraph">指派給節點上此介面的IPv4位址。</block>
   <block id="b79456bc499d5ce37ba6ed7b56f17b5c" category="paragraph">指派給節點上Bond1G介面的IPv6管理位址。</block>
   <block id="c774b3554b50afb6c83c70166f1192d0" category="paragraph">綁定延遲</block>
-  <block id="fe0e973243ce76d029cd085a09a374b4" category="paragraph">偵測到連結失敗之後、在停用從屬控制器之前需要等待一段時間。</block>
   <block id="cbfb8bc20b45a6729fcb1484da425231" category="paragraph">BON-FA故障_OWON_Mac</block>
   <block id="408685abf9d27e6feb09ae886cd09a32" category="paragraph">網路介面的MAC位址組態。</block>
   <block id="86d3cd24ec2e6a746c60ae35b31bb877" category="paragraph">邦德米明</block>
-  <block id="cadb3a0ccc46e8d8ff52333c4b22509c" category="paragraph">檢查MII連結狀態的頻率。</block>
   <block id="323062028aa132e7657ffff2688b14e6" category="paragraph">債券模式</block>
   <block id="f95843d9ddddbf5370f748da475369c3" category="paragraph">結合模式。可能值：</block>
   <block id="95cf8f9aa6de819ee2292adc25b8bdf8" category="list-text">Active被動（預設）</block>
@@ -10741,7 +10732,6 @@
   <block id="4ab2459bb4b1276090f3730f1ef79bdf" category="list-text">LACP Fast（預設）</block>
   <block id="3b7deee3ad4edd960c3aec4c2cb7a75b" category="list-text">LACP速度緩慢</block>
   <block id="e932e949b125a3a6f2a53eb9d0758a1b" category="paragraph">綁定延遲</block>
-  <block id="72bdf09eaa6ef0f2397a7d82e35ede82" category="paragraph">偵測到連結之後、在啟用從屬設備之前等待的時間。</block>
   <block id="37e5376946cfcc622f888d6caa227316" category="paragraph">DNS名稱伺服器</block>
   <block id="8cbddd742a15388c623e15ad73ca21ec" category="paragraph">用於網域名稱服務的位址清單、以逗號或空格分隔。</block>
   <block id="7c269e4691193b8c37ea57df86db33c7" category="paragraph">DNS搜尋</block>
@@ -11925,22 +11915,6 @@
   <block id="c2ec3d3d7a3c559651551d3d9f14d2b9" category="list-text">完成疑難排解之後、請在* Support Access for Management Nod*（*管理節點支援存取*）畫面中、切換交換器以停用管理節點SSH。</block>
   <block id="bd1ea3213926ecdb3e25a30ccf5157d9" category="section-title">使用API在管理節點上停用或啟用SSH功能</block>
   <block id="526719701f51876f46433bfa55249a45" category="section-title">使用API判斷管理節點上SSH功能的狀態</block>
-  <block id="00bbf849ee83f2b3ea6c67bb7bd6c6f8" category="inline-link-macro">管理服務注意事項2.20.69（VCP 4.9.14）</block>
-  <block id="5d7470e5082c3ea6c12bf2f4c55e8dbb" category="list-text"><block ref="5d7470e5082c3ea6c12bf2f4c55e8dbb" category="inline-link-macro-rx"></block></block>
-  <block id="8b1a6c95fed8363998ed5d7eae965f1a" category="inline-link-macro">管理服務注意事項2.19.48（VCP 4.8.34）</block>
-  <block id="e8e7eb7097323aa3034e0425eaeaed17" category="list-text"><block ref="e8e7eb7097323aa3034e0425eaeaed17" category="inline-link-macro-rx"></block></block>
-  <block id="9fb45d65282cc3f96e819596e5e394dd" category="inline-link-macro">管理服務注意事項2.18.91（VCP 4.7.10）</block>
-  <block id="2f3560171886f0333ae7b91d6a8fe5db" category="list-text"><block ref="2f3560171886f0333ae7b91d6a8fe5db" category="inline-link-macro-rx"></block></block>
-  <block id="4dc58eed88195e2dee9ef97cb0900fcc" category="inline-link-macro">管理服務注意事項2.17.56（VCP 4.6.32）</block>
-  <block id="8c9e7e7003dea0cc51d935664aa2b05b" category="list-text"><block ref="8c9e7e7003dea0cc51d935664aa2b05b" category="inline-link-macro-rx"></block></block>
-  <block id="2916cda094e8e99dde87d679e5faf4af" category="inline-link-macro">管理服務注意事項2.17.52（VCP 4.6.29）</block>
-  <block id="4136bfeea3ec838cfab29fd9c1195c0c" category="list-text"><block ref="4136bfeea3ec838cfab29fd9c1195c0c" category="inline-link-macro-rx"></block></block>
-  <block id="3e7b640ad20b44c0dc8fac94c0950302" category="inline-link-macro">管理服務2.16注意事項（VCP 4.6.29）</block>
-  <block id="5b7e80ac9a05f9e50f6518700e41ea95" category="list-text"><block ref="5b7e80ac9a05f9e50f6518700e41ea95" category="inline-link-macro-rx"></block></block>
-  <block id="62864cd06ca88cef11a85391c9a3cc4a" category="inline-link-macro">管理服務服務2.14注意事項（VCP 4.5.42）</block>
-  <block id="c6e6fce2297f748637abede532cd03cb" category="list-text"><block ref="c6e6fce2297f748637abede532cd03cb" category="inline-link-macro-rx"></block></block>
-  <block id="8905ab1c0ad30471bfb792d567577041" category="inline-link-macro">管理服務注意事項2.13（VCP 4.5.42）</block>
-  <block id="a8669ef36581c9c2f98e06802d4578c8" category="list-text"><block ref="a8669ef36581c9c2f98e06802d4578c8" category="inline-link-macro-rx"></block></block>
   <block id="573d529ded9f2b66a55c1d25a9498c72" category="paragraph">從管理服務的2.20開始、您必須先接受並儲存終端使用者授權合約（EULA）、才能使用NetApp混合雲控制UI或API來升級管理服務：</block>
   <block id="be441559765f3e52d513b155b4b59981" category="list-text">隨即顯示EULA。向下捲動、選取*我接受目前及所有未來更新*、然後選取*儲存*。</block>
   <block id="06194f109ff7ed4270c1e5f89cbe9e74" category="admonition">當您接受EULA時、系統會記錄所有未來更新、並啟用自動下載功能。您將會收到NetApp軟體更新與升級的更新、您可以自行決定是否安裝、也可以方便地安裝。您可以停用與NetApp線上軟體儲存庫的網路連線、以停用自動下載功能。</block>
@@ -11953,7 +11927,6 @@
   <block id="651784e7a6ddc6534201a6e8d1fbf248" category="paragraph">對於已註冊NetApp Element 的VMware vCenter Server更新版現有vSphere環境、您可以在第一次更新包含外掛程式服務的管理服務套件之後、更新外掛程式登錄。</block>
   <block id="47e9151ac689287505aa641c93450d92" category="list-text">您正在升級NetApp Element 至適用於vCenter Server 4.9、4.8、4.7、4.6、4.5或4.4的VMware vCenter外掛程式。</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">外掛程式與VMware vCenter Server 6.5 for Element Plug-in for VMware vCenter Server 4.6、4.7和4.8不相容。</block>
-  <block id="f31daff1bed8bc4fec4119d69f3093d9" category="paragraph">使用VMware vCenter Server 6.7U1升級至VCP 4.8或更新版本之後、如果未列出儲存叢集、或NetApp Element 是在「VMware vCenter組態」的「*叢集*」和「* QoSSIOC設定*」區段中出現伺服器錯誤、請參閱 <block ref="ccd6ffc15d371ab994b0e9dff04cb8c2" category="inline-link-macro-rx"></block> 疑難排解這些錯誤的相關文件。</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter Plug-in 4.9版本說明</block>
   <block id="6452d1b3e56fe38fdc537aeb6fe8d1c8" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block>_新_</block>
   <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp混合雲控制網路UI和API可從NetApp線上軟體儲存庫下載軟體套件。因此、部分URL或IP位址可能會根據內容傳輸網路解析為其他URL或IP位址。如有可能、您應與網路工程師合作、使用下列一般步驟、將這些URL或IP位址新增至防火牆規則：</block>
@@ -12143,7 +12116,6 @@
   <block id="fa2658a3ab727d225eec2ee50b847fff" category="paragraph">在建立叢集UI中新增核取方塊後、元素12.5可讓您在SolidFire 建立叢集期間、針對整個叢集的All Flash儲存叢集啟用全叢集軟體加密功能。</block>
   <block id="58fd31fc4a0bf37df4c2efec74cb0f7e" category="paragraph">Element 12.5包含儲存節點的韌體更新。 <block ref="0f65f1a5cbc84d01ee508f9ae603c679" category="inline-link-macro-rx"></block>。</block>
   <block id="9ae00a023d80f22436817ac40b5dd0e7" category="section-title">增強安全性</block>
-  <block id="4a9cfbb068604f707209b30ffaf09bfd" category="paragraph">元素12.5包含的緩和措施可關閉元素軟體曝險於Apache log4j弱點。啟用虛擬Volume（VVols）功能的NetApp SolidFire 支援區儲存叢集、會暴露於Apache log4j弱點。如需NetApp Element 有關解決方案的資訊、請參閱 <block ref="1a773160f1e444399f0d836f4fb45d69" category="inline-link-macro-rx"></block>。</block>
   <block id="5b9ef84ab53bc8e514e0cea0dbfd914c" category="paragraph">如果您執行的是Element 11.x、12.0或12.2、或是儲存叢集已在元素123或12.3.1、且已啟用VVols功能、則強烈建議升級至12.5。</block>
   <block id="7d22dc13d9443150a483a9d1bcc19811" category="paragraph">元素12.5也包含120多項可修復的CVE安全性弱點。</block>
   <block id="0a4e6eb7e62cc9a7906b041a5daa8314" category="section-title">使用Ansible自動升級</block>
@@ -12270,4 +12242,34 @@
   <block id="f221d4619622735ba1922f6893d26f19" category="summary">您必須在NetApp Element 這個功能介面中建立SnapMirror關係。</block>
   <block id="bab67863e0374777af0d17961d5b365a" category="paragraph">有了支援的軟體、您可以選擇在叢集上啟用聯邦資訊處理標準（FIPS）140-2操作模式。NetApp Element啟用此模式會啟動NetApp密碼編譯安全模組（NCSM）、並將FIPS 140-2 Level 1認證加密用於透過HTTPS傳輸至NetApp Element 整套UI和API的所有通訊。</block>
   <block id="549a916860c9d8029a7326d1bc29de0f" category="summary">您可以從NetApp Element 「資訊保護」索引標籤建立SnapMirror關係、此索引標籤位於「資訊保護」UI中。必須啟用SnapMirror功能、才能在使用者介面中看到這一點。</block>
+  <block id="f4acceab098d15c508ef563bc36e37fe" category="paragraph">元素12.5包含的緩和措施可關閉元素軟體曝險於Apache log4j弱點。啟用虛擬Volume（VVols）功能的NetApp SolidFire 支援區儲存叢集、會暴露於Apache log4j弱點。如需NetApp Element 有關解決方案的資訊、請參閱｛url-peak｝[KB文章]。</block>
+  <block id="75cf134eb28470632a8ed825c6876dfa" category="paragraph">偵測到連結失敗後停用從屬控制器之前的等待時間（以毫秒為單位）。</block>
+  <block id="dbc5bb01b5e0b9429317021ba7f41a80" category="paragraph">以毫秒為單位的頻率、用於檢查MII連結狀態是否有連結故障。</block>
+  <block id="3580d7d6eae3196ebe1486dd612a7945" category="paragraph">偵測到連結之後、在啟用從屬控制器之前等待的時間（以毫秒為單位）。</block>
+  <block id="8ea9e7d17b19a30384dbb2153a990250" category="list-text">每個Volume存取群組最多可屬於四個Volume存取群組。</block>
+  <block id="d146ce6679a899a76bda7f3830fd1336" category="summary">在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使用Element UI、Element API或NetApp Element vCenter Server的VMware外掛程式來管理儲存叢集。</block>
+  <block id="89cf55eeb9f34a1a360f23ce53a22331" category="paragraph">上傳套件後、系統會自動開始升級。</block>
+  <block id="726e3510e2c172eed6861f3e6d271360" category="paragraph">升級NetApp Element 至VMware vCenter Server 6.7U1的vCenter Server 4.8或更新版本時、如果儲存叢集未列出、或NetApp Element 伺服器錯誤出現在「VMware vCenter組態」的「*叢集*」和「* QoSSIOC設定*」區段中、請參閱 <block ref="c907b125bbc711015f83b735f4697e97" category="inline-link-macro-rx"></block> 疑難排解這些錯誤的相關文件。</block>
+  <block id="91973e8fa965f2bdba61e9b8919b4ee5" category="inline-link-macro">管理服務注意事項2.20.69（NetApp Element 適用於vCenter Server 4.9.14的VMware外掛程式）</block>
+  <block id="65af0dd815fe8808dd7f02b18dbfc027" category="list-text"><block ref="65af0dd815fe8808dd7f02b18dbfc027" category="inline-link-macro-rx"></block></block>
+  <block id="c6df14aa71e88712620087ef3c0051b8" category="inline-link-macro">管理服務注意事項2.19.48（NetApp Element 適用於vCenter Server 4.8.34的VMware外掛程式）</block>
+  <block id="907113dec95119fd17596f9b2f132a74" category="list-text"><block ref="907113dec95119fd17596f9b2f132a74" category="inline-link-macro-rx"></block></block>
+  <block id="e9ddfae2256b1bb9c9a0f68ff44e48e4" category="inline-link-macro">管理服務2.18.91注意事項（NetApp Element 適用於vCenter Server 4.7.10的VMware外掛程式）</block>
+  <block id="d8363332cbd00b4a2630ee1cbbaaba74" category="list-text"><block ref="d8363332cbd00b4a2630ee1cbbaaba74" category="inline-link-macro-rx"></block></block>
+  <block id="30d92c8789efab57b790dee431c18297" category="inline-link-macro">管理服務注意事項2.17.56（NetApp Element 適用於vCenter Server 4.6.32的VMware外掛程式）</block>
+  <block id="3a8275b9681fa38514ddc80406ff33da" category="list-text"><block ref="3a8275b9681fa38514ddc80406ff33da" category="inline-link-macro-rx"></block></block>
+  <block id="87a0fdd7b9534808231b4d6ab471ebf1" category="inline-link-macro">管理服務注意事項2.17.52（NetApp Element 適用於vCenter Server 4.6.29的VMware外掛程式）</block>
+  <block id="50c7774b712068eed3151cfcce2f1b6f" category="list-text"><block ref="50c7774b712068eed3151cfcce2f1b6f" category="inline-link-macro-rx"></block></block>
+  <block id="770994475f57b3ce3e40618e8d3e1705" category="inline-link-macro">管理服務2.16注意事項（NetApp Element 適用於vCenter Server 4.6.29的VMware外掛程式）</block>
+  <block id="28cdadd54c98c8a6e5686aa86b12ac18" category="list-text"><block ref="28cdadd54c98c8a6e5686aa86b12ac18" category="inline-link-macro-rx"></block></block>
+  <block id="1cb251dcf63c7c6b0f0f032152675c8b" category="inline-link-macro">管理服務2.14注意事項NetApp Element （適用於vCenter Server 4.5.42的VMware外掛程式）</block>
+  <block id="92dc561e380fb7539e97d85167edf7ec" category="list-text"><block ref="92dc561e380fb7539e97d85167edf7ec" category="inline-link-macro-rx"></block></block>
+  <block id="a945e669932fbbe48d4794d770411d05" category="inline-link-macro">管理服務注意事項2.13（NetApp Element 適用於vCenter Server 4.5.42的VMware外掛程式）</block>
+  <block id="7e8c4f0c53e3d640a1b7eb54d32bdb46" category="list-text"><block ref="7e8c4f0c53e3d640a1b7eb54d32bdb46" category="inline-link-macro-rx"></block></block>
+  <block id="a6e60f5446d407aa42b1293e56f2cb42" category="inline-link-macro">NetApp SolidFire 解決方案企業SDS注意事項</block>
+  <block id="15e743dee4446f378d3f2f15b9fce01a" category="list-text"><block ref="15e743dee4446f378d3f2f15b9fce01a" category="inline-link-macro-rx"></block></block>
+  <block id="3ff4e97d8167819534c5090c9428dd6a" category="list-text"><block ref="3ff4e97d8167819534c5090c9428dd6a" category="inline-link-rx"></block></block>
+  <block id="70659e4f9824d888c2aa77344aaa46c4" category="list-text"><block ref="70659e4f9824d888c2aa77344aaa46c4" category="inline-link-rx"></block></block>
+  <block id="0ea391471e626f95079246bfd0ab48f9" category="paragraph">vCenter Server SIOC密碼的「功能」外掛程式也稱為_QoSSIOC密碼。NetApp Element </block>
+  <block id="0ba7ef8feca0e0b45134473e9c3182d4" category="paragraph">檢閱｛url-peak｝[Element Plug-In for vCenter Server KB文章]。</block>
 </blocks>
