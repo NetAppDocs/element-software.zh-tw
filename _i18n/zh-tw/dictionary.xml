@@ -12272,4 +12272,12 @@
   <block id="70659e4f9824d888c2aa77344aaa46c4" category="list-text"><block ref="70659e4f9824d888c2aa77344aaa46c4" category="inline-link-rx"></block></block>
   <block id="0ea391471e626f95079246bfd0ab48f9" category="paragraph">vCenter Server SIOC密碼的「功能」外掛程式也稱為_QoSSIOC密碼。NetApp Element </block>
   <block id="0ba7ef8feca0e0b45134473e9c3182d4" category="paragraph">檢閱｛url-peak｝[Element Plug-In for vCenter Server KB文章]。</block>
+  <block id="3bf9f01521140ec88c2161d9f808b379" category="paragraph">從元素12.5開始、您可以從UI啟用序列建立、並選擇以先進先出（FIFO）為基礎來保留快照。</block>
+  <block id="5beca424202dedf9ea56fe2a0a6d24f6" category="list-text">「*啟用序列建立*」選項指定一次只複寫一個快照。當先前的快照複寫仍在進行中時、建立新快照失敗。如果未選取此核取方塊、則當另一個快照複寫仍在進行中時、即允許建立快照。</block>
+  <block id="70342af84cb4a95a09688a4c7e780637" category="list-text">「* FIFO *」選項新增了保留最新快照數量一致的功能。勾選此核取方塊時、快照會以FIFO為基礎保留。在FIFO快照佇列達到最大深度後、插入新的FIFO快照時、會捨棄最舊的FIFO快照。</block>
+  <block id="b576ad045524fd70facc357a10b32b10" category="list-text">選擇*資料保護*&gt;*排程*。</block>
+  <block id="e514a3adc1ea9d298a7e9ab19078872e" category="list-text">*選用：*選取「*啟用序列建立*」核取方塊、以確保一次只複寫一個快照。</block>
+  <block id="3c508c424a766cdd354ff2b5f471ceb9" category="list-text">*選用：*選取「* FIFO（先進先出）*」核取方塊、以保留一致數量的最新快照。</block>
+  <block id="3905d1636a9d67ee561424a8bc5551a7" category="list-text">選取*「永遠保留」*可無限期保留系統上的快照。</block>
+  <block id="627fb665998dc47f162df6850e3bb211" category="list-text">選取*設定保留期間*、然後使用日期微調方塊來選擇系統保留快照的時間長度。</block>
 </blocks>
