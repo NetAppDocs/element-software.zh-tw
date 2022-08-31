@@ -1,22 +1,6 @@
----
-sidebar: sidebar 
-permalink: mnode/task_mnode_enable_activeIQ.html 
-summary: 您可以使用管理節點（mNode）來啟用Active IQ 適用於SolidFire 整個Flash儲存的功能。 
-keywords: netapp, Element, api, enable, active iq, activeiq 
----
-= 啟用Active IQ 功能支援功能與NetApp監控
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
 
-
-[role="lead"]
-如果您在安裝或升級期間尚未啟用此功能、則可以啟用Active IQ 支援不支援的儲存監控功能。如果您在安裝過程中未設定SolidFire Active IQ 任何適用於SolidFire 整合式全快閃儲存系統的功能、則可能需要使用此程序。
-
-此收集器服務會將組態資料和元件軟體型叢集效能指標轉送到VMware、以供歷史報告和近乎即時的效能監控。Active IQ SolidFire Active IQNetApp監控服務可將儲存叢集故障轉送至vCenter以發出警示通知。
 
 .開始之前
 * 例如、某些功能的功能是服務品質（QoS）、需要元素11.3或更新版本才能正常運作。Active IQ為了確認您有能力使用Active IQ 所有的功能、NetApp建議您：
@@ -105,40 +89,4 @@ https://<ManagementNodeIP>/mnode
 
 
 
-. 如果您尚未這麼做、請將適用於NetApp混合雲控制的vCenter控制器資產新增至管理節點已知資產：
-+
-
-NOTE: NetApp監控服務需要控制器資產。
-
-+
-.. 選取「* POST /Assites/{asset_id}/controller*」以新增控制器子資產。
-.. 選擇*試用*。
-.. 在「* asset_id*」欄位中、輸入您複製到剪貼簿的父基礎資產ID。
-.. 輸入所需的有效負載值、並以「type（類型）」做為「vCenter（vCenter）」和vCenter認證。
-+
-[listing]
-----
-{
-"username": "string",
-"password": "string",
-"ip": "string",
-"type": "vCenter",
-"host_name": "string",
-"config": {}
-}
-----
-+
-
-NOTE: 「IP」是vCenter IP位址。
-
-.. 選擇*執行*。
-
-
-
-
-[discrete]
-== 如需詳細資訊、請參閱
-
-* https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
 

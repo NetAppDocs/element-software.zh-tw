@@ -6070,7 +6070,6 @@
   <block id="7d640bfdd148f102df423b6e94b11571" category="paragraph"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> 是一種網路型工具、可持續更新整個叢集資料的歷史檢視。您可以針對特定事件、臨界值或度量設定警示。利用此功能、您可以監控系統效能與容量、並隨時掌握叢集健全狀況。SolidFire Active IQ</block>
   <block id="841b3da78955b4e942c8bd5ffddca29e" category="paragraph">您可以在SolidFire Active IQ 下列關於您系統的資訊中找到：</block>
   <block id="8f7f4baec8aa05a765ec83446ad7d0c6" category="inline-link">NetApp支援網站&amp;gt；Active IQ 適用於各種功能的工具</block>
-  <block id="a93cab242c29bc1f7ed010aedb157dab" category="list-text"><block ref="1a3a02f863c93340fc1be395cd8c98c0" category="inline-link-rx"></block></block>
   <block id="04b17abba7ea5ab35fcee00206d57cac" category="summary">vSphere虛擬磁碟區是VMware的儲存模式、可將vSphere的大部分儲存管理從儲存系統移至VMware vCenter。使用虛擬磁碟區（vVols）、您可以根據個別虛擬機器的需求來配置儲存設備。</block>
   <block id="54560a3123d5dd49f3c38f44783146d2" category="doc">虛擬磁碟區（vVols）</block>
   <block id="d741faf41017eca425e168e5907c82e1" category="paragraph">vSphere虛擬磁碟區是VMware的儲存模式、可將vSphere的大部分儲存管理從儲存系統移至VMware vCenter。有了虛擬磁碟區（vVols）、您可以根據個別虛擬機器的需求來配置儲存設備。</block>
@@ -12280,4 +12279,12 @@
   <block id="3c508c424a766cdd354ff2b5f471ceb9" category="list-text">*選用：*選取「* FIFO（先進先出）*」核取方塊、以保留一致數量的最新快照。</block>
   <block id="3905d1636a9d67ee561424a8bc5551a7" category="list-text">選取*「永遠保留」*可無限期保留系統上的快照。</block>
   <block id="627fb665998dc47f162df6850e3bb211" category="list-text">選取*設定保留期間*、然後使用日期微調方塊來選擇系統保留快照的時間長度。</block>
+  <block id="ef9cbe434b5f28c847ba96be9c26f253" category="list-text">CPU、記憶體使用量及節點節流的圖形化呈現</block>
+  <block id="7aa85da92a1cd23b2981568643e3da1c" category="inline-link">本文檔SolidFire Active IQ</block>
+  <block id="f02632134f46548247abd92a38e5f73e" category="paragraph">如需SolidFire Active IQ 瞭解有關資訊、請參閱<block ref="3422f40bd7bba6370d69142070e812b4" category="inline-link-rx"></block>。</block>
+  <block id="1a1a6c5ed33ecaf055e3e38150525306" category="list-text"><block ref="11e28499cd7c9c7d408304fbab2a1320" category="inline-link-rx"></block></block>
+  <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">例如、某些功能的功能是服務品質（QoS）、需要元素11.3或更新版本才能正常運作。Active IQ為了確認您有能力使用Active IQ 所有的功能、NetApp建議您：</block>
+  <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">利用SolidFire Active IQ 功能以監控儲存</block>
+  <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">利用NetApp SolidFire Active IQ 功能監控儲存設備</block>
+  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">使用NetApp SolidFire Active IQ 解決方案</block>
 </blocks>

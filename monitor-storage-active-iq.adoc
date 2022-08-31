@@ -1,13 +1,14 @@
 ---
-permalink: concepts/concept_intro_solidfire_active_iq.html 
 sidebar: sidebar 
-keywords: solidfire, active, iq, activeiq, tool, aiq 
+permalink: monitor-storage-active-iq.html 
+keywords: solidfire, active, iq, activeiq, tool, aiq, monitor, storage 
 summary: 支援以網路為基礎的工具、可持續更新整個叢集資料的歷史檢視。Active IQ您可以針對特定事件、臨界值或度量設定警示。利用此功能、您可以監控系統效能與容量、並隨時掌握叢集健全狀況。Active IQ 
 ---
-= SolidFire Active IQ
+= 利用SolidFire Active IQ 功能以監控儲存
+:hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

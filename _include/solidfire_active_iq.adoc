@@ -1,16 +1,7 @@
----
-permalink: concepts/concept_intro_solidfire_active_iq.html 
-sidebar: sidebar 
-keywords: solidfire, active, iq, activeiq, tool, aiq 
-summary: 支援以網路為基礎的工具、可持續更新整個叢集資料的歷史檢視。Active IQ您可以針對特定事件、臨界值或度量設定警示。利用此功能、您可以監控系統效能與容量、並隨時掌握叢集健全狀況。Active IQ 
----
-= SolidFire Active IQ
+= 以取得更多資訊
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
 https://activeiq.solidfire.com["SolidFire Active IQ"^] 是一種網路型工具、可持續更新整個叢集資料的歷史檢視。您可以針對特定事件、臨界值或度量設定警示。利用此功能、您可以監控系統效能與容量、並隨時掌握叢集健全狀況。SolidFire Active IQ
 
 您可以在SolidFire Active IQ 下列關於您系統的資訊中找到：
