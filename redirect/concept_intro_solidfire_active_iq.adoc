@@ -1,6 +1,6 @@
 ---
 permalink: storage/concept_intro_solidfire_active_iq.html 
-redirect: element-software/concepts/concept_intro_solidfire_active_iq.html#for-more-information.html 
+redirect: element-software/concepts/concept_intro_solidfire_active_iq.html 
 ---
 = 
 :allow-uri-read: 
