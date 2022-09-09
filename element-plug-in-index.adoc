@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: element-plug-in-index.html 
+keywords: element, plug-in, plugin, vcenter, server 
+summary: 使用NetApp Element VMware vSphere介面的外掛程式vCenter Server for vCenter、即可管理及監控執行NetApp Element VMware軟體的儲存叢集。 
+---
+= vCenter Server的VMware vCenter外掛程式NetApp Element
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+vCenter Server的支援VMware vSphere外掛程式提供VMware vSphere介面外掛程式、讓您管理及監控執行VMware軟體的儲存叢集。NetApp Element NetApp Element
+
+若要深入瞭解vCenter Server的元素外掛程式、請參閱 https://docs.netapp.com/us-en/vcp/index.html["vCenter Server文件的適用插件NetApp Element"^]。
+
+
+
+== 以取得更多資訊
+
+* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+

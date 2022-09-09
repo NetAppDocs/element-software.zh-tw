@@ -242,9 +242,6 @@
   <block id="5649ecb352bf906a3f665537686b8d3a" category="paragraph">您可以停用「使用條款」橫幅。停用橫幅時、使用者不再需要接受元素UI的使用條款。</block>
   <block id="bdf5b201d5947a0ed77636f19ced5afa" category="list-text">確認已啟用使用條款。</block>
   <block id="b8083dbafa35314ca7eebf385f4c7bc9" category="list-text">按一下*停用*。</block>
-  <block id="05da295a52c5ab8bf219722efcc57625" category="summary">服務品質（QoS）效能曲線顯示區塊大小與IOPS百分比之間的關係。</block>
-  <block id="735a31f1d01fe768279621625e725b79" category="doc">QoS效能曲線</block>
-  <block id="18a66bc3ec4b3669a530ba3c51d026aa" category="paragraph">服務品質（QoS）效能曲線顯示區塊大小與IOPS百分比之間的關係。</block>
   <block id="aed69ccbd4582446428667841c7d47fe" category="paragraph">區塊大小和頻寬會直接影響應用程式可取得的IOPS數量。Element軟體會將區塊大小正規化為4K、以考慮其所接收的區塊大小。根據工作負載、系統可能會增加區塊大小。隨著區塊大小增加、系統會將頻寬增加至處理較大區塊大小所需的層級。隨著頻寬增加IOPS、系統也能達到降低的目標。</block>
   <block id="fc71d6f09928b7f83187a6af5d831458" category="paragraph">QoS效能曲線顯示區塊大小增加與IOPS百分比下降之間的關係：</block>
   <block id="eab2f1eb8c2044695127279868598b38" category="image-alt">說明QoS：增加區塊大小與IOPS之間的關係。</block>
@@ -346,9 +343,7 @@
   <block id="4dcf9c034336b4f30ebb1800fa19f3b1" category="list-text">單擊*開始寫入*。</block>
   <block id="148da2fc8997120fa9c4ae723fb03eb1" category="summary">支援以網路為基礎的工具、可持續更新整個叢集資料的歷史檢視。Active IQ您可以針對特定事件、臨界值或度量設定警示。利用此功能、您可以監控系統效能與容量、並隨時掌握叢集健全狀況。Active IQ</block>
   <block id="c9618f4b15d53501dee68300c1517890" category="doc">SolidFire Active IQ</block>
-  <block id="148fe9926e292adb5c7374ee88fa6651" category="paragraph">您可以在Active IQ 下列關於您系統的資訊中找到：</block>
   <block id="4cea75009713f3eadbea7bd906d0523e" category="list-text">節點數量和節點狀態：健全、離線或故障</block>
-  <block id="1d60ceb1c0eb7b235010f9d4f656f6d7" category="list-text">CPU與記憶體使用量的圖形化表示</block>
   <block id="390ad22ea22a7a4699d87e2efaa0c84e" category="list-text">關於節點的詳細資料、例如序號、機箱中的插槽位置、模型、NetApp Element 以及儲存節點上執行的版本介紹</block>
   <block id="09bfac84403d33379e533954403b0f94" category="list-text">有關虛擬機器的CPU與儲存相關資訊</block>
   <block id="a5b2d4de2841c516a54a4c4b3db587b1" category="summary">執行NetApp Element 支援SnapMirror功能的系統、可透過NetApp ONTAP ®系統複製及還原快照。</block>
@@ -2032,25 +2027,13 @@
   <block id="dcd603b02a01bb797070c62dc34a5373" category="list-text">在*編輯QoS原則*對話方塊中、視需要修改下列內容：</block>
   <block id="002f7378a5fcfc2f66cfea851a7fd5f4" category="list-text">原則名稱</block>
   <block id="389d33cbc9ae9f54288b4c6fd3f5d933" category="summary">支援以每個磁碟區為基礎、提供服務品質（QoS）參數的功能。SolidFire您可以使用三個可設定的參數來定義QoS、以每秒輸入和輸出數（IOPS）來保證叢集效能：最小IOPS、最大IOPS和爆發IOPS。</block>
-  <block id="8bc14f0cb78851f59e85c1d447c2c99f" category="doc">服務品質</block>
   <block id="b33b7a0f1639461a3999078f0f3daabf" category="paragraph">支援以每個磁碟區為基礎、提供服務品質（QoS）參數的功能。SolidFire您可以使用三個可設定的參數來定義QoS、以每秒輸入和輸出（IOPS）為單位來保證叢集效能：最小IOPS、最大IOPS和爆發IOPS。</block>
   <block id="9df54e6cedfee995f2ec2e37173f4ff0" category="admonition">支援QoS建議頁面、提供最佳組態和QoS設定的建議。SolidFire Active IQ</block>
   <block id="94755a45e4256bb8541fdbb74b0ab445" category="paragraph">IOPS參數的定義方式如下：</block>
-  <block id="8525478e88fe768020917024e56b3375" category="list-text">*最低IOPS *</block>
-  <block id="27e38a475d319fbe8808dbde111a71f4" category="paragraph">儲存叢集提供給磁碟區的每秒持續輸入和輸出（IOPS）最小數量。為磁碟區設定的最小IOPS是保證磁碟區效能的等級。效能不會低於此等級。</block>
-  <block id="0eafe666057554f59d8d2c8c24b3e0f3" category="list-text">*最大IOPS *</block>
-  <block id="086078d6e9862aa3229698f9f4ea609d" category="paragraph">儲存叢集提供給磁碟區的持續IOPS上限。當叢集IOPS等級極高時、不會超過此等級的IOPS效能。</block>
-  <block id="6c3439000c562798f2214c4888ab4ed8" category="paragraph">在短時間脈衝案例中允許的IOPS上限。如果某個磁碟區的執行量低於最大IOPS、則會累積大量資源。當效能等級變得非常高、並推升至最大層級時、磁碟區上就會允許短暫的IOPS突發。</block>
   <block id="c8abfe9754f499524de8da55d7c6d4bd" category="paragraph">當叢集執行的叢集IOPS使用率低時、Element軟體會使用Burst IOPS。</block>
-  <block id="21094115b958d315231b910f9b8e8c38" category="paragraph">單一磁碟區可以累積爆發IOPS、並使用這些積分在設定的「爆發期間」內、以超過其最高IOPS的爆發IOPS等級。如果叢集具有容納突發量的容量、則磁碟區最多可暴增60秒。</block>
-  <block id="1d817bd510c09dbc5ee3cf5101fa6e94" category="paragraph">Volume每秒累積一秒的暴增信用額度（最高60秒）、使磁碟區的執行量低於其最大IOPS限制。</block>
   <block id="759d30933e1dba4efec6a7bae0a84816" category="paragraph">暴增IOPS有兩種限制：</block>
   <block id="ea907efb2e60bbb29e15e16c4c44cc5f" category="list-text">磁碟區可以在數秒內暴增超過其最大IOPS、等於磁碟區已累積的突發量數。</block>
   <block id="472977ed68ed355ce369d8cde9b8e064" category="list-text">當磁碟區超過其最大IOPS設定時、其「爆發IOPS」設定將會受到限制。因此、尖峰IOPS永遠不會超過Volume的「尖峰IOPS」設定。</block>
-  <block id="4fb6dee19a7208b7558396de228b1c1c" category="list-text">*有效最大頻寬*</block>
-  <block id="248da5ca182c3126378490e07f585f5c" category="paragraph">最大頻寬的計算方法是將IOPS數（根據QoS曲線）乘以IO大小。</block>
-  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">範例：</block>
-  <block id="4f88c9126146259f6c0627052d9cda8f" category="paragraph">QoS參數設定為100分鐘IOPS、1000最大IOPS及1500個爆發IOPs、對效能品質有下列影響：</block>
   <block id="eac8046b4dcbad804acd1fa31151bea0" category="list-text">工作負載能夠達到並維持最高1000 IOPS、直到叢集上出現工作負載爭用IOPS的情況為止。然後逐漸減少IOPS、直到所有磁碟區的IOPS都在指定的QoS範圍內、並消除效能爭用。</block>
   <block id="a1a60e0adf0c4411c4175d79f2207605" category="list-text">所有磁碟區的效能都推向100的最低IOPS。層級不會低於最低IOPS設定、但在工作負載爭用解除時、仍可能維持高於100 IOPS。</block>
   <block id="93639a665077e565407899d6e506dd6a" category="list-text">效能絕不會超過1000 IOPS、或持續時間低於100 IOPS。允許執行1500 IOPS（爆發IOPS）的效能、但僅適用於執行低於最大IOPS且只允許短時間內執行的累積暴增積分磁碟區。連串連層級都無法維持。</block>
@@ -6197,7 +6180,6 @@
   <block id="4902bbb0f0792204a931cd6714a07488" category="section-title">驗證儲存叢集</block>
   <block id="a18ea3a466ff3d7bd70cfb3f7158e88d" category="paragraph">權威儲存叢集是NetApp混合雲控制系統用來驗證使用者的儲存叢集。</block>
   <block id="2cd0e9f52d18ccaa56ebdcbb4861e9b3" category="paragraph">如果您的管理節點只有一個儲存叢集、則它是授權叢集。如果您的管理節點有兩個以上的儲存叢集、其中一個叢集會指派為授權叢集、而且只有該叢集的使用者才能登入NetApp混合雲控制。若要瞭解哪個叢集是授權叢集、您可以使用「Get /mnode/about」API。回應時、「toke_URL」欄位中的IP位址是驗證儲存叢集的管理虛擬IP位址（MVIP）。如果您嘗試以非授權叢集的使用者身分登入NetApp混合雲控制、登入嘗試將會失敗。</block>
-  <block id="231614b040b1229fa532738569668845" category="paragraph">許多NetApp混合雲控制功能都是專為搭配多個儲存叢集使用而設計、但驗證和授權卻有其限制。驗證與授權的限制在於、授權叢集的使用者可以在其他綁定至NetApp混合雲控制的叢集上執行動作、即使他們不是其他儲存叢集的使用者。在繼續管理多個儲存叢集之前、您應確保在授權叢集上定義的使用者已在所有其他具有相同權限的儲存叢集上定義。</block>
   <block id="7637537a215094d11d21f8d200622812" category="inline-link-macro">Element軟體使用者介面</block>
   <block id="353681e44a9f1004360ad2451b95f66a" category="paragraph">在繼續管理多個儲存叢集之前、您應確保在授權叢集上定義的使用者已在所有其他具有相同權限的儲存叢集上定義。您可以從管理使用者 <block ref="c6f9d44a89e7c75fd4726f61bea07a82" category="inline-link-macro-rx"></block>。</block>
   <block id="68f491affafdc67007d139c6e24190b1" category="inline-link-macro">建立及管理儲存叢集資產</block>
@@ -11856,7 +11838,6 @@
   <block id="030ad8adc15b38e3dbe32fa700ac2d65" category="cell">驗證叢集上是否沒有擱置的節點。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
-  <block id="c653b8edc861abcc06840aebde786e4b" category="sidebar">使用Element Plug-in for vCenter Server管理儲存設備（連結）</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">舊版</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">安裝維護硬體</block>
@@ -12287,4 +12268,10 @@
   <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">利用SolidFire Active IQ 功能以監控儲存</block>
   <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">利用NetApp SolidFire Active IQ 功能監控儲存設備</block>
   <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">使用NetApp SolidFire Active IQ 解決方案</block>
+  <block id="d214b4cd328cf59221f38d85dca1988f" category="summary">使用NetApp Element VMware vSphere介面的外掛程式vCenter Server for vCenter、即可管理及監控執行NetApp Element VMware軟體的儲存叢集。</block>
+  <block id="14dc26d359d13f6037d00a6c79232cd6" category="paragraph">vCenter Server的支援VMware vSphere外掛程式提供VMware vSphere介面外掛程式、讓您管理及監控執行VMware軟體的儲存叢集。NetApp Element NetApp Element</block>
+  <block id="da3eb0bd8c882a21931739ac39ce915a" category="inline-link">vCenter Server文件的適用插件NetApp Element</block>
+  <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">若要深入瞭解vCenter Server的元素外掛程式、請參閱<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
+  <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">許多NetApp混合雲控制功能都是專為搭配多個儲存叢集使用而設計、但驗證和授權卻有其限制。驗證與授權的限制在於、授權叢集的使用者可以在其他綁定至NetApp混合雲控制的叢集上執行動作、即使他們不是其他儲存叢集的使用者。</block>
+  <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">使用vCenter Server的Element外掛程式來管理儲存設備</block>
 </blocks>
