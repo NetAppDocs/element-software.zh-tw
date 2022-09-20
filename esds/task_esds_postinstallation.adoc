@@ -15,10 +15,10 @@ summary: 安裝SolidFire 完EESDS之後、請在每SolidFire 個EESDS節點上�
 
 以下是安裝SolidFire 完整套功能後應完成的各項工作的深度概覽：
 
-* <<Configure the cluster name>>
-* <<Set the license key>>
-* <<Create a cluster>>
-* <<Add drives to the cluster>>
+*  the cluster name
+*  the license key
+*  a cluster
+*  drives to the cluster
 
 
 

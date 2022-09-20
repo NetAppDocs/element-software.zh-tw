@@ -14,12 +14,12 @@ summary: 您可以SolidFire 使用NetApp Element 各種不實的軟體介面和�
 您可以SolidFire 使用不同NetApp Element 的功能區軟體介面和整合公用程式來管理功能區。
 
 .選項
-* <<NetApp Element software user interface>>
-* <<NetApp Element software API>>
-* <<NetApp Element Plug-in for vCenter Server>>
-* <<NetApp Hybrid Cloud Control>>
-* <<Management node UIs>>
-* <<Additional integration utilities and tools>>
+*  Element software user interface
+*  Element software API
+*  Element Plug-in for vCenter Server
+*  Hybrid Cloud Control
+*  node UIs
+*  integration utilities and tools
 
 
 

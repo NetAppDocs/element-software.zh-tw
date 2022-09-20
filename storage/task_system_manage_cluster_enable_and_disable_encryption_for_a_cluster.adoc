@@ -36,9 +36,9 @@ WARNING: 對於支援所有Flash的儲存叢集、在建立叢集期間必須啟
 NOTE: 位於https://<MVIP>/`的Element軟體UI儀表板目前僅顯示硬體加密的靜止狀態加密。
 
 .選項
-* <<Enable hardware-based encryption at rest>>
-* <<Enable software-based encryption at rest>>
-* <<Disable hardware-based encryption at rest>>
+*  hardware-based encryption at rest
+*  software-based encryption at rest
+*  hardware-based encryption at rest
 
 
 

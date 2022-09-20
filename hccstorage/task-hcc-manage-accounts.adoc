@@ -18,8 +18,8 @@ keywords: netapp, element, cluster, element, account, user, volume, hybrid cloud
 
 管理下列類型的帳戶：
 
-* <<Manage authoritative cluster accounts>>
-* <<Manage volume accounts>>
+*  authoritative cluster accounts
+*  volume accounts
 
 
 
@@ -62,7 +62,7 @@ link:../concepts/concept_solidfire_concepts_accounts_and_permissions.html#author
 ** 如果您選取LDAP、請輸入DN。
 +
 
-TIP: 若要使用LDAP、您必須先啟用LDAP或LDAPS。請參閱 <<Enable LDAP>>。
+TIP: 若要使用LDAP、您必須先啟用LDAP或LDAPS。請參閱  LDAP。
 
 ** 如果您選取叢集做為驗證類型、請輸入新帳戶的名稱和密碼。
 

@@ -13,9 +13,9 @@ summary: 您可以啟用、編輯或設定包含使用者訊息的橫幅。
 [role="lead"]
 您可以啟用、編輯或設定包含使用者訊息的橫幅。
 
-<<Enable the Terms of Use banner>>
-<<Edit the Terms of Use banner>>
-<<Disable the Terms of Use banner>>
+ the Terms of Use banner
+ the Terms of Use banner
+ the Terms of Use banner
 
 
 

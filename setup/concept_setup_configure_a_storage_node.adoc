@@ -15,8 +15,8 @@ summary: 您必須先設定個別節點、才能將其新增至叢集。在機�
 
 配置儲存節點有兩種選項：
 
-* <<Configure a storage node using the per-node UI,每節點UI>>：使用每節點UI (https://<node_management_IP>:442)[] 設定節點網路設定。
-* <<Configure a storage node using the TUI,TUI>>：使用節點終端使用者介面（TUI）來設定節點。
+*  a storage node using the per-node UI,每節點UI：使用每節點UI (https://<node_management_IP>:442)[] 設定節點網路設定。
+*  a storage node using the TUI,TUI：使用節點終端使用者介面（TUI）來設定節點。
 
 
 您無法將具有DHCP指派IP位址的節點新增至叢集。您可以使用DHCP IP位址、在每個節點UI、TUI或API中初始設定節點。在此初始組態期間、您可以新增靜態IP位址資訊、以便將節點新增至叢集。

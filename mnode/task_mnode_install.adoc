@@ -55,11 +55,11 @@ Element 12.2管理節點為選用升級。現有部署不需要此功能。
 在執行此程序之前、您應該先瞭解 link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["持續磁碟區"] 以及您是否要使用它們。持續磁碟區為選用功能、但建議在虛擬機器（VM）遺失時、進行管理節點組態資料恢復。
 
 .步驟
-. <<Download ISO or OVA and deploy the VM>>
-. <<create_mnode_admin,建立管理節點管理並設定網路>>
-. <<Configure time sync>>
-. <<Set up the management node>>
-. <<Configure controller assets>>
+.  ISO or OVA and deploy the VM
+. ,建立管理節點管理並設定網路
+.  time sync
+.  up the management node
+.  controller assets
 
 
 
@@ -144,7 +144,7 @@ NOTE: 如果您需要額外的NIC來隔離儲存流量、請參閱設定其他NI
 
 
 
-NOTE: 從元件12.3.1開始、會自動執行子步驟（A）至（e）。若為管理節點12.3.1、請繼續執行 <<substep_f_install_config_time_sync,子步驟（f）>> 以完成時間同步組態。
+NOTE: 從元件12.3.1開始、會自動執行子步驟（A）至（e）。若為管理節點12.3.1、請繼續執行 ,子步驟（f） 以完成時間同步組態。
 
 . 使用SSH或Hypervisor提供的主控台登入管理節點。
 . 停止ntpd：

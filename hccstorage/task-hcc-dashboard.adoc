@@ -19,10 +19,10 @@ keywords: netapp, element, hcc, hybrid cloud control, storage, storage performan
 
 NOTE: 當您第一次啟動新的NetApp混合雲控制工作階段時、當管理節點管理許多叢集時、載入NetApp混合雲控制儀表板檢視可能會有延遲。載入時間視管理節點主動管理的叢集數量而定。後續產品發表時、您將會體驗更快的載入時間。
 
-* <<Access the NetApp HCC Dashboard>>
-* <<Monitor storage resources>>
-* <<Monitor storage capacity>>
-* <<Monitor storage performance>>
+*  the NetApp HCC Dashboard
+*  storage resources
+*  storage capacity
+*  storage performance
 
 
 

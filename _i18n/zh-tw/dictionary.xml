@@ -11490,7 +11490,6 @@
   <block id="736c409b380383ee8843715d26079c63" category="list-text">*叢集健全狀況*：您已執行健全狀況檢查。請參閱 <block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>。</block>
   <block id="d12abcbed858bffa82e8d643aeac1e4f" category="inline-link-macro">版本說明與升級指示</block>
   <block id="7389b01d5fe0e17f5523a7fb85295f91" category="inline-link">這篇知識庫文章</block>
-  <block id="b24f3db75077a578765967e0b8ffa295" category="admonition">如需硬體的韌體和驅動程式韌體完整對照表、請參閱<block ref="54a79ab153742147d13ffd4ac16bf6ba" category="inline-link-rx"></block> （需要登入）。</block>
   <block id="5212e4232f93722ce70d3ed042cd25c1" category="paragraph">請選擇下列其中一個儲存韌體升級選項：</block>
   <block id="71894c0623112f371e3598666af16695" category="list-text"><block ref="c67f607f0c5a6b98a7e28e151694a09a" category="inline-xref-macro-rx"></block></block>
   <block id="b8cff0b41605e83e8a12999dd0a4ca92" category="list-text"><block ref="bd241c643056b4027f18f8f059752b73" category="inline-xref-macro-rx"></block></block>
@@ -11941,7 +11940,6 @@
   <block id="a0fc274442d4c69dfe575d357ce015e2" category="cell">40至70分鐘</block>
   <block id="9b2b1e8f398acbac5493461c590118f6" category="inline-link">執行完整的節點關機和電源中斷</block>
   <block id="2233d6c0637a0dd985141fefd60451a0" category="cell">您也必須花費130到160分鐘的時間<block ref="b75cb1417453c96f34f9e695ad57b88f" category="inline-link-rx"></block> 針對每個H610S節點。</block>
-  <block id="6ed1151a1c81c87309cd82c96457f044" category="paragraph">^1^如需硬體韌體與驅動程式韌體的完整對照表、請參閱此<block ref="919d0da258d2c9346bfb11f078cfd474" category="inline-link-rx"></block> （需要登入）。</block>
   <block id="0fe84530e14d6cb77f51c3d2cc85aa18" category="paragraph">^2^如果將叢集與大量寫入IOPS負載結合、並延長韌體更新時間、資料同步時間將會增加。</block>
   <block id="eb05636c0d5a8e35fae14ecd37584ea8" category="doc">零件與元件軟體12.5文件SolidFire</block>
   <block id="7275696d9abdd4848d9921861f886410" category="inline-link">Element 12.3.x文件</block>
@@ -12274,4 +12272,7 @@
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">若要深入瞭解vCenter Server的元素外掛程式、請參閱<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">許多NetApp混合雲控制功能都是專為搭配多個儲存叢集使用而設計、但驗證和授權卻有其限制。驗證與授權的限制在於、授權叢集的使用者可以在其他綁定至NetApp混合雲控制的叢集上執行動作、即使他們不是其他儲存叢集的使用者。</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">使用vCenter Server的Element外掛程式來管理儲存設備</block>
+  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支援的韌體和ESXi驅動程式版本</block>
+  <block id="7f6c7867ac3c62c136dad288b3e3298e" category="paragraph">^1^如需硬體的韌體與驅動程式韌體完整對照表、請參閱<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
+  <block id="3c22f77849e3b66d2e0c9c63419afb53" category="admonition">如需硬體的韌體和驅動程式韌體完整對照表、請參閱<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
 </blocks>

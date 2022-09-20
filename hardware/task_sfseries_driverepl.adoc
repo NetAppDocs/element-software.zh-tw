@@ -62,9 +62,9 @@ NOTE: 上圖為範例。SF9608具有不同的磁碟機配置、其中僅包含�
 ====
 以下是這些步驟的高階概觀：
 
-* <<Remove the drive from the cluster>>
-* <<Replace the drive from the chassis>>
-* <<Add the drive to the cluster>>
+*  the drive from the cluster
+*  the drive from the chassis
+*  the drive to the cluster
 
 
 

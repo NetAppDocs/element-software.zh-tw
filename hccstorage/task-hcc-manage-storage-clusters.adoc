@@ -28,11 +28,11 @@ keywords: netapp, element, storage cluster, hybrid cloud control, hcc, maintenan
 
 
 .選項
-* <<Add a storage cluster>>
-* <<Confirm storage cluster status>>
-* <<Edit storage cluster credentials>>
-* <<Remove a storage cluster>>
-* <<Enable and disable maintenance mode>>
+*  a storage cluster
+*  storage cluster status
+*  storage cluster credentials
+*  a storage cluster
+*  and disable maintenance mode
 
 
 
@@ -117,7 +117,7 @@ CAUTION: 選取「*是*」下一步、會從安裝中移除叢集。
 
 == 啟用和停用維護模式
 
-如果您需要將儲存節點離線以進行軟體升級或主機修復等維護作業、您可以藉由將I/O對儲存叢集其餘部分的影響降至最低 <<enable_main_mode,啟用>> 該節點的維護模式。當您 <<disable_main_mode,停用>> 在維護模式下、節點會受到監控、以確保在節點移出維護模式之前符合特定條件。
+如果您需要將儲存節點離線以進行軟體升級或主機修復等維護作業、您可以藉由將I/O對儲存叢集其餘部分的影響降至最低 ,啟用 該節點的維護模式。當您 ,停用 在維護模式下、節點會受到監控、以確保在節點移出維護模式之前符合特定條件。
 
 如需相關資訊、請參閱 link:../esds/reference_esds_use_maintenance_mode.html["維護模式"] 啟用和停用功能選項和 link:../esds/reference_esds_use_maintenance_mode.html#possible-scenarios-while-using-maintenance-mode["使用維護模式時可能發生的情況"]。
 

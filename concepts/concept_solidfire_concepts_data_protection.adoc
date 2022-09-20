@@ -15,13 +15,13 @@ summary: 資料保護功能包括遠端複寫、Volume Snapshot、Volume Cloning
 
 元素儲存資料保護包括下列概念：
 
-* <<Remote replication types>>
-* <<Volume snapshots for data protection>>
-* <<Volume clones>>
-* <<Backup and restore process overview for Element storage>>
-* <<Protection Domains>>
-* <<custom_pd,自訂保護網域>>
-* <<Double Helix high availability>>
+*  replication types
+*  snapshots for data protection
+*  clones
+*  and restore process overview for Element storage
+*  Domains
+* ,自訂保護網域
+*  Helix high availability
 
 
 
@@ -30,9 +30,9 @@ summary: 資料保護功能包括遠端複寫、Volume Snapshot、Volume Cloning
 
 遠端複寫資料的形式如下：
 
-* <<Synchronous and asynchronous replication between clusters>>
-* <<Snapshot-only replication>>
-* <<Replication between Element and ONTAP clusters using SnapMirror>>
+*  and asynchronous replication between clusters
+*  replication
+*  between Element and ONTAP clusters using SnapMirror
 
 
 如需詳細資訊、請參閱 https://www.netapp.com/us/media/tr-4741.pdf["TR-4741：NetApp Element 《The》、《The》、《The》、《The》、《"^]。

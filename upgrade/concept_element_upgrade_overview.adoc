@@ -22,7 +22,7 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 NOTE: 從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 link:https://docs.netapp.com/us-en/element-software-123/upgrade/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["使用HealthTools升級至Element 123"^] 然後使用NetApp混合雲控制升級至Element 12.5。
 
-。 <<sys_upgrade,系統升級順序>> 內容說明完成SolidFire 整套功能齊全的全快閃儲存系統升級所需的工作。理想情況下、這些程序是以較大的升級順序執行、而非隔離執行。如果需要元件型升級或更新、請參閱程序先決條件、以確保解決更多複雜性問題。
+。 ,系統升級順序 內容說明完成SolidFire 整套功能齊全的全快閃儲存系統升級所需的工作。理想情況下、這些程序是以較大的升級順序執行、而非隔離執行。如果需要元件型升級或更新、請參閱程序先決條件、以確保解決更多複雜性問題。
 
 。 link:task_sf_upgrade_all_vsphere.html["vSphere升級順序"] 包含Element Plug-in for vCenter Server內容、說明重新安裝Element Plug-in for vCenter Server所需的其他升級前和升級後步驟。
 

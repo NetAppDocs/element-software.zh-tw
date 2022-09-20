@@ -13,9 +13,9 @@ summary: 如果您想要主動更換SolidFire 您的EESDS叢集中的中繼資�
 [role="lead"]
 從此處列出的程序中選擇主動更換磁碟機、在磁碟機故障後更換磁碟機、以及更換快取磁碟機。在SolidFire 您的SESDS叢集中更換中繼資料磁碟機或區塊磁碟機。Element UI *叢集>磁碟機*頁面會顯示磁碟機耗損資訊。
 
-* <<Replace a drive proactively>>
-* <<Replace a faulty drive>>
-* <<Replace a cache drive>>
+*  a drive proactively
+*  a faulty drive
+*  a cache drive
 
 
 

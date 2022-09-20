@@ -49,7 +49,7 @@ IMPORTANT: 您必須先升級至最新的管理服務套裝組合、才能將Ele
 | H610S | 11.7及更早版本 | 90分鐘 | 40至70分鐘 | 您也必須花費130到160分鐘的時間 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure["執行完整的節點關機和電源中斷"^] 針對每個H610S節點。 
 |===
 +
-^1^如需硬體韌體與驅動程式韌體的完整對照表、請參閱此 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["知識庫文章"^] （需要登入）。
+^1^如需硬體的韌體與驅動程式韌體完整對照表、請參閱 https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["支援的韌體和ESXi驅動程式版本"^]。
 
 +
 ^2^如果將叢集與大量寫入IOPS負載結合、並延長韌體更新時間、資料同步時間將會增加。
@@ -75,8 +75,8 @@ NOTE: 當您接受EULA時、系統會記錄所有未來更新、並啟用自動�
 
 請選擇下列其中一個元素軟體升級選項：
 
-* <<Use NetApp Hybrid Cloud Control UI to upgrade Element storage>>
-* <<Use NetApp Hybrid Cloud Control API to upgrade Element storage>>
+*  NetApp Hybrid Cloud Control UI to upgrade Element storage
+*  NetApp Hybrid Cloud Control API to upgrade Element storage
 
 
 
@@ -121,7 +121,7 @@ https://<ManagementNodeIP>
 
 
 
-TIP: 升級期間*升級狀態*會變更、以反映程序的狀態。它也會因應您採取的行動而變更、例如暫停升級、或升級傳回錯誤。請參閱 <<Upgrade status changes>>。
+TIP: 升級期間*升級狀態*會變更、以反映程序的狀態。它也會因應您採取的行動而變更、例如暫停升級、或升級傳回錯誤。請參閱  status changes。
 
 
 NOTE: 在升級進行期間、您可以離開頁面、稍後再返回頁面、繼續監控進度。如果叢集列收合、頁面不會動態更新狀態和目前版本。叢集列必須展開以更新表格、否則您可以重新整理頁面。
@@ -148,7 +148,7 @@ CAUTION: 如果您離開瀏覽器視窗、檔案上傳將會遺失。
 .. 完成中所需的其他步驟 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/H_Series/NetApp_H610S_storage_node_power_off_and_on_procedure["知識庫文章"^]並在UI中確認您已完成階段2。
 
 
-您可以在升級完成後下載記錄。如需各種升級狀態變更的相關資訊、請參閱 <<Upgrade status changes>>。
+您可以在升級完成後下載記錄。如需各種升級狀態變更的相關資訊、請參閱  status changes。
 
 |===
 
