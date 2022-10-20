@@ -1,0 +1,61 @@
+---
+permalink: api/reference_element_api_iscsiauthentication.html 
+sidebar: sidebar 
+keywords: ISCSIAuthentication,iscsi,authentication 
+summary: ISCSIAuthentication物件包含iSCSI工作階段的驗證資訊。 
+---
+= ISCSIAuthentication
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ISCSIAuthentication物件包含iSCSI工作階段的驗證資訊。
+
+
+
+== 物件成員
+
+此物件包含下列成員：
+
+|===
+| 名稱 | 說明 | 類型 
+
+
+ a| 
+驗證方法
+ a| 
+iSCSI工作階段登入期間使用的驗證方法、例如CHAP或無。
+ a| 
+字串
+
+
+
+ a| 
+章節演算法
+ a| 
+使用的CHAP演算法、例如：MD5、SHA1*、SHA-256*、 或SHA3-256*
+ a| 
+字串
+
+
+
+ a| 
+chap使用 者名稱
+ a| 
+啟動器在iSCSI工作階段登入期間指定的CHAP使用者名稱。
+ a| 
+字串
+
+
+
+ a| 
+方向
+ a| 
+驗證方向、例如單向（僅限啟動器）或雙向（啟動器和目標）。
+ a| 
+字串
+
+|===
+*從元素12.7開始提供。

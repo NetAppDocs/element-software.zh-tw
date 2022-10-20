@@ -42,6 +42,15 @@ summary: 工作階段（iSCSI）物件包含每個磁碟區iSCSI工作階段的�
 
 
  a| 
+驗證
+ a| 
+此iSCSI工作階段的驗證資訊。
+ a| 
+xref:reference_element_api_iscsiauthentication.adoc[ISCSIAuthentication]
+
+
+
+ a| 
 CREATETIM
  a| 
 建立iSCSI工作階段的時間、格式為UTC + 0。

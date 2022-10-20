@@ -2,7 +2,7 @@
 permalink: storage/task_data_manage_accounts_work_with_accounts_task.html 
 sidebar: sidebar 
 keywords: element, solidfire, accounts, create, delete, change, chap, view, edit 
-summary: 在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。 
+summary: 在功能區儲存系統中、租戶可以使用帳戶來讓用戶端連線至節點上的磁碟區。SolidFire帳戶包含存取指派給它的磁碟區所需的CHAP驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。 
 ---
 = 使用CHAP處理帳戶
 :allow-uri-read: 
@@ -14,6 +14,18 @@ summary: 在支援功能的儲存系統中、使用者帳戶可讓用戶端連�
 在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire帳戶包含存取指派給該帳戶的磁碟區所需的挑戰握手驗證傳輸協定（CHAP）驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。
 
 帳戶最多可指派2、000個磁碟區、但一個磁碟區只能屬於一個帳戶。
+
+
+
+== CHAP演算法
+
+從元素12.7開始、支援安全的FIPS相容CHAP演算法SHA1、SHA-256和SHA3-256。使用元素12.7時、當主機iSCSI啟動器正在建立含有元素iSCSI目標的iSCSI工作階段時、會要求使用CHAP演算法清單。元素iSCSI目標會從主機iSCSI啟動器所要求的清單中、選擇其所支援的第一個演算法。若要確認元素iSCSI目標選擇最安全的演算法、您必須設定主機iSCSI啟動器、將從最安全的演算法（例如SHA3-256）排序的演算法清單傳送至最不安全的演算法、例如： SHA1或MD5。如果主機iSCSI啟動器未要求使用SHa演算法、則元素iSCSI目標會選擇MD5、假設主機的建議演算法清單包含MD5。您可能需要更新主機iSCSI啟動器組態、才能支援安全演算法。
+
+在元素12.7升級期間、如果您已更新主機iSCSI啟動器組態、以便在儲存節點重新開機時、以內含SHA演算法的清單傳送工作階段要求、 新的安全演算法會啟動、並使用最安全的傳輸協定建立新的或重新連線的iSCSI工作階段。升級期間、所有現有的iSCSI工作階段都會從MD5移轉至SHa。如果您未將主機iSCSI啟動器組態更新為要求SHa、則現有的iSCSI工作階段將繼續使用MD5。稍後更新主機iSCSI啟動器CHAP演算法之後、iSCSI工作階段應根據導致iSCSI工作階段重新連線的維護活動、逐漸從MD5移轉至SHA。
+
+例如、Red Hat Enterprise Linux（RHEL）8.3中的預設主機iSCSI啟動器具有「node.session.auth.chap_algs = SHA3-256、SHA256、SHA1、MD5」設定、指出哪些結果只會導致iSCSI啟動器使用MD5。在主機上取消註解此設定、然後重新啟動iSCSI啟動器、會觸發該主機的iSCSI工作階段、以開始使用SHA3-256。
+
+如有需要、您可以使用 https://docs.netapp.com/us-en/element-software/api/reference_element_api_listiscsisessions.html["清單"] API方法來查看每個工作階段所使用的CHAP演算法。
 
 
 

@@ -40,6 +40,7 @@ Element軟體API使用Json物件來呈現組織化的資料概念。其中許多
 * xref:reference_element_api_host.adoc[主機（虛擬磁碟區）]
 * xref:reference_element_api_idpconfiginfo.adoc[idpConfigInfo]
 * xref:reference_element_api_initiator.adoc[啟動器]
+* xref:reference_element_api_iscsiauthentication.adoc[ISCSIAuthentication]
 * xref:reference_element_api_keyproviderkmip.adoc[KeyProviderKmip]
 * xref:reference_element_api_keyserverkmip.adoc[KeyServerKmip]
 * xref:reference_element_api_ldapconfiguration.adoc[LDAPConfiguration]

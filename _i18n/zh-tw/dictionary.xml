@@ -903,7 +903,6 @@
   <block id="e3a8d3f102541435530f0d4f9a313b71" category="list-text">若要查看篩選條件欄位、請按一下*篩選*。</block>
   <block id="d7ed15d6c6333c98d209478507476337" category="inline-xref-macro">iSCSI工作階段詳細資料</block>
   <block id="53afd371e15d648a9aa30b588b004c09" category="paragraph"><block ref="53afd371e15d648a9aa30b588b004c09" category="inline-xref-macro-rx"></block></block>
-  <block id="c862058e7345a40a7280afb21deb5070" category="summary">在支援功能的儲存系統中、使用者帳戶可讓用戶端連線至節點上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定的使用者帳戶。</block>
   <block id="4082f16ece7fe49a6ae9cff89731b948" category="paragraph">帳戶最多可指派2、000個磁碟區、但一個磁碟區只能屬於一個帳戶。</block>
   <block id="2fdfd506efea08144c0794c32ca8250a" category="section-title">建立帳戶</block>
   <block id="4c284224e57855e8f92076f429042030" category="paragraph">您可以建立帳戶以允許存取磁碟區。</block>
@@ -12246,17 +12245,12 @@
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列儲存節點支援的韌體版本</block>
   <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">從元素12.5開始、您可以在管理節點上啟用sfreadonly使用者帳戶、以便在NetApp支援部門不提供協助的情況下疑難排解系統元件。您也可以啟用及開啟NetApp支援的遠端支援通道存取、以進行進階疑難排解。</block>
   <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">視您的Element軟體版本而定、不支援下列SF系列儲存節點：</block>
-  <block id="02cf6300fcf798dec9268510fe501399" category="cell">Element軟體版本</block>
-  <block id="d491880ed7c4f2716c5b8ebf0f2cfbb0" category="cell">SF系列儲存節點</block>
-  <block id="30e5e485b533c453bba3daf6375cc212" category="cell">從元件12開始</block>
-  <block id="7f2ce5d6d8ad99c7a9f40d2f7b993f65" category="cell">從元件12.7開始</block>
   <block id="8c807086e16a6bf793517a3ea6554487" category="paragraph">如果您將其中一個儲存節點升級至不受支援的元素版本、就會看到錯誤訊息、指出元素12.x不支援此節點</block>
   <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">在升級至元件12.5或更新版本期間、若節點的BMC出現預先存在的故障、或是在升級期間節點的BMC故障、則不會產生「BMCselfTestFailed」故障。在升級期間、未通過自我測試的BMC會在整個叢集完成升級後、發出「BMCselfTestFailed」警告錯誤。</block>
   <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">*升級程序時間*：您已排定足夠的時間來執行升級。升級至Element軟體12.5或更新版本時、升級程序時間會因您目前的Element軟體版本和韌體更新而有所不同。</block>
   <block id="139691973eba994346784166c2abe4d8" category="cell">所有包含最新韌體的功能為更新版本的NetApp H系列節點SolidFire</block>
   <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點</block>
   <block id="b20b54856add4fca7311231c02ca0554" category="paragraph">^1^如需硬體的韌體與驅動程式韌體完整對照表、請參閱<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
-  <block id="084b51ffb24ddd67b6e5691377e919f4" category="paragraph">從元素12.7開始的^3^不支援SF2405儲存節點。如果您嘗試將SF2405升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
   <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">從元素12.5開始、「sfreadonly」是新的系統帳戶、可在節點上進行基本疑難排解。此API可在叢集中的所有節點上使用「sfreadonly」系統帳戶來啟用SSH存取。</block>
   <block id="482c14e23170c54f9df57d397733d7af" category="doc">Element軟體12.5及更新版本的新功能</block>
   <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.7是最新版本、包含安全性與系統元件更新、作業改善及已解決的問題。</block>
@@ -12288,8 +12282,6 @@
   <block id="5c6c5d2c88269bcae97dbd93d213851a" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block> _新_</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
   <block id="b7faeba39aadbf9af836a1e70f5708d7" category="doc">零件與元件軟體12.5及更新版本文件SolidFire</block>
-  <block id="280ccd6bb84b0a0b3e9c579cabeab78e" category="list-text">從元素12.7開始、不支援SF2405儲存節點。如果您將SF2405儲存節點升級至Element 12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
-  <block id="dddc768078a274c29d2a79433013cc8b" category="list-text">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5或更新版本。</block>
   <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">您已為安排足夠的時間 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升級：升級至Element軟體12.5或更新版本時、升級程序時間會因元件軟體版本和韌體更新而有所不同。</block>
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">您可以使用下列順序來升級SolidFire 適用於Element 12.5或更新版本的NetApp全快閃儲存系統。</block>
   <block id="840a7d863d92c143994565c1a1169097" category="admonition">如需硬體的韌體和驅動程式韌體完整對照表、請參閱<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
@@ -12306,4 +12298,40 @@
   <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">如果您要將管理節點更新至版本12．5或更新版本、則需要使用管理服務2．21．61或更新版本才能繼續。</block>
   <block id="b529479350602e9be1d9caa1838edb9b" category="list-text">儲存節點執行元件12.3.x或更新版本。</block>
   <block id="a3fc65b85282a6a88ae5d5d3defca6e5" category="sidebar">升級適用於SolidFire Element軟體12.5或更新版本的NetApp全快閃儲存系統</block>
+  <block id="153627e79a0ffb6d6ade85f68b50611b" category="inline-link-macro">Element軟體注意事項12.7</block>
+  <block id="ab73a3f8818312d49869de237a845464" category="list-text"><block ref="ab73a3f8818312d49869de237a845464" category="inline-link-macro-rx"></block></block>
+  <block id="0ce0d000aa89de0d0743fc44c13f94f4" category="inline-link-macro">Ember OS 12.7注意事項</block>
+  <block id="56e5995b672eb3b444091a7a02e9f649" category="list-text"><block ref="56e5995b672eb3b444091a7a02e9f649" category="inline-link-macro-rx"></block></block>
+  <block id="fe083ab0d94ac0f3fab1459ec6687f07" category="inline-link-macro">管理節點12．7注意事項</block>
+  <block id="a906487a007d594fc20699a82221d349" category="list-text"><block ref="a906487a007d594fc20699a82221d349" category="inline-link-macro-rx"></block></block>
+  <block id="4b1bf8212206bf46f19c51764c4e1a10" category="inline-link-macro">儲存韌體產品組合2.164.0注意事項</block>
+  <block id="d57216d6837a747e09b565470b2ef946" category="list-text"><block ref="d57216d6837a747e09b565470b2ef946" category="inline-link-macro-rx"></block></block>
+  <block id="5959cf5fc1876c0cf2f01475b2d29319" category="cell">開始於...</block>
+  <block id="9591fa9a8d37fb96963a1164f28d8329" category="cell">不支援儲存節點...</block>
+  <block id="80736a9fd1a5cd3a0f3c3ef7e8c627c1" category="cell">元件12.0</block>
+  <block id="3d6ac36552702d0a682fac26d1841715" category="summary">在功能區儲存系統中、租戶可以使用帳戶來讓用戶端連線至節點上的磁碟區。SolidFire帳戶包含存取指派給它的磁碟區所需的CHAP驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。</block>
+  <block id="adf63029757917f4aff07fe55725e5d9" category="section-title">CHAP演算法</block>
+  <block id="3b2569fbd052a233a8a46886c97fc207" category="paragraph">從元素12.7開始、支援安全的FIPS相容CHAP演算法SHA1、SHA-256和SHA3-256。使用元素12.7時、當主機iSCSI啟動器正在建立含有元素iSCSI目標的iSCSI工作階段時、會要求使用CHAP演算法清單。元素iSCSI目標會從主機iSCSI啟動器所要求的清單中、選擇其所支援的第一個演算法。若要確認元素iSCSI目標選擇最安全的演算法、您必須設定主機iSCSI啟動器、將從最安全的演算法（例如SHA3-256）排序的演算法清單傳送至最不安全的演算法、例如： SHA1或MD5。如果主機iSCSI啟動器未要求使用SHa演算法、則元素iSCSI目標會選擇MD5、假設主機的建議演算法清單包含MD5。您可能需要更新主機iSCSI啟動器組態、才能支援安全演算法。</block>
+  <block id="b8bb97697b35e86a4877aef90f591533" category="paragraph">在元素12.7升級期間、如果您已更新主機iSCSI啟動器組態、以便在儲存節點重新開機時、以內含SHA演算法的清單傳送工作階段要求、 新的安全演算法會啟動、並使用最安全的傳輸協定建立新的或重新連線的iSCSI工作階段。升級期間、所有現有的iSCSI工作階段都會從MD5移轉至SHa。如果您未將主機iSCSI啟動器組態更新為要求SHa、則現有的iSCSI工作階段將繼續使用MD5。稍後更新主機iSCSI啟動器CHAP演算法之後、iSCSI工作階段應根據導致iSCSI工作階段重新連線的維護活動、逐漸從MD5移轉至SHA。</block>
+  <block id="db6cb10180fa1523938da319a188d13d" category="paragraph">例如、Red Hat Enterprise Linux（RHEL）8.3中的預設主機iSCSI啟動器具有「node.session.auth.chap_algs = SHA3-256、SHA256、SHA1、MD5」設定、指出哪些結果只會導致iSCSI啟動器使用MD5。在主機上取消註解此設定、然後重新啟動iSCSI啟動器、會觸發該主機的iSCSI工作階段、以開始使用SHA3-256。</block>
+  <block id="55fc627721522ae45305c9f988153a20" category="paragraph">如有需要、您可以使用<block ref="06aa6b6b67e008146e7c8d6417794b62" category="inline-link-rx"></block> API方法來查看每個工作階段所使用的CHAP演算法。</block>
+  <block id="822cfacfacaf81a90ce9862ea1ea1e0e" category="paragraph">不支援以元素12.7開頭的^3^、SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您嘗試將SF2405升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
+  <block id="197daf7bc8c465056c36b92f2d586989" category="paragraph">視您的Element軟體版本而定、不支援下列節點：</block>
+  <block id="08c7862f5f38b9fd867553b48afef501" category="list-text">從元素12.7、SF2405和SF9608儲存節點開始、再從FC0025和SF-FCN-01 FC節點開始。</block>
+  <block id="8308b7fe397e44d83e5a712066af41fb" category="list-text">從元素12.0、SF3010、SF6010和SF9010儲存節點開始。</block>
+  <block id="317098c2199258cdc962c4debca77db2" category="list-text">從元素12.7、SF2405和SF9608儲存節點開始。</block>
+  <block id="b0d78c489174a630a6e5502b9e0dd40b" category="summary">ISCSIAuthentication物件包含iSCSI工作階段的驗證資訊。</block>
+  <block id="69077e0fa8b70b64097afc89348bf61f" category="doc">ISCSIAuthentication</block>
+  <block id="770823b04c56cf06b613a8c46e074777" category="paragraph">iSCSI工作階段登入期間使用的驗證方法、例如CHAP或無。</block>
+  <block id="c1e71a842db5c0d9b8794b78708cd11c" category="paragraph">章節演算法</block>
+  <block id="2fb17ea4ae9813c2eb5d3a5bd7fe3512" category="paragraph">使用的CHAP演算法、例如：MD5、SHA1*、SHA-256*、 或SHA3-256*</block>
+  <block id="e4129684446aea2a0364c5466dc85146" category="paragraph">啟動器在iSCSI工作階段登入期間指定的CHAP使用者名稱。</block>
+  <block id="ef72c37be9d1b9e6e5bbd6ef09448abe" category="paragraph">方向</block>
+  <block id="e7eefd9834440f0ab15e111471053cf0" category="paragraph">驗證方向、例如單向（僅限啟動器）或雙向（啟動器和目標）。</block>
+  <block id="cd6217be1698a09a848043a5d6c72040" category="paragraph">*從元素12.7開始提供。</block>
+  <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
+  <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">驗證</block>
+  <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI工作階段的驗證資訊。</block>
+  <block id="2e5eceda3bfa3409dad5d20e93cd57ac" category="list-text">從元素12.7開始、不支援SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您將其中一個節點升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
+  <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5。然後使用NetApp混合雲控制升級至Element 12.5或更新版本。</block>
 </blocks>

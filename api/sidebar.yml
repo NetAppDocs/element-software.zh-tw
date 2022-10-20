@@ -75,6 +75,8 @@ entries:
     url: "/api/reference_element_api_idpconfiginfo.html"
   - title: 啟動器
     url: "/api/reference_element_api_initiator.html"
+  - title: ISCSIAuthentication
+    url: "/api/reference_element_api_iscsiauthentication.html"
   - title: KeyProviderKmip
     url: "/api/reference_element_api_keyproviderkmip.html"
   - title: KeyServerKmip

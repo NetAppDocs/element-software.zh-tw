@@ -47,6 +47,9 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
 
+* link:./media/Element_Software_12.7.pdf["Element軟體注意事項12.7"^]
+* link:./media/Ember_OS_12.7.pdf["Ember OS 12.7注意事項"^]
+* link:./media/mNode_12.7.pdf["管理節點12．7注意事項"^]
 * link:./media/Element_Software_12.5.pdf["Element軟體12.5注意事項"^]
 * link:./media/SolidFire_eSDS_12.5.pdf["NetApp SolidFire 企業SDS 12.5注意事項"^]
 * link:./media/mNode_12.5.pdf["管理節點12.5注意事項"^]
@@ -59,6 +62,7 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 * link:./media/mgmt-214.pdf["管理服務2.14注意事項NetApp Element （適用於vCenter Server 4.5.42的VMware外掛程式）"^]
 * link:./media/mgmt-213.pdf["管理服務注意事項2.13（NetApp Element 適用於vCenter Server 4.5.42的VMware外掛程式）"^]
 * link:./media/SolidFire_eSDS_12.5.pdf["NetApp SolidFire 解決方案企業SDS注意事項"^]
+* link:./media/storage_firmware_bundle_2.164.0_notices.pdf["儲存韌體產品組合2.164.0注意事項"^]
 * link:./media/storage_firmware_bundle_2.150_notices.pdf["儲存韌體產品組合2.150注意事項"^]
 * link:./media/storage_firmware_bundle_2.146_notices.pdf["儲存韌體產品組合2.146注意事項"^]
 * link:./media/storage_firmware_bundle_2.99_notices.pdf["儲存韌體產品組合2.99.2注意事項"^]
