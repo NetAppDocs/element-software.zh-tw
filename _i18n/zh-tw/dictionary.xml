@@ -4980,7 +4980,6 @@
   <block id="7eada9b3aeba75afea1bb6e56efd98a1" category="paragraph">您可以使用REST API從管理節點上執行的服務擷取記錄。您可以從所有公有服務提取記錄、或指定特定服務、並使用查詢參數來更妥善定義傳回結果。</block>
   <block id="fc78a25a814125bdaeb01b28be02a19d" category="list-text">您的叢集版本執行NetApp Element 的是更新版本的Software 11.3。</block>
   <block id="d95dde96d5f37c05bba91d1bff6d1a55" category="list-text">您已部署執行11.3版或更新版本的管理節點。</block>
-  <block id="4ac581155f2c6a4a3a056078e2b122a1" category="list-text">在管理節點上開啟REST API UI：</block>
   <block id="1fca2b4a66eca3cc3857ef2cc620c7a4" category="list-text">選取*授權*或任何鎖定圖示、然後完成下列步驟：</block>
   <block id="fe5314e1f2b52008d7c6c1dc49232535" category="list-text">如果尚未填入此值、請將用戶端ID輸入為mnode-Client。</block>
   <block id="09cd4d07205bec65818c2a8ba07333f0" category="list-text">選擇* Get /logs*。</block>
@@ -12336,4 +12335,7 @@
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服務注意事項2.21.61（NetApp Element VMware vCenter Server 4.10.12適用的VMware vCenter外掛程式）</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">您正在升級NetApp Element 至適用於vCenter Server 4.10、4.9、4.8、4.7、4.6的 4.5或4.4。</block>
+  <block id="5d8cb69408d9a6773459aa0a397a3003" category="list-text">在管理節點上開啟REST API UI。</block>
+  <block id="4eed3af07414f10fffdba8a7ff51ca36" category="list-text">從管理服務2.21.61開始：</block>
+  <block id="880c70977a68b1ec897e498bb11c7021" category="list-text">若為管理服務2.20.69或更早版本：</block>
 </blocks>
