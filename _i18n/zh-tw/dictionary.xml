@@ -5703,7 +5703,6 @@
   <block id="050a0195689eb13051d78e278eae86ff" category="paragraph">下圖顯示磁碟機在SF9605機箱中的位置：</block>
   <block id="5a23ec1a6f5e87de11e59c22d96e2bd7" category="image-alt">此圖顯示SolidFire 了整個機箱中的磁碟機。</block>
   <block id="24fc9cf8cab934ad1c788b6bb3a2c787" category="admonition">上圖為範例。SF9608具有不同的磁碟機配置、其中僅包含從左到右編號為一到八的八個磁碟機。</block>
-  <block id="a1ea4553e6d3011ca1816468f53f4286" category="paragraph">插槽0容納節點的中繼資料磁碟機。如果您要更換插槽0中的磁碟機、則必須在更換磁碟機的包裝箱上貼上隨附的貼紙、以便與其他磁碟機分開識別。SF3010是一項例外、因為中繼資料會保留在內部序列進階技術附件（SATA）雙列直插式記憶體模組（DIMM）上。</block>
   <block id="c8d4ba7da30930acc89e5d2a87511ca3" category="paragraph">在處理磁碟機時、請遵循下列最佳實務做法：</block>
   <block id="58c147306bf280b47a164e7c0b0dd750" category="list-text">請將磁碟機放在防靜電袋中、直到您準備好安裝為止、以防止靜電釋放（ESD）。</block>
   <block id="0c03fb247c8bb85a717d43d5091a6825" category="list-text">請勿將金屬工具或刀插入電子設備保護袋。</block>
@@ -12235,7 +12234,6 @@
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列儲存節點支援的韌體版本</block>
   <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">從元素12.5開始、您可以在管理節點上啟用sfreadonly使用者帳戶、以便在NetApp支援部門不提供協助的情況下疑難排解系統元件。您也可以啟用及開啟NetApp支援的遠端支援通道存取、以進行進階疑難排解。</block>
   <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">視您的Element軟體版本而定、不支援下列SF系列儲存節點：</block>
-  <block id="8c807086e16a6bf793517a3ea6554487" category="paragraph">如果您將其中一個儲存節點升級至不受支援的元素版本、就會看到錯誤訊息、指出元素12.x不支援此節點</block>
   <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">在升級至元件12.5或更新版本期間、若節點的BMC出現預先存在的故障、或是在升級期間節點的BMC故障、則不會產生「BMCselfTestFailed」故障。在升級期間、未通過自我測試的BMC會在整個叢集完成升級後、發出「BMCselfTestFailed」警告錯誤。</block>
   <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">*升級程序時間*：您已排定足夠的時間來執行升級。升級至Element軟體12.5或更新版本時、升級程序時間會因您目前的Element軟體版本和韌體更新而有所不同。</block>
   <block id="139691973eba994346784166c2abe4d8" category="cell">所有包含最新韌體的功能為更新版本的NetApp H系列節點SolidFire</block>
@@ -12305,7 +12303,6 @@
   <block id="b8bb97697b35e86a4877aef90f591533" category="paragraph">在元素12.7升級期間、如果您已更新主機iSCSI啟動器組態、以便在儲存節點重新開機時、以內含SHA演算法的清單傳送工作階段要求、 新的安全演算法會啟動、並使用最安全的傳輸協定建立新的或重新連線的iSCSI工作階段。升級期間、所有現有的iSCSI工作階段都會從MD5移轉至SHa。如果您未將主機iSCSI啟動器組態更新為要求SHa、則現有的iSCSI工作階段將繼續使用MD5。稍後更新主機iSCSI啟動器CHAP演算法之後、iSCSI工作階段應根據導致iSCSI工作階段重新連線的維護活動、逐漸從MD5移轉至SHA。</block>
   <block id="db6cb10180fa1523938da319a188d13d" category="paragraph">例如、Red Hat Enterprise Linux（RHEL）8.3中的預設主機iSCSI啟動器具有「node.session.auth.chap_algs = SHA3-256、SHA256、SHA1、MD5」設定、指出哪些結果只會導致iSCSI啟動器使用MD5。在主機上取消註解此設定、然後重新啟動iSCSI啟動器、會觸發該主機的iSCSI工作階段、以開始使用SHA3-256。</block>
   <block id="55fc627721522ae45305c9f988153a20" category="paragraph">如有需要、您可以使用<block ref="06aa6b6b67e008146e7c8d6417794b62" category="inline-link-rx"></block> API方法來查看每個工作階段所使用的CHAP演算法。</block>
-  <block id="822cfacfacaf81a90ce9862ea1ea1e0e" category="paragraph">不支援以元素12.7開頭的^3^、SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您嘗試將SF2405升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
   <block id="197daf7bc8c465056c36b92f2d586989" category="paragraph">視您的Element軟體版本而定、不支援下列節點：</block>
   <block id="08c7862f5f38b9fd867553b48afef501" category="list-text">從元素12.7、SF2405和SF9608儲存節點開始、再從FC0025和SF-FCN-01 FC節點開始。</block>
   <block id="8308b7fe397e44d83e5a712066af41fb" category="list-text">從元素12.0、SF3010、SF6010和SF9010儲存節點開始。</block>
@@ -12322,7 +12319,6 @@
   <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">驗證</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI工作階段的驗證資訊。</block>
-  <block id="2e5eceda3bfa3409dad5d20e93cd57ac" category="list-text">從元素12.7開始、不支援SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您將其中一個節點升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
   <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5。然後使用NetApp混合雲控制升級至Element 12.5或更新版本。</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服務注意事項2.21.61（NetApp Element VMware vCenter Server 4.10.12適用的VMware vCenter外掛程式）</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
@@ -12338,4 +12334,8 @@
   <block id="e4eccb810d78b1a07fe7514cdf52eb9f" category="admonition">升級至VMware vCenter Server 7.0 U3時、Element外掛程式無法部署。若要使用Spring Framework 4解決此問題、請參閱<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="62449609bcf95f48fbdbae6dddedcc19" category="list-text">*終端使用者授權合約（EULA）*：從管理服務2.20.69開始、您必須先接受並儲存EULA、才能使用NetApp混合雲控制UI或API來升級Element軟體：</block>
   <block id="d6802e127914e53f73aa2f2db8cb5e44" category="paragraph">從管理服務2.20.69開始、您必須先接受並儲存終端使用者授權合約（EULA）、才能使用NetApp混合雲控制UI或API來升級管理服務：</block>
+  <block id="33d4cce2372c2f81af75e357ed402fe5" category="paragraph">不支援以元素12.7開頭的^3^、SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您嘗試將其中一個節點升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
+  <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">如果您嘗試將其中一個節點升級至不受支援的元素版本、您會看到錯誤訊息、指出元素12.x不支援此節點</block>
+  <block id="ab23337415270010383937ce784cb519" category="list-text">從元素12.7開始、不支援SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您嘗試將其中一個節點升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
+  <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">插槽0容納節點的中繼資料磁碟機。如果您要更換插槽0中的磁碟機、則必須在更換磁碟機的包裝箱上貼上隨附的貼紙、以便與其他磁碟機分開識別。</block>
 </blocks>
