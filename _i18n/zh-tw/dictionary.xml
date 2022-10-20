@@ -12144,7 +12144,6 @@
   <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 123文件</block>
   <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">ESXi 6.7和7.0、適用於Element示範節點123和12.5 VM</block>
   <block id="f73f11dc118d0773193fe38ff975e133" category="inline-link">儲存韌體產品組合2.150版本說明</block>
-  <block id="4ed157f2adee50f00ed14eca30c23284" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block> _新_</block>
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">儲存韌體產品組合2.150注意事項</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
@@ -12319,7 +12318,6 @@
   <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">驗證</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI工作階段的驗證資訊。</block>
-  <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5。然後使用NetApp混合雲控制升級至Element 12.5或更新版本。</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服務注意事項2.21.61（NetApp Element VMware vCenter Server 4.10.12適用的VMware vCenter外掛程式）</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">您正在升級NetApp Element 至適用於vCenter Server 4.10、4.9、4.8、4.7、4.6的 4.5或4.4。</block>
@@ -12338,4 +12336,10 @@
   <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">如果您嘗試將其中一個節點升級至不受支援的元素版本、您會看到錯誤訊息、指出元素12.x不支援此節點</block>
   <block id="ab23337415270010383937ce784cb519" category="list-text">從元素12.7開始、不支援SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您嘗試將其中一個節點升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">插槽0容納節點的中繼資料磁碟機。如果您要更換插槽0中的磁碟機、則必須在更換磁碟機的包裝箱上貼上隨附的貼紙、以便與其他磁碟機分開識別。</block>
+  <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">儲存韌體套裝組合2.164.0版本說明</block>
+  <block id="e95c3968984424b94d3bd781dd9e8819" category="list-text"><block ref="758831bd0271b3c8b1bf3b7bf6466060" category="inline-link-rx"></block> _新_</block>
+  <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
+  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支援的韌體和ESXi驅動程式版本</block>
+  <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _新_</block>
+  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="list-text">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5。</block>
 </blocks>

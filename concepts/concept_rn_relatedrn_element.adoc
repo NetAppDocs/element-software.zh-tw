@@ -62,12 +62,14 @@ NOTE: 系統會提示您使用NetApp支援認證登入。
 
 == 儲存韌體
 
-* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.150.html["儲存韌體產品組合2.150版本說明"^] _新_
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["儲存韌體套裝組合2.164.0版本說明"^] _新_
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.150.html["儲存韌體產品組合2.150版本說明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.146.html["儲存韌體產品組合2.146版本說明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.99.2.html["儲存韌體產品組合2.99.2版本說明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.76.html["儲存韌體產品組合2.76版本說明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html["儲存韌體產品組合2.27版本說明"^]
 * link:rn_H610S_BMC_3.84.07.html["H610S BMC 3.84.07版本說明"]
+* https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["支援的韌體和ESXi驅動程式版本"] _新_
 
 
 
