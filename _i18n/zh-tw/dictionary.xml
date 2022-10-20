@@ -11899,7 +11899,6 @@
   <block id="cd87cb364b82cfd7ff555087f3e88e59" category="list-text">* Element軟體*：您的叢集版本執行NetApp Element 的是功能不全的軟體11.3或更新版本。</block>
   <block id="84d8587fb67731ba50262a0ffeacb7ac" category="list-text">*終端使用者授權合約（EULA）*：從管理服務的2.20開始、您必須先接受並儲存EULA、才能使用NetApp混合雲控制UI或API來執行元素儲存健全狀況檢查：</block>
   <block id="651784e7a6ddc6534201a6e8d1fbf248" category="paragraph">對於已註冊NetApp Element 的VMware vCenter Server更新版現有vSphere環境、您可以在第一次更新包含外掛程式服務的管理服務套件之後、更新外掛程式登錄。</block>
-  <block id="47e9151ac689287505aa641c93450d92" category="list-text">您正在升級NetApp Element 至適用於vCenter Server 4.9、4.8、4.7、4.6、4.5或4.4的VMware vCenter外掛程式。</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">外掛程式與VMware vCenter Server 6.5 for Element Plug-in for VMware vCenter Server 4.6、4.7和4.8不相容。</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter Plug-in 4.9版本說明</block>
   <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp混合雲控制網路UI和API可從NetApp線上軟體儲存庫下載軟體套件。因此、部分URL或IP位址可能會根據內容傳輸網路解析為其他URL或IP位址。如有可能、您應與網路工程師合作、使用下列一般步驟、將這些URL或IP位址新增至防火牆規則：</block>
@@ -12334,4 +12333,7 @@
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI工作階段的驗證資訊。</block>
   <block id="2e5eceda3bfa3409dad5d20e93cd57ac" category="list-text">從元素12.7開始、不支援SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您將其中一個節點升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
   <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5。然後使用NetApp混合雲控制升級至Element 12.5或更新版本。</block>
+  <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服務注意事項2.21.61（NetApp Element VMware vCenter Server 4.10.12適用的VMware vCenter外掛程式）</block>
+  <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
+  <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">您正在升級NetApp Element 至適用於vCenter Server 4.10、4.9、4.8、4.7、4.6的 4.5或4.4。</block>
 </blocks>
