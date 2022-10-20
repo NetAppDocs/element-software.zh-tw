@@ -1,6 +1,6 @@
 ---
 section: upgrade
-title: 升級適用於SolidFire Element軟體12.5的NetApp全快閃儲存系統
+title: 升級適用於SolidFire Element軟體12.5或更新版本的NetApp全快閃儲存系統
 entries:
 - title: 升級順序總覽
   url: "/upgrade/concept_element_upgrade_overview.html"

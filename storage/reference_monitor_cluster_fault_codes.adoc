@@ -101,7 +101,7 @@ IP位址區塊中的虛擬網路位址數目很低。
 如需協助、請聯絡NetApp支援部門。
 
 +
-在元素12.5升級期間、不會針對具有預先存在故障BMC的節點、或是節點的BMC在升級期間故障時、產生「BMCselfTestFailed」故障。在升級期間、未通過自我測試的BMC會在整個叢集完成升級後、發出「BMCselfTestFailed」警告錯誤。
+在升級至元件12.5或更新版本期間、若節點的BMC出現預先存在的故障、或是在升級期間節點的BMC故障、則不會產生「BMCselfTestFailed」故障。在升級期間、未通過自我測試的BMC會在整個叢集完成升級後、發出「BMCselfTestFailed」警告錯誤。
 
 * *時鐘ScewExceedsFault閾 值*
 +

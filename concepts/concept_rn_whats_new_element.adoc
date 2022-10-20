@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。 
 ---
-= Element軟體12.5的新功能
+= Element軟體12.5及更新版本的新功能
 :allow-uri-read: 
 :url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
 :icons: font
@@ -12,13 +12,75 @@ summary: NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶�
 
 
 [role="lead"]
-NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.5引進改良的儲存節點存取功能、增強的自訂保護網域管理功能、全新改良的叢集故障與事件、增強的Create Cluster UI功能、增強的安全性、以及使用Ansible的自動化升級。
+NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.7是最新版本、包含安全性與系統元件更新、作業改善及已解決的問題。
+
+
+NOTE: 根據儲存叢集上目前執行的元素版本、會將累積式軟體和韌體更新安裝為Element 12.7升級的一部分。例如、如果叢集目前正在執行元素12.3.x、您可以直接升級至元素12.7、從元素12.5和12.7取得累積更新。如需支援的升級途徑、請參閱此 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["知識庫文章"^]
+
+
+
+== 元素12.7
+
+深入瞭解Element 12.7的新功能。
+
+
+
+=== 安全的CHAP演算法
+
+Element 12.7支援安全的FIPS相容挑戰握手驗證傳輸協定（CHAP）演算法SHA1、SHA-256和SHA3-256。 link:../storage/task_data_manage_accounts_work_with_accounts_task.html["深入瞭解"]。
+
+
+
+=== 動態區塊（Bin）同步處理速度
+
+叢集作業（例如新增、升級或維護節點、或新增磁碟機等）會觸發區塊（bin）同步、將區塊資料分散到叢集配置中的新節點或更新節點。使用單一慢速做為預設的同步處理速度、會導致這些作業耗費很長時間、而且不會利用較大節點的較高處理能力。從元素12.7開始、同步處理速度會根據儲存節點上的核心數量動態調整、讓這些作業能夠大幅加快執行速度。
+
+例如、當您在現有叢集新增執行元素12．7的大型28核心儲存節點（H610S、SF19210和SF38410）時、資料的同步輸入速率會自動調至110 Mbps、而非60 Mbps。此外、當您將這些大型儲存節點從節點維護模式中移出時、例如使用NetApp混合雲控制將元素12.3.x或更新版本升級至元素12.7時、變更區塊資料速率的同步輸入速率會自動調至110Mbps、而非20Mbps。
+
+當您將中型16核心儲存節點（H410S）和小型12核心儲存節點（SF4805）新增至元素12.7叢集時、資料的同步輸入速率仍維持在60Mbps； 但是、當您將變更的區塊從元素12.3.x升級至元素12.7時、如果將它們從節點維護模式中移出、則同步處理速度會自動從中型儲存節點的20Mbps調至60Mbps、而較小儲存節點的速度則為40Mbps。
+
+當您移除儲存節點時、不會影響區塊同步輸出速度、進而避免對用戶端I/O造成效能影響
+
+
+
+=== 垃圾回收改善
+
+對於具有較大儲存節點的叢集、例如使用1PB空間的H610S-4、會以覆寫功能執行非常高的工作負載、 而且重複資料刪除和壓縮率很高、現在垃圾回收作業可以跟上預設的開放式篩選器大小、因為較大的節點已從700GB或更大的記憶體增加到1048576位元。此變更會在您將儲存節點升級至元素12.7之後自動生效、而且不會對較小的節點造成任何影響。
+
+
+
+=== 擴充性改善
+
+有了Element 12.7、您不再需要依照特定的順序、將多個儲存節點加入現有叢集、而這些儲存節點的區塊和中繼資料磁碟機值也很大。使用Element UI或API、您只需選取所有可用的磁碟機、然後同時大量新增磁碟機即可。Element 12.7會自動管理資料同步、以便同時同步所有區塊服務。當每個節點的區塊服務完成同步時、該節點上的中繼資料磁碟機便可指派給主機磁碟區。這項擴充性改善可大幅縮短讀取回應延遲、並可在新增儲存節點之間同步資料時、避免效能降低。
+
+
+
+=== 儲存節點韌體更新
+
+Element 12.7內含儲存韌體套裝軟體2.164.0版、其中包含對新系統元件的支援。 link:https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["深入瞭解"]。
+
+
+NOTE: Element 12.7版本中沒有新的韌體更新。不過、根據儲存節點上目前執行的韌體套裝組合、當您升級至Element 12.7時、就會安裝累積性更新。
+
+
+
+=== 本文檔SolidFire Active IQ
+
+在這個功能表中SolidFire Active IQ 、您現在可以瀏覽至「QoS管理」頁面、檢視叢集的建議和節點節流資訊。此外、叢集儀表板現在會顯示快照總數。其他近期的增強功能包括新增作用中磁碟區的主要和次要節點資訊、以及節點上主要磁碟區的平均處理量、IOPS和過去30分鐘的平均延遲。
+
+您現在可以從SolidFire Active IQ Element軟體文件中存取《支援》文件。 link:https://docs.netapp.com/us-en/element-software/monitor-storage-active-iq.html["深入瞭解"]。
+
+
+
+=== NetApp線上錯誤包含已解決且已知的問題
+
+NetApp錯誤線上工具中已列出已解決及已知的問題。您可以瀏覽這些問題、以取得Element軟體和其他產品、網址為 https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp線上錯誤"^]。
 
 
 
 == 要點12.5
 
-深入瞭解元素12.5的新功能。
+Element 12.5引進改良的儲存節點存取功能、增強的自訂保護網域管理功能、全新改良的叢集故障與事件、增強的Create Cluster UI功能、增強的安全性、以及使用Ansible的自動化升級。
 
 
 
@@ -66,12 +128,6 @@ Element 12.5包含儲存節點的韌體更新。 link:../concepts/concept_rn_rel
 
 透過Element 12.5、您可以使用Ansible來執行整個儲存叢集的循環升級、以自動化元件軟體升級工作流程。若要開始使用、請瀏覽至 https://github.com/NetApp-Automation["NetApp Ansible儲存庫"^] 在GitHub下載「na_solidfire_SDS升級」角色與文件。
 
-
-
-=== NetApp線上錯誤包含已解決且已知的問題
-
-NetApp錯誤線上工具中已列出已解決及已知的問題。您可以瀏覽這些問題、以取得Element軟體和其他產品、網址為 https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp線上錯誤"^]。
-
 [discrete]
 == 如需詳細資訊、請參閱
 
@@ -81,5 +137,5 @@ NetApp錯誤線上工具中已列出已解決及已知的問題。您可以瀏�
 * https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"^]
 * http://docs.netapp.com/sfe-122/index.jsp["適用於舊版的VMware及Element軟體文件中心SolidFire"^]
 * https://www.netapp.com/us/documentation/hci.aspx["「資源」頁面NetApp HCI"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["適用於更新及更新的韌體與驅動程式版本NetApp HCI NetApp Element"^]
+* https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html["支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點"^]
 

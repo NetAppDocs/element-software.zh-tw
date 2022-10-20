@@ -13,7 +13,7 @@ summary: 在節點或叢集上啟用ssh之後、您可以使用SignSshkeys方法
 [role="lead"]
 使用在叢集上啟用SSH之後 link:../api/reference_element_api_enablessh.html["啟用SSH方法"]、您可以使用「ignSshKeys」方法來存取節點上的Shell。
 
-「freadonly」是新的系統帳戶、從元件125起、可在節點上進行基本疑難排解。此API可在叢集中的所有節點上使用「sfreadonly」系統帳戶來啟用SSH存取。
+從元素12.5開始、「sfreadonly」是新的系統帳戶、可在節點上進行基本疑難排解。此API可在叢集中的所有節點上使用「sfreadonly」系統帳戶來啟用SSH存取。
 
 
 WARNING: 除非NetApp支援部門告知、否則系統的任何變更均不受支援、會使您的支援合約失效、並可能導致資料不穩定或無法存取。
