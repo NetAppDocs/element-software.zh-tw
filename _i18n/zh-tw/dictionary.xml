@@ -3037,7 +3037,6 @@
   <block id="b58f4eb51d27127044588d81769a043d" category="list-text">建立新的金鑰、做為對安全性相關事件的回應或保護。</block>
   <block id="ec355cf03a7880d1a60bb9371fddcc50" category="inline-link-macro">Get非 同步結果</block>
   <block id="ff0f319d3e651b401a52ec174aba241a" category="admonition">此程序是非同步的、會在重新輸入作業完成之前傳回回應。您可以使用 <block ref="0ec3280d129d80613fce987917bb0350" category="inline-link-macro-rx"></block> 輪詢系統以查看程序何時完成的方法。</block>
-  <block id="9510c8e68784d05acbae2e947dde3cd8" category="inline-link-macro">「GetSoftwareEncryptionatRestInfo」</block>
   <block id="2f9ac93930569b85149b387a7c125c35" category="list-text">您已使用啟用軟體加密功能 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> 不含磁碟區且沒有I/O的新叢集上的方法使用 <block ref="45a8306c9a5e0c83d4f4c7f381b9868c" category="inline-link-macro-rx"></block> 確認狀態為「已啟用」、然後再繼續。</block>
   <block id="62e528d538c732360863f85252c5d0d9" category="inline-link-macro">建立信任關係</block>
   <block id="11132c180fb32da6e0e1137cce53c559" category="list-text">您有 <block ref="e846b05f100d06ce4cdb56417280cd74" category="inline-link-macro-rx"></block> 在整個叢集與外部金鑰伺服器SolidFire （EKS）之間。執行 <block ref="886b549d5f0bca1725c26591df7dddef" category="inline-link-macro-rx"></block> 驗證是否已建立與金鑰提供者的連線的方法。</block>
@@ -3867,7 +3866,6 @@
   <block id="de0d5a9e0eaf321ca5abc502f4878065" category="paragraph">這不是完整的清單。您可以搜尋<block ref="07e94f182e062d1aec9ab9b62a09e58c" category="inline-link-rx"></block> 以取得更多文章。</block>
   <block id="6fc37b544c0c7c6bad6a21c5e2aa379c" category="summary">如果您需要將儲存節點離線以進行軟體升級或主機修復等維護作業、您可以啟用該節點的維護模式、將I/O對儲存叢集其餘部分的影響降至最低。</block>
   <block id="bdb990aa3afdea2ddb2f218cad666a89" category="doc">在不支援的ESDS叢集上使用維護模式SolidFire</block>
-  <block id="9a22eba2ac8927a67bb3d8f09e152944" category="inline-link-macro">"listActive節點"</block>
   <block id="e69d07edaa334125aaef7f2094da77a8" category="admonition">如果您要驗證節點上的維護模式目前狀態、請使用 <block ref="04e910fadadbb107f8995814b13ebed5" category="inline-link-macro-rx"></block> API方法。節點物件包含「maintenanceMode」參數、可指出節點上維護模式的目前狀態。</block>
   <block id="cec1e459f131189983c83e13023b4c41" category="admonition">請務必在啟用維護模式後立即進行維護。切勿讓節點處於維護模式、而非必要。</block>
   <block id="b7ca43b9728873986f598048b8cf1944" category="paragraph">只有當節點狀況良好（沒有任何封鎖叢集故障）、而且儲存叢集能夠承受單一節點故障時、您才能將儲存節點轉換為維護模式。在您為健全且容錯的節點啟用維護模式之後、該節點不會立即轉換、除非符合下列條件、否則會加以監控：</block>
@@ -4081,11 +4079,8 @@
   <block id="560d0945440f76a732a9fbcc35180010" category="summary">您可以SolidFire 移除SolidFire 節點上的EESDS、以「重設」安裝了RESEESDS的節點。若要在SolidFire 節點上恢復不完整的ESDS、您應該執行所有安裝步驟。</block>
   <block id="9016f524f2973678d7663aea53bb88b3" category="doc">在SolidFire 節點上解除安裝不完整的功能</block>
   <block id="3b6744c82f649728c504907b57a1055e" category="paragraph">您可以在SolidFire 節點上移除SolidFire 鏡面ESDS、*重設*安裝完SESDS的節點。若要在SolidFire 節點上恢復不完整的ESDS、您應該執行所有安裝步驟。</block>
-  <block id="bfc7399c1c92cf0d90621d6b98ee2e84" category="inline-link-macro">「na_solidfire_SDS解除安裝」</block>
   <block id="68629b26007b6f0d31da5f710865d8c4" category="admonition">您可以使用 <block ref="e21e9b52142fa32fc9f2798e0357c93a" category="inline-link-macro-rx"></block> NetApp提供的執行作業的Ansible角色。如果您想要在SolidFire 節點上手動移除EESDS、請參閱下列步驟。</block>
-  <block id="c97feb073ff79f44cf03a1742a29f033" category="inline-link">「遠端磁碟機」</block>
   <block id="006a2c6366ad86bc1da05db85ff0ff30" category="list-text">使用元素UI或從叢集移除磁碟機<block ref="af8bb9d27ccaccc91f1f8edbd1b2c6cd" category="inline-link-rx"></block> API方法。</block>
-  <block id="3a7274d7e44dc3f5bd547cc6bc747d94" category="inline-link">「遠端節點」</block>
   <block id="215a2ff75aaa54f1e5a17125c706bca4" category="list-text">使用元素UI或從叢集移除節點<block ref="b93ddc7d3c2a507b426fba6e07c41251" category="inline-link-rx"></block> API方法。</block>
   <block id="08a481e768a7e6b16029a890ff83c01c" category="list-text">使用SSH連線至從叢集移除的節點。</block>
   <block id="3ef7f9e0aa1c6e4768c8761acab7b60c" category="list-text">從SolidFire 節點移除下列項目：</block>
@@ -4140,7 +4135,6 @@
   <block id="97b3e300fdc30fec27018f67c316a56f" category="list-text"><block ref="7369d04fe6c601eb40cc8c3814fb604a" category="inline-xref-macro-rx"></block></block>
   <block id="73096b8e22ce33d059ca2ade7fd93679" category="list-text"><block ref="cba2bab244fa54c4d64cb2a1ec0ab9ca" category="inline-xref-macro-rx"></block></block>
   <block id="ef5b20c600ed307281dd18a2e008153b" category="list-text"><block ref="c3d184e2b4d651938156eb240caa790b" category="inline-xref-macro-rx"></block></block>
-  <block id="49284958c9d16c4b6d8ee9ddd4ebbca5" category="inline-link-macro">"na_solidfire_cluster組態"</block>
   <block id="bdc50eb6c47970077e948f5bb3f2f8a9" category="admonition">您可以使用 <block ref="66b3dfe54b73a97277e6f9c94606df0e" category="inline-link-macro-rx"></block> NetApp提供的可執行安裝後步驟的角色。如果您想要手動執行、請參閱下列步驟。</block>
   <block id="9130cceb2ee763a25b9513639313012e" category="section-title">設定叢集名稱</block>
   <block id="3b50f0fa5346b2b7a1dbbc42b96fff06" category="paragraph">您應該先在SolidFire 每個EESDS節點上設定叢集名稱、然後才能將節點新增至叢集。您可以使用每個節點的UI或元素API來執行此作業。</block>
@@ -4150,7 +4144,6 @@
   <block id="3b8521cd8c98f1b89d1886e9da53e4c7" category="list-text">開啟每個節點的管理節點UI：「https://&lt;node_mip&gt;:442`」。</block>
   <block id="ecf9269363976c8aa9dfb2d865ab2460" category="list-text">選擇*叢集設定*並輸入叢集名稱。</block>
   <block id="2ce8d1287d5fe484f0fb11eb92e9f79a" category="list-text">選取*套用變更*。</block>
-  <block id="acf00854bc64655927abe2f08f53203f" category="inline-link-macro">《etClusterConfig》</block>
   <block id="cadf3b6311b2a5cd1f2479588b496983" category="list-text">使用 <block ref="ae527e5fc4083ce232328ba1f392402b" category="inline-link-macro-rx"></block> API方法。</block>
   <block id="e802251d4dcfaecfcfd731ece9ad093c" category="paragraph">此方法具有下列輸入參數：</block>
   <block id="65e18a0bb1868a9c1e181302d4733dba" category="paragraph">《叢集》</block>
@@ -4210,7 +4203,6 @@
   <block id="260df32cf8828ee4c326d39588cc979f" category="list-text">若要新增個別磁碟機、請選取您要新增磁碟機的*「Actions」（動作）*圖示、然後選取*「Add*」（新增*）。</block>
   <block id="c9347a5a6675f6567839e4fc23da9425" category="list-text">若要新增多個磁碟機、請選取要新增磁碟機的核取方塊、選取*大量動作*、然後選取*新增*。</block>
   <block id="368f584747203782ae3edd4027e4dbb3" category="list-text">確認已新增磁碟機、而且叢集容量符合預期。</block>
-  <block id="775ca0ad68fdedd2fe06eeb23598d120" category="inline-link">"AddDrives"</block>
   <block id="0c6dbcef2d177e85c06897fc358c21b2" category="list-text">使用<block ref="c0d40b2326a5711bff7fb806cc298f7f" category="inline-link-rx"></block> API方法。</block>
   <block id="eba45a3406905c7055cebb16bd953ac4" category="paragraph">《發展》</block>
   <block id="e5cad4cec16acc7173b90f0aba2cb647" category="paragraph">每個要新增至叢集之磁碟機的相關資訊。可能值：</block>
@@ -4283,16 +4275,11 @@
   <block id="b4d38d2cfe8361b4706ee65b48cd47e7" category="list-text">《建立群組快照》</block>
   <block id="b39b4f606b587cbb01f67a7e70186eea" category="list-text">*元素12.2中引入並更新API以支援SolidFire 功能不全的ESDS*：元素12.2中加入了數個新的API、您可以在SolidFire 支援功能不全的ESDS叢集上使用。</block>
   <block id="463224af5ebc7979ed09e40e54613a35" category="paragraph">以下是元素12：2的新API清單：</block>
-  <block id="41773f0138486ec234a35d7b9f9a9fbd" category="inline-link-macro">「GetLicenseKey」</block>
   <block id="234e051281051671e79fd955b3cc36a1" category="list-text"><block ref="234e051281051671e79fd955b3cc36a1" category="inline-link-macro-rx"></block></block>
-  <block id="024825eae18cb8bc988d2efcdf5a78f7" category="inline-link-macro">「etLicenseKey」</block>
   <block id="2107b28d0e666b2c94a8ae5ac00facf7" category="list-text"><block ref="2107b28d0e666b2c94a8ae5ac00facf7" category="inline-link-macro-rx"></block></block>
-  <block id="c465b1888bcc159df3ab3662fac3d576" category="inline-link-macro">"EnablMaintenanceMode"</block>
   <block id="182314039c230eaf0b610ab5336bd944" category="list-text"><block ref="182314039c230eaf0b610ab5336bd944" category="inline-link-macro-rx"></block></block>
-  <block id="00ec9d3f2cdb59b4897d3e3db8e8db80" category="inline-link-macro">"Disable維護 模式"</block>
   <block id="6c8f5d51f9d138086b55a6d2b68f0ba9" category="list-text"><block ref="6c8f5d51f9d138086b55a6d2b68f0ba9" category="inline-link-macro-rx"></block></block>
   <block id="f72e130e78ae2a72c1d8ba0e803f0638" category="paragraph">下列的12.2 API已更新、以支援SolidFire 功能完善的ESDS叢集：</block>
-  <block id="07cacca00a99fbebd82083d61daa7d2f" category="inline-link-macro">《addnodes》</block>
   <block id="34850bd5fb3f2667bbb87db4cffca2ed" category="list-text"><block ref="34850bd5fb3f2667bbb87db4cffca2ed" category="inline-link-macro-rx"></block></block>
   <block id="8404d841c616b784628d5ae406a01813" category="list-text"><block ref="8404d841c616b784628d5ae406a01813" category="inline-link-macro-rx"></block></block>
   <block id="16a30437f029582ce534f35778eac3b5" category="admonition">元素軟體12.2的「建立叢集」方法中新增了「訂單編號」、「週期性編號」和「enableSoftwareEncryptionAtRest」等參數。安裝SolidFire 完EESDS之後、您應該在使用此API方法建立叢集時指定這些參數。</block>
@@ -12341,5 +12328,7 @@
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
   <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支援的韌體和ESXi驅動程式版本</block>
   <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _新_</block>
-  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="list-text">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5。</block>
+  <block id="fd755336ba3702c8d419343da5efb6d6" category="list-text">*檔案系統IsReadOnly*</block>
+  <block id="ed734a928c08d6cb25fc1abe2d4e0c3a" category="paragraph">檔案系統已移至唯讀模式。</block>
+  <block id="9732e3757f397fc8e75412dea43c030e" category="list-text">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行<block ref="e9afc225a78965c54dbba9b335afd021" category="inline-link-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5或更新版本。</block>
 </blocks>

@@ -68,15 +68,15 @@ summary: 在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使�
 
 以下是元素12：2的新API清單：
 
-* link:../api/reference_element_api_getlicensekey.html["「GetLicenseKey」"^]
-* link:../api/reference_element_api_setlicensekey.html["「etLicenseKey」"^]
-* link:../api/reference_element_api_enablemaintenancemode.html[""EnablMaintenanceMode""^]
-* link:../api/reference_element_api_disablemaintenancemode.html[""Disable維護 模式""^]
+* link:../api/reference_element_api_getlicensekey.html["41773f0138486ec234a35d7b9f9a9fbd"^]
+* link:../api/reference_element_api_setlicensekey.html["024825eae18cb8bc988d2efcdf5a78f7"^]
+* link:../api/reference_element_api_enablemaintenancemode.html["c465b1888bcc159df3ab3662fac3d576"^]
+* link:../api/reference_element_api_disablemaintenancemode.html["00ec9d3f2cdb59b4897d3e3db8e8db80"^]
 
 
 下列的12.2 API已更新、以支援SolidFire 功能完善的ESDS叢集：
 
-* link:../api/reference_element_api_addnodes.html["《addnodes》"^]
+* link:../api/reference_element_api_addnodes.html["07cacca00a99fbebd82083d61daa7d2f"^]
 * link:../api/reference_element_api_createcluster.html["「建立叢集」"^]
 +
 

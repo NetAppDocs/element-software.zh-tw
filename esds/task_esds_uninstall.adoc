@@ -14,14 +14,14 @@ summary: 您可以SolidFire 移除SolidFire 節點上的EESDS、以「重設」�
 您可以在SolidFire 節點上移除SolidFire 鏡面ESDS、*重設*安裝完SESDS的節點。若要在SolidFire 節點上恢復不完整的ESDS、您應該執行所有安裝步驟。
 
 
-NOTE: 您可以使用 link:https://github.com/NetApp-Automation/nar_solidfire_sds_uninstall["「na_solidfire_SDS解除安裝」"^] NetApp提供的執行作業的Ansible角色。如果您想要在SolidFire 節點上手動移除EESDS、請參閱下列步驟。
+NOTE: 您可以使用 link:https://github.com/NetApp-Automation/nar_solidfire_sds_uninstall["bfc7399c1c92cf0d90621d6b98ee2e84"^] NetApp提供的執行作業的Ansible角色。如果您想要在SolidFire 節點上手動移除EESDS、請參閱下列步驟。
 
 .步驟
-. 使用元素UI或從叢集移除磁碟機 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removedrives.html["「遠端磁碟機」"^] API方法。
+. 使用元素UI或從叢集移除磁碟機 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removedrives.html["c97feb073ff79f44cf03a1742a29f033"^] API方法。
 +
 這會導致系統將資料從節點的磁碟機移轉至叢集中的其他磁碟機。此程序所需的時間取決於必須移轉的資料量。
 
-. 使用元素UI或從叢集移除節點 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html["「遠端節點」"^] API方法。
+. 使用元素UI或從叢集移除節點 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html["3a7274d7e44dc3f5bd547cc6bc747d94"^] API方法。
 . 使用SSH連線至從叢集移除的節點。
 . 從SolidFire 節點移除下列項目：
 +

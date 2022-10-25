@@ -14,7 +14,7 @@ summary: 如果您需要將儲存節點離線以進行軟體升級或主機修�
 如果您需要將儲存節點離線以進行軟體升級或主機修復等維護作業、您可以啟用該節點的維護模式、將I/O對儲存叢集其餘部分的影響降至最低。
 
 
-TIP: 如果您要驗證節點上的維護模式目前狀態、請使用 link:../api/reference_element_api_listactivenodes.html[""listActive節點""^] API方法。節點物件包含「maintenanceMode」參數、可指出節點上維護模式的目前狀態。
+TIP: 如果您要驗證節點上的維護模式目前狀態、請使用 link:../api/reference_element_api_listactivenodes.html["9a22eba2ac8927a67bb3d8f09e152944"^] API方法。節點物件包含「maintenanceMode」參數、可指出節點上維護模式的目前狀態。
 
 
 NOTE: 請務必在啟用維護模式後立即進行維護。切勿讓節點處於維護模式、而非必要。

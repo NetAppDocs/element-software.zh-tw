@@ -22,7 +22,7 @@ summary: 安裝SolidFire 完EESDS之後、請在每SolidFire 個EESDS節點上�
 
 
 
-NOTE: 您可以使用 link:https://github.com/NetApp-Automation/nar_solidfire_cluster_config[""na_solidfire_cluster組態""^] NetApp提供的可執行安裝後步驟的角色。如果您想要手動執行、請參閱下列步驟。
+NOTE: 您可以使用 link:https://github.com/NetApp-Automation/nar_solidfire_cluster_config["49284958c9d16c4b6d8ee9ddd4ebbca5"^] NetApp提供的可執行安裝後步驟的角色。如果您想要手動執行、請參閱下列步驟。
 
 
 
@@ -43,7 +43,7 @@ IMPORTANT: 您無法在建立叢集之後變更叢集名稱。
 ... 選取*套用變更*。
 
 
-** 使用 link:../api/reference_element_api_setclusterconfig.html["《etClusterConfig》"^] API方法。
+** 使用 link:../api/reference_element_api_setclusterconfig.html["acf00854bc64655927abe2f08f53203f"^] API方法。
 +
 此方法具有下列輸入參數：
 
@@ -411,7 +411,7 @@ Json物件
 ... 確認已新增磁碟機、而且叢集容量符合預期。
 
 
-** 使用 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_adddrives.html[""AddDrives""^] API方法。
+** 使用 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_adddrives.html["775ca0ad68fdedd2fe06eeb23598d120"^] API方法。
 +
 此方法具有下列輸入參數：
 
@@ -468,7 +468,7 @@ Json物件陣列
 
 
 
-如需此API方法的詳細資訊、請參閱 link:../api/reference_element_api_adddrives.html[""AddDrives""^]。
+如需此API方法的詳細資訊、請參閱 link:../api/reference_element_api_adddrives.html["775ca0ad68fdedd2fe06eeb23598d120"^]。
 
 
 
