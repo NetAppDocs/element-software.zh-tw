@@ -515,6 +515,17 @@ vCenter外掛程式API存取
  a| 
 vCenter Server
  a| 
+遠端外掛程式
+ a| 
+8333
+ a| 
+遠端vCenter外掛程式服務
+
+
+
+ a| 
+vCenter Server
+ a| 
 管理節點
  a| 
 8443.
