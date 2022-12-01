@@ -137,5 +137,5 @@ Element 12.5包含儲存節點的韌體更新。 link:../concepts/concept_rn_rel
 * https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"^]
 * http://docs.netapp.com/sfe-122/index.jsp["適用於舊版的VMware及Element軟體文件中心SolidFire"^]
 * https://www.netapp.com/us/documentation/hci.aspx["「資源」頁面NetApp HCI"^]
-* https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html["支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點"^]
+* link:../hardware/fw_storage_nodes.html["支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點"]
 

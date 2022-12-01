@@ -12212,7 +12212,6 @@
   <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">*升級程序時間*：您已排定足夠的時間來執行升級。升級至Element軟體12.5或更新版本時、升級程序時間會因您目前的Element軟體版本和韌體更新而有所不同。</block>
   <block id="139691973eba994346784166c2abe4d8" category="cell">所有包含最新韌體的功能為更新版本的NetApp H系列節點SolidFire</block>
   <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點</block>
-  <block id="b20b54856add4fca7311231c02ca0554" category="paragraph">^1^如需硬體的韌體與驅動程式韌體完整對照表、請參閱<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
   <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">從元素12.5開始、「sfreadonly」是新的系統帳戶、可在節點上進行基本疑難排解。此API可在叢集中的所有節點上使用「sfreadonly」系統帳戶來啟用SSH存取。</block>
   <block id="482c14e23170c54f9df57d397733d7af" category="doc">Element軟體12.5及更新版本的新功能</block>
   <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.7是最新版本、包含安全性與系統元件更新、作業改善及已解決的問題。</block>
@@ -12236,7 +12235,6 @@
   <block id="ab55ac9ce7363800677511aee7a9ab12" category="paragraph">您現在可以從SolidFire Active IQ Element軟體文件中存取《支援》文件。 <block ref="cf42182e91c5e79a875ebd341c48eb99" category="inline-link-macro-rx"></block>。</block>
   <block id="4dae8e1e6549980e8397eec97af1ecaf" category="paragraph">Element 12.5引進改良的儲存節點存取功能、增強的自訂保護網域管理功能、全新改良的叢集故障與事件、增強的Create Cluster UI功能、增強的安全性、以及使用Ansible的自動化升級。</block>
   <block id="b1eb510dd705c0d83386b5f196686d5a" category="inline-link">支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點</block>
-  <block id="2ef946a9f76c178cd4c28a70511f3ac8" category="list-text"><block ref="2ef946a9f76c178cd4c28a70511f3ac8" category="inline-link-rx"></block></block>
   <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">《軟件》第12版發行說明NetApp Element</block>
   <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _新_</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
@@ -12245,7 +12243,6 @@
   <block id="b7faeba39aadbf9af836a1e70f5708d7" category="doc">零件與元件軟體12.5及更新版本文件SolidFire</block>
   <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">您已為安排足夠的時間 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升級：升級至Element軟體12.5或更新版本時、升級程序時間會因元件軟體版本和韌體更新而有所不同。</block>
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">您可以使用下列順序來升級SolidFire 適用於Element 12.5或更新版本的NetApp全快閃儲存系統。</block>
-  <block id="840a7d863d92c143994565c1a1169097" category="admonition">如需硬體的韌體和驅動程式韌體完整對照表、請參閱<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
   <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">使用HealthTools升級至Element 12.3.x</block>
   <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5或更新版本。</block>
   <block id="7ef561ec74f917ecad309d4001bff056" category="admonition">您必須先升級至最新的管理服務套裝組合、才能將Element軟體升級至版本12.5或更新版本。如果您要將Element軟體更新至版本12．5或更新版本、則需要使用管理服務2．21．61或更新版本才能繼續。</block>
@@ -12367,4 +12364,9 @@
   <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">（適用於內部伺服器/黑點）視您的Element Plug-in for vCenter版本而定、外掛程式Json檔案或外掛程式ZIP的自訂URL：</block>
   <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">從Element Plug-in for vCenter Server 5.0開始、NetApp Element 畫面會出現「VMware遠端外掛程式」擴充點：</block>
   <block id="1c63b3cd9a6d3bdf8b9b31aca68672d7" category="list-text">對於vCenter Server 4．10或更早版本的Element Plug-in、NetApp Element 將會顯示「VMware組態與管理」擴充點：</block>
+  <block id="e9bda769b7371811c281817667bdd729" category="paragraph">^1^如需硬體的韌體與驅動程式韌體完整對照表、請參閱 <block ref="d11d83532a3cbdacb76bb5921c49349a" category="inline-link-macro-rx"></block>。</block>
+  <block id="30517a909d76c1d4d845af0c1c57795a" category="admonition">如需硬體的韌體和驅動程式韌體完整對照表、請參閱 <block ref="d11d83532a3cbdacb76bb5921c49349a" category="inline-link-macro-rx"></block>。</block>
+  <block id="0dc2c3036c99248e0e9f340a2cfc8fb1" category="summary">儲存節點支援的韌體和驅動程式版本。</block>
+  <block id="79aee4d96cac70904b53af811e1a60a0" category="paragraph">未解析&lt;stdin&gt; 的指令資料-包括：https://raw.githubusercontent.com/NetAppDocs/hci/main/_include/fw_storage_nodes.adoc[]</block>
+  <block id="2b1ef5ee19eb343f5728f051c35efde4" category="list-text"><block ref="2b1ef5ee19eb343f5728f051c35efde4" category="inline-link-macro-rx"></block></block>
 </blocks>
