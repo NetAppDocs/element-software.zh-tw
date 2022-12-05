@@ -12092,7 +12092,6 @@
   <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">*取得元件軟體修補程式的相關資訊*：元素123中引進的「GetPatchInfo」方法可讓您取得有關安裝在儲存節點上的元件軟體修補程式的資訊。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出節點上每個網路介面的統計資料*：元素123中採用的「清單網路介面統計資料」方法可列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">元素12.3.1中引進的動態節點額定值、可讓您在每個ESDS平台上運用24個支援的CPU、而非目前的單一CPU每個平台模式。</block>
-  <block id="234a1430825055fe25203429facd267e" category="admonition">請勿在NetApp Element 單一vCenter執行個體中登錄多個VMware vCenter供應商。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">啟用遠端NetApp支援連線</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP處理帳戶</block>
@@ -12553,4 +12552,5 @@
   <block id="55fc3b139c0a126af7257f980acb20c5" category="cell">身分識別模組</block>
   <block id="c9c5cc2efc04287e6fe8d7feebf032aa" category="cell">N41WC 1.02</block>
   <block id="126078d2e17c3ac2589cca85b30163c7" category="cell">開機裝置</block>
+  <block id="64c9f5445140b2d5ab2eb8fe31bd6872" category="admonition">對於Element 12.5及更早版本、請勿將NetApp Element 多個VMware vCenter提供者登錄至單一vCenter執行個體。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。</block>
 </blocks>

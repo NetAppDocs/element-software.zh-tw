@@ -20,7 +20,7 @@ summary: 您可以使用Element UI來檢視虛擬磁碟區及其相關儲存容�
 在vSphere中、大多數使用虛擬磁碟區功能與元件軟體儲存系統所需的組態都是在vSphere中進行。請參閱《VMware vSphere Virtual Volumes for SolidFire VMware Storage組態指南》_、在vCenter中註冊VASA Provider、建立及管理VVOL資料存放區、以及根據原則管理儲存設備。
 
 
-NOTE: 請勿在NetApp Element 單一vCenter執行個體中登錄多個VMware vCenter供應商。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。
+NOTE: 對於Element 12.5及更早版本、請勿將NetApp Element 多個VMware vCenter提供者登錄至單一vCenter執行個體。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。
 
 
 NOTE: 如果您已向vCenter註冊VASA供應商、則VASA支援可作為升級修補程式提供多個vCenter。若要安裝、請從下載VSA39 .tar.gz檔案 https://mysupport.netapp.com/products/element_software/VASA39/index.html["NetApp軟體下載"] 並遵循資訊清單中的指示。該供應商使用NetApp認證。NetApp Element有了這個修補程式、vCenter便會使用未經修改的憑證來支援VASA和VVols使用的多個vCenter。請勿修改憑證。VASA不支援自訂SSL憑證。
