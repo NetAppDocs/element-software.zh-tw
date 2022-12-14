@@ -13,7 +13,7 @@ summary: 您可以遵循下列步驟、並使用列出的Element API方法來設
 [role="lead"]
 您可以遵循下列步驟、並使用列出的Element API方法來設定外部金鑰管理功能。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 如果您要設定外部金鑰管理、並在閒置時搭配軟體加密、則已使用啟用軟體加密功能 link:../api/reference_element_api_createcluster.html["建立叢集"] 不含磁碟區的新叢集方法。
 
 

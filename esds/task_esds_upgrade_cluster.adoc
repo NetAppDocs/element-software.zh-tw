@@ -13,6 +13,7 @@ summary: 您可以使用Ansible在SolidFire 您的EESDS叢集上執行不中斷�
 [role="lead"]
 您可以使用Ansible在SolidFire 您的EESDS叢集上執行不中斷營運的循環升級。Ansible使用NetApp提供的「na_solidfire_SDS升級」角色、一次執行一個節點的循環升級、同時維持所有磁碟區的資料可用度。
 
+.您需要的產品
 在升級之前、請務必符合下列條件：
 
 * 元素UI中沒有叢集故障。
@@ -35,6 +36,7 @@ hosts:
 * 庫存檔案指定下列變數：SF_mgmt_virt_ip（MVIP）、SF_cluster管理使用者名稱、SF_cluster管理密碼、solidfire_Element（新RPM檔案的路徑）。
 
 
+.升級總覽
 以下是升級過程中的情況總覽：
 
 * 系統會驗證您在庫存檔案中輸入的資訊。

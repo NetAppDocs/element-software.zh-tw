@@ -23,7 +23,7 @@ image::hci_stornode_rear.gif[此圖顯示四節點機箱、含四個儲存節點
 
 image::hci_stor_node_ssd_bays.gif[顯示與H410S節點的四節點機箱中每個節點相關聯的磁碟槽。]
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已確認儲存節點故障、需要更換。
 * 您已取得替換儲存節點。
 * 您有一個防靜電（ESD）腕帶、或是您已採取其他防靜電保護措施。
@@ -32,9 +32,9 @@ image::hci_stor_node_ssd_bays.gif[顯示與H410S節點的四節點機箱中每�
 
 以下是這些步驟的高階概觀：
 
-*  to replace the node
-*  the node in the chassis
-*  the node to the cluster
+* <<準備更換節點>>
+* <<更換機箱中的節點>>
+* <<將節點新增至叢集>>
 
 
 

@@ -73,9 +73,9 @@ Element示範節點軟體是一組VMware檔案、已封裝在.ova檔案中。
 
 在VMware ESXi上安裝Element示範節點涉及下列工作：
 
-*  network interfaces
-*  the demo node on an ESXi server
-*  the demo node on an ESXi server
+* <<設定網路介面>>
+* <<在ESXi伺服器上登錄展示節點>>
+* <<在ESXi伺服器上啟動展示節點>>
 
 
 

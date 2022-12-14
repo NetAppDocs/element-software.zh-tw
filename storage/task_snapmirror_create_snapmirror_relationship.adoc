@@ -16,6 +16,7 @@ summary: 您必須在NetApp Element 這個功能介面中建立SnapMirror關係�
 
 NOTE: 如果尚未針對SnapMirror啟用磁碟區、而您選擇從元素UI建立關係、則會在該磁碟區上自動啟用SnapMirror。
 
+.您需要的產品
 SnapMirror已在磁碟區上啟用。
 
 .步驟

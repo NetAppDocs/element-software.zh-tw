@@ -15,12 +15,12 @@ summary: 節點是群組為叢集的硬體、可作為區塊儲存或運算資�
 
 此軟體可定義叢集的各種節點角色。NetApp Element節點角色類型如下：
 
-*  node
-*  node
-*  Channel node
+* <<管理節點>>
+* <<儲存節點>>
+* <<Fibre Channel節點>>
 
 
- states of operation,節點狀態 視叢集關聯而定。
+<<節點作業狀態,節點狀態>> 視叢集關聯而定。
 
 
 

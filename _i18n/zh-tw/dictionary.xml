@@ -150,7 +150,6 @@
   <block id="e76091b1602ff22b4ea9b20c622b5cc2" category="list-text"><block ref="e76091b1602ff22b4ea9b20c622b5cc2" category="inline-xref-macro-rx"></block></block>
   <block id="fa9736580d4e5839340f10adf2c694cc" category="summary">您必須在Element UI的磁碟區上啟用SnapMirror。如此可將資料複寫到指定ONTAP 的支援區。這是執行NetApp Element SnapMirror之用的SnapMirror軟體叢集管理員的權限、可用來控制磁碟區。</block>
   <block id="53374caaedbe8f1288543a6af48d22c7" category="doc">在磁碟區上啟用SnapMirror</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要的是 #8217 ；需要的是什麼</block>
   <block id="30e79c29f6b5a0171c0633419c00c7fa" category="list-text">您已在叢集的元素UI中啟用SnapMirror。</block>
   <block id="52bd17368e60de883bacfa525473b83b" category="list-text">SnapMirror端點可用。</block>
   <block id="a4ce6406af84e1d2f77904c7adf569ab" category="list-text">Volume必須為512e區塊大小。</block>
@@ -3919,12 +3918,10 @@
   <block id="f52fd865d827234a5d7f2d167a191468" category="list-text">非預期：節點已被發現離線、但處於「已停用」模式。</block>
   <block id="8a221a4f965f4cfc6edfd1e855cb0aaa" category="summary">安裝SolidFire 完EESDS之前、請務必執行必要的檢查、並確認您的環境符合組態、IP定址和網路需求。</block>
   <block id="88d5e6f116564d2c06f8abf0724efec5" category="doc">執行必要的安裝工作</block>
-  <block id="f7dcb8224f85128ec87fe0a2442fc52a" category="list-title">&lt;strong&gt;安裝所需的硬體&lt;/strong&gt;</block>
   <block id="72af4b89bf6c89e877a119046199a6b7" category="inline-link">NetApp互通性對照表（需登入）</block>
   <block id="04be9ab6e44a60450ae6452e609984be" category="list-text">安裝支援的伺服器。請參閱<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="dd76252ea7a50def2a98f218cb1505b4" category="inline-link">知識庫文章</block>
   <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">請確定您的硬體組態已達到平衡、而且所有通道均已填入。如需最大化頻寬的詳細資訊、請參閱<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> （需要登入）。</block>
-  <block id="2a97471ec199242556431779bd30838a" category="list-title">&lt;strong&gt;設定主機（節點）&lt;/strong&gt;</block>
   <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">設定網路時間傳輸協定（NTP）伺服器、以搭配網路中的所有主機使用。</block>
   <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">選取安裝目的地時、請選取選項按鈕以手動設定檔案系統分割區。在「*手動分割*」頁面上、使用*+*和*-*按鈕移除任何現有的分割區、然後建立新的分割區並依照此處列出的建議調整其大小。使用預設的LVM分割配置可讓您在需要時輕鬆調整大小。</block>
   <block id="17535771fae0ee390ce31ef42ebc5155" category="paragraph">如果您的SATA磁碟為250GB、請遵循下列建議的分割區。如果您的SATA磁碟有更多空間、您可以增加/opt和/var磁碟分割區大小。</block>
@@ -3949,9 +3946,7 @@
   <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">在節點上啟用SSH。</block>
   <block id="f0a2de2efe6108942f8b79e50b1b6be5" category="inline-link">知識庫文章（需要登入）</block>
   <block id="57208611101414fe2f0426e46c1f0d65" category="list-text">如果您要停用IPv6、請依照本節所述的步驟進行<block ref="2a5c78b7a0390cd7a5313c37d3eb2c52" category="inline-link-rx"></block>。</block>
-  <block id="1a76b48d9d60fd8364da6ea0eaec3eff" category="list-title">&lt;strong&gt;安裝所需的軟體&lt;/strong&gt;</block>
   <block id="654fdbae1d58bcbbc420ee34e66cbecb" category="list-text">安裝Ansible、Git、Podman和Python 3.0。</block>
-  <block id="e1633c03fa0d88ea4ec55f043ee4598c" category="list-title">&lt;strong&gt;驗證您的組態是否符合NetApp&amp;#8217;安裝SolidFire RESTESDS&lt;/strong&gt;的要求</block>
   <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp互通性對照表工具IMT （不含）</block>
   <block id="30ec57363b9938495c0097cd8a0bcbbf" category="list-text">使用SolidFire 中所列的「功能不均」組態<block ref="d73544449e4c516eccc06a758c5e6c47" category="inline-link-rx"></block> 作為參考。</block>
   <block id="909806d31a8e12a761cf09c409cefaad" category="admonition">如果您聯絡NetApp支援部門以尋求SolidFire 有關支援方面的協助、則支援部門會先確認您的平台是否符合SolidFire 《支援》所列的《支援》參考組態。IMT如果Support判定您的基礎平台不符合參考組態、Support將會引導您將不相容的韌體、軟體及/或硬體元件與IMT 正確版本的更新程式進行對齊。</block>
@@ -3965,7 +3960,6 @@
   <block id="34838a3f0559a6f772b5758da69cbbfb" category="list-text">建立要用於法規遵循檢查的方針。</block>
   <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">執行法規遵循檢查方針、如下列範例所示：</block>
   <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">即使您開始使用SolidFire 完EESDS系統、也應該定期執行法規遵循檢查、以確保系統符合法規要求。在某些情況下、NetApp支援部門會要求您執行法規遵循檢查、以協助診斷及疑難排解問題。</block>
-  <block id="09acbcc09d76195cfde55a1522db4644" category="list-title">&lt;strong&gt;瞭解網路和IP位址需求&lt;/strong&gt;</block>
   <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">請依照此處詳述的IP需求來設定您的網路：</block>
   <block id="265df7cdddd316ce979aa017f0753e25" category="cell">儲存網路IP位址</block>
   <block id="8cf4bbd9c7217cee301892ceeb548f53" category="cell">管理網路IP位址</block>
@@ -3988,7 +3982,6 @@
   <block id="3954d0109fc9c791be6d11e39804cb50" category="paragraph">用於管理網路的連接埠</block>
   <block id="ebff118a006e94651da911d800279c44" category="admonition">此處提供的圖例是一個範例。實際的硬體可能會因您擁有的伺服器而有所不同。</block>
   <block id="7300079506cb737ad309140b1f56eeda" category="list-text">將交換器連接埠MTU變更為9216位元組。</block>
-  <block id="4b7ef9f74fc5d5abcae07ceee277787a" category="list-title">&lt;strong&gt;允許特定連接埠透過資料中心和#8217;的防火牆&lt;/strong&gt;</block>
   <block id="ab2f4d4dbd7fe86289026b4321e7e53d" category="paragraph">80個TCP/IP</block>
   <block id="f5fc4cfbf6f32dae142bd0f1c443bc13" category="paragraph">叢集升級</block>
   <block id="b0ee3a63a5791163e83df745e5b7b013" category="paragraph">4442 TCP</block>
@@ -4010,11 +4003,9 @@
   <block id="f0f166a01d55488cbf1ae223ecbb6068" category="paragraph">vCenter外掛QoSSIOC服務</block>
   <block id="b843120f7921517683f4de0687bf0a29" category="admonition">元素分散式資料庫需要連接埠2181、2182和2183、安裝SolidFire 完EESDS時、會從元素容器中動態開啟連接埠2181、2182和2183。</block>
   <block id="0cb585626379a70b87a0e3ee14309e3b" category="list-text">使用下列命令開啟上述連接埠：</block>
-  <block id="95f75258f8b33664eeaf8b541ff97858" category="list-title">&lt;strong&gt;Configure your host network&lt;/strong&gt;（配置主機網絡）</block>
   <block id="78ff65afbf92a15cd30dea91aefc1e9b" category="inline-link-macro">最佳實務做法</block>
   <block id="f433801b7b771eb645906990697cb40d" category="list-text">使用設定您的主機網路 <block ref="d5d50f06af9eb06fd5c8afba97ab5274" category="inline-link-macro-rx"></block> 已提供。</block>
   <block id="9fe0e0876a07d2247ecb84a994e87a77" category="admonition">您應完成設定主機網路的步驟、以確保SolidFire 成功安裝完整套功能。</block>
-  <block id="fb96b65afb5d2a139a12f87e3171372c" category="list-title">&lt;strong&gt;完成其他要求&lt;/strong&gt;</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">請按這裡</block>
   <block id="d5272d5ecd1fe99c7097dfcca90c8f7d" category="list-text">安裝一部Collect、NetApp支援部門將會使用它來收集主機記錄。您可以從安裝一個Collect<block ref="d3b16539387c5c512d10064586f79c65" category="inline-link-rx"></block>。您需要NetApp帳戶才能存取下載內容。您也可以在同一個位置找到《One Collect Installation Guide》（收集安裝指南）和《Release Notes》（版本說明）。</block>
   <block id="b4cac9f0dca24135289e8ff89afe6aa1" category="admonition">您必須下載並安裝一個Collect、才能獲得最佳的支援體驗。</block>
@@ -11594,7 +11585,6 @@
   <block id="dc80874f9d06173050949a80fc641cfc" category="list-text">您已將管理服務升級至至少2.1.326版。</block>
   <block id="df3748edc080e7a8ed49863460584cdd" category="paragraph">使用NetApp混合式雲端控制進行升級的舊版服務組合版本無法使用。</block>
   <block id="ced99676ffdce11db0cf7ce2a4a812b8" category="list-text">您已確保所有節點上的系統時間都已同步、且儲存叢集和節點的NTP設定正確。每個節點都必須在每個節點的Web UI（「https://[IP位址」：442`）中設定DNS名稱伺服器、且不會發生與時間偏移相關的未解決叢集故障。</block>
-  <block id="6ea7f8d4483b20144d2c82f1ed99c07a" category="section-title">系統升級順序</block>
   <block id="524813e84d210a04a3c005022becca08" category="inline-link-macro">從混合雲控制系統更新管理服務</block>
   <block id="c43409e402c491faff614694ff49b45b" category="list-text"><block ref="d96c5e393dc7f7cfcba5644a67a6ff8a" category="inline-link-macro-rx"></block>。</block>
   <block id="9cd44430d13c7f6664a4e628ee6d90e4" category="admonition">如果您要將管理服務更新至2.16版或更新版本、而且執行的是管理節點11.3至11.8、則在更新管理服務之前、必須先增加管理節點VM的RAM。</block>
@@ -12553,4 +12543,28 @@
   <block id="c9c5cc2efc04287e6fe8d7feebf032aa" category="cell">N41WC 1.02</block>
   <block id="126078d2e17c3ac2589cca85b30163c7" category="cell">開機裝置</block>
   <block id="64c9f5445140b2d5ab2eb8fe31bd6872" category="admonition">對於Element 12.5及更早版本、請勿將NetApp Element 多個VMware vCenter提供者登錄至單一vCenter執行個體。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">您需要的產品</block>
+  <block id="2cd70ba1e2d0b294626ea7f96d25a07f" category="paragraph-title">記錄收集選項</block>
+  <block id="891a52ee80600fd58bac60927df7a3a9" category="section-title">[[ene_main_mode]]啟用維護模式</block>
+  <block id="27404255e546058b4a4837fb07e90bbf" category="section-title">[[disable_main_mode]停用維護模式</block>
+  <block id="64916198004d1ee19b1b50002f51f1a8" category="paragraph-title">升級選項</block>
+  <block id="bac407daf00ae86b0f95e89cf84eeac1" category="section-title">[sys_upgrade ]系統升級順序</block>
+  <block id="df5820ca7f238b48987ff74db1271e4a" category="paragraph-title">更新選項</block>
+  <block id="a31b6eafc73ca0db90a0d96e6fb9dc93" category="paragraph-title">健全狀況檢查選項</block>
+  <block id="f8317d9a65a7e996db437d8eabc22aeb" category="paragraph-title">疑難排解知識庫文章的連結</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="1505b4d22f5b2439d387f71ebb0fccd2" category="paragraph-title">可能的錯誤</block>
+  <block id="2de79e7b8c77e4847d6bcd5a8ee879ce" category="section-title">[SF_nodes]SF38410、SF19210、SF9605和SF4805</block>
+  <block id="6a31058d1e6208d43e0d620fb4953c23" category="paragraph-title">儲存叢集資產管理選項</block>
+  <block id="50f33d14f129e4548c1c270fd6725a78" category="paragraph-title">組態選項</block>
+  <block id="63f488c7bb829c89f024839d6aa602f4" category="section-title">[Custom_pd]]自訂保護網域</block>
+  <block id="fa5cc5e49b65ffd46ba8881097cf8310" category="list-title">*安裝所需的硬體*</block>
+  <block id="6b170e726e4567decff7daaed3e1a08b" category="list-title">*設定主機（節點）*</block>
+  <block id="c86064ac886a0aab9f8ecf92f19f98b3" category="list-title">*安裝所需的軟體*</block>
+  <block id="fd9cdaf80c90bdd2d3af18c1c856b60f" category="list-title">*驗證您的組態是否符合NetApp安裝SolidFire RESSESDS*的要求</block>
+  <block id="9bfadf4c7ec72b1af0ecb9eaabaf58c8" category="list-title">*瞭解網路和IP位址需求*</block>
+  <block id="a113f5f001cbfcc5dc2a0dde65f4e2d9" category="list-title">*允許特定連接埠通過資料中心的防火牆*</block>
+  <block id="45f450486d575041c747125231750ffe" category="list-title">*設定您的主機網路*</block>
+  <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">*完成額外要求*</block>
+  <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">升級總覽</block>
 </blocks>

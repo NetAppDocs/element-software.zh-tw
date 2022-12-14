@@ -21,7 +21,7 @@ summary: 一般而言、當您使用SnapMirror從SolidFire 執行NetApp Element 
 
 
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 元素目的地節點必須已可供ONTAP 不必要的人存取。
 * 必須已啟用元素Volume才能進行SnapMirror複寫。
 

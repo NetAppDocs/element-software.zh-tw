@@ -13,7 +13,7 @@ summary: 您可以將SnapMirror標籤新增至快照排程、以確保已套用S
 [role="lead"]
 您可以將SnapMirror標籤新增至快照排程、以確保已套用SnapMirror原則。您可以從現有的SnapMirror關係對話方塊或NetApp ONTAP System Manager檢視可用的標籤。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * SnapMirror必須在叢集層級啟用。
 * 您要新增的標籤已存在ONTAP 於資訊技術中。
 

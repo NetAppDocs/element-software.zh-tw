@@ -22,7 +22,7 @@ summary: 您可以使用Element API重新輸入現有的金鑰。此程序會為
 
 NOTE: 此程序是非同步的、會在重新輸入作業完成之前傳回回應。您可以使用 link:../api/reference_element_api_getasyncresult.html["Get非 同步結果"] 輪詢系統以查看程序何時完成的方法。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已使用啟用軟體加密功能 link:../api/reference_element_api_createcluster.html["建立叢集"] 不含磁碟區且沒有I/O的新叢集上的方法使用 link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["9510c8e68784d05acbae2e947dde3cd8"] 確認狀態為「已啟用」、然後再繼續。
 * 您有 link:../storage/task_system_manage_key_set_up_external_key_management.html["建立信任關係"] 在整個叢集與外部金鑰伺服器SolidFire （EKS）之間。執行 link:../api/reference_element_api_testkeyserverkmip.html["TestKeyProviderKmip"] 驗證是否已建立與金鑰提供者的連線的方法。
 

@@ -13,12 +13,13 @@ summary: 安裝SolidFire 完EESDS之後、請在每SolidFire 個EESDS節點上�
 [role="lead"]
 安裝SolidFire 完EESDS之後、請在每SolidFire 個EESDS節點上設定叢集名稱。然後您就可以建立SolidFire 一個EESDS叢集。
 
+.關於這項工作
 以下是安裝SolidFire 完整套功能後應完成的各項工作的深度概覽：
 
-*  the cluster name
-*  the license key
-*  a cluster
-*  drives to the cluster
+* <<設定叢集名稱>>
+* <<設定授權金鑰>>
+* <<建立叢集>>
+* <<將磁碟機新增至叢集>>
 
 
 
@@ -92,6 +93,7 @@ IMPORTANT: 您無法在建立叢集之後變更叢集名稱。
 
 當您建立SolidFire 一個EESDS叢集時、需要授權金鑰資訊。NetApp支援部門也需要授權金鑰資訊、以協助解決問題。適用於EESDS叢集的授權金鑰SolidFire 包含叢集的訂單編號與序號、並會啟動您所購買的容量期限授權模式。
 
+.關於這項工作
 您可以使用「etLicenseKey」方法來設定SolidFire 適用於整個ESXDS儲存叢集的授權金鑰。「etLicenseKey」方法具有下列輸入參數：
 
 [cols="5*"]

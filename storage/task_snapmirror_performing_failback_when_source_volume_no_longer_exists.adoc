@@ -13,7 +13,7 @@ summary: 您可以使用NetApp Element 這個UI重新同步原始來源Volume並
 [role="lead"]
 您可以使用NetApp Element 這個UI重新同步原始來源Volume並容錯回復。本節適用於原始來源磁碟區已遺失但原始叢集仍不受影響的情況。如需如何還原至新叢集的指示、請參閱NetApp支援網站上的文件。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您在Element ONTAP 和現象區之間有中斷的複寫關係。
 * 元素磁碟區已不可恢復地遺失。
 * 原始Volume名稱顯示為「找不到」。

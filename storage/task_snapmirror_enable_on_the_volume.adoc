@@ -13,7 +13,7 @@ summary: 您必須在Element UI的磁碟區上啟用SnapMirror。如此可將資
 [role="lead"]
 您必須在Element UI的磁碟區上啟用SnapMirror。如此可將資料複寫到指定ONTAP 的支援區。這是執行NetApp Element SnapMirror之用的SnapMirror軟體叢集管理員的權限、可用來控制磁碟區。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已在叢集的元素UI中啟用SnapMirror。
 * SnapMirror端點可用。
 * Volume必須為512e區塊大小。

@@ -20,7 +20,7 @@ summary: 有了這個解決方法、您可以使用靜止的軟體或硬體加�
 
 WARNING: 對於支援所有Flash的儲存叢集、在建立叢集期間必須啟用閒置軟體加密功能、而且在建立叢集後無法停用。SolidFire針對「企業版SDS（ESDS）叢集」、預設會啟用閒置時的軟體加密。SolidFire
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您有叢集管理員權限可啟用或變更加密設定。
 * 對於閒置的硬體加密、您在變更加密設定之前、已確保叢集處於正常狀態。
 * 如果您停用加密、則必須有兩個節點參與叢集、才能存取金鑰來停用磁碟機上的加密。
@@ -36,9 +36,9 @@ WARNING: 對於支援所有Flash的儲存叢集、在建立叢集期間必須啟
 NOTE: 位於https://<MVIP>/`的Element軟體UI儀表板目前僅顯示硬體加密的靜止狀態加密。
 
 .選項
-*  hardware-based encryption at rest
-*  software-based encryption at rest
-*  hardware-based encryption at rest
+* <<在靜止狀態下啟用硬體式加密>>
+* <<在靜止狀態下啟用軟體式加密>>
+* <<停用靜止時的硬體加密>>
 
 
 

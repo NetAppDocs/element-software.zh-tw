@@ -15,6 +15,7 @@ summary: 您必須透過NetApp Element UI手動啟用叢集層級的SnapMirror�
 
 SnapMirror只能用於執行元素軟體的叢集、並搭配NetApp ONTAP SnapMirror系統上的Volume一起使用。只有當叢集已連線以搭配NetApp ONTAP 功能集區使用時、您才應該啟用SnapMirror功能。
 
+.您需要的產品
 儲存叢集必須執行NetApp Element 不必要的軟體。
 
 .步驟

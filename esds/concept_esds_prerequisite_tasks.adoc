@@ -13,12 +13,12 @@ summary: 安裝SolidFire 完EESDS之前、請務必執行必要的檢查、並�
 [role="lead"]
 安裝SolidFire 完EESDS之前、請務必執行必要的檢查、並確認您的環境符合組態、IP定址和網路需求。
 
-.<strong>安裝所需的硬體</strong>
+.*安裝所需的硬體*
 * 安裝支援的伺服器。請參閱 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp互通性對照表（需登入）"^] 以取得更多資訊。
 * 請確定您的硬體組態已達到平衡、而且所有通道均已填入。如需最大化頻寬的詳細資訊、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/SolidFire_Enterprise_SDS/How_to_balance_memory_and_maximize_bandwidth_for_your_hardware_configurations["知識庫文章"^] （需要登入）。
 
 
-.<strong>設定主機（節點）</strong>
+.*設定主機（節點）*
 * 根據中所列的支援版本來安裝Red Hat套件管理程式 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp互通性對照表（需登入）"^]。
 * 設定網路時間傳輸協定（NTP）伺服器、以搭配網路中的所有主機使用。
 * 選取安裝目的地時、請選取選項按鈕以手動設定檔案系統分割區。在「*手動分割*」頁面上、使用*+*和*-*按鈕移除任何現有的分割區、然後建立新的分割區並依照此處列出的建議調整其大小。使用預設的LVM分割配置可讓您在需要時輕鬆調整大小。
@@ -106,7 +106,7 @@ rhel-7-server-extras-rpms
 
 
 
-.<strong>安裝所需的軟體</strong>
+.*安裝所需的軟體*
 * 安裝Ansible、Git、Podman和Python 3.0。
 +
 [NOTE]
@@ -131,7 +131,7 @@ NOTE: 如果有、NetApp建議您接受適用於Podman版本的安全性更新�
 ====
 
 
-.<strong>驗證您的組態是否符合NetApp&#8217;安裝SolidFire RESTESDS</strong>的要求
+.*驗證您的組態是否符合NetApp安裝SolidFire RESSESDS*的要求
 * 使用SolidFire 中所列的「功能不均」組態 https://mysupport.netapp.com/matrix/#welcome["NetApp互通性對照表工具IMT （不含）"] 作為參考。
 +
 
@@ -184,7 +184,7 @@ NOTE: 即使您開始使用SolidFire 完EESDS系統、也應該定期執行法�
 
 
 
-.<strong>瞭解網路和IP位址需求</strong>
+.*瞭解網路和IP位址需求*
 * 熟悉如何在Red Hat套件管理程式中設定及管理網路和網路介面。請參閱 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["RedHat文件"^]。
 * 請依照此處詳述的IP需求來設定您的網路：
 +
@@ -261,7 +261,7 @@ IMPORTANT: 此處提供的圖例是一個範例。實際的硬體可能會因您
 * 將交換器連接埠MTU變更為9216位元組。
 
 
-.<strong>允許特定連接埠透過資料中心和#8217;的防火牆</strong>
+.*允許特定連接埠通過資料中心的防火牆*
 * 如果在執行Red Hat套件管理程式的儲存節點上啟用了「firewalld」、請確定您已開啟下列連接埠、以便從遠端管理系統、允許資料中心外部的用戶端連線至資源、並確保內部服務能夠正常運作：
 +
 [cols="4*"]
@@ -446,7 +446,7 @@ firewall-cmd –-reload
 ----
 
 
-.<strong>Configure your host network</strong>（配置主機網絡）
+.*設定您的主機網路*
 * 使用設定您的主機網路 link:task_esds_configure_the_interface_config_files.html["最佳實務做法"^] 已提供。
 +
 
@@ -454,7 +454,7 @@ IMPORTANT: 您應完成設定主機網路的步驟、以確保SolidFire 成功�
 
 
 
-.<strong>完成其他要求</strong>
+.*完成額外要求*
 * 安裝一部Collect、NetApp支援部門將會使用它來收集主機記錄。您可以從安裝一個Collect https://mysupport.netapp.com/site/tools/tool-eula/activeiq-onecollect["請按這裡"^]。您需要NetApp帳戶才能存取下載內容。您也可以在同一個位置找到《One Collect Installation Guide》（收集安裝指南）和《Release Notes》（版本說明）。
 +
 

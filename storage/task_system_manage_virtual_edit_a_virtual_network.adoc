@@ -34,6 +34,7 @@ summary: 您可以變更VLAN屬性、例如VLAN名稱、網路遮罩和IP位址�
 . 選取*儲存變更*。
 
 
+.疑難排解知識庫文章的連結
 連結至知識庫文章、以協助疑難排解管理VLAN IP位址範圍的問題。
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["在元素叢集的VLAN中新增儲存節點後、出現重複的IP警告"^]

@@ -15,9 +15,9 @@ summary: 若要管理及提供系統上儲存資源的存取權限、您必須�
 
 使用元素儲存設備、您可以建立及管理下列類型的帳戶：
 
-*  cluster administrator accounts,儲存叢集的系統管理員使用者帳戶
-*  accounts,儲存Volume存取的使用者帳戶
-*  cluster user accounts,NetApp混合雲控制的授權叢集使用者帳戶
+* <<儲存叢集管理員帳戶,儲存叢集的系統管理員使用者帳戶>>
+* <<使用者帳戶,儲存Volume存取的使用者帳戶>>
+* <<驗證叢集使用者帳戶,NetApp混合雲控制的授權叢集使用者帳戶>>
 
 
 

@@ -23,11 +23,11 @@ summary: 叢集是SolidFire 一套由節點集合所組成的不同步儲存系�
 NOTE: 從Element 11.0版開始、節點可設定為使用IPv4、IPv6或兩者的管理網路位址。這適用於儲存節點和管理節點、但不支援IPv6的管理節點11.3及更新版本除外。建立叢集時、MVIP只能使用單一的IPv4或IPv6位址、而且必須在所有節點上設定對應的位址類型。
 
 .叢集的詳細資訊
-*  storage clusters
-*  of thirds
-*  capacity
-*  efficiency
-*  cluster quorum
+* <<驗證儲存叢集>>
+* <<三分之一規則>>
+* <<閒置容量>>
+* <<儲存效率>>
+* <<儲存叢集仲裁>>
 
 
 
