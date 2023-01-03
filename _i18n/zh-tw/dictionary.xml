@@ -12567,4 +12567,6 @@
   <block id="45f450486d575041c747125231750ffe" category="list-title">*設定您的主機網路*</block>
   <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">*完成額外要求*</block>
   <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">升級總覽</block>
+  <block id="29d5a1c31c94981fab1916121b43f763" category="cell">儲存節點BMC / IPMI</block>
+  <block id="291dd45cc603b1047e92bf5a13259357" category="cell">RMCP連接埠。這是管理已啟用IPMI的系統所需的。</block>
 </blocks>
