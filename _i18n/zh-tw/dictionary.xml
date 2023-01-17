@@ -6405,19 +6405,11 @@
   <block id="dd118c5e33987ffd915e04623a1f70c8" category="paragraph">在這些狀態中、有些欄位是唯讀的。</block>
   <block id="37bf500e2e9e1010fbba8f9d57fc6653" category="summary">如果您未執行最新版本、則可取得先前版本的文件。</block>
   <block id="516f6af28c516e78fc33b4c052dabe39" category="doc">早期版本的功能性的不一樣、可提供更多的功能SolidFire NetApp Element</block>
-  <block id="125fc8b968e8e11cd6bd7e1494f62a67" category="paragraph">先前版本的文件可在我們的文件中心取得。</block>
   <block id="f20c99cda6c5c700e6ea170eaea46329" category="inline-link">Element 12.2文件</block>
-  <block id="aa3b5b7a1e2e66b47175110cd56daccb" category="list-text"><block ref="aa3b5b7a1e2e66b47175110cd56daccb" category="inline-link-rx"></block></block>
   <block id="b34dcfff8d81f43e815e568d47850358" category="inline-link">Element 12.0文件</block>
-  <block id="85800e3b53059a802776bcb147eaa67e" category="list-text"><block ref="85800e3b53059a802776bcb147eaa67e" category="inline-link-rx"></block></block>
   <block id="390218c5d0ba4b058c4d3f239c6ae7eb" category="inline-link">Element 11.8文件</block>
-  <block id="5fafd7076636fc57b7482292597c80d2" category="list-text"><block ref="5fafd7076636fc57b7482292597c80d2" category="inline-link-rx"></block></block>
   <block id="95044d6cb92a8dcd9435a8d6518710be" category="inline-link">Element 11.7文件</block>
-  <block id="ef4ff55196c56aee6ea12eb45472f816" category="list-text"><block ref="ef4ff55196c56aee6ea12eb45472f816" category="inline-link-rx"></block></block>
   <block id="375779933a2fbd9bd07005095be3d556" category="inline-link">Element 11.5文件</block>
-  <block id="efaae0e20dc4211df73e458c389a81a7" category="list-text"><block ref="efaae0e20dc4211df73e458c389a81a7" category="inline-link-rx"></block></block>
-  <block id="9fce286c78c5ad19ef27c4997c0ebc16" category="inline-link">Element 11.3文件</block>
-  <block id="50262b0e556ed6d70532d1bdc0cd3a16" category="list-text"><block ref="50262b0e556ed6d70532d1bdc0cd3a16" category="inline-link-rx"></block></block>
   <block id="e44e873b1562276992051bf0eec8c7e2" category="summary">深入瞭解協助您開始使用Element軟體的資源與工具。</block>
   <block id="62bdbe048d174b559cb770f9ebaf0895" category="doc">歡迎試用</block>
   <block id="6f5f86920704a5057edeb4c22758bd87" category="inline-link">隨需實驗室的私有雲端儲存靈活度與元素（需登入）</block>
@@ -12105,7 +12097,6 @@
   <block id="69b7535618573fd609dc8b4663c8b8c0" category="list-text"><block ref="69b7535618573fd609dc8b4663c8b8c0" category="inline-link-macro-rx"></block></block>
   <block id="30624e21224d847e1b829641269ffe3c" category="inline-link-macro">儲存韌體產品組合2.27注意事項</block>
   <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
-  <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 123文件</block>
   <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">ESXi 6.7和7.0、適用於Element示範節點123和12.5 VM</block>
   <block id="f73f11dc118d0773193fe38ff975e133" category="inline-link">儲存韌體產品組合2.150版本說明</block>
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
@@ -12569,4 +12560,27 @@
   <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">升級總覽</block>
   <block id="29d5a1c31c94981fab1916121b43f763" category="cell">儲存節點BMC / IPMI</block>
   <block id="291dd45cc603b1047e92bf5a13259357" category="cell">RMCP連接埠。這是管理已啟用IPMI的系統所需的。</block>
+  <block id="8a6b3244aec72df7ad902477699fbf45" category="paragraph">先前版本的文件可在NetApp 支援網站 下列網頁取得：</block>
+  <block id="66f6fdf25376c7fe6914452811137d26" category="inline-link">Element 12.2.1文件</block>
+  <block id="39727693187ca34f4ef5c90c46a46394" category="list-text"><block ref="e27a77aaa07eb612231a495478159efc" category="inline-link-rx"></block></block>
+  <block id="e9425d653dfeb82137e081b24434673c" category="list-text"><block ref="14227707f4f0d9d690c553a1aea9d7eb" category="inline-link-rx"></block></block>
+  <block id="1dce52cd907ec226801f21c7f9442e05" category="inline-link">Element 12.0.1文件</block>
+  <block id="bc91173b03fd405e73f45aa8549d6cb9" category="list-text"><block ref="ee91d2ac6b94108035b6f826b0faa9d7" category="inline-link-rx"></block></block>
+  <block id="37da8c3a9aa164a5fb4b67eb79e66e13" category="list-text"><block ref="bd503e5effeae246cf877d0805d52b34" category="inline-link-rx"></block></block>
+  <block id="1f63e3424206918b1e15bc38a7fbc4d3" category="inline-link">Element 11.8.2文件</block>
+  <block id="c9e6d9a56a3dccb580282512254f1f37" category="list-text"><block ref="c20fed7afc57590e5202e9efe9742b67" category="inline-link-rx"></block></block>
+  <block id="e68c051352049b3838c60ff840321d35" category="inline-link">Element 11.8.1文件</block>
+  <block id="e47c81b55e4a61a161552460d32c2c44" category="list-text"><block ref="0c35962df94e7352decd6723992e5263" category="inline-link-rx"></block></block>
+  <block id="ad02bc5bcbc3702c6a6fe08dc9f7cc46" category="list-text"><block ref="4396559246bc10267387dad9a81a7b88" category="inline-link-rx"></block></block>
+  <block id="3872977e6ae8da84b3f1d581c0a6d7c2" category="list-text"><block ref="05a06a7a4ff9a2d66fc355b16336a4a9" category="inline-link-rx"></block></block>
+  <block id="338bc7e00e7e9bcd9b127c2ea84dcd96" category="inline-link">Element 11.5.1文件</block>
+  <block id="61451eda5fa6a2084df64ced352bebed" category="list-text"><block ref="668ab89b43646132e916722e1920e272" category="inline-link-rx"></block></block>
+  <block id="01385c034be02ec4f2710a56901f02fe" category="list-text"><block ref="615822f7dd8aa54b65ee98e31a3441d4" category="inline-link-rx"></block></block>
+  <block id="ebdc6512afcb64ecc9fb02a138ad1912" category="inline-link">Element 11.3P1文件</block>
+  <block id="5fd0990dd681c6a8d28b0a2ca873ca5a" category="list-text"><block ref="32b2e16adcfd90589808c6883b4c7507" category="inline-link-rx"></block></block>
+  <block id="5230218c731f2132167cf858200bebb3" category="inline-link">Element 11.3.2文件</block>
+  <block id="a869730ec0116e46159bbff419d5cc17" category="list-text"><block ref="2a166fd6597dedff39b139e3ce76f82b" category="inline-link-rx"></block></block>
+  <block id="bec35bb5875234837858b1ccdd637fca" category="inline-link">Element 11.1文件與舊版</block>
+  <block id="724428733630050ab3140356839e2af1" category="list-text"><block ref="724428733630050ab3140356839e2af1" category="inline-link-rx"></block></block>
+  <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2及更早版本的文件</block>
 </blocks>

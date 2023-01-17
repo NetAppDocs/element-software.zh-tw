@@ -12,15 +12,22 @@ summary: 如果您未執行最新版本、則可取得先前版本的文件。
 
 
 [role="lead"]
-先前版本的文件可在我們的文件中心取得。
+先前版本的文件可在NetApp 支援網站 下列網頁取得：
 
 * https://docs.netapp.com/us-en/element-software-123/index.html["Element 12.3.x文件"^]
-* https://docs.netapp.com/sfe-122/index.jsp["Element 12.2文件"^]
-* https://docs.netapp.com/sfe-120/index.jsp["Element 12.0文件"^]
-* https://docs.netapp.com/sfe-118/index.jsp["Element 11.8文件"^]
-* https://docs.netapp.com/sfe-117/index.jsp["Element 11.7文件"^]
-* https://docs.netapp.com/sfe-115/index.jsp["Element 11.5文件"^]
-* https://docs.netapp.com/sfe-113/index.jsp["Element 11.3文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63945&language=en-US["Element 12.2.1文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63593&language=en-US["Element 12.2文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63946&language=en-US["Element 12.0.1文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63368&language=en-US["Element 12.0文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=64187&language=en-US["Element 11.8.2文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63944&language=en-US["Element 11.8.1文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63293&language=en-US["Element 11.8文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63138&language=en-US["Element 11.7文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63207&language=en-US["Element 11.5.1文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63058&language=en-US["Element 11.5文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63027&language=en-US["Element 11.3P1文件"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63206&language=en-US["Element 11.3.2文件"^]
+* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62654["Element 11.1文件與舊版"^]
 
 
 
