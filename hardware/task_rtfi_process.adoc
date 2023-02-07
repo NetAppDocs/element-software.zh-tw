@@ -40,7 +40,7 @@ RTFI程序會執行下列高層級作業：
 
 請使用下列程序還原SolidFire 您的節點上的Element軟體。
 
-如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 link:task_rtfi_deployment_and_install_options.html["RTFI部署與安裝選項"]。
+如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 xref:task_rtfi_deployment_and_install_options.html[RTFI部署與安裝選項]。
 
 .開始之前
 確認您符合下列要求：
@@ -80,7 +80,7 @@ NOTE: 您必須快速連續選擇* F11 *多次、因為開機裝置畫面會快�
 . 在初始提示時、系統會通知您該程序將會從節點移除所有資料、而且資料在程序開始後無法恢復。輸入* Yes*開始。
 +
 
-WARNING: 所有資料和組態詳細資料都會在程序啟動後從節點永久清除。如果您選擇不繼續、系統會將您導向至 link:task_rtfi_options_menu.html["RTFI選項功能表"]。
+WARNING: 所有資料和組態詳細資料都會在程序啟動後從節點永久清除。如果您選擇不繼續、系統會將您導向至 xref:task_rtfi_options_menu.html[RTFI選項功能表]。
 
 +
 
@@ -95,7 +95,7 @@ NOTE: 如果您想在RTFI程序期間觀看主控台、可以按下* ALT+F8*鍵�
 節點現在已準備好要開機並進行設定。請參閱 https://docs.netapp.com/us-en/element-software/setup/concept_setup_overview.html["Element軟體設定儲存文件"^] 以設定儲存節點。
 
 +
-如果您在RTFI程序期間遇到錯誤訊息、請參閱 link:task_rtfi_options_menu.html["RTFI選項功能表"]。
+如果您在RTFI程序期間遇到錯誤訊息、請參閱 xref:task_rtfi_options_menu.html[RTFI選項功能表]。
 
 
 

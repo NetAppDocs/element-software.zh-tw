@@ -12637,7 +12637,6 @@
   <block id="4cafaba2174b734c409ee5766b4c90a8" category="paragraph">若要在RTFI程序成功完成後設定節點、請參閱<block ref="ad60dd2928135a9355e0d51cd38822f2" category="inline-link-rx"></block>。節點成功完成RTFI程序之後、預設會轉換成_可用（未設定）狀態。</block>
   <block id="03c983b266b251bb360f154a87f5a7db" category="section-title">執行RTFI程序</block>
   <block id="9bbce3f386ebd93c00f99ac698c4f85e" category="paragraph">請使用下列程序還原SolidFire 您的節點上的Element軟體。</block>
-  <block id="b85f0ef6fe26601ba97faf1ace649eeb" category="paragraph">如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 <block ref="791ffc1d4e47604f0a97e678500315b7" category="inline-link-macro-rx"></block>。</block>
   <block id="e291c5603b49506d01779471f77ce7c8" category="paragraph">確認您符合下列要求：</block>
   <block id="4a97b78efa5043e19cc08344b22fccb7" category="list-text">您可以存取SolidFire 適用於此節點的主控台。</block>
   <block id="8c84f98354c5ad685a8ff935ecdb2630" category="list-text">您執行RTFI程序的節點會開啟電源並連線至網路。</block>
@@ -12655,14 +12654,12 @@
   <block id="dffaf5fedb70fe91b742117c8b085925" category="list-text">此時會出現反白顯示的USB裝置上的影像清單。選取所需的版本、然後選取Enter以啟動RTFI程序。</block>
   <block id="c888f1a4d7fe66bd42dccc90f502b0eb" category="paragraph">畫面上會顯示RTFI映像元素軟體名稱和版本編號。</block>
   <block id="1c471bcec9997b35f1b0536f2db260bd" category="list-text">在初始提示時、系統會通知您該程序將會從節點移除所有資料、而且資料在程序開始後無法恢復。輸入* Yes*開始。</block>
-  <block id="5e0421c47931d57fd6c7e95aa68c2f0a" category="admonition">所有資料和組態詳細資料都會在程序啟動後從節點永久清除。如果您選擇不繼續、系統會將您導向至 <block ref="77932c831ff186b4e1c8b9859a5d7eac" category="inline-link-macro-rx"></block>。</block>
   <block id="4dd00ce5dcbd6d37af8112b77fa133b6" category="admonition">如果您想在RTFI程序期間觀看主控台、可以按下* ALT+F8*鍵切換至詳細模式主控台。按* ALT+F1*返回主GUI。</block>
   <block id="d04da2deaed469b70fce11423594fb5b" category="list-text">除非您有理由懷疑硬體故障、或是被NetApp支援部門指示執行測試、否則當系統提示您執行大量硬體測試時、請輸入* No*。</block>
   <block id="49148bcd0950973e3835ff3ac1d306da" category="paragraph">訊息表示RTFI程序已完成、系統已關機。</block>
   <block id="79994edd44080fdaca3e98bf8c66f93c" category="list-text">必要時、請在節點關機後移除所有可開機的安裝媒體。</block>
   <block id="0ef08fdd0340f572cb03ddb8029b8c00" category="inline-link">Element軟體設定儲存文件</block>
   <block id="0fcfcb5f175964f2dab3656b95eb1133" category="paragraph">節點現在已準備好要開機並進行設定。請參閱<block ref="4e28ca504cf133ef5899b8bf7fd569d6" category="inline-link-rx"></block> 以設定儲存節點。</block>
-  <block id="a3476741cab852ccb1f398965895cb8b" category="paragraph">如果您在RTFI程序期間遇到錯誤訊息、請參閱 <block ref="77932c831ff186b4e1c8b9859a5d7eac" category="inline-link-macro-rx"></block>。</block>
   <block id="5e91308d5923accb9d096d078492d886" category="inline-xref-macro">返回原廠映像資訊</block>
   <block id="42852fd7f6900d56a8835bef7add4b3a" category="list-text"><block ref="42852fd7f6900d56a8835bef7add4b3a" category="inline-xref-macro-rx"></block></block>
   <block id="828fd8dc16d0a2aa09370d21cb2adfe6" category="summary">NetApp SolidFire 支援儲存系統使用RTFI程序、將軟體映像寫入新節點、或將節點還原至原始原廠狀態。</block>
@@ -12676,4 +12673,7 @@
   <block id="4761cf42d3167c91f942aaa5770bce7b" category="list-text"><block ref="4761cf42d3167c91f942aaa5770bce7b" category="inline-xref-macro-rx"></block></block>
   <block id="8e03dc636d7913fabfabd316d5e54ac0" category="list-text"><block ref="8e03dc636d7913fabfabd316d5e54ac0" category="inline-xref-macro-rx"></block></block>
   <block id="82deed01641c36ab7f885c50d27dcaea" category="list-text"><block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block></block>
+  <block id="98f034cb87c1c327b13fbbbb31bc622b" category="paragraph">如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 <block ref="4761cf42d3167c91f942aaa5770bce7b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a386fc287fd28e52c07d586cfb7aa08b" category="admonition">所有資料和組態詳細資料都會在程序啟動後從節點永久清除。如果您選擇不繼續、系統會將您導向至 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d9730da4fb3635f5ccd1c078266c9334" category="paragraph">如果您在RTFI程序期間遇到錯誤訊息、請參閱 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
