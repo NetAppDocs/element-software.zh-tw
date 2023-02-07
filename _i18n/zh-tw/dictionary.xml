@@ -5422,7 +5422,6 @@
   <block id="d40819e9e843e97335bf320aeb8d5ac1" category="summary">您可以使用管理節點來啟用NetApp支援存取、以進行疑難排解。</block>
   <block id="8e5cda5f4d9f852ba16378a9749b0fba" category="paragraph">您可以開啟TCP連接埠、以便透過NetApp支援進行SSH反向通道連線。此連線可讓NetApp Support登入您的管理節點。</block>
   <block id="d6ffeb2fc4f82d1d17f906502ee07d86" category="inline-link-macro">管理管理節點上的SSH功能</block>
-  <block id="38bfc79ee5a8c36f9e9a8af1c01ba34c" category="list-text">對於管理服務2.18及更新版本、預設會在管理節點上停用遠端存取功能。若要啟用遠端存取功能、請參閱 <block ref="b699ffaa70a5cdf708fca1e6ce6761c0" category="inline-link-macro-rx"></block>。</block>
   <block id="4767b00dd0eab027ad48a79407d1aeb5" category="list-text">如果您的管理節點位於Proxy伺服器後方、則在sshd.config檔案中需要下列TCP連接埠：</block>
   <block id="a93bcb5a82072c389a3b8a73489512f7" category="cell">TCP連接埠</block>
   <block id="5fb18927ceb46250be02a3e7680918bb" category="cell">連線方向</block>
@@ -5436,7 +5435,6 @@
   <block id="de4c01f12786cbabd5e851ab91fdad19" category="list-text">若要關閉遠端支援通道、請輸入下列命令：</block>
   <block id="7096254058ea6f4199f3ce2259f65ecd" category="paragraph">《RST——killall》</block>
   <block id="f6da8069b357b9343a5831a68be0524d" category="inline-link-macro">遠端存取功能</block>
-  <block id="75be5fb98a5e3aff69e3f0e049934221" category="list-text">（選用）停用 <block ref="b551ebda879d60cf3a0931b9f0e794a7" category="inline-link-macro-rx"></block> 再一次。</block>
   <block id="728b9f30c45d9b5490bc14eac2e5a7ee" category="summary">您可以使用REST API UI編輯vCenter管理節點控制器。</block>
   <block id="d58033fb958878b21acb4b0e0150fedf" category="paragraph">您可以使用REST API、在管理節點組態中檢視及編輯現有VMware vCenter控制器的相關資訊。控制器是VMware vCenter執行個體、已登錄至管理節點以供NetApp SolidFire 執行安裝。</block>
   <block id="4449c06ccadafd4f881f5cd491f79ffe" category="list-text">請確定您的叢集版本執行NetApp Element 的是更新版本的軟件。</block>
@@ -12583,4 +12581,99 @@
   <block id="bec35bb5875234837858b1ccdd637fca" category="inline-link">Element 11.1文件與舊版</block>
   <block id="724428733630050ab3140356839e2af1" category="list-text"><block ref="724428733630050ab3140356839e2af1" category="inline-link-rx"></block></block>
   <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2及更早版本的文件</block>
+  <block id="cf459a4467554220e1dd70f653a8cf43" category="list-text">對於管理服務2.18及更新版本、預設會在管理節點上停用遠端存取功能。若要啟用遠端存取功能、請參閱<block ref="9a48ac510c43b73ee86c7be400c5025f" category="inline-link-rx"></block>。</block>
+  <block id="c9621c561bd7ae37e9a7ee7358f4f792" category="list-text">（選用）停用<block ref="2ec0ebe378e4a0f1bbb70e72c3942887" category="inline-link-rx"></block> 再一次。</block>
+  <block id="c046b7ab02983ed5bb8f1b18c0c2c477" category="summary">從NetApp 支援網站 下列網址下載元素軟體版本的RTFI ISO映像、並使用可開機且可安裝的媒體來部署。</block>
+  <block id="097f61b38015fce3acc737235b76aa70" category="doc">RTFI部署與安裝選項</block>
+  <block id="9c093f14319e8253b8c9b37290597239" category="inline-link">NetApp 支援網站</block>
+  <block id="57874bd90f9e29e6ba71a930ead4720c" category="paragraph">「恢復原廠映像」（RTFI）程序使用可開機、可安裝的媒體、搭配完全獨立、極簡的Linux作業系統、在節點上部署Element軟體。您可以從下載元素軟體版本的特定RTFI ISO映像<block ref="57a74b5f1bee73af676d67cb0c6480cc" category="inline-link-rx"></block>。</block>
+  <block id="06e3bb8e9a037ad0917c5fde14ff8f72" category="paragraph">下載RTFI ISO映像之後、您可以根據下列其中一種常用方法來部署：</block>
+  <block id="ac34243a64c3c11fd5dfae9a67fb5c55" category="inline-link">如何建立RTFI金鑰以重新建立SolidFire 圖片儲存節點的映像</block>
+  <block id="4f884078aa6375898281ddc312560016" category="list-text">*實體USB金鑰*：您可以將可開機元件軟體ISO寫入USB金鑰。如需相關指示、請參閱知識庫文章<block ref="13bce1e595d54685f8d64cc0034a2001" category="inline-link-rx"></block>。將具有ISO的USB金鑰插入節點、然後從USB金鑰開機。</block>
+  <block id="d61d8eec0353e6b2f885b130fc452ee3" category="inline-link">如何透過BMC對節點進行RTFI</block>
+  <block id="d03dcff1e3b6625e9de785d38af8f6e7" category="list-text">*使用底板管理控制器（BMC）管理連接埠*的虛擬媒體：您可以使用BMC動態附加至用戶端系統上的ISO。ISO可作為虛擬磁碟機（CD或DVD）提供給主機作業系統。如需詳細資訊、請參閱知識庫文章<block ref="4b8682c85d43082345f6bc4c71b5ee22" category="inline-link-rx"></block>。</block>
+  <block id="b55e051a09464d098caf37534579db9e" category="list-text">*使用開機前執行環境（PXE）、簡單檔案傳輸傳輸傳輸協定（TFTP）或FTP*進行網路開機：您可以使用、而非手動解壓縮ISO映像<block ref="8be83f992a1e8c32d5255d7442d7a6d5" prefix=" " category="inline-code"></block> 可在RTFI程序要求時自動擷取映像。此部署機制需要更多初始設定、但可正確自動化及擴充安裝。</block>
+  <block id="a50f2b7cffecee50756522f1bff4c33c" category="summary">如果RTFI程序失敗、或您選擇在初始RTFI程序提示時不繼續、請瞭解RTFI功能表選項。</block>
+  <block id="77dbf78682c95c78602bbd4ddd8b2dea" category="doc">RTFI選項功能表</block>
+  <block id="9b5b88366a81b3273921ec7bd24473ec" category="paragraph">如果RTFI程序失敗、或您選擇在初始RTFI程序提示時不繼續、則會出現下列選項功能表。</block>
+  <block id="15d519c15b019de88039c9915522c5e0" category="image-alt">S還原RTFI功能表選項SolidFire</block>
+  <block id="7c02a8edc8fcb7b39be07fb64a0f6fbd" category="admonition">使用下列任何命令選項之前、請先聯絡NetApp支援部門。</block>
+  <block id="1de72c4fc6d69a741fff1cbb7cdb9e90" category="cell">重新開機</block>
+  <block id="6ecb13e783913c4fefe2b40033535c81" category="cell">結束RTFI程序、並以目前狀態重新啟動節點。不執行任何清除。</block>
+  <block id="280a96254b645aa2c2c336ef2e235c37" category="cell">關機</block>
+  <block id="5c8def6d9dc8e310e9d8562dd101ae70" category="cell">正常關閉節點的目前狀態。不執行任何清除。</block>
+  <block id="fef46e5063ce3dc78b8ae64fa474241d" category="cell">結束</block>
+  <block id="db165cdc1bf8f0b0797b9a531a59a50b" category="cell">結束RTFI程序並開啟命令提示字元。</block>
+  <block id="0ebdc674f39e2ce83809bdac9519442b" category="cell">上傳記錄</block>
+  <block id="f252b4593ad1f40e2cd950a6473acac4" category="cell">收集系統上的所有記錄、並將單一整合式記錄歸檔上傳至指定的URL。</block>
+  <block id="f066cd95321ea01132e513fe4ee9aa3c" category="section-title">上傳記錄</block>
+  <block id="a4230116e8560c445d593876c622ba35" category="paragraph">收集系統上的所有記錄、並根據下列程序將其上傳至指定的URL。</block>
+  <block id="29d320e5d4dd8f01414b4837f938dae6" category="list-text">在RTFI選項功能表提示字元中、輸入*上傳記錄*。</block>
+  <block id="f46ba9f1e4858ffdbfa0b2036a6a49f1" category="list-text">輸入遠端目錄資訊：</block>
+  <block id="0d40d3a158c6ce7072d2f07537430213" category="list-text">輸入包含傳輸協定的URL。例如：<block ref="bff7b479b0c1b13ecf83a1a6a4145f56" prefix=" " category="inline-code"></block>。</block>
+  <block id="047d0cae4d782dab8337d179fe4f5b75" category="list-text">（選用）新增內嵌的使用者名稱和密碼。例如：<block ref="63e8c80ff45c05d30697cbfbcc06bf28" prefix=" " category="inline-code"></block>。</block>
+  <block id="c1bef293167e5fe84bd35c7d87d3e929" category="inline-link">捲髮</block>
+  <block id="78ca6b367c181cb9d2d8aaf99f090abb" category="admonition">如需完整的語法選項、請參閱<block ref="469ab28c3caae53aa361f6c2c2968307" category="inline-link-rx"></block> 使用手冊。</block>
+  <block id="d21e2b72d2a8a5794b0eb5a96d76da18" category="paragraph">記錄檔會上傳並儲存至指定的目錄、做為<block ref="7341ea2207ab9817e5cfb5da56632231" prefix=" " category="inline-code"></block> 歸檔：</block>
+  <block id="1879bbdeec7345408533f5ad5a76e7bc" category="section-title">使用支援通道</block>
+  <block id="0452e943feed5d689f7e440370b58b0c" category="paragraph">如果NetApp HCI 您需要支援您的整套系統或SolidFire 不完整的Flash儲存系統、NetApp支援中心可以遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。</block>
+  <block id="8a27c335dc4b5de0ebe61120f86c41a6" category="summary">執行RTFI程序、在SolidFire 您的節點上還原Element軟體。</block>
+  <block id="3c9456542d0f7f8cea4527e4f2c16afc" category="doc">RTFI程序</block>
+  <block id="575e61926014b5e53fb8abd6b3ca5e2f" category="paragraph">您可以透過系統開機前出現的文字主控台提示、與節點互動、開始返回原廠映像（RTFI）程序。</block>
+  <block id="42f7abee041191982e62a8be28908be9" category="admonition">RTFI程序具有資料破壞性、可安全地清除節點的所有資料和組態詳細資料、並安裝新的作業系統。驗證用於RTFI程序的節點是否未作為叢集的一部分作用。</block>
+  <block id="e6493fad63d5742ed0af1c75392cb2b2" category="image-alt">繼續前發出警告SolidFire</block>
+  <block id="693999acf2a7b7ac120f9d035e77e6ee" category="paragraph">RTFI程序會執行下列高層級作業：</block>
+  <block id="c2cd692402e694203d81a5d66d009f63" category="list-text">在使用者確認並驗證映像之後開始安裝。</block>
+  <block id="c5d989304b00c766e965bc0fa2443aed" category="list-text">解除鎖定節點上的所有磁碟機。</block>
+  <block id="9a5aa1da869b4040f524ae9785b78f21" category="list-text">驗證並更新韌體。</block>
+  <block id="2c3ebc91d3c23ca65bb699ec2b7ccfcf" category="list-text">檢查硬體。</block>
+  <block id="2b91c89dcd1e48919f86878407ad759b" category="list-text">測試硬體。</block>
+  <block id="efed937b7067e3b9aff1eba0422c2d61" category="list-text">安全清除所有選取的磁碟機。</block>
+  <block id="3f534029ecbb9b48b864fc3a278db0fc" category="list-text">分割根磁碟機並建立檔案系統。</block>
+  <block id="7c0a0dd3952f3fc7de494542cdc6269b" category="list-text">掛載及解壓縮映像。</block>
+  <block id="4ce2c84b00ef7e76a2a9152b9d37a5a9" category="list-text">設定主機名稱、網路連線（動態主機組態傳輸協定）、預設叢集組態和Grub開機載入器。</block>
+  <block id="eee23fdb40a5232106f41a844d30d160" category="list-text">停止所有服務、收集記錄並重新開機。</block>
+  <block id="d9ad78cdc934862de52578f1e80348b6" category="inline-link">Element軟體版本的文件</block>
+  <block id="4cafaba2174b734c409ee5766b4c90a8" category="paragraph">若要在RTFI程序成功完成後設定節點、請參閱<block ref="ad60dd2928135a9355e0d51cd38822f2" category="inline-link-rx"></block>。節點成功完成RTFI程序之後、預設會轉換成_可用（未設定）狀態。</block>
+  <block id="03c983b266b251bb360f154a87f5a7db" category="section-title">執行RTFI程序</block>
+  <block id="9bbce3f386ebd93c00f99ac698c4f85e" category="paragraph">請使用下列程序還原SolidFire 您的節點上的Element軟體。</block>
+  <block id="b85f0ef6fe26601ba97faf1ace649eeb" category="paragraph">如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 <block ref="791ffc1d4e47604f0a97e678500315b7" category="inline-link-macro-rx"></block>。</block>
+  <block id="e291c5603b49506d01779471f77ce7c8" category="paragraph">確認您符合下列要求：</block>
+  <block id="4a97b78efa5043e19cc08344b22fccb7" category="list-text">您可以存取SolidFire 適用於此節點的主控台。</block>
+  <block id="8c84f98354c5ad685a8ff935ecdb2630" category="list-text">您執行RTFI程序的節點會開啟電源並連線至網路。</block>
+  <block id="6296642e806806afac83d631b9af85b1" category="list-text">您執行RTFI程序的節點並非作用中叢集的一部分。</block>
+  <block id="0571b0f5a86ae432f2cc369dc012c2bb" category="list-text">您可以存取可開機安裝媒體、其中包含組態的相關元件軟體版本映像。</block>
+  <block id="8b9624fb7d79aca8e00398a81dd2a251" category="paragraph">如果您在執行RTFI程序之前有任何疑慮、請聯絡NetApp支援部門。</block>
+  <block id="cfb4a0ba322ef691c5c7750716cab452" category="list-text">將監視器和鍵盤連接至節點背面、或連線至BMC IP UI、然後從UI的*遠端控制*索引標籤啟動* KIKM/HTML5*主控台。</block>
+  <block id="c7557300c215bdb19ebba880977d7e07" category="list-text">將具有適當映像的USB隨身碟插入節點背面兩個USB插槽中的其中一個。</block>
+  <block id="968d4ef1e7f507465930737293627daf" category="list-text">開啟電源或重新啟動節點。在開機期間、選取* F11 *以選取「Boot Device（開機裝置）」：</block>
+  <block id="b6254f153b7fbfaa9083fad744821e7d" category="admonition">您必須快速連續選擇* F11 *多次、因為開機裝置畫面會快速移動。</block>
+  <block id="f1bc2c9554d8265988f989dc4284b7c9" category="list-text">在Boot Device（引導設備）選擇菜單中，高亮顯示USB選項。</block>
+  <block id="6b0044748e879c2db8994ce0ab09f5e9" category="paragraph">顯示的選項取決於您使用的USB品牌。</block>
+  <block id="07fb023da679c99944a2cd3184d5b048" category="paragraph">如果未列出USB裝置、請進入BIOS、確認USB列在開機順序中、重新開機、然後再試一次。</block>
+  <block id="34ea3bdf853f82e7b90076a38a4927f2" category="paragraph">如果仍無法解決問題、請進入BIOS、瀏覽至*儲存並結束*索引標籤、選擇*還原為最佳化的預設值*、接受並儲存設定、然後重新開機。</block>
+  <block id="dffaf5fedb70fe91b742117c8b085925" category="list-text">此時會出現反白顯示的USB裝置上的影像清單。選取所需的版本、然後選取Enter以啟動RTFI程序。</block>
+  <block id="c888f1a4d7fe66bd42dccc90f502b0eb" category="paragraph">畫面上會顯示RTFI映像元素軟體名稱和版本編號。</block>
+  <block id="1c471bcec9997b35f1b0536f2db260bd" category="list-text">在初始提示時、系統會通知您該程序將會從節點移除所有資料、而且資料在程序開始後無法恢復。輸入* Yes*開始。</block>
+  <block id="5e0421c47931d57fd6c7e95aa68c2f0a" category="admonition">所有資料和組態詳細資料都會在程序啟動後從節點永久清除。如果您選擇不繼續、系統會將您導向至 <block ref="77932c831ff186b4e1c8b9859a5d7eac" category="inline-link-macro-rx"></block>。</block>
+  <block id="4dd00ce5dcbd6d37af8112b77fa133b6" category="admonition">如果您想在RTFI程序期間觀看主控台、可以按下* ALT+F8*鍵切換至詳細模式主控台。按* ALT+F1*返回主GUI。</block>
+  <block id="d04da2deaed469b70fce11423594fb5b" category="list-text">除非您有理由懷疑硬體故障、或是被NetApp支援部門指示執行測試、否則當系統提示您執行大量硬體測試時、請輸入* No*。</block>
+  <block id="49148bcd0950973e3835ff3ac1d306da" category="paragraph">訊息表示RTFI程序已完成、系統已關機。</block>
+  <block id="79994edd44080fdaca3e98bf8c66f93c" category="list-text">必要時、請在節點關機後移除所有可開機的安裝媒體。</block>
+  <block id="0ef08fdd0340f572cb03ddb8029b8c00" category="inline-link">Element軟體設定儲存文件</block>
+  <block id="0fcfcb5f175964f2dab3656b95eb1133" category="paragraph">節點現在已準備好要開機並進行設定。請參閱<block ref="4e28ca504cf133ef5899b8bf7fd569d6" category="inline-link-rx"></block> 以設定儲存節點。</block>
+  <block id="a3476741cab852ccb1f398965895cb8b" category="paragraph">如果您在RTFI程序期間遇到錯誤訊息、請參閱 <block ref="77932c831ff186b4e1c8b9859a5d7eac" category="inline-link-macro-rx"></block>。</block>
+  <block id="5e91308d5923accb9d096d078492d886" category="inline-xref-macro">返回原廠映像資訊</block>
+  <block id="42852fd7f6900d56a8835bef7add4b3a" category="list-text"><block ref="42852fd7f6900d56a8835bef7add4b3a" category="inline-xref-macro-rx"></block></block>
+  <block id="828fd8dc16d0a2aa09370d21cb2adfe6" category="summary">NetApp SolidFire 支援儲存系統使用RTFI程序、將軟體映像寫入新節點、或將節點還原至原始原廠狀態。</block>
+  <block id="eb7ba68c068d694268bb66cba17505c4" category="doc">設定「恢復原廠映像」</block>
+  <block id="794ea7c2fbea7a73f8dce13333c20292" category="paragraph">NetApp SolidFire 支援儲存系統使用「恢復原廠映像」（RTFI）程序、將軟體映像寫入新節點、或將節點還原至原廠狀態。RTFI程序會安全地清除所有現有的資料和組態（如果有）、並安裝未設定NetApp Element 的整套軟體映像。RTFI程序適用於所有SolidFire 的支援節點。</block>
+  <block id="16af21e148236fb23318cd07fa25c4ca" category="paragraph">支援所有元件軟體安裝的系統使用一個RTFI程序SolidFire 。這包括由開發人員執行的內部手動安裝、透過自動化架構測試自動安裝、由服務工程師和客戶進行現場安裝、以及由各種整合商和合作夥伴執行的安裝。無論SolidFire 使用的機箱或節點類型為何、所有的支援節點都會使用相同的RTFI程序來自動修正任何問題。</block>
+  <block id="a5fc4e2860d49c0da81f6dd65eadf69b" category="paragraph">本指南的目標讀者是安裝、設定、使用或疑難排解儲存相關問題的整合商。</block>
+  <block id="6488398a09e5e3619c68849839032852" category="list-text">Linux：您有一些Linux系統背景。</block>
+  <block id="88a314dd47a5b577c9b424a096c7a9e8" category="list-text">網路：您熟悉伺服器網路和網路儲存設備、包括IP位址、網路遮罩和閘道。</block>
+  <block id="229a83df3c23d08a8495591aab99bf5b" category="paragraph">部署及安裝RTFI國際標準化組織（ISO）映像、並執行RTFI程序：</block>
+  <block id="4761cf42d3167c91f942aaa5770bce7b" category="list-text"><block ref="4761cf42d3167c91f942aaa5770bce7b" category="inline-xref-macro-rx"></block></block>
+  <block id="8e03dc636d7913fabfabd316d5e54ac0" category="list-text"><block ref="8e03dc636d7913fabfabd316d5e54ac0" category="inline-xref-macro-rx"></block></block>
+  <block id="82deed01641c36ab7f885c50d27dcaea" category="list-text"><block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block></block>
 </blocks>

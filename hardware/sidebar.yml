@@ -25,3 +25,13 @@ entries:
     url: "/hardware/task_sfseries_driverepl.html"
   - title: 更換電源供應器
     url: "/hardware/task_sfseries_psurepl.html"
+- title: 返回原廠映像資訊
+  entries:
+  - title: 設定「恢復原廠映像」
+    url: "/hardware/concept_rtfi_configure.html"
+  - title: RTFI部署與安裝選項
+    url: "/hardware/task_rtfi_deployment_and_install_options.html"
+  - title: RTFI程序
+    url: "/hardware/task_rtfi_process.html"
+  - title: RTFI選項功能表
+    url: "/hardware/task_rtfi_options_menu.html"

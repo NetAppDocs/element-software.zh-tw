@@ -1,0 +1,107 @@
+---
+permalink: hardware/task_rtfi_options_menu.html 
+sidebar: sidebar 
+keywords: rtfi, return, factory, image, menu, options, upload, logs 
+summary: 如果RTFI程序失敗、或您選擇在初始RTFI程序提示時不繼續、請瞭解RTFI功能表選項。 
+---
+= RTFI選項功能表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果RTFI程序失敗、或您選擇在初始RTFI程序提示時不繼續、則會出現下列選項功能表。
+
+image::../media/rtfi_menu_options.PNG[S還原RTFI功能表選項SolidFire]
+
+
+NOTE: 使用下列任何命令選項之前、請先聯絡NetApp支援部門。
+
+[cols="25,75"]
+|===
+| 選項 | 說明 
+
+
+| 重新開機 | 結束RTFI程序、並以目前狀態重新啟動節點。不執行任何清除。 
+
+
+| 關機 | 正常關閉節點的目前狀態。不執行任何清除。 
+
+
+| 結束 | 結束RTFI程序並開啟命令提示字元。 
+
+
+| 上傳記錄 | 收集系統上的所有記錄、並將單一整合式記錄歸檔上傳至指定的URL。 
+|===
+
+
+== 上傳記錄
+
+收集系統上的所有記錄、並根據下列程序將其上傳至指定的URL。
+
+.步驟
+. 在RTFI選項功能表提示字元中、輸入*上傳記錄*。
+. 輸入遠端目錄資訊：
++
+.. 輸入包含傳輸協定的URL。例如： `\ftp://,scp://,http://,orhttps://`。
+.. （選用）新增內嵌的使用者名稱和密碼。例如： `scp://user:password@URLaddress.com`。
++
+
+NOTE: 如需完整的語法選項、請參閱 https://curl.se/docs/manpage.html["捲髮"^] 使用手冊。
+
++
+記錄檔會上傳並儲存至指定的目錄、做為 `.tbz2` 歸檔：
+
+
+
+
+
+
+
+== 使用支援通道
+
+如果NetApp HCI 您需要支援您的整套系統或SolidFire 不完整的Flash儲存系統、NetApp支援中心可以遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。
+
+您可以開啟TCP連接埠、以便透過NetApp支援進行SSH反向通道連線。此連線可讓NetApp Support登入您的管理節點。
+
+.開始之前
+* 對於管理服務2.18及更新版本、預設會在管理節點上停用遠端存取功能。若要啟用遠端存取功能、請參閱 https://docs.netapp.com/us-en/element-software/mnode/task_mnode_ssh_management.html["管理管理節點上的SSH功能"]。
+* 如果您的管理節點位於Proxy伺服器後方、則在sshd.config檔案中需要下列TCP連接埠：
++
+[cols="15,25,60"]
+|===
+| TCP連接埠 | 說明 | 連線方向 
+
+
+| 443.. | API呼叫/HTTPS可透過開放式支援通道、將反向連接埠轉送至Web UI | 管理節點至儲存節點 
+
+
+| 22 | SSH登入存取權 | 管理節點至儲存節點、或從儲存節點至管理節點 
+|===
+
+
+.步驟
+* 登入管理節點、然後開啟終端機工作階段。
+* 出現提示時、輸入下列命令：
++
+"RST -r sfsupport.solidfire.com -u Element -p <port_number>'
+
+* 若要關閉遠端支援通道、請輸入下列命令：
++
+《RST——killall》
+
+* （選用）停用 https://docs.netapp.com/us-en/element-software/mnode/task_mnode_ssh_management.html["遠端存取功能"] 再一次。
++
+
+NOTE: 如果您未停用SSH、則會在管理節點上保持啟用狀態。啟用SSH的組態會持續在管理節點上進行更新和升級、直到手動停用為止。
+
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 資源頁面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
+
