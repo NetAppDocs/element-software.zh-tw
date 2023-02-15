@@ -6535,7 +6535,6 @@
   <block id="c658b81fa8392ad8358fa7025ef68471" category="paragraph">參與叢集的節點。</block>
   <block id="97ebf541060790cce82e6c290f39469d" category="paragraph">FpsDriveConfiguration</block>
   <block id="aa250ff7f0539ee77ebcbe694fb7ed8e" category="paragraph">指定節點是否支援FIPS 140-2認證磁碟機。</block>
-  <block id="9c67fd947bdf4fff7195660e494235a9" category="paragraph">HasLocalAdmin</block>
   <block id="e409ed502bfce3289786dde214400243" category="paragraph">指定叢集是否有本機管理員。</block>
   <block id="bc78880f602551cf8a3b259a0c962334" category="paragraph">MIPI</block>
   <block id="ed86fdb4761f4f49f190074a32c13e5a" category="paragraph">用於節點管理的網路介面。</block>
@@ -6740,20 +6739,14 @@
   <block id="79977a1e3f03ad6cd6db60900809cad0" category="list-text"><block ref="79977a1e3f03ad6cd6db60900809cad0" category="inline-xref-macro-rx"></block></block>
   <block id="b28198827844362b9840eaa3a5887d57" category="summary">「憑證詳細資料」物件包含安全性憑證的解碼資訊。</block>
   <block id="0a9b30c9586139e0c073136d4fd18c70" category="doc">認證詳細資料</block>
-  <block id="3e6c2bc1e7f7e5e8c450394c747a8e9f" category="paragraph">發卡行</block>
   <block id="73d85b1c5e216ad3b1af880670cf9dd8" category="paragraph">發卡行名稱。</block>
-  <block id="06efba23b1f3a9b846a25c6b49f30348" category="paragraph">模量</block>
   <block id="56b096d21f789ea9609f940b2a4322a1" category="paragraph">公開金鑰的模量。</block>
-  <block id="21f1ba3a4a4a624d712b87c23b2fd95a" category="paragraph">註釋</block>
   <block id="5c8e992f481a2a6e6a603859abf99469" category="paragraph">憑證的到期日。</block>
   <block id="4fdfd8255a7e267a28bb7fd1db1244e4" category="paragraph">ISO 8601字串</block>
-  <block id="cf2c84750b842aaa309ecba4d79ff935" category="paragraph">不需要</block>
   <block id="7ded06075abb3fd5e744484bb9307bdb" category="paragraph">憑證的開始日期。</block>
   <block id="74136b24217cb75599440e6e1d807cf7" category="paragraph">序列</block>
   <block id="adc31c3bcfc3c8de65322e54c047705a" category="paragraph">憑證序號。</block>
-  <block id="b1824a768eb2bedf4deb31cb0dda516e" category="paragraph">指紋辨識</block>
   <block id="6dcc496ee5f8b53f4418d8a4857de392" category="paragraph">憑證的NER編碼版本摘要。</block>
-  <block id="b5e3374e43f6544852f7751dfc529100" category="paragraph">主旨</block>
   <block id="cc6b1cfcd3f0936e0a3eb385e953846c" category="paragraph">主旨名稱。</block>
   <block id="0675989717444257ee49193cfedf79aa" category="summary">系統組態API方法可讓您取得及設定適用於叢集中所有節點的組態值。</block>
   <block id="7e2a8e5dd5f0b4898c61eb4d967138c9" category="doc">系統組態API方法</block>
@@ -9360,20 +9353,14 @@
   <block id="b0d4998a26f5b5742ad38c4af8817e32" category="section-title">例外狀況</block>
   <block id="6600e165e737771fdf338ff10bde41b8" category="paragraph">當調用「建立Snapshot」API且無法建立快照時、會顯示xNotPrimary例外狀況。這是預期的行為。重試「建立Snapshot」API呼叫。</block>
   <block id="da77bcc62101c9ebe41a2f69ed7a225a" category="summary">驗證工作階段資訊物件包含驗證工作階段的相關資訊。</block>
-  <block id="82c11ba1b42b51fd5186ac3c7832d4bd" category="paragraph">存取群組清單</block>
   <block id="c3d46917e290d42cf79506e2c6965017" category="paragraph">使用者的存取群組清單。</block>
   <block id="526df192a30d9e2d44f794b48cc12b73" category="list-text">LDAP -透過LDAP驗證。</block>
   <block id="369baf374646153c348856b9bf69414e" category="list-text">叢集：透過儲存在叢集資料庫中的使用者名稱和密碼進行驗證。</block>
   <block id="108afc331184fa4802c5a75fa48d8ab1" category="list-text">IDP -透過第三方身分識別供應商驗證。</block>
-  <block id="4eec019ba04132017c6c3764134d1ef2" category="paragraph">叢集管理ID</block>
   <block id="afcdcd750f1faaba6c546e08e1c73321" category="paragraph">與此工作階段相關聯的叢集管理ID清單。對於與LDAP或協力廠商身分識別供應商（IDP）相關的工作階段、此為與此工作階段相關之相符叢集管理ID的集合清單。</block>
-  <block id="fb5b30c6a1ea9f43fae8c0f01394f49f" category="paragraph">finaltimeout</block>
   <block id="505254db0f83c0910f746d08a7ac99f6" category="paragraph">工作階段變成無效的時間。這是在建立工作階段且無法變更時設定。</block>
-  <block id="35da4f44f342c2e389dd9b58f96947e1" category="paragraph">idpConfigVersion</block>
   <block id="7493515074b71edb089561f159ebb34a" category="paragraph">建立工作階段時的IDP組態版本。</block>
-  <block id="f48a7a8ee3be3d137267127a48f03a62" category="paragraph">lastAccesstimeout</block>
   <block id="1ed06e45935396a9ca1b25f06cbe7d51" category="paragraph">工作階段因為閒置而變成無效的時間。當存取工作階段以供使用時、會設定為新值、直到工作階段因達到final超 時而變成無效為止。</block>
-  <block id="4dfdaa2c889da42ffa384535c55bad20" category="paragraph">工作區建立時間</block>
   <block id="565b17feb5f1306aceb85856370e9622" category="paragraph">建立工作階段的時間。</block>
   <block id="f4d70d668878643ca29fcc21e27945c7" category="paragraph">此工作階段的UUID。</block>
   <block id="4c98b9454b129bf78626cc14d0d0850a" category="paragraph">與此工作階段相關的使用者名稱。對於LDAP相關的工作階段、此為使用者的LDAP DN。對於與第三方IDP相關的工作階段、這將是任意名稱值配對、用於工作階段內的稽核作業。它不一定符合叢集上的叢集管理名稱。例如、SAML Subject NameID、但這將由IDP的組態和SAML聲明的結果內容來決定。</block>
@@ -9923,7 +9910,6 @@
   <block id="fe1532b8f67436b0e037882801f5612d" category="paragraph">Volume活動資訊清單。</block>
   <block id="4f4d5661536c011a5b741adcc4ef375e" category="summary">BulkVolume工作物件包含大量磁碟區讀取或寫入作業的相關資訊、例如複製或建立快照。</block>
   <block id="1d6615a239aa12c4eedb118a5825a76c" category="paragraph">大量Volume工作的Json屬性。</block>
-  <block id="f2553a2f3501d5cc5d30d57cc0c0b93a" category="paragraph">艙壁Volume ID</block>
   <block id="da0bf234ebace510e62766d4c16cdedb" category="paragraph">內部大量Volume工作ID。</block>
   <block id="f4c609fc8cfe4b4af500d9b32efdeef8" category="paragraph">為大量Volume工作建立的時間戳記、格式為UTC+0。</block>
   <block id="11e18bb72465b19d35f1a1fb2d9a5ccc" category="paragraph">自工作開始以來的秒數。</block>
@@ -10270,15 +10256,12 @@
   <block id="4a3f50147c005db3b3cd043c697d79dc" category="paragraph">AddVolume ToVolume存取群組</block>
   <block id="661e8b5e13fd1b6d2cb95e7fd1ddc6da" category="summary">繫結物件包含有關虛擬磁碟區繫結的資訊。您可以使用listVirtualVolume Bindings API方法擷取所有虛擬磁碟區的此資訊清單。</block>
   <block id="ed803bf4b6c9b034d91b1bdcafdf1630" category="paragraph">繫結物件包含有關虛擬磁碟區繫結的資訊。您可以使用「listVirtualVolume Bindings」API方法、擷取所有虛擬磁碟區的此資訊清單。</block>
-  <block id="c086097777745f6e58e7c869ddec22a4" category="paragraph">傳輸協議EndpointInBandID</block>
   <block id="8a243326e7441ff313e43923a78d3938" category="paragraph">傳輸協定端點的scsiAADevice ID。</block>
   <block id="2451a5f865d1a4f95ca8ac13d9327804" category="paragraph">傳輸協議EndpointType</block>
   <block id="39c4c08e56ab2d685095d11aeb7862c5" category="paragraph">傳輸協定端點的類型。SCSI是唯一傳回的傳輸協定端點類型值。</block>
-  <block id="ead0832c7060f9a01d951958eea89b12" category="paragraph">虛擬Volume BindingID</block>
   <block id="a7fae1ef625697c5a7a612dfdc0dd0d9" category="paragraph">虛擬Volume繫結物件的唯一ID。</block>
   <block id="853cc9c778b55f73c37ae904ccaf8ca0" category="paragraph">虛擬化Volume HostID</block>
   <block id="074caad1387db91896ed65e6b9d15794" category="paragraph">虛擬Volume主機的唯一ID。</block>
-  <block id="a84d0d7286faa74ea242283b2a577249" category="paragraph">虛擬化Volume第二個ID</block>
   <block id="61f0f68050db0e3a705d867283012dc9" category="paragraph">虛擬Volume的次要ID。</block>
   <block id="82ff921a595431c2c3f9e1fe413e1d2d" category="summary">Element軟體Web UI使用清單SnapMirrorSchedules方法來取得遠端ONTAP 故障叢集上可用的排程清單。</block>
   <block id="a6ebb59fdde64957a372f78f31f217b7" category="paragraph">Element軟體Web UI使用「ListSnapMirrorSchedules」方法來取得遠端ONTAP 故障叢集上可用的排程清單。</block>
@@ -12628,7 +12611,6 @@
   <block id="9a5aa1da869b4040f524ae9785b78f21" category="list-text">驗證並更新韌體。</block>
   <block id="2c3ebc91d3c23ca65bb699ec2b7ccfcf" category="list-text">檢查硬體。</block>
   <block id="2b91c89dcd1e48919f86878407ad759b" category="list-text">測試硬體。</block>
-  <block id="efed937b7067e3b9aff1eba0422c2d61" category="list-text">安全清除所有選取的磁碟機。</block>
   <block id="3f534029ecbb9b48b864fc3a278db0fc" category="list-text">分割根磁碟機並建立檔案系統。</block>
   <block id="7c0a0dd3952f3fc7de494542cdc6269b" category="list-text">掛載及解壓縮映像。</block>
   <block id="4ce2c84b00ef7e76a2a9152b9d37a5a9" category="list-text">設定主機名稱、網路連線（動態主機組態傳輸協定）、預設叢集組態和Grub開機載入器。</block>
@@ -12676,4 +12658,56 @@
   <block id="98f034cb87c1c327b13fbbbb31bc622b" category="paragraph">如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 <block ref="4761cf42d3167c91f942aaa5770bce7b" category="inline-xref-macro-rx"></block>。</block>
   <block id="a386fc287fd28e52c07d586cfb7aa08b" category="admonition">所有資料和組態詳細資料都會在程序啟動後從節點永久清除。如果您選擇不繼續、系統會將您導向至 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
   <block id="d9730da4fb3635f5ccd1c078266c9334" category="paragraph">如果您在RTFI程序期間遇到錯誤訊息、請參閱 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
+  <block id="fe87b6b5d8e86013cf5abe3db7879c77" category="list-text">安全清除所有選取的磁碟機。</block>
+  <block id="bc00f70999910793cca72a5ef73422f0" category="paragraph"><block ref="09baf477e57e7f3831d71c16e6539e63" prefix="" category="inline-code"></block></block>
+  <block id="4f6db9bf27ec4feede510bacf8ddd895" category="paragraph"><block ref="c086097777745f6e58e7c869ddec22a4" prefix="" category="inline-code"></block></block>
+  <block id="b480699d7320465070d3fca77728913e" category="paragraph"><block ref="2451a5f865d1a4f95ca8ac13d9327804" prefix="" category="inline-code"></block></block>
+  <block id="34b7e74a069a54a1e4ffcf70f86b3f1b" category="paragraph"><block ref="ead0832c7060f9a01d951958eea89b12" prefix="" category="inline-code"></block></block>
+  <block id="a75e5e3d3f2c0949b2e73a455424475f" category="paragraph"><block ref="853cc9c778b55f73c37ae904ccaf8ca0" prefix="" category="inline-code"></block></block>
+  <block id="dc9b3cdab12de90c933e458b684ea2cb" category="paragraph"><block ref="20d2528785eba01be62c63ef88a34df2" prefix="" category="inline-code"></block></block>
+  <block id="071343dbc99e7d53be5805eed2fea27c" category="paragraph"><block ref="a84d0d7286faa74ea242283b2a577249" prefix="" category="inline-code"></block></block>
+  <block id="cd11615fedd7d5c8dc795d237158ffe3" category="paragraph">。<block ref="0a9b30c9586139e0c073136d4fd18c70" prefix=" " category="inline-code"></block> 物件包含安全性憑證的解碼資訊。</block>
+  <block id="911cdd7166115e429e8e70db0235eac5" category="paragraph"><block ref="3e6c2bc1e7f7e5e8c450394c747a8e9f" prefix="" category="inline-code"></block></block>
+  <block id="b86a341954a6c06a28a76002d65b3475" category="paragraph"><block ref="06efba23b1f3a9b846a25c6b49f30348" prefix="" category="inline-code"></block></block>
+  <block id="1816a44ebe9e35500b1a4ff4f239779c" category="paragraph"><block ref="21f1ba3a4a4a624d712b87c23b2fd95a" prefix="" category="inline-code"></block></block>
+  <block id="908fc73b554678fd09029defca345c56" category="paragraph"><block ref="cf2c84750b842aaa309ecba4d79ff935" prefix="" category="inline-code"></block></block>
+  <block id="601eb78012ee07bb2d1a1f4f756579dd" category="paragraph"><block ref="74136b24217cb75599440e6e1d807cf7" prefix="" category="inline-code"></block></block>
+  <block id="dc1a9e1c0f6c00bb17722cc697bf15b1" category="paragraph"><block ref="b1824a768eb2bedf4deb31cb0dda516e" prefix="" category="inline-code"></block></block>
+  <block id="d417475e5f494306cb8c0eb5b719ac56" category="paragraph"><block ref="b5e3374e43f6544852f7751dfc529100" prefix="" category="inline-code"></block></block>
+  <block id="5b2dcbbe8c405b31e0cdc640023557e4" category="paragraph">。<block ref="27dc8ad0ed4686d1401b38ad85126f2f" prefix=" " category="inline-code"></block> 物件包含大量磁碟區讀取或寫入作業的相關資訊、例如複製或建立快照。</block>
+  <block id="126f16f91505e64f86d9db2c760ac5db" category="paragraph"><block ref="f2553a2f3501d5cc5d30d57cc0c0b93a" prefix="" category="inline-code"></block></block>
+  <block id="40aef4b729106c75a0482b701239db2f" category="paragraph"><block ref="1ed2e1b19b6e55d52d2473be17a4afd9" prefix="" category="inline-code"></block></block>
+  <block id="79b0fc8232087a8f03086cf06b588075" category="paragraph"><block ref="dad566b38c7c4c71d805927e9fff2732" prefix="" category="inline-code"></block></block>
+  <block id="703769be5e6210b6a2b6b99e92112954" category="paragraph"><block ref="1ddcb92ade31c8fbd370001f9b29a7d9" prefix="" category="inline-code"></block></block>
+  <block id="b5f22048829ef6db41cb34c651f96faa" category="paragraph"><block ref="3c6e0b8a9c15224a8228b9a98ca1531d" prefix="" category="inline-code"></block></block>
+  <block id="e1e059b40b75849ff9dc719eda5e6c12" category="paragraph"><block ref="69f891d47e66aaa0a968e3fbd070d4a5" prefix="" category="inline-code"></block></block>
+  <block id="0098d750e60da9805e878840bb54382c" category="paragraph"><block ref="ab9b69f140a1e5d13d4862be384ae223" prefix="" category="inline-code"></block></block>
+  <block id="b00941d91b64405f0e06c47a2bed5051" category="paragraph"><block ref="87a17a82989223258916f440886481da" prefix="" category="inline-code"></block></block>
+  <block id="cf9f9fbbb24544659ae4b59937ecb570" category="paragraph"><block ref="9acb44549b41563697bb490144ec6258" prefix="" category="inline-code"></block></block>
+  <block id="f69685a2b9996f27af921b74f37fc276" category="paragraph"><block ref="3205c0ded576131ea255ad2bd38b0fb2" prefix="" category="inline-code"></block></block>
+  <block id="415ce7b551e9decd6aac5fb465bd367b" category="paragraph"><block ref="599dcce2998a6b40b1e38e8c6006cb0a" prefix="" category="inline-code"></block></block>
+  <block id="12429662b50426169e15a3a0bd812b77" category="paragraph">。<block ref="e268443e43d93dab7ebef303bbe9642f" prefix=" " category="inline-code"></block> 物件包含帳戶的相關資訊。此物件僅包含有關帳戶的「已設定」資訊、而非任何執行時間或使用資訊。</block>
+  <block id="0dda361a1e4bd829ec9b993595439c8e" category="paragraph"><block ref="b5e57de5ff2c469efbf205bb99834e4f" prefix="" category="inline-code"></block></block>
+  <block id="41f57963afb778a9cf4af334962398d7" category="paragraph">。<block ref="9a43554262146ce04817985e50c7f70c" prefix=" " category="inline-code"></block> 物件包含驗證工作階段的相關資訊。</block>
+  <block id="9743ba415832304c7f52901372714d6e" category="paragraph"><block ref="82c11ba1b42b51fd5186ac3c7832d4bd" prefix="" category="inline-code"></block></block>
+  <block id="65b21ce2c38e6e4f476acbc8ea9ce384" category="paragraph"><block ref="304a19f5c3e0f3f28ed7e5b4fb7d8d2a" prefix="" category="inline-code"></block></block>
+  <block id="2e952bf746164dfd12e866f3dbd95eec" category="paragraph"><block ref="4eec019ba04132017c6c3764134d1ef2" prefix="" category="inline-code"></block></block>
+  <block id="1e1823963d07a2a9ba48e6b2ab3650cc" category="paragraph"><block ref="fb5b30c6a1ea9f43fae8c0f01394f49f" prefix="" category="inline-code"></block></block>
+  <block id="d6f258a79c95d563a0c1a60d24eb84be" category="paragraph"><block ref="35da4f44f342c2e389dd9b58f96947e1" prefix="" category="inline-code"></block></block>
+  <block id="94afa8129819dea3954e0bcf8f7ab7d6" category="paragraph"><block ref="f48a7a8ee3be3d137267127a48f03a62" prefix="" category="inline-code"></block></block>
+  <block id="613b7cd1773d945213f4a726f91f33a8" category="paragraph"><block ref="4dfdaa2c889da42ffa384535c55bad20" prefix="" category="inline-code"></block></block>
+  <block id="8afa9e195204d51d1efe73295a663915" category="paragraph"><block ref="0ad941b537a927186263b578e28bfd9b" prefix="" category="inline-code"></block></block>
+  <block id="b0c8b2bc285eb35c1d17ebbae099e249" category="paragraph">。<block ref="545969892e468dfdfc30bb51ffc1c34c" prefix=" " category="inline-code"></block> 物件會傳回節點用來與叢集通訊的資訊。</block>
+  <block id="a38be2de7d274cb8f8108c988ad1c46c" category="paragraph"><block ref="9d08802b313fb8797710d67e55eab896" prefix="" category="inline-code"></block></block>
+  <block id="fa1b1a3e69fb166e323727016fdf6333" category="paragraph"><block ref="a43baddbf2cfaa154f9947e47ee1bfe7" prefix="" category="inline-code"></block></block>
+  <block id="099b42f75c3fbe5c8a528cddcf8819d8" category="paragraph"><block ref="52406e4baf76901e487aadaec67e88ea" prefix="" category="inline-code"></block></block>
+  <block id="d6498c1d07f3702d50a3040ed94f4c63" category="paragraph"><block ref="97ebf541060790cce82e6c290f39469d" prefix="" category="inline-code"></block></block>
+  <block id="9f114e4fa4e7a73268f48f07ea634b02" category="paragraph"><block ref="9c67fd947bdf4fff7195660e494235a9" prefix="" category="inline-code"></block></block>
+  <block id="846405f66574e2c563fc65824e44736b" category="paragraph"><block ref="bc78880f602551cf8a3b259a0c962334" prefix="" category="inline-code"></block></block>
+  <block id="1c63edaccfcb01f1b29cad1cde92f5fd" category="paragraph"><block ref="62ba2c7a16dc89d75e021db678437e35" prefix="" category="inline-code"></block></block>
+  <block id="e31c0062aabb26e49279bbec3cbeb4ed" category="paragraph"><block ref="211df989e77735e4541c48f3cfd7e7b4" prefix="" category="inline-code"></block></block>
+  <block id="6739976c44cd4126fc58284566f9b7d2" category="paragraph"><block ref="29a7e96467b69a9f5a93332e29e9b0de" prefix="" category="inline-code"></block></block>
+  <block id="6232a2f1b30c3036b5c008529bc21aef" category="paragraph"><block ref="cfc64b55d03850e2ab017f7286375f5d" prefix="" category="inline-code"></block></block>
+  <block id="01e67269f053fa497a470b13c81ac40c" category="paragraph"><block ref="9ed39e2ea931586b6a985a6942ef573e" prefix="" category="inline-code"></block></block>
+  <block id="7877022c956918624cc0373ff564cad4" category="paragraph"><block ref="2af72f100c356273d46284f6fd1dfc08" prefix="" category="inline-code"></block></block>
 </blocks>

@@ -24,7 +24,7 @@ summary: 繫結物件包含有關虛擬磁碟區繫結的資訊。您可以使�
 
 
  a| 
-傳輸協議EndpointID
+`protocolEndpointID`
  a| 
 傳輸協定端點的唯一ID。
  a| 
@@ -33,7 +33,7 @@ UUID
 
 
  a| 
-傳輸協議EndpointInBandID
+`protocolEndpointInBandID`
  a| 
 傳輸協定端點的scsiAADevice ID。
  a| 
@@ -42,7 +42,7 @@ UUID
 
 
  a| 
-傳輸協議EndpointType
+`protocolEndpointType`
  a| 
 傳輸協定端點的類型。SCSI是唯一傳回的傳輸協定端點類型值。
  a| 
@@ -51,7 +51,7 @@ UUID
 
 
  a| 
-虛擬Volume BindingID
+`virtualVolumeBindingID`
  a| 
 虛擬Volume繫結物件的唯一ID。
  a| 
@@ -60,7 +60,7 @@ UUID
 
 
  a| 
-虛擬化Volume HostID
+`virtualVolumeHostID`
  a| 
 虛擬Volume主機的唯一ID。
  a| 
@@ -69,7 +69,7 @@ UUID
 
 
  a| 
-虛擬Volume ID
+`virtualVolumeID`
  a| 
 虛擬Volume的唯一ID。
  a| 
@@ -78,7 +78,7 @@ UUID
 
 
  a| 
-虛擬化Volume第二個ID
+`virtualVolumeSecondaryID`
  a| 
 虛擬Volume的次要ID。
  a| 

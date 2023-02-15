@@ -11,7 +11,7 @@ summary: clusterconfig物件會傳回節點用來與叢集通訊的資訊。
 
 
 [role="lead"]
-clusterconfig物件會傳回節點用來與叢集通訊的資訊。
+。 `clusterConfig` 物件會傳回節點用來與叢集通訊的資訊。
 
 
 
@@ -24,7 +24,7 @@ clusterconfig物件會傳回節點用來與叢集通訊的資訊。
 
 
  a| 
-西文
+`cipi`
  a| 
 用於叢集通訊的網路介面。
  a| 
@@ -33,7 +33,7 @@ clusterconfig物件會傳回節點用來與叢集通訊的資訊。
 
 
  a| 
-叢集
+《叢集》
  a| 
 叢集的唯一名稱。
  a| 
@@ -42,7 +42,7 @@ clusterconfig物件會傳回節點用來與叢集通訊的資訊。
 
 
  a| 
-可加密的Capable
+`encryptionCapable`
  a| 
 指定節點是否支援加密。
  a| 
@@ -51,7 +51,7 @@ clusterconfig物件會傳回節點用來與叢集通訊的資訊。
 
 
  a| 
-頻道群
+`ensemble`
  a| 
 參與叢集的節點。
  a| 
@@ -60,7 +60,7 @@ clusterconfig物件會傳回節點用來與叢集通訊的資訊。
 
 
  a| 
-FpsDriveConfiguration
+`fipsDriveConfiguration`
  a| 
 指定節點是否支援FIPS 140-2認證磁碟機。
  a| 
@@ -69,7 +69,7 @@ FpsDriveConfiguration
 
 
  a| 
-HasLocalAdmin
+`hasLocalAdmin`
  a| 
 指定叢集是否有本機管理員。
  a| 
@@ -78,7 +78,7 @@ HasLocalAdmin
 
 
  a| 
-MIPI
+`mipi`
  a| 
 用於節點管理的網路介面。
  a| 
@@ -96,7 +96,7 @@ MIPI
 
 
  a| 
-節點ID
+`nodeID`
  a| 
 節點的唯一識別碼。
  a| 
@@ -105,7 +105,7 @@ MIPI
 
 
  a| 
-pendingNodeID
+`pendingNodeID`
  a| 
 擱置節點的唯一識別碼。
  a| 
@@ -114,7 +114,7 @@ pendingNodeID
 
 
  a| 
-角色
+`role`
  a| 
 識別節點的角色。
  a| 
@@ -123,7 +123,7 @@ pendingNodeID
 
 
  a| 
-SIPI
+`sipi`
  a| 
 用於儲存的網路介面。
  a| 
@@ -132,7 +132,7 @@ SIPI
 
 
  a| 
-州/省
+`state`
  a| 
 表示節點的狀態。
  a| 
@@ -141,7 +141,7 @@ SIPI
 
 
  a| 
-版本
+`version`
  a| 
 指出節點的版本。
  a| 

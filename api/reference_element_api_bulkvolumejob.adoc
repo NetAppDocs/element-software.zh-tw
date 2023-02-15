@@ -11,7 +11,7 @@ summary: BulkVolume工作物件包含大量磁碟區讀取或寫入作業的相�
 
 
 [role="lead"]
-BulkVolume工作物件包含大量磁碟區讀取或寫入作業的相關資訊、例如複製或建立快照。
+。 `bulkVolumeJob` 物件包含大量磁碟區讀取或寫入作業的相關資訊、例如複製或建立快照。
 
 
 
@@ -33,7 +33,7 @@ Json物件
 
 
  a| 
-艙壁Volume ID
+`bulkVolumeID`
  a| 
 內部大量Volume工作ID。
  a| 
@@ -42,7 +42,7 @@ Json物件
 
 
  a| 
-CREATETIM
+`createTime`
  a| 
 為大量Volume工作建立的時間戳記、格式為UTC+0。
  a| 
@@ -51,7 +51,7 @@ ISO 8601日期字串
 
 
  a| 
-所經過的時間
+`elapsedTime`
  a| 
 自工作開始以來的秒數。
  a| 
@@ -60,7 +60,7 @@ ISO 8601日期字串
 
 
  a| 
-格式
+`format`
  a| 
 大量Volume作業的格式。可能值：
 
@@ -73,7 +73,7 @@ ISO 8601日期字串
 
 
  a| 
-金鑰
+`key`
  a| 
 大量Volume工作階段所建立的唯一金鑰。
  a| 
@@ -82,7 +82,7 @@ ISO 8601日期字串
 
 
  a| 
-完成百分比
+`percentComplete`
  a| 
 營運報告的已完成百分比。
  a| 
@@ -91,7 +91,7 @@ ISO 8601日期字串
 
 
  a| 
-剩餘時間
+`remainingTime`
  a| 
 預估剩餘時間（以秒為單位）。
  a| 
@@ -100,7 +100,7 @@ ISO 8601日期字串
 
 
  a| 
-srcVolume ID
+`srcVolumeID`
  a| 
 來源Volume ID。
  a| 
@@ -109,7 +109,7 @@ srcVolume ID
 
 
  a| 
-狀態
+`status`
  a| 
 作業的狀態。可能值：
 
@@ -124,7 +124,7 @@ srcVolume ID
 
 
  a| 
-指令碼
+`script`
  a| 
 提供指令碼的名稱（如果有）。
  a| 
@@ -133,7 +133,7 @@ srcVolume ID
 
 
  a| 
-Snapshot ID
+「快照ID」
  a| 
 如果快照位於大量Volume工作的來源中、則為快照的ID。
  a| 
@@ -142,7 +142,7 @@ Snapshot ID
 
 
  a| 
-類型
+`type`
  a| 
 大量作業的類型。可能值：
 

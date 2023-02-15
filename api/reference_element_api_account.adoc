@@ -11,7 +11,7 @@ summary: 帳戶物件包含帳戶的相關資訊。此物件僅包含有關帳�
 
 
 [role="lead"]
-帳戶物件包含帳戶的相關資訊。此物件僅包含有關帳戶的「已設定」資訊、而非任何執行時間或使用資訊。
+。 `account` 物件包含帳戶的相關資訊。此物件僅包含有關帳戶的「已設定」資訊、而非任何執行時間或使用資訊。
 
 
 
@@ -24,7 +24,7 @@ summary: 帳戶物件包含帳戶的相關資訊。此物件僅包含有關帳�
 
 
  a| 
-帳戶ID
+《AccountID》
  a| 
 帳戶的唯一帳戶ID。
  a| 
@@ -42,7 +42,7 @@ Json物件
 
 
  a| 
-enableChap
+「enableChap」
  a| 
 指定啟動器是否可以使用CHAP帳戶認證來存取磁碟區。
  a| 
@@ -51,7 +51,7 @@ enableChap
 
 
  a| 
-初始化者機密
+「初始者秘密」
  a| 
 啟動器CHAP機密。
  a| 
@@ -60,7 +60,7 @@ enableChap
 
 
  a| 
-狀態
+`status`
  a| 
 帳戶的目前狀態。可能值：
 
@@ -74,7 +74,7 @@ enableChap
 
 
  a| 
-storageContainerID
+`storageContainerID`
  a| 
 與此帳戶相關聯之虛擬Volume儲存容器的唯一ID。
  a| 
@@ -83,7 +83,7 @@ UUID
 
 
  a| 
-目標機密
+《目標祕密》
  a| 
 目標CHAP機密。
  a| 
@@ -92,7 +92,7 @@ UUID
 
 
  a| 
-使用者名稱
+《使用者名稱》
  a| 
 帳戶的使用者名稱。
  a| 
@@ -101,7 +101,7 @@ UUID
 
 
  a| 
-磁碟區
+《Volume》（Volume）
  a| 
 此帳戶擁有之磁碟區的Volume ID清單。
  a| 
