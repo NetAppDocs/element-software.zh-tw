@@ -1,19 +1,6 @@
----
-permalink: storage/reference_monitor_cluster_fault_codes.html 
-sidebar: sidebar 
-keywords: cluster fault codes, alerts, error codes, view 
-summary: 系統會產生故障代碼、報告可能感興趣的錯誤或狀態、此故障代碼列於警示頁面上。這些代碼可協助您判斷系統的哪個元件遇到警示、以及產生警示的原因。 
----
-= 叢集故障代碼
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
-
-[role="lead"]
-系統會產生故障代碼、報告可能感興趣的錯誤或狀態、此故障代碼列於警示頁面上。這些代碼可協助您判斷系統的哪個元件遇到警示、以及產生警示的原因。
-
-下列清單概述不同類型的代碼：
 
 * *驗證服務預設*
 +
