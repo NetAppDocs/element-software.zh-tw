@@ -26,9 +26,9 @@ WARNING: RTFI程序具有資料破壞性、可安全地清除節點的所有資�
 
 部署及安裝RTFI國際標準化組織（ISO）映像、並執行RTFI程序：
 
-* xref:task_rtfi_deployment_and_install_options.html[RTFI部署與安裝選項]
-* xref:task_rtfi_process.html[執行RTFI程序]
-* xref:task_rtfi_options_menu.html[RTFI選項功能表]
+* xref:task_rtfi_deployment_and_install_options.adoc[RTFI部署與安裝選項]
+* xref:task_rtfi_process.adoc[執行RTFI程序]
+* xref:task_rtfi_options_menu.adoc[RTFI選項功能表]
 
 
 

@@ -40,7 +40,7 @@ RTFI程序會執行下列高層級作業：
 
 請使用下列程序還原SolidFire 您的節點上的Element軟體。
 
-如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 xref:task_rtfi_deployment_and_install_options.html[RTFI部署與安裝選項]。
+如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 xref:task_rtfi_deployment_and_install_options.adoc[RTFI部署與安裝選項]。
 
 .開始之前
 確認您符合下列要求：

@@ -12626,10 +12626,6 @@
   <block id="6488398a09e5e3619c68849839032852" category="list-text">Linux：您有一些Linux系統背景。</block>
   <block id="88a314dd47a5b577c9b424a096c7a9e8" category="list-text">網路：您熟悉伺服器網路和網路儲存設備、包括IP位址、網路遮罩和閘道。</block>
   <block id="229a83df3c23d08a8495591aab99bf5b" category="paragraph">部署及安裝RTFI國際標準化組織（ISO）映像、並執行RTFI程序：</block>
-  <block id="4761cf42d3167c91f942aaa5770bce7b" category="list-text"><block ref="4761cf42d3167c91f942aaa5770bce7b" category="inline-xref-macro-rx"></block></block>
-  <block id="8e03dc636d7913fabfabd316d5e54ac0" category="list-text"><block ref="8e03dc636d7913fabfabd316d5e54ac0" category="inline-xref-macro-rx"></block></block>
-  <block id="82deed01641c36ab7f885c50d27dcaea" category="list-text"><block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block></block>
-  <block id="98f034cb87c1c327b13fbbbb31bc622b" category="paragraph">如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 <block ref="4761cf42d3167c91f942aaa5770bce7b" category="inline-xref-macro-rx"></block>。</block>
   <block id="a386fc287fd28e52c07d586cfb7aa08b" category="admonition">所有資料和組態詳細資料都會在程序啟動後從節點永久清除。如果您選擇不繼續、系統會將您導向至 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
   <block id="d9730da4fb3635f5ccd1c078266c9334" category="paragraph">如果您在RTFI程序期間遇到錯誤訊息、請參閱 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
   <block id="fe87b6b5d8e86013cf5abe3db7879c77" category="list-text">安全清除所有選取的磁碟機。</block>
@@ -12725,4 +12721,8 @@
   <block id="2f2028a01cc26368c3f4daa01753e427" category="paragraph">檢查網路連線問題和硬體錯誤。如果特定的硬體元件故障、將會發生其他故障。當可存取Slice服務或服務已停用時、故障將會清除。</block>
   <block id="19ea2f91b3ae961be9e609088755c628" category="paragraph">若要解決此問題、請繼續升級、或聯絡NetApp支援部門以尋求協助。</block>
   <block id="9672f91e71f82d57d55bef9837c3723c" category="list-text">節點上有多餘的介面。</block>
+  <block id="4de84bc0dceded350b6aa7db34f7e00d" category="paragraph">如需建立USB金鑰或使用BMC執行RTFI程序的相關資訊、請參閱 <block ref="51de7a2a44178422229997edab051ac7" category="inline-xref-macro-rx"></block>。</block>
+  <block id="51de7a2a44178422229997edab051ac7" category="list-text"><block ref="51de7a2a44178422229997edab051ac7" category="inline-xref-macro-rx"></block></block>
+  <block id="8f047e2b521fd8a37be46c7a429ab25b" category="list-text"><block ref="8f047e2b521fd8a37be46c7a429ab25b" category="inline-xref-macro-rx"></block></block>
+  <block id="c2350b958761f326a00bd673fc30fdae" category="list-text"><block ref="c2350b958761f326a00bd673fc30fdae" category="inline-xref-macro-rx"></block></block>
 </blocks>
