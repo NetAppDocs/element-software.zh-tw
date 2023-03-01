@@ -11,12 +11,12 @@ summary: 您可以在聯絡NetApp支援部門並完成初步步驟之後、關�
 
 
 [role="lead"]
-您可以在聯絡NetApp支援部門並完成初步步驟之後、關閉整個叢集的電源。
+請執行下列程序來關閉整個叢集的電源。
 
-執行下列動作、準備叢集以關機：
-
-* 停止所有I/O
-* 中斷所有iSCSI工作階段的連線。
+.步驟
+. （選用）聯絡NetApp支援部門、以協助您完成初步步驟。
+. 確認所有I/O都已停止。
+. 中斷所有iSCSI工作階段的連線：
 +
 .. 瀏覽至叢集上的管理虛擬IP（MVIP）位址、以開啟Element UI。
 .. 請注意節點清單中所列的節點。
@@ -24,3 +24,21 @@ summary: 您可以在聯絡NetApp支援部門並完成初步步驟之後、關�
 
 
 
+
+[NOTE]
+====
+重新啟動叢集時、您必須遵循特定步驟來驗證所有節點是否都已上線：
+
+. 確認所有的「嚴重」嚴重性和 `volumesOffline` 叢集故障已解決。
+. 等待10至15分鐘、讓叢集穩定運作。
+. 開始啟動主機以存取資料。
+
+
+如果您想在開啟節點電源並在維護後驗證節點是否正常運作時、留出更多時間、請聯絡技術支援部門以協助延遲資料同步、以避免不必要的Bin同步。
+
+====
+
+
+== 如需詳細資訊、請參閱
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_to_gracefully_shut_down_and_power_on_a_NetApp_Solidfire_HCI_storage_cluster["如何在NetApp Solidfire / HCI儲存叢集上正常關機並開機"^]

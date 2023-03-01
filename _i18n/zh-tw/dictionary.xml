@@ -1185,9 +1185,6 @@
   <block id="6d2d5dc3ebab24294dc7859d220e2e29" category="list-text">從清單中選取*帳戶*、以與新的磁碟區建立關聯。</block>
   <block id="25145b9df35ba6ef8386c92cbc7e67aa" category="summary">您可以在聯絡NetApp支援部門並完成初步步驟之後、關閉整個叢集的電源。</block>
   <block id="d3dc741b1e26e016be52c0a55b325fda" category="doc">關閉叢集電源</block>
-  <block id="7e75e710e04194aacb5b7f056ec5e471" category="paragraph">執行下列動作、準備叢集以關機：</block>
-  <block id="7bf4e8d030b2c47061505b2052e7e3c8" category="list-text">停止所有I/O</block>
-  <block id="c1fc137e8581e89d2a694ed758b29c11" category="list-text">中斷所有iSCSI工作階段的連線。</block>
   <block id="52774163f10fbc297ca1a2188d7b81c9" category="list-text">瀏覽至叢集上的管理虛擬IP（MVIP）位址、以開啟Element UI。</block>
   <block id="ecb5391ff71658726fe4fbade2f9af5e" category="list-text">請注意節點清單中所列的節點。</block>
   <block id="7a9ac18ef12501dac2ab0cc718dd03a4" category="list-text">使用叢集中每個節點ID上指定的halt選項來執行「關機API」方法。</block>
@@ -12725,4 +12722,15 @@
   <block id="51de7a2a44178422229997edab051ac7" category="list-text"><block ref="51de7a2a44178422229997edab051ac7" category="inline-xref-macro-rx"></block></block>
   <block id="8f047e2b521fd8a37be46c7a429ab25b" category="list-text"><block ref="8f047e2b521fd8a37be46c7a429ab25b" category="inline-xref-macro-rx"></block></block>
   <block id="c2350b958761f326a00bd673fc30fdae" category="list-text"><block ref="c2350b958761f326a00bd673fc30fdae" category="inline-xref-macro-rx"></block></block>
+  <block id="57d4d715f0b6238380a88647e5064ab7" category="paragraph">請執行下列程序來關閉整個叢集的電源。</block>
+  <block id="69824b5487e4b72a56fe97cb153b7404" category="list-text">（選用）聯絡NetApp支援部門、以協助您完成初步步驟。</block>
+  <block id="f901f3a344a86528165d6bab6500fbc5" category="list-text">確認所有I/O都已停止。</block>
+  <block id="f0b8c58f8c65aac7a69a51384ac1a649" category="list-text">中斷所有iSCSI工作階段的連線：</block>
+  <block id="391aec42faef3b52d4eaaefa153733b2" category="paragraph">重新啟動叢集時、您必須遵循特定步驟來驗證所有節點是否都已上線：</block>
+  <block id="56312700a2d03ce6cacae049f3294807" category="list-text">確認所有的「嚴重」嚴重性和<block ref="945c53fff9195b4e69a31c30b6a268c6" prefix=" " category="inline-code"></block> 叢集故障已解決。</block>
+  <block id="6331b65d2bb9f0f39b6e8331e5b2c669" category="list-text">等待10至15分鐘、讓叢集穩定運作。</block>
+  <block id="301bf6ea727a40a8d5cc8608cc0c41d7" category="list-text">開始啟動主機以存取資料。</block>
+  <block id="c192e3c2dbd374233d4685406db01520" category="paragraph">如果您想在開啟節點電源並在維護後驗證節點是否正常運作時、留出更多時間、請聯絡技術支援部門以協助延遲資料同步、以避免不必要的Bin同步。</block>
+  <block id="eef615f9029df3b19885b836d67d03a3" category="inline-link">如何在NetApp Solidfire / HCI儲存叢集上正常關機並開機</block>
+  <block id="b8c22947a9d726cf79f399d361ecc7a2" category="paragraph"><block ref="b8c22947a9d726cf79f399d361ecc7a2" category="inline-link-rx"></block></block>
 </blocks>
