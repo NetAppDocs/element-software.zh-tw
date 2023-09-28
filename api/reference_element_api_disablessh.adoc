@@ -14,9 +14,6 @@ summary: 您可以使用DisableSsh方法停用單一儲存節點的SSH服務。�
 您可以使用「disableSsh」方法停用單一儲存節點的SSH服務。此方法不會影響整個叢集的SSH服務逾時持續時間。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

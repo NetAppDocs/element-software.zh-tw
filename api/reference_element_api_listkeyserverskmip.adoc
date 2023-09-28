@@ -90,7 +90,7 @@ kmipKeyServers
  a| 
 已建立的KMIP金鑰伺服器完整清單。
  a| 
-link:reference_element_api_keyserverkmip.md#["KeyServerKmip"] 陣列
+link:reference_element_api_keyserverkmip.html["KeyServerKmip"] 陣列
 
 |===
 

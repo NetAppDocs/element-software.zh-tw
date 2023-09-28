@@ -52,7 +52,7 @@ kmipKeyProvider
  a| 
 包含新建立金鑰提供者詳細資料的物件。
  a| 
-link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"]
+link:reference_element_api_keyproviderkmip.html["KeyProviderKmip"]
 
 |===
 

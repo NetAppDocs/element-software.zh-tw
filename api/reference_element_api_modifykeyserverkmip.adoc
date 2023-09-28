@@ -119,7 +119,7 @@ kmipKeyServer
  a| 
 包含新修改金鑰伺服器詳細資料的物件。
  a| 
-link:reference_element_api_keyserverkmip.md#["KeyServerKmip"]
+link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 
 |===
 

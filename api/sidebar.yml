@@ -271,8 +271,6 @@ entries:
     url: "/api/reference_element_api_getclusterversioninfo.html"
   - title: GetFeatureStatus
     url: "/api/reference_element_api_getfeaturestatus.html"
-  - title: GetLicenseKey
-    url: "/api/reference_element_api_getlicensekey.html"
   - title: GetLoginSessionInfo
     url: "/api/reference_element_api_getloginsessioninfo.html"
   - title: GetNodeHardwareInfo
@@ -305,8 +303,6 @@ entries:
     url: "/api/reference_element_api_modifyclusterinterfacepreference.html"
   - title: 遠端節點
     url: "/api/reference_element_api_removenodes.html"
-  - title: SetLicenseKey
-    url: "/api/reference_element_api_setlicensekey.html"
   - title: SetLoginSessionInfo
     url: "/api/reference_element_api_setloginsessioninfo.html"
   - title: 關機

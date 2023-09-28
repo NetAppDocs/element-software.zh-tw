@@ -209,7 +209,6 @@
   <block id="6588359b2d2258326e4cea1e5aa497a0" category="list-text"><block ref="6588359b2d2258326e4cea1e5aa497a0" category="inline-link-macro-rx"></block></block>
   <block id="9767ec22fca2804b6bdbd87e39200375" category="list-text"><block ref="9767ec22fca2804b6bdbd87e39200375" category="inline-link-macro-rx"></block></block>
   <block id="d3daac97e8c69781f73bcc5512cb5c2a" category="inline-link-macro">升級儲存系統元件</block>
-  <block id="ecb20e3ca51440136d042527b042c2ee" category="list-text"><block ref="ecb20e3ca51440136d042527b042c2ee" category="inline-link-macro-rx"></block></block>
   <block id="cef2ee48106a0a7790ec9a773798ee14" category="inline-link-macro">在Element軟體UI中使用基本選項</block>
   <block id="6038a645307a76874f058ffe322fc4f6" category="list-text"><block ref="6038a645307a76874f058ffe322fc4f6" category="inline-link-macro-rx"></block></block>
   <block id="afa76abc4566eab1fcb19c24508a45f6" category="inline-link-macro">管理帳戶</block>
@@ -443,7 +442,6 @@
   <block id="f8897b2738a77bb4ad7124b58abcfb15" category="summary">您可以變更儲存節點網路設定、為節點提供一組新的網路屬性。</block>
   <block id="5ac6b15899224ff0703935cb66fb9dca" category="doc">每個節點UI的網路設定詳細資料</block>
   <block id="d4e5cc0a91691a4f74fb328bf7e5b929" category="paragraph">登入節點時、您可以在「*網路設定*」頁面上查看儲存節點的網路設定 <block ref="5ef220bc3aead68899688e4686910df0" category="inline-link-rx"></block> IP：442/HCC/節點/網路設定）。您可以選擇* Bond1G*（管理）或* Bond10G*（儲存設備）設定。下列清單說明當儲存節點處於「可用」、「擱置」或「作用中」狀態時、您可以修改的設定：</block>
-  <block id="ccf6ac4a8e7d87343fecfe9c7ced8faa" category="admonition">如果您執行SolidFire 的是「企業版」SDS叢集、則在部署節點之後、無法修改每個節點UI中的大多數網路設定。</block>
   <block id="28ed9b5b5df5d633073f9cca1d10bee9" category="list-text">*方法*</block>
   <block id="e06af92a28c93f969ec10a00fe62f1a0" category="paragraph">用於設定介面的方法。可能的方法：</block>
   <block id="69752e68db7d200cb20de80d1eca1afd" category="list-text">環回：用於定義IPV4環回介面。</block>
@@ -729,7 +727,6 @@
   <block id="1b76617529fd807d4a1bc29f0c6f6799" category="list-text">按一下*顯示詳細資料*以查看個別警示的相關資訊。</block>
   <block id="53661c1451a20d47537b1d0a00b2d7d0" category="list-text">若要檢視頁面上所有警示的詳細資料、請按一下詳細資料欄。</block>
   <block id="17597d1694bdaa4d0233e43918f0bd33" category="paragraph">系統解決警示後、所有有關警示的資訊、包括解除警示的日期、都會移至「已解決」區域。</block>
-  <block id="8e078db9f02bd406ca631ba2825dd629" category="list-text"><block ref="8e078db9f02bd406ca631ba2825dd629" category="inline-link-macro-rx"></block></block>
   <block id="cfcdfc8969ff115541d48c6b2118e2c3" category="summary">您可以從SolidFire 一個備份還原到一個還原叢集上的磁碟區。</block>
   <block id="71733e46cd6569a2bc096f0436656767" category="doc">從SolidFire 還原儲存叢集上的備份還原磁碟區</block>
   <block id="8b9d3928125fd33e29f2340d950cccbf" category="paragraph">當從一個叢集備份或還原至另一個叢集時、系統會產生金鑰、作為叢集之間的驗證。此大量Volume寫入金鑰可讓來源叢集向目的地叢集進行驗證、在寫入目的地Volume時提供一定程度的安全性。在備份或還原程序中、您需要先從目的地Volume產生大量Volume寫入金鑰、然後再開始作業。</block>
@@ -867,13 +864,9 @@
   <block id="f6e1cbdb2c7e86d550e022623d7c9169" category="summary">您可以使用NetApp Element NetApp API變更叢集中儲存節點的預設SSL憑證和私密金鑰。</block>
   <block id="1aa8b758f81e4b362f8fc94cd4c2a3ba" category="paragraph">建立一個支援功能的軟體叢集時、叢集會建立一個獨特的自我簽署安全通訊端層（SSL）憑證和私密金鑰、用於透過元素UI、每節點UI或API進行所有HTTPS通訊。NetApp ElementElement軟體支援自我簽署的憑證、以及由信任的憑證授權單位（CA）核發和驗證的憑證。</block>
   <block id="774ce4e623f683d68865c30ea0ac37fa" category="paragraph">您可以使用下列API方法取得有關預設SSL憑證的詳細資訊、並進行變更。</block>
-  <block id="5a1085897e38e4e51b92668061c6497c" category="paragraph">如需每種方法的相關資訊、請參閱 <block ref="27df1ddfd415d14d906f38bd54bde22c" category="inline-link-macro-rx"></block>。</block>
   <block id="c7d6aa2232acd143092ba0d52cae5ba8" category="list-text">* GetSSLCertificate *</block>
-  <block id="04b9e2887637b86b8614c4021d65bb52" category="paragraph">您可以使用此方法擷取目前安裝之SSL憑證的相關資訊、包括所有憑證詳細資料。</block>
   <block id="855a3dbbd51c2fdec4e1d006b91d6323" category="list-text">* SetSSLCertificate *</block>
-  <block id="42eb9a81f7de36c9246dce8d9177d0de" category="paragraph">您可以使用此方法將叢集和每節點SSL憑證設定為您提供的憑證和私密金鑰。系統會驗證憑證和私密金鑰、以防止套用無效的憑證。</block>
   <block id="84295a797b60702f81143ab1aa871f82" category="list-text">*遠端SSLCertificate *</block>
-  <block id="a302712f1b09c9dcdfc7d5808cb5fe30" category="paragraph">此方法會移除目前安裝的SSL憑證和私密金鑰。然後叢集會產生新的自我簽署憑證和私密金鑰。</block>
   <block id="7402074664fcb3503f94b26301713adb" category="admonition">叢集SSL憑證會自動套用至新增至叢集的所有新節點。從叢集移除的任何節點都會還原為自我簽署的憑證、而且所有使用者定義的憑證和金鑰資訊都會從節點移除。</block>
   <block id="4c3d41690c3868d9c7948f1ef59e5f65" category="summary">您必須將兩個叢集配對、作為使用即時複寫功能的第一步。配對並連線兩個叢集之後、您可以將一個叢集上的作用中磁碟區設定為持續複寫到第二個叢集、以提供持續的資料保護（CDP）。</block>
   <block id="031467252e5ce4fc6394030de4443362" category="doc">配對叢集以進行複寫</block>
@@ -1107,7 +1100,6 @@
   <block id="94d1207223d97d0a0a9877e887c40d29" category="inline-link-macro">變更預設IPMI密碼</block>
   <block id="a88b2ec4dd01d7fd61509f9c9d5bd481" category="list-text">對於H410C、H610C和H615C節點、 <block ref="1d4aa273a0eca9d7d120f38c4573165c" category="inline-link-macro-rx"></block>。</block>
   <block id="9ef4592bcb5c2379e3e631deeae02163" category="inline-link-macro">變更預設的ipm密碼</block>
-  <block id="c406ac81de66b241c8b18e8b786204ce" category="list-text">對於H410S和H610S節點、 <block ref="948675b0a3c0cef9123c5f0ab6b48101" category="inline-link-macro-rx"></block>。</block>
   <block id="5da96725b80167a4658f4e9057a4cb45" category="inline-link-macro">變更管理節點上的BMC認證</block>
   <block id="57137c1e68d7300587dc9d9e4c6d107c" category="list-text"><block ref="5215e9d1d5c62231ce2eff57e0d99e18" category="inline-link-macro-rx"></block>。</block>
   <block id="409517b29e406b86b0f2e96d825034ac" category="paragraph">ESXi認證</block>
@@ -1250,7 +1242,6 @@
   <block id="d62272ad249849fed29dbcf8e33b4a66" category="paragraph">利用叢集、您可以加密儲存在叢集磁碟機上的所有閒置資料。SolidFire您可以使用任一種方法、啟用全叢集範圍的自我加密磁碟機（SED）保護 <block ref="4e1c93429537251d700ac9caee965d64" category="inline-link-macro-rx"></block>。</block>
   <block id="118b9b3ce514a868bc27ae35073731c7" category="paragraph">您可以使用Element UI或API在靜止時啟用硬體加密。啟用閒置時的硬體加密功能不會影響叢集的效能或效率。您只能使用Element API在閒置時啟用軟體加密。</block>
   <block id="ea9540183556cd61c73cb60851b8401a" category="paragraph">在建立叢集期間、預設不會啟用閒置時的硬體加密、而且可以從元素UI啟用和停用。</block>
-  <block id="65e41692ce81538235f31feb59da0df9" category="admonition">對於支援所有Flash的儲存叢集、在建立叢集期間必須啟用閒置軟體加密功能、而且在建立叢集後無法停用。SolidFire針對「企業版SDS（ESDS）叢集」、預設會啟用閒置時的軟體加密。SolidFire</block>
   <block id="fbf0bf350510633ec198d87f496cf0f6" category="list-text">您有叢集管理員權限可啟用或變更加密設定。</block>
   <block id="28ebc10ef7c343a4cf32aacf144f1590" category="list-text">對於閒置的硬體加密、您在變更加密設定之前、已確保叢集處於正常狀態。</block>
   <block id="53f1251f9f4067bb924700bbc4f4734a" category="list-text">如果您停用加密、則必須有兩個節點參與叢集、才能存取金鑰來停用磁碟機上的加密。</block>
@@ -1721,8 +1712,6 @@
   <block id="ff888c386cbf7561a41674237043ab02" category="summary">您可能需要允許下列TCP連接埠通過資料中心的邊緣防火牆、以便從遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。</block>
   <block id="bbb9ca100f5b4a2074b8caeaaf4b1ae0" category="paragraph">您可能需要允許下列TCP連接埠通過資料中心的邊緣防火牆、以便從遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。</block>
   <block id="2f5dc9e1194b10f0920c3f6b85205b99" category="paragraph">除非另有說明、否則所有連接埠均為TCP、且應允許NetApp Support Server、管理節點和執行Element軟體的節點之間進行雙向通訊。</block>
-  <block id="cca942e088eb1473b2eb9de24822300b" category="list-text">編輯防火牆規則以允許新的URL。</block>
-  <block id="fc0bbd3b7c620ea524d15f50953b65de" category="list-text">重複上述步驟、直到存取嘗試成功為止。</block>
   <block id="1f2681a91e9e795d6ebb1d5828cd1182" category="admonition">在管理節點、執行Element軟體的節點和叢集MVIP之間啟用ICMP。</block>
   <block id="15a1051d03ca55ab79226f44fa683bbe" category="paragraph">下表使用下列縮寫：</block>
   <block id="60175d30ed8f8459b2f835b923bb4ee5" category="list-text">MIP：管理IP位址、每節點位址</block>
@@ -1751,7 +1740,6 @@
   <block id="b20a6c801c401908aa3c96f370665e05" category="paragraph">DNS查詢</block>
   <block id="c203d8a151612acf12457e4d67635a95" category="paragraph">442-44</block>
   <block id="3576cff8b205debb58711ff360f51ffd" category="paragraph">使用者介面和API存取儲存節點和元件軟體升級</block>
-  <block id="d747a3883d729833b05cf76084503b96" category="paragraph">管理節點服務升級</block>
   <block id="00a55ff76496c3c45ca20071f6151bfc" category="paragraph">monitoring.solidfire.com</block>
   <block id="6ac181854a8b48c5ac6018a305f6ae7c" category="paragraph">儲存叢集報告Active IQ 功能</block>
   <block id="0c29e1667ad297897573438219b3e1c6" category="paragraph">repo.netapp.com</block>
@@ -1868,13 +1856,8 @@
   <block id="d804bc95982bb82c21ba99bf3e7a1a09" category="paragraph">您可以將容量較小或較大的節點新增至現有叢集。您可以將較大的節點容量新增至叢集、以利容量成長。必須成對新增較大的節點至具有較小節點的叢集。如此一來、如果其中一個較大的節點發生故障、就能有足夠的空間讓雙Helix移動資料。您可以將較小的節點容量新增至較大的節點叢集、以改善效能。</block>
   <block id="0652571d9c7a6df0db1af62b1e7320be" category="admonition">如果新增的節點佔叢集總容量的50%以上、則此節點的部分容量將無法使用（「閒置」）、因此符合容量規則。在新增更多儲存設備之前、情況仍會如此。如果新增的大型節點也不遵守容量規則、則先前閒置的節點將不再處於閒置狀態、而新新增的節點則會陷入閒置狀態。容量應一律成對新增、以避免這種情況發生。當節點變成閒置狀態時、會拋出strandedCapacity叢集故障。</block>
   <block id="910cbe464eb671d551213eb21cdaa9a6" category="inline-link">NetApp影片：根據您的需求擴充：擴充SolidFire 功能</block>
-  <block id="7633b7e5460c6a2e4fcab4791bc73fcd" category="paragraph"><block ref="7633b7e5460c6a2e4fcab4791bc73fcd" category="inline-link-rx"></block></block>
-  <block id="520c540d3834c0114667b6ff66ee2f8f" category="paragraph">您可以將節點新增至SolidFire 「ESDEESDS」SolidFire 叢集或NetApp HCI 「ESDESDS」應用裝置。</block>
-  <block id="40ea1cf7dc682a9b8a9ffd21532cdc72" category="paragraph">以節點類型前置字元「sFC」表示的SESDS節點、例如「s Sesc 100」SolidFire 。</block>
   <block id="e8c29be8cf2edc3c5816a48d0418ab30" category="list-text">選擇*叢集*&gt;*節點*。</block>
   <block id="10d0051ad322ddca8a07665ecd3f0fa2" category="list-text">按一下*「Pending」（待處理）*以檢視待處理節點的清單。</block>
-  <block id="8566161c203e323f7b4c8041c5206f50" category="paragraph">當新增節點（SolidFire 包括「EzeESDS」SolidFire 或「非EESDS」節點）的程序完成時、節點就會出現在「作用中節點」清單中。在此之前、擱置中的節點會出現在「Pending Active」（擱置中的作用中）清單中。</block>
-  <block id="92b31f65d1455ca2576f9366cfde1e3f" category="paragraph">對於非SolidFire 非EESDS節點的節點、SolidFire 當您將叢集新增至叢集時、會在擱置的節點上安裝叢集的元素軟體版本。這可能需要幾分鐘的時間。</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">執行下列其中一項：</block>
   <block id="adef510fe0bae196ab5aad0986c16bed" category="list-text">若要新增個別節點、請按一下您要新增之節點的*「Actions」（動作）*圖示。</block>
   <block id="fa5516f88272118fddf27dd26883e74c" category="list-text">若要新增多個節點、請選取要新增之節點的核取方塊、然後選取*大量動作*。*附註：*如果您要新增的節點的Element軟體版本與叢集上執行的版本不同、叢集會非同步地將節點更新為叢集主機上執行的Element軟體版本。節點更新後、會自動將自己新增至叢集。在此非同步程序期間、節點將處於「待處理作用中」狀態。</block>
@@ -2292,7 +2275,6 @@
   <block id="aee40dc887e7ee1a678b3c4f23851b92" category="doc">設定網路時間傳輸協定</block>
   <block id="e4fb8fa88e0f62a27817b1b76b7fb1f6" category="paragraph">設定網路時間傳輸協定（NTP）的方法有兩種：指示叢集中的每個節點聆聽廣播、或指示每個節點查詢NTP伺服器以取得更新。</block>
   <block id="fc428e2e9245a085f2b34ce5c6a2ff3c" category="paragraph">NTP用於透過網路同步時鐘。連線至內部或外部NTP伺服器應是初始叢集設定的一部分。</block>
-  <block id="54901669f6ee1692cfa5c4342dec9cf6" category="admonition">此功能無法在SolidFire 「企業版SDS叢集」中使用。</block>
   <block id="8681a0e907b0a1d49d3802db071cd3f1" category="summary">您可以將啟動器新增至現有的Volume存取群組。</block>
   <block id="9d1f5fddbda40bdd5ac66ea0c2a7e1e7" category="doc">將單一啟動器新增至Volume存取群組</block>
   <block id="52efab321f9737f9ff310cdf464abb95" category="paragraph">當您將啟動器新增至Volume存取群組時、啟動器可存取該Volume存取群組中的所有Volume。</block>
@@ -2573,9 +2555,7 @@
   <block id="6a5872631c0cf8f8396f83702a5d1b69" category="inline-link">更換H600S系列儲存節點的磁碟機</block>
   <block id="958c4b86b435f9f588d64cfab02d9a5d" category="list-text"><block ref="958c4b86b435f9f588d64cfab02d9a5d" category="inline-link-rx"></block></block>
   <block id="4ca5671d2f966d4171da24a705d584cf" category="inline-link-macro">H410S和H610S硬體資訊</block>
-  <block id="24ed1c3d2fd5e7a8e8358705c065eee8" category="list-text"><block ref="24ed1c3d2fd5e7a8e8358705c065eee8" category="inline-link-macro-rx"></block></block>
   <block id="6dfd3b2bcec1f3e7fda0b3505e773fa3" category="inline-link-macro">SF系列硬體資訊</block>
-  <block id="f938a270ef0dee1673d32b1160f2268d" category="list-text"><block ref="f938a270ef0dee1673d32b1160f2268d" category="inline-link-macro-rx"></block></block>
   <block id="1586f0f4d0a649af1d4589ae29c2d312" category="summary">在叢集配對中建立叢集之間的連線之後、您可以將一個叢集上的磁碟區與配對中另一個叢集上的磁碟區配對。建立磁碟區配對關係時、您必須識別哪個磁碟區是複寫目標。</block>
   <block id="75491ab578209b33a8b3e822ad860720" category="paragraph">您可以配對兩個磁碟區、以進行即時複寫、這些磁碟區儲存在連接的叢集配對中的不同儲存叢集上。配對兩個叢集之後、您可以將一個叢集上的作用中磁碟區設定為持續複寫到第二個叢集、以提供持續的資料保護（CDP）。您也可以將磁碟區指派為複寫的來源或目標。</block>
   <block id="9d4c1692a5887f5ae6909459ff7c9a59" category="paragraph">Volume配對永遠是一對一。當某個磁碟區是與另一個叢集上的某個磁碟區配對的一部分之後、您就無法再將它與任何其他磁碟區配對。</block>
@@ -2660,7 +2640,6 @@
   <block id="4a0a4752a851bfbcb612292d19d020e2" category="list-text">選擇*使用LDAPS傳輸協定*。</block>
   <block id="0109479a48c58beb89b4d5a4c29dff84" category="list-text">在*一般設定*中輸入必要資訊。</block>
   <block id="4e8b9c52e60070f73bcaa6e5e5ba4121" category="inline-link-macro">LDAP詳細資料</block>
-  <block id="543e9c1cf295e8284006e3af49b8105a" category="paragraph"><block ref="543e9c1cf295e8284006e3af49b8105a" category="inline-link-macro-rx"></block></block>
   <block id="bed845a597b9ed08661e81c136055289" category="image-alt">元素新的LDAP伺服器</block>
   <block id="70c1b3b43f6be512d1e0cda4ee22368b" category="list-text">按一下*啟用LDAP*。</block>
   <block id="f2709d92c4d623482a540a58d6e65b35" category="list-text">如果您要測試使用者的伺服器存取、請按一下*測試使用者驗證*。</block>
@@ -2674,9 +2653,6 @@
   <block id="99a4fac2cf1cc06226d25f6716664c35" category="list-text">向下捲動至「使用者授權合約」、然後按一下「*我接受*」。</block>
   <block id="c1c58dd550995000cc147c6860304074" category="paragraph">現在您的使用者擁有Active Directory群組的值。</block>
   <block id="99446598b3c4c3edaab96c4b623d7bf2" category="paragraph">若要測試、請登出Element UI、然後以該群組中的使用者身分重新登入。</block>
-  <block id="d33f2a600ba4fe43084a26e95e4908c0" category="paragraph">*相關資訊*</block>
-  <block id="a1245e096ef503d7567667afaa906b60" category="paragraph"><block ref="a1245e096ef503d7567667afaa906b60" category="inline-xref-macro-rx"></block></block>
-  <block id="52dc765a830c6c6b29cc239ca9482774" category="paragraph"><block ref="52dc765a830c6c6b29cc239ca9482774" category="inline-xref-macro-rx"></block></block>
   <block id="78daf6877398b6401d1c1ffb939fb968" category="summary">您可以設定輕量型目錄存取傳輸協定（LDAP\）、以啟用安全的目錄型登入功能、以SolidFire 利進行資訊儲存。您可以在叢集層級設定LDAP、並授權LDAP使用者和群組。</block>
   <block id="debf1350be3d59a467ca3e2fa851b12e" category="doc">管理LDAP</block>
   <block id="e26cf8f0c0633f1706a4dc5e99c58a71" category="paragraph">您可以設定輕量型目錄存取傳輸協定（LDAP）、以啟用SolidFire 安全的目錄型登入功能、以利進行資料儲存。您可以在叢集層級設定LDAP、並授權LDAP使用者和群組。</block>
@@ -3067,7 +3043,6 @@
   <block id="4fab5bcfea15c9a9fcf2c0dab635067a" category="summary">外部金鑰管理（EKM\）可搭配叢集外外部金鑰伺服器（EKS）、提供安全驗證金鑰（AK\）管理。當叢集上啟用靜止加密時、AKs可用來鎖定及解除鎖定自我加密磁碟機（SED）。</block>
   <block id="672ba027ea7326ea51e3f870eba51243" category="inline-link-macro">加密閒置</block>
   <block id="d7779881296a451c483341e1778d3c0b" category="paragraph">外部金鑰管理（EKM）可搭配叢集外的外部金鑰伺服器（EKS）、提供安全驗證金鑰（AK）管理。當自動加密磁碟機（SED）處於鎖定和解除鎖定狀態時、即會使用這些AKs <block ref="f3199fa54b442bc1907a18c173eb7451" category="inline-link-macro-rx"></block> 已在叢集上啟用。EKS提供安全的AKs世代與儲存設備。叢集利用金鑰管理互通性傳輸協定（KMIP）（OASIS定義的標準傳輸協定）與EKS通訊。</block>
-  <block id="2d90e95bb2cceafa5164d25012c9abc9" category="admonition">唯有靜止的軟體加密功能可用於SolidFire 「企業版SDS」叢集。</block>
   <block id="e95cde644dcbc92ed35f811389d93624" category="inline-link-macro">設定外部管理</block>
   <block id="8038ace7de9a6145f384d01b5f03e2d8" category="list-text"><block ref="8038ace7de9a6145f384d01b5f03e2d8" category="inline-link-macro-rx"></block></block>
   <block id="ae4a16d89bc4c1fd130a91d5ecdfc931" category="list-text"><block ref="ae4a16d89bc4c1fd130a91d5ecdfc931" category="inline-link-macro-rx"></block></block>
@@ -3383,14 +3358,10 @@
   <block id="c6ad545ed5197a02a4f86759e091d934" category="summary">包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire這個統一化叢集是以NetApp Element 單一儲存系統的形式、以各種功能為其提供管理功能。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">如需最新的 NetApp 擁有專利清單、請參閱：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="2e5993f9d970daebf225967bb1e45acc" category="inline-link-macro">儲存韌體產品組合2.99.2注意事項</block>
   <block id="96d39df4d07a61aada740f0716155f51" category="list-text"><block ref="96d39df4d07a61aada740f0716155f51" category="inline-link-macro-rx"></block></block>
@@ -3687,193 +3658,21 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">儲存韌體產品組合2.146注意事項</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
-  <block id="310c2ddbe3c53ec931b599a811042076" category="summary">如果您想要主動更換SolidFire 您的EESDS叢集中的中繼資料磁碟機或區塊磁碟機、請執行此程序。Element UI Cluster &gt; Drives（元素UI叢集&gt;磁碟機）頁面會顯示磁碟機耗損資訊。</block>
-  <block id="f450dc1f11b420ef61c997b620a5ddf3" category="doc">更換Dell R640的磁碟機</block>
-  <block id="870cd012c02c921543409316615a4ac1" category="paragraph">從此處列出的程序中選擇主動更換磁碟機、在磁碟機故障後更換磁碟機、以及更換快取磁碟機。在SolidFire 您的SESDS叢集中更換中繼資料磁碟機或區塊磁碟機。Element UI *叢集&gt;磁碟機*頁面會顯示磁碟機耗損資訊。</block>
-  <block id="93430097bf00cfcc1e94624e0b982cb8" category="list-text"><block ref="745566ec8dec4c1e7c39183752157fd4" category="inline-xref-macro-rx"></block></block>
-  <block id="83a3c326a86d47f6802c6ed22c176440" category="list-text"><block ref="b52083613fc958e90f60ffdaefb39b47" category="inline-xref-macro-rx"></block></block>
-  <block id="83bfe4a93c138c4f60d8874e9ba74e81" category="list-text"><block ref="cdae2d56fb5c7b2e77369d3885b68305" category="inline-xref-macro-rx"></block></block>
-  <block id="099c232e5babe7e675afcc12e7835765" category="section-title">主動更換磁碟機</block>
-  <block id="789dede1454c270db56065afdee66b4d" category="paragraph">如果您想要主動更換SolidFire 您的EESDS叢集中的中繼資料磁碟機或區塊磁碟機、請執行此程序。Element UI *叢集*&gt;*磁碟機*頁面會顯示磁碟機耗損資訊。</block>
-  <block id="d24c310313d039073fc99de16da25ff5" category="list-text">從這個功能的UI中、確保叢集健全狀況良好、而且沒有任何警告或叢集故障。NetApp Element您可以使用主叢集節點的管理虛擬IP（MVIP）位址來存取元素UI。</block>
-  <block id="4914b249c87b31201b94eeda3698c304" category="list-text">確保叢集上沒有執行中的工作。</block>
-  <block id="44857896e38e4779632927df69b29cc6" category="list-text">確保您已熟悉所有步驟。</block>
-  <block id="75baff9f3ac045bf1ecc3e9f63a44d1c" category="list-text">處理磁碟機時、請務必採取必要的預防措施、以防止發生靜電釋放（ESD）。</block>
-  <block id="12d03c854ec7b14b135a03eb267b4543" category="list-text">在Element UI中執行下列步驟：</block>
-  <block id="60b7cb0fe8135387fc49d83ac3145939" category="list-text">在Element UI中、選取*叢集*&gt;*磁碟機*&gt;* Active *。</block>
-  <block id="9d3fba5eaf3f14453930e171ccfd6fde" category="list-text">選取您要更換的磁碟機。</block>
-  <block id="13309b41efb95010d6093bd1a4e36b99" category="list-text">記下磁碟機的序號。這有助於您在整合式Dell遠端存取控制器（iDRAC）中找到磁碟機的對應插槽編號。</block>
-  <block id="29fb5a6cbd41e910cd87451a86fb6736" category="list-text">選取*大量動作*&gt;*移除*。移除磁碟機後、磁碟機將進入*移除*狀態。它會持續處於*移除*狀態一段時間、等待磁碟機上的資料同步或重新分配至叢集中的其餘磁碟機。移除完成後、磁碟機會移至*可用*狀態。</block>
-  <block id="abef703f713ff51c19f264189a18d1b1" category="list-text">執行下列步驟、找出您要更換的磁碟機插槽：</block>
-  <block id="d3891f1db1e7793c3b75220c0916ad18" category="list-text">登入節點的IPMI介面（本例為iDRAC）。</block>
-  <block id="f5d799f75df9d16023fe1b4affa31424" category="list-text">從功能表中選取「*儲存設備*」、然後選取「*實體磁碟*」。</block>
-  <block id="ee31df9c5350a19b8da479e3c17f16d9" category="list-text">若要尋找磁碟機的序號、請選取每個PCIe SSD旁的*+*圖示。</block>
-  <block id="b96d8a8a66977f2e5e4999589644542f" category="list-text">請將您在螢幕上看到的序號與您在Element UI中記下的序號配對。</block>
-  <block id="a5aa63fd9a6648d3fefd450765ecccb0" category="list-text">請根據序號尋找所列的插槽編號。</block>
-  <block id="40f2d3c70a2c1817b6de7b14fbeaa63c" category="paragraph">這是您應該從其中移除磁碟機的實體插槽。</block>
-  <block id="43ad9d82e9ed8d423afb25e77a91664d" category="list-text">識別磁碟機之後、請依照下列步驟實際移除：</block>
-  <block id="922fde8fd7e7ea28d48a2898b1b3eb94" category="list-text">識別機箱中的磁碟機插槽編號。</block>
-  <block id="15478b340ab16f74765d02c1c103cfdc" category="paragraph">下圖顯示伺服器正面、每個磁碟機的插槽編號如下所示：</block>
-  <block id="aea08d107a566c93740255cccc06c4da" category="image-alt">顯示R640伺服器正面、每個磁碟機的插槽編號均顯示。</block>
-  <block id="e8f008e0b4231d34963d05d211900300" category="list-text">按下磁碟機上的按鈕。</block>
-  <block id="95bc71ec24b01b4c55a5df72a11e2bce" category="paragraph">鎖銷就會出來。</block>
-  <block id="291f6c0ff676c8cacdbe777ea4e61dda" category="list-text">從插槽中實際拉出磁碟機。</block>
-  <block id="25473894157b425b28364c1c732af89a" category="admonition">請務必小心處理磁碟機。</block>
-  <block id="433e214c804655544d227d1bdd0c2af1" category="paragraph">實際移除磁碟機後、元素UI中的磁碟機狀態會變更為*故障*。</block>
-  <block id="c9b5bcc63aaa06da49a9c4bd016af714" category="list-text">在Element UI中、選取*叢集*&gt;*磁碟機*&gt;*故障*。</block>
-  <block id="630f065b7d6885fbd1a8cf5271c1ecfa" category="list-text">選取「*動作*」下的圖示、然後選取「*移除*」。</block>
-  <block id="3f8d1dd9497fdfa60e51d71751747bea" category="paragraph">現在您可以繼續在節點中安裝新磁碟機。</block>
-  <block id="253741015eaf39777dcf346ebe208d2f" category="list-text">記下新磁碟機的序號。</block>
-  <block id="5ec6dd5bfb5c14ed01417a5e52fd2b9f" category="list-text">使用栓鎖將磁碟機小心推入磁碟機槽、然後合上栓鎖、以插入更換的磁碟機。正確插入磁碟機時、磁碟機即會啟動。</block>
-  <block id="7cd857aa64fe31678947a9048695cd97" category="list-text">執行下列步驟、驗證iDRAC中的新磁碟機詳細資料：</block>
-  <block id="75821e835e8e367635d9f0601b25a84d" category="list-text">登入iDRAC。</block>
-  <block id="cf8f1bbfdf4b384f5c66a0e65aa5ec8e" category="list-text">選擇*維護*&gt;*系統事件記錄*。</block>
-  <block id="66b4b92af0fbc77c35c0d8b4bcd1386b" category="paragraph">您會看到所新增磁碟機的事件記錄。</block>
-  <block id="ade1548526e94d39d4bc9aa208aaf294" category="list-text">確認您插入的新磁碟機顯示在UI的對應插槽中。</block>
-  <block id="409f100e5b42256881d32b4cedd854f5" category="list-text">將新的磁碟機資訊新增至您更換磁碟機的節點的「shf_SDS _config.yaml」檔案中。</block>
-  <block id="dedfd80f4bc23f7a477c222b73af5572" category="inline-link-macro">SF_SDs_config.yaml檔案的內容</block>
-  <block id="4d1e172c35bc383eae48750e0f8846ff" category="paragraph">「sf_SDs_config.yaml」檔案儲存在「/opt/sf/」中。此檔案包含節點中磁碟機的所有相關資訊。每次更換磁碟機時、您都必須在此檔案中輸入更換磁碟機的資訊。如需此檔案的詳細資訊、請參閱 <block ref="a61ae55e02c127e2d3a16b74926a9eb8" category="inline-link-macro-rx"></block>。</block>
-  <block id="04eec68f2bd8e2942b1210db3b83bb19" category="list-text">使用Putty建立與節點的SSH連線。</block>
-  <block id="82a381803951f3ace652e2eac416b54e" category="list-text">在Putty組態視窗的*主機名稱（或IP位址）*欄位中輸入節點MIP。</block>
-  <block id="91dd66dbbc7bcb9ff2accc62e548e2fa" category="list-text">選取*「Open*（開啟*）」。</block>
-  <block id="4f4bd91d8575c8ccfd87491d8bce6a2b" category="list-text">在開啟的終端機視窗中、使用您的使用者名稱和密碼登入。</block>
-  <block id="17e937916547834164ee39dde7fa15f2" category="list-text">執行「# cat /opt/sf/sf_SDS _config.yaml」命令、列出檔案內容。</block>
-  <block id="e1a7903a7397468e05c8648b3668ab8e" category="list-text">將您更換的磁碟機的「data裝置」或「cacheDevice」清單中的項目取代為新的磁碟機資訊。</block>
-  <block id="d5fe93e34c96dc99356cee8f14d0d505" category="list-text">執行「# systemctl start solidfire-update-drives」。</block>
-  <block id="0326f0356488370fe6f2b00115a9d56a" category="paragraph">執行此命令後、您會看到Bash提示字元。之後您應該移至Element UI、將磁碟機新增至叢集。元素UI會針對可用的新磁碟機顯示警示。</block>
-  <block id="41f48ebedc1a60110b55c62c14548a24" category="list-text">選擇*叢集*&gt;*磁碟機*&gt;*可用*。</block>
-  <block id="d31d7cbf9240923ae42bd21027151d35" category="paragraph">您會看到您安裝的新磁碟機序號。</block>
-  <block id="21c6483f8af9b6d1183900f008fd09e4" category="list-text">選取「*動作*」下的圖示、然後選取「*新增*」。</block>
-  <block id="d6b08584fdc8ae3278980bace97f38ca" category="list-text">區塊同步工作完成後、重新整理元素UI。如果您從元素UI的「*報告*」索引標籤存取「*執行中的工作*」頁面、就會看到有關可用磁碟機的警示已清除。</block>
-  <block id="b4b6601cfa9b1b1f77c65b26207ade0d" category="section-title">更換故障磁碟機</block>
-  <block id="edc088e70bcd947f9db337277e69e90b" category="paragraph">如果SolidFire 您的ESXESDS叢集有故障磁碟機、則Element UI會顯示警示。從叢集移除磁碟機之前、請先查看節點/伺服器IPMI介面中的資訊、以驗證故障原因。如果您要更換區塊磁碟機或中繼資料磁碟機、請執行下列步驟。</block>
-  <block id="88cb33bf8bf4a01920889f3d1a73b913" category="list-text">從「支援軟體UI」中、確認磁碟機故障。NetApp Element元素會在磁碟機故障時顯示警示。您可以使用主叢集節點的管理虛擬IP（MVIP）位址來存取元素UI。</block>
-  <block id="afc07af04065036f62613d8415f64926" category="list-text">使用元素UI將故障磁碟機從叢集移除、如下所示：</block>
-  <block id="8cb7fb2776ff84b38d935e6a604b9fec" category="list-text">選擇*叢集*&gt;*磁碟機*&gt;*故障*。</block>
-  <block id="53fd9ade41bbd2af8388ece91d5bd070" category="list-text">記下與故障磁碟機相關的節點名稱和序號。</block>
-  <block id="e722cab7f29f4a0dbfc895f389851a14" category="list-text">選取「*動作*」下的圖示、然後選取「*移除*」。如果您看到與磁碟機相關的服務警告、請等到Bin同步完成、然後取出磁碟機。</block>
-  <block id="8b7bb912ac7daa8e5873b70f7255f145" category="list-text">執行下列步驟以驗證磁碟機故障、並檢視與磁碟機故障相關的記錄事件：</block>
-  <block id="a77ecaa3be5e14a47f7f02315911de16" category="list-text">登入節點的IPMI介面（本例為iDRAC）。</block>
-  <block id="4f57e26764a2212f402bd486b6ae5419" category="list-text">選擇*維護*&gt;*系統事件記錄*、即可查看磁碟機故障的原因（例如SSDWearOut或磁碟機未正確插入）。</block>
-  <block id="77a9c76946b083c534b1dbb05d6c9219" category="paragraph">您也可以看到顯示磁碟機狀態的事件。</block>
-  <block id="19ec16f58d74d9cd9a309e25d6662a19" category="list-text">使用您在Element UI中記下的序號來尋找故障磁碟機的插槽編號。</block>
-  <block id="37fb80a3deda4f459b572da0705f1c0f" category="list-text">實際移除磁碟機、如下所示：</block>
-  <block id="7022a5dc87961d8d629b0649a0b1ad26" category="list-text">使用栓鎖將磁碟機小心推入插槽、然後合上栓鎖、以插入更換磁碟機。</block>
-  <block id="36e8725ea2d53cb4e73aa7fb43c5ced5" category="paragraph">正確插入磁碟機時、磁碟機即會啟動。</block>
-  <block id="86d28dd1ff28f610e522ea4e1485c817" category="list-text">驗證iDRAC中的新磁碟機詳細資料：</block>
-  <block id="c62875d9bf5cb571ff6c17f67f62ea0b" category="list-text">選擇*維護*&gt;*系統事件記錄*。您會看到所新增磁碟機的事件記錄。</block>
-  <block id="2bbda0407bb0cea3929e8279435dd27b" category="section-title">更換快取磁碟機</block>
-  <block id="afa3c67d99980a4a0dcc737e62cd61ea" category="paragraph">如果您想要更換SolidFire 您的EESDS叢集中的快取磁碟機、請執行此程序。快取磁碟機與中繼資料服務相關聯。Element UI *叢集*&gt;*磁碟機*頁面會顯示磁碟機耗損資訊。</block>
-  <block id="ccdc7f20f551a8957f8c9dd9208c7d6c" category="list-text">請務必從Element UI移除中繼資料服務。</block>
-  <block id="7fab6c0a02c6da20b4645e9faf80f742" category="list-text">在Element UI中、選取*叢集*&gt;*節點*&gt;*作用中*。</block>
-  <block id="d19f7153e28c24bda3f1caca7796d143" category="list-text">記下您要更換快取磁碟機之節點的節點ID和管理IP位址。</block>
-  <block id="ac16c42b1d9134f4e01d826fbfdc50dc" category="list-text">如果快取磁碟機狀況良好、而且您正主動更換快取磁碟機、請選取* Active Drives*、找出中繼資料磁碟機、然後從UI中移除。</block>
-  <block id="70c2b1202985a3ebbca2e9107d74504a" category="paragraph">移除後、中繼資料磁碟機會先進入*移除*狀態、然後進入*可用*。</block>
-  <block id="b695147061ad49bb2f0334cb12df8cdb" category="list-text">如果您在快取磁碟機故障後執行置換、中繼資料磁碟機將會處於*可用*狀態、並列在*叢集*&gt;*磁碟機*&gt;*可用*之下。</block>
-  <block id="7a24b1407139732efbf761f46c6f87fd" category="list-text">選取與NodeName相關聯的中繼資料磁碟機、以取代快取磁碟機。</block>
-  <block id="adce899a3c126ed0c423f4b10d3205a3" category="list-text">請執行下列步驟、找出您要更換的快取磁碟機插槽：</block>
-  <block id="7e536d8a2198829b01ee88113562885f" category="list-text">找到快取磁碟機。</block>
-  <block id="1e08bc0de6fc4d2b8a0650edf5cdf400" category="admonition">快取磁碟機的容量（375 GB）低於儲存磁碟機、而且是PCIe SSD。</block>
-  <block id="beb7ca36a24aa9872fd70bbcd0683237" category="list-text">尋找所列的快取磁碟機插槽編號。</block>
-  <block id="c2968ed57f156a96b1c8f1dc804721ed" category="list-text">記下新快取磁碟機的型號和ISN（序號）。</block>
-  <block id="ff32499bdaaea0f01e8a0d21bf1ebb18" category="list-text">將新的快取磁碟機資訊新增到您更換磁碟機的節點的「sf_SDS _config.yaml」檔案中。</block>
-  <block id="f7a28e1f19d4e5b3639509e4f094ae77" category="paragraph">「sf_SDs_config.yaml」檔案儲存在「/opt/sf/」中。此檔案包含節點中磁碟機的所有相關資訊。每次更換磁碟機時、您都應該在此檔案中輸入更換磁碟機的資訊。如需此檔案的詳細資訊、請參閱 <block ref="a61ae55e02c127e2d3a16b74926a9eb8" category="inline-link-macro-rx"></block>。</block>
-  <block id="547c2b45f59f9150ed520fa5ce827b8c" category="list-text">在Putty組態視窗的*主機名稱（或IP位址）*欄位中、輸入節點MIP位址（您先前從元素UI記下的位址）。</block>
-  <block id="c8bacde2ad16d804b1fd0d25b5b3da08" category="list-text">執行「NVMe清單」命令以列出NVe裝置。</block>
-  <block id="dff1272b37c60f4819c0e0364b13536c" category="paragraph">您可以看到新快取磁碟機的型號和序號。請參閱下列輸出範例：</block>
-  <block id="892a8f568b41f70a530e309ae8efc991" category="image-alt">顯示新快取磁碟機的型號和序號。</block>
-  <block id="c291a756b177b95bc7da31a75c290bba" category="list-text">將新的快取磁碟機資訊新增至「/opt/sf/sf_SDS _config.yaml」。</block>
-  <block id="cdc52955edfe4cc5b7af4221e8f281bc" category="paragraph">您應該將現有的快取磁碟機型號和序號、替換成新快取磁碟機的對應資訊。請參閱下列範例：</block>
-  <block id="5a877d44ba7b8991cf9c4aee49a29a15" category="image-alt">顯示型號和序號。</block>
-  <block id="81ce57118c076387f90de5b9f81cc0a3" category="list-text">儲存「/opt/sf/sf_SDS _config.yaml」檔案。</block>
-  <block id="c7a46a8b6c533c292a8b6187e261e8da" category="list-text">針對您適用的案例執行步驟：</block>
-  <block id="54861efdd06fc309e1c9a420feff98eb" category="cell">案例</block>
-  <block id="c9944fc6b0c81fc1d0012c6260479070" category="cell">新插入的快取磁碟機會在您執行「NVMe清單」命令之後顯示</block>
-  <block id="2adddff4a619bac49d7bb86b54bf0a62" category="list-text">運行‘# systemctl restart SolidFire ese'。這需要約三分鐘的時間。</block>
-  <block id="0f069e4de4822d5de2266a4b18268cc3" category="list-text">執行「System Status」（系統狀態）以檢查「SolidFire 示例」狀態SolidFire 。</block>
-  <block id="f1bf50366739c2deaea051a7aec101e7" category="list-text">前往步驟9。</block>
-  <block id="32c2199b4c1769d3d8674e609c29981b" category="cell">執行「NVMe清單」命令後、新插入的快取磁碟機不會出現</block>
-  <block id="d512ecec76aa43a3417c7b9f7ac216b3" category="list-text">重新啟動節點。</block>
-  <block id="31c9e6dd3cc4a02484b39b8d99f69caa" category="list-text">節點重新開機後、SolidFire 請登入節點（使用Putty）並執行「系統狀態SolidFire show」命令、確認「支援」服務正在執行。</block>
-  <block id="e18af434d33c7b8918ec0ccd040853af" category="admonition">重新啟動SolidFire 「功能不全」或重新啟動節點、會導致一些叢集故障、但最終會在五分鐘內解決。</block>
-  <block id="1ab4fb47f4f6dc72e5e5f10eef2fea3a" category="list-text">在元素UI中、將您移除的中繼資料磁碟機重新加入：</block>
-  <block id="cb32765d125e687d8985c458aa7df33f" category="list-text">選取「Actions（動作）」下的圖示、然後選取「* Add*（新增*）」。</block>
-  <block id="452faffe8f79fe24d111b3a99be32656" category="list-text">區塊同步工作完成後、請重新整理元素UI。</block>
-  <block id="ef988ff4187e2a3d703b98f2f10132e9" category="paragraph">您可以看到可用磁碟機的警示已清除、以及其他叢集故障。</block>
-  <block id="5bfddabfdcda821d7356388830c9cf96" category="summary">瞭解如何安裝及使用SolidFire 《企業版SDS》。</block>
-  <block id="bbe79d41bca6e93a8bc7193f844d8acd" category="doc">安裝及使用SolidFire 企業版SDS</block>
-  <block id="5f5ad1dc8254b51819bc16643a824f9d" category="inline-xref-macro">開始使用NetApp SolidFire 解決方案企業版</block>
-  <block id="31f9484e9fa921054731b0ec179ca46d" category="list-text"><block ref="31f9484e9fa921054731b0ec179ca46d" category="inline-xref-macro-rx"></block></block>
-  <block id="7390be824fc7affa4eb1360a26f1141f" category="inline-xref-macro">執行必要的安裝工作</block>
-  <block id="cac1d84c9b04d6a93deffa671238cf05" category="list-text"><block ref="cac1d84c9b04d6a93deffa671238cf05" category="inline-xref-macro-rx"></block></block>
-  <block id="5b7552d022640779a270c6d3e660c540" category="inline-xref-macro">安裝SolidFire 不一樣的功能</block>
-  <block id="6e46624aeebb9ee2b9885af870a756c5" category="list-text"><block ref="6e46624aeebb9ee2b9885af870a756c5" category="inline-xref-macro-rx"></block></block>
-  <block id="d1998acac536abf9d812058700ed1eb5" category="inline-xref-macro">執行安裝後工作</block>
-  <block id="5d36c328fd35f68de822a447c0c106d0" category="list-text"><block ref="5d36c328fd35f68de822a447c0c106d0" category="inline-xref-macro-rx"></block></block>
-  <block id="107f93eee6e0a998c191d288bee17404" category="inline-xref-macro">升級叢集</block>
-  <block id="43d09f1c8b100e233e6e0b6459310740" category="list-text"><block ref="43d09f1c8b100e233e6e0b6459310740" category="inline-xref-macro-rx"></block></block>
-  <block id="ee39e52418d299dc40581763388efcb6" category="inline-xref-macro">監控叢集</block>
-  <block id="d5025ff19a05c2b50306830fabee958f" category="list-text"><block ref="d5025ff19a05c2b50306830fabee958f" category="inline-xref-macro-rx"></block></block>
-  <block id="ff5d4009972b5a994ecb6aa941dafe8d" category="inline-xref-macro">管理SolidFire 功能</block>
-  <block id="577309ced1fa7e90376b82b9b2c1fa8d" category="list-text"><block ref="577309ced1fa7e90376b82b9b2c1fa8d" category="inline-xref-macro-rx"></block></block>
-  <block id="7ad282ed020b0f89e313435d83292946" category="inline-xref-macro">解除安裝SolidFire 不完整的</block>
-  <block id="f92c1c243cac0db373ec162874e9f988" category="list-text"><block ref="f92c1c243cac0db373ec162874e9f988" category="inline-xref-macro-rx"></block></block>
-  <block id="6ff742d193be4e19cf7fd680dec548cb" category="inline-xref-macro">維護SolidFire 功能</block>
-  <block id="63f823c9b485228be3e013069f3c2866" category="list-text"><block ref="63f823c9b485228be3e013069f3c2866" category="inline-xref-macro-rx"></block></block>
-  <block id="90d15b4754e7a8c87189c31d2962ee88" category="summary">如需SolidFire 協助疑難排解您的EESDS系統的相關資訊、請參閱知識庫文章的連結。</block>
-  <block id="6e809805408cd55878a3ac49c9cb799b" category="doc">疑難排解KB文章的連結</block>
-  <block id="15d95b639f1581a953feca96e67cadac" category="inline-link">如何使叢集中所有節點的介面名稱相同（需要登入）</block>
-  <block id="f06763dae17559c4bae5d2f38301fe89" category="list-text"><block ref="f06763dae17559c4bae5d2f38301fe89" category="inline-link-rx"></block></block>
-  <block id="4135acc125f622f3d176bf9af30738ad" category="inline-link">如何變更MTU大小（需要登入）</block>
-  <block id="7b764e7d53b46068f21eda9b091189ce" category="list-text"><block ref="7b764e7d53b46068f21eda9b091189ce" category="inline-link-rx"></block></block>
-  <block id="1d40e4a3361e1e91f05f044f76d2b84a" category="inline-link">如何解決Podman Container當機問題（需要登入）</block>
-  <block id="da9cb650e06ad6e69f7117c7ae91c904" category="list-text"><block ref="da9cb650e06ad6e69f7117c7ae91c904" category="inline-link-rx"></block></block>
-  <block id="9d164281b4475328be432329e19ad212" category="inline-link">如何停用IPv6 for SolidFire EESDS（需要登入）</block>
-  <block id="b1923146f856380f5b3760ee3c594d2d" category="list-text"><block ref="b1923146f856380f5b3760ee3c594d2d" category="inline-link-rx"></block></block>
-  <block id="f79c1d01514e26a9bccc1fad46a1e97d" category="inline-link">如何在正式作業時變更ESDS叢集上的繫結介面（需要登入）</block>
-  <block id="d3949706ebda9d502952cc5bf4bd58f5" category="list-text"><block ref="d3949706ebda9d502952cc5bf4bd58f5" category="inline-link-rx"></block></block>
-  <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link">知識庫</block>
-  <block id="de0d5a9e0eaf321ca5abc502f4878065" category="paragraph">這不是完整的清單。您可以搜尋<block ref="07e94f182e062d1aec9ab9b62a09e58c" category="inline-link-rx"></block> 以取得更多文章。</block>
-  <block id="6fc37b544c0c7c6bad6a21c5e2aa379c" category="summary">如果您需要將儲存節點離線以進行軟體升級或主機修復等維護作業、您可以啟用該節點的維護模式、將I/O對儲存叢集其餘部分的影響降至最低。</block>
-  <block id="bdb990aa3afdea2ddb2f218cad666a89" category="doc">在不支援的ESDS叢集上使用維護模式SolidFire</block>
-  <block id="e69d07edaa334125aaef7f2094da77a8" category="admonition">如果您要驗證節點上的維護模式目前狀態、請使用 <block ref="04e910fadadbb107f8995814b13ebed5" category="inline-link-macro-rx"></block> API方法。節點物件包含「maintenanceMode」參數、可指出節點上維護模式的目前狀態。</block>
-  <block id="cec1e459f131189983c83e13023b4c41" category="admonition">請務必在啟用維護模式後立即進行維護。切勿讓節點處於維護模式、而非必要。</block>
-  <block id="b7ca43b9728873986f598048b8cf1944" category="paragraph">只有當節點狀況良好（沒有任何封鎖叢集故障）、而且儲存叢集能夠承受單一節點故障時、您才能將儲存節點轉換為維護模式。在您為健全且容錯的節點啟用維護模式之後、該節點不會立即轉換、除非符合下列條件、否則會加以監控：</block>
-  <block id="59ff4d072b8bcfabc8f633109f8358b8" category="list-text">節點上裝載的所有磁碟區都已容錯移轉、而且節點不再是任何磁碟區的主磁碟區。</block>
-  <block id="84a62d0ff621133193ae93b17da3bd9e" category="list-text">每個容錯移轉的磁碟區都會指派一個暫用待命節點。</block>
-  <block id="619efe5c302b6aaa6cea90fb0b87d2fe" category="paragraph">符合這些條件之後、節點便會轉換成維護模式。如果在五分鐘內未符合這些條件、節點將不會進入維護模式。</block>
-  <block id="c3a4d2b3098ae67e069380ae4ce9e09d" category="paragraph">停用儲存節點的維護模式時、會監控節點、直到符合下列條件為止：</block>
-  <block id="3782f8e6d336a53a323768bb3a00c5c0" category="list-text">所有資料都會完全複寫到節點。</block>
-  <block id="06c5165c16ca08077232179b5d2d75cc" category="list-text">所有封鎖的叢集故障都已解決。</block>
-  <block id="a271c6033422dcbc5f976139fc79fb79" category="list-text">節點上裝載之磁碟區的所有暫用待命節點指派都已停用。</block>
-  <block id="4725545efbc14434075e69984646a9a1" category="paragraph">在符合這些條件之後、節點就會移出維護模式。如果在一小時內不符合這些條件、節點將無法從維護模式移轉。</block>
-  <block id="2f8468b286f91aefd0cc14b1dd541a2c" category="section-title">使用維護模式時可能發生的情況</block>
-  <block id="ccbc0fd6b30fe1026dbffec675720354" category="list-text">如果某個節點處於維護模式、但尚未重新開機、且/或尚未進行維護、或發生維護、且已備份且正常運作、但您尚未停用維護模式、 另一個節點當機時、第一個節點的維護模式將會自動停用。</block>
-  <block id="5ff479096e1f0b62859139e82f8d5436" category="list-text">如果其中一個節點處於維護模式、而另一個節點同時當機、則會發生中斷。您必須等到處於維護模式的節點重新上線。</block>
-  <block id="634cea083b073af8504e5095187b89c0" category="list-text">如果您長期將屬於某個頻道群成員的節點置於維護模式中、系統會自動將其從頻道群中移除、如果有其他節點可供新增到該節點的位置。</block>
   <block id="fa9cad4db511fd46f4fab74e820f5223" category="section-title">啟用維護模式</block>
-  <block id="981e3fad0ae5711242383785c665d243" category="paragraph">您可以使用「啟用維護模式」API方法來啟用維護模式。此方法具有下列輸入參數：</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">名稱</block>
   <block id="31ce3cdcd67850870b616f75b555bbc5" category="cell">預設值</block>
   <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">必要</block>
-  <block id="fad2a23fe4c60477bbffa27828210fce" category="paragraph">「forceWithUnresolvedFaults」</block>
   <block id="36a2baefd7a14829a6b88931d079fc64" category="paragraph">即使存在封鎖叢集故障、仍會強制啟用此節點的維護模式。</block>
   <block id="84e2c64f38f78ba3ea5c905ab5a2da27" category="paragraph">布林值</block>
   <block id="f8320b26d30ab433c5a54546d21f414c" category="paragraph">錯</block>
-  <block id="a95fe881e6cf7cb9047563638d0bc631" category="paragraph">節點</block>
   <block id="88505b70f113fdea737e40e3baa93c93" category="paragraph">要置於維護模式的節點ID清單。一次只支援一個節點。</block>
   <block id="51544bcfb968adbf1066e3e8d279c1bc" category="paragraph">整數陣列</block>
   <block id="6adf97f83acf6453d4a6a4b1070f3754" category="paragraph">無</block>
-  <block id="af987aa5f3aa0dadabe996980e5386ab" category="paragraph">《PerMinutePrimarySwapLimit》（《PerMinutePrimarySwapLimit》）</block>
   <block id="8b0cd7b2483e7f7d524bc05b30f7e2fd" category="paragraph">每分鐘交換的主要切片數。如果未指定、則會一次交換所有主要切片。</block>
   <block id="157db7df530023575515d366c9b672e8" category="paragraph">整數</block>
-  <block id="69b6346951ac4c9198ea39dd05708a3f" category="paragraph">超時</block>
   <block id="95b3af65627965d62a325f9b836af5e1" category="paragraph">指定在自動停用維護模式之前、應保持啟用的時間長度。格式化為時間字串（例如、hh：mm：sss）。如果未指定、維護模式將維持啟用、直到明確停用為止。</block>
   <block id="b45cffe084dd3d20d928bee85e7b0f21" category="paragraph">字串</block>
   <block id="b81273f41558fb1c31e8863593b10aeb" category="paragraph">此方法具有下列傳回值：</block>
-  <block id="e1078f02f269282b12e913fab1b68ad4" category="paragraph">「asyncdle」</block>
-  <block id="6a6a6e8be1ec64a5c6c054e7efc6c557" category="paragraph">您可以使用「Getynprynresult」方法擷取此非同步處理、並判斷維護模式轉換何時完成。</block>
-  <block id="5136fc8ff779bc17653e7a67c82a3d3a" category="paragraph">目前模式</block>
   <block id="7b59ac16de4d8fd8a749287f78cc734b" category="paragraph">節點目前的維護模式狀態。可能值：</block>
   <block id="0830b2247d85c4cbc2c25b948f68d657" category="list-text">停用：未要求維護。</block>
   <block id="8f057dce55f8d12f5b4077031c39eb95" category="list-text">容錯移轉：節點無法從維護模式中恢復。</block>
@@ -3881,522 +3680,57 @@
   <block id="59b9c67071ad530ac4fbe0948781cd64" category="list-text">準備維護：正在採取行動、準備節點執行維護作業。</block>
   <block id="9fcb91564d0e2941ad5b6c10f713fe54" category="list-text">ReadyForMaintenance：節點已準備好進行維護。</block>
   <block id="8fd97fdd32b2594a86a39cc0195fef88" category="paragraph">維護模式（字串）</block>
-  <block id="d66394c6b531bd5d52be277976382c9d" category="paragraph">"REquestedMode"</block>
   <block id="b6bc13e979e5c7e1ea02ebf7ba32f74c" category="paragraph">節點要求的維護模式狀態。可能值：</block>
-  <block id="093586b1f3ef758c1cea8d476b072359" category="section-title">停用維護模式</block>
-  <block id="2d427871936045a1c3fb6290f3d18e4d" category="paragraph">您可以使用「停用維護模式」API方法來停用維護模式。此方法具有下列輸入參數：</block>
   <block id="768d396ff6865c309cb5b887f53b62ee" category="paragraph">要從維護模式中移出的儲存節點ID清單。</block>
   <block id="f52fd865d827234a5d7f2d167a191468" category="list-text">非預期：節點已被發現離線、但處於「已停用」模式。</block>
-  <block id="8a221a4f965f4cfc6edfd1e855cb0aaa" category="summary">安裝SolidFire 完EESDS之前、請務必執行必要的檢查、並確認您的環境符合組態、IP定址和網路需求。</block>
-  <block id="88d5e6f116564d2c06f8abf0724efec5" category="doc">執行必要的安裝工作</block>
-  <block id="72af4b89bf6c89e877a119046199a6b7" category="inline-link">NetApp互通性對照表（需登入）</block>
-  <block id="04be9ab6e44a60450ae6452e609984be" category="list-text">安裝支援的伺服器。請參閱<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="dd76252ea7a50def2a98f218cb1505b4" category="inline-link">知識庫文章</block>
-  <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">請確定您的硬體組態已達到平衡、而且所有通道均已填入。如需最大化頻寬的詳細資訊、請參閱<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> （需要登入）。</block>
-  <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">設定網路時間傳輸協定（NTP）伺服器、以搭配網路中的所有主機使用。</block>
-  <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">選取安裝目的地時、請選取選項按鈕以手動設定檔案系統分割區。在「*手動分割*」頁面上、使用*+*和*-*按鈕移除任何現有的分割區、然後建立新的分割區並依照此處列出的建議調整其大小。使用預設的LVM分割配置可讓您在需要時輕鬆調整大小。</block>
-  <block id="17535771fae0ee390ce31ef42ebc5155" category="paragraph">如果您的SATA磁碟為250GB、請遵循下列建議的分割區。如果您的SATA磁碟有更多空間、您可以增加/opt和/var磁碟分割區大小。</block>
-  <block id="3349300356cb3141ea939dcbdf749789" category="cell">分割區</block>
-  <block id="6f6cb72d544962fa333e2e34ce64f719" category="cell">尺寸</block>
-  <block id="a53bfb333437907a8d5bdc636d15c75d" category="paragraph">/boot</block>
-  <block id="208b4367cf771ded0e29ff6f9282442e" category="paragraph">1GB</block>
-  <block id="68ab1268abb7e5f5688810968df97d6b" category="paragraph">/opt</block>
-  <block id="756801f257951e804ddda99ba1157357" category="paragraph">50GB</block>
-  <block id="ca905eb4a00d34150573153a09e2e79b" category="paragraph">/var</block>
-  <block id="f0a1dfdc675b0a14a64099f7ac1cee83" category="paragraph">切換</block>
-  <block id="00670b1d97c6a389b23ec0c46c497322" category="paragraph">4GB</block>
-  <block id="4858dab5b4ac16ad2b7d274698c2532a" category="paragraph">/home</block>
-  <block id="0be25e5b91d25f9db3b4d3dcaf2cfd1f" category="paragraph">5GB</block>
-  <block id="6666cd76f96956469e7be39d750cc7d9" category="paragraph">/</block>
-  <block id="544e08e2faefbb064c1083d52f2484a7" category="paragraph">最少10Gb</block>
-  <block id="7d8fdfd7c15a233be456f2a7a7f5337a" category="paragraph">/usr</block>
-  <block id="876bd0b5b542dbc543a61dd69f527ceb" category="admonition">任何程序都不會使用「/sdb"磁碟。</block>
-  <block id="09942c4da908193c21f2c641c4c45cd7" category="list-text">停用RAID for /boot。</block>
-  <block id="303f5963e3ea829928dcbe2a9317331c" category="list-text">第一次開機之後、請執行下列動作：</block>
-  <block id="583f03cc8d89c265cfb974e74e052cc2" category="list-text">安裝Red Hat訂購管理程式、並啟用下列儲存庫：</block>
-  <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">在節點上啟用SSH。</block>
-  <block id="f0a2de2efe6108942f8b79e50b1b6be5" category="inline-link">知識庫文章（需要登入）</block>
-  <block id="57208611101414fe2f0426e46c1f0d65" category="list-text">如果您要停用IPv6、請依照本節所述的步驟進行<block ref="2a5c78b7a0390cd7a5313c37d3eb2c52" category="inline-link-rx"></block>。</block>
-  <block id="654fdbae1d58bcbbc420ee34e66cbecb" category="list-text">安裝Ansible、Git、Podman和Python 3.0。</block>
-  <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp互通性對照表工具IMT （不含）</block>
-  <block id="30ec57363b9938495c0097cd8a0bcbbf" category="list-text">使用SolidFire 中所列的「功能不均」組態<block ref="d73544449e4c516eccc06a758c5e6c47" category="inline-link-rx"></block> 作為參考。</block>
-  <block id="909806d31a8e12a761cf09c409cefaad" category="admonition">如果您聯絡NetApp支援部門以尋求SolidFire 有關支援方面的協助、則支援部門會先確認您的平台是否符合SolidFire 《支援》所列的《支援》參考組態。IMT如果Support判定您的基礎平台不符合參考組態、Support將會引導您將不相容的韌體、軟體及/或硬體元件與IMT 正確版本的更新程式進行對齊。</block>
-  <block id="6314b9fb7626759e31aeab5d959e5286" category="list-text">針對SolidFire 不符合的ESDS執行法規遵循檢查。</block>
-  <block id="1b925521d9ab922c0b62ff7004c03a9a" category="list-text">執行「Ansible－galletical install」命令、安裝「na_solidfire_SDs_Compliance」角色。</block>
-  <block id="32838a112daec4b16e9587c6be566408" category="inline-link">NetApp GitHub儲存庫</block>
-  <block id="6796090f4e897e41877130d051fe6569" category="paragraph">您也可以從複製角色、手動安裝角色<block ref="1268c1a5c8687422762f7e5ea4f68102" category="inline-link-rx"></block> 並將角色放在「~/.Ansible /roses'」目錄中。NetApp提供README檔案、其中包含如何執行角色的相關資訊。</block>
-  <block id="f4457a623c03bffd47765f6e0dcbd5c2" category="admonition">請務必下載最新版本的角色。</block>
-  <block id="7753548e2ef6a16b4af120cec9f041de" category="list-text">將您下載的角色往上移一個目錄、從其中安裝。</block>
-  <block id="8d19ab8caadce7b51211de95be14e186" category="list-text">執行「Ansible - gal銀河系 角色清單」命令、確保Ansible已設定為使用新的角色。</block>
-  <block id="34838a3f0559a6f772b5758da69cbbfb" category="list-text">建立要用於法規遵循檢查的方針。</block>
-  <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">執行法規遵循檢查方針、如下列範例所示：</block>
-  <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">即使您開始使用SolidFire 完EESDS系統、也應該定期執行法規遵循檢查、以確保系統符合法規要求。在某些情況下、NetApp支援部門會要求您執行法規遵循檢查、以協助診斷及疑難排解問題。</block>
-  <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">請依照此處詳述的IP需求來設定您的網路：</block>
-  <block id="265df7cdddd316ce979aa017f0753e25" category="cell">儲存網路IP位址</block>
-  <block id="8cf4bbd9c7217cee301892ceeb548f53" category="cell">管理網路IP位址</block>
-  <block id="6d25d1271fc6a92cf675fb67a0ad3cdc" category="cell">IP位址總數</block>
   <block id="fe171fe0421ac266ac1285e64b1311d2" category="paragraph">儲存節點</block>
   <block id="c4ca4238a0b923820dcc509a6f75849b" category="paragraph">1.</block>
-  <block id="fc20676b1954b68804600be04c860ba3" category="paragraph">每個節點2個</block>
-  <block id="98a4860f4192c5bd16f0661d9088fa73" category="paragraph">（選用）1.</block>
-  <block id="04a3b7563a19e767f850d08a9f70c427" category="paragraph">儲存網路上每個叢集1個+管理網路上每個叢集1個+管理節點每個叢集1個FQDN</block>
-  <block id="66914f6c0ab6fb5d02ab80f066502651" category="paragraph">儲存叢集</block>
-  <block id="65991b19595490549addf2ebc74b53af" category="paragraph">1個儲存IP（SVIP）</block>
-  <block id="8fa32fc783d79557c17af834f8b01e4f" category="paragraph">1個管理IP（MVIP）</block>
-  <block id="c453c47b1ba83924be84863b10f727c3" category="paragraph">每個儲存叢集2個</block>
-  <block id="b0d6f1fd6c27538a017901246c345aec" category="list-text">在25GbE乙太網路交換器和10GbE交換器上的管理網路上設定儲存網路。請參閱下列纜線圖示：</block>
-  <block id="a18676a6941dfd6b3d4e743b56aef89c" category="image-alt">顯示了360360節點上的連接埠。</block>
-  <block id="3e75faf41fc417e4a808983466808a13" category="paragraph">儲存網路的連接埠</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="paragraph">2.</block>
-  <block id="b38eb66ff48768350c3b2249fc526334" category="paragraph">IPMI連接埠</block>
-  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="paragraph">3.</block>
-  <block id="3954d0109fc9c791be6d11e39804cb50" category="paragraph">用於管理網路的連接埠</block>
-  <block id="ebff118a006e94651da911d800279c44" category="admonition">此處提供的圖例是一個範例。實際的硬體可能會因您擁有的伺服器而有所不同。</block>
-  <block id="7300079506cb737ad309140b1f56eeda" category="list-text">將交換器連接埠MTU變更為9216位元組。</block>
-  <block id="ab2f4d4dbd7fe86289026b4321e7e53d" category="paragraph">80個TCP/IP</block>
-  <block id="f5fc4cfbf6f32dae142bd0f1c443bc13" category="paragraph">叢集升級</block>
-  <block id="b0ee3a63a5791163e83df745e5b7b013" category="paragraph">4442 TCP</block>
-  <block id="e272228cdd123cd65bc4e9089567f30f" category="paragraph">HTTPS UI存取儲存節點</block>
-  <block id="dee6c27248d5cf767128a7c55bad800a" category="paragraph">443 TCP</block>
-  <block id="1afe87c53ae91c5600c70549611727ed" category="paragraph">ESXDS sfapp SolidFire</block>
-  <block id="d7b841139e02cc91530bda8255b969a6" category="paragraph">每節點UI和API存取、以建立叢集</block>
-  <block id="86d0889de2b255e9ecf2fb67c28470f8" category="paragraph">2010 udp</block>
-  <block id="d036c86abd0958e8d672d01d7b5892c1" category="paragraph">叢集信標（探索要新增至叢集的節點）</block>
-  <block id="319f29b64628e835f8355bf098da02ea" category="paragraph">3260 TCP</block>
-  <block id="7293909634c99b1e8f292f90cbdc3213" category="paragraph">儲存叢集Sip</block>
-  <block id="58782d31ead4f221cc133cfed5b93ff2" category="paragraph">SOAP伺服器</block>
-  <block id="2731396213d50a036c836af615741f68" category="paragraph">7627 TCP</block>
-  <block id="b3bc4c66b5305ee09e050d20730163a1" category="paragraph">SOAP Web服務</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="paragraph">不適用</block>
-  <block id="4fdcb60e302e98d6d7d63b43cddfeac7" category="paragraph">8080 TCP</block>
-  <block id="dc1db2be0dd0b9bbcc314d40bd5007e3" category="paragraph">系統管理員通訊</block>
-  <block id="2edc3e621f3ce9bdb4ec59ec65e4b169" category="paragraph">843TCP</block>
-  <block id="f0f166a01d55488cbf1ae223ecbb6068" category="paragraph">vCenter外掛QoSSIOC服務</block>
-  <block id="b843120f7921517683f4de0687bf0a29" category="admonition">元素分散式資料庫需要連接埠2181、2182和2183、安裝SolidFire 完EESDS時、會從元素容器中動態開啟連接埠2181、2182和2183。</block>
-  <block id="0cb585626379a70b87a0e3ee14309e3b" category="list-text">使用下列命令開啟上述連接埠：</block>
-  <block id="78ff65afbf92a15cd30dea91aefc1e9b" category="inline-link-macro">最佳實務做法</block>
-  <block id="f433801b7b771eb645906990697cb40d" category="list-text">使用設定您的主機網路 <block ref="d5d50f06af9eb06fd5c8afba97ab5274" category="inline-link-macro-rx"></block> 已提供。</block>
-  <block id="9fe0e0876a07d2247ecb84a994e87a77" category="admonition">您應完成設定主機網路的步驟、以確保SolidFire 成功安裝完整套功能。</block>
-  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">請按這裡</block>
-  <block id="d5272d5ecd1fe99c7097dfcca90c8f7d" category="list-text">安裝一部Collect、NetApp支援部門將會使用它來收集主機記錄。您可以從安裝一個Collect<block ref="d3b16539387c5c512d10064586f79c65" category="inline-link-rx"></block>。您需要NetApp帳戶才能存取下載內容。您也可以在同一個位置找到《One Collect Installation Guide》（收集安裝指南）和《Release Notes》（版本說明）。</block>
-  <block id="b4cac9f0dca24135289e8ff89afe6aa1" category="admonition">您必須下載並安裝一個Collect、才能獲得最佳的支援體驗。</block>
-  <block id="6d1d7be211708c9b56d930f731aa306b" category="list-text">安裝用於記錄收集的管理節點、並啟用NetApp Support存取以進行疑難排解。如需管理節點和安裝步驟的相關資訊、請參閱 <block ref="9915e3fe57455c0bc98ba7d4ab2016f9" category="inline-link-macro-rx"></block>。</block>
-  <block id="4f5eda8b31b89aac76dc691c26a36ead" category="summary">您可以使用Ansible在SolidFire 您的EESDS叢集上執行不中斷營運的循環升級。Ansible使用NetApp提供的「na_solidfire_SDS升級」角色、一次執行一個節點的循環升級、同時維持所有磁碟區的資料可用度。</block>
-  <block id="7690f92e4b41258b29e482a9cb8f7828" category="paragraph">在升級之前、請務必符合下列條件：</block>
-  <block id="c523263b93550ca954f1af7e44c5e2b1" category="list-text">元素UI中沒有叢集故障。</block>
-  <block id="886e65261ae3233af661038bfe79457a" category="list-text">庫存檔案是最新的、內含目前的RPM檔案建置資訊、以及叢集成員節點的詳細資料。</block>
-  <block id="75f9713bb692aa8ddc0222c9c911d7d0" category="list-text">這些主機是使用IP位址（而非完整網域名稱[FQDN）在庫存檔案中定義。</block>
-  <block id="fcda1cd3801e210bb4c9ec3370b460bb" category="admonition">如果您使用FQDN來定義主機、升級將會失敗。</block>
-  <block id="3d7584fcbe5b23ba79048f98c53e013b" category="list-text">這些主機是在庫存檔案中使用下列範例中的格式來定義：</block>
-  <block id="aaa26184b54be85386974e3afb677403" category="list-text">庫存檔案中的節點數與您要升級的叢集中節點數相同。如果數字不相符、升級程序將會失敗、並顯示類似以下範例的錯誤：「叢集10.194.79.151所包含的節點數超過指定的升級節點數！」</block>
-  <block id="be75fa6a1f2602104281d006c7eb344b" category="list-text">庫存檔案指定下列變數：SF_mgmt_virt_ip（MVIP）、SF_cluster管理使用者名稱、SF_cluster管理密碼、solidfire_Element（新RPM檔案的路徑）。</block>
-  <block id="afabb88bb0563118dace5bf222db1c39" category="paragraph">以下是升級過程中的情況總覽：</block>
-  <block id="8ee48912a7450d5cf02ff0dda5c76a65" category="list-text">系統會驗證您在庫存檔案中輸入的資訊。</block>
-  <block id="fbe3081d9043e52d5d82bee4d3bc6f7e" category="list-text">系統會收集節點資訊。</block>
-  <block id="442b631ac2eb75162f2ef9acee9d5bbc" category="list-text">RPM會平行安裝在庫存檔案中的所有節點上。</block>
-  <block id="0fa2ed65b468ee68eeacc854ea25dacc" category="list-text">在每個節點上安裝RPM之後、每SolidFire 個EESDS節點一次升級一個。每個節點都會自動置於維護模式。如果您執行升級教戰手冊、則不需要手動啟用維護模式。</block>
-  <block id="dc86509257dd9d5f1ade92437774dfe4" category="list-text">將第一個節點置於維護模式之後、位於SolidFire 該ESXESDS節點上的磁碟區會故障移轉至SolidFire 叢集中的其餘部分。</block>
-  <block id="5cdc9f25c2edd4ffe741d0b9e7affcba" category="list-text">系統會重新啟動此服務、以取得應用程式的最新版本。SolidFire</block>
-  <block id="b32191680a578895a11d4f878951da6e" category="list-text">節點的維護模式已停用、叢集會等待節點恢復。</block>
-  <block id="ef6ce04108bc5ed1d5e2530cdf64d905" category="list-text">節點恢復連線後、叢集就會達到平衡。</block>
-  <block id="97aeff02e72c12ce472ffaa20ea76eba" category="list-text">叢集中的所有節點都會重複相同的程序。</block>
-  <block id="0d4b259cf33df0bb5395a85c7b3fd3a2" category="list-text">升級所有節點之後、叢集會顯示最新版本。</block>
-  <block id="7b627da88caa5615a1a604e3e1b48362" category="admonition">如果在升級期間發生錯誤、或叢集發生故障、升級不會停止。它會繼續進行、並列印已成功且未成功升級的所有節點清單。修正任何錯誤之後、您可以重新執行教戰手冊或拒絕檔案、以完成升級程序。</block>
-  <block id="297c119b2455bb5de4f561863c91aafa" category="admonition">如果升級因為故障而失敗、您應該解決升級問題、然後繼續升級。在升級完成之前、叢集會維持升級狀態。如果叢集處於升級狀態時、元件未清除故障、請聯絡NetApp支援部門。根據故障的本質及安全性、Support可能會指示您新增「yes_i_want to _ignore叢集錯誤」變數、並在升級版的方針書中設定為true、然後重新執行方針。請勿在未諮詢支援部門的情況下嘗試。</block>
-  <block id="897ef64d8177179ed395af9af8e51a10" category="list-text">執行「Ansible－galletical install」命令、安裝「na_solidfire_SDS升級」角色。</block>
-  <block id="90ea39efb4988b3dbebac6c6723b4f47" category="list-text">執行Ansible銀河角色清單命令、確保Ansible已設定為使用新角色。</block>
-  <block id="496635717ba309b68cfd2216f3b52739" category="list-text">建立要用於升級的方針。如果您已經有一本教戰手冊想要使用、請務必在本教戰手冊中指定「na_solidfire_SDS升級」角色。</block>
-  <block id="76624d119c6866e6e69443fde371d25f" category="list-text">執行方針：</block>
-  <block id="c316a25ddbd887a540e3a5383e7bff16" category="admonition">此處使用的教戰手冊名稱就是一個範例。您應該將其替換為教戰手冊的名稱。</block>
-  <block id="ee64d37ed8cba368aefc1bd92ef6861d" category="paragraph">執行實戰手冊會驗證您在庫存檔案中輸入的資訊、並在庫存中列出的所有節點上安裝RPM。您可以檢查Ansible輸出、確認每個節點都已升級。</block>
-  <block id="a096ab9c1572be6d30c5297a12165daf" category="list-text">升級完成後、請驗證每個節點、以確保使用Element UI或叢集API執行新版本。</block>
-  <block id="68c8eb96434ce19942b296c49e6e8184" category="doc">更換HPE 360</block>
-  <block id="ccceacf55f671c6eb4926477c82ef398" category="list-text">記下磁碟機的序號。這將有助於您在節點的IPMI介面中找到對應的BayID（本例為HPE Integrated Light-Out或ILO）。</block>
-  <block id="70a9b14e828dfc85c81de7a5bbbd3ae9" category="list-text">登入節點的IPMI介面（本例為ILO）。</block>
-  <block id="89410b8c6eba15e197c1ddf0ff3e026c" category="list-text">從左側導覽中選取*系統資訊*、然後選取*儲存*。</block>
-  <block id="2ff4ded8c31a994cadc5be1f12597c6b" category="list-text">請將您在上一步驟中記下的序號與您在畫面上看到的相符。</block>
-  <block id="5a6a6f2a1320709cd2551ec4647db17c" category="list-text">請根據序號尋找所列的插槽編號。這是您必須從中移除磁碟機的實體插槽。</block>
-  <block id="f5a60c34634196d94743b9d1288d0732" category="list-text">識別磁碟機支架。</block>
-  <block id="c965420fc6fce474cdb1eaa24f269378" category="paragraph">下圖顯示伺服器正面、磁碟機支架編號顯示在影像左側：</block>
-  <block id="7ff26870546d8c2efc77e02b866a70ec" category="image-alt">顯示了服務器托架編號（在dL360節點上）。</block>
-  <block id="20fb91a1b99d6e42a1cf77e3252e8e65" category="list-text">按下您要更換的磁碟機上的電源按鈕。LED會持續閃爍5至10秒、然後停止。</block>
-  <block id="9e41292ec9e58bc2339d3843d43918e6" category="list-text">LED停止閃爍且磁碟機關閉後、按下紅色按鈕並拉動栓鎖、即可將其從伺服器上移除。</block>
-  <block id="d4daa308194bc3e0ad482777d3911f0a" category="list-text">請執行下列步驟、以驗證iLO:</block>
-  <block id="e4f5071cd84fe16c250fe49c000b3e6c" category="list-text">登入iLO.</block>
-  <block id="a118427c5857ff3e67578d1418ed7db2" category="list-text">選擇*資訊*&gt;*整合式管理記錄*。您會看到所新增磁碟機的事件記錄。</block>
-  <block id="0efe6633c22049eaa8653dfa2da5cd37" category="list-text">捲動直到找到您更換磁碟機的支架相關資訊。</block>
-  <block id="abc455932b72dc5ab5734dc30bcb4f6c" category="list-text">確認螢幕上的序號與您更換的新磁碟機序號相符。</block>
-  <block id="666faa0653883b60b0583f0f53719a87" category="list-text">選擇*資訊*&gt;*整合式管理記錄*。此處列出磁碟機故障的原因（例如SSDWearOut）和位置。您也可以看到一個事件、指出磁碟機的狀態已降級。</block>
-  <block id="908a0f5e2800538c318d3bec568bfc64" category="list-text">驗證故障磁碟機的可用資訊。故障磁碟機的狀態會顯示*降級*。</block>
-  <block id="df8a7d29af0e90037dfc1894b839bbae" category="list-text">驗證新磁碟機詳細資料、請參閱：</block>
-  <block id="d3f040b2f327de829f98af8f5d662b07" category="list-text">選擇*資訊*&gt;*整合式管理記錄*。您會看到所新增磁碟機的事件記錄。</block>
-  <block id="2f90abc1f20fcb89e0e17b807210a08d" category="list-text">重新整理頁面、查看您新增磁碟機的記錄事件。</block>
-  <block id="aa4f7a52b570298f17840a6da60bfede" category="list-text">驗證您的儲存系統在ILO:</block>
-  <block id="7466686c3e570d4153bad119f7f07146" category="list-text">捲動直到找到安裝新磁碟機的支架相關資訊。</block>
-  <block id="dc1df8b8fc797a32af0fdb82929c985e" category="list-text">記下序號。</block>
-  <block id="6667e1a70a5fafd45796b030f9b2380c" category="admonition">快取磁碟機的容量低於儲存磁碟機。</block>
-  <block id="856d241f05e6eb826884d21d118231d1" category="list-text">尋找所列的快取磁碟機插槽編號。這是您必須從中移除磁碟機的實體插槽。</block>
-  <block id="85ba4c0739410f548a9641451c11a28b" category="list-text">記下HPE型號和新快取磁碟機的ISN（序號）。</block>
-  <block id="7c93f431d56cf1e5f3ffeb19248de77c" category="list-text">確認螢幕上的序號與您安裝的新磁碟機序號相符。</block>
-  <block id="560d0945440f76a732a9fbcc35180010" category="summary">您可以SolidFire 移除SolidFire 節點上的EESDS、以「重設」安裝了RESEESDS的節點。若要在SolidFire 節點上恢復不完整的ESDS、您應該執行所有安裝步驟。</block>
-  <block id="9016f524f2973678d7663aea53bb88b3" category="doc">在SolidFire 節點上解除安裝不完整的功能</block>
-  <block id="3b6744c82f649728c504907b57a1055e" category="paragraph">您可以在SolidFire 節點上移除SolidFire 鏡面ESDS、*重設*安裝完SESDS的節點。若要在SolidFire 節點上恢復不完整的ESDS、您應該執行所有安裝步驟。</block>
-  <block id="68629b26007b6f0d31da5f710865d8c4" category="admonition">您可以使用 <block ref="e21e9b52142fa32fc9f2798e0357c93a" category="inline-link-macro-rx"></block> NetApp提供的執行作業的Ansible角色。如果您想要在SolidFire 節點上手動移除EESDS、請參閱下列步驟。</block>
-  <block id="006a2c6366ad86bc1da05db85ff0ff30" category="list-text">使用元素UI或從叢集移除磁碟機<block ref="af8bb9d27ccaccc91f1f8edbd1b2c6cd" category="inline-link-rx"></block> API方法。</block>
-  <block id="215a2ff75aaa54f1e5a17125c706bca4" category="list-text">使用元素UI或從叢集移除節點<block ref="b93ddc7d3c2a507b426fba6e07c41251" category="inline-link-rx"></block> API方法。</block>
-  <block id="08a481e768a7e6b16029a890ff83c01c" category="list-text">使用SSH連線至從叢集移除的節點。</block>
-  <block id="3ef7f9e0aa1c6e4768c8761acab7b60c" category="list-text">從SolidFire 節點移除下列項目：</block>
-  <block id="0ecd55f220d62ef9bacff1300064205c" category="list-text">從目錄中移除持續性資料、如下所示：</block>
-  <block id="0f7229b82509dba67fd326002f94b558" category="doc">更換HPE DL380的磁碟機</block>
-  <block id="9937305f8c7a84f2274ed00779cdfa8b" category="list-text">識別磁碟機箱。</block>
-  <block id="777e8b41f08625ad1f679e2baee42a49" category="paragraph">下圖顯示伺服器與磁碟機的正面：</block>
-  <block id="a8fea49a94081b31d8e5c8fa5bb0a8de" category="image-alt">顯示了服務器在dL380節點上的驅動器。</block>
-  <block id="650ed61904bc5dbb0c57bfd4f63194c8" category="list-text">識別機箱中的磁碟機。</block>
-  <block id="245621b89b398274425d937aa6abf9fd" category="summary">您可以監控SolidFire 您的VMware ESXDS叢集效能、並使用NetApp混合雲控制UI來檢視詳細目錄。您也可以使用NetApp混合雲控制UI來收集疑難排解記錄。」</block>
-  <block id="78454d8f2c03ced65f015c33ba638846" category="paragraph">您可以監控SolidFire 您的VMware ESXDS叢集效能、並使用NetApp混合雲控制UI來檢視詳細目錄。您也可以使用NetApp混合雲控制UI來收集疑難排解記錄。</block>
-  <block id="ba2a6751f94ecc83e1287220cb1dbd46" category="paragraph">以下是在NetApp混合雲控制UI中監控叢集的相關資訊連結：</block>
   <block id="1587f6667afe5b768dfe958cc33c0348" category="inline-link-macro">在節點頁面上檢視您的庫存</block>
-  <block id="9945963a24fd155d6f6f9b3f0f1ed826" category="list-text"><block ref="9945963a24fd155d6f6f9b3f0f1ed826" category="inline-link-macro-rx"></block></block>
   <block id="b1fdadb278bc33692729c07d84b4d900" category="inline-link-macro">監控儲存叢集上的磁碟區</block>
-  <block id="935bf4b062c3ce99ec15122fe03bd5f8" category="list-text"><block ref="935bf4b062c3ce99ec15122fe03bd5f8" category="inline-link-macro-rx"></block></block>
-  <block id="2c6f626aa53141940e041d794daa13ab" category="summary">每個節點都有一個SF_SDM_config.yaml檔案、其中包含SolidFire 您指定要由哪些硬體用於哪些支援。更換磁碟機之後、您必須在此檔案中新增更換磁碟機的節點資訊。此檔案會儲存在/opt/sf/中。此檔案包含節點中磁碟機的所有相關資訊。每次新增磁碟機時、您都必須在此檔案中輸入新磁碟機的詳細資料。</block>
-  <block id="ea216c541b17d0f5b18e7b68619b13a2" category="paragraph">每個節點都有一個「shf_SDS _config.yaml」檔案、其中包含SolidFire 您指定供「ESXe ESDS」服務使用的硬體清單。更換磁碟機之後、您應該在此檔案中新增更換磁碟機的節點資訊。此檔案儲存在「/opt/sf/」中。此檔案包含節點中磁碟機的所有相關資訊。每次新增磁碟機時、您都應該在此檔案中輸入新磁碟機的詳細資料。</block>
-  <block id="1e2562204971f2df534c7ce2418dd6c9" category="paragraph">以下是*必要*的檔案內容：</block>
-  <block id="897356954c2cd3d41b221e3f24f99bba" category="cell">金鑰</block>
-  <block id="fa9d531a05d53fef3a743928151ea0d0" category="paragraph">schemaVersion</block>
-  <block id="ea11b49459456e3014ecb820c4d8abea" category="paragraph">「2.0」</block>
-  <block id="27118326006d3829667a400ad23d5d98" category="paragraph">字串</block>
-  <block id="751f77e624f3195cf229249db64edb1d" category="paragraph">檔案的架構版本編號。</block>
   <block id="91e02cd2b8621d0c05197f645668c5c4" category="paragraph">網路</block>
-  <block id="4ee29ca12c7d126654bd0e5275de6135" category="paragraph">清單</block>
-  <block id="5403da6e5138bb093824f0cce9e9ecc8" category="paragraph">允許的值：管理介面、storageInterface</block>
-  <block id="57e1def4c218b844432e77bf1f3a6348" category="paragraph">管理介面</block>
-  <block id="00e9b218387c6ed3e75a35183259af67" category="paragraph">"團隊0"</block>
-  <block id="1aae51250c8c2212edf0e9fa404af954" category="paragraph">用於管理和叢集管理流量的預先設定備援主機OS網路介面名稱。</block>
-  <block id="6632c88170c2a8ecc2b38b2b6e740212" category="paragraph">storageInterface</block>
-  <block id="c6fb092afe5cdde3c54a7095fec146a6" category="paragraph">"團隊1"</block>
-  <block id="a64f954c3b3fddf7b11e27aad706810a" category="paragraph">用於儲存網路流量（iSCSI流量）的預先設定備援主機OS網路介面名稱。</block>
-  <block id="1c22dea476c4a718ad41c6d78824c38a" category="paragraph">資料磁碟機</block>
-  <block id="402e3102a33bd17616c238ffe5c57a1c" category="paragraph">指向實體儲存裝置的主機OS路徑清單SolidFire 、由EESDS使用。您可以將此指定為區塊或NVMe裝置的完整路徑。以下是支援的完整路徑範例：/dev/disk/by-id/WWN-xxxx-xxxx-exp範例、/dev/disk/by-uid/nNVMe -xxxx-xxxx-ex-exp範例、以及/dev/sda1</block>
-  <block id="7cf0585e97cd5a0edc0d77daa1dedfe0" category="paragraph">快取裝置</block>
-  <block id="89409225a10c5f103f90205135b057ca" category="paragraph">實體裝置的主機作業系統路徑、SolidFire 由EESDS用作快取裝置。您應該將其指定為清單項目。以下是支援的完整路徑範例：/dev/disk/by-id/NVMe NVMe。8086-XXXXXXX-XXXXX-XXXXX-XXXXXX</block>
-  <block id="0eb9b9f84b979ff83ea24e744f09373c" category="summary">在聯絡NetApp支援部門以尋求疑難排解問題的協助之前、您應該先取得SolidFire 您的RESEUREESDS叢集授權金鑰資訊。適用於EESDS叢集的授權金鑰SolidFire 是由叢集的訂單編號和序號所組成。</block>
-  <block id="92e30aa156c183d8aa93e957ced9c428" category="doc">取得授權金鑰</block>
-  <block id="833ff59058bc8c9d93ecc7cabf2547ba" category="paragraph">在聯絡NetApp支援部門以尋求疑難排解問題的協助之前、您應該先取得SolidFire 您的RESEUREESDS叢集授權金鑰資訊。適用於EESDS叢集的授權金鑰SolidFire 是由叢集的訂單編號和序號所組成。</block>
-  <block id="41b5c7ac96acb3c1ef2799ee7df58ea3" category="paragraph">您可以使用「GetLicenseKey」方法來取得SolidFire 有關這個ESDS儲存叢集的授權金鑰資訊。「GetLicenseKey」方法沒有輸入參數。此方法具有下列傳回值：</block>
-  <block id="20b0e2c62056b17778d75467b7f11179" category="paragraph">「orderNumber」</block>
-  <block id="7a4d90a85ce4994534e3a2d8f5916e73" category="paragraph">儲存叢集的新銷售訂單編號。</block>
-  <block id="2b8f74e815f6f69baace5b39d17a4b95" category="paragraph">「週期號碼」</block>
-  <block id="841f3f1d4135af7999e02dca54fe9486" category="paragraph">儲存叢集的新序號。</block>
-  <block id="e2bc8bd9846d9bd66081ca0e70cbe57d" category="list-text">執行「GetLicenseKey」API方法、如下列範例所示：</block>
   <block id="d478021fe72aef0c237ac72d79f71ceb" category="paragraph">此方法的要求類似於下列範例：</block>
   <block id="6c29922ea921f9493eb423f9a77c8e9d" category="paragraph">此方法會傳回類似下列範例的回應：</block>
-  <block id="e3de36a1aef62c74efb2ffde98c7c6ff" category="summary">安裝SolidFire 完EESDS之後、請在每SolidFire 個EESDS節點上設定叢集名稱。然後您就可以建立SolidFire 一個EESDS叢集。</block>
-  <block id="09b7be0765e1d395729a9ab3946e4d4e" category="paragraph">以下是安裝SolidFire 完整套功能後應完成的各項工作的深度概覽：</block>
-  <block id="b1802c77389b4ac3b23faeadf903c049" category="list-text"><block ref="1efdf10dcfe9c2e3a25a8865e617917c" category="inline-xref-macro-rx"></block></block>
-  <block id="97b3e300fdc30fec27018f67c316a56f" category="list-text"><block ref="7369d04fe6c601eb40cc8c3814fb604a" category="inline-xref-macro-rx"></block></block>
   <block id="73096b8e22ce33d059ca2ade7fd93679" category="list-text"><block ref="cba2bab244fa54c4d64cb2a1ec0ab9ca" category="inline-xref-macro-rx"></block></block>
-  <block id="ef5b20c600ed307281dd18a2e008153b" category="list-text"><block ref="c3d184e2b4d651938156eb240caa790b" category="inline-xref-macro-rx"></block></block>
-  <block id="bdc50eb6c47970077e948f5bb3f2f8a9" category="admonition">您可以使用 <block ref="66b3dfe54b73a97277e6f9c94606df0e" category="inline-link-macro-rx"></block> NetApp提供的可執行安裝後步驟的角色。如果您想要手動執行、請參閱下列步驟。</block>
-  <block id="9130cceb2ee763a25b9513639313012e" category="section-title">設定叢集名稱</block>
-  <block id="3b50f0fa5346b2b7a1dbbc42b96fff06" category="paragraph">您應該先在SolidFire 每個EESDS節點上設定叢集名稱、然後才能將節點新增至叢集。您可以使用每個節點的UI或元素API來執行此作業。</block>
-  <block id="5f7caddb08898f7907582d7ba6c9ef2a" category="admonition">您無法在建立叢集之後變更叢集名稱。</block>
-  <block id="405ec6e1de058a4767f5b76c64e0ec37" category="list-text">從下列其中一個選項中選擇：</block>
-  <block id="3c8818976f51e21d1fab55e2858a800e" category="list-text">使用每節點UI：</block>
-  <block id="3b8521cd8c98f1b89d1886e9da53e4c7" category="list-text">開啟每個節點的管理節點UI：「https://&lt;node_mip&gt;:442`」。</block>
-  <block id="ecf9269363976c8aa9dfb2d865ab2460" category="list-text">選擇*叢集設定*並輸入叢集名稱。</block>
-  <block id="2ce8d1287d5fe484f0fb11eb92e9f79a" category="list-text">選取*套用變更*。</block>
-  <block id="cadf3b6311b2a5cd1f2479588b496983" category="list-text">使用 <block ref="ae527e5fc4083ce232328ba1f392402b" category="inline-link-macro-rx"></block> API方法。</block>
   <block id="e802251d4dcfaecfcfd731ece9ad093c" category="paragraph">此方法具有下列輸入參數：</block>
   <block id="65e18a0bb1868a9c1e181302d4733dba" category="paragraph">《叢集》</block>
   <block id="78cc27407f4dcd72e8111fb9177c433a" category="paragraph">應在此方法呼叫期間變更的組態屬性。只有您想要變更的欄位才需要新增至此方法、做為此參數的成員。</block>
   <block id="06b2d4b91b5c9eaa8c20a1c270f95b3c" category="paragraph">叢集</block>
-  <block id="783a065554458a06417e6f7521ebd39a" category="paragraph">請參閱下列申請範例：</block>
-  <block id="7a78f32c7990fdc6985d68bc0f9be927" category="section-title">設定授權金鑰</block>
-  <block id="691254517087ab5aa80b8fedc8074dde" category="paragraph">當您建立SolidFire 一個EESDS叢集時、需要授權金鑰資訊。NetApp支援部門也需要授權金鑰資訊、以協助解決問題。適用於EESDS叢集的授權金鑰SolidFire 包含叢集的訂單編號與序號、並會啟動您所購買的容量期限授權模式。</block>
-  <block id="732467a5be3a0e6831e6e7c57dec968e" category="paragraph">您可以使用「etLicenseKey」方法來設定SolidFire 適用於整個ESXDS儲存叢集的授權金鑰。「etLicenseKey」方法具有下列輸入參數：</block>
-  <block id="725879e2d0f942281276c78c3d3777d2" category="paragraph">此儲存叢集的新銷售訂單編號。</block>
-  <block id="8b51f48c895c48ff8a144f0677fdd18e" category="paragraph">此儲存叢集的新序號。</block>
-  <block id="1fdd119a4bb77f8b9026c9623772f04d" category="list-text">使用「etLicenseKey」API方法、如下列範例所示：</block>
   <block id="f1783cedf199ea90c1cf0ff538262716" category="section-title">建立叢集</block>
-  <block id="827cf8abef04842be3b5c070bfc281fe" category="paragraph">在每SolidFire 個ESXeesDS儲存節點上設定叢集名稱之後、您可以使用每節點UI或Element API來建立叢集。</block>
-  <block id="d3935ee6d4fcb1fcfcca9d1d5532be95" category="admonition">靜止時軟體加密預設為SolidFire 啟用、適用於不支援的ESDS叢集。如果您想要變更預設值、請在使用「Create Cluster」API方法建立叢集時執行此操作。</block>
-  <block id="61a32c002a03e8fd83a344ed9a7fd770" category="list-text">開啟每個節點的管理節點UI：「https://&lt;node_mip&gt;:442*`」。</block>
-  <block id="187c9c0ca7ae54697748620e9cc6ee36" category="list-text">從左側導覽中選取*建立叢集*。</block>
-  <block id="b5d6453b440a0aa61202cbb0fb56fa39" category="list-text">選取節點的核取方塊。將顯示「SFC100」的「ESXESDS」節點。SolidFire</block>
-  <block id="6ba3d6de9a67d1e1dc7ea740e4fc907b" category="list-text">輸入下列資訊：使用者名稱、密碼、管理虛擬IP（MVIP）位址、儲存虛擬IP（SVIP）位址、軟體訂單編號及序號。</block>
-  <block id="62e3f1df3cda0ff781908933bdd3ed75" category="admonition">建立叢集後、您無法變更MVIP和SVIP位址。不支援將相同的IP位址用於MVIP和SVIP。</block>
-  <block id="25e0759133f6ffe3e3f5c42d39a574c0" category="admonition">您無法變更初始叢集管理員使用者名稱。</block>
-  <block id="b1e6d88930283b4b36838d93a6a12628" category="admonition">如果您未指定訂單編號和序號、建立叢集作業將會失敗。</block>
-  <block id="5af069a1eb1f56c657bb5b4fb99772c3" category="image-alt">顯示每個節點的UI畫面。</block>
-  <block id="de15ae070d5996850bf7d83e2f63512a" category="list-text">確認您已閱讀NetApp終端使用者授權合約。</block>
-  <block id="af85f46a40300546b1987cf4380ee9fd" category="list-text">若要驗證是否已建立叢集、請登入叢集：「http://mvip_ip`」。</block>
-  <block id="4bb7a31020c21c8bb0fc798f8f2d3fe5" category="list-text">驗證叢集名稱、SVIP、MVIP、節點數和元素版本是否正確。</block>
-  <block id="38787e417733f8155ad2e1956fe4ce49" category="inline-link-macro">「建立叢集」</block>
-  <block id="1bae6c22ddcfd1845cf8b87aa67baa5b" category="list-text">使用 <block ref="8404d841c616b784628d5ae406a01813" category="inline-link-macro-rx"></block> API方法。</block>
   <block id="354acb4de5803913bddb270b3e8d0a90" category="paragraph">此方法具有下列輸入參數：</block>
-  <block id="2723529d6d9bef5bca5e710bc75d587a" category="paragraph">《接受書》</block>
   <block id="7beaad1565f9535900896a8110fe5907" category="paragraph">建立此叢集時、請表示您接受終端使用者授權合約。若要接受EULA、請將此參數設為true。</block>
   <block id="158fa6ae57baf58fe244bd1abd9a6961" category="paragraph">屬性</block>
   <block id="c2a93f30d4d92f94fe295bb277d1980a" category="paragraph">Json物件格式的名稱-值配對清單。</block>
   <block id="e9716d22d8c37afa4c9c36a09afaa3f5" category="paragraph">Json物件</block>
-  <block id="b7d292490ca5299a17739ba794b13f27" category="paragraph">「enableSoftwareEncryptionAtRest」</block>
-  <block id="c0d214d7702cffe90cdbcad805762cf9" category="paragraph">啟用此參數以在靜止時使用軟體加密。預設為true（在SolidFire 不實ESDS叢集上）。在所有其他叢集上預設為假。</block>
   <block id="b326b5062b2f0e69046810717534cb09" category="paragraph">是的</block>
   <block id="29233ad52b346ae7e230dad501e5f5b9" category="paragraph">《VIP》</block>
   <block id="ef794b4d0ef4fcac898bf9a56cfb3b87" category="paragraph">管理網路上叢集的浮動（虛擬）IP位址。</block>
   <block id="18752c5fbd4d6f0e2f3c56afa128f81f" category="paragraph">組成叢集的初始節點集之CI/SIP位址。此節點的IP必須在清單中。</block>
   <block id="40dc9d32a47b792341870cbd4383fa70" category="paragraph">字串陣列</block>
-  <block id="ceb72326968ce70b929f6e9a90208870" category="paragraph">英數字元銷售訂單編號。在不必要的SolidFire 基礎上。</block>
-  <block id="62938659b459d7364a61aa1ffdf0378d" category="paragraph">否（硬體型平台）是（軟體型平台）</block>
   <block id="6aa91a7fbb8c9edcf4aa5f9411aec19c" category="paragraph">密碼</block>
   <block id="b5242d44121fce71cc6d09188fbb5a67" category="paragraph">叢集管理帳戶的初始密碼。</block>
-  <block id="9bdbffdff93061db8bced3243c32da1f" category="paragraph">九位數英數字元序號。在不必要的SolidFire 基礎上。</block>
-  <block id="24841b8c940815b0a21dbf19cd9b2f40" category="paragraph">《VIP》</block>
   <block id="d88d40dce6036a050237ebf441fc2fda" category="paragraph">儲存設備（iSCSI）網路上叢集的浮動（虛擬）IP位址。</block>
   <block id="6d77646a2fd9ab65f8e3344d7dce661a" category="paragraph">《使用者名稱》</block>
   <block id="f32c1447ff684cc32d1f099a0a1b2cac" category="paragraph">叢集管理員的使用者名稱。</block>
-  <block id="d956341df9858fed6a81fbbaffcece6c" category="paragraph">請參閱下列申請範例：</block>
-  <block id="b82ce956c8030a404acc9638ed130af0" category="paragraph">如需此方法的詳細資訊、請參閱 <block ref="8781a29069f8e7cbcecbd291d40151c5" category="inline-link-macro-rx"></block>。</block>
-  <block id="1eae906fd77cf396f405f0a249a9a6d8" category="paragraph">您應該將磁碟機新增至SolidFire 您的EESDS叢集、以便它們能夠參與叢集。您可以使用元素UI或API來執行此作業。</block>
-  <block id="9ec797bc87593a53c946c895e6c29645" category="list-text">使用元素UI：</block>
   <block id="fe45af3eef773f99c066cdc99cbfb2ff" category="list-text">從Element UI中、選取*叢集*&gt;*磁碟機*。</block>
   <block id="64efe97c16298f313a94633c492bcdba" category="list-text">選取*可用*以檢視可用磁碟機的清單。</block>
   <block id="260df32cf8828ee4c326d39588cc979f" category="list-text">若要新增個別磁碟機、請選取您要新增磁碟機的*「Actions」（動作）*圖示、然後選取*「Add*」（新增*）。</block>
-  <block id="c9347a5a6675f6567839e4fc23da9425" category="list-text">若要新增多個磁碟機、請選取要新增磁碟機的核取方塊、選取*大量動作*、然後選取*新增*。</block>
-  <block id="368f584747203782ae3edd4027e4dbb3" category="list-text">確認已新增磁碟機、而且叢集容量符合預期。</block>
-  <block id="0c6dbcef2d177e85c06897fc358c21b2" category="list-text">使用<block ref="c0d40b2326a5711bff7fb806cc298f7f" category="inline-link-rx"></block> API方法。</block>
-  <block id="eba45a3406905c7055cebb16bd953ac4" category="paragraph">《發展》</block>
   <block id="e5cad4cec16acc7173b90f0aba2cb647" category="paragraph">每個要新增至叢集之磁碟機的相關資訊。可能值：</block>
   <block id="03bfc5e03446436e07413c703cec26b3" category="list-text">DriveID：要新增的磁碟機ID（整數）。</block>
   <block id="5cf43bae1f74b6c832845a3c3df7838a" category="list-text">類型：要新增的磁碟機類型（字串）。有效值為「slice」、「block」或「volume」。如果省略、系統會指派正確的類型。</block>
   <block id="6ef252974c722825216921920ecc52a7" category="paragraph">Json物件陣列</block>
   <block id="283a1b0b7b5c417a5e0d66a9b4913150" category="paragraph">是（類型為選用）</block>
-  <block id="333e523014fc6637a48d2a78b34543ee" category="paragraph">以下是申請範例：</block>
-  <block id="3e4e7ad63faa41cd10c99bab1326dae7" category="paragraph">如需此API方法的詳細資訊、請參閱 <block ref="2d2008e4715b3e295dedaaed2dd66963" category="inline-link-macro-rx"></block>。</block>
-  <block id="9a716c82c0b5d3cac686395aa4cd9933" category="summary">如需使用維護模式和更換SolidFire 您的EESDS叢集中磁碟機的相關資訊、請參閱。</block>
-  <block id="1f4cb821844b4c80e8d72b8d42798609" category="list-text"><block ref="1f4cb821844b4c80e8d72b8d42798609" category="inline-link-macro-rx"></block></block>
-  <block id="5cd937dfaa2ddd62635f49feb728681e" category="list-text"><block ref="5cd937dfaa2ddd62635f49feb728681e" category="inline-link-macro-rx"></block></block>
-  <block id="be51a55dd3e1d87adc0cfa8354012eb4" category="list-text"><block ref="be51a55dd3e1d87adc0cfa8354012eb4" category="inline-link-macro-rx"></block></block>
-  <block id="03d33bbf07fc824665e7f34a4140d9f8" category="list-text"><block ref="03d33bbf07fc824665e7f34a4140d9f8" category="inline-link-macro-rx"></block></block>
-  <block id="ea7568f6604922aeb2111ca1a2ee6b92" category="list-text"><block ref="ea7568f6604922aeb2111ca1a2ee6b92" category="inline-link-macro-rx"></block></block>
-  <block id="13f35f769215959903b1af0e8a011491" category="inline-link-macro">收集容器記錄</block>
-  <block id="6717c0c44c11c1374644359dd8287dc4" category="list-text"><block ref="6717c0c44c11c1374644359dd8287dc4" category="inline-link-macro-rx"></block></block>
-  <block id="7382773366ad9854738abf2bca4ec206" category="list-text"><block ref="7382773366ad9854738abf2bca4ec206" category="inline-link-macro-rx"></block></block>
-  <block id="a61ae55e02c127e2d3a16b74926a9eb8" category="list-text"><block ref="a61ae55e02c127e2d3a16b74926a9eb8" category="inline-link-macro-rx"></block></block>
-  <block id="e150fe9cfaa46766567b775592cd2bac" category="summary">您可以SolidFire 使用Ansible等自動化工具來安裝支援功能。如果您非常熟悉Ansible、可以建立一套可執行的教戰手冊、其中包含多項工作、例如安裝SolidFire Esesdss和建立叢集。</block>
-  <block id="c20408f72b9f66b97e25103d7dbcbeb7" category="doc">使用Ansible安裝SolidFire 功能</block>
-  <block id="7ccae5ef7d8fa0f6a807b1507c6dd026" category="list-text">您已依照所提供的指示、在本機伺服器上安裝Ansible<block ref="07ce77d77214380358f23b284008f080" category="inline-link-rx"></block>。</block>
-  <block id="2a35f9e77302cc1e2bbeaa910e7220c8" category="list-text">您已熟悉Ansible職務。請參閱<block ref="cfd282dea90d06d4e1092aec53775372" category="inline-link-rx"></block>。</block>
-  <block id="715ed4b622b063c7c92d6890b620dbb2" category="list-text">您已執行所有列出的必要工作 <block ref="48fa52450c59f1e7f619eba3da57f30b" category="inline-link-macro-rx"></block>。</block>
-  <block id="504aeb3162de0b9494957fc6a83d932d" category="list-text">您已經執行SolidFire 了一套關於EESDS的法規遵循檢查。如需如何執行法規遵循檢查的指示、請參閱 <block ref="48fa52450c59f1e7f619eba3da57f30b" category="inline-link-macro-rx"></block>。</block>
-  <block id="f9ebc901d5556c12eaa1adb518bb5820" category="paragraph">使用Ansible Vault取得敏感資訊、例如密碼、而非純文字。如需詳細資訊、請參閱下列連結：</block>
-  <block id="928d6bee3752156ef6a01aecc9d5b7fb" category="inline-link">使用Ansible Vault</block>
-  <block id="6c218f32579caefda06d561f76da7515" category="list-text"><block ref="6c218f32579caefda06d561f76da7515" category="inline-link-rx"></block></block>
-  <block id="7e8709ace1d0ee92b6cfc9b3e2ccaeb3" category="inline-link">如何建立庫存</block>
-  <block id="639931443798125c685884ee5299edcb" category="list-text"><block ref="639931443798125c685884ee5299edcb" category="inline-link-rx"></block></block>
-  <block id="74ca4b6d160710cd2fed854a596254e0" category="admonition">您應該在庫存檔案中指定所有必要的變數、而非在實戰手冊中指定。</block>
-  <block id="115db45539465ea12027bfa1144992e2" category="list-text">執行「Ansible－galletical install」命令、安裝「na_solidfire_SDS安裝」角色。</block>
-  <block id="8d8a55472883d8f240bc395e47129a7e" category="admonition">與角色相關的README檔案包含所有必要和選用變數的清單、您應該定義如下：</block>
-  <block id="ce8ab52a2e54a963ca0e35edaf6e9cd8" category="image-alt">顯示範例方針。</block>
-  <block id="dc184b0d2c29f673005351a9b5e39089" category="paragraph">您應該在庫存檔案中定義這些變數、以便在下一步建立。</block>
-  <block id="aa88c6c28e9c4b3f19a19931429fc34e" category="list-text">在Ansible工作目錄中建立庫存檔案。</block>
-  <block id="c8c272ef065a916e337970f07fa2cf4f" category="admonition">在庫存檔案中、您應該包含所有要安裝SolidFire 的主機（節點）。庫存檔案可讓教戰手冊（您將在下個步驟中建立）以單一命令管理多個主機。您也應該定義變數、例如儲存節點的使用者名稱和密碼、管理介面和儲存介面名稱等。</block>
-  <block id="f7e01f3ae7b7d6ea74a145b5252b335f" category="paragraph">請務必遵循下列庫存檔案準則：*請針對裝置名稱使用正確的拼字。*在檔案中使用正確的格式化。*請確定只有一個快取裝置。*使用清單來指定儲存設備。</block>
-  <block id="8e7093e592f1bcbab44e60f32c72cee1" category="admonition">此處提供的範例包含HPE伺服器的儲存與管理介面名稱。如果您有Dell伺服器、快取裝置名稱為nvmey1n1。對於Dell伺服器、mgmt_iface為team1G、而storage _iface為team10G。</block>
-  <block id="0ee26baf115f43303c9e418d07197005" category="paragraph">以下為庫存檔案範例。其中包含四個儲存節點。在此範例中、將*儲存節點Mip*取代為儲存節點的MIP位址、然後取代* 儲存節點的使用者名稱和密碼。</block>
-  <block id="c971e615d17101f84370bf0ecdb5ccc5" category="list-text">Ping您在庫存檔案中定義的主機（節點）、以驗證Ansible是否能與其通訊。</block>
-  <block id="ac49ec99371587aa0cf244249d243a1a" category="list-text">將Red Hat套件管理程式（RPM）檔案下載至本機Web伺服器上的檔案目錄、可從執行Ansible和儲存節點的伺服器存取。</block>
-  <block id="cf2b247953517aa714ffcfea16176bb8" category="list-text">建立可執行的方針。如果您已經有一本教戰手冊、可以加以修改。您可以使用NetApp提供的README檔案中的範例。</block>
-  <block id="7b75fe371ec9f6bccffbbff57ccd95cd" category="list-text">執行您在上一個步驟中建立的教戰手冊來安裝SolidFire ESXDS：</block>
-  <block id="1b2784b6bb4d82ff392245424db012d0" category="paragraph">請將* Same_playbook .yaml*取代為您的教戰手冊名稱、並將* inventory.yaml*取代為您的庫存檔案名稱。執行本方針會在您的庫存檔案中列出的每個節點上建立「shf_SDS _config.yaml」檔案。它也會在SolidFire 每個儲存節點上安裝及啟動「樣化」服務。如需有關「shf_SDS _config.yaml」的詳細資訊、請參閱 <block ref="c676492d3836af1901e70520f3e41afc" category="inline-link-macro-rx"></block>。</block>
-  <block id="c36ade2a8956e853dc457e68e25ce9a2" category="list-text">檢查主控台的Ansible輸出、確保SolidFire 每個節點都已啟動該服務。</block>
-  <block id="9c75611c54a1490d7892d192c9aa1f24" category="paragraph">以下是輸出範例：</block>
-  <block id="697f1902b372db279956f211f1472f8d" category="list-text">若要驗證SolidFire 是否正確啟動了這個功能、請執行「stystemctl STATUS SolidFire 」命令、然後檢查輸出中是否有「Active:active（outed）...」（作用中：作用中（結束）...）。</block>
-  <block id="b708fcb66d2fb4281601a54f0e59184f" category="paragraph">以下是各種儲存管理工作內容的連結：</block>
-  <block id="0dafc18315b2055ca29f9f5395b46078" category="list-text"><block ref="0dafc18315b2055ca29f9f5395b46078" category="inline-link-macro-rx"></block></block>
-  <block id="7b3b3440fb0f7016b1525de95db91e45" category="paragraph">您也可以在這裡找到將QoS原則套用至磁碟區的相關資訊。</block>
-  <block id="e5879288a130fbd8d0b8682cfc375c4f" category="inline-link-macro">使用快照</block>
-  <block id="2dac088d1b366882d185fe8aedb97392" category="inline-link-macro">在叢集之間執行遠端複寫</block>
-  <block id="12f6af3a2ee487909bf552aa36903b29" category="inline-link-macro">使用Element API管理儲存設備</block>
-  <block id="19c63df81b4a931980753ca5b4f349e8" category="inline-link">vCenter Server適用的插件概述NetApp Element</block>
-  <block id="cf01dc47ed79267872b62a626969809c" category="paragraph">您可以從「總覽」頁面瀏覽至特定工作。</block>
-  <block id="b6da6eab87d65c4c9297f872afd87022" category="section-title">在SolidFire 不穩定的ESDS叢集上使用Element API</block>
-  <block id="c08a6bc5249e5f81c4e136382fe69500" category="inline-link">Element API文件</block>
-  <block id="389945c09cdda9d478adbb3a47413d5c" category="list-text">"disableEncryptionAtRest"</block>
-  <block id="a3c5dec02de1b4c52f4ef9ce2d7e0b2a" category="list-text">《EnablEncryptionAtRest》</block>
-  <block id="9474d63d23a163955eb222057663ae5f" category="list-text">「GetSoftwareEncryptionAt恢復 資訊」</block>
-  <block id="c68a2d9b7e85236a7846e8479df5eb22" category="list-text">「RekeySoftwareEncryptionAt恢復 金鑰」</block>
-  <block id="05e99937dbfca39a8e79ec1345dc0caf" category="list-text">「建立磁碟區」</block>
-  <block id="71a673e3e44f3d66064abf107eecd41b" category="list-text">「磁碟區」</block>
-  <block id="16668f69631e97f6454595916b95763c" category="list-text">《建立快照》</block>
-  <block id="66249135316522dc4dca533836d1653b" category="list-text">《建立排程》</block>
-  <block id="5ba4c026b9f6fad2d789c83df1eb7334" category="list-text">《每日快照》</block>
-  <block id="17527882eae9d5d0fe85324be1ab5b68" category="list-text">《每日行程》</block>
-  <block id="971735603f1c15fa2aefaf1cdcffcf38" category="list-text">《每日快照》</block>
-  <block id="b4d38d2cfe8361b4706ee65b48cd47e7" category="list-text">《建立群組快照》</block>
-  <block id="b39b4f606b587cbb01f67a7e70186eea" category="list-text">*元素12.2中引入並更新API以支援SolidFire 功能不全的ESDS*：元素12.2中加入了數個新的API、您可以在SolidFire 支援功能不全的ESDS叢集上使用。</block>
-  <block id="463224af5ebc7979ed09e40e54613a35" category="paragraph">以下是元素12：2的新API清單：</block>
-  <block id="234e051281051671e79fd955b3cc36a1" category="list-text"><block ref="234e051281051671e79fd955b3cc36a1" category="inline-link-macro-rx"></block></block>
-  <block id="2107b28d0e666b2c94a8ae5ac00facf7" category="list-text"><block ref="2107b28d0e666b2c94a8ae5ac00facf7" category="inline-link-macro-rx"></block></block>
-  <block id="182314039c230eaf0b610ab5336bd944" category="list-text"><block ref="182314039c230eaf0b610ab5336bd944" category="inline-link-macro-rx"></block></block>
-  <block id="6c8f5d51f9d138086b55a6d2b68f0ba9" category="list-text"><block ref="6c8f5d51f9d138086b55a6d2b68f0ba9" category="inline-link-macro-rx"></block></block>
-  <block id="f72e130e78ae2a72c1d8ba0e803f0638" category="paragraph">下列的12.2 API已更新、以支援SolidFire 功能完善的ESDS叢集：</block>
-  <block id="34850bd5fb3f2667bbb87db4cffca2ed" category="list-text"><block ref="34850bd5fb3f2667bbb87db4cffca2ed" category="inline-link-macro-rx"></block></block>
-  <block id="8404d841c616b784628d5ae406a01813" category="list-text"><block ref="8404d841c616b784628d5ae406a01813" category="inline-link-macro-rx"></block></block>
-  <block id="16a30437f029582ce534f35778eac3b5" category="admonition">元素軟體12.2的「建立叢集」方法中新增了「訂單編號」、「週期性編號」和「enableSoftwareEncryptionAtRest」等參數。安裝SolidFire 完EESDS之後、您應該在使用此API方法建立叢集時指定這些參數。</block>
-  <block id="0a7a4b14c705f380ba89c2618c5b83c0" category="list-text">* SolidFire 元素12.2 API不支援於IselesDS叢集*：SolidFire 以下是不支援於支援的元素12.2 API清單：</block>
-  <block id="5f47a96aaf271e7633556c8b34ce38a8" category="list-text">「listClusterInterfacespreferences」</block>
-  <block id="364714681cffe35e7c4d97fce98c8abf" category="list-text">《ListNodeStats》</block>
-  <block id="bd67a18e47632425547a0461fc37baa0" category="list-text">「disableSsh」</block>
-  <block id="ae16e764dea8260f21805f68cbb9e97a" category="list-text">「disableClusterSsh」</block>
-  <block id="1fa7c8a9010ff9140700517562866049" category="list-text">《EnablClusterSsh》</block>
-  <block id="b9a00099f71498b755c35000528f2c60" category="list-text">「EnablSsh」</block>
-  <block id="2c4a33e0be033f2ebda3673676f0251d" category="list-text">「GetIpmiConfig」</block>
-  <block id="8e95acc1dff4717e4b99a2541a5b1e39" category="list-text">《GetIpmiInfo》</block>
-  <block id="5847cf11418c2cba8e424fdce6745fd6" category="list-text">《GetSshInfo》</block>
-  <block id="ad23cc81b9042b00ec1c685f251a01fc" category="list-text">"listNetworkInterfaces（列表網路介面）</block>
-  <block id="199d61518705e194e9a9251b2603fc67" category="list-text">"ResetNode"</block>
-  <block id="2de835e6d6ae29984324a5c01d6b9425" category="list-text">「恢復網路」</block>
-  <block id="2308a3b64a61997844c21233b1a96f82" category="list-text">《ResetNetwork Config》（重新設定網路組態）</block>
-  <block id="733a58ae90956d29186a30b229cb3de8" category="list-text">《組態設定》</block>
-  <block id="74ab8418b4c5fe68a1b0cb7f7dfb6790" category="list-text">"etNetwork Config"</block>
-  <block id="ded1a41bebf29ce8c5735b5e1d899dc9" category="list-text">「DisableBmc/ColdReset...」</block>
-  <block id="c69eb237614bd66cb326d4765eb5bc7f" category="list-text">「EnablBmc/ColdReset」</block>
-  <block id="3ad9e59e32222683fc90e5047642d31a" category="list-text">「etNtpInfo」</block>
-  <block id="d8aa96c19f08fe6b40bad0d6abbfdc9b" category="list-text">《TestAddressAvailability》（測試地址可用度）</block>
-  <block id="ea19982590b74d12aac35aacd5835a53" category="summary">安裝SolidFire 完RESEDSs之前、您應該先在執行RHEL的儲存節點上設定所需的網路。您負責環境中的網路路由。您可以使用提供的最佳實務做法做為架構。</block>
-  <block id="976853b724bc8dc04cb414a9fb12db05" category="doc">網路組態考量</block>
-  <block id="3b9c8ba7a3bd37e4a65e1de05fdef4e5" category="list-text">使用連結或成組的介面。</block>
-  <block id="8ca2b4a9650fa49cbe42339741e33491" category="list-text">對叢集中的所有節點使用相同的介面名稱（例如：每個節點的管理介面使用team -mgt、以及每個節點的儲存介面使用team -stg）。</block>
-  <block id="f88d1e8e117d7ff82b84753361ac8166" category="list-text">確定已執行Network Manager。</block>
-  <block id="6e42937ce348be1c5416984b8ee9ba49" category="list-text">確保所有儲存節點上都已安裝有NETWORKManager-tr分派 者路由規則套件、以進行原則型路由傳送。</block>
-  <block id="65dbe95c242278b16027edd5ce7f892b" category="inline-link">NetApp SolidFire 不限儲存系統上的網路與網路維護最佳實務做法</block>
-  <block id="f45e3a07245374b159bc399fb6afe546" category="list-text">請參閱<block ref="1f8c2b5156232f0493607332ce02d10a" category="inline-link-rx"></block>。</block>
-  <block id="7ae007a2478f6c08dfc345d5a8ca7d5d" category="list-text">設定每個節點上的管理和儲存網路、透過連結或群組組組態使用多個備援實體介面。</block>
-  <block id="fe12de3f5859e9916414a7e57ff9fc1a" category="inline-link">設定網路群組</block>
-  <block id="861181df702ea579602e357dbe75cc75" category="paragraph">如需網路群組的相關資訊、請參閱<block ref="240539021272d6b3302e91e57c25dacf" category="inline-link-rx"></block>。根據預設、所有儲存節點10GbE介面都會啟用9000位元組的最大傳輸單元（MTU）。為獲得最佳效能、請使用與NetApp SolidFire 等儲存節點相同的MTU來設定所有伺服器端儲存介面。您應該設定網路交換器、以支援至少9016位元組或更多的MTU、以因應巨型框架的負荷、並透過網路適當轉送。如果您想要變更此組態以支援較低的MTU設定、請聯絡NetApp支援部門。</block>
-  <block id="de0b71558fee801783ca86dc7c2ac1e0" category="paragraph">請參閱下表、以瞭解SolidFire 有關不同流量類型所需的儲存與管理網路資訊：</block>
-  <block id="49a2f4a664c6051d6e27dc8a1e984eb7" category="cell">網路類型</block>
-  <block id="cd3718e8610b820344c9a0284fe84f90" category="paragraph">儲存網路</block>
-  <block id="04f1a887fa1ef25c310d969766ac3dad" category="list-text">包括所有儲存設備/iSCSI流量。</block>
-  <block id="059a9648319131d27b88f066a62e9011" category="list-text">如果您想要從位於不同第3層網路的主機掛載、或是打算在叢集之間複寫資料、則可以路由傳送。</block>
-  <block id="05fd30fd1204451c2deb07dc3b90ef4f" category="list-text">應在同一個第2層廣播網域上設定網路介面。</block>
-  <block id="494eeb741723e2c166dc5864c7da1e64" category="paragraph">管理網路</block>
-  <block id="2fd83b2ce9b49bb4adb1828a92a6cc82" category="list-text">包括所有管理流量。</block>
-  <block id="d2d3d320feed9dd5e52ec24dd6095045" category="list-text">如果您想從不同的第3層網路存取叢集API或UI、就可以進行路由傳送。</block>
-  <block id="dcd50d347195658baa61d9ec50d87c54" category="list-text">應設定至少1500位元組MTU的網路介面卡。</block>
-  <block id="66eb697af36258704e589ddaa8b1f423" category="admonition">如需設定主機網路的範例和秘訣、請參閱 <block ref="75f8e7b74dfe828e63d762ff8e0c66a1" category="inline-link-macro-rx"></block>。</block>
-  <block id="5198a95b13b349be9f5bd4ee511bf225" category="summary">NetApp SolidFire 支援企業級SDS（ESDS）可在SolidFire 符合參考組態的硬體上、在NetApp Element 您選擇的硬體上提供橫向擴充技術和支援的功能。SolidFire不受底層硬體影響、提供不受依賴的軟體。SolidFire NetApp Element這可讓您在符合NetApp參考組態的NetApp品牌應用裝置或一般用途伺服器上使用所有元素功能。</block>
-  <block id="c4fc43d88500ff0f1f2bd4bbe1f8c8f1" category="doc">開始使用NetApp SolidFire 解決方案企業SDS</block>
-  <block id="c9a0bb9084eb14f7bc3d46fdcb2a744c" category="section-title">功能關鍵SolidFire</block>
-  <block id="d385a040eacb9a24b2c8725bd326c541" category="list-text">可讓您透過容器安裝及執行Element軟體。</block>
-  <block id="7e771ea6a54e69fca92a9c1071aeefdb" category="list-text">使用預先驗證的市售伺服器平台、提供企業級儲存功能與可靠性。您可以在SolidFire 指定的x86伺服器平台和基礎元件（CPU、記憶體、SSD磁碟機、快取、網路、 韌體）、根據中已發佈的參考組態<block ref="eca68c8f3fec4e12a96f2565a54e6327" category="inline-link-rx"></block>。</block>
-  <block id="106f6ed04d8397b62cf62d0ca986bce0" category="list-text">提供閒置的軟體加密功能。「軟體加密閒置」功能可將寫入儲存叢集中SSD的所有資料加密。這可在SolidFire 不含自我加密磁碟機（SED）的不包含在內的各個ESDS節點中、提供主要的加密層。</block>
-  <block id="dcbfced5e6889cc748c75f595d037090" category="list-text">使用服務品質（QoS）原則提供可預測的叢集效能。</block>
-  <block id="4b824719e47e69aaa625104e9ed0e463" category="list-text">支援四到40個節點的叢集。</block>
-  <block id="e598179402290c81c24144f983b01d56" category="list-text">已取得容量授權模式一詞的授權。</block>
-  <block id="e10455e5c63d2a12e4cdb93f45aaf089" category="list-text">使用與技術合作夥伴簽訂的支援協議、以新模式提供支援。</block>
-  <block id="1a5a520ec44bf52ddf5e6ab742cb1764" category="paragraph">有了NetApp的支援功能、您可以在符合必要需求的市售硬體上執行元件容器。SolidFire您自己帶著已安裝作業系統的伺服器。您可以使用Ansible等自動化工具來執行安裝前的法規遵循檢查、並安裝SolidFire ESXDS。在安裝前的設定工作中、您應該安裝管理節點、以支援記錄套件組合集合及SolidFire 其他服務、例如：「更新影像品質」。以下是SolidFire 架構總覽、顯示了整個EESDS環境中的各種元件：</block>
-  <block id="702fb82a5f4a9fb7b40272de5bebbc21" category="image-alt">顯示ESDS環境的架構總覽。</block>
-  <block id="5a62633e01f86ad44af33f14f5e10078" category="admonition">您負責設定、監控及管理平台的生命週期、以及設定網路介面和路由表。</block>
-  <block id="79c13b7d692f3da0e5da93808d79313f" category="paragraph">部分功能不適用於不完整的功能。NetApp Element SolidFire適用於傳統SolidFire 的靜態儲存節點的原生元素功能、例如硬體監控、韌體更新、使用自我加密磁碟機（SED）的加密靜止（Ear）、SolidFire 以及停用適用於ESSDS的光纖通道。</block>
-  <block id="a4a3bf9a56c3fdb255c292688453b46a" category="list-text">外部金鑰管理（EKM）</block>
-  <block id="d671d8a57b62ab491b00ae883bae397a" category="list-text">硬體加密</block>
-  <block id="064602a640cd3a5bfcc71abfabc3dff8" category="list-text">多磁碟機分片服務（MDSS）</block>
-  <block id="e6199acbce698ff910f7347c6176c525" category="list-text">硬體監控、主機平台更新（例如：驅動程式、韌體和作業系統套件）和Fibre Channel</block>
-  <block id="d636fbed0997a658df2f90f0c7f627ec" category="section-title">快速入門資訊</block>
-  <block id="11abc145c00bb57152ecb8f12906ca19" category="paragraph">您可以找到一套關於安裝SolidFire EESDS的精簡說明 <block ref="fabfc59ae0df200bf4ddfa79108f3a69" category="inline-link-macro-rx"></block>。</block>
-  <block id="df835c57b7c558e8561c0ce4ad297f5f" category="section-title">授權原則</block>
-  <block id="7909de05a3e18f6a118962fbd25f3e00" category="paragraph">不適用NetApp條款容量授權模式。SolidFire</block>
-  <block id="047ac1196dc15bcab25af5ad7bc6edd0" category="paragraph">以下是此模型原則的高層級概觀：</block>
-  <block id="206972c15d5fbc9c77fb2a642841c82c" category="list-text">軟體成本是以原始容量為基礎（磁碟機大小乘以節點或叢集內的磁碟機數量）、因此這種模式的軟體成本很容易預測。</block>
-  <block id="e30e42ba99648c8d58fbc817f567e5d1" category="list-text">您不需要軟體授權金鑰。您將會收到銷售訂單上軟體的主要序號、此序號隨附於您訂購後收到的文件套件中。您必須保留此主要序號、因為此序號將用於支援權益。</block>
-  <block id="89e0f32b919dc98890386d5f1ea62af3" category="inline-link">購買NetApp HCI 產品以供參考和SolidFire 使用</block>
-  <block id="9be00799a4595781c9cccd870907c42d" category="paragraph">如需詳細資訊、請參閱<block ref="2cf74f25374b562dd39e66e2fb009e46" category="inline-link-rx"></block>。</block>
-  <block id="a55a304d5ed91fe33a8b23504164f85e" category="section-title">用於安裝及使用SolidFire EESDS的介面</block>
-  <block id="d78f5f07f63499076445a980d1cb407b" category="paragraph">以下是您用於安裝、監控SolidFire 及管理VMware ESXDS的工具與介面清單：</block>
-  <block id="be793515ee6e189ea5045b8cdfada03b" category="cell">工具/介面</block>
-  <block id="809d7d7ab3dd236f47ac0c1561502c51" category="cell">使用者</block>
-  <block id="40bedffc2a00bb89047c72cda5eed132" category="paragraph">Ansible Compliance Check角色</block>
-  <block id="ce26601dac0dea138b7295f02b7620a7" category="paragraph">客戶</block>
-  <block id="2687a104ff119b4c4c9784cc30a77083" category="inline-link">NetApp互通性對照表工具（需登入）</block>
-  <block id="06c24a96393a01db72b0efcae40fdaff" category="paragraph">以驗證平台是否符合中所列的參考組態<block ref="21f4a2b98adaac9b658267d0736bb4c1" category="inline-link-rx"></block>。安裝SolidFire 完EESDS之前、您應該先執行此動作。</block>
-  <block id="0b462bea4675ead8d5f2408e43a2b401" category="paragraph">Ansible安裝角色</block>
-  <block id="db0fb481869c3348937362a0cd7f90b4" category="paragraph">用於安裝SolidFire 功能不彰的</block>
-  <block id="d8e840aec7b622b3285ef9cd018e166c" category="paragraph">適用於記錄套裝組合收集與管理服務、例如AIQ。</block>
   <block id="593f52e571df0ab61f6211b57e2ab8da" category="paragraph">NetApp混合雲控制</block>
-  <block id="b1c7c40cb6692d50d27c79750612e0d2" category="paragraph">客戶、NetApp支援</block>
-  <block id="6564563b17ab0cd9cc453a14b5385e4e" category="paragraph">用於叢集建立和每節點管理、以及從管理節點收集記錄。</block>
-  <block id="011bac2b806ad22dab2eba1ce04613d2" category="paragraph">Hewlett Packard Enterprise（HPE）整合式熄燈（ILO）</block>
-  <block id="5b9dbda1c869d69f6644436352ae899c" category="paragraph">客戶、HPE支援</block>
-  <block id="fbbb9461a5e7d2993326af0ef93b08bc" category="paragraph">用於收集有關事件和狀態的資料、以進行根本原因分析。</block>
-  <block id="50ffeb4db11be124ce009b4adc617eaa" category="paragraph">Dell整合式Dell遠端存取控制器（iDRAC）</block>
-  <block id="5bb5b848a9a0c67adce4609deb21ed67" category="paragraph">客戶、Dell支援</block>
-  <block id="d95b42a8f9e0c1b6db0585aa313bf1f8" category="paragraph">軟體UI NetApp Element</block>
-  <block id="1c647bb78e6fe69d30099dc48c2fec6e" category="paragraph">用於管理SolidFire 功能不彰的ESDS儲存叢集。</block>
-  <block id="93c629dd60a2af625e8dbfcd84de4c97" category="paragraph">用於叢集健全狀況監控。</block>
-  <block id="ff331388ea55619596bcb6cf3a003112" category="paragraph">一次收集</block>
-  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="paragraph">NetApp支援</block>
-  <block id="a13f54383ebd6b2827d53875ebc540c3" category="paragraph">以取得補充記錄。</block>
-  <block id="46921a75e8534ad7d1c379a9e3aec033" category="section-title">安裝總覽</block>
-  <block id="068817eddb6802e1d3071e7fe885650f" category="paragraph">您可以SolidFire 使用Ansible等自動化工具來安裝支援功能。</block>
-  <block id="b97b11d80b0bcf547bcc133c20febcae" category="paragraph">以下是使用Ansible進行安裝的高階概觀：</block>
-  <block id="f87aae9cb20ea2d100efbe63ba40cfdd" category="image-alt">顯示安裝工作流程。</block>
-  <block id="97536cbfae1b231373bcd97b10deb15c" category="paragraph">ESDS目前支援的所有平台均支援動態節點額定值：dL360、dL380和R640。</block>
-  <block id="24bc1a938f18ccc15e42f585341c44d5" category="paragraph">在第一版的動態節點額定值中、任何節點的IOPS最高額定值都是100K IOPS。</block>
-  <block id="c7de22498f541c23b73f964b57960cb5" category="summary">在安裝SolidFire 完整套功能之前、請先使用提供的範例和秘訣來設定主機網路。</block>
-  <block id="e8556fad03f7666db676dcf377f5d765" category="doc">設定主機網路</block>
-  <block id="b2b0513a4f73288f55fe24e59b159ac9" category="paragraph">以下是網路組態範例：</block>
-  <block id="72069a88e146ccacfec89a85505d98c0" category="image-alt">顯示網路組態範例。</block>
-  <block id="d1bc1a1a222fa86fecc3c229846acae8" category="inline-link">已成組</block>
-  <block id="0effd8b9da0721859b0d48652f96da35" category="paragraph">在此範例中、儲存節點上的兩個介面為網路<block ref="cda349186af47afd14116798d9708d1b" category="inline-link-rx"></block> 並連線至管理網路以進行備援。同樣地、還有兩個額外的介面會成組並連線至儲存網路。</block>
-  <block id="addaf55953c8deabf7371d002b089db7" category="inline-link">介面組態檔</block>
-  <block id="20745548d9745bec02c99727ae9cc2f8" category="admonition">每個介面都有一個名為ifcfg/-&lt;interface-name&gt;X的組態檔、其中X是介面的編號、根據使用的命名慣例、從零開始算起或從1開始算起。組態檔會在您第一次建立介面時建立。連線至儲存網路的兩個實體介面中、每個介面都應有一個組態檔。連線至管理網路的兩個實體介面中、每個介面也應該有一個組態檔。介面組態檔會放置在/etc/sysconfig/network-scripts目錄中。請參閱<block ref="b5b6b9940fe57a4f30cd37c69c236a55" category="inline-link-rx"></block>。</block>
-  <block id="07a9458f507f83fb9035a3f817e6e01f" category="admonition">此處提供的範例包含HPE伺服器的儲存與管理介面名稱。如果您有Dell伺服器、介面名稱會有所不同。Dell伺服器的儲存介面名稱為EM1和EM2。Dell伺服器的管理介面名稱為p3p1和p3p2。</block>
-  <block id="72787e9bb774e7b75cd77950c80cda34" category="list-text">安裝「Network Manager -派遣台-路由規則」套件、並確定已設定適當的儲存庫。</block>
-  <block id="6a1a7ea032ce24c396fa4e63e0ea935e" category="list-text">使用交換器廠商的文件來設定網路交換器。如需有關設定多機箱連結集合群組（MLAG）傳輸協定和連結集合控制傳輸協定（LACP）的特定指示、請參閱交換器廠商的說明文件。</block>
-  <block id="2fab50c78cce8436a65bc458004c35fb" category="admonition">建議您設定LACP容錯移轉、並透過執行「無LACP暫停個別」來停用LACP個別連接埠暫停行為。如此一來、即使在設定錯誤的情況下、也能在不廣播LACP封包的情況下、存取點連結也能正常運作。</block>
-  <block id="edb31f527451375eeae6935f6df30697" category="list-text">使用下列範例、編輯連線至儲存網路之實體介面的兩個組態檔。強烈建議在儲存網路上設定巨型框架、但不需要。在以下範例中、儲存介面名稱為ens2f0、儲存團隊名稱為team10G：</block>
-  <block id="ebd5489d5287502cfe6d982511ca04f4" category="admonition">在此處所列的所有範例組態中、名稱和裝置使用相同的值。如果您選擇使用不同的值、則可以使用不同的值。</block>
-  <block id="1f79499cb992cf350f3531e9c042b555" category="list-text">使用下列範例編輯連線至管理網路之介面的兩個組態檔。在此範例中、管理介面名稱為eno5、管理團隊名稱為team1G：</block>
-  <block id="bfdf10fa8615dc205af4a21e69392290" category="list-text">使用下列範例為儲存團隊建立團隊介面檔案。在此範例中、團隊稱為team10G。它位於執行網路團隊LACP執行的儲存網路上。</block>
-  <block id="be9cde8dfb4e0d644a479acbcd048951" category="inline-link">網路團隊合作LACP跑者</block>
-  <block id="877b63f34a6138ce1612bcebc334d3e0" category="admonition">建議將雙主動式組態用於儲存介面。此組態需要在交換器上設定額外的主動/主動式多機箱連結集合群組（MLAG）傳輸協定和連結集合控制傳輸協定（LACP）。此組態需要<block ref="d5df53383d08e46152293d00fa94293e" category="inline-link-rx"></block>。</block>
-  <block id="804017fc0ca9cbf505017402dcfc6c7e" category="list-text">使用下列範例為管理團隊建立團隊介面檔案。在此範例中、團隊稱為team1G。它位於管理網路上、執行網路團隊活動備份執行者。</block>
-  <block id="25f6ac9046dd03b6e219af6f67213bf0" category="inline-link">網路團隊合作執行備份執行者</block>
-  <block id="1804f2f92ae718c82042ad2e053cb8d5" category="admonition">建議將主動/被動組態用於管理介面、不過您也可以使用主動/主動組態。這不需要在葉交換器上進行額外的組態設定。此組態使用<block ref="2c82085abeffe33a781b3a5a1198c94c" category="inline-link-rx"></block>。</block>
-  <block id="bc3247c9f5634f189e299a6fe2da7b88" category="list-text">編輯「/etc/iproute2/rt_detces」檔案、以使用下列範例啟用新的路由表。此檔案會定義對應、以使用路由表名稱而非索引編號來參照特定表格。在下列範例中、名為team10G的新儲存路由表可依索引（20）或名稱（team10G）來呼叫：</block>
-  <block id="d411e36df20562230dc22e00e42ca685" category="list-text">使用下列範例將儲存流量的路由新增至路由表。此路由表會將儲存網路作為預設閘道、必須用於iSCSI流量。在下列範例中、成組的介面名稱為team10G。</block>
-  <block id="1b7df6a1e0fb4e73c9f52da03dc2dd54" category="admonition">您應該更換「$storage網路」、「$storage if_name SRC」、「$sip表格」、「$rojeting_table名稱」、「$storage _default_wc開發」、 使用您自己的值提供「$storage、if_name SRC」、「$sip table」和「$roding_table名稱」。</block>
-  <block id="dd7cd3750b33add503e756f30b37aa43" category="list-text">新增原則型路由、以使用您建立的新路由表（如果流量來自於SIP或SVIP）。請使用下列範例、並以您自己的值取代：</block>
-  <block id="a6f03e98f57d4d6ac715c8194867a72e" category="list-text">重新啟動網路、以套用所有變更。</block>
-  <block id="c889e3f8d86454c491880dd30a6aea31" category="list-text">若要檢查原則型路由規則、請執行「ip rRule show」命令。</block>
-  <block id="1d5326226dbd7e78f22d4fff2e17b5c4" category="list-text">若要檢查路由表、請執行「ip route show table」命令。</block>
-  <block id="7fa4eef3eb995a3187006e397e41e20d" category="summary">深入瞭解SolidFire RESEDSDS容器、以及取得相關記錄的位置。此處提供的資訊可協助您開始收集記錄以進行疑難排解。最好是接洽NetApp支援部門、由訓練有素且精通記錄分析的工程師來協助解決問題。</block>
-  <block id="9b5dd8fd22c718b5c6b43045736d2bc7" category="paragraph">深入瞭解SolidFire RESEDSDS容器、以及取得相關記錄的位置。此處提供的資訊可協助您開始收集記錄以進行疑難排解。這是最好的接洽方式<block ref="116f7ad90a3c7441981f82d8f8fba4d5" category="inline-link-rx"></block>（這是經過訓練且精通記錄分析的工程師、可協助解決問題。</block>
-  <block id="4b9ebae52972ac3497cbd1edf4c18ec4" category="paragraph">ESXDS包括下列容器：SolidFire</block>
-  <block id="8f0a428d8f15381fa0a00dc3905ef303" category="list-text">Element Container（「Element」）：將所有元素服務裝載在單一容器中。</block>
-  <block id="b9163a4fcdd5234620764b3aae55ec33" category="list-text">Element auth Container（「Element驗證」）：為管理UI提供多因素驗證（MFA）和工作階段驗證權杖。</block>
-  <block id="26a4649f0b129a2bfa2e2d235a6bc8a4" category="list-text">網路監控容器（「sfnetwd」）：提供本機元素執行個體的活動訊號監控、以及虛擬IP（MVIP和SVIP）的容錯移轉。</block>
-  <block id="f974b95c0b8e847e8f93d5a8ddcb811c" category="paragraph">若要透過SSH存取ESDS節點上的容器、節點擁有者應啟用SSH並提供登入認證。在SSH存取主機系統之後、您可以使用「podman ps」命令來檢查一或多個容器的狀態。請參閱下列範例：</block>
-  <block id="e06554c76d104f37cde31284d7b8700e" category="admonition">如果其中一個容器沒有啟動或執行、請勿使用Podman直接控制（停止或啟動）容器。Element軟體是透過SolidFire 「支援系統」服務單元來控制。此服務使用「Element（元素）」來協調在三個元素容器中執行的軟體。建議您使用「stystemctl」來控制SolidFire 主機上的支援功能、以便在任何節點上啟動和停止元素軟體；不過、在即時叢集上執行此作業時、只能在Support的指導下執行。</block>
-  <block id="addb5fd4b9b316fe1f97f72af525f678" category="paragraph">所有與ESXESDS相關的記錄SolidFire 都可在主機上的「/var/log/solidfire/」中找到、該主機會在所有容器執行個體之間持續存在。此目錄包含來自元素容器的記錄檔、其中包含「Element驗證/」和「sfnetwd/」子目錄、分別包含來自「Element驗證」和「sfnetwd」容器的記錄檔。從容器內部、您可以存取「/var/log/log」中的容器專屬記錄。</block>
-  <block id="9e3125ae94a5e6cfb4f53514fc558ee8" category="section-title">使用NetApp混合雲控制UI來收集記錄</block>
-  <block id="9550b5af83ebb99caf0569890defb6cd" category="paragraph">您可以收集記錄以傳送給NetApp支援部門、以協助診斷SolidFire 有關您的EESDS叢集的問題。</block>
-  <block id="f87c4fc47e1a9b71054d097f2a6d4709" category="paragraph">收集記錄時、請謹記下列考量事項：</block>
-  <block id="5cd79f5ecf3281008f9950c643e48e63" category="list-text">請勿使用Podman命令來收集記錄。</block>
-  <block id="eee0db9a7df523d15f4bdffde63fa075" category="list-text">NetApp Support使用一組收集器來收集主機記錄。若要獲得最佳的支援體驗、您應該安裝一個Collect。</block>
   <block id="e41f733ab7b14b59356c114dc4bde28a" category="list-text">從儀表板中、選取右上角的功能表。</block>
   <block id="e06ac0adef7c01a35f79bc08edb11555" category="list-text">選取*收集記錄*。</block>
   <block id="832502905fff9a7d3a4748f703388704" category="list-text">在*日期範圍*下拉式功能表中選取日期範圍、以指定記錄應包含的日期。</block>
   <block id="3763abf29405df583f379b3a86e060aa" category="paragraph">如果您指定自訂開始日期、可以選取開始日期範圍的日期。記錄會從該日期收集到目前為止。</block>
-  <block id="8b427928e79e2c302d7463974b0adf8e" category="list-text">在「*記錄收藏*」區段中、選取儲存叢集或特定的儲存節點。</block>
   <block id="fd598a8456fc81992dc26d8ef7be0912" category="list-text">選取*收集記錄*以開始收集記錄。</block>
   <block id="d60a3121b8c3d63f126913a755bc6c4a" category="paragraph">記錄收集會在背景執行、頁面會顯示進度。</block>
   <block id="18b5d3b57ac80cf7900c78bf8a5de1b9" category="admonition">視您收集的記錄而定、進度列可能會維持在某個百分比數分鐘、或在某些時間點進展非常緩慢。</block>
   <block id="57c89d05d7a0404c7479475a49af8793" category="list-text">選取*下載Logs*以下載記錄套件。</block>
-  <block id="1e23f0ce49a8f014bc05289297cd4e9d" category="paragraph">日誌套件為壓縮的UNIX「.tgz」檔案格式。</block>
   <block id="3af536b719ee5751ac17d447f1d645d4" category="summary">您可以使用NetApp混合式雲端控制來收集元素安裝的記錄、以協助疑難排解。</block>
   <block id="756909f99bc1a720d318a5f5b94eb094" category="doc">收集記錄以進行疑難排解</block>
   <block id="b3915f726abbb4ebe18be9a9e6be5c01" category="paragraph">如果SolidFire 您無法順利安裝支援功能、您可以收集記錄以傳送給NetApp支援部門、以協助診斷。您可以使用NetApp混合雲控制或REST API來收集元素系統上的記錄。</block>
@@ -4700,7 +4034,6 @@
   <block id="4abf133407ea4fa2eda3059f56e2940f" category="paragraph">您可以檢視系統中的儲存資產、並判斷其IP位址、名稱和軟體版本。</block>
   <block id="f0a87811e8be55bf94672bdc19729182" category="inline-link-macro">自訂保護網域</block>
   <block id="eeaa8c18b8187d8aa70fe2be2070cd8e" category="paragraph">您可以檢視多個節點系統的儲存資訊。如果 <block ref="7abc9b197257f801951edc3be4066a26" category="inline-link-macro-rx"></block> 您可以查看指派給特定節點的保護網域。</block>
-  <block id="9985a6faeb51ef9840d329f5a5454de1" category="paragraph">若為SolidFire 「企業版SDS」節點、您可以在「儲存設備」索引標籤上監控庫存。</block>
   <block id="f7b8cd7786f2f0ba8b3271684ef8f6ff" category="list-text">在左側導覽中、選取*節點*。</block>
   <block id="8b5d2fc18afcde2525a65fcaae38a752" category="image-alt">混合雲控制節點頁面影像</block>
   <block id="c7c5f161602908065ca8367c0fc4a392" category="admonition">當您第一次啟動新的NetApp混合雲控制工作階段時、當管理節點管理許多叢集時、載入NetApp混合雲控制節點頁面可能會有延遲。載入時間視管理節點主動管理的叢集數量而定。後續產品發表時、您將會體驗更快的載入時間。</block>
@@ -4854,8 +4187,6 @@
   <block id="522a96c5448a91bfa521ab06d873c2f4" category="inline-link-macro">授權儲存叢集</block>
   <block id="2ff93dd01b5c0e32265f7bcc1f192717" category="paragraph">您可以將儲存叢集新增至管理節點資產庫存、以便使用NetApp混合雲控管（HCC）來管理。系統設定期間新增的第一個儲存叢集為預設值 <block ref="e36a33ccafb1c4b38d6b9113c1dd0ba4" category="inline-link-macro-rx"></block>，但可以使用HCCUI新增其他叢集。</block>
   <block id="1a5966f47c08b6f886bc5fa986067962" category="paragraph">新增儲存叢集之後、您可以監控叢集效能、變更受管理資產的儲存叢集認證、或是從管理節點資產庫存中移除儲存叢集（如果不再需要使用HCC進行管理）。</block>
-  <block id="3663bc32267b225ac55e52a4e99f2b3c" category="inline-link-macro">維護模式</block>
-  <block id="128736137ea3bf7bf1a6b7e3b6184b4a" category="paragraph">從元件12開始、您可以使用 <block ref="0e61a13a0652eb503d2f936c42121e2b" category="inline-link-macro-rx"></block> 功能選項可啟用和停用儲存叢集節點的維護模式。</block>
   <block id="bb38f75f0e45f3119e7bd198f4c9ea7f" category="list-text">*叢集管理員權限*：您具有的管理員權限 <block ref="e36a33ccafb1c4b38d6b9113c1dd0ba4" category="inline-link-macro-rx"></block>。驗證叢集是系統設定期間新增至管理節點資源清冊的第一個叢集。</block>
   <block id="773e93c04ad566aabd322005936de6ef" category="list-text">* Element軟體*：您的儲存叢集版本執行NetApp Element 的是功能不全的軟體11.3或更新版本。</block>
   <block id="102af6f3bd432d98e24116bfff78e2e8" category="list-text">*管理節點*：您已部署執行11.3版或更新版本的管理節點。</block>
@@ -4877,7 +4208,6 @@
   <block id="9cd3f7354698337ccc6bd9e015343b20" category="list-text">儲存叢集使用者名稱和密碼</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">選取*「Add*」。</block>
   <block id="f366aa0e2a76691fb58eb909ea245782" category="admonition">新增儲存叢集之後、叢集資源清冊可能需要2分鐘的時間來重新整理並顯示新增的內容。您可能需要在瀏覽器中重新整理頁面、才能看到變更。</block>
-  <block id="af4bf009c94401bfed8a3763cc825fd2" category="list-text">如果您要新增元素ESDS叢集、請輸入或上傳SSH私密金鑰和SSH使用者帳戶。</block>
   <block id="d97fd2f723280f6f16c5d6a4d94da19e" category="section-title">確認儲存叢集狀態</block>
   <block id="bc26a117f5efe663d7abd12878c68fbc" category="paragraph">您可以使用NetApp混合雲控制UI來監控儲存叢集資產的連線狀態。</block>
   <block id="8740ce0f2ed67b985c9dae6e876d693b" category="list-text">檢閱庫存中儲存叢集的狀態。</block>
@@ -4896,8 +4226,6 @@
   <block id="8217c26f2fd68c8d2fe5a9c60cf359ff" category="inline-xref">啟用</block>
   <block id="0aaa87422396fdd678498793b6d5250e" category="inline-xref">停用</block>
   <block id="2d110e2bcef2092d175ef31684c9e0ee" category="paragraph">如果您需要將儲存節點離線以進行軟體升級或主機修復等維護作業、您可以藉由將I/O對儲存叢集其餘部分的影響降至最低 <block ref="eafaedbc3fb0a68f230418ca88746c3b" category="inline-xref-macro-rx"></block> 該節點的維護模式。當您 <block ref="82680f05155b11f982e10ac16fa60e77" category="inline-xref-macro-rx"></block> 在維護模式下、節點會受到監控、以確保在節點移出維護模式之前符合特定條件。</block>
-  <block id="1f21f496d26572d6b4f32e2c4e9eba99" category="inline-link-macro">使用維護模式時可能發生的情況</block>
-  <block id="85855f63d589650a3c733451b8395953" category="paragraph">如需相關資訊、請參閱 <block ref="0e61a13a0652eb503d2f936c42121e2b" category="inline-link-macro-rx"></block> 啟用和停用功能選項和 <block ref="caaa262e8632ce32140ce38121478a94" category="inline-link-macro-rx"></block>。</block>
   <block id="1f3bfd01e455c54b88c3b632aedf44db" category="list-text">* Element軟體*：您的儲存叢集版本執行NetApp Element 的是功能不全的軟體12、2或更新版本。</block>
   <block id="ddc0cd321869cd169e3209c75bea01b5" category="list-text">*管理節點*：您已部署執行版本12．2或更新版本的管理節點。</block>
   <block id="133da0bffa151ffd8a777f211c47db8a" category="list-text">*管理服務*：您已將管理服務套裝組合更新為2.19版或更新版本。</block>
@@ -5090,7 +4418,6 @@
   <block id="13a12eaece4fc3e5cb8a8919844ca623" category="inline-link-macro">檢視或編輯現有的控制器資產</block>
   <block id="e578d1edd1f3c874d49e1c9e76becbbc" category="list-text"><block ref="e578d1edd1f3c874d49e1c9e76becbbc" category="inline-link-macro-rx"></block></block>
   <block id="6740b5cf3dc8479800bac9edc86cd31a" category="inline-link-macro">使用REST API來收集元素系統記錄</block>
-  <block id="e6f552ff8b981823a09e603dcf005093" category="list-text"><block ref="e6f552ff8b981823a09e603dcf005093" category="inline-link-macro-rx"></block></block>
   <block id="c9676e9b030c94e7e828a060b343f3db" category="list-text"><block ref="c9676e9b030c94e7e828a060b343f3db" category="inline-link-macro-rx"></block></block>
   <block id="b8ce529cfc2b9255a783e211ddb57996" category="list-text"><block ref="b8ce529cfc2b9255a783e211ddb57996" category="inline-link-macro-rx"></block></block>
   <block id="5eca06837292fdb7aace3e8b6b16124f" category="summary">您可以為執行NetApp Element 不完善軟體的叢集安裝管理節點。</block>
@@ -6015,13 +5342,8 @@
   <block id="83606de5ad551fe725df50c202137b96" category="list-text">使用服務品質原則來保證效能</block>
   <block id="9f686c4bacb24adf8a227785ae4811a3" category="list-text">包括在叢集中的所有節點之間自動進行負載平衡</block>
   <block id="6bac9874bf1ac47d5ed430aed14ed2f9" category="list-text">新增或減去節點時、會自動重新平衡叢集</block>
-  <block id="52bf07624a8d5bb0d68193acb84da83e" category="section-title">部署選項SolidFire</block>
-  <block id="02945d28d2bc238db7db04788c61b17f" category="paragraph">提供不同的部署選項：SolidFire</block>
-  <block id="a154af7b29c8a3c4e140a0c42b637b07" category="list-text">使用NetApp提供的儲存節點、並整合NetApp Element 至其他功能完善的軟體</block>
   <block id="cc9d5c6e43509b7b512cd8106b62cef6" category="inline-link-macro">全快閃儲存架構總覽SolidFire</block>
   <block id="ce772989c5b639e2ddb875f41c132379" category="paragraph"><block ref="ce772989c5b639e2ddb875f41c132379" category="inline-link-macro-rx"></block></block>
-  <block id="634807b0b6c298b475c1d228bd4ad9c7" category="list-text">使用您自己的伺服器來執行Element軟體、方法是使用容器化SolidFire 的企業SDS</block>
-  <block id="2690306398b12ce9bf41853430302eb9" category="paragraph"><block ref="2690306398b12ce9bf41853430302eb9" category="inline-link-macro-rx"></block></block>
   <block id="03531bbe6b454e3015b4001ed6ef7590" category="paragraph">包含獨立硬體元件（磁碟機和節點）的支援系統、可將其整合至儲存資源池中、並在每個節點上獨立執行相關的支援軟體。SolidFire NetApp Element此單一儲存系統是以單一實體的形式、使用Element軟體UI、API及其他管理工具進行管理。</block>
   <block id="91d2228a1dd7c829ac2836205775867a" category="paragraph">包含下列硬體元件的一套系統：SolidFire</block>
   <block id="eee8ad114457aead123549867206eeb4" category="list-text">*叢集*：SolidFire 由節點集合而成的整個過程。</block>
@@ -6104,9 +5426,7 @@
   <block id="a6cdf213381abd90639fbf9df2c8d877" category="paragraph"><block ref="f83c5a69f7b0c8d7defa22862bd4d211" category="inline-link-rx"></block> 整合VSS陰影複製與元素快照和複製。</block>
   <block id="83221d7a8e6873bb96d6fbbd9afcf8e8" category="inline-link-macro">管理節點</block>
   <block id="a818b18784f90669084d24af8a7d4d6b" category="paragraph">從Element 11.3版本開始、*管理服務*就裝載在上 <block ref="5faa37a8cb9b8f7bb17a5a6af86182c8" category="inline-link-macro-rx"></block>，可在主要版本之外更快更新特定的軟體服務。</block>
-  <block id="33613f9e26b4d3202f0d812df6bedba3" category="paragraph">管理服務可為SolidFire 不完整的Flash儲存設備提供集中和延伸的管理功能。這些服務包括 <block ref="53cac838271c3c6f19adc6b835ed9d5f" category="inline-link-macro-rx"></block>、系統遙測、記錄和服務更新、以及針對Element Plug-in for vCenter的QoSSIOC服務。Active IQ</block>
   <block id="257409197ae1a07404e333be63986ac6" category="inline-link-macro">管理服務版本</block>
-  <block id="4651d824b0048b0eb592cc60e9dd3977" category="admonition">深入瞭解 <block ref="873adfb4e707b3b5ed2423771a9400e1" category="inline-link-macro-rx"></block>。</block>
   <block id="c31f538ab7ed22954b3c941becbca20b" category="paragraph">建立新叢集時、會將節點初始化為叢集的通訊擁有者、並為叢集中的每個節點建立網路通訊。此程序僅會針對每個新叢集執行一次。您可以使用元素UI或API建立叢集。</block>
   <block id="41d2a30ce2822f590c787a5ae80b1475" category="list-title">叢集的詳細資訊</block>
   <block id="eef59f0ec4a2c7fefb8611c99197a91d" category="list-text"><block ref="3c851d6e9ad0c506e230435895aa5a71" category="inline-xref-macro-rx"></block></block>
@@ -6316,7 +5636,6 @@
   <block id="7c4a6e26b432f1ad131564bc6dc6e32d" category="inline-link">儲存韌體產品組合2.27版本說明</block>
   <block id="a0b768ade98ef6cf3df956008c966806" category="list-text"><block ref="a0b768ade98ef6cf3df956008c966806" category="inline-link-rx"></block></block>
   <block id="af149d844cc5e37dba5faa0cc28a9285" category="inline-link-macro">H610S BMC 3.84.07版本說明</block>
-  <block id="eead60ae6beeaad1ec995f62a611e1c3" category="list-text"><block ref="eead60ae6beeaad1ec995f62a611e1c3" category="inline-link-macro-rx"></block></block>
   <block id="4dd431f4f9c3cfe9f60b1eba53c0f1d0" category="summary">當您使用NetApp Element 支援功能時、資料會受到業界標準安全傳輸協定的保護。</block>
   <block id="617dd9340d4c81aec320813ec2b82b78" category="paragraph">當您使用SolidFire 完所有的Flash儲存系統時、您的資料會受到業界標準安全傳輸協定的保護。</block>
   <block id="1a75005c83ba0c4856d5a0dc8856e732" category="section-title">閒置加密（硬體）</block>
@@ -7120,7 +6439,6 @@
   <block id="2853137f7040863ca18b1480311d2902" category="list-text"><block ref="2853137f7040863ca18b1480311d2902" category="inline-xref-macro-rx"></block></block>
   <block id="5d56bf614307c585a7a26f159c531726" category="summary">您可以使用「停用Bmc/Cold重 設」方法、停用週期性重設叢集中所有節點之「基礎板管理控制器」（BMC）的背景工作。</block>
   <block id="68d97d7aeef36cea71148f01b3bb072f" category="paragraph">您可以使用「DisableBmc/ColdReset」（停用Bmc/ColdResetet）方法、停用週期性重設叢集中所有節點之基礎板管理控制器（BMC）的背景工作。</block>
-  <block id="1767ff27a6b3014619875bcc1251351f" category="admonition">不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。</block>
   <block id="792bc1eeef8ef515d10870ba4afcf8cd" category="paragraph">cBMCResetDationMinutes</block>
   <block id="422064ae0da49bccdd8e07b42cd06f97" category="paragraph">傳回重設時間間隔之間的時間。命令完成後、時間間隔應始終為0。</block>
   <block id="2540609072c5817d5701320dd4026b45" category="summary">您可以使用listauthSessionsByClusterAdmin方法來列出與指定ClusterAdminID相關聯的所有驗證工作階段。如果指定的ClusterAdminID對應到一組使用者、則會列出該群組所有成員的所有驗證工作階段。</block>
@@ -7130,7 +6448,6 @@
   <block id="161bca2e917335e125291a00fd76a80f" category="paragraph">工作階段</block>
   <block id="3f94bd0ec37d383d1f37803b50ec6f49" category="paragraph">驗證工作階段的工作階段資訊清單。</block>
   <block id="9a43554262146ce04817985e50c7f70c" category="inline-link-macro">驗證工作階段資訊</block>
-  <block id="b1bff35225b1453efa974801b476caff" category="paragraph"><block ref="b1bff35225b1453efa974801b476caff" category="inline-link-macro-rx"></block></block>
   <block id="c187f0660113fcb78cf3414a87c67c16" category="summary">您可以使用刪除AllSupportBundle方法、刪除以CreeSupportBundle API方法產生的所有支援套件組合。</block>
   <block id="80041d1608a63faf6f2f2fdb84f8dd08" category="doc">刪除AllSupportBundles</block>
   <block id="56546d35307ddd62aecf96ec0076166b" category="paragraph">您可以使用「刪除AllSupportBundles」方法、刪除以「建立SupportBundle」API方法產生的所有支援套件組合。</block>
@@ -7897,8 +7214,6 @@
   <block id="22520e0f79b161fd138e3a37475e46c1" category="list-text"><block ref="22520e0f79b161fd138e3a37475e46c1" category="inline-xref-macro-rx"></block></block>
   <block id="d5ca0cd6f152369af358915f6c3a2a53" category="inline-xref-macro">GetFeatureStatus</block>
   <block id="b72fcf071e83f34adf2ed5bda5f53811" category="list-text"><block ref="b72fcf071e83f34adf2ed5bda5f53811" category="inline-xref-macro-rx"></block></block>
-  <block id="e6ef59da013bb902965829ad5b87555e" category="inline-xref-macro">GetLicenseKey</block>
-  <block id="5aba1cd1719fb766f60b7ffdbe9bd4a1" category="list-text"><block ref="5aba1cd1719fb766f60b7ffdbe9bd4a1" category="inline-xref-macro-rx"></block></block>
   <block id="e8b1ccca9ceb1c8d49110ffd517331f6" category="inline-xref-macro">GetLoginSessionInfo</block>
   <block id="244e4d68551ba33ed755875796b7715a" category="list-text"><block ref="244e4d68551ba33ed755875796b7715a" category="inline-xref-macro-rx"></block></block>
   <block id="b5f6a0abdfc064b79742e4056da8db95" category="list-text"><block ref="b5f6a0abdfc064b79742e4056da8db95" category="inline-xref-macro-rx"></block></block>
@@ -7923,8 +7238,6 @@
   <block id="d1e9f118cc2896332499433f051860ad" category="list-text"><block ref="d1e9f118cc2896332499433f051860ad" category="inline-xref-macro-rx"></block></block>
   <block id="86845f0295b373567abd76da4488ff31" category="inline-xref-macro">遠端節點</block>
   <block id="99af96643360f14d8491e1a3db76670b" category="list-text"><block ref="99af96643360f14d8491e1a3db76670b" category="inline-xref-macro-rx"></block></block>
-  <block id="aa29735d996af88d638281fde22f2e59" category="inline-xref-macro">SetLicenseKey</block>
-  <block id="e7ac6f23e0ce05c66482e1e86f007493" category="list-text"><block ref="e7ac6f23e0ce05c66482e1e86f007493" category="inline-xref-macro-rx"></block></block>
   <block id="f27af64bb32c058c815e5a6546bdb08e" category="inline-xref-macro">SetLoginSessionInfo</block>
   <block id="bb691212fb55b0514079cc2d0ea324cb" category="list-text"><block ref="bb691212fb55b0514079cc2d0ea324cb" category="inline-xref-macro-rx"></block></block>
   <block id="8273fbe652be4df234b01f286a391bdd" category="summary">您可以使用啟用維護模式方法來準備儲存節點以進行維護。維護案例包括任何需要關閉或重新啟動節點的工作。</block>
@@ -7990,7 +7303,6 @@
   <block id="fa086ddf62bedd344204fceb97eb97b1" category="paragraph">kmipKeyServer</block>
   <block id="86d9b0ecb31e3598bf29d711f80152ec" category="paragraph">包含新修改金鑰伺服器詳細資料的物件。</block>
   <block id="64ce33c3af0564919d68824260f9d7c0" category="inline-link-macro">KeyServerKmip</block>
-  <block id="0971c717c82e5a2659fd8ee2d73d170d" category="paragraph"><block ref="0971c717c82e5a2659fd8ee2d73d170d" category="inline-link-macro-rx"></block></block>
   <block id="82e00aa6fb18d3c3250596f905ab01ee" category="summary">nodeStats物件包含節點的高層活動量測。您可以使用GetNodeStats和ListNodeStats API方法來取得部分或全部的nodeStats物件。</block>
   <block id="d9bfbffd38f5f9686a85ef17e8138b5c" category="doc">節點統計資料</block>
   <block id="3b530cc449e04797d7bb5754eece89f5" category="paragraph">nodeStats物件包含節點的高層活動量測。您可以使用「GetNodeStats」和「ListNodeStats」API方法來取得部分或全部的nodeStats物件。</block>
@@ -8696,7 +8008,6 @@
   <block id="a4926df300a1048acda1c427456917dd" category="paragraph">用於識別SAML 2.0單一登入的IDP供應商名稱。</block>
   <block id="0c2fa1c0ffa320e7273124b77aabbd2b" category="paragraph">idpConfigInfo</block>
   <block id="9b275bed2e2d0a90045fbe660777ccf3" category="paragraph">第三方身分識別供應商（IDP）組態的相關資訊。</block>
-  <block id="9c26e58197dbaa39e74144e77ff06a0e" category="paragraph"><block ref="9c26e58197dbaa39e74144e77ff06a0e" category="inline-link-macro-rx"></block></block>
   <block id="b5f8724106ac1d9b13a2fd9bb16cc7a0" category="summary">您可以使用EnablClusterSsh方法、在儲存叢集中的所有節點上啟用SSH服務。</block>
   <block id="514f5c612e0c03e835d16167f27de911" category="paragraph">您可以使用「EnablClusterSsh」方法、在儲存叢集中的所有節點上啟用SSH服務。</block>
   <block id="b85ec314bf443b797ef8a66b3b03f8a4" category="paragraph">持續時間</block>
@@ -8771,11 +8082,7 @@
   <block id="fa2bf27789f0fe1397f3deffc7b58351" category="summary">您可以使用GetLldpConfig方法、為儲存叢集的每個節點取得連結層探索傳輸協定（LLDP）組態。</block>
   <block id="484b5046da89e9bbe54090e9bba60a6b" category="paragraph">您可以使用「GetLldpConfig」方法、為儲存叢集的每個節點取得連結層探索通訊協定（LLDP）組態。</block>
   <block id="9b43e9220eea1239f728b19f53048d06" category="paragraph">儲存叢集LLDP組態的相關資訊。</block>
-  <block id="ceb51754cd6e664a2577f5fe932a79ad" category="summary">在「企業版SDS」儲存叢集上、您可以使用GetLicenseKey方法擷取儲存叢集目前的授權金鑰。SolidFire儲存叢集的授權金鑰包含叢集的訂單編號與序號、並啟動您為Element軟體購買的容量模式。</block>
-  <block id="a91b5f34ee6a7ba303eb1a3edf798b56" category="paragraph">在「企業SDS」儲存叢集上SolidFire 、您可以使用「GetLicenseKey」方法來擷取儲存叢集目前的授權金鑰。儲存叢集的授權金鑰包含叢集的訂單編號與序號、可啟動您為Element軟體購買的容量模式。</block>
   <block id="d77322ac0c7d90b3c259e9940600190a" category="paragraph">訂單編號</block>
-  <block id="678b0bacfeadd3ddc80c0e88bf638d07" category="paragraph">儲存叢集的銷售訂單編號。</block>
-  <block id="50c6837828a868cd1b9b36bb3851ef37" category="paragraph">儲存叢集的序號。</block>
   <block id="12e5166a9deafa1f3c18f855213c7b51" category="summary">您可以使用GetLoginSessionInfo方法、傳回登入驗證工作階段對登入Shell和TUI均有效的期間。</block>
   <block id="756094c6060128eebff9aa19418f67f2" category="paragraph">您可以使用「GetLoginSessionInfo」方法、傳回登入驗證工作階段對登入Shell和TUI均有效的時間段。</block>
   <block id="e774423c123f5c24e28f343ba6389539" category="paragraph">登入工作階段資訊</block>
@@ -8890,7 +8197,6 @@
   <block id="fa78e00f320d06b041e684b4958a616b" category="inline-xref-macro">GetBootStrapConfig</block>
   <block id="5f957efd2a2dab5353167aa8a39ba3f3" category="admonition">登入叢集的主節點後、執行 <block ref="748e19af81842e64567311ae92bd3ad3" category="inline-xref-macro-rx"></block> 取得要納入叢集之其餘節點的IP位址的方法、您可以針對叢集的主節點執行叢集方法。</block>
   <block id="8a6d1a92159080729def71f4e50f41d0" category="paragraph">enableSoftwareEncryptionAtRest</block>
-  <block id="d367a8e91d09cfd76f26347a32c08992" category="paragraph">啟用此參數以在靜止時使用軟體加密。在不符合需求的企業SDS叢集上預設為true SolidFire 。在所有其他叢集上預設為假。啟用閒置軟體加密之後、就無法在叢集上停用。</block>
   <block id="c8c6148afb476fb148b2e06eee51dfce" category="paragraph">英數字元銷售訂單編號。軟體型平台上的必要功能。</block>
   <block id="c967b779d143ffe8ce675585c7bf50e1" category="paragraph">否（硬體型平台）</block>
   <block id="b0096f55c186a2d5a7e36d47eda6a08e" category="paragraph">有（軟體型平台）</block>
@@ -9631,7 +8937,6 @@
   <block id="f3856ff581517deae4c9045682768677" category="paragraph">擷取特定IDP名稱的IDP組態資訊。</block>
   <block id="cbf736cf2cf084245cf2ef853366ba11" category="paragraph">idpConfigInfos</block>
   <block id="c54f92fa106774d26ba461cc1c497aae" category="paragraph">第三方IDP組態的相關資訊。</block>
-  <block id="a29f9fdde9669fd7ca1ae6b4127f82b8" category="paragraph"><block ref="9c26e58197dbaa39e74144e77ff06a0e" category="inline-link-macro-rx"></block> 陣列</block>
   <block id="e0cb88624619fd7dd8e40897f4d15d3d" category="summary">pendingNode物件包含可新增至叢集之節點的相關資訊。使用ListPendingNode API方法、傳回所有擱置節點的此資訊清單。您可以使用addnodes API方法、將任何列出的節點新增至叢集。</block>
   <block id="18b672395939939fbe47d86d9373af8c" category="paragraph">pendingNode物件包含可新增至叢集之節點的相關資訊。使用「ListPendingnodes」API方法、傳回所有擱置節點的此資訊清單。您可以使用「addnodes」API方法、將任何列出的節點新增至叢集。</block>
   <block id="edfd525e4c56b17386fea7b6205fd555" category="summary">您可以使用GetNodeSSLCertificate方法擷取管理節點上目前作用中的SSL憑證。</block>
@@ -9750,7 +9055,6 @@
   <block id="c69e55549d70ae70e9167c9f12865939" category="summary">nodeProtectionDomain物件包含有關節點識別及與該節點相關之保護網域的資訊。</block>
   <block id="b140fd3c0111005bcfc14eb207c72b2d" category="paragraph">保護網域</block>
   <block id="8182124863c7746cec9195a8d74456c3" category="paragraph">節點所屬的保護網域清單。</block>
-  <block id="4a7c9a0bc1a3ed41374850a08662f9a1" category="paragraph"><block ref="4a7c9a0bc1a3ed41374850a08662f9a1" category="inline-link-macro-rx"></block></block>
   <block id="98965bc965e2503840873221372eba90" category="summary">每個Element軟體API回應本文都包含下列基本部分：</block>
   <block id="44045e739b1f16723d6b64d20517d324" category="paragraph">方法傳回的物件。系統會傳回一個物件、其命名成員對應於方法的書面傳回值。如果發生錯誤、則此成員不存在。</block>
   <block id="8031b04b176b3acf22e560cd27f7363c" category="paragraph">發生錯誤時傳回的物件。此成員只有在發生錯誤時才會出現。</block>
@@ -10047,7 +9351,6 @@
   <block id="03ca6818409054c6f788f8f1512a9a83" category="paragraph">如果省略、傳回的KMIP金鑰伺服器將不會根據是否指派KMIP金鑰提供者來篩選。</block>
   <block id="2c1426081603fa11f6ec5fe617919158" category="paragraph">kmipKeyServers</block>
   <block id="24fdfa87efc0bd3dccff05037bf0a5e8" category="paragraph">已建立的KMIP金鑰伺服器完整清單。</block>
-  <block id="0a2a9e2ac4719c4ac6cdb0954649f468" category="paragraph"><block ref="0971c717c82e5a2659fd8ee2d73d170d" category="inline-link-macro-rx"></block> 陣列</block>
   <block id="8e71caf10ecd9b6b3ee05e758e3f8c97" category="summary">SnapMirrorVolume Info物件包含SnapMirror關係中磁碟區位置的相關資訊、例如其名稱和類型。</block>
   <block id="59fe2bd58e4a6e4b14948bca4d39f8a6" category="list-text">支援：磁碟區位於執行Element軟體的儲存叢集上。SolidFire</block>
   <block id="041d7ab6576fae78e74300a4d6c4fc9a" category="list-text">來源：Volume位於遠端的不全叢集上。ONTAP ONTAP</block>
@@ -10250,7 +9553,6 @@
   <block id="893cd6843bbc2f9b74beda40cece2f34" category="paragraph">您可以使用「GetprotectionDomainLayout」方法來傳回叢集的所有保護網域資訊、包括每個節點所在的機箱和自訂保護網域。</block>
   <block id="78acf42d4e20f5f2468d1e65f57abf33" category="paragraph">保護網域配置</block>
   <block id="05a5c63fcd5e41bcca1f51f811155ae8" category="paragraph">節點清單、每個節點及其相關的保護網域。</block>
-  <block id="239e7b7fda84773161e54a846a2d1cd4" category="paragraph">的JSON.清單 <block ref="900764c76dfb916163ee11006f145e7d" category="inline-link-macro-rx"></block> 物件：</block>
   <block id="a21728163ca0c7ab236e2240ab2549ec" category="summary">您可以使用GetSnmpInfo方法取得目前的簡單網路管理傳輸協定（SNMP）組態資訊。</block>
   <block id="ec695db4a3039f12322d3c762177a394" category="paragraph">您可以使用「GetSnmpInfo」方法取得目前的簡單網路管理傳輸協定（SNMP）組態資訊。</block>
   <block id="c13faebbcab821ff5e707bd4c5e1875b" category="admonition">GetSnmpInfo不適用於元素8.0版之後的版本。。 <block ref="0cecdaa51e9ea3fd4f7f07a7d8c8b134" category="inline-xref-macro-rx"></block> 和 <block ref="9522ccc5efb9e837de9ff117f14da7a1" category="inline-xref-macro-rx"></block> 方法取代GetSnmpInfo方法。</block>
@@ -10740,7 +10042,6 @@
   <block id="c398d0b5db2ad6bd0f494cea5b8f4088" category="paragraph">kmipKeyProvider</block>
   <block id="158fc117241750b333d9029fcd379a0b" category="paragraph">包含新建立金鑰提供者詳細資料的物件。</block>
   <block id="af6fa3b56666058ff3f8eacb74577a16" category="inline-link-macro">KeyProviderKmip</block>
-  <block id="318d6ed2c493a66e91fc7d1db5a0f022" category="paragraph"><block ref="318d6ed2c493a66e91fc7d1db5a0f022" category="inline-link-macro-rx"></block></block>
   <block id="fc1d08eb457dad55a63d95c680fb5b01" category="summary">您可以使用GetHardwareInfo方法來取得單一節點的硬體資訊和狀態。硬體資訊通常包括製造商、廠商、版本、磁碟機及其他相關的識別資訊。</block>
   <block id="a0f48b06abf06e05de9069073f25fc37" category="paragraph">您可以使用「GetHardwareInfo」方法取得單一節點的即時硬體資訊和狀態。硬體資訊通常包括製造商、廠商、版本、磁碟機及其他相關的識別資訊。</block>
   <block id="a68f364debebcd48c240158c4328e21a" category="paragraph">將此「force」參數設為true、以便在叢集中的所有節點上執行。</block>
@@ -11333,9 +10634,6 @@
   <block id="315d01d864941b08b015bd9724f5b4e7" category="paragraph">如果省略、則不會根據傳回的KMIP金鑰提供者是否已指派KMIP金鑰伺服器來篩選。</block>
   <block id="2d956871963e704854b5e24781df3ac6" category="paragraph">kmipKeyProviders</block>
   <block id="daed31255d43e1a9cb8957ea4827280f" category="paragraph">已建立的KMIP金鑰提供者清單。</block>
-  <block id="9e1dc08162fd6287c4fb2fdc4c4a9a0f" category="paragraph"><block ref="318d6ed2c493a66e91fc7d1db5a0f022" category="inline-link-macro-rx"></block> 陣列</block>
-  <block id="1d3e9919d29c393a044433bd501a19df" category="summary">在「企業版SDS」儲存叢集上SolidFire 、您可以使用SetLicenseKey方法來設定儲存叢集的授權金鑰。儲存叢集的授權金鑰包含叢集的訂單編號與序號、並啟動您為Element軟體購買的容量模式。</block>
-  <block id="ad3466e61e1b49fb64f6186e7fdcadd2" category="paragraph">在「企業SDS」儲存叢集上SolidFire 、您可以使用「etLicenseKey」方法來設定儲存叢集的授權金鑰。儲存叢集的授權金鑰包含叢集的訂單編號與序號、可啟動您為Element軟體購買的容量模式。</block>
   <block id="41f5226364942217920c4da7dac4fdef" category="summary">您可以使用DisableIdp驗 證方法、停用叢集使用協力廠商IDP進行驗證的支援。停用後、第三方IDP驗證的使用者將無法再存取叢集、而且任何作用中的驗證工作階段都會失效/中斷連線。LDAP與叢集管理員可透過支援的UI存取叢集。</block>
   <block id="f7782cee0150831210cb8b1d663487e5" category="paragraph">您可以使用「disableIdpAuthentication」方法、停用叢集使用協力廠商IDP進行驗證的支援。停用後、第三方IDP驗證的使用者將無法再存取叢集、而且任何作用中的驗證工作階段都會失效/中斷連線。LDAP與叢集管理員可透過支援的UI存取叢集。</block>
   <block id="c5d580e2590332e20b85057049243cc7" category="summary">您可以使用RESartNetworking方法重新啟動節點上的網路服務。</block>
@@ -11413,27 +10711,22 @@
   <block id="021194ed35c1ca85c5ddd9daaf8630c3" category="admonition">每個儲存節點大約需要30分鐘的升級程序。如果您要將元素儲存叢集升級至版本2.76以上的儲存韌體、則只有在新韌體寫入節點時、個別儲存節點才會在升級期間重新開機。</block>
   <block id="1f760966967601f6feb32cc62bb11ca3" category="list-text">選取介面右上角附近的*升級*。</block>
   <block id="8d2b20731c568a1d9a02267e5d20edb7" category="list-text">在「*升級*」頁面上、選取「*儲存設備*」。</block>
-  <block id="41248545ed2949a832d88f9ea8c00917" category="admonition">「*儲存設備*」索引標籤會列出您安裝時所需的儲存叢集。如果NetApp混合雲控制無法存取叢集、則不會顯示在「*升級*」頁面上。如果叢集執行元件12或更新版本、您會看到這些叢集目前列出的韌體套裝組合版本。如果單一叢集中的節點上有不同的韌體版本、或是在升級過程中、您會在*目前的韌體產品組合版本*欄中看到*多個*。您可以選取*多重*來瀏覽至*節點*頁面、以比較韌體版本。如果所有叢集都執行的元件版本早於12.0、您將看不到任何韌體套裝軟體版本編號的相關資訊。如果叢集是最新的且/或沒有可用的升級套件、則不會顯示* Element *和* Firmwareonly *索引標籤。升級進行時、也不會顯示這些索引標籤。如果顯示* Element *（元素*）索引標籤、但未顯示*韌體Only（僅限韌體）*索引標籤、則沒有可用的韌體套件。</block>
   <block id="f1bd2e17b5412e4b45851ad42541f684" category="list-text">從下列選項中選擇、然後執行適用於您叢集的一組步驟：</block>
-  <block id="042b4c254a65c4222ecfd8eda19de8fb" category="cell">您的管理節點具有外部連線功能。</block>
   <block id="c2478fbc134086873c832f9086152247" category="list-text">選取您要升級的叢集旁的下拉式箭頭。</block>
   <block id="e0d814d8ce005e1e08731f39dc4cff27" category="list-text">選取*僅限韌體*、然後從可用的升級版本中選取。</block>
   <block id="c132ec9989c2f6d64865e3b80e0712f9" category="list-text">選擇*開始升級*。</block>
   <block id="b9088c022e9648ce7ddea6e6d4a7d2a2" category="admonition">升級期間*升級狀態*會變更、以反映程序的狀態。它也會因應您採取的行動而變更、例如暫停升級、或升級傳回錯誤。請參閱 <block ref="963ffe23b927e51707381f60a050d9f4" category="inline-xref-macro-rx"></block>。</block>
   <block id="1c1f68c70e4604204e19388cd8dedfa2" category="admonition">在升級進行期間、您可以離開頁面、稍後再返回頁面、繼續監控進度。如果叢集列收合、頁面不會動態更新狀態和目前版本。叢集列必須展開以更新表格、否則您可以重新整理頁面。</block>
   <block id="f7c462da794bbac0b6cb931507af8070" category="paragraph">您可以在升級完成後下載記錄。</block>
-  <block id="8fce94dc58f1bdc7de438659f9a9a00b" category="cell">您的管理節點位於黑暗站台內、沒有外部連線功能。</block>
   <block id="308f16f303adc416b27b236c19797514" category="list-text">選擇*瀏覽*上傳您下載的升級套件。</block>
   <block id="9f3e44fdaf4628028bd071e9fdf42636" category="list-text">等待上傳完成。進度列會顯示上傳狀態。</block>
   <block id="4109e9de1e5e5e6a88e7ab1943736894" category="admonition">如果您離開瀏覽器視窗、檔案上傳將會遺失。</block>
-  <block id="929933851dc2ac970fff1ef0a8351b29" category="paragraph">檔案成功上傳及驗證後、畫面上會顯示一則訊息。驗證可能需要幾分鐘的時間。如果您在此階段離開瀏覽器視窗、檔案上傳會保留下來。您可以在升級完成後下載記錄。如需各種升級狀態變更的相關資訊、請參閱 <block ref="963ffe23b927e51707381f60a050d9f4" category="inline-xref-macro-rx"></block>。</block>
   <block id="d3e7182b84a940e7db18b7fb84516b9d" category="section-title">升級狀態變更</block>
   <block id="03f25bbad83c64043f813d6fad6846de" category="paragraph">以下是使用者介面中「*升級狀態*」欄在升級前、期間及之後顯示的不同狀態：</block>
   <block id="6d34e3d06ec7dfd7e469ec4d37b9ae1d" category="cell">升級狀態</block>
   <block id="e519a1ecd0afa6828cea3c07f7d09b4a" category="cell">最新</block>
   <block id="79767150703c682eb62b32792815ff4b" category="cell">叢集已升級至可用的最新元素版本、或韌體已升級至最新版本。</block>
   <block id="6fc59d6889d5ac60b02946bb6b8b8898" category="cell">無法偵測</block>
-  <block id="5d1b774bcdd716279a4e1f6c45c21ae4" category="cell">當NetApp混合雲控制系統無法連線至線上軟體儲存庫時、會顯示此狀態、而非*可用版本*。當儲存服務API傳回的升級狀態不在可能的升級狀態列舉清單中時、也會顯示此狀態。</block>
   <block id="a5d11b04812fa774f9a940e366eac9ac" category="cell">提供版本</block>
   <block id="d9ce4c41aa5560b51aa0d618e34742a8" category="cell">有更新版本的Element和/或儲存韌體可供升級。</block>
   <block id="c9413dd7682a45da9ecc9efa8cea47d7" category="cell">進行中</block>
@@ -11452,14 +10745,7 @@
   <block id="e0cac02c93ade1b7ecc2eb64907171a8" category="admonition">在更新節點時中止叢集升級、可能會導致磁碟機無法正常移除節點。如果未正常移除磁碟機、在升級期間重新新增磁碟機將需要NetApp支援人員手動介入。節點執行韌體更新或更新後同步活動可能需要較長時間。如果升級進度似乎停滯、請聯絡NetApp支援部門以尋求協助。</block>
   <block id="3aff5fc3a8e8d7210a56cf227b42a6e8" category="section-title">使用NetApp混合雲控制API升級儲存韌體</block>
   <block id="13381b43a34c53873fa3ea94ea881f65" category="paragraph">您可以使用API將叢集中的儲存節點升級至最新的Element軟體版本。您可以使用自己選擇的自動化工具來執行API。此處記錄的API工作流程使用管理節點上可用的REST API UI作為範例。</block>
-  <block id="8c641b6be2c77d41b861c68406aa882e" category="list-text">視連線而定、執行下列其中一項：</block>
-  <block id="99d815c1264bfc1b74f7a653fb83e659" category="list-text">驗證儲存庫連線：</block>
   <block id="85bb06226f2384b478691f49e53204fc" category="list-text">關閉授權視窗。</block>
-  <block id="132a5b6da037e3c0aba1107add99cd58" category="list-text">從REST API UI中、選取*「Get Resi/Packages/site-repository/ connection*」。</block>
-  <block id="7ac2eb4e7073a0bed37085ee1d0656de" category="list-text">如果傳回代碼200、請前往下一步。如果沒有連線到遠端儲存庫、請建立連線或使用Dark站台選項。</block>
-  <block id="ecd4792b2445292557fc3b37de2cda15" category="list-text">尋找升級套件ID：</block>
-  <block id="bd91bfdcf4a916f6b8c00c25da13251b" category="list-text">從REST API UI中、選取* Get /packags*。</block>
-  <block id="fa296e9495ac8602647feef1c1f92880" category="list-text">從回應中、複製並儲存韌體套件ID以供後續步驟使用。</block>
   <block id="814733d416c95bcc389df46e42881e26" category="inline-link">下載頁面</block>
   <block id="9b8271bf8ee401fbab82cfd673a6efe7" category="list-text">將儲存韌體升級套件下載至管理節點可存取的裝置、前往Element軟體<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 並下載最新的儲存韌體映像。</block>
   <block id="3d849e77fb6435c594cb34aff5254c7a" category="list-text">將儲存韌體升級套件上傳至管理節點：</block>
@@ -11586,7 +10872,6 @@
   <block id="a5237c2b3436db5dc67ab53b053d3ec9" category="paragraph">您可以使用NetApp混合雲控制UI或管理節點REST API來更新管理服務：</block>
   <block id="7d6cae0c176b060b3eb918e8fc3a8a88" category="list-text"><block ref="8b810af37d36ecef3e8ce0cfd28cc60b" category="inline-xref-macro-rx"></block> （建議方法）</block>
   <block id="45d5739efe933eabe3dda4a4ba6b61b1" category="list-text"><block ref="b795f7048c0a3127327e392f4c115728" category="inline-xref-macro-rx"></block></block>
-  <block id="610172e2b0e7d4051f0d0b230bd8c722" category="list-text"><block ref="79f95b99cf6c6dc511dd13bb08f1454f" category="inline-xref-macro-rx"></block></block>
   <block id="2325934efda1befa076510008b0f7646" category="section-title">使用混合雲控制更新管理服務</block>
   <block id="6dd42a6a80b9ea41a3c15d5cbf5c3528" category="paragraph">您可以使用NetApp混合式雲端控制來更新NetApp管理服務。</block>
   <block id="c3e2bcb5601498c3470bd272236342a3" category="paragraph">管理服務套裝組合可在主要版本之外提供增強的功能與修正程式。</block>
@@ -11598,30 +10883,14 @@
   <block id="291b81212712dc828fee9037f0662499" category="list-text">您已將管理服務升級至至少2.1.326版。NetApp混合雲控制升級不適用於舊版服務組合。</block>
   <block id="f4b19cd96a813fb177542ed57f6d27aa" category="admonition">如需每個服務套裝組合版本的可用服務清單、請參閱<block ref="b7b8dc48337abf993d8909e2c4d32cb1" category="inline-link-rx"></block>。</block>
   <block id="9c3b6a2840d81e74fa978e35f9fda09e" category="list-text">在「升級」頁面上、選取「*管理服務*」索引標籤。</block>
-  <block id="2a67be48fd33aed34d5d9b95445a0c20" category="paragraph">「管理服務」索引標籤會顯示管理服務軟體的目前和可用版本。</block>
-  <block id="25026455f4896275dc71ea344eae7273" category="inline-link-macro">Proxy組態</block>
-  <block id="6d991bb9237f73dba10797ec25468d86" category="admonition">如果您的安裝無法存取網際網路、則只會顯示目前的軟體版本。如果您的安裝具有外部連線功能、但無法存取NetApp線上儲存庫、請檢查您的 <block ref="3fa2d0476e68824edbcf4c56be4ac531" category="inline-link-macro-rx"></block>。</block>
-  <block id="b48c8e3e654392e94eba7ff80f2a9810" category="list-text">如果您的安裝可以存取網際網路、而且有可用的管理服務升級、請選取*開始升級*。</block>
-  <block id="88cc6eac67699034974d69a75c774238" category="list-text">如果您的安裝無法存取網際網路、請執行下列動作：</block>
   <block id="3a91ea590517ccc87ccaf6cbda3ac55c" category="list-text">請依照頁面上的指示、下載管理服務升級套件並將其儲存至您的電腦。</block>
   <block id="59ab5341afeb797e4cbab599e21e347f" category="list-text">選取*瀏覽*以找出您儲存的套件並上傳。</block>
   <block id="30c2b654de6b157d3965b69e2e973b9c" category="paragraph">升級開始後、您可以在此頁面上看到升級狀態。在升級期間、您可能會失去與NetApp混合雲控制的連線、而必須重新登入才能查看升級結果。</block>
   <block id="e1ab7975bc85b8e4a805e35bfd948176" category="section-title">使用管理節點API更新管理服務</block>
-  <block id="f64b52761fbac72e8bfdd229b3a113f1" category="paragraph">使用者最好能從NetApp混合雲控制系統執行管理服務更新。不過、您可以從管理節點使用REST API UI手動更新管理服務。</block>
   <block id="9a452c7dc2442a21923d0c9fff059919" category="list-text">在管理節點上開啟REST API UI：「https://&lt;ManagementNodeIP&gt;/mnode`</block>
-  <block id="fe1085046bceaf490556bf74e0f01c15" category="list-text">（選用）確認管理節點服務的可用版本：「Get /services / versions」（取得/服務/版本）</block>
-  <block id="0edefa8da79067ac4b94f9b1b2a9af8c" category="list-text">（選用）取得最新版本的詳細資訊：「Get /services /versions /latest」（取得/服務/版本/最新版本）</block>
-  <block id="b4851bdc860d51294258bcfa6507a2f6" category="list-text">（選用）取得特定版本的詳細資訊：「Get /services / versions /｛version｝/info」</block>
-  <block id="bf5a6801d77133c83554e3433950d36e" category="list-text">執行下列其中一個管理服務更新選項：</block>
-  <block id="0da74aa7d2a1855d917aaf432d2d3ca4" category="list-text">執行此命令以更新至管理節點服務的最新版本：「PUT /services / update / latest」</block>
-  <block id="0663ec28ae182530f1f365d17c98c119" category="list-text">執行此命令以更新至管理節點服務的特定版本：「PUT /services / update /｛version｝」</block>
-  <block id="f488e48b4d2bc7d793f0e09cb03654ee" category="list-text">執行「Get/services / update / Status（取得/服務/更新/狀態）」以監控更新狀態。</block>
   <block id="0e4f8b996ad3d1d666cae0ca65696890" category="paragraph">成功的更新會傳回類似下列範例的結果：</block>
-  <block id="e620d1115b8f26b9e2c66f46d34832bc" category="section-title">使用管理節點API更新適用於黑點的管理服務</block>
   <block id="c202282c44af53d5ea8a677636541731" category="paragraph">使用者最好能從NetApp混合雲控制系統執行管理服務更新。不過、您可以使用REST API、將管理服務的服務套件更新手動上傳、擷取及部署至管理節點。您可以從管理節點的REST API UI執行每個命令。</block>
   <block id="3601cad086244ec56eee653db5e2b0a3" category="list-text">您已部署NetApp Element 了一個版本為11.3或更新版本的軟件管理節點。</block>
-  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支援網站</block>
-  <block id="9d89df9ed11d9d07aa2a21fce8623b87" category="list-text">您已從下載服務套件更新<block ref="1c68cef0c53db6ec1d50d3b221c314cd" category="inline-link-rx"></block> 至可在黑暗環境中使用的裝置。</block>
   <block id="54521ea545972501500b09f85df8ba55" category="list-text">使用以下命令「PUT /services / upload」、在管理節點上上上傳並擷取服務套件組合</block>
   <block id="4963e624e3688c6904a816aa37c6c7cc" category="list-text">在管理節點上部署管理服務：「放置/服務/部署」</block>
   <block id="c512caf817d81cdc178fb65c97607344" category="list-text">監控更新狀態：「Get /services / update/Status（取得/服務/更新/狀態）」</block>
@@ -11635,18 +10904,14 @@
   <block id="c68d0cefaf6daaa0eddd2f2ab63ba5c8" category="list-text"><block ref="910aaaa5a5f6089f423c0c681bb2f1ce" category="inline-xref-macro-rx"></block></block>
   <block id="1a1c6d70aec56ed56fdc5c3ac8162a8b" category="section-title">使用NetApp混合雲控制UI來升級元素儲存設備</block>
   <block id="a544a5293c147dec832e983a6fbad504" category="paragraph">您可以使用NetApp混合雲控制UI來升級儲存叢集。</block>
-  <block id="106cc5a0e6a0bb3c0776b3ba8fb64337" category="inline-link">Element軟體升級套件（.tar.gz）、適用於SolidFire 各種儲存叢集</block>
   <block id="eced5161fd4b5a5d98480da44ccabc87" category="paragraph">「*儲存設備*」索引標籤會列出您安裝時所需的儲存叢集。如果NetApp混合雲控制無法存取叢集、則不會顯示在「*升級*」頁面上。</block>
-  <block id="28915945fea0308bbd2cdf191b79dd68" category="list-text">選取您要升級之叢集旁的下拉式箭頭、然後從* Element *索引標籤下可用的升級版本中選取。</block>
   <block id="effc57e6ad213336e96f00439b792658" category="paragraph">檔案成功上傳及驗證後、畫面上會顯示一則訊息。驗證可能需要幾分鐘的時間。如果您在此階段離開瀏覽器視窗、檔案上傳會保留下來。</block>
   <block id="2b96c3916188bec9de822541d9cf623f" category="cell">您正在升級執行元素11.8之前版本的H610S叢集。</block>
   <block id="b6d17024c4c99e0348e4d802e2508b6b" category="list-text">選取您要升級之叢集旁的下拉式箭頭、然後從可用的升級版本中選取。</block>
   <block id="d215420632f75acd5be40e1f61fad92e" category="paragraph">您可以在升級完成後下載記錄。如需各種升級狀態變更的相關資訊、請參閱 <block ref="963ffe23b927e51707381f60a050d9f4" category="inline-xref-macro-rx"></block>。</block>
   <block id="80744cb20ac19a71c799d04e9142c0f5" category="cell">叢集已升級至可用的最新元素版本。</block>
-  <block id="00bdf0ae9f642cb5870113a82a86b5ba" category="cell">當NetApp混合雲控制系統無法連線至線上軟體儲存庫時、會顯示此狀態、而非*可用版本*。如果您有外部連線功能、但仍看到此訊息、請檢查您的 <block ref="3fa2d0476e68824edbcf4c56be4ac531" category="inline-link-macro-rx"></block>。</block>
   <block id="c25db468e3487f49a3fe8a8fd3ee6fca" category="cell">完成後續追蹤</block>
   <block id="c46945f40a6b2e92964b73d6d398f9d3" category="section-title">使用NetApp混合雲控制API來升級元素儲存設備</block>
-  <block id="92c655ce479b4404b3a51afa0527fd9b" category="list-text">從回應中、複製並儲存套件ID以供後續步驟使用。</block>
   <block id="1ed5061d3b76fa0c219c1f1d3b386470" category="list-text">將儲存升級套件下載至管理節點可存取的裝置。</block>
   <block id="592247e1218ecdf894b0dc3bf1e2b0c6" category="paragraph">移至Element軟體<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 並下載最新的儲存節點映像。</block>
   <block id="ca9b271bda1fd83c0839a53fe115bfdb" category="list-text">將儲存升級套件上傳至管理節點：</block>
@@ -11748,9 +11013,6 @@
   <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">使用NetApp混合雲控管</block>
   <block id="1d5eadee8dd359da135590100c405785" category="sidebar">使用Element軟體API</block>
   <block id="b16427ba775ee26e7f5fa22679a4a605" category="sidebar">使用vCenter Server的元素外掛程式</block>
-  <block id="6524c8f1318a728d1ea57670051f6c25" category="sidebar">介紹ESDS SolidFire</block>
-  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入門</block>
-  <block id="1ddc0d6107c5fab710d5b58be7f4cc59" category="sidebar">安裝需求</block>
   <block id="6216a3b9e8c46cd0635bc8d3f9c8cf4f" category="sidebar">使用整合工具（需要登入）</block>
   <block id="52e27f272b7f3c0cd5623309ba926677" category="sidebar">元素SDK（Java、.NET、Python）</block>
   <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">解決方案</block>
@@ -11767,7 +11029,6 @@
   <block id="9958041ee70a2259278a77d924dd17fb" category="sidebar">外部金鑰管理API命令</block>
   <block id="27f2e04c96b5ac3b10c4de8069658227" category="sidebar">使用群組快照來保護資料</block>
   <block id="cf35d1bd4f63afd1c731729075f91d65" category="sidebar">將磁碟區重新磁碟區備份到群組快照</block>
-  <block id="7312c371e606c4ef84d0e890d014f53f" category="sidebar">立即開始SolidFire 使用ESXESDS</block>
   <block id="2e531c00d20727b760f0fefbb4c65c82" category="sidebar">請在NetApp混合雲控管的節點頁面上檢視您的庫存</block>
   <block id="767682e703a28fefdc1067e1fcf04243" category="sidebar">利用NetApp混合雲控制功能監控儲存叢集上的磁碟區</block>
   <block id="19d0a846033170bad30679c08c8ddf47" category="sidebar">安裝或恢復管理節點</block>
@@ -11796,23 +11057,11 @@
   <block id="bd1ea3213926ecdb3e25a30ccf5157d9" category="section-title">使用API在管理節點上停用或啟用SSH功能</block>
   <block id="526719701f51876f46433bfa55249a45" category="section-title">使用API判斷管理節點上SSH功能的狀態</block>
   <block id="be441559765f3e52d513b155b4b59981" category="list-text">隨即顯示EULA。向下捲動、選取*我接受目前及所有未來更新*、然後選取*儲存*。</block>
-  <block id="06194f109ff7ed4270c1e5f89cbe9e74" category="admonition">當您接受EULA時、系統會記錄所有未來更新、並啟用自動下載功能。您將會收到NetApp軟體更新與升級的更新、您可以自行決定是否安裝、也可以方便地安裝。您可以停用與NetApp線上軟體儲存庫的網路連線、以停用自動下載功能。</block>
   <block id="f4926605dca5caffd5d52e790b9eb676" category="list-text">*管理服務*：您已更新至最新的管理服務套裝組合（2.10.27或更新版本）。</block>
   <block id="fb7a24d6912e863521bf9df7516e215b" category="list-text">*管理節點*：您執行的是管理節點11.3或更新版本。</block>
   <block id="cd87cb364b82cfd7ff555087f3e88e59" category="list-text">* Element軟體*：您的叢集版本執行NetApp Element 的是功能不全的軟體11.3或更新版本。</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">外掛程式與VMware vCenter Server 6.5 for Element Plug-in for VMware vCenter Server 4.6、4.7和4.8不相容。</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter Plug-in 4.9版本說明</block>
-  <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp混合雲控制網路UI和API可從NetApp線上軟體儲存庫下載軟體套件。因此、部分URL或IP位址可能會根據內容傳輸網路解析為其他URL或IP位址。如有可能、您應與網路工程師合作、使用下列一般步驟、將這些URL或IP位址新增至防火牆規則：</block>
-  <block id="468e2827e5dc0169c965a021b0f015d8" category="list-text">使用wGet或Curl公用程式存取URL（例如support-sg-nawest.netapp.com）。</block>
-  <block id="887a9d2ae67bb61c76d5d0032a4b7b0f" category="list-text">如下列範例所示、檢查連線能力：</block>
-  <block id="9b6b0ba6c58622cfc8a6178412a0e4bf" category="image-alt">檢查連接埠連線能力</block>
-  <block id="17dc6266a36d140e3656a007ab0a9fce" category="list-text">無法存取URL（與support-sg-nawest.netapp.com不同）。</block>
-  <block id="27639a1d6103dcea8efd114fa6c08ad8" category="paragraph">新版本通知：</block>
-  <block id="ab3ee28175c91fc275541983d197ab00" category="list-text">https://support.netapp.com/aods/`</block>
-  <block id="202ff041fdb9a5ee3579e8cb7984ef6b" category="paragraph">軟體下載：</block>
-  <block id="9fc75d41716cfd46199787dcf77473a1" category="list-text">https://support-sg-emea.netapp.com`</block>
-  <block id="a1b1a9120bbc7238c7b6088d7223d194" category="list-text">https://support-sg-naeast.netapp.com`</block>
-  <block id="219033cd316af31663b173765be6dd78" category="list-text">https://support-sg-nawest.netapp.com`</block>
   <block id="778b8320a31f425d9021c72ba59dd8bd" category="cell">儲存節點</block>
   <block id="c4303966c5d95835840cedbb4010f17d" category="cell">目前Element軟體版本</block>
   <block id="0eb587cb5fd7c18c359cc306f978cd9d" category="cell">每個節點的軟體與韌體安裝時間約為1^</block>
@@ -11898,11 +11147,8 @@
   <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">從元件12.3.1開始、會自動執行子步驟（A）至（e）。若為管理節點12.3.1或更新版本、請繼續執行 <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 以完成時間同步組態。</block>
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
-  <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">動態節點額定值</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element軟體12.5注意事項</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
-  <block id="fe69a3287756ee47fc4650a84806448a" category="inline-link-macro">NetApp SolidFire 企業SDS 12.5注意事項</block>
-  <block id="a98228377241429f03c99eedec91c522" category="list-text"><block ref="a98228377241429f03c99eedec91c522" category="inline-link-macro-rx"></block></block>
   <block id="5b86bf0a1903cc9047cd68ef97be17fa" category="inline-link-macro">管理節點12.5注意事項</block>
   <block id="3dcbe7b9be7ae83a929a25e122289702" category="list-text"><block ref="3dcbe7b9be7ae83a929a25e122289702" category="inline-link-macro-rx"></block></block>
   <block id="bb1c0a162d9f9097c1240465ee88a28f" category="inline-xref-macro">SignSshKeys</block>
@@ -11933,7 +11179,6 @@
   <block id="4379e56a99273d480a732e14cfe86d12" category="paragraph">在此範例中、會簽署並傳回有效的公開金鑰（1-24小時）。</block>
   <block id="cf3e481a44141cabd4e9d46cfbb1f899" category="paragraph">12.5%</block>
   <block id="1cd7e1f52564ecd1b9b47bf17fe8d192" category="inline-link-macro">啟用和停用</block>
-  <block id="9be1c6c1a5e1d288c79545fe648fce2d" category="paragraph">如果您想要啟用整個叢集 <block ref="46beba8112888a31f3c57eea2d458bf9" category="inline-link-macro-rx"></block> 對於完整Flash儲存叢集、您必須在建立叢集期間執行此動作。SolidFire從元素12.5開始、您必須在建立叢集期間、於Create Cluster UI中啟用閒置的軟體加密。對於元素12.3.x及更早版本、您必須使用建立叢集 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> API方法、並將enableSoftwareEncryptionAtRest參數變更為「true」。靜止時的軟體加密功能預設為SolidFire 啟用、適用於不支援的ESDS叢集。對於支援完整Flash的儲存叢集和不完整的ESDS叢集、在叢集上啟用靜止軟體加密之後、就無法停用它。SolidFire SolidFire您可以 <block ref="c4953cd715ac499bd17d25e3487e7fdb" category="inline-link-macro-rx"></block> 在建立叢集之後、硬體加密會閒置。</block>
   <block id="2ee9526aa61dc0808ea0ccf6ccfa2412" category="paragraph">不再需要升級管理節點作業系統、即可升級儲存叢集上的Element軟體。您只需將管理服務升級至最新版本、即可使用NetApp混合雲控制系統執行元件升級。如果您基於其他理由（例如安全性補救）而想要升級管理節點作業系統、請依照您案例的管理節點升級程序進行。</block>
   <block id="cd5e8795f7da1b9c55223a753f0c64bd" category="inline-link">Element 12.3.x管理節點升級文件</block>
   <block id="33fea926c5e46b795ee89cd754264618" category="admonition">如果您需要有關升級管理節點12．2或更早版本的資訊、請參閱<block ref="7510c32e54d32b91989c1cd2810dc6d2" category="inline-link-rx"></block>。</block>
@@ -11944,7 +11189,6 @@
   <block id="356747bc1580f5d7e13f9055ae1f02df" category="paragraph">若要升級NetApp Element 功能、您可以使用NetApp混合雲控制UI或REST API。某些作業會在元素軟體升級期間受到抑制、例如新增和移除節點、新增和移除磁碟機、以及與啟動器、Volume存取群組和虛擬網路相關的命令等。</block>
   <block id="abad8a22ec62bb4befaee820afb760ef" category="inline-link-macro">使用HealthTools升級至Element 123</block>
   <block id="649c8d7c132041751dab6da01f1fd9db" category="list-text">* H610S儲存節點*的更新基板管理控制器（BMC）：您已升級H610S節點的BMC版本。請參閱 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
-  <block id="02526a9433819b3363fdad9cdfc66a7d" category="list-text">如果您的管理節點未連線至網際網路、則表示您已下載<block ref="0c09c6a7a60b11e622c5ccc20d3a7783" category="inline-link-rx"></block>。</block>
   <block id="a901d2b8512ddf5cf3b7654718ea92a4" category="admonition">如需使用NetApp混合雲控制及其因應措施升級儲存叢集的潛在問題、請參閱此<block ref="385c83615df1d77fbf0bae3f06fabb3d" category="inline-link-rx"></block>。</block>
   <block id="981a393a1b5619c45c3545ca7373b5cf" category="list-text">選擇*開始升級*。升級完成後、UI會提示您執行其他升級步驟。</block>
   <block id="02349aba09cccd8151274ed2d29018b1" category="list-text">完成中所需的其他步驟<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block>並在UI中確認您已完成階段2。</block>
@@ -11978,7 +11222,6 @@
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="5ed2b0be7714cf9bfe94c6d0660549bb" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block></block>
   <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">儲存韌體產品組合2.146版本說明</block>
-  <block id="357bc0086b99b12d4411a85cc4c0c8a2" category="admonition">靜止狀態的軟體加密功能預設會在SolidFire 所有的「支援企業」SDS節點中啟用。靜止軟體加密功能可在SolidFire 不含自我加密磁碟機（SED）的企業SDS節點中、提供資料安全加密的主要軟體層。</block>
   <block id="efe7c0d4ed04341756689674a3fb46c4" category="list-text">* BMCselfTestFailed*</block>
   <block id="e14ad5a8fd8d67543e771552b5287d65" category="paragraph">基礎板管理控制器（BMC）自我測試失敗。</block>
   <block id="f13985a4689ae985836f2d3e56cd1a5f" category="paragraph">如需協助、請聯絡NetApp支援部門。</block>
@@ -12021,29 +11264,10 @@
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">設定自訂保護網域</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">啟動遠端NetApp支援工作階段</block>
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">如果SolidFire 您需要支援您的整套Flash儲存系統的技術支援、NetApp支援中心可遠端連線至您的系統。若要啟動工作階段並取得遠端存取、NetApp支援可開啟與環境的反轉安全Shell（SSH）連線。</block>
-  <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">*靜止時軟體加密增強功能*：SolidFire 元素123引入了靜止時軟體加密功能的增強功能、此功能在您建立一個「企業版SDS」儲存叢集時預設為啟用。此功能會加密儲存在儲存節點SSD上的所有資料、而且只會對用戶端IO造成極小（約2%）的效能影響。以下是靜止時與軟體加密相關的元素API方法（請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 如需每種方法的詳細資訊）：</block>
-  <block id="a22ab525bece28b87773c244a6f1b3a0" category="list-text">*能夠定義最大數量的快照保留*：元素123加入了快照保留功能的增強功能。下列API已經過修改、以支援此增強功能（請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 如需每種方法的詳細資訊）：</block>
-  <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">*取得元件軟體修補程式的相關資訊*：元素123中引進的「GetPatchInfo」方法可讓您取得有關安裝在儲存節點上的元件軟體修補程式的資訊。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出節點上每個網路介面的統計資料*：元素123中採用的「清單網路介面統計資料」方法可列出統計資料、例如節點上每個網路介面的丟棄封包數和各種錯誤類型。此API方法適用於個別節點；存取個別節點時、需要使用者ID和密碼驗證。不過、如果方法呼叫中的參數力值為true、您可以在叢集上使用此方法。在叢集上使用此參數時、會列出所有介面的網路統計資料。請參閱<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">元素12.3.1中引進的動態節點額定值、可讓您在每個ESDS平台上運用24個支援的CPU、而非目前的單一CPU每個平台模式。</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">啟用遠端NetApp支援連線</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP處理帳戶</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire帳戶包含存取指派給該帳戶的磁碟區所需的挑戰握手驗證傳輸協定（CHAP）驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。</block>
-  <block id="f5c6f9835df083f9a7848584832ffe51" category="list-text">根據中所列的支援版本來安裝Red Hat套件管理程式<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
-  <block id="8297e8d8235ab4d403ff5275f7488f0e" category="admonition">根據預設、Red Hat套件管理員會選擇「xfs」作為您手動建立之分割區的預設檔案系統。您應該將其變更為「ext4」、除了「/boot」和「shwap」分割區之外。您的「/boot」分割區應該使用「ext2」。</block>
-  <block id="e39438a68fb3f711253e9a7370ff67d2" category="list-text">在「軟體選擇」畫面中、選取要安裝的特定套件、然後根據Red Hat套件管理程式版本選取*「伺服器*」或*「基礎架構伺服器*」。</block>
-  <block id="94f57e8fc8a5e98d0aadd2f3fd717077" category="paragraph">對於Element 12.5、支援的Podman版本取決於您的Red Hat套件管理程式版本：</block>
-  <block id="111f3cbd261a94954f796bd076317101" category="cell">Red Hat套件管理程式版本</block>
-  <block id="89c0c976c84a0dc5ae614e09b4cc1c8e" category="cell">Podman版本</block>
-  <block id="b1db54564fe54a4c74a975b18a791532" category="cell">7.x</block>
-  <block id="029b1c7f4aeae9b0d7440388e1b6b30b" category="cell">1.6.4</block>
-  <block id="9b894f3cda522ff568508c500c301f16" category="cell">8.1、8.2、8.3及8.4</block>
-  <block id="f991179eef81959ca4ec71aa86a4df76" category="paragraph">3.1.x、3.2.x、3.3.x、3.4.1及3.4.2</block>
-  <block id="23e29da41b25c9d2df2b9c3e88b4f7e0" category="admonition">如果有、NetApp建議您接受適用於Podman版本的安全性更新。</block>
-  <block id="cd9179614936afe6f50612f0cf8c5615" category="inline-link">RedHat文件</block>
-  <block id="f82fbefaef1108fe81a739d7c43f6e9f" category="list-text">熟悉如何在Red Hat套件管理程式中設定及管理網路和網路介面。請參閱<block ref="a661302e878d4f2065d4f48e5679440c" category="inline-link-rx"></block>。</block>
-  <block id="5cfb8e81e0263340cb87df666ea52280" category="list-text">如果在執行Red Hat套件管理程式的儲存節點上啟用了「firewalld」、請確定您已開啟下列連接埠、以便從遠端管理系統、允許資料中心外部的用戶端連線至資源、並確保內部服務能夠正常運作：</block>
   <block id="da098b5086ce4e5936074c04efe5aa87" category="paragraph">您可以使用元素UI來執行 <block ref="cbef8289b7bcb52ca0b9a41f4d962912" category="inline-link-macro-rx"></block>或使用下列API方法：</block>
   <block id="927feedbfb9bbc4a93e285ba9504ab0b" category="inline-link-macro">儲存韌體產品組合2.76注意事項</block>
   <block id="69b7535618573fd609dc8b4663c8b8c0" category="list-text"><block ref="69b7535618573fd609dc8b4663c8b8c0" category="inline-link-macro-rx"></block></block>
@@ -12061,16 +11285,6 @@
   <block id="9eecd7c0744f77d1f15658bd0a02f1b2" category="list-text"><block ref="9eecd7c0744f77d1f15658bd0a02f1b2" category="inline-xref-macro-rx"></block></block>
   <block id="482c5ad7089a563e0fe0fbc1a8647e77" category="list-text"><block ref="482c5ad7089a563e0fe0fbc1a8647e77" category="inline-xref-macro-rx"></block></block>
   <block id="ec0b9fb2fa43e46443eb0f7087291fb5" category="list-text"><block ref="ec0b9fb2fa43e46443eb0f7087291fb5" category="inline-link-macro-rx"></block></block>
-  <block id="11df4da923543977db2ff7d6c2b87b7c" category="list-text"><block ref="11df4da923543977db2ff7d6c2b87b7c" category="inline-link-macro-rx"></block></block>
-  <block id="2e437e291facb9c9920734e7632e62ad" category="list-text"><block ref="2e437e291facb9c9920734e7632e62ad" category="inline-link-macro-rx"></block></block>
-  <block id="d39f23e3f84c1bd1e144f6fed629b1e4" category="list-text"><block ref="d39f23e3f84c1bd1e144f6fed629b1e4" category="inline-link-macro-rx"></block></block>
-  <block id="b4d3d7a7f19bcfb9d4bcfeca430cfbef" category="list-text"><block ref="b4d3d7a7f19bcfb9d4bcfeca430cfbef" category="inline-link-macro-rx"></block></block>
-  <block id="fb8145a478a8837082d05d97d87dbde5" category="list-text"><block ref="b16f2946d1eb3dd465deb7a9462fd76d" category="inline-link-macro-rx"></block> _新增！_</block>
-  <block id="1f5d8ae290c85b66ea7ecdfae46d7188" category="list-text"><block ref="8393824aba7fe138051cb03400ca7bb6" category="inline-link-macro-rx"></block> _新增！_</block>
-  <block id="fac8ed8d82b59cb855583050cee9cd34" category="list-text"><block ref="fac8ed8d82b59cb855583050cee9cd34" category="inline-link-macro-rx"></block></block>
-  <block id="dcfa4d00c50a08c56e2319fa3f3d1288" category="list-text"><block ref="dcfa4d00c50a08c56e2319fa3f3d1288" category="inline-link-macro-rx"></block></block>
-  <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
-  <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
   <block id="324fcb27182f60b1051fad39c080b193" category="doc">備份磁碟區快照</block>
   <block id="cd7c96dd340046e8b1a1ed84b73227c0" category="summary">在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。</block>
   <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">在功能性儲存系統中、租戶可以使用帳戶來讓用戶端連線至叢集上的磁碟區。SolidFire當您建立Volume時、該磁碟區會指派給特定帳戶。您也可以管理SolidFire 適用於某個不實儲存系統的叢集管理員帳戶。</block>
@@ -12090,7 +11304,6 @@
   <block id="dbc5bb01b5e0b9429317021ba7f41a80" category="paragraph">以毫秒為單位的頻率、用於檢查MII連結狀態是否有連結故障。</block>
   <block id="3580d7d6eae3196ebe1486dd612a7945" category="paragraph">偵測到連結之後、在啟用從屬控制器之前等待的時間（以毫秒為單位）。</block>
   <block id="8ea9e7d17b19a30384dbb2153a990250" category="list-text">每個Volume存取群組最多可屬於四個Volume存取群組。</block>
-  <block id="d146ce6679a899a76bda7f3830fd1336" category="summary">在SolidFire 儲存叢集上安裝完VMware vCenter後、您可以使用Element UI、Element API或NetApp Element vCenter Server的VMware外掛程式來管理儲存叢集。</block>
   <block id="89cf55eeb9f34a1a360f23ce53a22331" category="paragraph">上傳套件後、系統會自動開始升級。</block>
   <block id="726e3510e2c172eed6861f3e6d271360" category="paragraph">升級NetApp Element 至VMware vCenter Server 6.7U1的vCenter Server 4.8或更新版本時、如果儲存叢集未列出、或NetApp Element 伺服器錯誤出現在「VMware vCenter組態」的「*叢集*」和「* QoSSIOC設定*」區段中、請參閱 <block ref="c907b125bbc711015f83b735f4697e97" category="inline-link-macro-rx"></block> 疑難排解這些錯誤的相關文件。</block>
   <block id="91973e8fa965f2bdba61e9b8919b4ee5" category="inline-link-macro">管理服務注意事項2.20.69（NetApp Element 適用於vCenter Server 4.9.14的VMware外掛程式）</block>
@@ -12109,8 +11322,6 @@
   <block id="92dc561e380fb7539e97d85167edf7ec" category="list-text"><block ref="92dc561e380fb7539e97d85167edf7ec" category="inline-link-macro-rx"></block></block>
   <block id="a945e669932fbbe48d4794d770411d05" category="inline-link-macro">管理服務注意事項2.13（NetApp Element 適用於vCenter Server 4.5.42的VMware外掛程式）</block>
   <block id="7e8c4f0c53e3d640a1b7eb54d32bdb46" category="list-text"><block ref="7e8c4f0c53e3d640a1b7eb54d32bdb46" category="inline-link-macro-rx"></block></block>
-  <block id="a6e60f5446d407aa42b1293e56f2cb42" category="inline-link-macro">NetApp SolidFire 解決方案企業SDS注意事項</block>
-  <block id="15e743dee4446f378d3f2f15b9fce01a" category="list-text"><block ref="15e743dee4446f378d3f2f15b9fce01a" category="inline-link-macro-rx"></block></block>
   <block id="3ff4e97d8167819534c5090c9428dd6a" category="list-text"><block ref="3ff4e97d8167819534c5090c9428dd6a" category="inline-link-rx"></block></block>
   <block id="70659e4f9824d888c2aa77344aaa46c4" category="list-text"><block ref="70659e4f9824d888c2aa77344aaa46c4" category="inline-link-rx"></block></block>
   <block id="0ea391471e626f95079246bfd0ab48f9" category="paragraph">vCenter Server SIOC密碼的「功能」外掛程式也稱為_QoSSIOC密碼。NetApp Element </block>
@@ -12222,7 +11433,6 @@
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">驗證</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI工作階段的驗證資訊。</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服務注意事項2.21.61（NetApp Element VMware vCenter Server 4.10.12適用的VMware vCenter外掛程式）</block>
-  <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="5d8cb69408d9a6773459aa0a397a3003" category="list-text">在管理節點上開啟REST API UI。</block>
   <block id="4eed3af07414f10fffdba8a7ff51ca36" category="list-text">從管理服務2.21.61開始：</block>
   <block id="880c70977a68b1ec897e498bb11c7021" category="list-text">若為管理服務2.20.69或更早版本：</block>
@@ -12238,7 +11448,6 @@
   <block id="ab23337415270010383937ce784cb519" category="list-text">從元素12.7開始、不支援SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您嘗試將其中一個節點升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">插槽0容納節點的中繼資料磁碟機。如果您要更換插槽0中的磁碟機、則必須在更換磁碟機的包裝箱上貼上隨附的貼紙、以便與其他磁碟機分開識別。</block>
   <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">儲存韌體套裝組合2.164.0版本說明</block>
-  <block id="e95c3968984424b94d3bd781dd9e8819" category="list-text"><block ref="758831bd0271b3c8b1bf3b7bf6466060" category="inline-link-rx"></block> _新_</block>
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
   <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支援的韌體和ESXi驅動程式版本</block>
   <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _新_</block>
@@ -12251,24 +11460,15 @@
   <block id="9db4acd10c15ec173e6516c347342e25" category="admonition">您應在vCenter中建立新的NetApp HCC角色、以新增控制器子資產。這項新的NetApp HCC-角色會將管理節點服務檢視限制為僅適用於NetApp的資產。請參閱 <block ref="8fe5279440ee3c239e840ed9b8e10ddd" category="inline-link-macro-rx"></block>。</block>
   <block id="836e51e0f6c3653b09c2a2a467e5d22e" category="paragraph">如果您執行的是Element 11.x、12.0或12.2、或是儲存叢集已在元素123或12.3.1、且已啟用VVols功能、則應升級至12.5。</block>
   <block id="6b777567daa827d5b0665b94c630539f" category="inline-link">vCenter Plug-in 5.0版本說明</block>
-  <block id="6e965491616fff846a7ae36b0c989a99" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block> _新_</block>
   <block id="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block></block>
   <block id="07800d7fa4e084c955b9006d30b6eed1" category="paragraph">遠端外掛程式</block>
   <block id="b8ffa41d4e492f0fad2f13e29e1762eb" category="paragraph">8333</block>
   <block id="5b3a5766ccd94c0ef0148e61340c831e" category="paragraph">遠端vCenter外掛程式服務</block>
-  <block id="1291d04b420cee74581d131dee5acf86" category="paragraph">您應該升級NetApp Element 至vCenter Server 5.0的VMware vCenter外掛程式、讓您能夠使用VMware vCenter 7.0 Update 3部署外掛程式、而無需套用因應措施。</block>
   <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">使用適用於vCenter Server 4.x的Element外掛程式、當您升級至VMware vCenter Server 7.0 Update 3時、外掛程式無法部署。若要使用Spring Framework 4解決此問題、請參閱<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">針對已註冊NetApp Element 的VMware vCenter Server適用的VMware vSphere環境、您可以在第一次更新包含外掛程式服務的管理服務套件之後、更新外掛程式登錄。</block>
-  <block id="56f4bca23bb3dd45148dc7171511b7e5" category="paragraph">此升級程序涵蓋下列升級案例。</block>
-  <block id="ec78c54d60054bc44ae2e26c00313bdb" category="admonition">管理服務2.22.7包含NetApp Element VMware vCenter Server 5.0的VMware vCenter外掛程式、其中包含遠端外掛程式。如果您使用Element外掛程式、則應升級至5.0版、以符合VMware指令、該指令會移除對本機外掛程式的支援。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。如果您不使用外掛程式、這是選擇性的升級。</block>
   <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter外掛程式5.0或更新版本</block>
-  <block id="493b4872884198c5773208e29a2d2ce6" category="paragraph">從Element Plug-in for VMware vCenter Server 5.0開始、此升級程序涵蓋下列升級案例：</block>
-  <block id="ffccf7c96c162cb046e6087e5ff2c25c" category="list-text">您正在升級至Element Plug-in for vCenter Server 5.0。</block>
-  <block id="b5bcaf2164ee5f3d1a22b016747f08e1" category="list-text">您正在升級至8.0或7.0 HTML5 vSphere Web Client。</block>
   <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">vCenter 5.0及更新版本的Element外掛程式與vCenter Server 6.7及6.5不相容。</block>
-  <block id="6243a047f7c7bcc2f2961e8a74f1b5c7" category="admonition">當您從Element Plug-in for vCenter Server 4.x升級至5.0時、已使用外掛程式設定的叢集將會遺失、因為無法將資料從vCenter執行個體複製到遠端外掛程式。您必須將叢集重新新增至遠端外掛程式。這是從本機外掛程式升級至遠端外掛程式的一次性活動。</block>
   <block id="e6d87bbd73a5a86fcf1e6cbc75296808" category="open-title">Element vCenter外掛程式4．10或更早版本</block>
-  <block id="523b0480434215d8d59b3dce41707a7e" category="paragraph">對於vCenter Server 4.10或更早版本的Element外掛程式、此升級程序涵蓋下列升級案例：</block>
   <block id="524f8acc9609df7272285a19757aefcb" category="list-text">您正在升級至Element Plug-in for vCenter Server 4.10、4.9、4.8、4.7、4.6、 4.5或4.4。</block>
   <block id="c0e80cf197d1adf76fef790848a92f8f" category="list-text">外掛程式與VMware vCenter Server 8.0 for Element Plug-in for VMware vCenter Server 4.x不相容</block>
   <block id="a95f4f0d2a0a7e7a472e3b6c6d23d07c" category="list-text">* vCenter Server*：您的vCenter外掛程式4.x或5.x版已在vCenter Server中註冊。從登錄公用程式 <block ref="0e0152f7592ffa53464a10c6a48053e7" prefix="(" category="inline-code"></block>）、選取* Registration Status（登錄狀態）*、填寫必要欄位、然後選取* Check Status（檢查狀態）*以確認vCenter外掛程式已登錄、以及目前安裝的版本編號。</block>
@@ -12284,14 +11484,12 @@
   <block id="3c4718429a8a2991d56e6e719c1942df" category="image-alt">說明在元素外掛程式5.10或更新版本成功升級或安裝之後的外掛程式擴充點</block>
   <block id="85406fb94df2ff523b7477f229b1c9c8" category="image-alt">說明在元素外掛程式4.10或更早版本成功升級或安裝之後的外掛程式擴充點</block>
   <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">管理服務2.22.7注意事項（NetApp Element VMware vCenter Server 5.0.37版的VMware vCenter外掛程式）</block>
-  <block id="6bad10de0797378a77f16be896cb0776" category="list-text"><block ref="6bad10de0797378a77f16be896cb0776" category="inline-link-macro-rx"></block></block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">確認外掛程式擴充點顯示在vSphere Web Client的*捷徑*索引標籤和側邊面板中。</block>
   <block id="78d33ed700a31bfed5ec712d766def44" category="paragraph">儲存節點基板管理控制器（BMC）/智慧型平台管理介面（IPMI）H410和H600系列</block>
   <block id="59f1e3a87c5b329f2a5a951d9bf325f8" category="paragraph">HTTPS UI和API存取節點遠端控制</block>
   <block id="1381491a5bb8087f95db0601150c5c28" category="paragraph">儲存節點BMC/IPMI H410和H600系列</block>
   <block id="ad097a4f1c93214faa0a1ca354a82225" category="paragraph">623 udp</block>
   <block id="483602128e75be96f5280855d8065878" category="paragraph">遠端管理控制傳輸協定連接埠。這是管理已啟用IPMI的系統所需的。</block>
-  <block id="3ef00ef1af91bf9fe0b72f4052a67f59" category="list-text">vCenter Server 5.0元素外掛程式的vCenter外掛程式登錄頁面：</block>
   <block id="1875d143de1e9be70dc9e780b41377fe" category="list-text">vCenter Server 4．10或更早版本之Element Plug-in的vCenter外掛程式登錄頁面：</block>
   <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">（適用於內部伺服器/黑點）視您的Element Plug-in for vCenter版本而定、外掛程式Json檔案或外掛程式ZIP的自訂URL：</block>
   <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">從Element Plug-in for vCenter Server 5.0開始、NetApp Element 畫面會出現「VMware遠端外掛程式」擴充點：</block>
@@ -12501,15 +11699,6 @@
   <block id="6a31058d1e6208d43e0d620fb4953c23" category="paragraph-title">儲存叢集資產管理選項</block>
   <block id="50f33d14f129e4548c1c270fd6725a78" category="paragraph-title">組態選項</block>
   <block id="63f488c7bb829c89f024839d6aa602f4" category="section-title">[Custom_pd]]自訂保護網域</block>
-  <block id="fa5cc5e49b65ffd46ba8881097cf8310" category="list-title">*安裝所需的硬體*</block>
-  <block id="6b170e726e4567decff7daaed3e1a08b" category="list-title">*設定主機（節點）*</block>
-  <block id="c86064ac886a0aab9f8ecf92f19f98b3" category="list-title">*安裝所需的軟體*</block>
-  <block id="fd9cdaf80c90bdd2d3af18c1c856b60f" category="list-title">*驗證您的組態是否符合NetApp安裝SolidFire RESSESDS*的要求</block>
-  <block id="9bfadf4c7ec72b1af0ecb9eaabaf58c8" category="list-title">*瞭解網路和IP位址需求*</block>
-  <block id="a113f5f001cbfcc5dc2a0dde65f4e2d9" category="list-title">*允許特定連接埠通過資料中心的防火牆*</block>
-  <block id="45f450486d575041c747125231750ffe" category="list-title">*設定您的主機網路*</block>
-  <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">*完成額外要求*</block>
-  <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">升級總覽</block>
   <block id="29d5a1c31c94981fab1916121b43f763" category="cell">儲存節點BMC / IPMI</block>
   <block id="291dd45cc603b1047e92bf5a13259357" category="cell">RMCP連接埠。這是管理已啟用IPMI的系統所需的。</block>
   <block id="8a6b3244aec72df7ad902477699fbf45" category="paragraph">先前版本的文件可在NetApp 支援網站 下列網頁取得：</block>
@@ -12733,4 +11922,95 @@
   <block id="c192e3c2dbd374233d4685406db01520" category="paragraph">如果您想在開啟節點電源並在維護後驗證節點是否正常運作時、留出更多時間、請聯絡技術支援部門以協助延遲資料同步、以避免不必要的Bin同步。</block>
   <block id="eef615f9029df3b19885b836d67d03a3" category="inline-link">如何在NetApp Solidfire / HCI儲存叢集上正常關機並開機</block>
   <block id="b8c22947a9d726cf79f399d361ecc7a2" category="paragraph"><block ref="b8c22947a9d726cf79f399d361ecc7a2" category="inline-link-rx"></block></block>
+  <block id="89291581fd8be1d9caf505e74fd0773e" category="list-text"><block ref="89291581fd8be1d9caf505e74fd0773e" category="inline-link-macro-rx"></block></block>
+  <block id="a339aaae279fb4166b4ea4a6575b8e54" category="list-text"><block ref="a339aaae279fb4166b4ea4a6575b8e54" category="inline-link-macro-rx"></block></block>
+  <block id="19facef57cccdb14f71deeb221363ad9" category="paragraph"><block ref="19facef57cccdb14f71deeb221363ad9" category="inline-link-rx"></block></block>
+  <block id="5a4b8b3924bb822fd8c6ae8c1c9b7030" category="paragraph">您可以將節點新增至NetApp HCI 各個不相同的應用裝置。</block>
+  <block id="1a6db061a54638a3fdcefd71c9bfd9ad" category="paragraph">新增節點的程序完成後、會顯示在「作用中節點」清單中。在此之前、擱置中的節點會出現在「Pending Active」（擱置中的作用中）清單中。</block>
+  <block id="4a65434b4e4d8c919262bffbcc775165" category="paragraph">將叢集新增至叢集時、可在暫掛節點上安裝叢集的元素軟體版本SolidFire 。這可能需要幾分鐘的時間。</block>
+  <block id="71d77d19e87db163a8fa4db90c83237d" category="inline-link-macro">GetSSLCertificate方法</block>
+  <block id="3e9585ef7d0edda1489dd7d9051efee2" category="paragraph">您可以使用 <block ref="785a154069def4382c407c46cd76511f" category="inline-link-macro-rx"></block> 擷取目前安裝之SSL憑證的相關資訊、包括所有憑證詳細資料。</block>
+  <block id="d071ee449f970ae83d3efc8c36fdd3db" category="inline-link-macro">SetSSLCertificate方法</block>
+  <block id="af9aeedb67a7383e9ed9027d9cae0347" category="paragraph">您可以使用 <block ref="77081d68df13899db5539e9bf47c2e76" category="inline-link-macro-rx"></block> 可將叢集和每節點SSL憑證設為您提供的憑證和私密金鑰。系統會驗證憑證和私密金鑰、以防止套用無效的憑證。</block>
+  <block id="b3f80d8c01527878ecb6d9da0acbee6c" category="inline-link-macro">遠端SSLCertificate方法</block>
+  <block id="a6c060b483d31ea611debe971d6648f2" category="paragraph">。 <block ref="0e7e722b98bf8cba65c74d44d6ffe2e6" category="inline-link-macro-rx"></block> 移除目前安裝的SSL憑證和私密金鑰。然後叢集會產生新的自我簽署憑證和私密金鑰。</block>
+  <block id="00b6f5df795659d436d482ffd81033aa" category="inline-link-macro">變更管理節點的預設SSL憑證</block>
+  <block id="b59339c29a0a5c439aaf31d01a32ea3a" category="list-text"><block ref="b59339c29a0a5c439aaf31d01a32ea3a" category="inline-link-macro-rx"></block></block>
+  <block id="f056eadecebc58790da8eb91b5211492" category="inline-link">在Element Software中設定自訂SSL憑證有哪些要求？</block>
+  <block id="e3b4df69e2fe4e8545e5e0240eada6a2" category="list-text"><block ref="e3b4df69e2fe4e8545e5e0240eada6a2" category="inline-link-rx"></block></block>
+  <block id="bc392d110b36a51cd536073024a5f532" category="list-text">對於H410S和H610S節點、 <block ref="1ed294287e7a2515c794c51e2936136d" category="inline-link-macro-rx"></block>。</block>
+  <block id="dcf69453f88a169ec3e3e6fae67d435e" category="list-text"><block ref="dcf69453f88a169ec3e3e6fae67d435e" category="inline-link-macro-rx"></block></block>
+  <block id="ecec8bb5649856a856a861a75e4daa84" category="paragraph"><block ref="ecec8bb5649856a856a861a75e4daa84" category="inline-link-macro-rx"></block></block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相關資訊</block>
+  <block id="521e8e8587c418fa92f54811f8954007" category="list-text"><block ref="521e8e8587c418fa92f54811f8954007" category="inline-link-macro-rx"></block></block>
+  <block id="29e13a3bca7d11d4ebec7e6356a5b466" category="cell">* 儲存韌體套件 2.175.0*</block>
+  <block id="022beb4c9e2bdbe9e3398445a4fad6b2" category="cell">2023 年 6 月 15 日</block>
+  <block id="804066a6a5042090a2a0b25c55f38e72" category="cell">3.5.</block>
+  <block id="489901e715cade6fe0efc7e21e194576" category="cell">2.17.</block>
+  <block id="0b67b64b71fa04f23305e691b81ba252" category="cell">07.02.00</block>
+  <block id="4fff24ec2d2b11f3a503f7b0abacb1cb" category="list-text"><block ref="4fff24ec2d2b11f3a503f7b0abacb1cb" category="inline-link-macro-rx"></block></block>
+  <block id="96c37e9c5684e9f2a7ffd6a79512cde2" category="paragraph">您可以使用NetApp Element 效益分析API來變更管理節點的預設SSL憑證和私密金鑰。</block>
+  <block id="d311117e36e090462c70d49316078938" category="paragraph">當您設定管理節點時、它會建立獨特的自我簽署安全通訊端層（SSL）憑證和私密金鑰、以元素UI、每節點UI或API的方式、用於所有HTTPS通訊。Element軟體支援自我簽署的憑證、以及由信任的憑證授權單位（CA）核發和驗證的憑證。</block>
+  <block id="8fff04b1c0c323ac1aac0d43f5e6b4f8" category="list-text">* GetNodeSSLCertificate *</block>
+  <block id="a07612f154836b90b33c91e3d4becfe8" category="inline-link-macro">GetNodeSSLCertificate方法</block>
+  <block id="e33d1822bd6d1efb8885f0c9f078767e" category="paragraph">您可以使用 <block ref="fc5ae91d2a3def87eb640426dd21d6c3" category="inline-link-macro-rx"></block> 擷取目前安裝之SSL憑證的相關資訊、包括所有憑證詳細資料。</block>
+  <block id="58f6e4a954eca307131e675eba49accc" category="list-text">* SetNodeSSLCertificate *</block>
+  <block id="123b81eef3f2300f60e089e9078ee7c3" category="inline-link-macro">SetNodeSSLCertificate方法</block>
+  <block id="d229d7ad000aef94c4fc9c92a09ef2f9" category="paragraph">您可以使用 <block ref="a3f906e270f396b1e0abeb1e4b45aabc" category="inline-link-macro-rx"></block> 可將叢集和每節點SSL憑證設為您提供的憑證和私密金鑰。系統會驗證憑證和私密金鑰、以防止套用無效的憑證。</block>
+  <block id="6f54d04f05c4e4a65ca53b1028d1207b" category="list-text">*遠端節點SSLCertificate *</block>
+  <block id="9b65a6a78c1794a21bc06b75e90962bb" category="inline-link-macro">RemoveNodeSSLCertificate方法</block>
+  <block id="54788257ab6665219d3b197c0c0ab2b3" category="paragraph">這 <block ref="7a6d88cb46fe8190180be6d3bbd02863" category="inline-link-macro-rx"></block> 移除目前安裝的SSL憑證和私密金鑰。然後叢集會產生新的自我簽署憑證和私密金鑰。</block>
+  <block id="347d913828eec37c0c4915a8bd604f8a" category="list-text"><block ref="347d913828eec37c0c4915a8bd604f8a" category="inline-link-macro-rx"></block></block>
+  <block id="f3239c80004833605a44320f76f29a78" category="paragraph">變更預設SSL憑證：</block>
+  <block id="fe6a80fba2305243dd21703b873b6d51" category="list-text"><block ref="fe6a80fba2305243dd21703b873b6d51" category="inline-link-macro-rx"></block></block>
+  <block id="08bedb070b17681cfbba927034b3d77e" category="paragraph">管理服務可為SolidFire 不完整的Flash儲存設備提供集中和延伸的管理功能。這些服務包括 <block ref="c33469c22ade8b91ea5a2e4b6de19fdf" category="inline-link-macro-rx"></block>、系統遙測、記錄和服務更新、以及針對Element Plug-in for vCenter的QoSSIOC服務。Active IQ</block>
+  <block id="afb54c94a5e9aef322532eabe176c2d4" category="admonition">深入瞭解 <block ref="8a1a0a32384afdd6d93db2e7c4f512ad" category="inline-link-macro-rx"></block>。</block>
+  <block id="b87a13e71152d8db28c0e317617e683c" category="section-title">部署SolidFire</block>
+  <block id="4195434d2c036cf973c32bdb4ac19828" category="paragraph">使用NetApp提供的儲存節點、並整合NetApp Element 至支援功能完善的軟體。</block>
+  <block id="54db42757b5d75d2f660dc70f35850cf" category="inline-link">vCenter Plug-in 5.1 版本資訊</block>
+  <block id="61ad36f15eb6ab7927cdc50f6e089a98" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block> _新_</block>
+  <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
+  <block id="a35c2c2e602b46918d896beca9bdff98" category="inline-link">儲存裝置韌體套件 2.175.0 版本資訊</block>
+  <block id="148d031a2764f3cbbb70b4cb00ae67a0" category="list-text"><block ref="386fd72128f804329f22ad31b9e25673" category="inline-link-rx"></block> _新_</block>
+  <block id="758831bd0271b3c8b1bf3b7bf6466060" category="list-text"><block ref="758831bd0271b3c8b1bf3b7bf6466060" category="inline-link-rx"></block></block>
+  <block id="24786d5c66286f468be80b26d8f4126b" category="list-text"><block ref="24786d5c66286f468be80b26d8f4126b" category="inline-link-rx"></block></block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="bddb591f0b60efba3de48f954b55f287" category="inline-link-macro">管理服務 2.23.64 注意事項（適用於 VMware vCenter Server 5.1.2 的 NetApp Element 外掛程式）</block>
+  <block id="2926dc5780f42141aca045c0001024a5" category="list-text"><block ref="2926dc5780f42141aca045c0001024a5" category="inline-link-macro-rx"></block></block>
+  <block id="08051f25eb15067f82271c19a19ded03" category="list-text"><block ref="08051f25eb15067f82271c19a19ded03" category="inline-link-macro-rx"></block></block>
+  <block id="abeecd47abec11fdd3daaa8a3239958a" category="list-text"><block ref="abeecd47abec11fdd3daaa8a3239958a" category="inline-link-macro-rx"></block></block>
+  <block id="165ffb421393136ac7930e23c971a009" category="inline-link-macro">儲存韌體套件 2.175.0 注意事項</block>
+  <block id="3196b7dfc407df76dfe72528882d792a" category="list-text"><block ref="3196b7dfc407df76dfe72528882d792a" category="inline-link-macro-rx"></block></block>
+  <block id="ea52eab386a36623963eee64d8468c76" category="admonition">管理服務2.22.7包含vCenter Server 5.0的Element外掛程式、其中包含遠端外掛程式。如果您使用Element外掛程式、則應升級至管理服務2.22.7或更新版本、以符合VMware指令、該指令會移除對本機外掛程式的支援。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。</block>
+  <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">此升級程序涵蓋下列升級案例：</block>
+  <block id="3a2bbd221f9a6d667af34b16ef1c1a32" category="list-text">您正在升級至 Element Plug-in for vCenter Server 5.1 或 5.0 。</block>
+  <block id="61517793d4523320c7cd75e303ad36ff" category="list-text">您正在升級至8.0或7.0 HTML5 vSphere Web Client。</block>
+  <block id="609cfd925544c2aaccb703dcb95eed4d" category="admonition">當您從Element Plug-in for vCenter Server 4.x升級至5.x時、已使用外掛程式設定的叢集將會遺失、因為無法將資料從vCenter執行個體複製到遠端外掛程式。您必須將叢集重新新增至遠端外掛程式。這是從本機外掛程式升級至遠端外掛程式的一次性活動。</block>
+  <block id="4edf62fd94cfb84b727afbee52aa8128" category="list-text">vCenter Server 5.x 的 Element Plug-in 登錄頁面：</block>
+  <block id="0ac35a688d7a23e1caba58dbbf08c4d7" category="paragraph">「*儲存設備*」索引標籤會列出您安裝時所需的儲存叢集。如果NetApp混合雲控制無法存取叢集、則不會顯示在「*升級*」頁面上。如果叢集執行元件12或更新版本、您會看到這些叢集目前列出的韌體套裝組合版本。如果單一叢集中的節點上有不同的韌體版本、或是在升級過程中、您會在*目前的韌體產品組合版本*欄中看到*多個*。您可以選取*多重*來瀏覽至*節點*頁面、以比較韌體版本。如果所有叢集都執行的元件版本早於12.0、您將看不到任何韌體套裝軟體版本編號的相關資訊。</block>
+  <block id="df3b4418989705f2099ec054a495c6ff" category="paragraph">如果叢集是最新的且/或沒有可用的升級套件、則不會顯示* Element *和* Firmwareonly *索引標籤。升級進行時、也不會顯示這些索引標籤。如果顯示* Element *（元素*）索引標籤、但未顯示*韌體Only（僅限韌體）*索引標籤、則沒有可用的韌體套件。</block>
+  <block id="c7f3047b6654f1cb88fcfe6e47c92593" category="cell">當儲存服務API傳回的升級狀態不在可能的升級狀態列舉清單中時、就會顯示此狀態。</block>
+  <block id="4af99aa6c1be006a7c064cb06b9464ac" category="cell">執行元素11.8及更新版本的所有叢集</block>
+  <block id="f77430f8b3c4f14f1dcd175dca1d54cf" category="paragraph">您應該升級NetApp Element 至適用於vCenter Server 5.0或更新版本的VMware vCenter 7.0外掛程式、讓您能夠使用VMware vCenter 7.0 Update 3部署外掛程式、而無需套用因應措施。</block>
+  <block id="be4d4eb0545e2f718ac561512f110152" category="paragraph">如果您想要啟用整個叢集 <block ref="46beba8112888a31f3c57eea2d458bf9" category="inline-link-macro-rx"></block> 對於完整Flash儲存叢集、您必須在建立叢集期間執行此動作。SolidFire從元素12.5開始、您必須在建立叢集期間、於Create Cluster UI中啟用閒置的軟體加密。對於元素12.3.x及更早版本、您必須使用建立叢集 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> API 方法、並將 enableSoftwareEncryptionAtRest 參數變更為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>。在叢集上啟用靜態軟體加密之後、就無法停用。您可以 <block ref="c4953cd715ac499bd17d25e3487e7fdb" category="inline-link-macro-rx"></block> 在建立叢集之後、硬體加密會閒置。</block>
+  <block id="a6d7169168a038dee7aae0a8f455c43a" category="list-text">當磁碟片同步進行中時、將磁碟區復原至快照可能會失敗。重試<block ref="c2e5bace81fd03914fa15aa027ee5f09" prefix=" " category="inline-code"></block> 同步完成後。</block>
+  <block id="9770637f58b684288e1d9d0f9f2be4f8" category="paragraph">啟用此參數以在靜止時使用軟體加密。在所有叢集上預設為假。啟用閒置軟體加密之後、就無法在叢集上停用。</block>
+  <block id="64d9e8809f33aaca7cda9d121b2b2e83" category="paragraph"><block ref="64d9e8809f33aaca7cda9d121b2b2e83" category="inline-link-macro-rx"></block></block>
+  <block id="19f47154ff3c9f0fcf8147cd2369d029" category="paragraph"><block ref="19f47154ff3c9f0fcf8147cd2369d029" category="inline-link-macro-rx"></block></block>
+  <block id="342c0e2d839abf3902ec2e2ba9a391e5" category="paragraph"><block ref="19f47154ff3c9f0fcf8147cd2369d029" category="inline-link-macro-rx"></block> 陣列</block>
+  <block id="0e9706d9713372bb21a3b9f917953dbc" category="paragraph">的JSON.清單 <block ref="5820461afa2bd9ee99130d755eddf7ff" category="inline-link-macro-rx"></block> 物件：</block>
+  <block id="bd74837c55aafce98fe5823bae9ee413" category="list-text">當磁碟片同步進行中時、將磁碟區復原至群組快照可能會失敗。重試<block ref="05667fca9ff503d9b750747f0075d35a" prefix=" " category="inline-code"></block> 同步完成後。</block>
+  <block id="f1e1734ea4e6ef5a6bd73e15cffa128a" category="paragraph"><block ref="f2803c84f404a81af41a23542245cebc" category="inline-link-macro-rx"></block> 陣列</block>
+  <block id="954e95e0241c7b3a74f9c6a194795355" category="admonition">若要查看叢集上閒置加密和/或軟體加密的目前狀態、請使用 <block ref="51ab6f075e7b9b2d3276f61c0b11b186" category="inline-link-macro-rx"></block>。您可以使用<block ref="2132cae62c1d77dfa3dd7c3447c77cf5" prefix=" " category="inline-code"></block> <block ref="e5fb14b37e1fdc8a835f7ed4e33c1c63" category="inline-link-macro-rx"></block>。</block>
+  <block id="f2803c84f404a81af41a23542245cebc" category="paragraph"><block ref="f2803c84f404a81af41a23542245cebc" category="inline-link-macro-rx"></block></block>
+  <block id="2896bd9b7f534d42f996fc5910e2ad40" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block> 陣列</block>
+  <block id="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block></block>
+  <block id="62bad8a6f2407b7cf1f98abe9ada3dae" category="admonition">使用API之後、您必須重新開機管理節點。</block>
+  <block id="1e924e133c06d37b8d10cb78b719f4ce" category="paragraph"><block ref="1e924e133c06d37b8d10cb78b719f4ce" category="inline-link-macro-rx"></block></block>
 </blocks>

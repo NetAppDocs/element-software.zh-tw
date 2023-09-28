@@ -14,9 +14,6 @@ summary: 您可以使用GetIpmiConfig方法、從節點中的感應器擷取硬�
 您可以使用「GetIpmiConfig」方法、從節點中的感應器擷取硬體感應器資訊。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

@@ -13,9 +13,6 @@ summary: 外部金鑰管理（EKM\）可搭配叢集外外部金鑰伺服器（E
 [role="lead"]
 外部金鑰管理（EKM）可搭配叢集外的外部金鑰伺服器（EKS）、提供安全驗證金鑰（AK）管理。當自動加密磁碟機（SED）處於鎖定和解除鎖定狀態時、即會使用這些AKs link:../concepts/concept_solidfire_concepts_security.html["加密閒置"] 已在叢集上啟用。EKS提供安全的AKs世代與儲存設備。叢集利用金鑰管理互通性傳輸協定（KMIP）（OASIS定義的標準傳輸協定）與EKS通訊。
 
-
-NOTE: 唯有靜止的軟體加密功能可用於SolidFire 「企業版SDS」叢集。
-
 * link:task_system_manage_key_set_up_external_key_management.html["設定外部管理"]
 * link:task_system_manage_rekey_software_ear_master_key.html["在REST主要金鑰重新輸入軟體加密"]
 * link:concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys["恢復無法存取或無效的驗證金鑰"]

@@ -80,7 +80,7 @@ xref:reference_element_api_clusterinfo.adoc[叢集資訊]
             "mvipInterface": "team1G",
             "mvipNodeID": 3,
             "mvipVlanTag": "0",
-            "name": "eSDS-1",
+            "name": "ClusterName",
             "repCount": 2,
             "softwareEncryptionAtRestState": "enabled",
             "supportedProtectionSchemes": [

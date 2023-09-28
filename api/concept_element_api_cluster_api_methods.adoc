@@ -29,7 +29,6 @@ Element軟體叢集API方法可讓您管理儲存叢集的組態和拓撲、以�
 * xref:reference_element_api_getclusterstats.adoc[GetClusterStats]
 * xref:reference_element_api_getclusterversioninfo.adoc[GetClusterVersion資訊]
 * xref:reference_element_api_getfeaturestatus.adoc[GetFeatureStatus]
-* xref:reference_element_api_getlicensekey.adoc[GetLicenseKey]
 * xref:reference_element_api_getloginsessioninfo.adoc[GetLoginSessionInfo]
 * xref:reference_element_api_getnodehardwareinfo.adoc[GetNodeHardwareInfo]
 * xref:reference_element_api_getnodestats.adoc[GetNodeStats]
@@ -46,7 +45,6 @@ Element軟體叢集API方法可讓您管理儲存叢集的組態和拓撲、以�
 * xref:reference_element_api_modifyclusterfullthreshold.adoc[ModifyClusterFull閥 值]
 * xref:reference_element_api_modifyclusterinterfacepreference.adoc[ModifyClusterInterfacePreference]
 * xref:reference_element_api_removenodes.adoc[遠端節點]
-* xref:reference_element_api_setlicensekey.adoc[SetLicenseKey]
 * xref:reference_element_api_setloginsessioninfo.adoc[SetLoginSessionInfo]
 * xref:reference_element_api_cluster_shutdown.adoc[關機]
 

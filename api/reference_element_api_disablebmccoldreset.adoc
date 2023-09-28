@@ -14,9 +14,6 @@ summary: 您可以使用「停用Bmc/Cold重 設」方法、停用週期性重�
 您可以使用「DisableBmc/ColdReset」（停用Bmc/ColdResetet）方法、停用週期性重設叢集中所有節點之基礎板管理控制器（BMC）的背景工作。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

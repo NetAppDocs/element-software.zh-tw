@@ -39,7 +39,7 @@ NOTE: 下列組態不支援自訂保護網域：
  a| 
 每個節點的保護網域資訊。
  a| 
-的JSON.清單 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["節點保護網域"] 物件：
+的JSON.清單 link:reference_element_api_nodeprotectiondomains.html["節點保護網域"] 物件：
  a| 
 無
  a| 
@@ -61,7 +61,7 @@ NOTE: 下列組態不支援自訂保護網域：
  a| 
 節點清單、每個節點及其相關的保護網域。
  a| 
-的JSON.清單 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["節點保護網域"] 物件：
+的JSON.清單 link:reference_element_api_nodeprotectiondomains.html["節點保護網域"] 物件：
 
 |===
 

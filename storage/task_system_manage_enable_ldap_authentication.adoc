@@ -31,7 +31,7 @@ NOTE: 您也可以輸入選用的自訂連接埠號碼。
 . 選擇*使用LDAPS傳輸協定*。
 . 在*一般設定*中輸入必要資訊。
 +
-link:reference_system_manage_ldap_details.md#["LDAP詳細資料"]
+link:concept_system_manage_manage_ldap.html#view_ldap_details["LDAP詳細資料"]
 
 +
 image::../media/element_new_ldap_servers.jpg[元素新的LDAP伺服器]
@@ -59,8 +59,10 @@ image::../media/element_new_cluster_admin.jpg[Element新叢集管理]
 
 若要測試、請登出Element UI、然後以該群組中的使用者身分重新登入。
 
-*相關資訊*
 
-xref:task_system_manage_create_a_cluster_administrator_account.adoc[建立叢集管理員帳戶]
 
-xref:reference_system_manage_ldap_details.adoc[LDAP詳細資料]
+== 相關資訊
+
+* link:concept_system_manage_manage_cluster_administrator_users.html#create_cluster_admin_account["建立叢集管理員帳戶"]
+* link:concept_system_manage_manage_ldap.html#view_ldap_details["LDAP詳細資料"]
+

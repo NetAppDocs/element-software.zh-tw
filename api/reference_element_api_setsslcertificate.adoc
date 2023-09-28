@@ -14,6 +14,9 @@ summary: 您可以使用SetSSLCertificate方法、為叢集中的儲存節點設
 您可以使用「etSSLCertificate」方法、為叢集中的儲存節點設定使用者SSL憑證和私密金鑰。
 
 
+NOTE: 使用API之後、您必須重新開機管理節點。
+
+
 
 == 參數
 

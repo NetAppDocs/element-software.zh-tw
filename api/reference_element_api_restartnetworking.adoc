@@ -13,9 +13,6 @@ summary: 您可以使用RESartNetworking方法重新啟動節點上的網路服�
 [role="lead"]
 您可以使用「RESartNetworking」方法重新啟動節點上的網路服務。
 
-
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
 注意：
 
 此方法會重新啟動節點上的所有網路服務、導致網路連線暫時中斷。

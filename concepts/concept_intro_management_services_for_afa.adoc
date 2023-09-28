@@ -13,7 +13,7 @@ summary: 管理服務可為SolidFire 不完整的Flash儲存設備提供集中�
 [role="lead"]
 從Element 11.3版本開始、*管理服務*就裝載在上 link:../concepts/concept_intro_management_node.html["管理節點"]，可在主要版本之外更快更新特定的軟體服務。
 
-管理服務可為SolidFire 不完整的Flash儲存設備提供集中和延伸的管理功能。這些服務包括 link:..concepts/concept_intro_solidfire_software_interfaces.html#netapp-element-plug-in-for-vcenter-server["NetApp混合雲控制"]、系統遙測、記錄和服務更新、以及針對Element Plug-in for vCenter的QoSSIOC服務。Active IQ
+管理服務可為SolidFire 不完整的Flash儲存設備提供集中和延伸的管理功能。這些服務包括 link:../concepts/concept_intro_solidfire_software_interfaces.html#netapp-element-plug-in-for-vcenter-server["NetApp混合雲控制"]、系統遙測、記錄和服務更新、以及針對Element Plug-in for vCenter的QoSSIOC服務。Active IQ
 
 
-TIP: 深入瞭解 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服務版本"]。
+TIP: 深入瞭解 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服務版本"^]。

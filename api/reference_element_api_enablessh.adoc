@@ -14,9 +14,6 @@ summary: 您可以使用EnablSsh方法為單一節點啟用SSH服務。此方法
 您可以使用「EnablSsh」方法、為單一節點啟用安全Shell（SSH）服務。此方法不會影響整個叢集的SSH逾時持續時間、也不會免除節點在全域SSH逾時時時停用SSH。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

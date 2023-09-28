@@ -14,9 +14,6 @@ summary: 您可以使用SetNetworkConfig方法來設定節點的網路組態。�
 您可以使用「etNetwork Config」（網路組態）方法來設定節點的網路組態。若要顯示節點目前的網路設定、請執行「GetNetwork Config」API方法。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

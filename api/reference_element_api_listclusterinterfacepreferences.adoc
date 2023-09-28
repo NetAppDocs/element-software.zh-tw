@@ -14,9 +14,6 @@ summary: 使用listClusterInterfacePreference方法、可讓與執行Element軟�
 「listClusterInterfacePreference」方法可讓與執行Element軟體的儲存叢集整合的系統、列出儲存在系統上的現有叢集介面偏好設定。此方法僅供內部使用。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

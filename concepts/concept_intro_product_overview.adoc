@@ -31,19 +31,11 @@ summary: 一個包含獨立硬體元件（磁碟機和節點）的全快閃儲�
 
 
 
-== 部署選項SolidFire
+== 部署SolidFire
 
-提供不同的部署選項：SolidFire
+使用NetApp提供的儲存節點、並整合NetApp Element 至支援功能完善的軟體。
 
-* 使用NetApp提供的儲存節點、並整合NetApp Element 至其他功能完善的軟體
-+
 link:../concepts/concept_solidfire_concepts_solidfire_architecture_overview.html["全快閃儲存架構總覽SolidFire"]
-
-* 使用您自己的伺服器來執行Element軟體、方法是使用容器化SolidFire 的企業SDS
-+
-link:../esds/concept_get_started_esds.html["開始使用NetApp SolidFire 解決方案企業SDS"]
-
-
 
 
 

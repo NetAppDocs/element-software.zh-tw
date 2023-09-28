@@ -52,7 +52,7 @@ UUID
  a| 
 刪除驗證工作階段的工作階段資訊。
  a| 
-link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["驗證工作階段資訊"]
+link:reference_element_api_authsessioninfo.html["驗證工作階段資訊"]
 
 |===
 

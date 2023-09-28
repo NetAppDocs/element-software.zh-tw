@@ -14,9 +14,6 @@ summary: 您可以使用GetIpmiInfo方法、針對節點風扇、進氣和排氣
 您可以使用「GetIpmiInfo」（GetIpmiInfo）方法、針對節點風扇、進氣和排氣溫度、以及系統監控的電源供應器、顯示感應器（物件）的詳細報告。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

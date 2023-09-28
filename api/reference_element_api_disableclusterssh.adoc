@@ -14,9 +14,6 @@ summary: 您可以使用DisableClusterSsh方法來停用整個儲存叢集的SSH
 您可以使用「disableClusterSsh」方法來停用整個儲存叢集的SSH服務。當您將節點新增至儲存叢集時、新節點將會繼承此全叢集設定。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

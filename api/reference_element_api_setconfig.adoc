@@ -14,9 +14,6 @@ summary: 您可以使用SetConfig方法來設定節點的網路和叢集資訊�
 您可以使用「etConfig」（設定組態）方法來設定節點的網路和叢集資訊。此方法在單一API方法中包含相同的設定、這些設定可使用「etClusterConfig」和「etNetwork Config」兩種方法。只有您想要變更的欄位才需要納入此方法。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

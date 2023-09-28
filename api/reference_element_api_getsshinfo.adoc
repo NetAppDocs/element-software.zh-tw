@@ -14,9 +14,6 @@ summary: 您可以使用GetSshInfo方法查詢單一節點上SSH服務的狀態�
 您可以使用「GetSshInfo」方法查詢單一節點上SSH服務的狀態。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

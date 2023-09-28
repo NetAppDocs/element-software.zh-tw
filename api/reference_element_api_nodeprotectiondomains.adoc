@@ -37,6 +37,6 @@ nodeProtectionDomain物件包含有關節點識別及與該節點相關之保護
  a| 
 節點所屬的保護網域清單。
  a| 
-link:reference_element_api_protectiondomain.md#GUID-96388C5C-ACA2-44D9-86CE-19FEF0825A11["保護網域"]
+link:reference_element_api_protectiondomain.html["保護網域"]
 
 |===

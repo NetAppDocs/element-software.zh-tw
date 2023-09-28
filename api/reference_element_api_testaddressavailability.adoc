@@ -14,9 +14,6 @@ summary: 您可以使用TestAddressAvailability方法檢查儲存叢集內的介
 您可以使用「TestAddressAvailability」（測試位址可用度）方法來檢查儲存叢集內的介面是否正在使用特定IP位址。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

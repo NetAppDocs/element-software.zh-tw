@@ -19,7 +19,7 @@ Element是SolidFire 儲存作業系統、是指作為一個叢集核心的儲存
 
 * link:task_post_deploy_access_the_element_software_user_interface.html["存取Element軟體使用者介面"]
 * link:task_post_deploy_configure_system_options.html["部署後設定SolidFire 系統選項"]
-* link:concept_upgrade_storage_components.html["升級儲存系統元件"]
+* link:../upgrade/concept_element_upgrade_overview.html["升級儲存系統元件"]
 * link:task_intro_use_basic_options_in_the_element_software_ui.html["在Element軟體UI中使用基本選項"]
 * link:concept_system_manage_accounts_overview.html["管理帳戶"]
 * link:concept_system_manage_system_management.html["管理您的系統"]

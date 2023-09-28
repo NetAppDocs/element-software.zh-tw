@@ -77,7 +77,7 @@ kmipKeyProviders
  a| 
 已建立的KMIP金鑰提供者清單。
  a| 
-link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"] 陣列
+link:reference_element_api_keyproviderkmip.html["KeyProviderKmip"] 陣列
 
 |===
 

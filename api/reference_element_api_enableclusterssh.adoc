@@ -14,9 +14,6 @@ summary: 您可以使用EnablClusterSsh方法、在儲存叢集中的所有節�
 您可以使用「EnablClusterSsh」方法、在儲存叢集中的所有節點上啟用SSH服務。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 

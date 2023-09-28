@@ -18,8 +18,6 @@ keywords: netapp, element, cluster, inventory, nodes, storage
 
 您可以檢視多個節點系統的儲存資訊。如果 link:../concepts/concept_solidfire_concepts_data_protection.html#custom_pd["自訂保護網域"] 您可以查看指派給特定節點的保護網域。
 
-若為SolidFire 「企業版SDS」節點、您可以在「儲存設備」索引標籤上監控庫存。
-
 .步驟
 . 在網頁瀏覽器中開啟管理節點的IP位址。例如：
 +

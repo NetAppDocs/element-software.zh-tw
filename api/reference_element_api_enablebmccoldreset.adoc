@@ -14,9 +14,6 @@ summary: 您可以使用啟用Bmc/Cold重 設方法、針對叢集中的所有�
 您可以使用「EnablBmc/ColdReset」（啟用Bmc/ColdReset）方法、針對叢集中的所有節點、啟用定期重設基礎板管理控制器（BMC）的背景工作。
 
 
-NOTE: 不支援此方法。SolidFire如果SolidFire 您在EESDS系統上使用此方法、則該方法會傳回錯誤訊息。
-
-
 
 == 參數
 
