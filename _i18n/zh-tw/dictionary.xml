@@ -11379,7 +11379,6 @@
   <block id="4dae8e1e6549980e8397eec97af1ecaf" category="paragraph">Element 12.5引進改良的儲存節點存取功能、增強的自訂保護網域管理功能、全新改良的叢集故障與事件、增強的Create Cluster UI功能、增強的安全性、以及使用Ansible的自動化升級。</block>
   <block id="b1eb510dd705c0d83386b5f196686d5a" category="inline-link">支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點</block>
   <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">《軟件》第12版發行說明NetApp Element</block>
-  <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _新_</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter外掛程式4.10版本說明</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
@@ -11481,8 +11480,6 @@
   <block id="1e35767408ad5bd29ecc61c301c556ef" category="list-text">從Element Plug-in for vCenter Server 5.0開始、這是外掛程式Json檔案的自訂URL。</block>
   <block id="b9d11c83e937a9ece9e8b7051bc68606" category="admonition">如果您使用HTTP或HTTPS伺服器（黑網站）或修改Json檔案名稱或網路設定、您可以選取*自訂URL*來自訂URL。如需自訂URL的其他組態步驟、請參閱Element Plug-In for vCenter Server文件、瞭解如何修改內部（暗站）HTTP伺服器的vCenter內容。</block>
   <block id="ba85baaa049f62983a89ac7da1647abd" category="list-text">對於vCenter Server 4.10或更早版本的元素外掛程式、則為外掛程式ZIP的自訂URL。</block>
-  <block id="3c4718429a8a2991d56e6e719c1942df" category="image-alt">說明在元素外掛程式5.10或更新版本成功升級或安裝之後的外掛程式擴充點</block>
-  <block id="85406fb94df2ff523b7477f229b1c9c8" category="image-alt">說明在元素外掛程式4.10或更早版本成功升級或安裝之後的外掛程式擴充點</block>
   <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">管理服務2.22.7注意事項（NetApp Element VMware vCenter Server 5.0.37版的VMware vCenter外掛程式）</block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">確認外掛程式擴充點顯示在vSphere Web Client的*捷徑*索引標籤和側邊面板中。</block>
   <block id="78d33ed700a31bfed5ec712d766def44" category="paragraph">儲存節點基板管理控制器（BMC）/智慧型平台管理介面（IPMI）H410和H600系列</block>
@@ -11968,7 +11965,6 @@
   <block id="b87a13e71152d8db28c0e317617e683c" category="section-title">部署SolidFire</block>
   <block id="4195434d2c036cf973c32bdb4ac19828" category="paragraph">使用NetApp提供的儲存節點、並整合NetApp Element 至支援功能完善的軟體。</block>
   <block id="54db42757b5d75d2f660dc70f35850cf" category="inline-link">vCenter Plug-in 5.1 版本資訊</block>
-  <block id="61ad36f15eb6ab7927cdc50f6e089a98" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block> _新_</block>
   <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
   <block id="a35c2c2e602b46918d896beca9bdff98" category="inline-link">儲存裝置韌體套件 2.175.0 版本資訊</block>
   <block id="148d031a2764f3cbbb70b4cb00ae67a0" category="list-text"><block ref="386fd72128f804329f22ad31b9e25673" category="inline-link-rx"></block> _新_</block>
@@ -11989,7 +11985,6 @@
   <block id="3196b7dfc407df76dfe72528882d792a" category="list-text"><block ref="3196b7dfc407df76dfe72528882d792a" category="inline-link-macro-rx"></block></block>
   <block id="ea52eab386a36623963eee64d8468c76" category="admonition">管理服務2.22.7包含vCenter Server 5.0的Element外掛程式、其中包含遠端外掛程式。如果您使用Element外掛程式、則應升級至管理服務2.22.7或更新版本、以符合VMware指令、該指令會移除對本機外掛程式的支援。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。</block>
   <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">此升級程序涵蓋下列升級案例：</block>
-  <block id="3a2bbd221f9a6d667af34b16ef1c1a32" category="list-text">您正在升級至 Element Plug-in for vCenter Server 5.1 或 5.0 。</block>
   <block id="61517793d4523320c7cd75e303ad36ff" category="list-text">您正在升級至8.0或7.0 HTML5 vSphere Web Client。</block>
   <block id="609cfd925544c2aaccb703dcb95eed4d" category="admonition">當您從Element Plug-in for vCenter Server 4.x升級至5.x時、已使用外掛程式設定的叢集將會遺失、因為無法將資料從vCenter執行個體複製到遠端外掛程式。您必須將叢集重新新增至遠端外掛程式。這是從本機外掛程式升級至遠端外掛程式的一次性活動。</block>
   <block id="4edf62fd94cfb84b727afbee52aa8128" category="list-text">vCenter Server 5.x 的 Element Plug-in 登錄頁面：</block>
@@ -12013,4 +12008,13 @@
   <block id="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block></block>
   <block id="62bad8a6f2407b7cf1f98abe9ada3dae" category="admonition">使用API之後、您必須重新開機管理節點。</block>
   <block id="1e924e133c06d37b8d10cb78b719f4ce" category="paragraph"><block ref="1e924e133c06d37b8d10cb78b719f4ce" category="inline-link-macro-rx"></block></block>
+  <block id="939f531b35412529043c2c302552fa24" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block></block>
+  <block id="ce397f79b5032c3e327db3efe5a6048a" category="inline-link">vCenter Plug-in 5.2 版本資訊</block>
+  <block id="4718467fa890cd0dcf159b3d461cedbe" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block> _新_</block>
+  <block id="410ecb079e286058eeb2bc6b56d9379c" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block></block>
+  <block id="faf6c38631911f7840c3498b4ec9f746" category="inline-link-macro">管理服務 2.24.40 注意事項（適用於 VMware vCenter Server 5.2.12 的 NetApp Element 外掛程式）</block>
+  <block id="db3a980db6ffcc2055052c6c4a453020" category="list-text"><block ref="db3a980db6ffcc2055052c6c4a453020" category="inline-link-macro-rx"></block></block>
+  <block id="eea7cb3a63edf642e1f15162351dfce7" category="list-text">您正在升級至適用於 vCenter Server 5.2 、 5.1 或 5.0 的 Element 外掛程式。</block>
+  <block id="c9c6a2f6fa07c1f8c580586914c37e79" category="image-alt">說明在元件外掛程式 5.1 或更新版本成功升級或安裝之後的外掛程式擴充點</block>
+  <block id="f35f89119a6374d18bd89e0103590c61" category="image-alt">說明成功升級或安裝 Element Plug-in 4.10 或更早版本之後的外掛擴充點</block>
 </blocks>
