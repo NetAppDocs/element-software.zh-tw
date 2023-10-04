@@ -31,7 +31,7 @@ NOTE: 管理服務2.22.7包含vCenter Server 5.0的Element外掛程式、其中�
 * 您正在升級至8.0或7.0 HTML5 vSphere Web Client。
 +
 
-IMPORTANT: vCenter 5.0及更新版本的Element外掛程式與vCenter Server 6.7及6.5不相容。
+IMPORTANT: 適用於 vCenter 5.0 或更新版本的 Element 外掛程式與 vCenter Server 6.7 和 6.5 不相容。
 
 
 

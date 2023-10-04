@@ -1730,7 +1730,6 @@
   <block id="b714fec4d7287a9e6dfc31da8638ac8b" category="paragraph">用戶端iSCSI通訊</block>
   <block id="980b3703717b76269490b885f315bb88" category="paragraph">儲存節點Sip</block>
   <block id="3fb1292a90b80b9cc1a3f200dfc17b80" category="paragraph">管理節點</block>
-  <block id="43638993383f845bcd8925bd4e266bc9" category="paragraph">sfsupport.solidfire.com</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="paragraph">22</block>
   <block id="54ea06f86e263d9bc3ed3b50598bbf94" category="paragraph">反轉SSH通道以支援存取</block>
   <block id="07823917bf5da074b0e463b5eb9a35b1" category="paragraph">儲存節點MIP</block>
@@ -1740,7 +1739,6 @@
   <block id="b20a6c801c401908aa3c96f370665e05" category="paragraph">DNS查詢</block>
   <block id="c203d8a151612acf12457e4d67635a95" category="paragraph">442-44</block>
   <block id="3576cff8b205debb58711ff360f51ffd" category="paragraph">使用者介面和API存取儲存節點和元件軟體升級</block>
-  <block id="00a55ff76496c3c45ca20071f6151bfc" category="paragraph">monitoring.solidfire.com</block>
   <block id="6ac181854a8b48c5ac6018a305f6ae7c" category="paragraph">儲存叢集報告Active IQ 功能</block>
   <block id="0c29e1667ad297897573438219b3e1c6" category="paragraph">repo.netapp.com</block>
   <block id="43416d1cebc089588a77207470ee9f35" category="paragraph">提供必要元件的存取權限、以便在內部部署中安裝/更新。</block>
@@ -9189,7 +9187,6 @@
   <block id="f4c609fc8cfe4b4af500d9b32efdeef8" category="paragraph">為大量Volume工作建立的時間戳記、格式為UTC+0。</block>
   <block id="11e18bb72465b19d35f1a1fb2d9a5ccc" category="paragraph">自工作開始以來的秒數。</block>
   <block id="e553196c9c6aca88c9d5001211caacb9" category="paragraph">大量Volume作業的格式。可能值：</block>
-  <block id="2b98a4ad988a18c42682f388901f2672" category="list-text">壓縮</block>
   <block id="8e5f3adee38c8fccc13c1f3be0143796" category="list-text">原生</block>
   <block id="7a5bc9d962882cb35fcea421f3f78bd9" category="paragraph">大量Volume工作階段所建立的唯一金鑰。</block>
   <block id="4405decce4419ff5443fb20a6d7efbb6" category="paragraph">營運報告的已完成百分比。</block>
@@ -11466,7 +11463,6 @@
   <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">使用適用於vCenter Server 4.x的Element外掛程式、當您升級至VMware vCenter Server 7.0 Update 3時、外掛程式無法部署。若要使用Spring Framework 4解決此問題、請參閱<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">針對已註冊NetApp Element 的VMware vCenter Server適用的VMware vSphere環境、您可以在第一次更新包含外掛程式服務的管理服務套件之後、更新外掛程式登錄。</block>
   <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter外掛程式5.0或更新版本</block>
-  <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">vCenter 5.0及更新版本的Element外掛程式與vCenter Server 6.7及6.5不相容。</block>
   <block id="e6d87bbd73a5a86fcf1e6cbc75296808" category="open-title">Element vCenter外掛程式4．10或更早版本</block>
   <block id="524f8acc9609df7272285a19757aefcb" category="list-text">您正在升級至Element Plug-in for vCenter Server 4.10、4.9、4.8、4.7、4.6、 4.5或4.4。</block>
   <block id="c0e80cf197d1adf76fef790848a92f8f" category="list-text">外掛程式與VMware vCenter Server 8.0 for Element Plug-in for VMware vCenter Server 4.x不相容</block>
@@ -12017,4 +12013,8 @@
   <block id="eea7cb3a63edf642e1f15162351dfce7" category="list-text">您正在升級至適用於 vCenter Server 5.2 、 5.1 或 5.0 的 Element 外掛程式。</block>
   <block id="c9c6a2f6fa07c1f8c580586914c37e79" category="image-alt">說明在元件外掛程式 5.1 或更新版本成功升級或安裝之後的外掛程式擴充點</block>
   <block id="f35f89119a6374d18bd89e0103590c61" category="image-alt">說明成功升級或安裝 Element Plug-in 4.10 或更早版本之後的外掛擴充點</block>
+  <block id="1583ff28675a9e24a50fa1079a5dd985" category="paragraph"><block ref="43638993383f845bcd8925bd4e266bc9" prefix="" category="inline-code"></block></block>
+  <block id="86eccd8202a873aee7f9acfbe920bb59" category="paragraph"><block ref="00a55ff76496c3c45ca20071f6151bfc" prefix="" category="inline-code"></block></block>
+  <block id="474ed7ffbbc0fc1d58ad983e7ef700f6" category="admonition">適用於 vCenter 5.0 或更新版本的 Element 外掛程式與 vCenter Server 6.7 和 6.5 不相容。</block>
+  <block id="dfd25ff244b001be7beece9729517779" category="list-text">未壓縮</block>
 </blocks>
