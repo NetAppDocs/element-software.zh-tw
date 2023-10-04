@@ -73,7 +73,7 @@ xref:reference_element_api_syncjob.adoc[SyncJob] 陣列
            "sliceID":5,
            "srcServiceID":16,
            "stage":"whole",
-           "totalBytes":200278016remote0,
+           "totalBytes":2002780160,
            "type":"slice"
        },
        {
