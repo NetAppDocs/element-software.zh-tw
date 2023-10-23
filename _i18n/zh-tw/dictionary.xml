@@ -11379,7 +11379,6 @@
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter外掛程式4.10版本說明</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
-  <block id="b7faeba39aadbf9af836a1e70f5708d7" category="doc">零件與元件軟體12.5及更新版本文件SolidFire</block>
   <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">您已為安排足夠的時間 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升級：升級至Element軟體12.5或更新版本時、升級程序時間會因元件軟體版本和韌體更新而有所不同。</block>
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">您可以使用下列順序來升級SolidFire 適用於Element 12.5或更新版本的NetApp全快閃儲存系統。</block>
   <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">使用HealthTools升級至Element 12.3.x</block>
@@ -11394,7 +11393,6 @@
   <block id="cd847f70c9955e37a7a701eee9f2cd67" category="list-text">您要升級的管理節點為12版、使用的是IPv6網路。管理節點版本12.5或更新版本不支援IPv6。</block>
   <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">如果您要將管理節點更新至版本12．5或更新版本、則需要使用管理服務2．21．61或更新版本才能繼續。</block>
   <block id="b529479350602e9be1d9caa1838edb9b" category="list-text">儲存節點執行元件12.3.x或更新版本。</block>
-  <block id="a3fc65b85282a6a88ae5d5d3defca6e5" category="sidebar">升級適用於SolidFire Element軟體12.5或更新版本的NetApp全快閃儲存系統</block>
   <block id="153627e79a0ffb6d6ade85f68b50611b" category="inline-link-macro">Element軟體注意事項12.7</block>
   <block id="ab73a3f8818312d49869de237a845464" category="list-text"><block ref="ab73a3f8818312d49869de237a845464" category="inline-link-macro-rx"></block></block>
   <block id="0ce0d000aa89de0d0743fc44c13f94f4" category="inline-link-macro">Ember OS 12.7注意事項</block>
@@ -11424,7 +11422,6 @@
   <block id="e4129684446aea2a0364c5466dc85146" category="paragraph">啟動器在iSCSI工作階段登入期間指定的CHAP使用者名稱。</block>
   <block id="ef72c37be9d1b9e6e5bbd6ef09448abe" category="paragraph">方向</block>
   <block id="e7eefd9834440f0ab15e111471053cf0" category="paragraph">驗證方向、例如單向（僅限啟動器）或雙向（啟動器和目標）。</block>
-  <block id="cd6217be1698a09a848043a5d6c72040" category="paragraph">*從元素12.7開始提供。</block>
   <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">驗證</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI工作階段的驗證資訊。</block>
@@ -12017,4 +12014,6 @@
   <block id="86eccd8202a873aee7f9acfbe920bb59" category="paragraph"><block ref="00a55ff76496c3c45ca20071f6151bfc" prefix="" category="inline-code"></block></block>
   <block id="474ed7ffbbc0fc1d58ad983e7ef700f6" category="admonition">適用於 vCenter 5.0 或更新版本的 Element 外掛程式與 vCenter Server 6.7 和 6.5 不相容。</block>
   <block id="dfd25ff244b001be7beece9729517779" category="list-text">未壓縮</block>
+  <block id="54b283655ec8649a11478759bf661650" category="list-text">從元件 12.7 開始提供。</block>
+  <block id="909a1c829d29d09da00949e5c8b87a0e" category="sidebar">升級您的 NetApp SolidFire All Flash 儲存系統</block>
 </blocks>
