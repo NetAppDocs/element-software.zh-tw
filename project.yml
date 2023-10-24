@@ -7,7 +7,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: 12.5 and later
+  - version-number: 12.5 and 12.7
     url: "/element-software"
   - version-number: '12.3'
     url: "/element-software-123"
