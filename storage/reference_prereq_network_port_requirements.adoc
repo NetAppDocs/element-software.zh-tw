@@ -2,7 +2,7 @@
 permalink: storage/reference_prereq_network_port_requirements.html 
 sidebar: sidebar 
 keywords: network port requirements, TCP ports, firewall, utilities, URL, access attempt, ICMP, MIP, SIP, MVIP, SVIP 
-summary: 您可能需要允許下列TCP連接埠通過資料中心的邊緣防火牆、以便從遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。 
+summary: 您可能需要允許下列 TCP 連接埠透過資料中心的邊緣防火牆、以便遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。 
 ---
 = 網路連接埠需求
 :allow-uri-read: 
