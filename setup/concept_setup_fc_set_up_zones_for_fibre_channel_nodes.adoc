@@ -19,6 +19,6 @@ summary: 當您建立具有Fibre Channel節點和SolidFire Ees供 儲存節點�
 
 == 如需詳細資訊、請參閱
 
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

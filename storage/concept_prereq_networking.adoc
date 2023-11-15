@@ -19,6 +19,6 @@ summary: 支援的網路設定包含交換器和連接埠需求。SolidFire這�
 
 * link:../storage/concept_prereq_switch_configuration_for_solidfire_clusters.html["執行Element軟體的叢集交換器組態"]
 * link:../storage/reference_prereq_network_port_requirements.html["網路連接埠需求"]
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

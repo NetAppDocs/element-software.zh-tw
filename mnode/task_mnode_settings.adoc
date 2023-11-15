@@ -111,5 +111,5 @@ IMPORTANT: 11.3或更新版本的管理節點不支援IPv6選項。
 == 瞭解更多資訊
 
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 

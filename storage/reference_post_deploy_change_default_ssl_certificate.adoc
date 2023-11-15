@@ -40,6 +40,6 @@ NOTE: 叢集SSL憑證會自動套用至新增至叢集的所有新節點。從�
 
 * link:../mnode/reference_change_mnode_default_ssl_certificate.html["變更管理節點的預設SSL憑證"]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_are_the_requirements_around_setting_custom_SSL_certificates_in_Element_Software%3F["在Element Software中設定自訂SSL憑證有哪些要求？"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

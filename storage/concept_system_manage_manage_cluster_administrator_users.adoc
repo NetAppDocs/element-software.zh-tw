@@ -158,6 +158,6 @@ link:task_system_manage_enable_ldap_authentication.html["使用元素使用者�
 
 * link:task_system_manage_enable_ldap_authentication.html["使用元素使用者介面啟用LDAP驗證"]
 * link:concept_system_manage_manage_ldap.html["停用LDAP"]
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

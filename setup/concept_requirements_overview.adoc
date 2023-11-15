@@ -22,5 +22,5 @@ summary: 開始之前、您應該先檢閱先決條件。
 
 == 如需詳細資訊、請參閱
 
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 

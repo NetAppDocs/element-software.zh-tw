@@ -61,5 +61,5 @@ NOTE: 如果您在權杖過期後嘗試執行命令、會出現「401錯誤：�
 == 如需詳細資訊、請參閱
 
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 

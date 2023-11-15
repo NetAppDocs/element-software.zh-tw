@@ -343,5 +343,5 @@ NOTE: 您應在vCenter中建立新的NetApp HCC角色、以新增控制器子資
 * link:task_mnode_add_assets.html["將控制器資產新增至管理節點"]
 * link:task_mnode_install_add_storage_NIC.html["設定儲存NIC"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 

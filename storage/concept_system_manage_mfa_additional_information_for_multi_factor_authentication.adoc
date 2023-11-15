@@ -27,6 +27,6 @@ NOTE: 如果叢集使用的憑證在升級前低於2048位元、則叢集憑證�
 == 如需詳細資訊、請參閱
 
 * link:../api/index.html["使用Element API管理儲存設備"]
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

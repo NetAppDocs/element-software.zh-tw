@@ -198,5 +198,5 @@ NOTE: 與管理服務相關的持續磁碟區會在安裝或升級期間指派�
 * link:../concepts/concept_solidfire_concepts_accounts_and_permissions.html["深入瞭解客戶"]
 * link:../storage/task_data_manage_accounts_work_with_accounts_task.html["使用CHAP處理帳戶"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["「元件與元素資源」頁面SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 
