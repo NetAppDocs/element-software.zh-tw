@@ -103,8 +103,6 @@ homepage:
       url: https://mysupport.netapp.com/site/products/all/details/solidfire-vss-provider/downloads-tab
   - title: 解決方案
     links:
-    - title: "「資源」頁面SolidFire"
-      url: https://www.netapp.com/data-storage/solidfire/documentation/
     - title: NetApp解決方案
       url: https://docs.netapp.com/us-en/netapp-solutions/index.html
   - title: 示範教學課程

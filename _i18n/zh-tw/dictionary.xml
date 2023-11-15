@@ -1265,8 +1265,6 @@
   <block id="453144fb1f3ea2b0f25b252851f8547b" category="list-text">在建立叢集期間、執行 <block ref="d203a09ebf9d1da1010b557da816049a" category="inline-link-macro-rx"></block> 將「enableSoftwareEncryptionAtRest」設為「true」。</block>
   <block id="b03d16c0937b4d744b6ee3a90914a750" category="section-title">停用靜止時的硬體加密</block>
   <block id="b17cfa5cd3198beeee235f95f712cb19" category="list-text">選擇*停用REST加密*。</block>
-  <block id="1c1519037df87ff4dd08fe6e757ff03f" category="inline-link">NetApp SolidFire 資源頁面</block>
-  <block id="abc0c04174a58217258765895984ed4e" category="list-text"><block ref="abc0c04174a58217258765895984ed4e" category="inline-link-rx"></block></block>
   <block id="89e3bb4cf03209dcb9c85e2455cde9c3" category="inline-link">先前版本的NetApp SolidFire 產品及元素產品文件</block>
   <block id="461166164223a1234073a2c9d388d33a" category="list-text"><block ref="461166164223a1234073a2c9d388d33a" category="inline-link-rx"></block></block>
   <block id="89e39dffe91879f17ec23f1869d4c719" category="summary">您可以移除多個磁碟機分片服務（MDSS）磁碟機。此程序僅適用於節點有多個磁碟機的情況。</block>
@@ -12016,4 +12014,6 @@
   <block id="331d6d490990c63b2cee0dc04fe2589b" category="paragraph">除非另有說明、否則所有連接埠都是 TCP 、而且所有 TCP 連接埠都必須支援 NetApp 支援伺服器、管理節點和執行 Element 軟體的節點之間的三向信號交換通訊。例如、管理節點來源上的主機透過 TCP 連接埠 443 與儲存叢集 MVIP 目的地上的主機通訊、而目的地主機則透過任何連接埠回傳給來源主機。</block>
   <block id="f814466eb9bcf561b354422b41f381f3" category="summary">您可能需要允許下列 TCP 連接埠透過資料中心的邊緣防火牆、以便遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。</block>
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">您可能需要允許下列 TCP 和 UDP 連接埠透過資料中心的邊緣防火牆、以便遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。</block>
+  <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
+  <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>執行 ]</block>
 </blocks>
