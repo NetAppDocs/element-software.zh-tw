@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: upgrade/task_hcc_upgrade_element_software.html 
 summary: 在NetApp SolidFire 的非系統升級中、您可以升級NetApp Element 各種解決方案。 
-keywords: netapp, solidfire, cluster, element, H610S upgrade, hcc, ansible upgrades, upgrade role 
+keywords: netapp, solidfire, cluster, element, H610S upgrade, hcc, upgrade role 
 ---
 = 升級Element軟體
 :hardbreaks:

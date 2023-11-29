@@ -12,8 +12,6 @@
   <block id="dc679f38ed2d35dde42b872d737e46db" category="list-text"><block ref="dc679f38ed2d35dde42b872d737e46db" category="inline-xref-macro-rx"></block></block>
   <block id="afc48abd77915d4342bb6d52750ca477" category="inline-link-macro">使用Element API管理儲存設備</block>
   <block id="d8ac4fdc9abb74552f869693e6472bb3" category="list-text"><block ref="d8ac4fdc9abb74552f869693e6472bb3" category="inline-link-macro-rx"></block></block>
-  <block id="631923a687ff82d68973d99b95597b47" category="inline-link">「元件與元素資源」頁面SolidFire</block>
-  <block id="238c5b123e3473c57e2925edccb205c2" category="list-text"><block ref="238c5b123e3473c57e2925edccb205c2" category="inline-link-rx"></block></block>
   <block id="a881a0468246e93ae6e2c5bccd78758e" category="inline-link">vCenter Server的VMware vCenter外掛程式NetApp Element</block>
   <block id="7cf5cffc3745b8348cdcfb1c3d0d472f" category="list-text"><block ref="7cf5cffc3745b8348cdcfb1c3d0d472f" category="inline-link-rx"></block></block>
   <block id="23f07d586c1746df5b4c5e537a000a6d" category="summary">在「叢集」索引標籤的「SNMP」頁面上、您可以檢視下列資訊。</block>
@@ -11205,9 +11203,6 @@
   <block id="58fd31fc4a0bf37df4c2efec74cb0f7e" category="paragraph">Element 12.5包含儲存節點的韌體更新。 <block ref="0f65f1a5cbc84d01ee508f9ae603c679" category="inline-link-macro-rx"></block>。</block>
   <block id="9ae00a023d80f22436817ac40b5dd0e7" category="section-title">增強安全性</block>
   <block id="7d22dc13d9443150a483a9d1bcc19811" category="paragraph">元素12.5也包含120多項可修復的CVE安全性弱點。</block>
-  <block id="0a4e6eb7e62cc9a7906b041a5daa8314" category="section-title">使用Ansible自動升級</block>
-  <block id="0f3c5d5fd99d58a3db49e358303b6aa1" category="inline-link">NetApp Ansible儲存庫</block>
-  <block id="05815c7d362a881d86d68bc8cfd44ab2" category="paragraph">透過Element 12.5、您可以使用Ansible來執行整個儲存叢集的循環升級、以自動化元件軟體升級工作流程。若要開始使用、請瀏覽至<block ref="6657f4ab7e7e02ccfa155e58f184d7f8" category="inline-link-rx"></block> 在GitHub下載「na_solidfire_SDS升級」角色與文件。</block>
   <block id="3e295da75c8e1147efb1d40b92bc67b1" category="section-title">NetApp線上錯誤包含已解決且已知的問題</block>
   <block id="dacb18e4909785f6226e9cc6bcd62371" category="paragraph">NetApp錯誤線上工具中已列出已解決及已知的問題。您可以瀏覽這些問題、以取得Element軟體和其他產品、網址為<block ref="6d0e40d4342f9a7ae6016dd8d3efbf3e" category="inline-link-rx"></block>。</block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">《軟件發行說明》（英文）NetApp Element</block>
@@ -11368,7 +11363,6 @@
   <block id="3fc5b3acd1d3708d5cfa3ba7d0a8162e" category="admonition">Element 12.7版本中沒有新的韌體更新。不過、根據儲存節點上目前執行的韌體套裝組合、當您升級至Element 12.7時、就會安裝累積性更新。</block>
   <block id="5c74c03fbdeea06c0e7eb5afe2d9f9bb" category="paragraph">在這個功能表中SolidFire Active IQ 、您現在可以瀏覽至「QoS管理」頁面、檢視叢集的建議和節點節流資訊。此外、叢集儀表板現在會顯示快照總數。其他近期的增強功能包括新增作用中磁碟區的主要和次要節點資訊、以及節點上主要磁碟區的平均處理量、IOPS和過去30分鐘的平均延遲。</block>
   <block id="ab55ac9ce7363800677511aee7a9ab12" category="paragraph">您現在可以從SolidFire Active IQ Element軟體文件中存取《支援》文件。 <block ref="cf42182e91c5e79a875ebd341c48eb99" category="inline-link-macro-rx"></block>。</block>
-  <block id="4dae8e1e6549980e8397eec97af1ecaf" category="paragraph">Element 12.5引進改良的儲存節點存取功能、增強的自訂保護網域管理功能、全新改良的叢集故障與事件、增強的Create Cluster UI功能、增強的安全性、以及使用Ansible的自動化升級。</block>
   <block id="b1eb510dd705c0d83386b5f196686d5a" category="inline-link">支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點</block>
   <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">《軟件》第12版發行說明NetApp Element</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
@@ -12016,4 +12010,5 @@
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">您可能需要允許下列 TCP 和 UDP 連接埠透過資料中心的邊緣防火牆、以便遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。</block>
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
   <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>執行 ]</block>
+  <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5 提供改善的儲存節點存取、增強的自訂保護網域管理能力、全新及改良的叢集故障和事件、增強的建立叢集 UI 功能、以及增強的安全性。</block>
 </blocks>
