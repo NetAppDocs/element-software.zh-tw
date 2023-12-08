@@ -12011,4 +12011,6 @@
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
   <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>執行 ]</block>
   <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5 提供改善的儲存節點存取、增強的自訂保護網域管理能力、全新及改良的叢集故障和事件、增強的建立叢集 UI 功能、以及增強的安全性。</block>
+  <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由於升級套件上傳錯誤、 SolidFire 和 HCI 升級無法啟動</block>
+  <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">自 2023 年 11 月起、您無法使用 NetApp 混合雲控制或 REST API 來開始元件升級、因為簽署金鑰憑證（私有和公有）已於 2023 年 11 月 5 日到期。您可以依照知識庫文件中所述的因應措施來解決此問題<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
 </blocks>
