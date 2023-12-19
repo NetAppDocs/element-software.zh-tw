@@ -11,7 +11,6 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 :icons: font
 :linkattrs: 
 :imagesdir: ../media/
-:keywords: solidfire, cloud, onprem, documentation, help
 
 
 [role="lead"]
