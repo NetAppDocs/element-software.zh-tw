@@ -6823,7 +6823,6 @@
   <block id="a2ee727480278b2294f0926aa0083922" category="inline-xref-macro">記錄伺服器</block>
   <block id="71d0be7b0a81bc143e93030e8122488f" category="paragraph"><block ref="dc435e9a57e6ef95abdeea42eed03b10" category="inline-xref-macro-rx"></block> 陣列</block>
   <block id="bfef1931306d50981d842714565c9b06" category="summary">您可以使用「遠端磁碟機」方法主動移除屬於叢集一部分的磁碟機。您可以在減少叢集容量或準備更換即將結束服務壽命的磁碟機時、使用此方法。磁碟機上的任何資料都會在磁碟機從叢集移除之前、移除並移轉到叢集中的其他磁碟機。</block>
-  <block id="33630e5c702ad56f9ed10ea465cbabf6" category="paragraph">您可以使用「移除磁碟機」方法主動移除屬於叢集一部分的磁碟機。您可以在減少叢集容量或準備更換即將結束服務壽命的磁碟機時、使用此方法。磁碟機上的任何資料都會在磁碟機從叢集移除之前、移除並移轉到叢集中的其他磁碟機。</block>
   <block id="745626a72e187a7dc7eed9e7290f03a6" category="paragraph">「遠端磁碟機」是一種非同步的方法。視要移除的磁碟機總容量而定、移轉所有資料可能需要幾分鐘的時間。</block>
   <block id="49b469905f5d598fc884c7182e9cc230" category="paragraph">移除多個磁碟機時、請使用單一「遠端磁碟機」方法呼叫、而非使用多種個別方法、每種方法各有一個磁碟機。如此可減少為了平均穩定叢集上的儲存負載而必須達到的資料平衡量。</block>
   <block id="9984e92da1025580d4728a15b5cb89d8" category="paragraph">您也可以使用「遠端磁碟機」移除狀態為「故障」的磁碟機。當您移除狀態為「故障」的磁碟機時、磁碟機不會返回「可用」或「作用中」狀態。磁碟機無法在叢集中使用。</block>
@@ -12013,4 +12012,5 @@
   <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5 提供改善的儲存節點存取、增強的自訂保護網域管理能力、全新及改良的叢集故障和事件、增強的建立叢集 UI 功能、以及增強的安全性。</block>
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由於升級套件上傳錯誤、 SolidFire 和 HCI 升級無法啟動</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">自 2023 年 11 月起、您無法使用 NetApp 混合雲控制或 REST API 來開始元件升級、因為簽署金鑰憑證（私有和公有）已於 2023 年 11 月 5 日到期。您可以依照知識庫文件中所述的因應措施來解決此問題<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
+  <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主動移除屬於叢集一部分的磁碟機的方法。您可以在減少叢集容量或準備更換即將結束服務壽命的磁碟機時、使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在叢集中的其他節點上建立區塊資料的第三個複本、並等待同步完成、然後再將磁碟機移至「可用」清單。「可用」清單中的磁碟機會從系統中完全移除、而且沒有執行中的服務或作用中資料。</block>
 </blocks>
