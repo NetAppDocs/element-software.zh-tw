@@ -35,3 +35,5 @@ entries:
     url: "/hardware/task_rtfi_process.html"
   - title: RTFI選項功能表
     url: "/hardware/task_rtfi_options_menu.html"
+- title: 儲存節點支援的韌體版本
+  url: "/hardware/fw_storage_nodes.html"

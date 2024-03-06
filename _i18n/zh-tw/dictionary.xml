@@ -10995,24 +10995,6 @@
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">舊版</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
-  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">安裝維護硬體</block>
-  <block id="f54101aa6702c025c4f74ec5ada7bae3" category="sidebar">管理儲存設備</block>
-  <block id="bfd78ad06fdbded1393f2f3c6bce1cdb" category="sidebar">使用Element軟體UI</block>
-  <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">使用NetApp混合雲控管</block>
-  <block id="1d5eadee8dd359da135590100c405785" category="sidebar">使用Element軟體API</block>
-  <block id="b16427ba775ee26e7f5fa22679a4a605" category="sidebar">使用vCenter Server的元素外掛程式</block>
-  <block id="6216a3b9e8c46cd0635bc8d3f9c8cf4f" category="sidebar">使用整合工具（需要登入）</block>
-  <block id="52e27f272b7f3c0cd5623309ba926677" category="sidebar">元素SDK（Java、.NET、Python）</block>
-  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">解決方案</block>
-  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">NetApp解決方案</block>
-  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">示範教學課程</block>
-  <block id="a3306879b2c1b46c3e6e86a4c65d51bc" category="sidebar">NetApp University SolidFire 技術訓練（需登入）</block>
-  <block id="ab1cf947f75ab4705fc3fcf084c10a01" category="sidebar">如何安裝及擴充NetApp SolidFire 的叢集（影片）</block>
-  <block id="483b680d14606131d42c44dbca0bb4f2" category="sidebar">NetApp SolidFire 安裝（影片）</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格社群</block>
-  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp社群</block>
-  <block id="213686afc3803be7caa09348765467fe" category="sidebar">取得協助的地方</block>
   <block id="53b2a4dd7325c2d7325f310860b0b55f" category="sidebar">多因素驗證的其他資訊</block>
   <block id="e952835aeeca0b6e6809fe7d7f4ad7f8" category="sidebar">檢視個別節點詳細資料</block>
   <block id="9958041ee70a2259278a77d924dd17fb" category="sidebar">外部金鑰管理API命令</block>
@@ -11327,14 +11309,12 @@
   <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">例如、某些功能的功能是服務品質（QoS）、需要元素11.3或更新版本才能正常運作。Active IQ為了確認您有能力使用Active IQ 所有的功能、NetApp建議您：</block>
   <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">利用SolidFire Active IQ 功能以監控儲存</block>
   <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">利用NetApp SolidFire Active IQ 功能監控儲存設備</block>
-  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">使用NetApp SolidFire Active IQ 解決方案</block>
   <block id="d214b4cd328cf59221f38d85dca1988f" category="summary">使用NetApp Element VMware vSphere介面的外掛程式vCenter Server for vCenter、即可管理及監控執行NetApp Element VMware軟體的儲存叢集。</block>
   <block id="14dc26d359d13f6037d00a6c79232cd6" category="paragraph">vCenter Server的支援VMware vSphere外掛程式提供VMware vSphere介面外掛程式、讓您管理及監控執行VMware軟體的儲存叢集。NetApp Element NetApp Element</block>
   <block id="da3eb0bd8c882a21931739ac39ce915a" category="inline-link">vCenter Server文件的適用插件NetApp Element</block>
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">若要深入瞭解vCenter Server的元素外掛程式、請參閱<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">許多NetApp混合雲控制功能都是專為搭配多個儲存叢集使用而設計、但驗證和授權卻有其限制。驗證與授權的限制在於、授權叢集的使用者可以在其他綁定至NetApp混合雲控制的叢集上執行動作、即使他們不是其他儲存叢集的使用者。</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">使用vCenter Server的Element外掛程式來管理儲存設備</block>
-  <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列儲存節點支援的韌體版本</block>
   <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">從元素12.5開始、您可以在管理節點上啟用sfreadonly使用者帳戶、以便在NetApp支援部門不提供協助的情況下疑難排解系統元件。您也可以啟用及開啟NetApp支援的遠端支援通道存取、以進行進階疑難排解。</block>
   <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">視您的Element軟體版本而定、不支援下列SF系列儲存節點：</block>
   <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">在升級至元件12.5或更新版本期間、若節點的BMC出現預先存在的故障、或是在升級期間節點的BMC故障、則不會產生「BMCselfTestFailed」故障。在升級期間、未通過自我測試的BMC會在整個叢集完成升級後、發出「BMCselfTestFailed」警告錯誤。</block>
@@ -11701,7 +11681,6 @@
   <block id="a869730ec0116e46159bbff419d5cc17" category="list-text"><block ref="2a166fd6597dedff39b139e3ce76f82b" category="inline-link-rx"></block></block>
   <block id="bec35bb5875234837858b1ccdd637fca" category="inline-link">Element 11.1文件與舊版</block>
   <block id="724428733630050ab3140356839e2af1" category="list-text"><block ref="724428733630050ab3140356839e2af1" category="inline-link-rx"></block></block>
-  <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2及更早版本的文件</block>
   <block id="cf459a4467554220e1dd70f653a8cf43" category="list-text">對於管理服務2.18及更新版本、預設會在管理節點上停用遠端存取功能。若要啟用遠端存取功能、請參閱<block ref="9a48ac510c43b73ee86c7be400c5025f" category="inline-link-rx"></block>。</block>
   <block id="c9621c561bd7ae37e9a7ee7358f4f792" category="list-text">（選用）停用<block ref="2ec0ebe378e4a0f1bbb70e72c3942887" category="inline-link-rx"></block> 再一次。</block>
   <block id="c046b7ab02983ed5bb8f1b18c0c2c477" category="summary">從NetApp 支援網站 下列網址下載元素軟體版本的RTFI ISO映像、並使用可開機且可安裝的媒體來部署。</block>
@@ -12013,4 +11992,5 @@
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由於升級套件上傳錯誤、 SolidFire 和 HCI 升級無法啟動</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">自 2023 年 11 月起、您無法使用 NetApp 混合雲控制或 REST API 來開始元件升級、因為簽署金鑰憑證（私有和公有）已於 2023 年 11 月 5 日到期。您可以依照知識庫文件中所述的因應措施來解決此問題<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主動移除屬於叢集一部分的磁碟機的方法。您可以在減少叢集容量或準備更換即將結束服務壽命的磁碟機時、使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在叢集中的其他節點上建立區塊資料的第三個複本、並等待同步完成、然後再將磁碟機移至「可用」清單。「可用」清單中的磁碟機會從系統中完全移除、而且沒有執行中的服務或作用中資料。</block>
+  <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">儲存節點支援的韌體版本</block>
 </blocks>
