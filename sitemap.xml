@@ -1,0 +1,7119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_basic_interface_refresh_rate_impacted_by_cluster_load.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_contact_netapp_support.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_data_management.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_volumes_qos_performance_curve.html</loc>
+        
+      
+      <lastmod>2022-09-01T15:32:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_volumes_quality_of_service_policies.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_data_manage_volumes_solidfire_quality_of_service.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_volumes_solidfire_quality_of_service.html</loc>
+        
+      
+      <lastmod>2022-09-01T12:22:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_vvol_bindings.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_vvol_manage_storage_containers.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_vvol_protocol_endpoints.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_manage_vvol_work_virtual_volumes.html</loc>
+        
+      
+      <lastmod>2022-12-05T17:03:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_protection.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_data_protection_volume_snapshot_backup_operations.html</loc>
+        
+      
+      <lastmod>2022-06-21T12:01:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_about_the_api.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_account_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_administrator_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_asynchronous_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_authentication.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_cluster_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_common_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_common_objects.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_create_cluster_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_drive_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_fibre_channel_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_initiator_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_ldap_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_multi_factor_authentication_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_multitenant_networking_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_node_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_replication_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_request_endpoints.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_response_examples.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_security_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_session_authentication_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_snapmirror_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_snapshots_overview.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_system_configuration_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_virtual_network_naming_conventions.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_volume_access_group_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_volume_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_volume_snapshot_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/concept_element_api_vvols_api_methods.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/upgrade/concept_element_upgrade_overview.html</loc>
+        
+      
+      <lastmod>2023-12-19T12:46:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/concept_h410s_h610s_info.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_clusters.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_intro_clusters.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_drives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_fibre_channel_nodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_management_node.html</loc>
+        
+      
+      <lastmod>2022-05-16T16:12:38+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_intro_management_node.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_management_services_for_afa.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_intro_management_services_for_afa.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_nodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_persistent_volumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_intro_product_overview.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_intro_solidfire_active_iq.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_solidfire_active_iq.html</loc>
+        
+      
+      <lastmod>2022-09-01T15:32:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_intro_solidfire_software_interfaces.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_solidfire_system_overview.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_intro_storage_nodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_mnode_work_with_the_management_node.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_monitor_understand_cluster_fullness_levels.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_per_node_work_with_utilities.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_prereq_networking.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_prereq_switch_configuration_for_solidfire_clusters.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/concept_requirements_overview.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_rn_relatedrn_element.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_rn_whats_new_element.html</loc>
+        
+      
+      <lastmod>2023-11-29T10:42:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/concept_rtfi_configure.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/concept_setup_configure_a_storage_node.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/concept_setup_fc_configure_a_fibre_channel_node.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/concept_setup_fc_set_up_zones_for_fibre_channel_nodes.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/concept_setup_overview.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/concept_setup_whats_next.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/concept_sfseries_info.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_snapmirror_disaster_recovery.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_snapmirror_failback_scenarios.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_snapmirror_labels.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_snapmirror_overview.html</loc>
+        
+      
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_solidfire_concepts_accounts_and_permissions.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_solidfire_concepts_data_protection.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_solidfire_concepts_initiators.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_solidfire_concepts_nodes.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_solidfire_concepts_security.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_solidfire_concepts_solidfire_architecture_overview.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_solidfire_concepts_volume_access_groups.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_solidfire_concepts_volumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/concept_solidfire_concepts_vvols.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_accounts_overview.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_cluster_configure_cluster_settings.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_cluster_terms_manage_the_terms_of_use_banner.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_drives_managing_drives.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_key_external_key_management_api_commands.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_key_get_started_with_external_key_management.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_manage_cluster_administrator_users.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_manage_ldap.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_mfa_additional_information_for_multi_factor_authentication.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_mfa_enable_multi_factor_authentication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_nodes_cluster_capacity_in_a_mixed_node_environment.html</loc>
+        
+      
+      <lastmod>2022-10-20T14:17:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_nodes_manage_nodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_nodes_node_versioning_and_compatibility.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_snmp_manage_snmp.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_solidfire_storage_cluster_administrator_account_types.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_system_management.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_manage_virtual_manage_virtual_networks.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_system_monitoring_and_troubleshooting.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_troubleshoot_basic_mdss_drive_troubleshooting.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_troubleshoot_drives.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/concept_troubleshoot_nodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/element-earlierversions.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/element-plug-in-</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/fw_storage_nodes.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/generic_machine_translation_disclaimer.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/</loc>
+        
+      
+      <lastmod>2023-12-19T12:46:19+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/legal-notices.html</loc>
+        
+      
+      <lastmod>2023-10-02T17:26:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/monitor-storage-active-iq.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_copyright.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_copyright_and_trademark.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_data_manage_accounts_account_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_data_manage_volumes_qos_limits.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/reference_data_manage_volumes_qos_limits.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_data_manage_volumes_qos_policies_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_data_manage_volumes_volume_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_data_manage_vvol_bindings_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_data_manage_vvol_host_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_data_manage_vvol_protocol_endpoints_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_data_protection_group_snapshot_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_data_protection_snapshot_schedule_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_abortsnapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_account.html</loc>
+        
+      
+      <lastmod>2023-02-15T17:47:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_addaccount.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_addclusteradmin.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_adddrives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_addidpclusteradmin.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_addinitiatorstovolumeaccessgroup.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_addkeyservertoproviderkmip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_addldapclusteradmin.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_addnodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_addvirtualnetwork.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_addvolumestovolumeaccessgroup.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_app_b_access_control.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_attributes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_authsessioninfo.html</loc>
+        
+      
+      <lastmod>2023-02-15T17:47:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_binding_vvols.html</loc>
+        
+      
+      <lastmod>2023-02-15T17:47:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_breaksnapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_breaksnapmirrorvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_bulkvolumejob.html</loc>
+        
+      
+      <lastmod>2023-10-04T13:23:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_cancelclone.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_cancelgroupclone.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_certificatedetails.html</loc>
+        
+      
+      <lastmod>2023-02-15T17:47:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_checkpingonvlan.html</loc>
+        
+      
+      <lastmod>2022-05-16T16:12:38+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_checkproposedcluster.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_checkproposednodeadditions.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clearclusterfaults.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clonemultiplevolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clonevolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_cluster.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_cluster_pairing_order_of_operations.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_cluster_shutdown.html</loc>
+        
+      
+      <lastmod>2022-06-20T11:37:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clusteradmin.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clustercapacity.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clusterconfig.html</loc>
+        
+      
+      <lastmod>2023-02-15T17:47:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clusterinfo.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clusterpair.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clusterstats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_clusterstructure.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_completeclusterpairing.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_completevolumepairing.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_copyvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createbackuptarget.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createcluster.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createclusterinterfacepreference.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createclustersupportbundle.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_creategroupsnapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createidpconfiguration.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createinitiators.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createkeyproviderkmip.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createkeyserverkmip.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createpublicprivatekeypair.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createqospolicy.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createschedule.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createsnapmirrorendpoint.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createsnapmirrorendpoint_unmanaged.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createsnapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createsnapmirrorvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createsnapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createstoragecontainer.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createsupportbundle.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_createvolumeaccessgroup.html</loc>
+        
+      
+      <lastmod>2022-08-08T12:49:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deleteallsupportbundles.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deleteauthsession.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deleteauthsessionsbyclusteradmin.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deleteauthsessionsbyusername.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deleteclusterinterfacepreference.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletegroupsnapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deleteidpconfiguration.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deleteinitiators.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletekeyproviderkmip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletekeyserverkmip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deleteqospolicy.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletesnapmirrorendpoints.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletesnapmirrorrelationships.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletesnapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletestoragecontainers.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletevolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletevolumeaccessgroup.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_deletevolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_disablebmccoldreset.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_disableclusterssh.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_disableencryptionatrest.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_disableidpauthentication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_disableldapauthentication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_disablemaintenancemode.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_disablesnmp.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_disablessh.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_drive.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_drivestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_enablebmccoldreset.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_enableclusterssh.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_enableencryptionatrest.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_enablefeature.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_enableidpauthentication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_enableldapauthentication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_enablemaintenancemode.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_enablesnmp.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_enablessh.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_error.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_event.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_fault.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_fibrechannelport.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_fipserrornodereport.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_fipsnodereport.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_fipsreport.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getaccountbyid.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getaccountbyname.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getaccountefficiency.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getapi.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getasyncresult.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getbackuptarget.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getbinassignmentproperties.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getbootstrapconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclientcertificatesignrequest.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclustercapacity.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclusterconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclusterfullthreshold.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclusterhardwareinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclusterinfo.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclusterinterfacepreference.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclustermasternodeid.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclustersshinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclusterstate.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclusterstats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclusterstructure.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getclusterversioninfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getcompletestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getcurrentclusteradmin.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getdefaultqos.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getdriveconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getdrivehardwareinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getdrivestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getfeaturestatus.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getfipsreport.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_gethardwareconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_gethardwareinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getidpauthenticationstate.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getipmiconfig.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getipmiinfo.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getkeyproviderkmip.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getkeyserverkmip.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getldapconfiguration.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getlimits.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getlldpconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getlldpinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getloginbanner.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getloginsessioninfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getnetworkconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getnetworkinterface.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getnodeactivetlsciphers.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/</loc>
+        
+      
+      <lastmod>2022-06-20T11:37:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getnodehardwareinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getnodesslcertificate.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getnodestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getnodesupportedtlsciphers.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getntpinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getnvraminfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getontapversioninfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getorigin.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getpatchinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getpendingoperation.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getprotectiondomainlayout.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getqospolicy.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getrawstats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getremotelogginghosts.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getschedule.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getsnapmirrorclusteridentity.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getsnmpacl.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getsnmpinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getsnmpstate.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getsnmptrapinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getsoftwareencryptionatrestinfo.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getsshinfo.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getsslcertificate.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getstoragecontainerefficiency.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getvirtualvolumecount.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getvolumeaccessgroupefficiency.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getvolumeaccessgrouplunassignments.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getvolumecount.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getvolumeefficiency.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_getvolumestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_groupsnapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_hardwareinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_host.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_idpconfiginfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_initializesnapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_initiator.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_iscsiauthentication.html</loc>
+        
+      
+      <lastmod>2023-10-23T16:47:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_keyproviderkmip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_keyserverkmip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_ldapconfiguration.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listaccounts.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listactiveauthsessions.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listactivenodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listactivepairedvolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listactivevolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listallnodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listasyncresults.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listauthsessionbyclusteradmin.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listauthsessionbyusername.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listbackuptargets.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listbulkvolumejobs.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listclusteradmins.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listclusterfaults.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listclusterinterfacepreferences.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listclusterpairs.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listdeletedvolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listdrivehardware.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listdrives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listdrivestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listevents.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listfibrechannelportinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listfibrechannelsessions.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listgroupsnapshots.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listidpconfigurations.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listinitiators.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listiscsisessions.html</loc>
+        
+      
+      <lastmod>2022-10-20T11:54:20+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listkeyproviderskmip.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listkeyserverskmip.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listnetworkinterfaces.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listnetworkinterfacestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listnodefibrechannelportinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listnodestats.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listpendingactivenodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listpendingnodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listprotectiondomainlevels.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listprotocolendpoints.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listqospolicies.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listschedules.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listservices.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirroraggregates.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirrorendpoints.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirrorluns.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirrornetworkinterfaces.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirrornodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirrorpolicies.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirrorrelationships.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirrorschedules.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirrorvolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapmirrorvservers.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsnapshots.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_liststoragecontainers.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listsyncjobs.html</loc>
+        
+      
+      <lastmod>2023-10-05T19:50:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listtests.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listutilities.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvirtualnetworks.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvirtualvolumebindings.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvirtualvolumehosts.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvirtualvolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvirtualvolumetasks.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvolumeaccessgroups.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvolumeqoshistograms.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvolumesforaccount.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvolumestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvolumestatsbyaccount.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvolumestatsbyvirtualvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvolumestatsbyvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_listvolumestatsbyvolumeaccessgroup.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_loggingserver.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyaccount.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifybackuptarget.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyclusteradmin.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyclusterfullthreshold.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyclusterinterfacepreference.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifygroupsnapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyinitiators.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifykeyserverkmip.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyqospolicy.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyschedule.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifysnapmirrorendpoint.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifysnapmirrorendpoint_unmanaged.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifysnapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifysnapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifystoragecontainer.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyvirtualnetwork.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyvolumeaccessgroup.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyvolumeaccessgrouplunassignments.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyvolumepair.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_modifyvolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_network_all_interfaces.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_network_bonded_interfaces.html</loc>
+        
+      
+      <lastmod>2022-08-08T12:49:46+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_network_ethernet_interfaces.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_network_local_interfaces.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_network_snmp.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_networkinterface.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_networkinterfacestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_node.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_node_getnodefipsdrivesreport.html</loc>
+        
+      
+      <lastmod>2022-06-20T11:37:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_node_shutdown.html</loc>
+        
+      
+      <lastmod>2022-06-20T11:37:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_nodeprotectiondomains.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_nodestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_ontapversioninfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_pendingactivenode.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_pendingnode.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_protectiondomain.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_protectiondomainlevel.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_protectiondomainresiliency.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_protectiondomaintolerance.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_protectionschemeresiliency.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_protectionschemetolerance.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_protocolendpoint.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_purgedeletedvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_purgedeletedvolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_qos.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_qospolicy.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_quiescesnapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_remoteclustersnapshotstatus.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removeaccount.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removebackuptarget.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removeclusteradmin.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removeclusterpair.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removedrives.html</loc>
+        
+      
+      <lastmod>2024-01-15T19:28:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removeinitiatorsfromvolumeaccessgroup.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removekeyserverfromproviderkmip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removenodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removenodesslcertificate.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removesslcertificate.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removevirtualnetwork.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removevolumepair.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_removevolumesfromvolumeaccessgroup.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_request_object_members.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_resetdrives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_resetnetworkconfig.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_resetnode.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_resetnodesupplementaltlsciphers.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_resetsupplementaltlsciphers.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_getclusterhardwareinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_getconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_getlldpinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_getnetworkconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_getnodehardwareinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_getnodehardwareinfo_fibre_channel.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_getnvraminfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_listactivenodes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_listactivevolumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_example_testhardwareconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_response_object_members.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_restartnetworking.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_restartservices.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_restoredeletedvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_resumesnapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_resyncsnapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_rollbacktogroupsnapshot.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_rollbacktosnapshot.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_schedule.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_secureerasedrives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_session_fibre_channel.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_session_iscsi.html</loc>
+        
+      
+      <lastmod>2022-10-20T11:54:20+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setclusterconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setclusterstructure.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setconfig.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setdefaultqos.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setlldpconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setloginbanner.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setloginsessioninfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setnetworkconfig.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setnodesslcertificate.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setnodesupplementaltlsciphers.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setntpinfo.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setprotectiondomainlayout.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setremotelogginghosts.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setsnmpacl.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setsnmpinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setsnmptrapinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_setsslcertificate.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_signsshkeys.html</loc>
+        
+      
+      <lastmod>2022-10-20T11:49:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirroraggregate.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorclusteridentity.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorendpoint.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorjobschedulecroninfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorluninfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrornetworkinterface.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrornode.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorpolicy.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorpolicyrule.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorvolumeinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorvserver.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapmirrorvserveraggregateinfo.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snmpsendtesttraps.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_snmptraprecipient.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_startbulkvolumeread.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_startbulkvolumewrite.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_startclusterpairing.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_startvolumepairing.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_storagecontainer.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_supported_modes_of_replication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_syncjob.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_system_configuration_getnodefipsdrivesreport.html</loc>
+        
+      
+      <lastmod>2022-06-20T11:37:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_task_virtual_volumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testaddressavailability.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testconnectensemble.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testconnectmvip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testconnectsvip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testdrives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testhardwareconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testkeyproviderkmip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testkeyserverkmip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testldapauthentication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testlocalconnectivity.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testlocatecluster.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testnetworkconfig.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testping.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_testremoteconnectivity.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_updatebulkvolumestatus.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_updateidpconfiguration.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_updatesnapmirrorrelationship.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_usmuser.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_virtualnetwork.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_virtualvolume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_volume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_volume_pairing_order_of_operations.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_volumeaccessgroup.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_volumepair.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_element_api_volumestats.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_element_rn_find_product_docs.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_intro_icon_reference.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_monitor_cluster_fault_codes.html</loc>
+        
+      
+      <lastmod>2023-02-23T20:06:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_monitor_event_types.html</loc>
+        
+      
+      <lastmod>2022-05-16T16:12:38+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_monitor_fibre_channel_session_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_monitor_iscsi_session_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_monitor_status_of_running_tasks.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_monitor_volume_performance_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_per_node_cluster_settings_details.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_per_node_network_settings_details.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_post_deploy_change_default_ssl_certificate.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/reference_change_mnode_default_ssl_certificate.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_prereq_network_port_requirements.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_replication_cluster_pair_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_replication_volume_pair_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_replication_volume_pairing_messages.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_replication_volume_pairing_warnings.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_snapmirror_relationship_actions.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/concepts/reference_solidfire_element_ug_where_to_find_additional_information.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_system_manage_drives_drives_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_system_manage_fips_ssl_cipher_changes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_system_manage_snmp_snmp_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/reference_trademark.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/api/reference_trademark.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software//search.html</loc>
+        
+      
+      <lastmod>2024-03-07T13:57:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-collectlogs.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-dashboard.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-manage-accounts.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-manage-initiators.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-manage-storage-clusters.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-manage-vol-access-groups.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-manage-vol-management.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-nodes.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-qos-policies.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-hcc-volumes.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_accounts_work_with_accounts_task.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_add_a_single_initiator.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_add_multiple_initiators.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_add_volumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_create_a_volume_access_group.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_create_an_initiator.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_delete.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_delete_an_initiator.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_edit_an_initiator.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_remove_initiators_from_an_access_group.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_remove_volumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vol_access_group_view_individual_access_group_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_volumes.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_volumes_apply_a_qos_policy.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_volumes_assign_luns_to_fibre_channel_volumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_volumes_deleting_a_qos_policy.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_volumes_purge_a_volume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_volumes_work_with_volumes_task.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vvol_create_a_storage_container.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vvol_delete_a_virtual_volume.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vvol_enable_virtual_volumes.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_manage_vvol_view_virtual_volume_details.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_back_up_a_volume_snapshot_to_openstack_swift.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_back_up_and_restore_volumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_back_up_volume_snapshot_to_solidfire.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_back_up_volume_to_amazon_s3.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_back_up_volume_to_openstack_swift.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_back_up_volume_to_solidfire.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_clone_a_volume_from_a_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_clone_multiple_volumes.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_clone_multiple_volumes_from_a_group_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_configure_custom_protection_domains.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_copy_a_snapshot_schedule.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_create_a_group_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_create_a_snapshot_schedule.html</loc>
+        
+      
+      <lastmod>2022-08-09T11:22:30+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_create_a_volume_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_delete_a_group_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_delete_a_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_delete_a_snapshot_schedule.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_edit_a_snapshot_schedule.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_edit_group_snapshots.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_edit_members_of_group_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_edit_snapshot_retention.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_restore_volume_from_backup_on_amazon_s3.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_restore_volume_from_backup_on_openstack_swift.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_restore_volume_from_backup_on_solidfire.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_roll_back_a_volume_to_a_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_roll_back_volumes_to_a_group_snapshot.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_schedule_a_snapshot_task.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_use_group_snapshots_for_data_protection.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_use_individual_volume_snapshots.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_data_protection_using_volume_snapshots.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_h410s_h610s_install.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_h410s_repl.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_h610s_repl.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/upgrade/task_hcc_update_management_services.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/upgrade/task_hcc_upgrade_element_prechecks.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/upgrade/task_hcc_upgrade_element_software.html</loc>
+        
+      
+      <lastmod>2023-11-29T10:42:29+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/upgrade/task_hcc_upgrade_management_node.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/upgrade/task_hcc_upgrade_storage_firmware.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_hseries_driverepl.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_intro_limit_results_by_using_filters.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_intro_provide_feedback.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_intro_sort_lists.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_intro_use_basic_options_in_the_element_software_ui.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_intro_view_api_activity_in_real_time.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_access_ui.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_add_assets.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_api_find_mgmt_svcs_version.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_api_get_authorizationtouse.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_configure_proxy_server.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_create_netapp_hcc_role_vcenter.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_edit_vcenter_assets.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_enable_activeIQ.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_enable_alerts.html</loc>
+        
+      
+      <lastmod>2022-06-15T12:28:54+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_enable_node_troubleshooting_sessions.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_enable_remote_support_connections.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_install.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_install_add_storage_NIC.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_logs.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_manage_storage_cluster_assets.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_multi_vcenter_config.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_recover.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_run_system_utilities.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_settings.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_ssh_management.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_work_overview.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_work_overview_API.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/mnode/task_mnode_work_overview_UI.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_monitor_fibre_channel_sessions.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_monitor_information_about_system_events.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_monitor_iscsi_sessions.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_monitor_node_performance_activity.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_monitor_system_alerts.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_monitor_volume_performance.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_per_node_access_settings.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_per_node_run_system_tests.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_per_node_run_system_utilities.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_post_deploy_access_the_element_software_user_interface.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_post_deploy_access_the_element_software_user_interface.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_post_deploy_configure_system_options.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_post_deploy_credential_change_ipmi_password.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_post_deploy_credentials.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_psu_repl.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_assign_replication_source_and_target_to_paired_volumes.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_change_the_mode.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_create_a_target_volume_with_read_write_access.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_delete_cluster_pair.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_delete_volume_pairs.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_delete_volume_relationship_after_replication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_manage_volume_relationships.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_pair_cluster_using_mvip.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_pair_cluster_using_pairing_key.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_pair_clusters.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_pair_clusters_using_mvip_or_a_pairing_key.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_pair_volumes.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_pair_volumes_using_a_pairing_key.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_pair_volumes_using_a_volume_id.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_pair_volumes_using_volume_id_or_pairing_key.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_pause_replication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_perform_remote_replication_between_element_clusters.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_plan_cluster_and_volume_pairing.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_validate_the_cluster_pair_connection.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_replication_validate_volume_replication.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_rtfi_deployment_and_install_options.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_rtfi_options_menu.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_rtfi_process.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_add_drives_to_a_cluster.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_cluster_with_fibre_channel_nodes.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_cluster_with_storage_nodes.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hccstorage/task-setup-configure-fqdn-web-ui-access.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_configure_fqdn_web_ui_access.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_create_a_storage_cluster.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_create_a_volume_access_group_for_fibre_channel_clients.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_determine_which_solidfire_components_to_install.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_fc_add_fibre_channel_nodes_to_a_cluster.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_fc_create_a_new_cluster_with_fibre_channel_nodes.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_gh_redirect_set_up_a_management_node.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/setup/task_setup_set_up_an_element_storage_system.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/upgrade/task_sf_upgrade_all_vsphere.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_sfseries_chassisrepl.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_sfseries_driverepl.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/hardware/task_sfseries_psurepl.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_add_labels_to_snapshot_schedules.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_add_labels_to_snapshots.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_create_an_endpoint.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_create_snapmirror_relationship.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_enable_on_the_cluster.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_enable_on_the_volume.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_perform_failback_to_element.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_perform_failback_when_source_volume_exists.html</loc>
+        
+      
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_perform_failover_from_element_cluster.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_performing_failback_when_source_volume_no_longer_exists.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html</loc>
+        
+      
+      <lastmod>2022-07-11T15:35:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_cluster_enable_and_disable_support_access.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_cluster_ntp_configure.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_cluster_ntp_configure_to_listen_for_ntp_broadcasts.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_cluster_ntp_set_the_network_time_protocol.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_cluster_set_the_cluster_full_threshold.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_cluster_terms_disable_the_terms_of_use_banner.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_enable_ldap_authentication.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fc_view_fibre_channel_ports_details.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fips_avoid_mixing_nodes_for_fips_drives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fips_check_the_fips_drive_status.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fips_create_a_cluster_supporting_fips_drives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fips_enable_encryption_at_rest.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fips_enable_fips_140_2_for_https.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fips_enable_the_fips_drives_feature.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fips_identify_nodes_ready_for_fips_drives.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_fips_troubleshoot_the_fips_drive_feature.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_key_set_up_external_key_management.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_mfa_set_up_multi_factor_authentication.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_nodes_adding_a_node_to_a_cluster.html</loc>
+        
+      
+      <lastmod>2023-09-28T04:41:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_nodes_view_individual_node_details.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_rekey_software_ear_master_key.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:42:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_snmp_configure_an_snmp_requestor.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_snmp_configure_an_snmp_usm_user.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_snmp_configure_snmp_traps.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_snmp_view_managed_object_data.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_virtual_add_a_virtual_network.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_virtual_delete_a_virtual_network.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_virtual_edit_a_virtual_network.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_virtual_edit_vrf_vlans.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_system_manage_virtual_enable_virtual_routing_and_forwarding.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_troubleshoot_add_mdss_drives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_troubleshoot_power_down_a_cluster.html</loc>
+        
+      
+      <lastmod>2023-03-01T18:56:16+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_troubleshoot_remove_failed_drives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/storage/task_troubleshoot_remove_mdss_drives.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/try/task_try_overview.html</loc>
+        
+      
+      <lastmod>2022-05-03T08:14:02+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software//upgrade/task_upgrade_element_latest_healthtools.html</loc>
+        
+      
+      <lastmod>2023-10-23T16:47:23+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/try/task_use_demonode.html</loc>
+        
+      
+      <lastmod>2022-12-14T18:30:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/zh-tw/element-software/upgrade/task_vcp_upgrade_plugin.html</loc>
+        
+      
+      <lastmod>2023-11-15T18:58:59+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
