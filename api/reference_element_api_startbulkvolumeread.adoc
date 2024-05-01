@@ -102,7 +102,7 @@ Json物件
  a| 
 屬性
  a| 
-大量Volume工作的Json屬性。
+Json物件格式的名稱-值配對清單。 link:reference_element_api_attributes.html["深入瞭解"]。
  a| 
 Json物件
  a| 

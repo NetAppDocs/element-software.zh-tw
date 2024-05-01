@@ -2762,25 +2762,8 @@
   <block id="8955c5403fcc56c4795abc67006c2b0b" category="list-text">磁碟機用於儲存節點、並儲存叢集的資料。儲存節點包含兩種磁碟機：</block>
   <block id="8f8fb14a764c8702ff72bc56e44d8278" category="list-text">Volume中繼資料磁碟機儲存定義叢集內磁碟區和其他物件的資訊。</block>
   <block id="b6694e983930d8d1f99e5210d26fb9a0" category="list-text">區塊磁碟機儲存應用程式磁碟區的資料區塊。</block>
-  <block id="501b98bdb184166086d9ae33cf2360ff" category="summary">您可以NetApp HCI 從兩種產品的「文件中心與資源」頁面所提供的資源中、深入瞭SolidFire 解如何使用及管理功能齊全的功能。</block>
-  <block id="7431f7a183aa9cfe2910bb761205485d" category="doc">何處可找到產品文件及其他資訊</block>
-  <block id="1c276549c628a78c4d4d38a454a53866" category="paragraph">在文件中心中、您也可以找到硬體安裝與維護、可用的其他內容資源、已知問題與已解決問題的連結、以及最新版本說明等相關資訊。在「資源」頁面上、您可以找到資料表、技術報告、白皮書和影片的連結。</block>
-  <block id="ad0a505756223d68dc11afeae3459351" category="inline-link">資訊文件NetApp HCI</block>
-  <block id="69407a8ea5033d98b78f2bec8e414753" category="list-text"><block ref="69407a8ea5033d98b78f2bec8e414753" category="inline-link-rx"></block></block>
   <block id="c93817bbfc3fab71f5f7ca740a11c847" category="inline-link">「資源」頁面NetApp HCI</block>
   <block id="bc218e71c18c2f809dffb10d3bc2a6e8" category="list-text"><block ref="bc218e71c18c2f809dffb10d3bc2a6e8" category="inline-link-rx"></block></block>
-  <block id="630892b254754255bd524cb995b1de04" category="inline-link">元件及元件12.2文件中心SolidFire</block>
-  <block id="b96d5059df63546231a635bb7440dbd4" category="list-text"><block ref="b96d5059df63546231a635bb7440dbd4" category="inline-link-rx"></block></block>
-  <block id="2a967aa6bf55d76db9823f4232586589" category="inline-link">元件與元件12.0文件中心SolidFire</block>
-  <block id="a19510c49f28b61467b9471fae60229b" category="list-text"><block ref="a19510c49f28b61467b9471fae60229b" category="inline-link-rx"></block></block>
-  <block id="69695b2e4c70193011d7b658125e9906" category="inline-link">支援元件11.8文件中心SolidFire</block>
-  <block id="6eda8130d86d6c395a1615f6ff53c74a" category="list-text"><block ref="6eda8130d86d6c395a1615f6ff53c74a" category="inline-link-rx"></block></block>
-  <block id="cad93526483d33b276e378bc7f3deaea" category="inline-link">元件11.7文件中心SolidFire</block>
-  <block id="a4cba27ccc43d00c0bd0c00a74974b97" category="list-text"><block ref="a4cba27ccc43d00c0bd0c00a74974b97" category="inline-link-rx"></block></block>
-  <block id="275b3db58911d0480b2a907dde87b422" category="inline-link">元件與元件11.5文件中心SolidFire</block>
-  <block id="319d00f06f0a5e8e99d071d51fe10259" category="list-text"><block ref="319d00f06f0a5e8e99d071d51fe10259" category="inline-link-rx"></block></block>
-  <block id="de71a625454de99f599dff258c53dbb8" category="inline-link">「資源」頁面SolidFire</block>
-  <block id="b81ee69dc01cdd048b45d27758827feb" category="list-text"><block ref="b81ee69dc01cdd048b45d27758827feb" category="inline-link-rx"></block></block>
   <block id="5d126f98f7544109714680790eb3cd44" category="summary">您可以建立一組相關磁碟區的群組快照、以保留每個磁碟區中繼資料的時間點複本。未來您可以使用群組快照做為備份或復原、將磁碟區群組的狀態還原為先前的狀態。</block>
   <block id="caba5859d8a5830210ab32116e96cb50" category="inline-xref-macro">建立群組快照</block>
   <block id="038ce08b0492a45b3222a9d8e13caaec" category="list-text"><block ref="038ce08b0492a45b3222a9d8e13caaec" category="inline-xref-macro-rx"></block></block>
@@ -5451,21 +5434,6 @@
   <block id="c4504691cfa27072597d8e1e7a152f3f" category="list-text">每個磁碟區最多可有64個存取群組。</block>
   <block id="edce8794351fe0da7c485a7f83c05807" category="list-text">IQN或WWPN只能屬於一個Volume存取群組。</block>
   <block id="a5b84d0f8afc511e223ac72609e42b47" category="list-text">對於光纖通道叢集、單一磁碟區最多可屬於四個存取群組。</block>
-  <block id="a824a1096e208a26b70c360a0da8b545" category="summary">您可以在SolidFire NetApp SolidFire VMware文件中心深入瞭解與VMware支援系統相關的工作、以及NetApp SolidFire 資源頁面上提供的資源。</block>
-  <block id="4bb047f8c530785002e490ef17fa725e" category="doc">何處可找到其他資訊</block>
-  <block id="34515669e219305dec5f0b81dbef8b1e" category="paragraph">您也可以在文件中心中找到硬體安裝與維護、其他可用內容資源、已知問題與已解決問題的連結、以及最新版本說明等相關資訊。</block>
-  <block id="662a5ad8c6ae651da9220e35d3f16a18" category="list-text">* NetApp SolidFire 《資源》頁面*</block>
-  <block id="c39c68328651c80dceb0f36d050a7109" category="paragraph">提供有關Element軟體的資源、包括影片內容和技術報告的連結。</block>
-  <block id="4b3e0d4570a278a1af3fe11601c01d47" category="inline-link">《All Flash儲存資源》（All Flash Storage Resources）SolidFire</block>
-  <block id="c16fe39e6b501b8347fb1dd55ba312c6" category="paragraph"><block ref="c16fe39e6b501b8347fb1dd55ba312c6" category="inline-link-rx"></block></block>
-  <block id="4a9c1435e759b5c6dd543fceea09ea44" category="list-text">* NetApp SolidFire 產品資料中心*</block>
-  <block id="028b8f4057634cf2f3954305a74dc779" category="paragraph">提供硬體安裝與維護、可用的其他內容資源、已知問題與已解決問題的連結、以及最新版本說明等相關資訊。</block>
-  <block id="99876372740307113d18bf0a8023fbbf" category="inline-link">元件11.3文件中心SolidFire</block>
-  <block id="248dd8632f43e9f4128a672b09c790eb" category="paragraph"><block ref="248dd8632f43e9f4128a672b09c790eb" category="inline-link-rx"></block></block>
-  <block id="3bb4917b4da580a3845e4291809fe942" category="list-text">* https://kb.netapp.com/app/answers/answer_view/a_id/1000941/loc/en_US[NetApp SolidFire 《支援元件已知問題》*</block>
-  <block id="e4245eba0095196ee103a1119cfa1d87" category="paragraph">提供Element軟體目前和舊版的已知問題清單。</block>
-  <block id="454d39955c29112d76b1bd6072c2dcdf" category="list-text">* https://kb.netapp.com/app/answers/answer_view/a_id/1000933[NetApp SolidFire 解決的問題*</block>
-  <block id="e864e5177c5d98d5b8250b49810e1194" category="paragraph">提供Element軟體目前和舊版中已解決的問題清單。</block>
   <block id="ce901b945342cdd0d7ba447214c227f7" category="summary">資料保護功能包括遠端複寫、Volume Snapshot、Volume Cloning、Protection Domain、以及採用雙Helix技術的高可用度。</block>
   <block id="4fcbbf46c76894b32e527dee3ace85d8" category="paragraph">元素儲存資料保護包括下列概念：</block>
   <block id="6c475b6accd823d482c613521889419e" category="list-text"><block ref="95e714e28ad34f47d4347ab1ee96f11e" category="inline-xref-macro-rx"></block></block>
@@ -5958,7 +5926,6 @@
   <block id="5ffce89810db963197914e99fa41565d" category="paragraph">可執行指令碼的名稱。如果未指定指令碼名稱、則必須輸入金鑰和URL才能存取元素儲存節點。指令碼會在主要節點上執行、然後將金鑰和URL傳回指令碼、以便聯絡本機Web伺服器。</block>
   <block id="9b479e5e1be54276f914b4a04af63458" category="paragraph">指令碼參數</block>
   <block id="2101debca20755a4bf2792764750c8ad" category="paragraph">要傳遞至指令碼的Json參數。</block>
-  <block id="42c56c6f739ec986c961aefb154dcc6b" category="paragraph">大量Volume工作的Json屬性。</block>
   <block id="0acdd0217985f8c75d0e461ea4d214bc" category="paragraph">asyncdle</block>
   <block id="b8e143ae62ce68a06396ba6b5fc3f89a" category="paragraph">要檢查完成的非同步程序ID。</block>
   <block id="3c6e0b8a9c15224a8228b9a98ca1531d" category="paragraph">金鑰</block>
@@ -11993,4 +11960,5 @@
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">自 2023 年 11 月起、您無法使用 NetApp 混合雲控制或 REST API 來開始元件升級、因為簽署金鑰憑證（私有和公有）已於 2023 年 11 月 5 日到期。您可以依照知識庫文件中所述的因應措施來解決此問題<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主動移除屬於叢集一部分的磁碟機的方法。您可以在減少叢集容量或準備更換即將結束服務壽命的磁碟機時、使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在叢集中的其他節點上建立區塊資料的第三個複本、並等待同步完成、然後再將磁碟機移至「可用」清單。「可用」清單中的磁碟機會從系統中完全移除、而且沒有執行中的服務或作用中資料。</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">儲存節點支援的韌體版本</block>
+  <block id="3f42de2af50c4c43d7f7e9e5b724d437" category="paragraph">Json物件格式的名稱-值配對清單。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
 </blocks>
