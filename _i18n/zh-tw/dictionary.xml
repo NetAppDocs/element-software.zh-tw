@@ -11960,5 +11960,9 @@
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">自 2023 年 11 月起、您無法使用 NetApp 混合雲控制或 REST API 來開始元件升級、因為簽署金鑰憑證（私有和公有）已於 2023 年 11 月 5 日到期。您可以依照知識庫文件中所述的因應措施來解決此問題<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主動移除屬於叢集一部分的磁碟機的方法。您可以在減少叢集容量或準備更換即將結束服務壽命的磁碟機時、使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在叢集中的其他節點上建立區塊資料的第三個複本、並等待同步完成、然後再將磁碟機移至「可用」清單。「可用」清單中的磁碟機會從系統中完全移除、而且沒有執行中的服務或作用中資料。</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">儲存節點支援的韌體版本</block>
-  <block id="3f42de2af50c4c43d7f7e9e5b724d437" category="paragraph">Json物件格式的名稱-值配對清單。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
+  <block id="13917e4f5287cba6dc668dc1de806783" category="paragraph">JSON 物件格式的名稱值配對清單。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
+  <block id="327364f278eb177dcf0494e22c2aa941" category="paragraph">區塊升級</block>
+  <block id="33e725144c3cab7870356fc4239ecbe1" category="paragraph">故障會封鎖升級。可能值：</block>
+  <block id="590996f1f1dee9768eb0e638aefabed3" category="list-text">是：故障會封鎖升級。</block>
+  <block id="79acae02e5f768f11852bf8bab56f648" category="list-text">否：故障不會封鎖升級。</block>
 </blocks>

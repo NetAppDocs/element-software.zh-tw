@@ -107,20 +107,23 @@ xref:reference_element_api_fault.adoc[故障]
   "result": {
     "faults": [
       {
-        "clusterFaultID": 1,
-        "code": "notUsingLACPBondMode",
+        "blocksUpgrade": false,
+        "clusterFaultID": 3,
+        "code": "driveAvailable",
         "data": null,
-        "date": "2016-04-26T14:57:04.275286Z",
-        "details": "Bond1G interfaces found not using LACP bond mode. Nodes not set to LACP bond mode: {1,2,4,5}",
+        "date": "2024-04-03T22:22:56.660275Z",
+        "details": "Node ID 1 has 6 available drive(s).",
         "driveID": 0,
         "driveIDs": [],
+        "externalSource": "",
+        "networkInterface": "",
         "nodeHardwareFaultID": 0,
-        "nodeID": 0,
-        "resolved": false,
-        "resolvedDate": "",
+        "nodeID": 1,
+        "resolved": true,
+        "resolvedDate": "2024-04-03T22:24:54.598693Z",
         "serviceID": 0,
-        "severity": "bestPractice",
-        "type": "cluster"
+        "severity": "warning",
+        "type": "drive"
       },
       {
         "clusterFaultID": 9,
