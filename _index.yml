@@ -1,0 +1,94 @@
+---
+indexpage:
+  title: 零件與元件軟體文件SolidFire
+  summary: 包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire這個統一化叢集是以NetApp Element
+    單一儲存系統的形式、以各種功能為其提供管理功能。
+  keywords: solidfire, all-flash, storage, hardware, install, maintain, element software,
+    esos, element cli
+  lead: 包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire使用元素介面、 API 或其他管理工具、您可以使用
+    NetApp Element 軟體來管理這些儲存資源叢集。本網站包含 Element 軟體 12.5 和 12.7 的文件。
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 產品總覽
+      url: "/concepts/concept_intro_product_overview.html"
+    - title: 版本資訊
+      url: "/concepts/concept_rn_relatedrn_element.html"
+    - title: 新增功能
+      url: "/concepts/concept_rn_whats_new_element.html"
+    - title: 需求
+      url: "/setup/concept_requirements_overview.html"
+    - title: 設定總覽
+      url: "/setup/concept_setup_overview.html"
+  - title: 安裝及維護硬體
+    links:
+    - title: H410S和H610S硬體資訊
+      url: "/hardware/concept_h410s_h610s_info.html"
+    - title: SF系列硬體資訊
+      url: "/hardware/concept_sfseries_info.html"
+    - title: 返回原廠映像資訊
+      url: "/hardware/concept_rtfi_configure.html"
+    - title: NetApp H系列儲存節點支援的韌體版本
+      url: "/hardware/fw_storage_nodes.html"
+  - title: 管理儲存設備
+    links:
+    - title: 使用Element軟體UI
+      url: "/storage/index.html"
+    - title: 使用NetApp混合雲控管
+      url: "/hccstorage/index.html"
+    - title: 使用 Element 軟體 API
+      url: "/api/index.html"
+    - title: 使用vCenter Server的元素外掛程式
+      url: https://docs.netapp.com/us-en/vcp/
+    - title: 使用NetApp SolidFire Active IQ 解決方案
+      url: https://docs.netapp.com/us-en/solidfire-active-iq/
+    - title: 使用管理節點
+      url: "/mnode/task_mnode_work_overview.html"
+  - title: 使用整合工具（需要登入）
+    links:
+    - title: Element CLI
+      url: https://mysupport.netapp.com/site/tools/tool-eula/elem-cli
+    - title: Element PowerShell工具
+      url: https://mysupport.netapp.com/site/tools/tool-eula/elem-powershell-tools
+    - title: 元素SDK（Java、.NET、Python）
+      url: https://mysupport.netapp.com/site/products/all/details/netapphci-solidfire-elementsoftware/tools-tab
+    - title: 以測試套件為設計目標SolidFire
+      url: https://github.com/solidfire/postman
+    - title: 儲存複製介面卡SolidFire
+      url: https://mysupport.netapp.com/site/products/all/details/elementsra/downloads-tab
+    - title: HRO SolidFire
+      url: https://mysupport.netapp.com/site/products/all/details/solidfire-vro/downloads-tab
+    - title: VSS Provider SolidFire
+      url: https://mysupport.netapp.com/site/products/all/details/solidfire-vss-provider/downloads-tab
+  - title: 解決方案
+    links:
+    - title: NetApp解決方案
+      url: https://docs.netapp.com/us-en/netapp-solutions/index.html
+  - title: 示範與教學課程
+    links:
+    - title: NetApp University SolidFire 技術訓練（需登入）
+      url: https://netapp.sabacloud.com/Saba/Web_spf/NA1PRD0047/common/searchresults/solidfire/LEARNINGEVENT%2COFFERINGTEMPLATE%2CCERTIFICATION%2CCURRICULUM%2COFFERING%2CPACKAGE
+    - title: 如何安裝及擴充NetApp SolidFire 的叢集（影片）
+      url: http://media.netapp.com/detail/video/5778540099001?autoStart=true&page=1&q=solidfire
+    - title: NetApp SolidFire 安裝（影片）
+      url: https://youtu.be/YKGK5nNSL68
+  - title: 部落格與社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/AFF-NVMe-EF-Series-and-SolidFire-Discussions/bd-p/flash-storage-systems-discussions
+    - title: 取得協助的地方
+      url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
+  - title: 舊版
+    links:
+    - title: Element 12.3.x文件
+      url: https://docs.netapp.com/us-en/element-software-123/index.html
+    - title: Element 12.2.1文件
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63945&language=en-US
+    - title: Element 12.2文件
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63593&language=en-US
+    - title: Element 12.0.1文件
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63946&language=en-US
+    - title: Element 12.0文件
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63368&language=en-US
+    - title: Element 11.8.2及更早版本的文件
+      url: "/element-earlierversions.html"
