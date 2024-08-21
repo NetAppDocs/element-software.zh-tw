@@ -308,9 +308,7 @@
   <block id="248c4c4df12448050266854cd21cd105" category="paragraph"><block ref="248c4c4df12448050266854cd21cd105" category="inline-link-rx"></block></block>
   <block id="02917d00c6e974040b113eec406f933d" category="paragraph">執行NetApp Element 此軟體的系統支援SnapMirror功能、可透過NetApp ONTAP ®系統複製及還原Snapshot複本。使用這項技術的主要原因是NetApp HCI 將功能還原至ONTAP 還原。端點包括ONTAP ：功能不一、ONTAP Select 功能不一、Cloud Volumes ONTAP 功能不一。請參閱TR-4641 NetApp HCI 《資料保護》。</block>
   <block id="37a9cf4fd8039696452f63fb22f06182" category="inline-link">NetApp技術報告4641：NetApp HCI 《資料保護》</block>
-  <block id="0d1d0fbe66b21bae2aea1a5d0d6702a6" category="paragraph"><block ref="0d1d0fbe66b21bae2aea1a5d0d6702a6" category="inline-link-rx"></block></block>
   <block id="0ae5c767cabcaa90f5848cabc66f8aa9" category="inline-link">利用NetApp HCI 功能性、ONTAP 功能性和融合式基礎架構打造您的Data Fabric</block>
-  <block id="44a581c88c6dfb73dc308815b438e1cd" category="list-text"><block ref="44a581c88c6dfb73dc308815b438e1cd" category="inline-link-rx"></block></block>
   <block id="5865b8968ae6d9762765ab7ce3d35fc2" category="inline-link">在不同時複寫NetApp Element 功能的情況下ONTAP</block>
   <block id="b00bc340461aac1deb8b1a1e1382cf0c" category="list-text"><block ref="b00bc340461aac1deb8b1a1e1382cf0c" category="inline-link-rx"></block></block>
   <block id="0966f90576505112fde1e6aae06fe6db" category="summary">複寫完成且不再需要磁碟區配對關係之後、您可以刪除磁碟區關係。</block>
@@ -1060,7 +1058,6 @@
   <block id="23fd7202fd22f55991e760ad0c321e8c" category="list-text">確認已為叢集中的每個節點建立傳輸協定端點。</block>
   <block id="856c3e7758eb11b79c64f0354ae8b417" category="admonition">vSphere還需要其他組態工作。請參閱《VMware vSphere Virtual Volumes for SolidFire VMware Storage組態指南》_、在vCenter中註冊VASA Provider、建立及管理VVOL資料存放區、以及根據原則管理儲存設備。</block>
   <block id="ef9f3ff37cf3150278a11138bf61416f" category="inline-link">《VMware vSphere Virtual Volumes for SolidFire VMware儲存組態指南》</block>
-  <block id="324fa7b39b8d75e0757adf9be397bf42" category="paragraph"><block ref="324fa7b39b8d75e0757adf9be397bf42" category="inline-link-rx"></block></block>
   <block id="d1f3348004e8a355335cb19ad2503f19" category="summary">視部署NetApp HCI 了NetApp或NetApp SolidFire 的組織安全政策而定、變更認證或密碼通常是安全實務的一部分。在變更密碼之前、您應該瞭解部署中其他軟體元件的影響。</block>
   <block id="495c10200cf923b1c1357005661bbf33" category="paragraph">如果您變更NetApp HCI 了某個元件的驗證資料、請SolidFire 參閱下表、瞭解決對其他元件的影響。</block>
   <block id="3047c2c50c27a756ae7a0ae876255b8f" category="inline-image-macro">NetApp SolidFire 產品元件</block>
@@ -5450,7 +5447,6 @@
   <block id="99494896be55aff6e412f1ef0dd3ca4c" category="list-text"><block ref="1f3c51825f286c5250086b5376a2ce29" category="inline-xref-macro-rx"></block></block>
   <block id="e56841e919b23e1af6ae192bcf82f545" category="list-text"><block ref="b85ef421159ab16d832d7cee8cebee71" category="inline-xref-macro-rx"></block></block>
   <block id="e73fbad1f8418c19025f40cdb1b36fc8" category="inline-link">TR-4741：NetApp Element 《The》、《The》、《The》、《The》、《</block>
-  <block id="f791c5d353073cb419247e62af596e8d" category="paragraph">如需詳細資訊、請參閱<block ref="248edd64302142b459fba4dec31bdb70" category="inline-link-rx"></block>。</block>
   <block id="ff5dd3355a0a16a7f2fc734ab2229851" category="section-title">叢集之間的同步與非同步複寫</block>
   <block id="697cef1ff0b4e36164796a8a21f78548" category="paragraph">對於執行NetApp Element Real-Software的叢集、即時複寫功能可讓您快速建立Volume資料的遠端複本。</block>
   <block id="0389e516b3bf2b6b34e9309ede779a02" category="paragraph">您可以將儲存叢集與最多四個其他儲存叢集配對。您可以從叢集配對中的任一叢集同步或非同步複寫磁碟區資料、以進行容錯移轉和容錯回復。</block>
@@ -11990,4 +11986,8 @@
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp社群</block>
   <block id="213686afc3803be7caa09348765467fe" category="sidebar">取得協助的地方</block>
   <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2及更早版本的文件</block>
+  <block id="47fd1428a184377839b3521d9b89b20c" category="paragraph">如需更多資訊、請參閱<block ref="5fe7d084aafda4fb5c53715a85948ffe" category="inline-link-rx"></block>。</block>
+  <block id="3d08f19c985682eb2a632e36184cedd2" category="paragraph"><block ref="3d08f19c985682eb2a632e36184cedd2" category="inline-link-rx"></block></block>
+  <block id="b456d131470ee117b6ff900f949b80c5" category="paragraph"><block ref="b456d131470ee117b6ff900f949b80c5" category="inline-link-rx"></block></block>
+  <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
 </blocks>
