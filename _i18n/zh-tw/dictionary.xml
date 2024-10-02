@@ -11964,7 +11964,6 @@
   <block id="bfb37ae14420b32b4119e40e73553257" category="paragraph">外掛程式 ZIP 的自訂 URL 。</block>
   <block id="8e0d59cc781c5557d1fdc81fdff04d8f" category="paragraph">NetApp Element 遠端外掛程式擴充點隨即出現：</block>
   <block id="5770384eddfc0ac7f73f0f6242a52b50" category="paragraph">NetApp Element 組態與管理擴充點隨即出現：</block>
-  <block id="518a4b6a1346e1ad096698dafab107cf" category="sidebar">包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire使用元素介面、 API 或其他管理工具、您可以使用 NetApp Element 軟體來管理這些儲存資源叢集。本網站包含 Element 軟體 12.5 和 12.7 的文件。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">安裝及維護硬體</block>
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列儲存節點支援的韌體版本</block>
@@ -11990,5 +11989,9 @@
   <block id="3d08f19c985682eb2a632e36184cedd2" category="paragraph"><block ref="3d08f19c985682eb2a632e36184cedd2" category="inline-link-rx"></block></block>
   <block id="b456d131470ee117b6ff900f949b80c5" category="paragraph"><block ref="b456d131470ee117b6ff900f949b80c5" category="inline-link-rx"></block></block>
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
-  <block id="da48b15f3631c91c5b2ce7d522d3a734" category="sidebar">SolidFire 與 Element 軟體文件 12.5 與 12.7</block>
+  <block id="30486cdfdde2444e4151845599ac5bf5" category="inline-link">Element 12.5 文件</block>
+  <block id="7923ddc778825f970802562c563718d7" category="list-text"><block ref="7923ddc778825f970802562c563718d7" category="inline-link-rx"></block></block>
+  <block id="cafb4d76dc2f8321d0134957e0bf3f5d" category="sidebar">包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire使用元素介面、 API 或其他管理工具、您可以使用 NetApp Element 軟體來管理這些儲存資源叢集。本網站包含 Element 軟體的文件。</block>
+  <block id="ab8cbf6e7f3310f1970fbef383696645" category="sidebar">零件與元件軟體12.7文件SolidFire</block>
+  <block id="f46f40c99ef0e96fdc79a2f007e1939a" category="sidebar">SolidFire 與 Element 軟體文件 12.7.</block>
 </blocks>
