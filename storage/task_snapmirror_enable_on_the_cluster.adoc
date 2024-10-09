@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_enable_on_the_cluster.html 
 sidebar: sidebar 
-keywords: snapmirror, enable, cluster, ui, manually enable 
+keywords: element, snapmirror, enable, cluster, ui, manually enable 
 summary: 您必須透過NetApp Element UI手動啟用叢集層級的SnapMirror功能。系統預設會停用SnapMirror功能、而且不會在新安裝或升級時自動啟用。啟用SnapMirror功能是一次性的組態工作。 
 ---
 = 在叢集上啟用SnapMirror

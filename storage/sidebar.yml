@@ -318,7 +318,7 @@ entries:
           url: "/storage/reference_replication_volume_pairing_messages.html"
         - title: Volume配對警告
           url: "/storage/reference_replication_volume_pairing_warnings.html"
-  - title: 在元素ONTAP 叢集和叢集之間使用SnapMirror複寫
+  - title: 在元素和 ONTAP 叢集之間使用 SnapMirror 複寫（元素 UI ）
     url: "/storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html"
     entries:
     - title: SnapMirror概述
@@ -356,6 +356,50 @@ entries:
           url: "/storage/task_snapmirror_performing_failback_when_source_volume_no_longer_exists.html"
       - title: 執行ONTAP 從功能性到元件的傳輸或一次性移轉
         url: "/storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html"
+  - title: NetApp Element 軟體與 ONTAP 之間的複寫（ ONTAP CLI ）
+    entries:
+    - title: 總覽
+      url: "/storage/element-replication-index.html"
+    - title: 工作流程
+      url: "/storage/concept-element-replication-workflow.html"
+    - title: 在Element軟體中啟用SnapMirror
+      entries:
+      - title: 在元素叢集上啟用SnapMirror
+        url: "/storage/task-element-replication-enable-snapmirror-cluster.html"
+      - title: 在元素來源Volume上啟用SnapMirror
+        url: "/storage/task-element-replication-enable-snapmirror-source-volume.html"
+      - title: 建立SnapMirror端點
+        url: "/storage/task-element-replication-create-snapmirror-endpoint.html"
+    - title: 設定複寫關係
+      entries:
+      - title: 建立複寫工作排程
+        url: "/storage/task-element-replication-create-replication-job-schedule.html"
+      - title: 自訂複寫原則
+        entries:
+        - title: 建立自訂複寫原則
+          url: "/storage/concept-element-replication-create-custom-replication-policy.html"
+        - title: 定義原則的規則
+          url: "/storage/task-element-replication-define-rule-policy.html"
+      - title: 建立複寫關係
+        entries:
+        - title: 建立從元素來源到ONTAP 目的地的關係
+          url: "/storage/task-element-replication-create-replication-relationship.html"
+        - title: 建立ONTAP 從來源到元素目的地的關係
+          url: "/storage/task-element-replication-create-relationship-element-destination.html"
+      - title: 初始化複寫關係
+        url: "/storage/task-element-replication-initialize-replication-relationship.html"
+    - title: 從SnapMirror DR目的地Volume提供資料
+      entries:
+      - title: 使目的地Volume可寫入
+        url: "/storage/task-element-replication-make-destination-volume-writeable.html"
+      - title: 設定目的地Volume以進行資料存取
+        url: "/storage/concept-element-replication-configure-destination-volume-data-access.html"
+      - title: 重新啟動原始來源Volume
+        url: "/storage/task-element-replication-reactivate-original-source-volume.html"
+    - title: 手動更新複寫關係
+      url: "/storage/task-element-replication-update-replication-relationship-manually.html"
+    - title: 重新同步複寫關係
+      url: "/storage/task-element-replication-resynchronize-data-protection-relationship.html"
   - title: 備份與還原磁碟區
     url: "/storage/task_data_protection_back_up_and_restore_volumes.html"
     entries:

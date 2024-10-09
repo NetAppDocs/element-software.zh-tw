@@ -1,0 +1,60 @@
+---
+permalink: storage/task-element-replication-initialize-replication-relationship.html 
+sidebar: sidebar 
+keywords: ontap, cli, initialize, replication, relationship 
+summary: 對於所有關係類型、初始化會執行基準傳輸：它會建立來源 Volume 的快照複本、然後將該複本及其參照的所有資料區塊傳輸至目的地 Volume 。 
+---
+= 初始化複寫關係
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於所有關係類型、初始化會執行 _baseline transfer_ ：它會建立來源 Volume 的快照複本、然後將該複本及其參照的所有資料區塊傳輸至目的地 Volume 。
+
+.開始之前
+* 包含要複寫之磁碟區的元素節點必須可供ONTAP 支援的項目。
+* 必須已啟用元素Volume才能進行SnapMirror複寫。
+* 如果您使用「鏡射資料保險箱」原則類型、則必須設定 SnapMirror 標籤、才能複寫元素快照複本。
++
+[NOTE]
+====
+您只能在或中執行此工作link:concept_snapmirror_labels.html["Element 軟體 Web UI"]link:../api/concept_element_api_snapshots_overview.html["API方法"]。
+
+====
+
+
+.關於這項工作
+您必須以格式指定元素來源路徑 `<hostip:>/lun/<name>`、其中「 'lun' 」是實際字串「 'lun' 」、 `_name_` 是元素 Volume 的名稱。
+
+初始化可能會很耗時。您可能想要在非尖峰時間執行基準傳輸。
+
+[NOTE]
+====
+如果ONTAP 從某個來源到某個元素目的地的關係初始化因為任何原因而失敗、即使您修正問題（例如無效的LUN名稱）、它仍會繼續失敗。因應措施如下：
+
+. 刪除關係。
+. 刪除元素目的地Volume。
+. 建立新的元素目的地Volume。
+. 建立並初始化ONTAP 從來源資訊到元素目的地Volume的新關係。
+
+
+====
+.步驟
+. 初始化複寫關係：
++
+`snapmirror initialize -source-path <hostip:>/lun/<name> -destination-path <SVM:volume|cluster://SVM/volume>`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+以下範例初始化 IP 位址為 10.0.0.11 的來源磁碟區與上的目的地磁碟區 `volA_dst`之間的 `svm_backup`關係 `0005`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror initialize -source-path 10.0.0.11:/lun/0005 -destination-path svm_backup:volA_dst
+----
+

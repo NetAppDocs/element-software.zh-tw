@@ -1,0 +1,108 @@
+---
+permalink: storage/task-element-replication-define-rule-policy.html 
+sidebar: sidebar 
+keywords: ontap, cli, define, rule, policy 
+summary: 對於具有「 mirror -Vault 」原則類型的自訂原則、您必須定義至少一個規則、以決定在初始化和更新期間傳輸哪些快照複本。您也可以使用「mirror保存庫」原則類型來定義預設原則的規則。 
+---
+= 定義原則的規則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於具有「鏡射資料保險箱」原則類型的自訂原則、您必須定義至少一個規則、以決定在初始化和更新期間傳輸哪些快照複本。您也可以使用「mirror-Vault」原則類型來定義預設原則的規則。
+
+.關於這項工作
+每個具有「鏡射資料保險箱」原則類型的原則都必須有一個規則、指定要複寫哪些快照複本。例如，規則 "`bi-月刊 `" 表示只應複寫指派 SnapMirror 標籤 "`bi-月刊 `" 的快照複本。您可以在設定元素快照複本時指定 SnapMirror 標籤。
+
+每種原則類型都與一或多個系統定義的規則相關聯。當您指定原則類型時、這些規則會自動指派給該原則。下表顯示系統定義的規則。
+
+|===
+
+
+| 系統定義的規則 | 用於原則類型 | 結果 
+
+
+ a| 
+SM_已 建立
+ a| 
+非同步鏡射鏡射鏡射、鏡射儲存庫
+ a| 
+由 SnapMirror 建立的快照複本會在初始化與更新時傳輸。
+
+
+
+ a| 
+每日
+ a| 
+鏡射保存庫
+ a| 
+在初始化和更新時、會在來源上傳輸具有 SnapMirror 標籤「 daily 」的新快照複本。
+
+
+
+ a| 
+每週
+ a| 
+鏡射保存庫
+ a| 
+在初始化和更新時、會在來源上傳輸新的快照複本、並將 SnapMirror 標籤設定為「每週」。
+
+
+
+ a| 
+每月
+ a| 
+鏡射保存庫
+ a| 
+在初始化和更新時、會在來源上傳輸含有 SnapMirror 標籤「每月」的新快照複本。
+
+|===
+您可以視需要為預設或自訂原則指定其他規則。例如：
+
+* 對於預設 `MirrorAndVault`原則、您可以建立名為「每月兩次」的規則、將來源上的快照複本與「每月兩次」 SnapMirror 標籤配對。
+* 對於「鏡射資料保險箱」原則類型的自訂原則、您可以建立名為「每週兩次」的規則、將來源上的快照複本與「每週兩次」 SnapMirror 標籤配對。
+
+
+.步驟
+. 定義原則規則：
++
+`snapmirror policy add-rule -vserver _SVM_ -policy _policy_for_rule_ -snapmirror-label _snapmirror-label_ -keep _retention_count_`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+下列範例將具有 SnapMirror 標籤的規則新增 `bi-monthly`至預設 `MirrorAndVault`原則：
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy add-rule -vserver svm1 -policy MirrorAndVault -snapmirror-label bi-monthly -keep 6
+----
++
+下列範例將具有 SnapMirror 標籤的規則新增 `bi-weekly`至自訂 `my_snapvault`原則：
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy add-rule -vserver svm1 -policy my_snapvault -snapmirror-label bi-weekly -keep 26
+----
++
+下列範例將具有 SnapMirror 標籤的規則新增 `app_consistent`至自訂 `Sync`原則：
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy add-rule -vserver svm1 -policy Sync -snapmirror-label app_consistent -keep 1
+----
++
+接著、您可以從符合此 SnapMirror 標籤的來源叢集複寫快照複本：
+
++
+[listing]
+----
+cluster_src::> snapshot create -vserver vs1 -volume vol1 -snapshot snapshot1 -snapmirror-label app_consistent
+----
+

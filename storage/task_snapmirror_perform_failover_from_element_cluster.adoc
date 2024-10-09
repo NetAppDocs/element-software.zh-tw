@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_perform_failover_from_element_cluster.html 
 sidebar: sidebar 
-keywords: failover, cluster, perform a failover, snapmirror 
+keywords: element, ui, failover, cluster, perform a failover, snapmirror 
 summary: 您可以從元素叢集執行容錯移轉、以便目的地端的主機能夠讀取/寫入目的地磁碟區。在從元素叢集執行容錯移轉之前、您必須中斷SnapMirror關係。 
 ---
 = 從元素叢集執行容錯移轉

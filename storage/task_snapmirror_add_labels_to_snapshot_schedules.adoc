@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_add_labels_to_snapshot_schedules.html 
 sidebar: sidebar 
-keywords: snapmirror labels, add labels to snapshot schedules, snapmirror policies 
+keywords: element, ui, snapmirror, labels, schedules, policies 
 summary: 您可以將SnapMirror標籤新增至快照排程、以確保已套用SnapMirror原則。您可以從現有的SnapMirror關係對話方塊或NetApp ONTAP System Manager檢視可用的標籤。 
 ---
 = 在快照排程中新增SnapMirror標籤

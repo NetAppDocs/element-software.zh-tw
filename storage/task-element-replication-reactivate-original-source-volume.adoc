@@ -1,0 +1,163 @@
+---
+permalink: storage/task-element-replication-reactivate-original-source-volume.html 
+sidebar: sidebar 
+keywords: ontap,cli, reactivate, original, source, volume 
+summary: 當您不再需要從目的地提供資料時、可以重新建立來源與目的地磁碟區之間的原始資料保護關係。 
+---
+= 重新啟動原始來源Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您不再需要從目的地提供資料時、可以重新建立來源與目的地磁碟區之間的原始資料保護關係。
+
+.關於這項工作
+以下程序假設原始來源Volume中的基準線完整無缺。如果基準不完整、您必須先建立並初始化您要從中處理資料的磁碟區與原始來源磁碟區之間的關係、然後再執行程序。
+
+您必須以格式指定元素來源路徑 `<hostip:>/lun/<name>`、其中「 'lun' 」是實際字串「 'lun' 」、 `name` 是元素 Volume 的名稱。
+
+從 ONTAP 9 。 4 開始、當您從 ONTAP 目的地提供資料時所建立的 LUN 快照複本、會在元素來源重新啟動時自動複寫。
+
+複寫規則如下：
+
+* 僅支援iSCSI LUN。
+* 您無法將ONTAP 多個LUN從一個實體磁碟區複寫到一個元素磁碟區。
+* 您無法將LUN從ONTAP 一個實體磁碟區複寫到多個元素磁碟區。
+
+
+.步驟
+. 刪除原始資料保護關係：
++
+`snapmirror delete -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -policy <policy>`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+以下範例刪除原始來源磁碟區（ IP 位址為 10.0.0.11 ）與您在上提供資料的磁碟區 `volA_dst`之間的 `svm_backup`關係 `0005`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror delete -source-path 10.0.0.11:/lun/0005 -policy MirrorLatest -destination-path svm_backup:volA_dst
+----
+. 反轉原始資料保護關係：
++
+`snapmirror resync -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -policy <policy>`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+雖然重新同步不需要基準傳輸、但這可能很耗時。您可能想要在非尖峰時間執行重新同步。
+
++
+以下範例將原始來源 Volume （ IP 位址為 10.0.0.11 ）與您在上提供資料的磁碟區 `volA_dst`之間的 `svm_backup`關係反轉 `0005`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror resync -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005 -policy MirrorLatest
+----
+. 更新反轉的關係：
++
+`snapmirror update -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+[NOTE]
+====
+如果來源和目的地上不存在一般快照複本、則命令會失敗。用於 `snapmirror initialize` 重新初始化關係。
+
+====
++
+以下範例更新了您要從、、 `svm_backup`和原始來源磁碟區（ `0005` IP 位址 10.0.0.11 ）提供資料的磁碟區之間的關係 `volA_dst`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror update -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 停止針對反向關係進行排程的轉帳：
++
+`snapmirror quiesce -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+以下範例會停止您要在、、 `svm_backup`和原始來源磁碟區之間傳輸資料的排程傳輸、此磁碟 `volA_dst`區 `0005`的 IP 位址為 10.0.0.11 ：
+
++
+[listing]
+----
+cluster_dst::> snapmirror quiesce -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 停止針對反向關係進行中的轉帳：
++
+`snapmirror abort -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+以下範例會停止您要從、、 `svm_backup`和原始來源 Volume `0005` （ IP 位址 10.0.0.11 ）提供資料的磁碟區之間持續傳輸 `volA_dst`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror abort -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 打破反向關係：
++
+`snapmirror break -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+以下範例打破了您要從、、 `svm_backup`和原始來源 Volume `0005` （ IP 位址 10.0.0.11 ）提供資料的磁碟區之間的關係 `volA_dst`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror break -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 刪除反轉的資料保護關係：
++
+`snapmirror delete -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -policy <policy>`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+以下範例刪除原始來源磁碟區（ IP 位址為 10.0.0.11 ）與您在上提供資料的磁碟區 `volA_dst`之間的 `svm_backup`反向關係 `0005`：
+
++
+[listing]
+----
+cluster_src::> snapmirror delete -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005 -policy MirrorLatest
+----
+. 重新建立原始資料保護關係：
++
+`snapmirror resync -source-path <hostip:>/lun/<name> -destination-path <SVM:volume>|<cluster://SVM/volume>`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+以下範例重新建立 IP 位址 10.0.0.11 的原始來源磁碟區與原始目的地磁碟區 `volA_dst`之間的 `svm_backup`關係 `0005`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror resync -source-path 10.0.0.11:/lun/0005 -destination-path svm_backup:volA_dst
+----
+
+
+.完成後
+使用 `snapmirror show`命令驗證是否已建立 SnapMirror 關係。如需完整的命令語法、請參閱手冊頁。

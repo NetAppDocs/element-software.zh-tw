@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_enable_on_the_volume.html 
 sidebar: sidebar 
-keywords: snapmirror, enable, volume, ui, manually enable 
+keywords: element, snapmirror, enable, volume, ui, manually 
 summary: 您必須在Element UI的磁碟區上啟用SnapMirror。如此可將資料複寫到指定ONTAP 的支援區。這是執行NetApp Element SnapMirror之用的SnapMirror軟體叢集管理員的權限、可用來控制磁碟區。 
 ---
 = 在磁碟區上啟用SnapMirror

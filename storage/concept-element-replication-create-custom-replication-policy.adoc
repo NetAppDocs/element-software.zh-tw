@@ -1,0 +1,73 @@
+---
+permalink: storage/concept-element-replication-create-custom-replication-policy.html 
+sidebar: sidebar 
+keywords: ontap, cli, create, custom, replication, policy, relationship, 
+summary: 如果關聯的預設原則不適用、您可以建立自訂複寫原則。 
+---
+= 建立自訂複寫原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在建立複寫關聯時使用預設或自訂原則。對於自訂的統一複寫原則、您必須定義一或多個 _ 規則 _ 、以決定在初始化和更新期間傳輸哪些快照複本。
+
+如果關聯的預設原則不適用、您可以建立自訂複寫原則。例如、您可能想要壓縮網路傳輸中的資料、或是修改 SnapMirror 嘗試傳輸快照複本的次數。
+
+.關於這項工作
+複寫原則的_policy類型_決定其支援的關係類型。下表顯示可用的原則類型。
+
+[cols="2*"]
+|===
+
+
+| 原則類型 | 關係類型 
+
+
+ a| 
+非同步鏡射
+ a| 
+SnapMirror災難恢復
+
+
+
+ a| 
+鏡射保存庫
+ a| 
+統一化複寫
+
+|===
+.步驟
+. 建立自訂複寫原則：
++
+`snapmirror policy create -vserver _SVM_ -policy policy -type async-mirror|mirror-vault -comment _comment_ -tries _transfer_tries_ -transfer-priority low|normal -is-network-compression-enabled true|false`
+
++
+如需完整的命令語法、請參閱手冊頁。
+
++
+從 ONTAP 9 5 開始、您可以使用參數來指定建立 SnapMirror 同步關係通用快照複本排程的排程 `-common-snapshot-schedule`。根據預設、 SnapMirror 同步關係的一般快照複本排程為一小時。您可以為 SnapMirror 同步關係的快照複製排程指定 30 分鐘到 2 小時的值。
+
++
+以下範例為SnapMirror DR建立自訂複寫原則、以啟用資料傳輸的網路壓縮：
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy create -vserver svm1 -policy DR_compressed -type async-mirror -comment “DR with network compression enabled” -is-network-compression-enabled true
+----
++
+下列範例建立統一化複寫的自訂複寫原則：
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy create -vserver svm1 -policy my_unified -type mirror-vault
+----
+
+
+.完成後
+對於「鏡射資料保險箱」原則類型、您必須定義規則、以決定在初始化和更新期間傳輸哪些快照複本。
+
+使用 `snapmirror policy show`命令驗證是否已建立 SnapMirror 原則。如需完整的命令語法、請參閱手冊頁。

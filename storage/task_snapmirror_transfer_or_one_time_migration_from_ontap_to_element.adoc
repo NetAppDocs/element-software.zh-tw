@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html 
 sidebar: sidebar 
-keywords: transfer, perform, source volume, snapmirror, dr, disaster recovery, one-time migration 
+keywords: element, ui, transfer, perform, source, volume, snapmirror, dr, disaster, recovery, one-time, migration 
 summary: 一般而言、當您使用SnapMirror從SolidFire 執行NetApp Element 各種功能的支援資料儲存叢集到ONTAP 支援各種功能的軟體進行災難恢復時、元素就是來源ONTAP 、而不只是目的地。不過ONTAP 、在某些情況下、由於來源和元素是目的地、所以不能使用此功能。 
 ---
 = 執行ONTAP 從功能性到元件的傳輸或一次性移轉

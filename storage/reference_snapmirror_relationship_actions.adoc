@@ -1,7 +1,7 @@
 ---
 permalink: storage/reference_snapmirror_relationship_actions.html 
 sidebar: sidebar 
-keywords: relationships, snapmirror, actions, configure relationships 
+keywords: element, ui, relationships, snapmirror, actions, configure 
 summary: 您可以從Data Protection（資料保護）索引標籤的SnapMirror Relationships（SnapMirror關係）頁面設定關係。此處說明「動作」圖示的選項。 
 ---
 = SnapMirror關係行動

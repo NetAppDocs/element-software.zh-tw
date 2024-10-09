@@ -1,0 +1,241 @@
+---
+permalink: storage/element-replication-index.html 
+sidebar: sidebar 
+keywords: ontap, cli, replication, element, software, ontap, business continuity, snapmirror, replicate, snapshot, copies, volume 
+summary: 您可以使用 SnapMirror 將元件磁碟區的快照複本複製到 ONTAP 目的地、確保元件系統上的業務持續運作。 
+---
+= NetApp Element 軟體與 ONTAP 綜覽之間的複寫（ ONTAP CLI ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 SnapMirror 將元件磁碟區的快照複本複製到 ONTAP 目的地、確保元件系統上的業務持續運作。萬一Element站台發生災難、您可以從ONTAP 該系統將資料提供給用戶端、然後在恢復服務時重新啟動Element系統。
+
+從 ONTAP 9 4 開始、您可以將在 ONTAP 節點上建立的 LUN 快照複本複寫回元素系統。您可能在Element站台當機期間建立LUN、或是使用LUN將資料從ONTAP 無法修復的軟體移轉至Element軟體。
+
+如果適用下列情況、您應該使用元素ONTAP 進行支援：
+
+* 您想要使用最佳實務做法、而非探索每個可用選項。
+* 您想要使用ONTAP 的是無法使用系統管理程式或自動化指令碼工具的功能、而是使用功能不全的命令列介面（CLI）。
+* 您使用iSCSI將資料提供給用戶端。
+
+
+如果您需要額外的 SnapMirror 組態或概念性資訊，請參閱link:https://docs.netapp.com/us-en/ontap/data-protection-disaster-recovery/index.html["資料保護總覽"^]。
+
+
+
+== 關於元素與ONTAP 元素之間的複寫
+
+從 ONTAP 9 3 開始、您可以使用 SnapMirror 將元素 Volume 的快照複本複製到 ONTAP 目的地。萬一Element站台發生災難、您可以從ONTAP 該系統將資料提供給用戶端、然後在恢復服務時重新啟動Element來源Volume。
+
+從 ONTAP 9 4 開始、您可以將在 ONTAP 節點上建立的 LUN 快照複本複寫回元素系統。您可能在Element站台當機期間建立LUN、或是使用LUN將資料從ONTAP 無法修復的軟體移轉至Element軟體。
+
+
+
+=== 資料保護關係類型
+
+SnapMirror提供兩種類型的資料保護關係。對於每種類型、 SnapMirror 會在初始化或更新關係之前、先建立元素來源磁碟區的快照複本：
+
+* 在 _ 災難恢復（ DR ） _ 資料保護關係中、目的地 Volume 僅包含由 SnapMirror 建立的快照複本、當主要站台發生災難時、您可以繼續提供資料。
+* 在 _ 長期保留 _ 資料保護關係中、目的地 Volume 包含由 Element 軟體建立的時間點快照複本、以及 SnapMirror 建立的快照複本。例如、您可能想保留在 20 年內建立的每月快照複本。
+
+
+
+
+=== 預設原則
+
+第一次叫用SnapMirror時、它會執行從來源磁碟區到目的地磁碟區的_基準傳輸_。SnapMirror原則_定義基礎的內容及任何更新。
+
+您可以在建立資料保護關係時使用預設或自訂原則。原則類型 _ 決定要包含哪些快照複本、以及要保留多少份複本。
+
+下表顯示預設原則。使用 `MirrorLatest`原則建立傳統的 DR 關係。使用 `MirrorAndVault`或 `Unified7year`原則建立統一化複寫關係、在同一個目的地磁碟區上設定 DR 和長期保留。
+
+[cols="25,25,50"]
+|===
+
+
+| 原則 | 原則類型 | 更新行為 
+
+
+ a| 
+MirrorLatest
+ a| 
+非同步鏡射
+ a| 
+傳輸由 SnapMirror 建立的快照複本。
+
+
+
+ a| 
+MirrorAndVault
+ a| 
+鏡射保存庫
+ a| 
+傳輸由 SnapMirror 建立的快照複本、以及自上次更新後所製作的任何最新快照複本、前提是這些快照具有 SnapMirror 標籤「 daily 」或「 'taily' 」。
+
+
+
+ a| 
+Unified7年
+ a| 
+鏡射保存庫
+ a| 
+傳輸由 SnapMirror 建立的快照複本、以及自上次更新後所製作的任何最新快照複本、前提是這些快照具有 SnapMirror 標籤「 daily 」、「 'mony' 」或「 monly' 。
+
+|===
+[NOTE]
+====
+如需 SnapMirror 原則的完整背景資訊，包括使用原則的指引，請參閱link:https://docs.netapp.com/us-en/ontap/data-protection-disaster-recovery/index.html["資料保護總覽"^]。
+
+====
+
+
+=== 瞭解SnapMirror標籤
+
+每個具有「鏡射資料保險箱」原則類型的原則都必須有一個規則、指定要複寫哪些快照複本。例如，規則 "daily" 表示只應複寫指派 SnapMirror 標籤 "daily" 的快照複本。您可以在設定元素快照複本時指定 SnapMirror 標籤。
+
+
+
+=== 從元素來源叢集複寫到ONTAP 一個目的地叢集
+
+您可以使用 SnapMirror 將元素 Volume 的快照複本複寫到 ONTAP 目的地系統。萬一Element站台發生災難、您可以從ONTAP 該系統將資料提供給用戶端、然後在恢復服務時重新啟動Element來源Volume。
+
+元素Volume大致相當ONTAP 於一個實體LUN。當元素軟體與ONTAP SnapMirror之間的資料保護關係初始化時、SnapMirror會建立一個名稱為Element Volume的LUN。如果LUN符合元素ONTAP 複寫的要求、SnapMirror會將資料複寫到現有的LUN。
+
+複寫規則如下：
+
+* 僅一個元素磁碟區的資料可包含在其中。ONTAP
+* 您無法將資料從ONTAP 一個現象磁碟區複製到多個元素磁碟區。
+
+
+
+
+=== 從ONTAP 一個來源叢集複寫到一個元素目的地叢集
+
+從 ONTAP 9 4 開始、您可以將在 ONTAP 系統上建立的 LUN 快照複本複寫回元素 Volume ：
+
+* 如果元素來源和ONTAP 目的地之間已存在SnapMirror關係、當您從目的地處理資料時所建立的LUN、會在重新啟動來源時自動複寫。
+* 否則、您必須在ONTAP 來源叢集與元素目的地叢集之間建立及初始化SnapMirror關係。
+
+
+複寫規則如下：
+
+* 複寫關係必須具有「as同步 鏡射」類型的原則。
++
+不支援「mirror-Vault」類型的原則。
+
+* 僅支援iSCSI LUN。
+* 您無法將ONTAP 多個LUN從一個實體磁碟區複寫到一個元素磁碟區。
+* 您無法將LUN從ONTAP 一個實體磁碟區複寫到多個元素磁碟區。
+
+
+
+
+=== 先決條件
+
+您必須先完成下列工作、才能在Element和ONTAP 支援中心之間設定資料保護關係：
+
+* Element叢集必須執行NetApp Element 版本10.1或更新版本的支援。
+* 這個不正常的叢集必須執行的是更新版本的版本。ONTAP ONTAP
+* SnapMirror必須已獲得ONTAP 關於整個叢集的授權。
+* 您必須在元素ONTAP 和功能區叢集上設定足夠大的磁碟區、才能處理預期的資料傳輸。
+* 如果您使用「鏡射資料保險箱」原則類型、則必須設定 SnapMirror 標籤、才能複寫元素快照複本。
++
+[NOTE]
+====
+您只能在或中執行此工作link:concept_snapmirror_labels.html["Element 軟體 Web UI"]link:../api/concept_element_api_snapshots_overview.html["API方法"]。
+
+====
+* 您必須確保連接埠5010可用。
+* 如果您預期可能需要移動目的地Volume、則必須確保來源與目的地之間存在全網狀網路連線。元素來源叢集上的每個節點都必須能夠與ONTAP 目的地叢集上的每個節點通訊。
+
+
+
+
+=== 支援詳細資料
+
+下表顯示ONTAP 元素到不完整備份的支援詳細資料。
+
+[cols="25,75"]
+|===
+
+
+| 資源或功能 | 支援詳細資料 
+
+
+ a| 
+SnapMirror
+ a| 
+* 不支援SnapMirror還原功能。
+*  `MirrorAllSnapshots`不支援和 `XDPDefault`原則。
+* 不支援「'Vault'」原則類型。
+* 不支援系統定義的規則「'all_source_snapshots'」。
+* 「鏡射-保存庫」原則類型僅支援從Element軟體複寫至ONTAP使用「as同步 鏡射」來複寫ONTAP 從現象複寫至元素軟體。
+*  `-schedule`和 `-prefix`選項 `snapmirror policy add-rule`不受支援。
+*  `-preserve`和 `-quick-resync`選項 `snapmirror resync`不受支援。
+* 儲存效率不會保留下來。
+* 不支援連出和串聯資料保護部署。
+
+
+
+
+ a| 
+ONTAP
+ a| 
+* 支援從支援的功能為從支援的功能為2、9.4和元件3、3開始。ONTAP Select ONTAP
+* 支援從支援的功能為從支援的功能為0、9.5和Element 11.0。Cloud Volumes ONTAP ONTAP
+
+
+
+
+ a| 
+元素
+ a| 
+* Volume大小限制為8 TiB。
+* Volume區塊大小必須為512位元組。不支援4K位元組區塊大小。
+* Volume大小必須為1個mib的倍數。
+* 不會保留Volume屬性。
+* 要複寫的快照複本數量上限為 30 個。
+
+
+
+
+ a| 
+網路
+ a| 
+* 每次傳輸只允許一個TCP連線。
+* 必須將元素節點指定為IP位址。不支援DNS主機名稱查詢。
+* 不支援IPspaces。
+
+
+
+
+ a| 
+SnapLock
+ a| 
+不支援支援的支援。SnapLock
+
+
+
+ a| 
+FlexGroup
+ a| 
+不支援支援的支援。FlexGroup
+
+
+
+ a| 
+SVM DR
+ a| 
+不支援SVM DR組態中的SVM Volume。ONTAP
+
+
+
+ a| 
+MetroCluster
+ a| 
+不支援使用支援以非支援形式組態顯示的資料量。ONTAP MetroCluster
+
+|===

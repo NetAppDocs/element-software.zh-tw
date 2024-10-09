@@ -105,7 +105,7 @@ SnapMirror原生在NetApp ONTAP 的支援控制器上執行、並整合到元素
 
 從元件10.3和ONTAP 畫面9.4系統開始、您可以在ONTAP 特定使用案例中、以有限的功能、將來源於畫面的資料複寫到元素磁碟區。
 
-如需詳細資訊、請參閱ONTAP 《關於我們的資料》。
+如需更多資訊、請參閱 link:../storage/element-replication-index.html["NetApp Element 軟體與 ONTAP 之間的複寫（ ONTAP CLI ）"]。
 
 
 

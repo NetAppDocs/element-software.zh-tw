@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_perform_failback_when_source_volume_exists.html 
 sidebar: sidebar 
-keywords: failback, perform, source volume, snapmirror, ui 
+keywords: element, ui, failback, perform, source volume, snapmirror 
 summary: 您可以使用NetApp Element 這個UI重新同步原始來源Volume並容錯回復。此程序適用於原始來源Volume仍存在的情況。 
 ---
 = 當來源磁碟區仍存在時、請執行容錯回復
