@@ -66,7 +66,8 @@ NOTE: 系統會提示您使用NetApp支援認證登入。
 
 == 儲存韌體
 
-* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.175.0.html["儲存裝置韌體套件 2.175.0 版本資訊"^] _新_
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.182.0.html["儲存裝置韌體套件 2.182.0 版本資訊"^]_new_
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.175.0.html["儲存裝置韌體套件 2.175.0 版本資訊"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["儲存韌體套裝組合2.164.0版本說明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.150.html["儲存韌體產品組合2.150版本說明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.146.html["儲存韌體產品組合2.146版本說明"^]

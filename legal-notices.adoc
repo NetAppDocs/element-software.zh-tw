@@ -65,6 +65,7 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 * link:./media/mgmt-216.pdf["管理服務2.16注意事項（NetApp Element 適用於vCenter Server 4.6.29的VMware外掛程式）"^]
 * link:./media/mgmt-214.pdf["管理服務2.14注意事項NetApp Element （適用於vCenter Server 4.5.42的VMware外掛程式）"^]
 * link:./media/mgmt-213.pdf["管理服務注意事項2.13（NetApp Element 適用於vCenter Server 4.5.42的VMware外掛程式）"^]
+* link:./media/storage_firmware_bundle_2.182.0_notices.pdf["儲存韌體套件 2.182.0 注意事項"^]
 * link:./media/storage_firmware_bundle_2.175.0_notices.pdf["儲存韌體套件 2.175.0 注意事項"^]
 * link:./media/storage_firmware_bundle_2.164.0_notices.pdf["儲存韌體產品組合2.164.0注意事項"^]
 * link:./media/storage_firmware_bundle_2.150_notices.pdf["儲存韌體產品組合2.150注意事項"^]

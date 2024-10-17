@@ -11878,7 +11878,6 @@
   <block id="54db42757b5d75d2f660dc70f35850cf" category="inline-link">vCenter Plug-in 5.1 版本資訊</block>
   <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
   <block id="a35c2c2e602b46918d896beca9bdff98" category="inline-link">儲存裝置韌體套件 2.175.0 版本資訊</block>
-  <block id="148d031a2764f3cbbb70b4cb00ae67a0" category="list-text"><block ref="386fd72128f804329f22ad31b9e25673" category="inline-link-rx"></block> _新_</block>
   <block id="758831bd0271b3c8b1bf3b7bf6466060" category="list-text"><block ref="758831bd0271b3c8b1bf3b7bf6466060" category="inline-link-rx"></block></block>
   <block id="24786d5c66286f468be80b26d8f4126b" category="list-text"><block ref="24786d5c66286f468be80b26d8f4126b" category="inline-link-rx"></block></block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
@@ -12268,4 +12267,17 @@
   <block id="f12dbb93fdd805bce49a897d2f47cd7b" category="sidebar">自訂複寫原則</block>
   <block id="ca0c3dd7dca9f636af3209d526098e1e" category="sidebar">建立複寫關係</block>
   <block id="66eec66df56998b2d5cdc13fee06aac5" category="sidebar">從SnapMirror DR目的地Volume提供資料</block>
+  <block id="bd64065ecca4148bdf3bf66b4b2539a6" category="inline-link">儲存裝置韌體套件 2.182.0 版本資訊</block>
+  <block id="ba0f437a79ec02cf62fe41bfbbf34a36" category="list-text"><block ref="afef68c46bd7a604cd2e94320dc2fe4a" category="inline-link-rx"></block>_new_</block>
+  <block id="386fd72128f804329f22ad31b9e25673" category="list-text"><block ref="386fd72128f804329f22ad31b9e25673" category="inline-link-rx"></block></block>
+  <block id="c99fba0db719381ede00d894486894a0" category="cell">* 儲存韌體套件 2.182.0*</block>
+  <block id="f60525d0f867ed7f15f5ebf94bb879df" category="cell">2024-10-17</block>
+  <block id="40d02a54e5711497609651e0d06eb4ab" category="cell">3B14</block>
+  <block id="c55a468007fe87cc9f913dec692ea9eb" category="cell">4.01.07</block>
+  <block id="9365eb81d2e69739b5c5c0a6bda52315" category="cell">GDC5A02Q</block>
+  <block id="1a9f7cf4eade0ea391d219a7acbeea22" category="cell">11093A10</block>
+  <block id="a789af7a3f0be8e6b5b27e8f2c902f38" category="cell">110B3A10</block>
+  <block id="7a1a50b4f214356238b1fdd7473fb635" category="cell">NAT3.6</block>
+  <block id="878e10f3ecb83396704ecc4b39ad7aa2" category="inline-link-macro">儲存韌體套件 2.182.0 注意事項</block>
+  <block id="d087896b0989dfd81184775fcc160ca1" category="list-text"><block ref="d087896b0989dfd81184775fcc160ca1" category="inline-link-macro-rx"></block></block>
 </blocks>
