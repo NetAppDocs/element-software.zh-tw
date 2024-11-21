@@ -11948,9 +11948,7 @@
   <block id="976b368b923346c8ea4ccc71e72749f5" category="inline-link-macro">管理服務 2.25.42 注意事項（適用於 VMware vCenter Server 5.2.9 的 NetApp Element 外掛程式）</block>
   <block id="4d67cefe38dafa645f353279e4fbc37b" category="list-text"><block ref="4d67cefe38dafa645f353279e4fbc37b" category="inline-link-macro-rx"></block></block>
   <block id="d3c4a89052a32dd9783dd119f30d6d47" category="inline-link">vCenter Plug-in 5.3 版本資訊</block>
-  <block id="0c21440ced3ddae10d1eea32870fdf02" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block> _新_</block>
   <block id="6bd87cf3d55c2ead3ab585e965bea4db" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block></block>
-  <block id="bef71f962ff7a233f3e8439eeb8dac70" category="list-text">您正在升級至適用於 vCenter Server 5.3 、 5.2 、 5.1 或 5.0 的 Element 外掛程式。</block>
   <block id="1b72ac6198c042d0bd992d1bb6e9d9bd" category="paragraph">您正在執行的管理節點已經是 <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> 至12.3.x版或更新版本。</block>
   <block id="98e5a822cb59ab0389d49ffe93acad7a" category="paragraph">vCenter 外掛程式登錄頁面隨即出現：</block>
   <block id="dfc8b4f16eed3f1e78f9b406c473dd25" category="paragraph">外掛程式 JSON 檔案的自訂 URL 。</block>
@@ -12280,4 +12278,10 @@
   <block id="7a1a50b4f214356238b1fdd7473fb635" category="cell">NAT3.6</block>
   <block id="878e10f3ecb83396704ecc4b39ad7aa2" category="inline-link-macro">儲存韌體套件 2.182.0 注意事項</block>
   <block id="d087896b0989dfd81184775fcc160ca1" category="list-text"><block ref="d087896b0989dfd81184775fcc160ca1" category="inline-link-macro-rx"></block></block>
+  <block id="c4891769f65182d5fc5a37494844c496" category="inline-link">vCenter Plug-in 5.4 版本資訊</block>
+  <block id="230e88f97688d3fb971fe1a76f5b2a13" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block>_new_</block>
+  <block id="ce90fd614158a5c7e0a42a5908fa1cd7" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block></block>
+  <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">管理服務 2.26.30 注意事項（適用於 VMware vCenter Server 5.4.1 的 NetApp Element 外掛程式）</block>
+  <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
+  <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">您正在升級至 Element Plug-in for vCenter Server 5.4 ， 5.3 ， 5.2 ， 5.1 或 5.0 。</block>
 </blocks>
