@@ -12142,7 +12142,6 @@
   <block id="df857cb0f08264825fefa55878d286ce" category="paragraph">下列範例使用預設原則建立統一複寫關係<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block>：</block>
   <block id="97fedbfaebdbcfe68bdc2db0e517c79e" category="paragraph">下列範例使用原則建立統一化的複寫關係<block ref="4403b8bed8329a1a1ba838d590fec221" prefix=" " category="inline-code"></block>：</block>
   <block id="ea71844b20a2af889daba2027461836d" category="paragraph">下列範例使用自訂原則建立統一化的複寫關係<block ref="7d06ce743afb94fd7161f90acba5f66a" prefix=" " category="inline-code"></block>：</block>
-  <block id="6559e429258efad47fd0bec3573ac5e4" category="summary">您必須先建立SnapMirror端點、才能建立複寫關係。您只能在元素軟體 Web UI 或 API 方法中執行此工作。</block>
   <block id="dca879936ace6cbca538e4b03fc5f880" category="paragraph">您必須先建立SnapMirror端點、才能建立複寫關係。您只能在元素軟體 Web UI 或使用中執行此工作<block ref="9641b9cb3efec10f08ee0a17e27a64d6" category="inline-link-macro-rx"></block>。</block>
   <block id="410d41840bfe4c79d1cbcbad970381ce" category="paragraph">您必須在元素叢集上啟用SnapMirror。</block>
   <block id="5759c23faeaf56d63eb3bea8d1a94825" category="list-text">在「*建立新的端點*」對話方塊中、輸入ONTAP 叢集管理IP位址。</block>
@@ -12172,7 +12171,6 @@
   <block id="20cc35bf4f534abf7c8e15480973e9cf" category="paragraph">下列範例將具有 SnapMirror 標籤的規則新增<block ref="2a44471da66622bfc5b82888ae83a7dc" prefix=" " category="inline-code"></block>至自訂<block ref="1d5de0bd3d87489e1362714791579989" prefix=" " category="inline-code"></block>原則：</block>
   <block id="b0eff705a5813714cb73d5b4afee11b9" category="paragraph">下列範例將具有 SnapMirror 標籤的規則新增<block ref="b17c9a947d4e38d7975718380fab6b7a" prefix=" " category="inline-code"></block>至自訂<block ref="d8e87c0927539672f54462c837be0b7f" prefix=" " category="inline-code"></block>原則：</block>
   <block id="f0f637ca20caa61073cee1a4ce7e8dfc" category="paragraph">接著、您可以從符合此 SnapMirror 標籤的來源叢集複寫快照複本：</block>
-  <block id="2914b577684d6c7f339e6fda22c3487f" category="summary">您必須在元素叢集上啟用SnapMirror、才能建立複寫關係。您只能在元素軟體 Web UI 或 API 方法中執行此工作。</block>
   <block id="28d0537c10dbc179674ef31f5b5a2bab" category="doc">在元素叢集上啟用SnapMirror</block>
   <block id="c229b2f8b428f342bff7cf24ff75f1b2" category="inline-link-macro">API方法</block>
   <block id="0b8667f1f4456982a27ec231d1a84da6" category="paragraph">您必須在元素叢集上啟用SnapMirror、才能建立複寫關係。您只能在元素軟體 Web UI 或使用中執行此工作<block ref="08aeb663b3e636fd7806da6cd0761563" category="inline-link-macro-rx"></block>。</block>
@@ -12284,4 +12282,6 @@
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">管理服務 2.26.30 注意事項（適用於 VMware vCenter Server 5.4.1 的 NetApp Element 外掛程式）</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
   <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">您正在升級至 Element Plug-in for vCenter Server 5.4 ， 5.3 ， 5.2 ， 5.1 或 5.0 。</block>
+  <block id="ec584e493ebc5976220074c48288215d" category="summary">您必須先建立SnapMirror端點、才能建立複寫關係。您只能在元素軟體 Web UI 或 API 方法中執行此工作。</block>
+  <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">您必須在元素叢集上啟用SnapMirror、才能建立複寫關係。您只能在元素軟體 Web UI 或 API 方法中執行此工作。</block>
 </blocks>
