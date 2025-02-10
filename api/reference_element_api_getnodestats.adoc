@@ -80,18 +80,38 @@ xref:reference_element_api_nodestats.adoc[節點統計資料]
 {
    "id" : 1,
    "result" : {
-     "nodeStats" : {
-       "cBytesIn" : 9725856460404,
-       "cBytesOut" : 16730049266858,
-       "cpu" : 98,
-       "mBytesIn" : 50808519,
-       "mBytesOut" : 52040158,
-       "networkUtilizationCluster" : 84,
-       "networkUtilizationStorage" : 0,
-       "sBytesIn" : 9725856460404,
-       "sBytesOut" : 16730049266858,
-       "timestamp" : "2012-05-16T19:14:37.167521Z",
-       "usedMemory" : 41195708000
+     "nodeStats": {
+       "cBytesIn": 1579657943924,
+       "cBytesOut": 1683056745816,
+       "count": 119529,
+       "cpu": 0,
+       "cpuTotal": 56289,
+       "mBytesIn": 475476878,
+       "mBytesOut": 269270423,
+       "networkUtilizationCluster": 0,
+       "networkUtilizationStorage": 0,
+       "nodeHeat": {
+         "primaryTotalHeat": 0.00098,
+         "recentPrimaryTotalHeat": 0.00099,
+         "recentTotalHeat": 0.00099,
+         "totalHeat": 0.00098
+       },
+       "readLatencyUSecTotal": 10125300382,
+       "readOps": 15640075,
+       "sBytesIn": 1579657943924,
+       "sBytesOut": 1683056745816,
+       "ssLoadHistogram": {
+         "Bucket0": 4873,
+         "Bucket1To19": 6301620,
+         "Bucket20To39": 396452,
+         "Bucket40To59": 142,
+         "Bucket60To79": 0,
+         "Bucket80To100": 0
+       },
+       "timestamp": "2024-03-04T20:13:22.105428Z",
+       "usedMemory": 106335510528,
+       "writeLatencyUSecTotal": 7314512535,
+       "writeOps": 59154830
      }
    }
 }

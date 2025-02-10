@@ -19,6 +19,7 @@ Element軟體叢集API方法可讓您管理儲存叢集的組態和拓撲、以�
 * xref:reference_element_api_clearclusterfaults.adoc[ClearClusterFaults]
 * xref:reference_element_api_createclusterinterfacepreference.adoc[建立ClusterInterfacePreference]
 * xref:reference_element_api_deleteclusterinterfacepreference.adoc[刪除ClusterInterfacePreference]
+* xref:reference_element_api_disablefeature.adoc[DisableFeature]
 * xref:reference_element_api_enablefeature.adoc[啟用功能]
 * xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity]
 * xref:reference_element_api_getclusterfullthreshold.adoc[GetClusterFullThreshold]

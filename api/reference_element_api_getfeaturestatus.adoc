@@ -19,6 +19,7 @@ summary: 您可以使用GetFeatureStatus方法擷取叢集功能的狀態。
 
 此方法具有下列輸入參數：
 
+[cols="1a,3a,1a,1a,1a"]
 |===
 | 名稱 | 說明 | 類型 | 預設值 | 必要 
 
@@ -28,10 +29,11 @@ summary: 您可以使用GetFeatureStatus方法擷取叢集功能的狀態。
  a| 
 叢集功能的狀態。如果未提供任何值、系統會傳回所有功能的狀態。可能值：
 
-* Vvols：擷取VVols叢集功能的狀態。
-* SnapMirror：擷取SnapMirror複寫叢集功能的狀態。
-* FIPS：擷取FIPS 140-2加密的HTTPS通訊狀態。
-* FpsDrives：擷取FIPS 140-2磁碟機加密功能的狀態。
+* `Vvols`：檢索 VVols 羣集功能的狀態。
+* `SnapMirror`：檢索 SnapMirror 複製羣集功能的狀態。
+* `Fips`：擷取 FIPS 140-2 加密的 HTTPS 通訊功能狀態。
+* `FipsDrives`：擷取 FIPS 140-2 磁碟機加密功能的狀態。
+* `VolumeLoadBalanceOnActualIOPS`：檢索層平衡在實際 IOPS 上的狀態，而不是最小 IOPS 功能。從元件 12.8 開始提供。
 
  a| 
 字串
@@ -105,6 +107,10 @@ Json物件陣列
             {
                 "enabled": true,
                 "feature": "FipsDrives"
+            },
+            {
+                "enabled": true,
+                "feature": "VolumeLoadBalanceOnActualIOPS"
             }
         ]
     }

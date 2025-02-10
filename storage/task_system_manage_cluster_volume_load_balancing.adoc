@@ -1,0 +1,43 @@
+---
+permalink: storage/task_system_manage_cluster_volume_load_balancing.html 
+sidebar: sidebar 
+keywords: cluster, volume, volumes, load, balancing, actual, IOPS 
+summary: 從元素 12.8 開始，您可以啟用 Volume Load Balancing ，根據每個磁碟區的實際 IOPS 來平衡各節點的磁碟區，而非 QoS 原則中設定的最小 IOPS 。 
+---
+= 啟用和停用 Volume Load Balancing
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+從元素 12.8 開始，您可以使用 Volume Load Balancing ，根據每個磁碟區的實際 IOPS 來平衡各節點的磁碟區，而非 QoS 原則中設定的最小 IOPS 。您可以使用元素 UI 或 API 來啟用和停用「 Volume Load Balancing 」（預設為停用）。
+
+.步驟
+. 選擇 * 叢集 * > * 設定 * 。
+. 在「叢集特定」區段中，變更 Volume Load Balancing 的狀態：
++
+[role="tabbed-block"]
+====
+.啟用 Volume Load Balancing
+--
+選取 * 啟用實際 IOPS 的負載平衡 * ，並確認您的選擇。
+
+--
+.停用 Volume 負載平衡：
+--
+選取 * 停用實際 IOPS 的負載平衡 * ，並確認您的選擇。
+
+--
+====
+. 您也可以選擇 * 報告 * > * 總覽 * 來確認狀態變更，以平衡實際 IOPS 。您可能必須向下捲動叢集健全狀況資訊，才能檢視狀態。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* link:../api/reference_element_api_enablefeature.html["使用 API 啟用 Volume Load Balancing"]
+* https://docs.netapp.com/us-en/element-software/api/reference_element_api_disablefeature.html["使用 API 停用 Volume Load Balancing"]
+* link:../hccstorage/task-hcc-qos-policies.html["建立及管理Volume QoS原則"]
+

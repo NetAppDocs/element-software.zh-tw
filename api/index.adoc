@@ -46,6 +46,4 @@ summary: 瞭NetApp Element 解如何使用Element API來管理不實的儲存叢
 
 == 如需詳細資訊、請參閱
 
-* https://www.netapp.com/data-storage/solidfire/documentation/["「All Flash儲存資源」頁面SolidFire"^]
-* http://docs.netapp.com/sfe-122/index.jsp["元件與元件軟體文件中心SolidFire"^]
-
+http://docs.netapp.com/sfe-122/index.jsp["元件與元件軟體文件中心SolidFire"^]

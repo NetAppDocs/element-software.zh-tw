@@ -60,7 +60,7 @@ xref:reference_element_api_clusterinfo.adoc[叢集資訊]
 [listing]
 ----
 {
-    "id": 1,
+    "id": null,
     "result": {
         "clusterInfo": {
             "attributes": {},
@@ -71,27 +71,28 @@ xref:reference_element_api_clusterinfo.adoc[叢集資訊]
             "encryptionAtRestState": "disabled",
             "ensemble": [
                 "10.10.10.32",
+                "10.10.10.33",
                 "10.10.10.34",
                 "10.10.10.35",
-                "10.10.10.36",
-                "10.10.10.37"
+                "10.10.10.36"
             ],
             "mvip": "10.10.11.225",
-            "mvipInterface": "team1G",
-            "mvipNodeID": 3,
+            "mvipInterface": "Bond1G",
+            "mvipNodeID": 1,
             "mvipVlanTag": "0",
             "name": "ClusterName",
             "repCount": 2,
-            "softwareEncryptionAtRestState": "enabled",
+            "softwareEncryptionAtRestState": "disabled",
             "supportedProtectionSchemes": [
                 "doubleHelix"
             ],
             "svip": "10.10.10.111",
-            "svipInterface": "team10G",
-            "svipNodeID": 3,
+            "svipInterface": "Bond10G",
+            "svipNodeID": 1,
             "svipVlanTag": "0",
-            "uniqueID": "psmp",
-            "uuid": "2f575d0c-36fe-406d-9d10-dbc1c306ade7"
+            "uniqueID": "ahf7",
+            "uuid": "bcfd04b6-9151-4b3a-a6fa-bca22dd145cd",
+            "volumeLoadBalanceOnActualIopsState": "enabled"
         }
     }
 }

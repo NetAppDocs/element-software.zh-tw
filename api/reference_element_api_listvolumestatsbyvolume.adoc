@@ -79,45 +79,70 @@ xref:reference_element_api_volumestats.adoc[Volume統計資料] 陣列
   "id": 1,
   "result": {
     "volumeStats": [
-      {
-        "accountID": 3,
-        "actualIOPS": 0,
-        "asyncDelay": null,
-        "averageIOPSize": 4096,
-        "burstIOPSCredit": 30000,
-        "clientQueueDepth": 0,
-        "desiredMetadataHosts": null,
-        "latencyUSec": 0,
-        "metadataHosts": {
-          "deadSecondaries": [],
-          "liveSecondaries": [
-              16
-          ],
-          "primary": 12
+        {
+            "accountID": 1,
+            "actualIOPS": 4,
+            "asyncDelay": null,
+            "averageIOPSize": 5970,
+            "burstIOPSCredit": 0,
+            "clientQueueDepth": 0,
+            "desiredMetadataHosts": null,
+            "latencyUSec": 474,
+            "metadataHosts": {
+                "deadSecondaries": [],
+                "liveSecondaries": [
+                    13
+                ],
+                "primary": 25
+            },
+            "nonZeroBlocks": 34931222,
+            "normalizedIOPS": 4,
+            "readBytes": 1282491003392,
+            "readBytesLastSample": 0,
+            "readLatencyUSec": 0,
+            "readLatencyUSecTotal": 4581669750,
+            "readOps": 15592933,
+            "readOpsLastSample": 0,
+            "samplePeriodMSec": 500,
+            "sliceIopsStats": {
+                "largeStatistics": {
+                    "averageReadIops": 17,
+                    "averageTotalIops": 43,
+                    "averageWriteIops": 26,
+                    "nSamples": 24,
+                    "peakReadIops": 19,
+                    "peakTotalIops": 47,
+                    "peakWriteIops": 30,
+                    "sliceID": 1
+                },
+                "smallStatistics": {
+                    "averageReadIops": 17,
+                    "averageTotalIops": 42,
+                    "averageWriteIops": 25,
+                    "nSamples": 120,
+                    "peakReadIops": 173,
+                    "peakTotalIops": 249,
+                    "peakWriteIops": 77,
+                    "sliceID": 1
+            }
         },
-        "nonZeroBlocks": 7499205,
-        "readBytes": 159012818944,
-        "readBytesLastSample": 0,
-        "readLatencyUSec": 0,
-        "readOps": 38821489,
-        "readOpsLastSample": 0,
-        "samplePeriodMSec": 500,
         "throttle": 0,
-        "timestamp": "2016-10-17T20:55:31.087537Z",
-        "unalignedReads": 0,
-        "unalignedWrites": 0,
+        "timestamp": "2025-02-03T21:18:38.880100Z",
+        "unalignedReads": 167319,
+        "unalignedWrites": 90836,
         "volumeAccessGroups": [
-          1
+            1
         ],
         "volumeID": 1,
-        "volumeSize": 53687091200,
-        "volumeUtilization": 0,
-        "writeBytes": 52992585728,
-        "writeBytesLastSample": 0,
-        "writeLatencyUSec": 0,
-        "writeOps": 12937643,
-        "writeOpsLastSample": 0,
-        "zeroBlocks": 5607995
+        "volumeSize": 2147483648000,
+        "volumeUtilization": 0.0002666666666666667,
+        "writeBytes": 1385173585408,
+        "writeBytesLastSample": 12288,
+        "writeLatencyUSec": 474,
+        "writeLatencyUSecTotal": 11233350905,
+        "writeOps": 157060458,
+        "writeOpsLastSample": 2,
+        "zeroBlocks": 489356778
       }
     ]
   }

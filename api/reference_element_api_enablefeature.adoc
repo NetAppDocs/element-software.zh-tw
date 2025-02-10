@@ -22,6 +22,7 @@ summary: 您可以使用啟用功能方法來啟用預設停用的叢集功能�
 
 NOTE: 對於執行Element軟體11.x的系統、在設定保護網域監控之前或之後啟用虛擬磁碟區、會導致叢集保護網域功能僅在節點層級運作。
 
+[cols="1a,3a,1a,1a,1a"]
 |===
 | 名稱 | 說明 | 類型 | 預設值 | 必要 
 
@@ -34,6 +35,7 @@ NOTE: 對於執行Element軟體11.x的系統、在設定保護網域監控之前
 * 「FIPS」：為HTTPS通訊啟用FIPS 140-2認證加密。
 * 「FipsDrives」：為儲存叢集啟用FIPS 140-2磁碟機支援。
 * 「napMirror」：啟用SnapMirror複寫叢集功能。
+* `VolumeLoadBalanceOnActualIOPS`：在實際 IOPS 上實現分片平衡，而不是在最小 IOPS 上實現分片平衡。從元件 12.8 開始提供。
 * 「vvvols」：啟用Element軟體VVols叢集功能。
 
  a| 

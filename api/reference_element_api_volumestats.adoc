@@ -27,6 +27,7 @@ volumeStats物件包含個別Volume的統計資料。
 
 此物件包含下列成員：
 
+[cols="20,50,15,15"]
 |===
 | 名稱 | 說明 | 計算 | 類型 
 
@@ -231,6 +232,33 @@ SamplePeriodMSec
 不適用
  a| 
 整數
+
+
+
+ a| 
+交叉分析 eIops統計 資料
+ a| 
+磁碟區的 I/O 使用量統計資料。從元件 12.8 開始提供。交叉分析篩選器 eIops統計 資料的可能值：
+
+* largeStatistics ：長時間測量的 Volume I/O 統計資料，通常是過去 24 小時的統計資料。
+* 小型統計資料：在較短時間內（通常是最後一小時）測量的 Volume I/O 統計資料。
+
+
+largeStatistics 和小型統計資料的可能值：
+
+* AverageReadIops ：磁碟區的平均讀取 IOPS 。
+* 平均總 IOPS ：磁碟區的平均總 IOPS （讀取 + 寫入）。
+* AverageWriteIops ：磁碟區的平均寫入 IOPS 。
+* n 範例：統計計算中包含的範例數目。
+* peakReadIops ：在統計間隔內觀察到的最大讀取 IOPS 。
+* PeakTotalIops ：在統計間隔內觀察到的最大 IOPS 。
+* peakWriteIops ：在統計時間間隔內觀察到的最大寫入 IOPS 。
+* 交叉分析篩選器 eID ： Volume ID 或切片 ID
+
+ a| 
+時間點
+ a| 
+Json物件
 
 
 

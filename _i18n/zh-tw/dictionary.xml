@@ -2754,8 +2754,6 @@
   <block id="8955c5403fcc56c4795abc67006c2b0b" category="list-text">磁碟機用於儲存節點、並儲存叢集的資料。儲存節點包含兩種磁碟機：</block>
   <block id="8f8fb14a764c8702ff72bc56e44d8278" category="list-text">Volume中繼資料磁碟機儲存定義叢集內磁碟區和其他物件的資訊。</block>
   <block id="b6694e983930d8d1f99e5210d26fb9a0" category="list-text">區塊磁碟機儲存應用程式磁碟區的資料區塊。</block>
-  <block id="c93817bbfc3fab71f5f7ca740a11c847" category="inline-link">「資源」頁面NetApp HCI</block>
-  <block id="bc218e71c18c2f809dffb10d3bc2a6e8" category="list-text"><block ref="bc218e71c18c2f809dffb10d3bc2a6e8" category="inline-link-rx"></block></block>
   <block id="5d126f98f7544109714680790eb3cd44" category="summary">您可以建立一組相關磁碟區的群組快照、以保留每個磁碟區中繼資料的時間點複本。未來您可以使用群組快照做為備份或復原、將磁碟區群組的狀態還原為先前的狀態。</block>
   <block id="caba5859d8a5830210ab32116e96cb50" category="inline-xref-macro">建立群組快照</block>
   <block id="038ce08b0492a45b3222a9d8e13caaec" category="list-text"><block ref="038ce08b0492a45b3222a9d8e13caaec" category="inline-xref-macro-rx"></block></block>
@@ -2823,7 +2821,6 @@
   <block id="026348f9f6e3dc829e365625c33c007a" category="list-text">檢閱節點詳細資料：</block>
   <block id="8511241aabf0b5b22a6ec0f33205020a" category="list-text">*節點ID*：系統產生的節點ID。</block>
   <block id="11340b9f0ba088ec3cf2083a21132d99" category="list-text">*節點名稱*：節點的主機名稱。</block>
-  <block id="0ee99b520b4502ffd981cfc386b7a410" category="list-text">*可用的4K IOP*：為節點設定的IOPS。</block>
   <block id="2e08da9f1b8a2b955bb7528232c66123" category="list-text">*節點角色*：節點在叢集中的角色。可能值：</block>
   <block id="5b677361708b3a9e7ae889385ded1639" category="list-text">叢集主機：執行叢集範圍管理工作、並包含MVIP和SVIP的節點。</block>
   <block id="e6897c8bbde08136163ed91dd0933239" category="list-text">集合節點：參與叢集的節點。視叢集大小而定、共有3或5個頻道群節點。</block>
@@ -4405,16 +4402,10 @@
   <block id="7ff6cc997b141399bcdf2c338fb4031c" category="cell">OpenStack</block>
   <block id="9385b032418674e92472a8b4a2ae5cdf" category="list-text">（使用Proxy伺服器的管理節點12或更新版本）在設定Proxy伺服器之前、您已將NetApp混合雲控制更新為管理服務2.16版。</block>
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">Element 12.2管理節點為選用升級。現有部署不需要此功能。</block>
-  <block id="3ab5d74afdff3156333304ac18ad1977" category="paragraph">在執行此程序之前、您應該先瞭解 <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 以及您是否要使用它們。持續磁碟區為選用功能、但建議在虛擬機器（VM）遺失時、進行管理節點組態資料恢復。</block>
   <block id="47a326e49e46acb78cf32cae1353fcac" category="list-text"><block ref="581882d49acbe8ab5e8325e4c151b8db" category="inline-xref-macro-rx"></block></block>
-  <block id="f894cbc944582e1f10fec4bf2a0639f0" category="inline-xref">建立管理節點管理並設定網路</block>
-  <block id="2ef294393b47ae9f1c9dee1f319efb0d" category="list-text"><block ref="bf7a9c417954187cdc8487e05cd6fa32" category="inline-xref-macro-rx"></block></block>
   <block id="cd7b2f0814db99464baac1222444932f" category="list-text"><block ref="cbfedbfc47267d0d76c848bfa4f73e5d" category="inline-xref-macro-rx"></block></block>
-  <block id="c92609be7302c756d6d918553df475c1" category="list-text"><block ref="d9e86326331a25418b718094ae602c19" category="inline-xref-macro-rx"></block></block>
-  <block id="0267f7e06220d0fa6fb42578b5746da3" category="list-text"><block ref="b41cb2f7bd156a4035cdf9347b89cebe" category="inline-xref-macro-rx"></block></block>
   <block id="5bf2236fb0d245894b988f96a0ff32f6" category="section-title">下載ISO或OVA並部署VM</block>
   <block id="12b8893b065179b6b80fdc2d448862df" category="inline-link-macro">Element軟體</block>
-  <block id="e43f2538484fde027e53efbedb634fce" category="list-text">從下載OVA或ISO以供安裝 <block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block> 頁面。</block>
   <block id="7b4b2bec7b806d58982537647a92deef" category="list-text">選擇*下載最新版本*並接受EULA。</block>
   <block id="9fd5f1f79bb7ead4a7bdb1a4e6b94825" category="list-text">選取您要下載的管理節點映像。</block>
   <block id="b8ccf40afa6e3a195a8f4d93c8daa17d" category="list-text">如果您下載了OVA、請依照下列步驟操作：</block>
@@ -4444,9 +4435,7 @@
   <block id="64281a5bcda4b37973a66a8dfcae3626" category="list-text">設定管理節點網路（eth0）。</block>
   <block id="585629174bd7d07bea958ff023cef12f" category="admonition">如果您需要額外的NIC來隔離儲存流量、請參閱設定其他NIC的指示： <block ref="3a94a0bfa09a6011bad07afa39abc05f" category="inline-link-macro-rx"></block>。</block>
   <block id="2f81f1b5bf706c50ec3a59d0de214061" category="section-title">設定時間同步</block>
-  <block id="dfa921e1a8d1ecc5798d976447ec498d" category="list-text">使用NTP確保管理節點與儲存叢集之間的時間同步：</block>
   <block id="4ff9fc7c23fbbdf410e784b18625c201" category="inline-xref">子步驟（f）</block>
-  <block id="26e6608a1d4408ec1913111c30b06508" category="admonition">從元件12.3.1開始、會自動執行子步驟（A）至（e）。若為管理節點12.3.1、請繼續執行 <block ref="745b7d927b75ef73b131f4d1b2da0731" category="inline-xref-macro-rx"></block> 以完成時間同步組態。</block>
   <block id="95f677ec3d6290caa67730d5209b4cc2" category="list-text">使用SSH或Hypervisor提供的主控台登入管理節點。</block>
   <block id="5c64c907c80a4eaf523f296d26d13989" category="list-text">停止ntpd：</block>
   <block id="5c6c4538d95e26d538800e50027bee98" category="list-text">編輯NTP組態檔「/etc/ntp.conf：</block>
@@ -4464,7 +4453,6 @@
   <block id="29c3f66306d4b9c80ad86deebb2fabcf" category="admonition">如果您日後對VM進行變更、請勿啟用此選項。</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">設定命令</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">請勿在完成時間同步組態之後編輯NTP、因為它會在您執行時影響NTP <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> 在管理節點上。</block>
-  <block id="627bbdc5a7179606b85a5d6ccb6f65e1" category="section-title">設定管理節點</block>
   <block id="5a808c62f4f9557c4df556d6a230ba7c" category="list-text">設定並執行管理節點設定命令：</block>
   <block id="58df37229524fed632f3c53880c146c3" category="admonition">系統會提示您在安全提示中輸入密碼。如果叢集位於Proxy伺服器之後、您必須設定Proxy設定、才能連線至公用網路。</block>
   <block id="57aa15c5b6505e27c5150f48bdab73d6" category="list-text">針對下列每個必要參數、將[]方塊中的值（包括方括弧）取代：</block>
@@ -4491,7 +4479,6 @@
   <block id="aabee241823de4ff993b60d0a196a387" category="list-text">（選用）如果您需要有關每個參數的其他資訊、請使用參數說明：</block>
   <block id="f89c180fd45cb0275c5ee18e59d2b43d" category="list-text">*-說明（-h）*：傳回每個參數的相關資訊。參數是根據初始部署而定義為必要或選用。升級與重新部署參數的需求可能有所不同。</block>
   <block id="79032d0c879c3afbbb570dd870eb09e1" category="list-text">執行「Setup-mnode"命令。</block>
-  <block id="7ea2768c656768f853cd68b9066eba0f" category="section-title">設定控制器資產</block>
   <block id="4240350efa82cb4b2d0dcd00f64f496b" category="list-text">找出安裝ID：</block>
   <block id="81b4d8ce3b6d3d31bcc065c5589192ab" category="list-text">從瀏覽器登入管理節點REST API UI：</block>
   <block id="ed4faf2b135a0f2d74eef06f6fd8899e" category="list-text">前往儲存設備MVIP並登入。此動作會在下一個步驟中接受憑證。</block>
@@ -5653,8 +5640,6 @@
   <block id="0374b3f6d89873148fabfec965f0a85c" category="list-text"><block ref="917c64f79628a9b16c9590709727170a" category="inline-link-rx"></block>：本實驗介紹的概念包括無限制橫向擴充、保證工作負載效能、以及適用於執行Element軟體之儲存系統的儲存基礎架構自動化。</block>
   <block id="94f8a49e22a4517b4cd55d1fa39ec58e" category="inline-link-macro">使用Element示範節點試用儲存功能</block>
   <block id="a66c6b29dce890bbcc0d228bf1bb7510" category="list-text"><block ref="619476f87ba30914a5fbd5ba47d588c3" category="inline-link-macro-rx"></block>：Element示範節點是Element軟體的VMware虛擬機器版本、可讓您輕鬆展示NetApp HCI 許多VMware及SolidFire VMware產品的主要儲存功能。</block>
-  <block id="b0cda36836b6d8e27c36c8d9d6b48f3a" category="inline-link">「All Flash儲存資源」頁面SolidFire</block>
-  <block id="a980426853b5ccc1de52aeb0b0ae0463" category="list-text"><block ref="a980426853b5ccc1de52aeb0b0ae0463" category="inline-link-rx"></block></block>
   <block id="3432017bf3450950cff9ebeb57b007b7" category="summary">Element示範節點是Element軟體的VMware虛擬機器版本、可讓您輕鬆展示NetApp HCI 許多VMware及SolidFire VMware產品的主要儲存功能。</block>
   <block id="c099da1e7198d2f1407d45eef0d02a48" category="inline-link">Element示範節點</block>
   <block id="fae634e54f6a24eca87a92f1d78df928" category="paragraph"><block ref="e1baf480e2c2d0517c80b4748e50de89" category="inline-link-rx"></block> 是Element軟體的VMware虛擬機器（VM）版本、可讓您輕鬆展示NetApp HCI 許多VMware及SolidFire VMware產品的主要儲存功能。示範節點可讓開發人員針對Element API進行程式碼編寫、而無需實體硬體。它封裝成OVA檔案、可輕鬆部署VMware。</block>
@@ -6086,8 +6071,6 @@
   <block id="00b1983df56a7fa830315720c415311e" category="paragraph">重新指派磁碟區的AccountID。如果未指定、則會使用先前的帳戶名稱。</block>
   <block id="98682f5223338eec989af2c7ff4e1d9e" category="paragraph">AssociatedWithQoSPolicy</block>
   <block id="7a782bbf152fd454aea699703ceee544" category="paragraph">將磁碟區與指定的QoS原則建立關聯。可能值：</block>
-  <block id="3c1a8d9bd4749cfbde8131745b6b686a" category="list-text">true：將磁碟區與QoSPolicyID參數中指定的QoS原則建立關聯。</block>
-  <block id="668b0f5def0f280a60f397b286c359d0" category="list-text">否：請勿將磁碟區與QoSPolicyID參數中指定的QoS原則建立關聯。如果為假、則會移除任何現有的原則關聯、無論您是否在QoSPolicy參數中指定QoS原則。</block>
   <block id="1ed2e1b19b6e55d52d2473be17a4afd9" category="paragraph">CREATETIM</block>
   <block id="f1ce622b3c832a70eb435151f628ac80" category="paragraph">ISO 8601日期字串、設定為新的Volume建立日期。如果設定為true、則為必要。</block>
   <block id="64371479f5552401b3dbdba97aeb6a2a" category="paragraph">已啓用SnapMirrorReplication</block>
@@ -9896,10 +9879,6 @@
   <block id="6f474670193ed24101adc00a3a72f9f1" category="summary">您可以使用GetFeatureStatus方法擷取叢集功能的狀態。</block>
   <block id="5fe0920c9761a6b3a87a1bbfa4bb9caa" category="paragraph">您可以使用「GetFeatureStatus」方法來擷取叢集功能的狀態。</block>
   <block id="1a11a5dbdb3a36b6daa4510ffff8ca04" category="paragraph">叢集功能的狀態。如果未提供任何值、系統會傳回所有功能的狀態。可能值：</block>
-  <block id="fd92c1c5cef8e392199a662567e717aa" category="list-text">Vvols：擷取VVols叢集功能的狀態。</block>
-  <block id="5e345bcbaddcc57a5f3ac0fed5034dec" category="list-text">SnapMirror：擷取SnapMirror複寫叢集功能的狀態。</block>
-  <block id="dda284e7bd1ad4ea16811e634581811f" category="list-text">FIPS：擷取FIPS 140-2加密的HTTPS通訊狀態。</block>
-  <block id="26ec8711a6e8d05f3d325ea4fa66c869" category="list-text">FpsDrives：擷取FIPS 140-2磁碟機加密功能的狀態。</block>
   <block id="9f034b63948763d489f944319c2eb3de" category="paragraph">功能</block>
   <block id="215ee6aa91837f28e7d05a1a6faafac5" category="paragraph">表示功能名稱及其狀態的功能物件陣列。物件成員：</block>
   <block id="fcc7ebdd91e5bb840d6f95a4e3b0fc28" category="list-text">功能：（字串）功能名稱。</block>
@@ -11071,8 +11050,6 @@
   <block id="88935f8e32d3f781d70b8758aacc2e03" category="paragraph">您可以對尚未新增至叢集的節點執行基本疑難排解。無論是否獲得NetApp支援、您都可以將sfreadonly系統帳戶用於此用途。如果已設定管理節點、您可以將其用於SSH、並執行此工作所提供的指令碼。</block>
   <block id="39d7e3e1db072701b357f9d1235c66dc" category="list-text">在安裝SSH用戶端的Windows、Linux或Mac機器上、針對NetApp支援所提供的系統執行適當的指令碼。</block>
   <block id="326d0c521ea9c5fcd0fc04bacc22d618" category="list-text">SSH至節點IP：</block>
-  <block id="a83404b3b2ca8b3c39459b719d7844d7" category="inline-link">參考資源頁面NetApp HCI</block>
-  <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">從元件12.3.1開始、會自動執行子步驟（A）至（e）。若為管理節點12.3.1或更新版本、請繼續執行 <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 以完成時間同步組態。</block>
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element軟體12.5注意事項</block>
@@ -11279,11 +11256,7 @@
   <block id="139691973eba994346784166c2abe4d8" category="cell">所有包含最新韌體的功能為更新版本的NetApp H系列節點SolidFire</block>
   <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點</block>
   <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">從元素12.5開始、「sfreadonly」是新的系統帳戶、可在節點上進行基本疑難排解。此API可在叢集中的所有節點上使用「sfreadonly」系統帳戶來啟用SSH存取。</block>
-  <block id="482c14e23170c54f9df57d397733d7af" category="doc">Element軟體12.5及更新版本的新功能</block>
-  <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.7是最新版本、包含安全性與系統元件更新、作業改善及已解決的問題。</block>
-  <block id="31433f4c595cf82b6f9b0654fe86c038" category="admonition">根據儲存叢集上目前執行的元素版本、會將累積式軟體和韌體更新安裝為Element 12.7升級的一部分。例如、如果叢集目前正在執行元素12.3.x、您可以直接升級至元素12.7、從元素12.5和12.7取得累積更新。如需支援的升級途徑、請參閱此<block ref="5d2488aae82cc199977a2b418e4bfb0b" category="inline-link-rx"></block></block>
   <block id="7a5d44771145d6289118d595153e9a0f" category="section-title">元素12.7</block>
-  <block id="c5955a73b2634f54a283c2c1c11a5f00" category="paragraph">深入瞭解Element 12.7的新功能。</block>
   <block id="e1aa603edc6a21750a2c4f3ad4c5c6fe" category="section-title">安全的CHAP演算法</block>
   <block id="7d8047866d4cd4b945792113fe0aef7e" category="paragraph">Element 12.7支援安全的FIPS相容挑戰握手驗證傳輸協定（CHAP）演算法SHA1、SHA-256和SHA3-256。 <block ref="b6cad66d2ee175f758d394e0154cb07f" category="inline-link-macro-rx"></block>。</block>
   <block id="3dd61b40b979f11e2f99dcbda82fabe4" category="section-title">動態區塊（Bin）同步處理速度</block>
@@ -11331,8 +11304,6 @@
   <block id="80736a9fd1a5cd3a0f3c3ef7e8c627c1" category="cell">元件12.0</block>
   <block id="3d6ac36552702d0a682fac26d1841715" category="summary">在功能區儲存系統中、租戶可以使用帳戶來讓用戶端連線至節點上的磁碟區。SolidFire帳戶包含存取指派給它的磁碟區所需的CHAP驗證。當您建立Volume時、該磁碟區會指派給特定帳戶。</block>
   <block id="adf63029757917f4aff07fe55725e5d9" category="section-title">CHAP演算法</block>
-  <block id="3b2569fbd052a233a8a46886c97fc207" category="paragraph">從元素12.7開始、支援安全的FIPS相容CHAP演算法SHA1、SHA-256和SHA3-256。使用元素12.7時、當主機iSCSI啟動器正在建立含有元素iSCSI目標的iSCSI工作階段時、會要求使用CHAP演算法清單。元素iSCSI目標會從主機iSCSI啟動器所要求的清單中、選擇其所支援的第一個演算法。若要確認元素iSCSI目標選擇最安全的演算法、您必須設定主機iSCSI啟動器、將從最安全的演算法（例如SHA3-256）排序的演算法清單傳送至最不安全的演算法、例如： SHA1或MD5。如果主機iSCSI啟動器未要求使用SHa演算法、則元素iSCSI目標會選擇MD5、假設主機的建議演算法清單包含MD5。您可能需要更新主機iSCSI啟動器組態、才能支援安全演算法。</block>
-  <block id="b8bb97697b35e86a4877aef90f591533" category="paragraph">在元素12.7升級期間、如果您已更新主機iSCSI啟動器組態、以便在儲存節點重新開機時、以內含SHA演算法的清單傳送工作階段要求、 新的安全演算法會啟動、並使用最安全的傳輸協定建立新的或重新連線的iSCSI工作階段。升級期間、所有現有的iSCSI工作階段都會從MD5移轉至SHa。如果您未將主機iSCSI啟動器組態更新為要求SHa、則現有的iSCSI工作階段將繼續使用MD5。稍後更新主機iSCSI啟動器CHAP演算法之後、iSCSI工作階段應根據導致iSCSI工作階段重新連線的維護活動、逐漸從MD5移轉至SHA。</block>
   <block id="db6cb10180fa1523938da319a188d13d" category="paragraph">例如、Red Hat Enterprise Linux（RHEL）8.3中的預設主機iSCSI啟動器具有「node.session.auth.chap_algs = SHA3-256、SHA256、SHA1、MD5」設定、指出哪些結果只會導致iSCSI啟動器使用MD5。在主機上取消註解此設定、然後重新啟動iSCSI啟動器、會觸發該主機的iSCSI工作階段、以開始使用SHA3-256。</block>
   <block id="55fc627721522ae45305c9f988153a20" category="paragraph">如有需要、您可以使用<block ref="06aa6b6b67e008146e7c8d6417794b62" category="inline-link-rx"></block> API方法來查看每個工作階段所使用的CHAP演算法。</block>
   <block id="197daf7bc8c465056c36b92f2d586989" category="paragraph">視您的Element軟體版本而定、不支援下列節點：</block>
@@ -11361,9 +11332,6 @@
   <block id="54c78d15a850ddddfc9da22742280908" category="list-text">*終端使用者授權合約（EULA）*：從管理服務2.20.69開始、您必須先接受並儲存EULA、才能使用NetApp混合雲控制UI或API來執行元件儲存健全狀況檢查：</block>
   <block id="62449609bcf95f48fbdbae6dddedcc19" category="list-text">*終端使用者授權合約（EULA）*：從管理服務2.20.69開始、您必須先接受並儲存EULA、才能使用NetApp混合雲控制UI或API來升級Element軟體：</block>
   <block id="d6802e127914e53f73aa2f2db8cb5e44" category="paragraph">從管理服務2.20.69開始、您必須先接受並儲存終端使用者授權合約（EULA）、才能使用NetApp混合雲控制UI或API來升級管理服務：</block>
-  <block id="33d4cce2372c2f81af75e357ed402fe5" category="paragraph">不支援以元素12.7開頭的^3^、SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您嘗試將其中一個節點升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
-  <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">如果您嘗試將其中一個節點升級至不受支援的元素版本、您會看到錯誤訊息、指出元素12.x不支援此節點</block>
-  <block id="ab23337415270010383937ce784cb519" category="list-text">從元素12.7開始、不支援SF2405和SF9608儲存節點、以及FC0025和SF-FCN-01 FC節點。如果您嘗試將其中一個節點升級至元素12.7、您會看到錯誤訊息、指出元素12.7不支援此節點。</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">插槽0容納節點的中繼資料磁碟機。如果您要更換插槽0中的磁碟機、則必須在更換磁碟機的包裝箱上貼上隨附的貼紙、以便與其他磁碟機分開識別。</block>
   <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">儲存韌體套裝組合2.164.0版本說明</block>
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
@@ -11934,10 +11902,6 @@
   <block id="f814466eb9bcf561b354422b41f381f3" category="summary">您可能需要允許下列 TCP 連接埠透過資料中心的邊緣防火牆、以便遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。</block>
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">您可能需要允許下列 TCP 和 UDP 連接埠透過資料中心的邊緣防火牆、以便遠端管理系統、並允許資料中心外部的用戶端連線至資源。視您使用系統的方式而定、可能不需要其中一些連接埠。</block>
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
-  <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>執行 ]</block>
-  <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5 提供改善的儲存節點存取、增強的自訂保護網域管理能力、全新及改良的叢集故障和事件、增強的建立叢集 UI 功能、以及增強的安全性。</block>
-  <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由於升級套件上傳錯誤、 SolidFire 和 HCI 升級無法啟動</block>
-  <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">自 2023 年 11 月起、您無法使用 NetApp 混合雲控制或 REST API 來開始元件升級、因為簽署金鑰憑證（私有和公有）已於 2023 年 11 月 5 日到期。您可以依照知識庫文件中所述的因應措施來解決此問題<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主動移除屬於叢集一部分的磁碟機的方法。您可以在減少叢集容量或準備更換即將結束服務壽命的磁碟機時、使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在叢集中的其他節點上建立區塊資料的第三個複本、並等待同步完成、然後再將磁碟機移至「可用」清單。「可用」清單中的磁碟機會從系統中完全移除、而且沒有執行中的服務或作用中資料。</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">儲存節點支援的韌體版本</block>
   <block id="13917e4f5287cba6dc668dc1de806783" category="paragraph">JSON 物件格式的名稱值配對清單。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
@@ -11982,9 +11946,6 @@
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
   <block id="30486cdfdde2444e4151845599ac5bf5" category="inline-link">Element 12.5 文件</block>
   <block id="7923ddc778825f970802562c563718d7" category="list-text"><block ref="7923ddc778825f970802562c563718d7" category="inline-link-rx"></block></block>
-  <block id="cafb4d76dc2f8321d0134957e0bf3f5d" category="sidebar">包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire使用元素介面、 API 或其他管理工具、您可以使用 NetApp Element 軟體來管理這些儲存資源叢集。本網站包含 Element 軟體的文件。</block>
-  <block id="ab8cbf6e7f3310f1970fbef383696645" category="sidebar">零件與元件軟體12.7文件SolidFire</block>
-  <block id="f46f40c99ef0e96fdc79a2f007e1939a" category="sidebar">SolidFire 與 Element 軟體文件 12.7.</block>
   <block id="6580584049ef8cc78e6be1833466e606" category="inline-link-macro">NetApp Element 軟體與 ONTAP 之間的複寫（ ONTAP CLI ）</block>
   <block id="9051badc24841b5e2521cd8790e8f7d8" category="paragraph">如需更多資訊、請參閱 <block ref="5aaa67c40a6461657bd1345524045131" category="inline-link-macro-rx"></block>。</block>
   <block id="39f2369f3b77569b78b2438bb261689c" category="summary">將目的地Volume設為可寫入後、您必須設定該磁碟區以進行資料存取。SAN主機可從目的地磁碟區存取資料、直到重新啟動來源磁碟區為止。</block>
@@ -12277,11 +12238,135 @@
   <block id="878e10f3ecb83396704ecc4b39ad7aa2" category="inline-link-macro">儲存韌體套件 2.182.0 注意事項</block>
   <block id="d087896b0989dfd81184775fcc160ca1" category="list-text"><block ref="d087896b0989dfd81184775fcc160ca1" category="inline-link-macro-rx"></block></block>
   <block id="c4891769f65182d5fc5a37494844c496" category="inline-link">vCenter Plug-in 5.4 版本資訊</block>
-  <block id="230e88f97688d3fb971fe1a76f5b2a13" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block>_new_</block>
   <block id="ce90fd614158a5c7e0a42a5908fa1cd7" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block></block>
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">管理服務 2.26.30 注意事項（適用於 VMware vCenter Server 5.4.1 的 NetApp Element 外掛程式）</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
   <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">您正在升級至 Element Plug-in for vCenter Server 5.4 ， 5.3 ， 5.2 ， 5.1 或 5.0 。</block>
   <block id="ec584e493ebc5976220074c48288215d" category="summary">您必須先建立SnapMirror端點、才能建立複寫關係。您只能在元素軟體 Web UI 或 API 方法中執行此工作。</block>
   <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">您必須在元素叢集上啟用SnapMirror、才能建立複寫關係。您只能在元素軟體 Web UI 或 API 方法中執行此工作。</block>
+  <block id="5f974f5b5837f6beacdf509a09ac0df9" category="paragraph">^3^ 不支援下列節點。如果您嘗試將其中一個節點升級至不受支援的元素版本，您會看到錯誤，指出元素 12.x 不支援該節點：</block>
+  <block id="5d58ca5bc208ae8a2b2dccd548e30ae3" category="list-text">從元件 12.8 ， SF4805 ， SF9605 ， SF19210 和 SF38410 儲存節點開始。</block>
+  <block id="69da7b5a3b37b70e629a477452983e5d" category="summary">您可以使用 DisableFeature 方法來停用 Volume LoadBalanceOnActualIOPS 。</block>
+  <block id="e0d42ad7a0a546483523eee990c4c722" category="doc">DisableFeature</block>
+  <block id="8672fdc0f030d7ad0aaee99cc9cfdd76" category="paragraph">您可以使用此<block ref="e0d42ad7a0a546483523eee990c4c722" prefix=" " category="inline-code"></block>方法停用此<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>功能。<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>預設為停用。</block>
+  <block id="ef3cc95d5005ad47e31876972451919d" category="paragraph">如果您嘗試停用其他功能，例如 VVols ，則會出現下列錯誤訊息：</block>
+  <block id="ca5bd77a41b5024709aa0c976742b627" category="paragraph">停用叢集功能。可能值：</block>
+  <block id="b1e9ed0268988420a784ad80c03e59d5" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：禁用實際 IOPS （而非最小 IOPS ）上的分片平衡。</block>
+  <block id="e76af95319f03251bdf6c3771f39afbe" category="paragraph">12.8%</block>
+  <block id="20b0ad010903f7b2d428d021e0c7d07f" category="list-text"><block ref="20b0ad010903f7b2d428d021e0c7d07f" category="inline-xref-macro-rx"></block></block>
+  <block id="e2d508b5a306e7983664021f6348fbff" category="paragraph">volumeLoadBalanceOnActualIopsState</block>
+  <block id="2f422ae686124762f34b256f66599041" category="paragraph">根據實際 IOPS 而非最小 IOPS 功能來進行切片平衡的狀態。從元件 12.8 開始提供。</block>
+  <block id="505be3e758aee452e5c40a4250623ef3" category="cell"><block ref="16611c4971284ff4b42c5d19de7c4fc6" prefix="" category="inline-code"></block></block>
+  <block id="02d9b6b9cb591592d0f848c16ce0627a" category="inline-link-macro">Volume LoadBalanceOnActualIOPS</block>
+  <block id="23c40fdcbdf2c33e4c5cb256f37b65d0" category="paragraph">防止磁碟區在負載平衡與實際 IOPS 時移動。此設定從元素 12.8 開始提供，只有在啟用時才有效<block ref="636ea693b7b2510b539677d0148e4233" category="inline-link-macro-rx"></block>。可能值：</block>
+  <block id="c29abafd53b30e2b89cd07dbab20364e" category="list-text"><block ref="b326b5062b2f0e69046810717534cb09" prefix="" category="inline-code"></block>： Volume 不會根據實際 IOPS 來平衡負載。</block>
+  <block id="5d7a3b5e704aa7e7bf62279cc3278f01" category="list-text"><block ref="68934a3e9455fa72420237eb05902327" prefix="" category="inline-code"></block>： Volume 會根據實際的 IOPS 來平衡負載。</block>
+  <block id="12d73ef73ec07c1c3f13c03403458ac4" category="paragraph">* 注意 * ：高可用度（節點故障）的平衡優先於<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>和<block ref="16611c4971284ff4b42c5d19de7c4fc6" prefix=" " category="inline-code"></block>。</block>
+  <block id="70477f1cbb1f9b0ee1ed984e95d175c9" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：在實際 IOPS 上實現分片平衡，而不是在最小 IOPS 上實現分片平衡。從元件 12.8 開始提供。</block>
+  <block id="51f05aff487f481c11bffc15bbc6e4b2" category="list-text"><block ref="6a4d46deeb21ef2b80060c11f49187e4" prefix="" category="inline-code"></block>：檢索 VVols 羣集功能的狀態。</block>
+  <block id="553a63549898987796cafd553180c07b" category="list-text"><block ref="794cb725c5631ad99b5b7c000307f0df" prefix="" category="inline-code"></block>：檢索 SnapMirror 複製羣集功能的狀態。</block>
+  <block id="ec81003d6bad23cab3a28018beda6730" category="list-text"><block ref="db70af2af82d2621886d13d37995e481" prefix="" category="inline-code"></block>：擷取 FIPS 140-2 加密的 HTTPS 通訊功能狀態。</block>
+  <block id="cd9f39d245dd7eda6cce60f0322f58d0" category="list-text"><block ref="4223a206268b7c5a804c6b4d52900ea5" prefix="" category="inline-code"></block>：擷取 FIPS 140-2 磁碟機加密功能的狀態。</block>
+  <block id="490aeb503dc1e4b03161fcccf4cdffc2" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：檢索層平衡在實際 IOPS 上的狀態，而不是最小 IOPS 功能。從元件 12.8 開始提供。</block>
+  <block id="16611c4971284ff4b42c5d19de7c4fc6" category="paragraph">dontMoveforIopsRebalance</block>
+  <block id="4b568da388833daf83ea72e69801ba34" category="paragraph">nodeHeat</block>
+  <block id="b5c845afcfb7df2d9d7fbef7714c09a9" category="paragraph">節點使用率資訊。從元件 12.8 開始提供。成員：</block>
+  <block id="ca4488466d23621c06230504c824fb83" category="list-text">主要節點總 IOPS / 節點設定 IOPS 平均超過 24 小時</block>
+  <block id="9ebe3bf85a15ba77ec5b2cc4408f55d0" category="list-text">RecentPrimaryTotalHeat ：節點主要 IOPS / 節點設定的 IOPS 總計超過一小時</block>
+  <block id="1d6d531f7e976462553ff19c1ec745af" category="list-text">RecentTotalHeat ：節點總 IOPS / 節點設定的 IOPS ，平均超過一小時</block>
+  <block id="545f1469911d2f62c6bceead8a0c2cc8" category="list-text">totalHeat ：節點總 IOPS / 節點設定的 IOPS ，平均超過 24 小時</block>
+  <block id="cd10546771cf4d9146236c94201b070f" category="paragraph">交叉分析 eIops統計 資料</block>
+  <block id="e690e448c74acc89f30fd24eaf5cd5d5" category="paragraph">磁碟區的 I/O 使用量統計資料。從元件 12.8 開始提供。交叉分析篩選器 eIops統計 資料的可能值：</block>
+  <block id="c43b8cf1e5e1112e458b0a8aebe23131" category="list-text">largeStatistics ：長時間測量的 Volume I/O 統計資料，通常是過去 24 小時的統計資料。</block>
+  <block id="1b11f84facc1daeaa9620b3c31f3c6d0" category="list-text">小型統計資料：在較短時間內（通常是最後一小時）測量的 Volume I/O 統計資料。</block>
+  <block id="9c976e58e6bcd2d0658085166cadade3" category="paragraph">largeStatistics 和小型統計資料的可能值：</block>
+  <block id="18cb448ab99d0b204d2b0056e16c6797" category="list-text">AverageReadIops ：磁碟區的平均讀取 IOPS 。</block>
+  <block id="82b21b548a27fb7c5ccc9f32dd738465" category="list-text">平均總 IOPS ：磁碟區的平均總 IOPS （讀取 + 寫入）。</block>
+  <block id="ea7f8d6913391d8b988f31fb9efec9bc" category="list-text">AverageWriteIops ：磁碟區的平均寫入 IOPS 。</block>
+  <block id="eaa3a19818b7f5619e46432a531d1f6a" category="list-text">n 範例：統計計算中包含的範例數目。</block>
+  <block id="7fdf87eada1272182b73c768f9f29592" category="list-text">peakReadIops ：在統計間隔內觀察到的最大讀取 IOPS 。</block>
+  <block id="ea1542c36a1086ca0fcd1be36c6f32c6" category="list-text">PeakTotalIops ：在統計間隔內觀察到的最大 IOPS 。</block>
+  <block id="f96ed95b5509cb599aadb504ec5aa0d5" category="list-text">peakWriteIops ：在統計時間間隔內觀察到的最大寫入 IOPS 。</block>
+  <block id="041f17de41a9f1db9829ff79ad3ef600" category="list-text">交叉分析篩選器 eID ： Volume ID 或切片 ID</block>
+  <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">NetApp Element 軟體 12.8 版本資訊</block>
+  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block>_new_</block>
+  <block id="912995e99772bb097b2c7b32940725bb" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block></block>
+  <block id="de1923eab698e40e118f826163735ce9" category="doc">Element 軟體的新功能</block>
+  <block id="95dc02f465fb1139e3e92c363bf6965b" category="paragraph">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.8是最新版本、包含安全性與系統元件更新、作業改善及已解決的問題。</block>
+  <block id="54c87de7f5250ba9aa116c671d66513b" category="inline-link">執行 NetApp Element 軟體之儲存叢集的升級對照表為何</block>
+  <block id="cbc21275b31252cb0d62b8238bf2f7f4" category="admonition">根據儲存叢集上目前執行的元素版本、會將累積式軟體和韌體更新安裝為Element 12.8升級的一部分。例如，如果叢集目前正在執行 Element 12.5 ，您可以直接升級至 Element 12.8 ，從 Element 12.7 和 12.8 取得累積更新。有關支持的升級路徑，請參閱知識庫文章<block ref="c5b23fd17ac7c12a5a03bb47eaffc085" category="inline-link-rx"></block>。</block>
+  <block id="b96f7bb136ed4e13e527257ff99d9aa8" category="section-title">元件12.8</block>
+  <block id="5f3e8fa2bb7cacdfa568d72b6619b9f7" category="paragraph">深入瞭解 Element 12.8 的新功能。</block>
+  <block id="de8b5a628a603f8c3af1b2f5792e68de" category="section-title">Volume 負載平衡</block>
+  <block id="9a015d8a2733454aff7d7b5bed746662" category="paragraph">元素 12.8 介紹 Volume Load Balancing 功能。您可以使用此功能，根據每個磁碟區的實際 IOPS 層級來平衡節點之間的磁碟區，而非 QoS 原則中設定的最低 IOPS 。您只能使用 Volume Load Balancing 功能來平衡磁碟區。您無法使用它來平衡虛擬磁碟區。Volume Load Balancing 功能預設為停用。您可以使用 API 參數搭配<block ref="1028004a3d63b00e7896fde204286489" category="inline-link-macro-rx"></block>和 <block ref="ca543ea41b9fe86f5db5c46f8401b9de" category="inline-link-macro-rx"></block> API 方法或<block ref="0e280c25b1846637cc005ef57df39d27" category="inline-link-macro-rx"></block>元素 UI 中的選項來啟用和停用它<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>。</block>
+  <block id="380221f3a88d939f31cd4269828e2920" category="section-title">檢視節點使用率資訊</block>
+  <block id="cf1de2ea971a9d03b59178af9472d4b0" category="paragraph">有了 Element 12.8 ，您就可以像使用<block ref="f26fbe9dd2d7f06608bbf6327141caa9" prefix=" " category="inline-code"></block>和<block ref="84b7393e47ffdee1d6a06f5067a7270c" prefix=" " category="inline-code"></block> API 方法一樣檢視節點使用率資訊<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>。<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>物件是物件的成員<block ref="d9bfbffd38f5f9686a85ef17e8138b5c" prefix=" " category="inline-code"></block>，會根據主要 IOPS 或整體 IOPS 與一段時間內平均的已設定 IOPS 比率，顯示節點使用率資訊。</block>
+  <block id="75a2cb34cbc05ac90dcef2f4d04c6588" category="paragraph">此外，您可以在元素 UI 中的節點「檢視詳細資料」顯示中，以百分比檢視節點使用率<block ref="3e970dc4a731d994269545ba0dc518ab" prefix=" " category="inline-code"></block>。</block>
+  <block id="df9435e47754394c09f05283809f164d" category="section-title">檢視磁碟區的 I/O 統計資料</block>
+  <block id="3fb4d6085a8835e3addca4a9c0fbbf66" category="paragraph">有了 Element 12.8 ，您可以使用<block ref="d0d8364463968eb91608c292d6fe317a" prefix=" " category="inline-code"></block>和<block ref="27e97d4871384c3d242cfa858abc544a" prefix=" " category="inline-code"></block> API 方法，檢視磁碟區的 I/O 使用統計資料<block ref="cd10546771cf4d9146236c94201b070f" prefix=" " category="inline-code"></block>。I/O 統計資料是使用磁碟區的讀取和寫入 IOPS 資訊來計算，並在過去 24 小時和最後一小時的兩個期間內進行測量。<block ref="e0c529df1577dac200ea6d61065ab487" category="inline-link-macro-rx"></block>。</block>
+  <block id="dfa7d479451fc6bd725c9494a87f3a6a" category="section-title">iSCSI 工作階段的 CHAP 演算法</block>
+  <block id="b7ff4d8cc30e1648a2610b037b9c5b97" category="paragraph">當主機 iSCSI 啟動器建立具有元素 iSCSI 目標的 iSCSI 工作階段時，會要求使用挑戰握手驗證傳輸協定（ CHAP ）演算法清單。從元素 12.8 開始，您可以檢視元素 iSCSI 目標選擇用於 iSCSI 工作階段的支援 CHAP 演算法。</block>
+  <block id="3c72afcfca67f187b816a55135a243dd" category="section-title">升級 VM 硬體版本</block>
+  <block id="7dba8a3f7eba09c328d90efc88b182cd" category="paragraph">如果您正在執行現有管理節點的就地升級至元素 12.8 ，則在升級之前，必須確保管理節點上的 VM 硬體版本與 ESXi 6.7 （ VM 硬體版本 14 ）或更新版本相容，視您的環境而定。<block ref="f415360b3de270935343c57ae74254e8" category="inline-link-macro-rx"></block>。</block>
+  <block id="9c5d76276e21d49836999553da451b64" category="paragraph">深入瞭解 Element 12.7 的新功能。</block>
+  <block id="c709a2d01de03a4c29036ff9f37c0dff" category="paragraph">深入瞭解 Element 12.5 的新功能。</block>
+  <block id="ad0a505756223d68dc11afeae3459351" category="inline-link">資訊文件NetApp HCI</block>
+  <block id="bf667c8802395357e4f080e2fcd819e4" category="list-text"><block ref="bf667c8802395357e4f080e2fcd819e4" category="inline-link-rx"></block></block>
+  <block id="f512bd2c4d2b9ed8c936fc1a75c3581e" category="paragraph">視您的 Element 軟體版本而定，不支援下列節點：</block>
+  <block id="c31b8aa345140496ac5200d0d80fa702" category="list-text">從元件 12.7 ， SF2405 和 SF9608 儲存節點，以及 FC0025 和 SF-FCN-01 FC 節點開始。</block>
+  <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Element軟體注意事項12.8</block>
+  <block id="2d0be4b4ba388979c4f454ae05179965" category="list-text"><block ref="2d0be4b4ba388979c4f454ae05179965" category="inline-link-macro-rx"></block></block>
+  <block id="906ea05443e4b488a42f3f06305353ee" category="paragraph">在遵循此程序之前，您應該先瞭解<block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block>及是否要使用它們。持續磁碟區為選用功能、但建議在虛擬機器（VM）遺失時、進行管理節點組態資料恢復。</block>
+  <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">步驟 1 ：下載 ISO 或 OVA 並部署 VM</block>
+  <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">從 NetApp 支援網站下載適當的 ISO 或 OVA ，然後安裝 VM 。</block>
+  <block id="4aee9657f267c579c49541b5f19ca32c" category="list-text">從 NetApp 支援網站的頁面下載 OVA 或 ISO 以供安裝<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>。新的 OVA 包含更新的 SSL 憑證。</block>
+  <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">步驟 2 ：建立管理節點管理並設定網路</block>
+  <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">VM 安裝完成後，建立管理節點管理員使用者，並設定管理節點網路。</block>
+  <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">步驟 3 ：設定時間同步</block>
+  <block id="6646ab3d83d88b5b34e61e3a58b244e8" category="paragraph">在設定管理節點之前，請先同步管理節點與儲存叢集之間的時間。</block>
+  <block id="e2a752315a25d69098c34f13da4b8c94" category="list-text">使用 NTP 確認管理節點與儲存叢集之間的時間已同步：</block>
+  <block id="60ba6327b0772f4d0beb24ef192dcf80" category="admonition">從元件12.3.1開始、會自動執行子步驟（A）至（e）。對於管理節點 12.3.1 、請繼續執行<block ref="745b7d927b75ef73b131f4d1b2da0731" category="inline-xref-macro-rx"></block>以完成時間同步組態。</block>
+  <block id="ef246c91c687e7d720eb49c5e2a4cd47" category="section-title">步驟 4 ：設定管理節點</block>
+  <block id="9f150d20e38589485a1bb878b18c51e2" category="paragraph">使用命令設定管理節點<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block>。</block>
+  <block id="2cec258fd66ace0725a9af6922c80f3e" category="section-title">步驟 5 ：設定控制器資產</block>
+  <block id="b5d27a207b01cd3ca9fef9594d50836f" category="paragraph">找出安裝 ID 並新增 vCenter 控制器資產。</block>
+  <block id="e667096facd9382b6410238147c6bd7d" category="inline-xref-macro">啟用和停用 Volume Load Balancing</block>
+  <block id="11bdcf58ce21896925e2cbc1f2174d99" category="list-text"><block ref="11bdcf58ce21896925e2cbc1f2174d99" category="inline-xref-macro-rx"></block></block>
+  <block id="6c7b496a2d02d11880156e116d65fdae" category="paragraph">如果您嘗試將其中一個節點升級至不支援的元素版本，您會看到錯誤，指出元素 12.x 不支援該節點</block>
+  <block id="b8857076c45a770e167d021272059208" category="list-text">*CHAP*</block>
+  <block id="9cfc902e020fbc18dd2aff7989d4d45f" category="paragraph">iSCSI 工作階段的 CHAP 演算法。如果未使用 CHAP 演算法，則會顯示破折號（ - ）。從元件 12.8 開始提供。</block>
+  <block id="4072b99d321d18f605cb9f09366d1668" category="paragraph">從元素12.7開始、支援安全的FIPS相容CHAP演算法SHA1、SHA-256和SHA3-256。當主機 iSCSI 啟動器建立具有元素 iSCSI 目標的 iSCSI 工作階段時，它會要求使用 CHAP 演算法清單。元素iSCSI目標會從主機iSCSI啟動器所要求的清單中、選擇其所支援的第一個演算法。若要確認元素iSCSI目標選擇最安全的演算法、您必須設定主機iSCSI啟動器、將從最安全的演算法（例如SHA3-256）排序的演算法清單傳送至最不安全的演算法、例如： SHA1或MD5。如果主機iSCSI啟動器未要求使用SHa演算法、則元素iSCSI目標會選擇MD5、假設主機的建議演算法清單包含MD5。您可能需要更新主機iSCSI啟動器組態、才能支援安全演算法。</block>
+  <block id="b0d6e61e8313606c921c3d2b2ae7e76d" category="paragraph">在元素 12.7 或更新版本升級期間，如果您已更新主機 iSCSI 啟動器組態，以傳送包含 SHA 演算法的工作階段要求清單，則當儲存節點重新開機時，會啟動新的安全演算法，並使用最安全的傳輸協定建立新的或重新連線的 iSCSI 工作階段。升級期間、所有現有的iSCSI工作階段都會從MD5移轉至SHa。如果您未將主機iSCSI啟動器組態更新為要求SHa、則現有的iSCSI工作階段將繼續使用MD5。稍後更新主機iSCSI啟動器CHAP演算法之後、iSCSI工作階段應根據導致iSCSI工作階段重新連線的維護活動、逐漸從MD5移轉至SHA。</block>
+  <block id="aaee41e33731b48ea709a8d86f92665f" category="summary">從元素 12.8 開始，您可以啟用 Volume Load Balancing ，根據每個磁碟區的實際 IOPS 來平衡各節點的磁碟區，而非 QoS 原則中設定的最小 IOPS 。</block>
+  <block id="3ef41e0639b21f006f7d5de45b6ee839" category="paragraph">從元素 12.8 開始，您可以使用 Volume Load Balancing ，根據每個磁碟區的實際 IOPS 來平衡各節點的磁碟區，而非 QoS 原則中設定的最小 IOPS 。您可以使用元素 UI 或 API 來啟用和停用「 Volume Load Balancing 」（預設為停用）。</block>
+  <block id="bcdaa8bc7cb207354c87d8e1232ab12f" category="list-text">選擇 * 叢集 * &gt; * 設定 * 。</block>
+  <block id="0f4c8c48f2ee6af3905e369c115e564d" category="list-text">在「叢集特定」區段中，變更 Volume Load Balancing 的狀態：</block>
+  <block id="3ad3b40ee22c1193fd89bfbd535ff89c" category="open-title">啟用 Volume Load Balancing</block>
+  <block id="fc974f059cad1de90d3d0a8283162c27" category="paragraph">選取 * 啟用實際 IOPS 的負載平衡 * ，並確認您的選擇。</block>
+  <block id="f2b86d8559c9ce4d77248b1cb9564340" category="open-title">停用 Volume 負載平衡：</block>
+  <block id="3216ad57a8f2305cd9a59ab5917e54e4" category="paragraph">選取 * 停用實際 IOPS 的負載平衡 * ，並確認您的選擇。</block>
+  <block id="66b402adbbe6b9f984ecdcd5248bfec0" category="list-text">您也可以選擇 * 報告 * &gt; * 總覽 * 來確認狀態變更，以平衡實際 IOPS 。您可能必須向下捲動叢集健全狀況資訊，才能檢視狀態。</block>
+  <block id="4e5a27f88db1734e1af540886a80a4e9" category="inline-link-macro">使用 API 啟用 Volume Load Balancing</block>
+  <block id="3b23faa50d0cdbc4e395b29066b18b08" category="list-text"><block ref="3b23faa50d0cdbc4e395b29066b18b08" category="inline-link-macro-rx"></block></block>
+  <block id="e94e13cb2fcae56ae542775b50cc0b10" category="inline-link">使用 API 停用 Volume Load Balancing</block>
+  <block id="9ffe0c15921805682448240c94ddc614" category="list-text"><block ref="9ffe0c15921805682448240c94ddc614" category="inline-link-rx"></block></block>
+  <block id="a7f635a546cbb7490b31779618511dd1" category="list-text"><block ref="a7f635a546cbb7490b31779618511dd1" category="inline-link-macro-rx"></block></block>
+  <block id="e52172b27eb39053f2941029ca952216" category="list-text">* 節點使用率 * ：以 nodeHeat 為基礎的節點使用率百分比。顯示的值為 recentPrimaryTotalHeat 百分比。從元件 12.8 開始提供。</block>
+  <block id="5e8ecd2e12df03135f7d9ea0fc9f1e5e" category="list-text">* 自訂保護網域 * ：指派給節點的自訂保護網域。</block>
+  <block id="c5c29b3089afd57677f0c6e16b8f6bc1" category="inline-link-macro">執行管理節點的原位升級</block>
+  <block id="870c21ddabb9d392de6b8260f26cb2bd" category="list-text">自 2023 年 11 月起，您無法使用 NetApp 混合雲控制或 REST API 來啟動元件升級，因為簽署金鑰憑證（私有和公有）已於 2023 年 11 月 5 日到期。在使用 NetApp 混合雲控制或 REST API 升級管理服務，元件軟體和儲存韌體之前，您可以先解決此問題，方法是<block ref="3f48e72cfa47aa3f4c9b8d036d27a113" category="inline-link-macro-rx"></block>至版本 12.8 。</block>
+  <block id="155ca98fbc1ded22cd8604d6760bbd99" category="paragraph">如果您部署的是版本 12.8 的新管理節點，您可以使用 NetApp 混合雲控制或 REST API <block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block>，依照中所列的順序執行元件升級。</block>
+  <block id="1806b0c9501c3b2013932e456db5038b" category="list-text">不支援下列節點。如果您嘗試將其中一個節點升級至不受支援的元素版本，您會看到錯誤，指出元素 12.x 不支援該節點：</block>
+  <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">步驟 1 ：在管理節點上升級 VM 硬體版本</block>
+  <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">如果您正在執行現有管理節點的就地升級至元素 12.8 ，則在升級之前，必須確保管理節點上的 VM 硬體版本與 ESXi 6.7 （ VM 硬體版本 14 ）或更新版本相容，視您的環境而定。</block>
+  <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">以vCenter管理員身分登入vSphere Web Client。</block>
+  <block id="7936b082e6a3d2167a2478cee0772514" category="list-text">從 vSphere Client 功能表中，選取 * VMS* &gt; * 範本 * 。</block>
+  <block id="ad4062bf296d686c04c351f026e2400d" category="list-text">在虛擬機器上按一下滑鼠右鍵，然後選取 * 相容性 * &gt; * 升級 VM 相容性 * 。</block>
+  <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">根據 vSphere 環境的版本，選取 ESXi 6.7 或更新版本。</block>
+  <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">選取 * OK* 。</block>
+  <block id="43c3c8c2f75e6064714e6ec942f1e916" category="list-text">升級完成後，請選取 * vSphere 用戶端重新整理 * ，並確認 VM 相容性為所需版本。</block>
+  <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">步驟 2 ：將管理節點升級至元件 12.5 或更新版本</block>
+  <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">請選擇下列其中一個升級選項：</block>
+  <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire使用元素介面、 API 或其他管理工具、您可以使用 NetApp Element 軟體來管理這些儲存資源叢集。本網站包含 Element 軟體 12.8 的文件。</block>
+  <block id="83214fe0ca2841bff645ee69075302da" category="sidebar">SolidFire 與 Element 軟體文件 12.8.</block>
 </blocks>

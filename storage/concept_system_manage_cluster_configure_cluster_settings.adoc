@@ -19,6 +19,7 @@ summary: 您可以從元素UI的「叢集」索引標籤檢視及變更整個叢
 * xref:concept_data_manage_vvol_work_virtual_volumes.adoc[使用虛擬磁碟區]
 * xref:task_snapmirror_use_replication_between_element_and_ontap_clusters.adoc[在元素ONTAP 叢集和叢集之間使用SnapMirror複寫]
 * xref:task_system_manage_cluster_set_the_cluster_full_threshold.adoc[設定叢集完整臨界值]
+* xref:task_system_manage_cluster_volume_load_balancing.adoc[啟用和停用 Volume Load Balancing]
 * xref:task_system_manage_cluster_enable_and_disable_support_access.adoc[啟用和停用支援存取]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Flash_Storage/SF_Series/How_are_the_blockSpace_thresholds_calculated_for_Element["如何計算元素的區塊空間臨界值"]
 * xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[啟用及停用叢集的加密]
@@ -27,8 +28,8 @@ summary: 您可以從元素UI的「叢集」索引標籤檢視及變更整個叢
 * xref:concept_system_manage_snmp_manage_snmp.adoc[管理SNMP]
 * xref:concept_system_manage_drives_managing_drives.adoc[管理磁碟機]
 * xref:concept_system_manage_nodes_manage_nodes.adoc[管理節點]
-* xref:concept_system_manage_virtual_manage_virtual_networks.adoc[管理虛擬網路]
 * xref:task_system_manage_fc_view_fibre_channel_ports_details.adoc[檢視Fibre Channel連接埠詳細資料]
+* xref:concept_system_manage_virtual_manage_virtual_networks.adoc[管理虛擬網路]
 
 
 

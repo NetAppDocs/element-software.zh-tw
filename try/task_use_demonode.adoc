@@ -133,6 +133,4 @@ Element示範節點是以盡力服務的志工為基礎提供。如需支援、�
 
 == 如需詳細資訊、請參閱
 
-* https://www.netapp.com/data-storage/solidfire/documentation/["「All Flash儲存資源」頁面SolidFire"^]
-* https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element示範節點下載頁面（需登入）"^]
-
+https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element示範節點下載頁面（需登入）"^]

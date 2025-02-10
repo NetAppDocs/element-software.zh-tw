@@ -53,6 +53,8 @@ entries:
       url: "/storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html"
     - title: 設定叢集完整臨界值
       url: "/storage/task_system_manage_cluster_set_the_cluster_full_threshold.html"
+    - title: 啟用和停用 Volume Load Balancing
+      url: "/storage/task_system_manage_cluster_volume_load_balancing.html"
     - title: 啟用和停用支援存取
       url: "/storage/task_system_manage_cluster_enable_and_disable_support_access.html"
     - title: 管理使用條款橫幅

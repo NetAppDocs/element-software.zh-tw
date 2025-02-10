@@ -1,0 +1,90 @@
+---
+permalink: api/reference_element_api_disablefeature.html 
+sidebar: sidebar 
+keywords: SNMP,disable,disabling,DisableFeature,vvols,virtual volumes 
+summary: 您可以使用 DisableFeature 方法來停用 Volume LoadBalanceOnActualIOPS 。 
+---
+= DisableFeature
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用此 `DisableFeature`方法停用此 `VolumeLoadBalanceOnActualIOPS`功能。 `VolumeLoadBalanceOnActualIOPS`預設為停用。
+
+[NOTE]
+====
+如果您嘗試停用其他功能，例如 VVols ，則會出現下列錯誤訊息：
+
+[listing]
+----
+{"error":{"code":500,"message":"VolumeLoadBalanceOnActualIOPS is the only feature that can be disabled","name":"xAPINotPermitted"},"id":null}
+----
+====
+
+
+== 參數
+
+此方法具有下列輸入參數。
+
+[cols="1a,3a,1a,1a,1a"]
+|===
+| 名稱 | 說明 | 類型 | 預設值 | 必要 
+
+
+ a| 
+功能
+ a| 
+停用叢集功能。可能值：
+
+* `VolumeLoadBalanceOnActualIOPS`：禁用實際 IOPS （而非最小 IOPS ）上的分片平衡。
+
+ a| 
+字串
+ a| 
+無
+ a| 
+是的
+
+|===
+
+
+== 傳回值
+
+此方法沒有傳回值。
+
+
+
+== 申請範例
+
+此方法的要求類似於下列範例：
+
+[listing]
+----
+{
+  "method": "DisableFeature",
+    "params": {
+        "feature" : "VolumeLoadBalanceOnActualIOPS"
+    },
+    "id": 1
+}
+----
+
+
+== 回應範例
+
+此方法會傳回類似下列範例的回應：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {}
+}
+----
+
+
+== 新的自版本
+
+12.8%

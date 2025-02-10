@@ -123,6 +123,21 @@ MBytesOut
 
 
  a| 
+nodeHeat
+ a| 
+節點使用率資訊。從元件 12.8 開始提供。成員：
+
+* 主要節點總 IOPS / 節點設定 IOPS 平均超過 24 小時
+* RecentPrimaryTotalHeat ：節點主要 IOPS / 節點設定的 IOPS 總計超過一小時
+* RecentTotalHeat ：節點總 IOPS / 節點設定的 IOPS ，平均超過一小時
+* totalHeat ：節點總 IOPS / 節點設定的 IOPS ，平均超過 24 小時
+
+ a| 
+Json物件
+
+
+
+ a| 
 readLatency總計
  a| 
 對節點執行讀取作業所花費的總時間值會以等量方式增加。

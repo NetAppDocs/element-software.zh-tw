@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。 
 ---
-= Element軟體12.5及更新版本的新功能
+= Element 軟體的新功能
 :allow-uri-read: 
 :url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
 :icons: font
@@ -12,16 +12,54 @@ summary: NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶�
 
 
 [role="lead"]
-NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.7是最新版本、包含安全性與系統元件更新、作業改善及已解決的問題。
+NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.8是最新版本、包含安全性與系統元件更新、作業改善及已解決的問題。
 
 
-NOTE: 根據儲存叢集上目前執行的元素版本、會將累積式軟體和韌體更新安裝為Element 12.7升級的一部分。例如、如果叢集目前正在執行元素12.3.x、您可以直接升級至元素12.7、從元素12.5和12.7取得累積更新。如需支援的升級途徑、請參閱此 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["知識庫文章"^]
+NOTE: 根據儲存叢集上目前執行的元素版本、會將累積式軟體和韌體更新安裝為Element 12.8升級的一部分。例如，如果叢集目前正在執行 Element 12.5 ，您可以直接升級至 Element 12.8 ，從 Element 12.7 和 12.8 取得累積更新。有關支持的升級路徑，請參閱知識庫文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["執行 NetApp Element 軟體之儲存叢集的升級對照表為何"^]。
+
+
+
+== 元件12.8
+
+深入瞭解 Element 12.8 的新功能。
+
+
+
+=== Volume 負載平衡
+
+元素 12.8 介紹 Volume Load Balancing 功能。您可以使用此功能，根據每個磁碟區的實際 IOPS 層級來平衡節點之間的磁碟區，而非 QoS 原則中設定的最低 IOPS 。您只能使用 Volume Load Balancing 功能來平衡磁碟區。您無法使用它來平衡虛擬磁碟區。Volume Load Balancing 功能預設為停用。您可以使用 API 參數搭配link:../api/reference_element_api_enablefeature.html["啟用功能"]和 link:../api/reference_element_api_disablefeature.html["DisableFeature"] API 方法或link:../storage/task_system_manage_cluster_volume_load_balancing.html["Volume 負載平衡"]元素 UI 中的選項來啟用和停用它 `VolumeLoadBalanceOnActualIOPS`。
+
+
+
+=== 檢視節點使用率資訊
+
+有了 Element 12.8 ，您就可以像使用 `GetNodeStats`和 `ListNodeStats` API 方法一樣檢視節點使用率資訊 `nodeHeat`。 `nodeHeat`物件是物件的成員 `nodeStats`，會根據主要 IOPS 或整體 IOPS 與一段時間內平均的已設定 IOPS 比率，顯示節點使用率資訊。
+
+此外，您可以在元素 UI 中的節點「檢視詳細資料」顯示中，以百分比檢視節點使用率 `recentPrimaryTotalHeat`。
+
+
+
+=== 檢視磁碟區的 I/O 統計資料
+
+有了 Element 12.8 ，您可以使用 `GetVolumeStats`和 `ListVolumeStatsByVolume` API 方法，檢視磁碟區的 I/O 使用統計資料 `sliceIopsStats`。I/O 統計資料是使用磁碟區的讀取和寫入 IOPS 資訊來計算，並在過去 24 小時和最後一小時的兩個期間內進行測量。link:../api/reference_element_api_volumestats.html#object-members["深入瞭解"]。
+
+
+
+=== iSCSI 工作階段的 CHAP 演算法
+
+當主機 iSCSI 啟動器建立具有元素 iSCSI 目標的 iSCSI 工作階段時，會要求使用挑戰握手驗證傳輸協定（ CHAP ）演算法清單。從元素 12.8 開始，您可以檢視元素 iSCSI 目標選擇用於 iSCSI 工作階段的支援 CHAP 演算法。
+
+
+
+=== 升級 VM 硬體版本
+
+如果您正在執行現有管理節點的就地升級至元素 12.8 ，則在升級之前，必須確保管理節點上的 VM 硬體版本與 ESXi 6.7 （ VM 硬體版本 14 ）或更新版本相容，視您的環境而定。link:../upgrade/task_hcc_upgrade_management_node.html#step-1-upgrade-vm-hardware-version-on-a-management-node["深入瞭解"]。
 
 
 
 == 元素12.7
 
-深入瞭解Element 12.7的新功能。
+深入瞭解 Element 12.7 的新功能。
 
 
 
@@ -80,7 +118,7 @@ NetApp錯誤線上工具中已列出已解決及已知的問題。您可以瀏�
 
 == 要點12.5
 
-Element 12.5 提供改善的儲存節點存取、增強的自訂保護網域管理能力、全新及改良的叢集故障和事件、增強的建立叢集 UI 功能、以及增強的安全性。
+深入瞭解 Element 12.5 的新功能。
 
 
 
@@ -128,9 +166,7 @@ Element 12.5包含儲存節點的韌體更新。 link:../concepts/concept_rn_rel
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["NetApp混合雲控制與管理服務版本說明"^]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
-* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
-* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"^]
 * http://docs.netapp.com/sfe-122/index.jsp["適用於舊版的VMware及Element軟體文件中心SolidFire"^]
-* https://www.netapp.com/us/documentation/hci.aspx["「資源」頁面NetApp HCI"^]
+* https://docs.netapp.com/us-en/hci/index.html["資訊文件NetApp HCI"^]
 * link:../hardware/fw_storage_nodes.html["支援的儲存韌體版本SolidFire 、適用於不支援的儲存節點"]
 

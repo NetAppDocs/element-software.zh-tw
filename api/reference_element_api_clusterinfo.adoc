@@ -198,11 +198,20 @@ UUID
  a| 
 UUID
 
+
+
+ a| 
+volumeLoadBalanceOnActualIopsState
+ a| 
+根據實際 IOPS 而非最小 IOPS 功能來進行切片平衡的狀態。從元件 12.8 開始提供。
+ a| 
+字串
+
 |===
 [discrete]
 == 如需詳細資訊、請參閱
 
 * link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo"]
-* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]執行 ]
+* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"^]
 * https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
 
