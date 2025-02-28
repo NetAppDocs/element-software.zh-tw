@@ -6602,7 +6602,6 @@
   <block id="596b858c2e5a9adba143102768b4dfd1" category="paragraph">使用者可用的IOP點數總數。當磁碟區未使用最高設定的最大IOPS時、會累積點數。</block>
   <block id="e3610a84890c0cb8e31ba5e2825ef82e" category="paragraph">用戶端Quue深度</block>
   <block id="895b9fd9bd82498f2637ee71223fca99" category="paragraph">叢集使用率</block>
-  <block id="53559c487d6329ff8a95081175ee8072" category="paragraph">使用的叢集容量量。</block>
   <block id="f6e65c6017cbd8accff3dedbaa7c9157" category="paragraph">desiredMetadataHoses</block>
   <block id="27921d101d13cbcdde780f0bf7b74051" category="paragraph">如果要在中繼資料服務之間移轉Volume中繼資料、則會將中繼資料（分區）服務移轉至。「null」值表示磁碟區未進行移轉。</block>
   <block id="d6768553ce2e9167b5c9051355cc39a0" category="paragraph">最新</block>
@@ -7495,7 +7494,6 @@
   <block id="89f04872de01c08f9be1f64a5e0ccadc" category="paragraph">scheduleID</block>
   <block id="714fceb471c374698251d925d8d05403" category="paragraph">排程的唯一ID。</block>
   <block id="3e31245b25836087aa43d5d4565230c2" category="paragraph">排程資訊</block>
-  <block id="29a9c6e40ddc0f47741633f0b0bd0699" category="paragraph">包括排程的唯一名稱、所建立快照的保留期間、以及建立快照的磁碟區Volume ID。</block>
   <block id="75086d1d4f9f04a29f1f6513159429be" category="paragraph">scheduleName</block>
   <block id="b06b56d23b646ad4c7c629956c9fb6a3" category="paragraph">指派給排程的唯一名稱。</block>
   <block id="1513d59c3808ebf74445995e1a3169e3" category="paragraph">scheduleType</block>
@@ -12369,4 +12367,25 @@
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">請選擇下列其中一個升級選項：</block>
   <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire使用元素介面、 API 或其他管理工具、您可以使用 NetApp Element 軟體來管理這些儲存資源叢集。本網站包含 Element 軟體 12.8 的文件。</block>
   <block id="83214fe0ca2841bff645ee69075302da" category="sidebar">SolidFire 與 Element 軟體文件 12.8.</block>
+  <block id="d9a22d7a8178d5b42a8750123cbfe5b1" category="list-text">完成</block>
+  <block id="acbccd83186c34328efe61415e4f06c3" category="paragraph">iosInProgress</block>
+  <block id="efadf566bdff7cd45611bcf2ea26634b" category="paragraph">此磁碟機的 I/O 數量正在進行中。</block>
+  <block id="0fb9cf5f04f61bb6f1151da57ceb1ca1" category="paragraph">讀取</block>
+  <block id="2e63b183661efd0e03c30a8933592b67" category="paragraph">每秒對此磁碟機的 Read() 呼叫數。</block>
+  <block id="0557cc41212e450b334e6cfd03e28356" category="paragraph">讀取已建置</block>
+  <block id="2d65b6a0c4e91c801de77a9d9219d227" category="paragraph">可合併成較大讀取的鄰近扇區的 read() 調用數。</block>
+  <block id="89892cc60750e3ae3839fe1bd6f0e295" category="paragraph">readMbec</block>
+  <block id="c30d492a58003b8cb74286227b4474f4" category="paragraph">讀取所花費的毫秒數。</block>
+  <block id="4dcc865dcd8a0440f3e955e66928b6a9" category="paragraph">寫入</block>
+  <block id="2723fa53100ce7b4222053e0cae1fe2a" category="paragraph">每秒對此磁碟機的寫入（）呼叫數。</block>
+  <block id="90355908c2c641db38cd1f8d115e8288" category="paragraph">寫入已建置</block>
+  <block id="dff2bd7a729604d5144c21832c60771e" category="paragraph">可合併成較大寫入的鄰近磁區的 write() 呼叫數目。</block>
+  <block id="48c52f79a065697f974edffe9baa1840" category="paragraph">writeMsec</block>
+  <block id="a104ca42a35244c8eaac66b37a617289" category="paragraph">寫入所花費的毫秒數。</block>
+  <block id="cbe31e551cb8a7eda07f7c2fbae6f80b" category="list-text"><block ref="dcd44d342c90672f6b7613a3fda7d755" prefix="" category="inline-code"></block>：指定是否允許在進行先前的快照複寫時建立新的快照。（布林值）</block>
+  <block id="e9eb5370de2e3375a67adb6b46c54033" category="list-text"><block ref="6366ebc98be76ca376a9a50b148937ea" prefix="" category="inline-code"></block>：保留快照的時間量。視時間而定，會以下列其中一種格式顯示：</block>
+  <block id="a284d3e41f479772896829e0c83474be" category="list-text">FIFO ：快照以先進先出（ FIFO ）為基礎保留。如果為空白、則快照會永遠保留。（字串）</block>
+  <block id="7ed79c16ce9b38d79b10c8f36aa9049a" category="list-text">hh ： mm ： ss</block>
+  <block id="99eb6e1c13e9ae0bb02e022566f20121" category="paragraph">包括排程的唯一名稱、所建立快照的保留期間、以及建立快照的磁碟區Volume ID。有效值：</block>
+  <block id="65dc2083558f47cd1151751a12c24549" category="paragraph">浮點運算或整數，視同步作業類型而定</block>
 </blocks>

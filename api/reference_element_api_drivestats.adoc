@@ -51,6 +51,15 @@ DriveID
 
 
  a| 
+iosInProgress
+ a| 
+此磁碟機的 I/O 數量正在進行中。
+ a| 
+整數
+
+
+
+ a| 
 《生命的重製》Percent
  a| 
 磁碟機媒體耗損指標。
@@ -87,9 +96,36 @@ PowerOnHours
 
 
  a| 
+讀取
+ a| 
+每秒對此磁碟機的 Read() 呼叫數。
+ a| 
+整數
+
+
+
+ a| 
 readBytes
  a| 
 由於用戶端作業而從磁碟機讀取的總位元組數。
+ a| 
+整數
+
+
+
+ a| 
+讀取已建置
+ a| 
+可合併成較大讀取的鄰近扇區的 read() 調用數。
+ a| 
+整數
+
+
+
+ a| 
+readMbec
+ a| 
+讀取所花費的毫秒數。
  a| 
 整數
 
@@ -168,9 +204,36 @@ ISO 8601日期字串
 
 
  a| 
+寫入
+ a| 
+每秒對此磁碟機的寫入（）呼叫數。
+ a| 
+整數
+
+
+
+ a| 
 文章Bytes
  a| 
 由於用戶端活動而寫入磁碟機的總位元組數。
+ a| 
+整數
+
+
+
+ a| 
+寫入已建置
+ a| 
+可合併成較大寫入的鄰近磁區的 write() 呼叫數目。
+ a| 
+整數
+
+
+
+ a| 
+writeMsec
+ a| 
+寫入所花費的毫秒數。
  a| 
 整數
 
@@ -189,3 +252,5 @@ ISO 8601日期字串
 == 如需詳細資訊、請參閱
 
 xref:reference_element_api_getdrivestats.adoc[GetDriveStats]
+
+ // 2025 FEB 27, DOC-4778
