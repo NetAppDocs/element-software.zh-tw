@@ -27,7 +27,7 @@ NOTE: 根據儲存叢集上目前執行的元素版本、會將累積式軟體�
 
 === Volume 負載平衡
 
-元素 12.8 介紹 Volume Load Balancing 功能。您可以使用此功能，根據每個磁碟區的實際 IOPS 層級來平衡節點之間的磁碟區，而非 QoS 原則中設定的最低 IOPS 。您只能使用 Volume Load Balancing 功能來平衡磁碟區。您無法使用它來平衡虛擬磁碟區。Volume Load Balancing 功能預設為停用。您可以使用 API 參數搭配link:../api/reference_element_api_enablefeature.html["啟用功能"]和 link:../api/reference_element_api_disablefeature.html["DisableFeature"] API 方法或link:../storage/task_system_manage_cluster_volume_load_balancing.html["Volume 負載平衡"]元素 UI 中的選項來啟用和停用它 `VolumeLoadBalanceOnActualIOPS`。
+元素 12.8 介紹 Volume Load Balancing 功能。您可以使用此功能，根據每個磁碟區的實際 IOPS 層級來平衡節點之間的磁碟區，而非 QoS 原則中設定的最低 IOPS 。您只能使用 Volume Load Balancing 功能來平衡磁碟區。您無法使用它來平衡虛擬磁碟區。Volume Load Balancing 功能預設為停用。您可以使用 API 參數搭配link:../api/reference_element_api_enablefeature.html["啟用功能"]和 link:../api/reference_element_api_disablefeature.html["DisableFeature"] API 方法，或使用link:../storage/task_system_manage_cluster_volume_load_balancing.html["Volume 負載平衡"]元素 UI 中的選項來啟用和停用它 `VolumeLoadBalanceOnActualIOPS`。
 
 
 
