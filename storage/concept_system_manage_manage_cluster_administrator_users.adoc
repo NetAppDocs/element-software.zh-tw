@@ -61,9 +61,13 @@ NOTE: 需要本機（非LDAP）叢集管理員帳戶、才能透過每節點UI�
 
 
 +
+[NOTE]
+====
+系統管理員存取類型可使用所有權限。
 
-NOTE: 系統管理員存取類型可使用所有權限。
+透過 API 提供的存取類型無法在元素 UI 中使用。
 
+====
 +
 ** *類型*：叢集管理員的類型。可能值：
 +
@@ -152,12 +156,9 @@ link:task_system_manage_enable_ldap_authentication.html["使用元素使用者�
 . 按一下*儲存變更*。
 
 
-
-
-== 如需詳細資訊、請參閱
-
+.相關資訊
+* link:../api/reference_element_api_app_b_access_control.html["瞭解元素 API 可用的存取類型"]
 * link:task_system_manage_enable_ldap_authentication.html["使用元素使用者介面啟用LDAP驗證"]
 * link:concept_system_manage_manage_ldap.html["停用LDAP"]
-* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

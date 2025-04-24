@@ -12388,4 +12388,9 @@
   <block id="65dc2083558f47cd1151751a12c24549" category="paragraph">浮點運算或整數，視同步作業類型而定</block>
   <block id="ec6874eecaec538abf3d408bf6b6b411" category="list-text"><block ref="cf54937a2330ac17aa523bf7130911a3" prefix="" category="inline-code"></block>：快照以先進先出（ FIFO ）為基礎保留。如果為空白、則快照會永遠保留。（字串）</block>
   <block id="995938d68f1857072e8bf08ab00f47df" category="paragraph">元素 12.8 介紹 Volume Load Balancing 功能。您可以使用此功能，根據每個磁碟區的實際 IOPS 層級來平衡節點之間的磁碟區，而非 QoS 原則中設定的最低 IOPS 。您只能使用 Volume Load Balancing 功能來平衡磁碟區。您無法使用它來平衡虛擬磁碟區。Volume Load Balancing 功能預設為停用。您可以使用 API 參數搭配<block ref="1028004a3d63b00e7896fde204286489" category="inline-link-macro-rx"></block>和 <block ref="ca543ea41b9fe86f5db5c46f8401b9de" category="inline-link-macro-rx"></block> API 方法，或使用<block ref="0e280c25b1846637cc005ef57df39d27" category="inline-link-macro-rx"></block>元素 UI 中的選項來啟用和停用它<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>。</block>
+  <block id="cedd3b982f345250c95c539d68542a1c" category="admonition">透過 API 提供的存取類型無法在元素 UI 中使用。</block>
+  <block id="66ae9524f9c214ce3d4ddc510dc6384a" category="inline-link-macro">瞭解元素 UI 中可用的存取類型</block>
+  <block id="e3ae42684db77c59ef80c04aae526de5" category="paragraph"><block ref="e3ae42684db77c59ef80c04aae526de5" category="inline-link-macro-rx"></block></block>
+  <block id="f72c81a1158d9efb9bad238e3c497a6c" category="inline-link-macro">瞭解元素 API 可用的存取類型</block>
+  <block id="c858f3d30df8c552799df529153c0e44" category="list-text"><block ref="c858f3d30df8c552799df529153c0e44" category="inline-link-macro-rx"></block></block>
 </blocks>

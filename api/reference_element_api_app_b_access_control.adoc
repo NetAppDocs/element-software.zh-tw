@@ -14,6 +14,9 @@ summary: 可用的元素API方法會因您設定的存取類型而異。
 可用的元素API方法會因您設定的存取類型而異。
 
 
+NOTE: 透過 API 提供的存取類型無法在元素 UI 中使用。
+
+
 
 == 帳戶
 
@@ -1108,3 +1111,5 @@ Get非 同步結果
 遠端磁碟機
 
 |===
+.相關資訊
+link:../storage/concept_system_manage_manage_cluster_administrator_users.html#view-cluster-admin-details["瞭解元素 UI 中可用的存取類型"]
