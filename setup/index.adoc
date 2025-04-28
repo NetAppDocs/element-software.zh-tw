@@ -38,11 +38,3 @@ summary: 瞭解如何為您的環境設定儲存系統。
 
 
 
-
-
-
-== 如需詳細資訊、請參閱
-
-* https://www.netapp.com/data-storage/solidfire/["支援All Flash儲存設備總覽SolidFire"^]
-* https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
-

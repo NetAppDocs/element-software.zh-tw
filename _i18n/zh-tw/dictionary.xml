@@ -3479,8 +3479,6 @@
   <block id="f17bdc3100242be6aa20374cb07b1e01" category="list-text"><block ref="f17bdc3100242be6aa20374cb07b1e01" category="inline-xref-macro-rx"></block></block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="inline-xref-macro">接下來呢？</block>
   <block id="6b758c6baa8d819395041efcb30c549d" category="list-text"><block ref="6b758c6baa8d819395041efcb30c549d" category="inline-xref-macro-rx"></block></block>
-  <block id="e2291d0b9bc2d41bc343cf77cf0a1a87" category="inline-link">支援All Flash儲存設備總覽SolidFire</block>
-  <block id="e2c85d417b263e570fcb0b7027cad0ba" category="list-text"><block ref="e2c85d417b263e570fcb0b7027cad0ba" category="inline-link-rx"></block></block>
   <block id="831787f5646762fa32ee6973b0aa78ed" category="summary">當您建立具有Fibre Channel節點和SolidFire Ees供 儲存節點使用的新叢集時、可在Web UI中找到節點的全球連接埠名稱（WWPN）位址。您可以使用WWPN位址對光纖通道交換器進行分區。</block>
   <block id="fb13cfee66f460451851193ba979131d" category="paragraph">當您建立具有Fibre Channel節點和SolidFire Fibre Channel儲存節點的新叢集時、可在Web UI中找到節點的全球連接埠名稱（WWPN）位址。您可以使用WWPN位址對光纖通道交換器進行分區。</block>
   <block id="a8a0e80d485ab445725cb6f6581f0af0" category="paragraph">當您建立具有節點的新叢集時、系統會註冊WWPN。在元素UI中、您可以從FC連接埠索引標籤的WWPN欄中找到WWPN位址、您可以從叢集索引標籤存取該索引標籤。</block>
@@ -10852,9 +10850,7 @@
   <block id="580c35d1b4dc1d63073ae537ce0f28ab" category="inline-link-macro">設定額外的儲存NIC</block>
   <block id="4733d6f93dbca188e79e25900eaeacb7" category="list-text">您已依照的指示設定其他網路介面卡（如有需要） <block ref="1f5ebd4d6fe6b214007c2692b1a22cfb" category="inline-link-macro-rx"></block>。</block>
   <block id="97badad042e3a18dd496d204994f3a2f" category="admonition">如果eth0無法路由至SVIP、則持續磁碟區可能需要額外的網路介面卡。在iSCSI儲存網路上設定新的網路介面卡、以允許設定持續磁碟區。</block>
-  <block id="1a6ffd97834fd7495156f52f3058e50b" category="list-text">使用SSH或主控台存取權登入管理節點虛擬機器。</block>
   <block id="303c7d52b5c18e714947ecd4996594a2" category="inline-link">管理節點ISO</block>
-  <block id="bc6733dc102d98376848617102ed0352" category="list-text">下載<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> 適用於從NetApp Support網站到管理節點虛擬機器的Element軟體。</block>
   <block id="e097e26564fa470c938b5aa9cb375497" category="admonition">ISO的名稱類似於「Poolidfire - fdva-&lt;Element版本&gt;-增補 軟體X-XX.x.XXXX.ISO」</block>
   <block id="7af3e8bcf74bc743e6d42428a1ef8e84" category="list-text">請在下載的檔案上執行md5sum、檢查下載內容的完整性、並將輸出與NetApp Support網站上的Element軟體進行比較、如下列範例所示：</block>
   <block id="4e82f8cfbdbaab82d0c8c7e65d59b756" category="paragraph">「Udo md5sum -b &lt;指向iso&gt;/sidfire-fdva-&lt;元件版本&gt;-patchX-XX.x.XXXX.iso'</block>
@@ -11284,7 +11280,6 @@
   <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">您可以將管理節點從12.3.x版或更新版本升級至管理節點12.5或更新版本。</block>
   <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
   <block id="2a67edcd39483da3b7c2244d1a853ca7" category="section-title">將管理節點從12.3.x版或更新版本升級至12.5版或更新版本</block>
-  <block id="00986f242d79556b370e046857ac478c" category="paragraph">您可以在不需要佈建新管理節點虛擬機器的情況下、將管理節點從12.3.x或更新版本就地升級至12.5或更新版本。</block>
   <block id="162101c4a12e19388bdcdc0495ccc2ae" category="admonition">Element 12.5或更新版本的管理節點為選用升級。現有部署不需要此功能。</block>
   <block id="cd847f70c9955e37a7a701eee9f2cd67" category="list-text">您要升級的管理節點為12版、使用的是IPv6網路。管理節點版本12.5或更新版本不支援IPv6。</block>
   <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">如果您要將管理節點更新至版本12．5或更新版本、則需要使用管理服務2．21．61或更新版本才能繼續。</block>
@@ -12357,11 +12352,8 @@
   <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">步驟 1 ：在管理節點上升級 VM 硬體版本</block>
   <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">如果您正在執行現有管理節點的就地升級至元素 12.8 ，則在升級之前，必須確保管理節點上的 VM 硬體版本與 ESXi 6.7 （ VM 硬體版本 14 ）或更新版本相容，視您的環境而定。</block>
   <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">以vCenter管理員身分登入vSphere Web Client。</block>
-  <block id="7936b082e6a3d2167a2478cee0772514" category="list-text">從 vSphere Client 功能表中，選取 * VMS* &gt; * 範本 * 。</block>
-  <block id="ad4062bf296d686c04c351f026e2400d" category="list-text">在虛擬機器上按一下滑鼠右鍵，然後選取 * 相容性 * &gt; * 升級 VM 相容性 * 。</block>
   <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">根據 vSphere 環境的版本，選取 ESXi 6.7 或更新版本。</block>
   <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">選取 * OK* 。</block>
-  <block id="43c3c8c2f75e6064714e6ec942f1e916" category="list-text">升級完成後，請選取 * vSphere 用戶端重新整理 * ，並確認 VM 相容性為所需版本。</block>
   <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">步驟 2 ：將管理節點升級至元件 12.5 或更新版本</block>
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">請選擇下列其中一個升級選項：</block>
   <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire使用元素介面、 API 或其他管理工具、您可以使用 NetApp Element 軟體來管理這些儲存資源叢集。本網站包含 Element 軟體 12.8 的文件。</block>
@@ -12393,4 +12385,13 @@
   <block id="e3ae42684db77c59ef80c04aae526de5" category="paragraph"><block ref="e3ae42684db77c59ef80c04aae526de5" category="inline-link-macro-rx"></block></block>
   <block id="f72c81a1158d9efb9bad238e3c497a6c" category="inline-link-macro">瞭解元素 API 可用的存取類型</block>
   <block id="c858f3d30df8c552799df529153c0e44" category="list-text"><block ref="c858f3d30df8c552799df529153c0e44" category="inline-link-macro-rx"></block></block>
+  <block id="6e93fbac14e98fd4eee5f4f560e1d580" category="list-text">從 vSphere Client 功能表中，選取 * VM and Templates] 。</block>
+  <block id="be19667c20f2f3c6b932b48a9c488774" category="list-text">在虛擬機器（ VM ）上按一下滑鼠右鍵，然後選取 * 電源 * &gt; * 關閉來賓作業系統 * 。</block>
+  <block id="6f5f678ae471ecc070cea185b3d40ed4" category="paragraph">等到虛擬機器關機。</block>
+  <block id="b58c4fe6ac8a2dffa0fb94c9d1de7556" category="list-text">在 VM 上按一下滑鼠右鍵，然後選取 * 相容性 * &gt; * 升級 VM 相容性 * 。</block>
+  <block id="eeb196c0a77fbb85f8908ae3cca16bfc" category="list-text">升級完成後，在虛擬機器上按一下滑鼠右鍵，然後選取 * Power* &gt; * Power On* 。</block>
+  <block id="917268d8045dd1bb18e5f8cc7caf9359" category="list-text">選取 * vSphere 用戶端重新整理 * ，並確認 VM 相容性為所需版本。</block>
+  <block id="a879c8e657832d392ef358d2440c3faf" category="paragraph">您可以執行管理節點從 12.3.x 版或更新版本就地升級至 12.5 版或更新版本，而無需佈建新的管理節點 VM 。</block>
+  <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">使用 SSH 或主控台存取權限登入管理節點 VM 。</block>
+  <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">從 NetApp 支援網站下載<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> for Element 軟體至管理節點 VM 。</block>
 </blocks>
