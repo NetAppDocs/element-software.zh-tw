@@ -12311,7 +12311,6 @@
   <block id="906ea05443e4b488a42f3f06305353ee" category="paragraph">在遵循此程序之前，您應該先瞭解<block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block>及是否要使用它們。持續磁碟區為選用功能、但建議在虛擬機器（VM）遺失時、進行管理節點組態資料恢復。</block>
   <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">步驟 1 ：下載 ISO 或 OVA 並部署 VM</block>
   <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">從 NetApp 支援網站下載適當的 ISO 或 OVA ，然後安裝 VM 。</block>
-  <block id="4aee9657f267c579c49541b5f19ca32c" category="list-text">從 NetApp 支援網站的頁面下載 OVA 或 ISO 以供安裝<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>。新的 OVA 包含更新的 SSL 憑證。</block>
   <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">步驟 2 ：建立管理節點管理並設定網路</block>
   <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">VM 安裝完成後，建立管理節點管理員使用者，並設定管理節點網路。</block>
   <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">步驟 3 ：設定時間同步</block>
@@ -12394,4 +12393,5 @@
   <block id="a879c8e657832d392ef358d2440c3faf" category="paragraph">您可以執行管理節點從 12.3.x 版或更新版本就地升級至 12.5 版或更新版本，而無需佈建新的管理節點 VM 。</block>
   <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">使用 SSH 或主控台存取權限登入管理節點 VM 。</block>
   <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">從 NetApp 支援網站下載<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> for Element 軟體至管理節點 VM 。</block>
+  <block id="e43f2538484fde027e53efbedb634fce" category="list-text">從 NetApp 支援網站的頁面下載 OVA 或 ISO 以供安裝<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>。</block>
 </blocks>

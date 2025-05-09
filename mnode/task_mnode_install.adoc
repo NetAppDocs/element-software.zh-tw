@@ -62,7 +62,7 @@ Element 12.2管理節點為選用升級。現有部署不需要此功能。
 從 NetApp 支援網站下載適當的 ISO 或 OVA ，然後安裝 VM 。
 
 .步驟
-. 從 NetApp 支援網站的頁面下載 OVA 或 ISO 以供安裝link:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element軟體"^]。新的 OVA 包含更新的 SSL 憑證。
+. 從 NetApp 支援網站的頁面下載 OVA 或 ISO 以供安裝link:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element軟體"^]。
 +
 .. 選擇*下載最新版本*並接受EULA。
 .. 選取您要下載的管理節點映像。
