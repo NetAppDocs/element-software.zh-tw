@@ -59,17 +59,21 @@ TIP: 若要檢查版本、請登入管理節點、並在登入橫幅中檢視元
 您可以使用下列順序來升級SolidFire 適用於Element 12.5或更新版本的NetApp全快閃儲存系統。
 
 .步驟
+. link:task_hcc_upgrade_element_prechecks.html["在升級儲存之前執行 Element 儲存健康檢查"] 。
+. link:task_hcc_upgrade_element_software.html["升級您的Element軟體與儲存韌體"]。
 . link:task_hcc_update_management_services.html["從混合雲控制系統更新管理服務"]。
 +
+[IMPORTANT]
+====
+** 管理服務 2.27 套裝組合包含適用於 vCenter Server 5.5 的 Element Plug-in，外掛程式僅與管理節點 12.8 相容。當您更新至管理服務 2.27 時，您必須變更升級順序並在升級至 Element 12.8 之後更新管理服務包，以使管理節點和管理服務之間相容。
+** 如果您要更新至管理服務 2.21.61 到 2.26.40，則必須在升級至 Element 12.8 之前更新管理服務套件。
 
-IMPORTANT: 如果您要將管理服務更新至2.16版或更新版本、而且執行的是管理節點11.3至11.8、則在更新管理服務之前、必須先增加管理節點VM的RAM。
 
+====
 +
 
-IMPORTANT: 您必須先更新至最新的管理服務套裝組合、才能升級Element軟體。
+IMPORTANT: 如果您要將管理服務更新至版本 2.16 或更高版本，並且正在執行管理節點 11.3 到 11.8，則需要在更新管理服務之前增加管理節點 VM 的 RAM。
 
-. link:task_hcc_upgrade_element_prechecks.html["升級儲存設備之前、請先執行Element儲存設備健全狀況檢查"]。
-. link:task_hcc_upgrade_element_software.html["升級您的Element軟體與儲存韌體"]。
 . link:task_hcc_upgrade_storage_firmware.html["（選用）僅升級您的Element儲存韌體"]。
 +
 

@@ -6,12 +6,12 @@ entries:
   url: "/upgrade/concept_element_upgrade_overview.html"
 - title: 系統升級程序
   entries:
-  - title: 更新管理服務
-    url: "/upgrade/task_hcc_update_management_services.html"
   - title: 升級儲存設備之前、請先執行Element儲存設備健全狀況檢查
     url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
   - title: 升級Element軟體
     url: "/upgrade/task_hcc_upgrade_element_software.html"
+  - title: 更新管理服務
+    url: "/upgrade/task_hcc_update_management_services.html"
   - title: 升級儲存韌體
     url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
   - title: 升級管理節點
