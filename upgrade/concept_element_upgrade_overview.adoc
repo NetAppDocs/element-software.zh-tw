@@ -60,7 +60,11 @@ TIP: 若要檢查版本、請登入管理節點、並在登入橫幅中檢視元
 
 .步驟
 . link:task_hcc_upgrade_element_prechecks.html["在升級儲存之前執行 Element 儲存健康檢查"] 。
-. link:task_hcc_upgrade_element_software.html["升級您的Element軟體與儲存韌體"]。
+. link:task_hcc_upgrade_management_node.html["（選用）升級管理節點"]。
++
+
+NOTE: 不再需要升級管理節點作業系統、即可升級儲存叢集上的Element軟體。如果管理節點為11.3版或更新版本、您只需將管理服務升級至最新版本、即可使用NetApp混合雲控制系統執行元件升級。如果您基於其他理由（例如安全性補救）而想要升級管理節點作業系統、請依照您案例的管理節點升級程序進行。
+
 . link:task_hcc_update_management_services.html["從混合雲控制系統更新管理服務"]。
 +
 [IMPORTANT]
@@ -74,15 +78,11 @@ TIP: 若要檢查版本、請登入管理節點、並在登入橫幅中檢視元
 
 IMPORTANT: 如果您要將管理服務更新至版本 2.16 或更高版本，並且正在執行管理節點 11.3 到 11.8，則需要在更新管理服務之前增加管理節點 VM 的 RAM。
 
+. link:task_hcc_upgrade_element_software.html["升級您的Element軟體與儲存韌體"]。
 . link:task_hcc_upgrade_storage_firmware.html["（選用）僅升級您的Element儲存韌體"]。
 +
 
 NOTE: 當主要版本以外的新儲存韌體升級可供使用時、您可能會執行此工作。
-
-. link:task_hcc_upgrade_management_node.html["（選用）升級管理節點"]。
-+
-
-NOTE: 不再需要升級管理節點作業系統、即可升級儲存叢集上的Element軟體。如果管理節點為11.3版或更新版本、您只需將管理服務升級至最新版本、即可使用NetApp混合雲控制系統執行元件升級。如果您基於其他理由（例如安全性補救）而想要升級管理節點作業系統、請依照您案例的管理節點升級程序進行。
 
 . link:task_vcp_upgrade_plugin.html["升級vCenter Server的Element外掛程式"]。
 
