@@ -69,7 +69,7 @@ NOTE: 使用者名稱和密碼可以使用大小寫字母、特殊字元和數�
 
 == 以取得更多資訊
 
-* link:../api/index.html["使用Element API管理儲存設備"]
+* link:../api/concept_element_api_about_the_api.html["使用Element API管理儲存設備"]
 * https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

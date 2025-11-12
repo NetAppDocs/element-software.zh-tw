@@ -28,6 +28,20 @@ NOTE: 叢集配對需要在管理網路上的節點之間建立完整連線。�
 
 
 
+== 使用MVIP或配對金鑰配對叢集
+
+如果叢集管理員可以存取兩個叢集、您可以使用目標叢集的MVIP來配對來源與目標叢集。如果叢集管理員存取只能在叢集配對中的一個叢集上使用、則可在目標叢集上使用配對金鑰來完成叢集配對。
+
+. 選取下列其中一種方法來配對叢集：
++
+** link:task_replication_pair_cluster_using_mvip.html["使用MVIP配對叢集"]如果兩個叢集都有叢集管理員存取權限，則使用此方法。此方法利用遠端叢集的 MVIP 來配對兩個叢集。
+** link:task_replication_pair_cluster_using_pairing_key.html["使用配對金鑰配對叢集"]如果集群管理員只能存取其中一個集群，則可以使用此方法。此方法產生一個配對金鑰，該金鑰可用於目標叢集以完成叢集配對。
+
+
+
+
+
+
 == 如需詳細資訊、請參閱
 
 xref:reference_prereq_network_port_requirements.adoc[網路連接埠需求]

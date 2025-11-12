@@ -28,7 +28,7 @@ summary: 您可以使用NetApp Element 這個解決方法來檢視有關叢集�
 == 如需詳細資訊、請參閱
 
 * xref:reference_monitor_cluster_fault_codes.adoc[叢集故障代碼]
-* link:../api/index.html["使用Element API管理儲存設備"]
+* link:../api/concept_element_api_about_the_api.html["使用Element API管理儲存設備"]
 * https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

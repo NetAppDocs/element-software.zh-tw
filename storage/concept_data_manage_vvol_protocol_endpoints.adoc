@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: protocol endpoint, access, cluster, storage node, iscsi supported 
 summary: 傳輸協定端點是主機用來處理執行NetApp Element 支援軟體之叢集上的儲存問題的存取點。使用者無法刪除或修改傳輸協定端點、無法與帳戶建立關聯、也無法新增至磁碟區存取群組。 
 ---
-= 傳輸協定端點
+= 了解協定端點
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

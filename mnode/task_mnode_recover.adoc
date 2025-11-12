@@ -226,6 +226,9 @@ echo '{"trident": true, "mvip": "[mvip IP address]", "account_name": "[persisten
 
 
 
+
+
+[[step_6_recover_mnode_redeploy]]
 . 設定並執行管理節點重新部署命令、以連線至叢集上裝載的持續磁碟區、並使用先前的管理節點組態資料啟動服務：
 +
 

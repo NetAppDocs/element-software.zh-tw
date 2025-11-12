@@ -21,13 +21,13 @@ sidebar:
   - title: SolidFire 與 Element 軟體文件 12.8.
     url: "/index.html"
   - title: 版本資訊
-    url: "/concepts/concept_rn_relatedrn_element.html"
     entries:
+    - title: 當前和以前的版本說明
+      url: "/concepts/concept_rn_relatedrn_element.html"
     - title: 新增功能
       url: "/concepts/concept_rn_whats_new_element.html"
   - section: concepts
   - title: 需求
-    url: "/setup/concept_requirements_overview.html"
     entries:
     - title: 網路需求
       url: "/storage/concept_prereq_networking.html"

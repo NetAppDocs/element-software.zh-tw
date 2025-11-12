@@ -158,7 +158,7 @@ sudo service ntpd stop
 . 編輯NTP組態檔「/etc/ntp.conf：
 +
 .. 在預設伺服器（「伺服器0.gentoo.pool.ntp.org」）前面加上「#」、即可註釋掉預設伺服器（「伺服器」）。
-.. 為您要新增的每個預設時間伺服器新增一行。預設時間伺服器必須與儲存叢集上使用的NTP伺服器相同、您將在中使用 link:task_mnode_install.html#set-up-the-management-node["後續步驟"]。
+.. 為每個要新增的預設時間伺服器新增行。預設時間伺服器必須與儲存叢集上使用的 NTP 伺服器相同。 <<set-up-the-management-node,後續步驟>>。
 +
 [listing]
 ----
@@ -213,7 +213,7 @@ NOTE: 如果您日後對VM進行變更、請勿啟用此選項。
 
 
 
-NOTE: 請勿在完成時間同步組態之後編輯NTP、因為它會在您執行時影響NTP link:task_mnode_install.html#set-up-the-management-node["設定命令"] 在管理節點上。
+NOTE: 完成時間同步配置後，請勿編輯 NTP 設置，因為這會影響您執行以下命令時的 NTP 設定。 <<set-up-the-management-node,設定命令>> 在管理節點上。
 
 
 
@@ -240,7 +240,7 @@ NOTE: 命令名稱的縮寫形式以括弧（）表示、可取代完整名稱�
 
 +
 *** *-mnode_admin_user（-mu）[username]*：管理節點系統管理員帳戶的使用者名稱。這可能是您用來登入管理節點的使用者帳戶使用者名稱。
-*** *-storage mvip（-sm）[MVIP位址]*：執行Element軟體之儲存叢集的管理虛擬IP位址（MVIP）。使用您在期間使用的相同儲存叢集來設定管理節點 link:task_mnode_install.html#configure-time-sync["NTP伺服器組態"]。
+*** *--storage_mvip (-sm) [MVIP 位址]*: 執行 Element 軟體的儲存叢集的管理虛擬 IP 位址 (MVIP)。配置管理節點時，請使用與您在配置過程中使用的相同的儲存叢集。 <<configure-time-sync,NTP伺服器組態>>。
 *** *-storage使用者名稱（-su）[username]*：由「-storage _mvip」參數指定之叢集的儲存叢集管理員使用者名稱。
 *** *-遙測啟動（-t）[true]*：保留值true、讓Active IQ 資料收集功能得以透過支援以供分析之用。
 

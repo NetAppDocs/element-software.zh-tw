@@ -11,7 +11,7 @@ summary: 您必須先建立SnapMirror端點、才能建立複寫關係。您只�
 
 
 [role="lead"]
-您必須先建立SnapMirror端點、才能建立複寫關係。您只能在元素軟體 Web UI 或使用中執行此工作link:../api/concept_element_api_snapmirror_api_methods.html["SnapMirror API方法"]。
+必須先建立SnapMirror端點，然後才能建立複製關係。您只能在 Element 軟體的 Web 使用者介面或使用以下方式執行此任務： link:../api/reference_element_api_abortsnapmirrorrelationship.html["SnapMirror API方法"]。
 
 .開始之前
 您必須在元素叢集上啟用SnapMirror。

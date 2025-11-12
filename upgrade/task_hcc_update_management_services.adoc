@@ -25,7 +25,7 @@ keywords: netapp, solidfire, cluster, management services, hcc, update managemen
 
 [NOTE]
 ====
-* 管理服務2.22.7包含vCenter Server 5.0的Element外掛程式、其中包含遠端外掛程式。如果您使用Element外掛程式、則應升級至管理服務2.22.7或更新版本、以符合VMware指令、該指令會移除對本機外掛程式的支援。 https://kb.vmware.com/s/article/87880["深入瞭解"^]。
+* 管理服務 2.22.7 包含適用於 vCenter Server 5.0 的 Element 插件，其中包含遠端插件。如果您使用 Element 插件，則應升級至管理服務 2.22.7 或更高版本，以符合 VMware 移除對本機插件支援的指令。 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere-sdks-tools/8-0/developing-local-plug-ins-client-sdk/about-this-book-local/deprecation-of-local-plug-in-architecture.html["深入瞭解"^]。
 * 如需最新的管理服務版本注意事項、說明各服務套裝組合的主要服務、新功能、錯誤修正及因應措施、請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服務版本說明"^]
 
 

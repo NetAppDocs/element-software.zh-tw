@@ -4,13 +4,24 @@ sidebar: sidebar
 keywords: snmp, overview, reference, mib, settings, trap 
 summary: 在「叢集」索引標籤的「SNMP」頁面上、您可以檢視下列資訊。 
 ---
-= SNMP詳細資料
+= 了解 SNMP
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+您可以在叢集中設定簡單網路管理傳輸協定（SNMP）。
+
+您可以選取SNMP申請者、選取要使用的SNMP版本、識別SNMP使用者型安全模式（USM）使用者、並設定設陷以監控SolidFire 叢集。您也可以檢視及存取管理資訊基礎檔案。
+
+
+NOTE: 您可以同時使用IPv4和IPv6位址。
+
+
+
+== SNMP詳細資料
+
 在「叢集」索引標籤的「SNMP」頁面上、您可以檢視下列資訊。
 
 * * SNMP MIBS*

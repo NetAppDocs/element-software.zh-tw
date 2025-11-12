@@ -34,6 +34,9 @@ keywords: netapp, solidfire, cluster, element, H610S upgrade, hcc, upgrade role
 * *管理節點*：對於NetApp混合雲控制UI和API、您環境中的管理節點執行版本11.3。
 * *叢集健全狀況*：您已確認叢集已準備好升級。請參閱 link:task_hcc_upgrade_element_prechecks.html["升級儲存設備之前、請先執行Element儲存設備健全狀況檢查"]。
 * * H610S儲存節點*的更新基板管理控制器（BMC）：您已升級H610S節點的BMC版本。請參閱 link:https://docs.netapp.com/us-en/hci/docs/rn_H610S_BMC_3.84.07.html["版本說明與升級指示"^]。
+
+
+[[element-upgrade-tim]]
 * *升級程序時間*：您已排定足夠的時間來執行升級。升級至Element軟體12.5或更新版本時、升級程序時間會因您目前的Element軟體版本和韌體更新而有所不同。
 +
 [cols="20,20,20,20,20"]

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: solidfire, element, aiq, cluster, active iq, vcenter plugin, vcp, storage, what is, activeiq 
 summary: 包含獨立式硬體元件（磁碟機和節點）的整個支援系統、可透過在每個節點上獨立執行的更新軟體、將其整合到單一儲存資源池中。SolidFire NetApp Element此統一化叢集可作為單一儲存系統供外部用戶端使用、並透過Element軟體UI、API及其他管理工具、以單一實體的形式進行管理。 
 ---
-= 架構總覽SolidFire
+= 了解SolidFire架構
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -13,12 +13,13 @@ summary: 您可以使用DisableEncryptionAtRest方法、移除先前使用EnablE
 [role="lead"]
 您可以使用「DisableEncryptionAtRest」方法、移除先前使用「EnablEncryptionAtRest」方法套用至叢集的加密。此停用方法為非同步、會在停用加密之前傳回回應。您可以使用「GetClusterInfo」方法輪詢系統、查看程序何時完成。
 
+[NOTE]
+====
+* 您無法使用此方法停用閒置的軟體加密。若要停用閒置的軟體加密功能、您需要 link:reference_element_api_createcluster.html["建立新叢集"] 停用閒置時的軟體加密。
+* 若要查看叢集上靜態加密、靜態軟體加密或兩者的目前狀態，請使用下列方法： link:../api/reference_element_api_getclusterinfo.html["取得叢集資訊方法"]。你可以使用 `GetSoftwareEncryptionAtRestInfo` link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["取得叢集用來加密閒置資料的資訊方法"]。
 
-TIP: 若要查看叢集上閒置加密和/或軟體加密的目前狀態、請使用 link:../api/reference_element_api_getclusterinfo.html["取得叢集資訊方法"^]。您可以使用 `GetSoftwareEncryptionAtRestInfo` link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["取得叢集用來加密閒置資料的資訊方法"^]。
 
-
-NOTE: 您無法使用此方法停用閒置的軟體加密。若要停用閒置的軟體加密功能、您需要 link:reference_element_api_createcluster.html["建立新叢集"] 停用閒置時的軟體加密。
-
+====
 
 
 == 參數
@@ -67,7 +68,7 @@ NOTE: 您無法使用此方法停用閒置的軟體加密。若要停用閒置�
 [discrete]
 == 如需詳細資訊、請參閱
 
-* link:api/reference_element_api_getclusterinfo.html["GetClusterInfo"]
+* link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo"]
 * https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["先前版本的NetApp SolidFire 產品及元素產品文件"^]
 

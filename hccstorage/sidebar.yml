@@ -1,7 +1,6 @@
 ---
 section: hccstorage
 title: 利用NetApp混合雲控管來管理及監控儲存設備
-url: "/hccstorage/index.html"
 entries:
 - title: 使用NetApp混合雲控制新增及管理儲存叢集
   url: "/hccstorage/task-hcc-manage-storage-clusters.html"

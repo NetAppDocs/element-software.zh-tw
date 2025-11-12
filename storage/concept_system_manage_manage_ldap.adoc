@@ -67,7 +67,7 @@ NOTE: 您也可以輸入選用的自訂連接埠號碼。
 . *選用：*選取*使用LDAPS傳輸協定*。
 . 在*一般設定*中輸入必要資訊。
 +
-image::../media/element_new_ldap_servers.jpg[元素新的LDAP伺服器]
+image::../media/element_new_ldap_servers.jpg[常規設定資訊的螢幕截圖]
 
 . 按一下*啟用LDAP*。
 . 如果您要測試使用者的伺服器存取、請按一下*測試使用者驗證*。
@@ -77,7 +77,7 @@ image::../media/element_new_ldap_servers.jpg[元素新的LDAP伺服器]
 +
 .. 按一下*使用者*>*檢視*。
 +
-image::../media/element_new_cluster_admin.jpg[Element新叢集管理]
+image::../media/element_new_cluster_admin.jpg[建立新使用者頁面的螢幕截圖]
 
 .. 對於新使用者、請按一下「使用者類型」的「* LDAP*」、然後將複製的群組貼到「辨別名稱」欄位。
 .. 選取權限、通常是所有權限。

@@ -11,9 +11,11 @@ summary: 您可以透過Element API使用這些基本步驟、將叢集設定為
 
 
 [role="lead"]
+多因素驗證（MFA）透過安全聲明標記語言（SAML）使用第三方身分識別供應商（IDP）來管理使用者工作階段。MFA可讓系統管理員視需要設定其他驗證因素、例如密碼和文字訊息、密碼和電子郵件訊息。
+
 您可以透過Element API使用這些基本步驟、將叢集設定為使用多因素驗證。
 
-如需每種API方法的詳細資料、請參閱 link:../api/index.html["Element API參考"]。
+每個 API 方法的詳細資訊可以在以下位置找到： link:../api/concept_element_api_about_the_api.html["Element API參考"]。
 
 . 透過呼叫下列API方法並以Json格式傳遞IDP中繼資料、為叢集建立新的協力廠商身分識別供應商（IDP）組態：「Create IdpConfiguration」（建立IdpConfiguration）
 +

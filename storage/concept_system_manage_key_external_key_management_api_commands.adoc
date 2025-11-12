@@ -41,4 +41,4 @@ summary: 可用於管理及設定EKM的所有API清單。
 * TestKeyProviderKmip
 
 
-如需API方法的相關資訊、請參閱 link:../api/index.html["API參考資訊"]。
+有關 API 方法的信息，請參閱 link:../api/concept_element_api_about_the_api.html["API參考資訊"]。

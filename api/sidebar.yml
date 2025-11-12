@@ -1,11 +1,11 @@
 ---
 section: api
 title: 使用Element API管理儲存設備
-url: "/api/index.html"
 entries:
-- title: 關於Element軟體API
-  url: "/api/concept_element_api_about_the_api.html"
+- title: Element API 軟體
   entries:
+  - title: 了解 Element 軟體 API
+    url: "/api/concept_element_api_about_the_api.html"
   - title: 要求物件成員
     url: "/api/reference_element_api_request_object_members.html"
   - title: 回應物件成員
@@ -19,7 +19,6 @@ entries:
   - title: 屬性
     url: "/api/reference_element_api_attributes.html"
 - title: 通用物件
-  url: "/api/concept_element_api_common_objects.html"
   entries:
   - title: 帳戶
     url: "/api/reference_element_api_account.html"
@@ -190,7 +189,6 @@ entries:
   - title: Volume統計資料
     url: "/api/reference_element_api_volumestats.html"
 - title: 常見方法
-  url: "/api/concept_element_api_common_methods.html"
   entries:
   - title: GetAPI
     url: "/api/reference_element_api_getapi.html"
@@ -207,7 +205,6 @@ entries:
   - title: 列表同步結果
     url: "/api/reference_element_api_listasyncresults.html"
 - title: 帳戶API方法
-  url: "/api/concept_element_api_account_api_methods.html"
   entries:
   - title: AddAccount
     url: "/api/reference_element_api_addaccount.html"
@@ -224,7 +221,6 @@ entries:
   - title: 遠端帳戶
     url: "/api/reference_element_api_removeaccount.html"
 - title: 系統管理員API方法
-  url: "/api/concept_element_api_administrator_api_methods.html"
   entries:
   - title: AddClusterAdmin
     url: "/api/reference_element_api_addclusteradmin.html"
@@ -241,7 +237,6 @@ entries:
   - title: SetLoginBanner
     url: "/api/reference_element_api_setloginbanner.html"
 - title: 叢集API方法
-  url: "/api/concept_element_api_cluster_api_methods.html"
   entries:
   - title: 附加節點
     url: "/api/reference_element_api_addnodes.html"
@@ -309,8 +304,7 @@ entries:
     url: "/api/reference_element_api_setloginsessioninfo.html"
   - title: 關機
     url: "/api/reference_element_api_cluster_shutdown.html"
-- title: 叢集建立API方法
-  url: "/api/concept_element_api_create_cluster_api_methods.html"
+- title: 叢集建立 API 方法
   entries:
   - title: 檢查ProposedCluster
     url: "/api/reference_element_api_checkproposedcluster.html"
@@ -319,7 +313,6 @@ entries:
   - title: GetBootstrapConfig
     url: "/api/reference_element_api_getbootstrapconfig.html"
 - title: 磁碟機API方法
-  url: "/api/concept_element_api_drive_api_methods.html"
   entries:
   - title: 新增磁碟機
     url: "/api/reference_element_api_adddrives.html"
@@ -336,7 +329,6 @@ entries:
   - title: SecureEraseDrives
     url: "/api/reference_element_api_secureerasedrives.html"
 - title: Fibre Channel API方法
-  url: "/api/concept_element_api_fibre_channel_api_methods.html"
   entries:
   - title: GetVolume存取群組LUN指派
     url: "/api/reference_element_api_getvolumeaccessgrouplunassignments.html"
@@ -349,7 +341,6 @@ entries:
   - title: ModifyVolume存取群組LUN指派
     url: "/api/reference_element_api_modifyvolumeaccessgrouplunassignments.html"
 - title: 啟動器API方法
-  url: "/api/concept_element_api_initiator_api_methods.html"
   entries:
   - title: 建立啟動器
     url: "/api/reference_element_api_createinitiators.html"
@@ -360,7 +351,6 @@ entries:
   - title: ModifyInitiator
     url: "/api/reference_element_api_modifyinitiators.html"
 - title: LDAP API方法
-  url: "/api/concept_element_api_ldap_api_methods.html"
   entries:
   - title: AddLdapClusterAdmin
     url: "/api/reference_element_api_addldapclusteradmin.html"
@@ -373,7 +363,6 @@ entries:
   - title: TestLdap驗 證
     url: "/api/reference_element_api_testldapauthentication.html"
 - title: 多因素驗證API方法
-  url: "/api/concept_element_api_multi_factor_authentication_api_methods.html"
   entries:
   - title: AddIdpClusterAdmin
     url: "/api/reference_element_api_addidpclusteradmin.html"
@@ -400,14 +389,12 @@ entries:
   - title: 更新IdpConfiguration
     url: "/api/reference_element_api_updateidpconfiguration.html"
 - title: 工作階段驗證API方法
-  url: "/api/concept_element_api_session_authentication_api_methods.html"
   entries:
   - title: listAuthSessionsByClusterAdmin
     url: "/api/reference_element_api_listauthsessionbyclusteradmin.html"
   - title: list驗 證使用者名稱
     url: "/api/reference_element_api_listauthsessionbyusername.html"
 - title: 節點API方法
-  url: "/api/concept_element_api_node_api_methods.html"
   entries:
   - title: CheckPingOnVlan
     url: "/api/reference_element_api_checkpingonvlan.html"
@@ -516,7 +503,6 @@ entries:
   - title: 測試RemoteConnectivity
     url: "/api/reference_element_api_testremoteconnectivity.html"
 - title: 複寫API方法
-  url: "/api/concept_element_api_replication_api_methods.html"
   entries:
   - title: 叢集配對作業順序
     url: "/api/reference_element_api_cluster_pairing_order_of_operations.html"
@@ -543,7 +529,6 @@ entries:
   - title: StartVolume配對
     url: "/api/reference_element_api_startvolumepairing.html"
 - title: 安全API方法
-  url: "/api/concept_element_api_security_api_methods.html"
   entries:
   - title: AddKeyServerToProviderKmip
     url: "/api/reference_element_api_addkeyservertoproviderkmip.html"
@@ -586,7 +571,6 @@ entries:
   - title: TestKeyServerKmip
     url: "/api/reference_element_api_testkeyserverkmip.html"
 - title: SnapMirror API方法
-  url: "/api/concept_element_api_snapmirror_api_methods.html"
   entries:
   - title: AbortSnapMirrorRelationationations
     url: "/api/reference_element_api_abortsnapmirrorrelationship.html"
@@ -647,7 +631,6 @@ entries:
   - title: 重新建立SnapMirrorRelationationationationationation
     url: "/api/reference_element_api_resyncsnapmirrorrelationship.html"
 - title: 系統組態API方法
-  url: "/api/concept_element_api_system_configuration_api_methods.html"
   entries:
   - title: 停用Bmc/ColdReset
     url: "/api/reference_element_api_disablebmccoldreset.html"
@@ -724,7 +707,6 @@ entries:
   - title: TestAddressAvailability
     url: "/api/reference_element_api_testaddressavailability.html"
 - title: 多租戶網路API方法
-  url: "/api/concept_element_api_multitenant_networking_api_methods.html"
   entries:
   - title: 虛擬網路命名慣例
     url: "/api/concept_element_api_virtual_network_naming_conventions.html"
@@ -737,7 +719,6 @@ entries:
   - title: 遠端虛擬網路
     url: "/api/reference_element_api_removevirtualnetwork.html"
 - title: Volume API方法
-  url: "/api/concept_element_api_volume_api_methods.html"
   entries:
   - title: CancelClone
     url: "/api/reference_element_api_cancelclone.html"
@@ -826,7 +807,6 @@ entries:
   - title: 更新BulkVolume狀態
     url: "/api/reference_element_api_updatebulkvolumestatus.html"
 - title: Volume存取群組API方法
-  url: "/api/concept_element_api_volume_access_group_api_methods.html"
   entries:
   - title: AddInitiatorsToVolume存取群組
     url: "/api/reference_element_api_addinitiatorstovolumeaccessgroup.html"
@@ -847,7 +827,6 @@ entries:
   - title: GetVolume存取群組效率
     url: "/api/reference_element_api_getvolumeaccessgroupefficiency.html"
 - title: Volume Snapshot API方法
-  url: "/api/concept_element_api_volume_snapshot_api_methods.html"
   entries:
   - title: Snapshot總覽
     url: "/api/concept_element_api_snapshots_overview.html"
@@ -880,7 +859,6 @@ entries:
   - title: RollbackToSnapshot
     url: "/api/reference_element_api_rollbacktosnapshot.html"
 - title: 虛擬Volume API方法
-  url: "/api/concept_element_api_vvols_api_methods.html"
   entries:
   - title: CreStorageContainer
     url: "/api/reference_element_api_createstoragecontainer.html"
@@ -907,7 +885,6 @@ entries:
 - title: 存取控制
   url: "/api/reference_element_api_app_b_access_control.html"
 - title: 回應範例
-  url: "/api/concept_element_api_response_examples.html"
   entries:
   - title: 組態設定
     url: "/api/reference_element_api_response_example_getconfig.html"

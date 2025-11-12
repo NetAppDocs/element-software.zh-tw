@@ -61,7 +61,7 @@ TIP: 您可以在「*管理*>*磁碟區*>*作用中*清單的磁碟區「動作�
 
 修改啟動器時、您可以將requiredCHAP屬性切換為True、以設定目標啟動器密碼。如需詳細資訊、請參閱有關ModifyInitiator API方法的API資訊。
 
-link:../api/index.html["使用Element API管理儲存設備"]
+link:../api/concept_element_api_about_the_api.html["使用Element API管理儲存設備"]
 
 |===
 . *選用：*視需要新增更多啟動器。

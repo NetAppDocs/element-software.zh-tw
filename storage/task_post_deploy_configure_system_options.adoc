@@ -24,7 +24,7 @@ summary: 設定SolidFire 完整套系統之後、您可能會想要執行一些�
 * link:task_post_deploy_credentials.html["變更NetApp HCI 身分證明資料、請至NetApp SolidFire 解決方案"]
 * link:reference_post_deploy_change_default_ssl_certificate.html["變更Element軟體預設SSL憑證"]
 * link:task_post_deploy_credential_change_ipmi_password.html["變更節點的IPMI密碼"]
-* link:concept_system_manage_mfa_enable_multi_factor_authentication.html["啟用多因素驗證"]
+* link:task_system_manage_mfa_set_up_multi_factor_authentication.html["啟用多因素驗證"]
 * link:concept_system_manage_key_get_started_with_external_key_management.html["開始使用外部金鑰管理"]
 * link:task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["建立支援FIPS磁碟機的叢集"]
 

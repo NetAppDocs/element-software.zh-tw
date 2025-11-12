@@ -13,6 +13,8 @@ summary: 您可以指示叢集中的每個節點查詢網路時間傳輸協定�
 [role="lead"]
 您可以指示叢集中的每個節點查詢網路時間傳輸協定（NTP）伺服器以取得更新。叢集只會連絡已設定的伺服器、並向其要求NTP資訊。
 
+NTP用於透過網路同步時鐘。連線至內部或外部NTP伺服器應是初始叢集設定的一部分。
+
 在叢集上設定NTP、以指向本機NTP伺服器。您可以使用IP位址或FQDN主機名稱。叢集建立時的預設NTP伺服器設為us.pool.ntp.org、但無法一律連線至此站台、視SolidFire 乎此叢集的實體位置而定。
 
 使用FQDN取決於個別儲存節點的DNS設定是否已就緒且可正常運作。若要這麼做、請在每個儲存節點上設定DNS伺服器、並檢閱「網路連接埠需求」頁面、確保連接埠已開啟。
@@ -37,6 +39,7 @@ NOTE: 您可以同時使用IPv4和IPv6位址。
 
 == 如需詳細資訊、請參閱
 
+* link:../storage/task_system_manage_cluster_ntp_configure_to_listen_for_ntp_broadcasts.html["設定叢集以偵聽NTP廣播"]
 * https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: element, solidfire, install, setup, node, cluster 
 summary: 在開始之前、您可能需要先瞭解安裝和設定NetApp Element 等一系列的資訊。 
 ---
-= 設定總覽
+= 了解如何設定存儲
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -20,8 +20,14 @@ image::../media/sf_and_element_workflow_for_setup_shorter_workflow.png[設定工
 .設定儲存設備的步驟
 . 選取下列其中一項：
 +
-** link:../setup/task_setup_cluster_with_storage_nodes.html["使用儲存節點設定叢集"]
-** link:../setup/task_setup_cluster_with_fibre_channel_nodes.html["使用Fibre Channel節點設定叢集"]
+** link:../setup/concept_setup_configure_a_storage_node.html["使用儲存節點設定叢集"]
++
+您可以在機架單元中安裝及連接節點並開啟電源之後、使用Element軟體來設定具有儲存節點的叢集、並加以管理。然後、您可以在儲存系統中安裝及設定其他元件。
+
+** link:../setup/concept_setup_fc_configure_a_fibre_channel_node.html["使用Fibre Channel節點設定叢集"]
++
+在機架單元中安裝並連接光纖通道節點並通電後，您可以使用 Element 軟體設定一個包含光纖通道節點的叢集並對其進行管理。然後，您可以安裝和設定儲存系統中的其他元件。
+
 
 
 . link:../setup/task_setup_determine_which_solidfire_components_to_install.html["判斷SolidFire 要安裝哪些元件"]

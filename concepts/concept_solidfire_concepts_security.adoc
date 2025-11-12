@@ -57,7 +57,7 @@ Element可使用下列主要管理服務：
 
 您可以將多因素驗證與通用的SAML 2.0相容身分識別供應商（IDP）配對、例如Microsoft Active Directory Federation Services（ADFS）和Shiboleth.
 
-若要設定MFA、請參閱 link:../storage/concept_system_manage_mfa_enable_multi_factor_authentication.html["啟用多因素驗證"] 文件。
+若要設定 MFA，請參閱 link:../storage/task_system_manage_mfa_set_up_multi_factor_authentication.html["啟用多因素驗證"] 文件.
 
 
 

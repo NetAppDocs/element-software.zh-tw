@@ -1,0 +1,8 @@
+---
+permalink: hardware/concept_sfseries_info.html 
+redirect: element-software/hardware/task_sfseries_chassisrepl.html 
+---
+= 
+:allow-uri-read: 
+
+

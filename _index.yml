@@ -17,15 +17,15 @@ indexpage:
     - title: 新增功能
       url: "/concepts/concept_rn_whats_new_element.html"
     - title: 需求
-      url: "/setup/concept_requirements_overview.html"
+      url: "/storage/concept_prereq_networking.html"
     - title: 設定總覽
       url: "/setup/concept_setup_overview.html"
   - title: 安裝及維護硬體
     links:
     - title: H410S和H610S硬體資訊
-      url: "/hardware/concept_h410s_h610s_info.html"
+      url: "/hardware/task_h410s_h610s_install.html"
     - title: SF系列硬體資訊
-      url: "/hardware/concept_sfseries_info.html"
+      url: "/hardware/task_sfseries_chassisrepl.html"
     - title: 返回原廠映像資訊
       url: "/hardware/concept_rtfi_configure.html"
     - title: NetApp H系列儲存節點支援的韌體版本
@@ -35,9 +35,9 @@ indexpage:
     - title: 使用Element軟體UI
       url: "/storage/index.html"
     - title: 使用NetApp混合雲控管
-      url: "/hccstorage/index.html"
+      url: "/hccstorage/task-hcc-manage-storage-clusters.html"
     - title: 使用 Element 軟體 API
-      url: "/api/index.html"
+      url: "/api/concept_element_api_about_the_api.html"
     - title: 使用vCenter Server的元素外掛程式
       url: https://docs.netapp.com/us-en/vcp/
     - title: 使用NetApp SolidFire Active IQ 解決方案
@@ -80,10 +80,6 @@ indexpage:
       url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
   - title: 舊版
     links:
-    - title: Element 12.5 文件
-      url: https://docs.netapp.com/us-en/element-software-125/index.html
-    - title: Element 12.3.x文件
-      url: https://docs.netapp.com/us-en/element-software-123/index.html
     - title: Element 12.2.1文件
       url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63945&language=en-US
     - title: Element 12.2文件

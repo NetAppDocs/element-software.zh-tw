@@ -6,8 +6,9 @@ entries:
 - title: 產品總覽
   url: "/concepts/concept_intro_product_overview.html"
 - title: 架構與元件
-  url: "/concepts/concept_solidfire_concepts_solidfire_architecture_overview.html"
   entries:
+  - title: 了解SolidFire架構
+    url: "/concepts/concept_solidfire_concepts_solidfire_architecture_overview.html"
   - title: 軟體介面SolidFire
     url: "/concepts/concept_intro_solidfire_software_interfaces.html"
   - title: SolidFire Active IQ

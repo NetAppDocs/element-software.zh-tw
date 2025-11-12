@@ -61,7 +61,6 @@ Fibre Channel節點具有下列特性：
 
 == 節點作業狀態
 
-[role="lead"]
 視組態層級而定、節點可能處於多種狀態之一。
 
 * *可用*
@@ -90,7 +89,8 @@ Fibre Channel節點具有下列特性：
 
 在這些狀態中、有些欄位是唯讀的。
 
-[discrete]
+
+
 == 如需詳細資訊、請參閱
 
 * https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]

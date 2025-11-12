@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: virtual volumes, volumes, manage 
 summary: 您可以從Element UI的Management（管理）索引標籤、管理執行Element軟體的叢集中資料。可用的叢集管理功能包括建立及管理資料磁碟區、使用者帳戶、磁碟區存取群組、啟動器及服務品質（QoS）原則。 
 ---
-= 管理磁碟區和虛擬磁碟區
+= 了解如何管理磁碟區和虛擬卷
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,10 +13,62 @@ summary: 您可以從Element UI的Management（管理）索引標籤、管理執
 [role="lead"]
 您可以從Element UI的Management（管理）索引標籤、管理執行Element軟體的叢集中資料。可用的叢集管理功能包括建立及管理資料磁碟區、磁碟區存取群組、啟動器及服務品質（QoS）原則。
 
-* link:task_data_manage_volumes_work_with_volumes_task.html["使用Volume"]
-* link:concept_data_manage_vvol_work_virtual_volumes.html["使用虛擬磁碟區"]
-* link:concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["使用Volume存取群組和啟動器"]
 
+
+== 使用Volume
+
+這個系統使用Volume來配置儲存設備。SolidFire磁碟區是透過iSCSI或Fibre Channel用戶端透過網路存取的區塊裝置。在「管理」索引標籤的「磁碟區」頁面中、您可以在節點上建立、修改、複製及刪除磁碟區。您也可以檢視磁碟區頻寬和I/O使用量的統計資料。
+
+link:../storage/concept_data_manage_volumes_quality_of_service_policies.html["了解如何處理卷"]
+
+
+
+== 使用虛擬磁碟區
+
+您可以使用Element UI來檢視虛擬磁碟區及其相關儲存容器、傳輸協定端點、繫結和主機的資訊並執行工作。
+
+本產品隨附的VMware軟體儲存系統已停用虛擬磁碟區（VVols）功能。NetApp Element您必須執行一次性工作、透過元素UI手動啟用vSphere VVOL功能。
+
+啟用VVOL功能之後、VVOL索引標籤會出現在使用者介面中、提供VVOL相關的監控和有限的管理選項。此外、稱為VASA Provider的儲存端軟體元件也可做為vSphere的儲存感知服務。大多數VVOL命令（例如VVOL建立、複製及編輯）都是由vCenter Server或ESXi主機啟動、並由VASA Provider轉譯為Element軟體儲存系統的Element API。您可以使用Element UI來啟動建立、刪除及管理儲存容器及刪除虛擬磁碟區的命令。
+
+在vSphere中、大多數使用虛擬磁碟區功能與元件軟體儲存系統所需的組態都是在vSphere中進行。請參閱《VMware vSphere Virtual Volumes for SolidFire VMware Storage組態指南》_、在vCenter中註冊VASA Provider、建立及管理VVOL資料存放區、以及根據原則管理儲存設備。
+
+
+NOTE: 對於Element 12.5及更早版本、請勿將NetApp Element 多個VMware vCenter提供者登錄至單一vCenter執行個體。在新增第二NetApp Element 個供應商時、這會使所有VVOL資料存放區無法存取。
+
+
+NOTE: 如果您已向vCenter註冊VASA供應商、則VASA支援可作為升級修補程式提供多個vCenter。若要安裝、請從下載VSA39 .tar.gz檔案 https://mysupport.netapp.com/products/element_software/VASA39/index.html["NetApp軟體下載"] 並遵循資訊清單中的指示。該供應商使用NetApp認證。NetApp Element有了這個修補程式、vCenter便會使用未經修改的憑證來支援VASA和VVols使用的多個vCenter。請勿修改憑證。VASA不支援自訂SSL憑證。
+
+link:../storage/task_data_manage_vvol_enable_virtual_volumes.html["了解如何使用虛擬卷"]
+
+
+
+== 使用Volume存取群組和啟動器
+
+您可以使用iSCSI啟動器或Fibre Channel啟動器來存取在Volume存取群組中定義的磁碟區。
+
+您可以在磁碟區集合中對應iSCSI啟動器IQN或Fibre Channel WWPN來建立存取群組。您新增至存取群組的每個IQN都可存取群組中的每個Volume、而不需要CHAP驗證。
+
+CHAP驗證方法有兩種類型：
+
+* 帳戶層級CHAP驗證：您可以為帳戶指派CHAP驗證。
+* 啟動器層級CHAP驗證：您可以為特定啟動器指派獨特的CHAP目標和機密、而不需在單一帳戶中綁定到單一CHAP。此啟動器層級的CHAP驗證會取代帳戶層級認證。
+
+
+您也可以選擇使用每個啟動器CHAP來強制執行啟動器授權和每個啟動器CHAP驗證。這些選項可根據每個啟動器來定義、而存取群組可包含多個具有不同選項的啟動器。
+
+您新增至存取群組的每個WWPN都可讓光纖通道網路存取存取存取群組中的磁碟區。
+
+
+NOTE: Volume存取群組具有下列限制：
+
+* 存取群組最多允許64 IQN或WWPN。
+* 存取群組最多可由2000個磁碟區組成。
+* IQN或WWPN只能屬於一個存取群組。
+* 單一磁碟區最多可屬於四個存取群組。
+
+
+link:../storage/task_data_manage_vol_access_group_create_a_volume_access_group.html["了解如何與大量存取群組和發起者合作"]
 
 
 

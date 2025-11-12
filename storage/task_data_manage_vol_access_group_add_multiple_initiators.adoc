@@ -22,7 +22,7 @@ TIP: 您可以按一下「動作」圖示、然後按一下「作用中磁碟區
 
 您可以使用API呼叫來指派以initator為基礎的CHAP屬性。若要為每個啟動器新增CHAP帳戶名稱和認證、您必須使用ModifyInitiator API呼叫來移除和新增CHAP存取和屬性。
 
-如需詳細資訊、請參閱 link:../api/index.html["使用Element API管理儲存設備"]。
+有關詳細信息，請參閱link:../api/concept_element_api_about_the_api.html["使用Element API管理儲存設備"]。
 
 .步驟
 . 按一下*管理*>*啟動器*。

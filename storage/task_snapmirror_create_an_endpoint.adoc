@@ -20,7 +20,7 @@ SnapMirror端點是ONTAP 執行Element軟體的叢集複寫目標、在建立Sna
 
 NOTE: 如果現有的端點原本是使用API建立、但未儲存認證資料、則您可以在元素UI中看到端點、並確認端點是否存在、但無法使用元素UI來管理端點。然後、只能使用Element API來管理此端點。
 
-如需API方法的詳細資訊、請參閱 link:../api/index.html["使用Element API管理儲存設備"]。
+有關 API 方法的詳細信息，請參閱 link:../api/concept_element_api_about_the_api.html["使用Element API管理儲存設備"]。
 
 .您需要的產品
 * 您應該已在儲存叢集的元素UI中啟用SnapMirror。

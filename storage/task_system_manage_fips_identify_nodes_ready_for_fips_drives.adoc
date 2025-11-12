@@ -31,7 +31,7 @@ summary: 您應該檢查儲存叢集中的所有節點是否都已準備好使�
 ** 使用元素API、輸入：「GetHardwareList」
 ** 請注意* DriveEncryptionCapabilityType *的值。如果是「FIPS」、硬體就能支援FIPS磁碟機功能。
 +
-請參閱中的「GetFipsReport」或「ListDriveHardware」詳細資料 link:../api/index.html["Element API參考"]。
+看詳情 `GetFipsReport` 或者 `ListDriveHardware` 在 link:../api/concept_element_api_about_the_api.html["Element API參考"]。
 
 
 

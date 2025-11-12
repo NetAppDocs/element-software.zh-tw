@@ -1,0 +1,8 @@
+---
+permalink: storage/concept_system_manage_snmp_manage_snmp.html 
+redirect: element-software/reference_system_manage_snmp_snmp_details.html 
+---
+= 
+:allow-uri-read: 
+
+

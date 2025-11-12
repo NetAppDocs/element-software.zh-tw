@@ -13,8 +13,8 @@ summary: 您可以在Element UI中管理系統。這包括啟用多因素驗證�
 [role="lead"]
 您可以在Element UI中管理系統。這包括啟用多因素驗證、管理叢集設定、支援聯邦資訊處理標準（FIPS）、以及使用外部金鑰管理。
 
-* link:concept_system_manage_mfa_enable_multi_factor_authentication.html["啟用多因素驗證"]
-* link:concept_system_manage_cluster_configure_cluster_settings.html["設定叢集設定"]
+* link:task_system_manage_mfa_set_up_multi_factor_authentication.html["啟用多因素驗證"]
+* link:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["設定叢集設定"]
 * link:task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["建立支援FIPS磁碟機的叢集"]
 * link:concept_system_manage_key_get_started_with_external_key_management.html["開始使用外部金鑰管理"]
 

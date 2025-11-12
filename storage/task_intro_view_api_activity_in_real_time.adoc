@@ -15,7 +15,7 @@ Element系統使用NetApp Element 不完整的API作為其功能的基礎。元�
 
 您可以使用API記錄來識別特定工作所使用的API方法、並瞭解如何使用API方法和物件來建置自訂應用程式。
 
-如需每種方法的相關資訊、請參閱 link:../api/index.html["Element Software API參考"]。
+有關每種方法的詳細信息，請參見 link:../api/concept_element_api_about_the_api.html["Element Software API參考"]。
 
 . 在Element UI導覽列中、按一下* API Log*。
 . 若要修改「API記錄」視窗中顯示的API活動類型、請執行下列步驟：
@@ -37,7 +37,7 @@ Element系統使用NetApp Element 不完整的API作為其功能的基礎。元�
 
 == 如需詳細資訊、請參閱
 
-* link:../api/index.html["使用Element API管理儲存設備"]
+* link:../api/concept_element_api_about_the_api.html["使用Element API管理儲存設備"]
 * https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

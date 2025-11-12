@@ -13,6 +13,8 @@ summary: 透過廣播模式、您可以指示叢集中的每個節點在網路�
 [role="lead"]
 透過廣播模式、您可以指示叢集中的每個節點在網路上聆聽來自特定伺服器的網路時間傳輸協定（NTP）廣播訊息。
 
+NTP用於透過網路同步時鐘。連線至內部或外部NTP伺服器應是初始叢集設定的一部分。
+
 .您需要的產品
 * 您必須擁有叢集管理員權限才能設定此設定。
 * 您必須將網路上的NTP伺服器設定為廣播伺服器。
@@ -30,6 +32,7 @@ summary: 透過廣播模式、您可以指示叢集中的每個節點在網路�
 
 == 如需詳細資訊、請參閱
 
+* link:../storage/task_system_manage_cluster_ntp_configure.html["設定叢集要查詢的網路時間傳輸協定伺服器"]
 * https://docs.netapp.com/us-en/element-software/index.html["零件與元件軟體文件SolidFire"]
 * https://docs.netapp.com/us-en/vcp/index.html["vCenter Server的VMware vCenter外掛程式NetApp Element"^]
 

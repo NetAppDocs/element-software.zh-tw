@@ -1,0 +1,8 @@
+---
+permalink: hccstorage/index.html 
+redirect: element-software/hccstorage/task-hcc-manage-storage-clusters.html 
+---
+= 
+:allow-uri-read: 
+
+

@@ -21,7 +21,7 @@ summary: 您必須監控系統以進行診斷、並取得各種系統作業的�
 * link:task_monitor_iscsi_sessions.html["檢視iSCSI工作階段"]
 * link:task_monitor_fibre_channel_sessions.html["檢視Fibre Channel工作階段"]
 * link:concept_troubleshoot_drives.html["疑難排解磁碟機"]
-* link:concept_troubleshoot_nodes.html["疑難排解節點"]
+* link:concept_remove_nodes_from_cluster.html["疑難排解節點"]
 * link:concept_per_node_work_with_utilities.html["使用儲存節點的每節點公用程式"]
 * link:concept_mnode_work_with_the_management_node.html["使用管理節點"]
 * link:concept_monitor_understand_cluster_fullness_levels.html["瞭解叢集完整度層級"]
