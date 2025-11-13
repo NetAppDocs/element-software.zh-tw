@@ -20,9 +20,9 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 [NOTE]
 ====
-* 自 2023 年 11 月起，您無法使用 NetApp 混合雲控制或 REST API 來啟動元件升級，因為簽署金鑰憑證（私有和公有）已於 2023 年 11 月 5 日到期。在使用 NetApp 混合雲控制或 REST API 升級管理服務，元件軟體和儲存韌體之前，您可以先解決此問題，方法是link:task_hcc_upgrade_management_node.html["執行管理節點的原位升級"]至版本 12.8 。
+* 從 2023 年 11 月開始，您將無法使用NetApp Hybrid Cloud Control 或 REST API 啟動元件升級，因為簽署金鑰憑證（私鑰和公鑰）已於 2023 年 11 月 5 日過期。您可以透過以下方式解決此問題：link:task_hcc_upgrade_management_node.html["執行管理節點的原位升級"]在使用NetApp Hybrid Cloud Control 或 REST API 升級管理服務、Element 軟體和儲存韌體之前，請升級至 12.8 或更高版本。
 +
-如果您部署的是版本 12.8 的新管理節點，您可以使用 NetApp 混合雲控制或 REST API <<sys_upgrade,系統升級順序>>，依照中所列的順序執行元件升級。
+如果您要部署版本為 12.8 或更高版本的新管理節點，則可以使用NetApp Hybrid Cloud Control 或 REST API，請依照清單中列出的順序執行元件升級。<<sys_upgrade,系統升級順序>> 。
 
 * 不支援下列節點。如果您嘗試將其中一個節點升級至不受支援的元素版本，您會看到錯誤，指出元素 12.x 不支援該節點：
 +
@@ -69,8 +69,8 @@ NOTE: 您不再需要升級管理節點作業系統即可升級儲存叢集上�
 +
 [IMPORTANT]
 ====
-** 管理服務 2.27 套裝組合包含適用於 vCenter Server 5.5 的 Element Plug-in，外掛程式僅與管理節點 12.8 相容。當您更新至管理服務 2.27 時，您必須變更升級順序並在升級至 Element 12.8 之後更新管理服務包，以使管理節點和管理服務之間相容。
-** 如果您要更新至管理服務 2.21.61 到 2.26.40，則必須在升級至 Element 12.8 之前更新管理服務套件。
+** 管理服務 2.27 套件包含適用於 vCenter Server 5.5 的 Element 插件，該插件僅與管理節點 12.8 或更高版本相容。當您更新至管理服務 2.27 時，您必須變更升級順序並在升級至 Element 12.9 之後更新管理服務包，以使管理節點和管理服務之間相容。
+** 如果您要更新至管理服務 2.21.61 到 2.26.40，則必須在升級至 Element 12.9 之前更新管理服務套件。
 
 
 ====

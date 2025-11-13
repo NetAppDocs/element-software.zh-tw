@@ -6492,7 +6492,6 @@
   <block id="d07ccd2d77f5001f167b3b44147d3a36" category="summary">您可以使用GetRemoteLoggingHist方法來取得目前的記錄伺服器清單。</block>
   <block id="d181f64248152c2f348f049cf48ef93e" category="paragraph">您可以使用「GetRemoteLoggingHosers」方法來取得目前的記錄伺服器清單。</block>
   <block id="5f4f0ec0918e318616593eade2ab0e45" category="paragraph">遠端系統</block>
-  <block id="7019ad99422f3f4f4e107c4c97d968c0" category="paragraph">設定接收轉送記錄資訊之主機的IP位址和連接埠資訊清單。</block>
   <block id="a2ee727480278b2294f0926aa0083922" category="inline-xref-macro">記錄伺服器</block>
   <block id="71d0be7b0a81bc143e93030e8122488f" category="paragraph"><block ref="dc435e9a57e6ef95abdeea42eed03b10" category="inline-xref-macro-rx"></block> 陣列</block>
   <block id="bfef1931306d50981d842714565c9b06" category="summary">您可以使用「遠端磁碟機」方法主動移除屬於叢集一部分的磁碟機。您可以在減少叢集容量或準備更換即將結束服務壽命的磁碟機時、使用此方法。磁碟機上的任何資料都會在磁碟機從叢集移除之前、移除並移轉到叢集中的其他磁碟機。</block>
@@ -8853,9 +8852,6 @@
   <block id="4cef2f30ac7d33419d00c1d93a090095" category="list-text">已鎖定</block>
   <block id="e263e78ffa1c3f196bc63ccbf820e73d" category="summary">啟動器方法可讓您新增、移除、檢視及修改iSCSI啟動器物件、以處理儲存系統與外部儲存用戶端之間的通訊。</block>
   <block id="4713b431d534390bd0eb29961139d8ff" category="summary">記錄伺服器物件包含任何為儲存叢集設定的記錄主機相關資訊。您可以使用GetRemoteLoggingHist來判斷目前的記錄主機為何、然後使用SetRemoteLoggingHist來設定所需的目前和新記錄主機清單。</block>
-  <block id="e3ed345ba461675fda50cecf882a20a1" category="paragraph">記錄伺服器物件包含任何為儲存叢集設定的記錄主機相關資訊。您可以使用「GetRemoteLoggingHosS」來判斷目前的記錄主機、然後使用「etRemoteLoggingHosS」來設定所需的目前和新記錄主機清單。</block>
-  <block id="a05ddf076e226ae1ba98fd6f060d8dde" category="paragraph">記錄伺服器的IP位址。</block>
-  <block id="03d7c89bdea03fc32c54c20e402ca22f" category="paragraph">用於與記錄伺服器通訊的連接埠號碼。</block>
   <block id="ec7c087ae184ff93c99787b324dbf07a" category="summary">您可以使用清單公用程式方法來列出可在節點上執行的作業。</block>
   <block id="e4afbb2837e1d63c871e1e9ae5ef30f5" category="doc">清單公用程式</block>
   <block id="36a0ea29b8d76ab46df01717c973111b" category="paragraph">您可以使用「清單公用程式」方法來列出可在節點上執行的作業。</block>
@@ -10841,7 +10837,6 @@
   <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">儲存韌體套裝組合2.164.0版本說明</block>
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
   <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支援的韌體和ESXi驅動程式版本</block>
-  <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _新_</block>
   <block id="fd755336ba3702c8d419343da5efb6d6" category="list-text">*檔案系統IsReadOnly*</block>
   <block id="ed734a928c08d6cb25fc1abe2d4e0c3a" category="paragraph">檔案系統已移至唯讀模式。</block>
   <block id="9732e3757f397fc8e75412dea43c030e" category="list-text">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行<block ref="e9afc225a78965c54dbba9b335afd021" category="inline-link-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5或更新版本。</block>
@@ -11782,11 +11777,8 @@
   <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">NetApp Element 軟體 12.8 版本資訊</block>
   <block id="912995e99772bb097b2c7b32940725bb" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block></block>
   <block id="de1923eab698e40e118f826163735ce9" category="doc">Element 軟體的新功能</block>
-  <block id="95dc02f465fb1139e3e92c363bf6965b" category="paragraph">NetApp會定期更新SolidFire 支援功能和元件軟體、為您帶來新功能、增強功能和錯誤修復。Element 12.8是最新版本、包含安全性與系統元件更新、作業改善及已解決的問題。</block>
   <block id="54c87de7f5250ba9aa116c671d66513b" category="inline-link">執行 NetApp Element 軟體之儲存叢集的升級對照表為何</block>
-  <block id="cbc21275b31252cb0d62b8238bf2f7f4" category="admonition">根據儲存叢集上目前執行的元素版本、會將累積式軟體和韌體更新安裝為Element 12.8升級的一部分。例如，如果叢集目前正在執行 Element 12.5 ，您可以直接升級至 Element 12.8 ，從 Element 12.7 和 12.8 取得累積更新。有關支持的升級路徑，請參閱知識庫文章<block ref="c5b23fd17ac7c12a5a03bb47eaffc085" category="inline-link-rx"></block>。</block>
   <block id="b96f7bb136ed4e13e527257ff99d9aa8" category="section-title">元件12.8</block>
-  <block id="5f3e8fa2bb7cacdfa568d72b6619b9f7" category="paragraph">深入瞭解 Element 12.8 的新功能。</block>
   <block id="de8b5a628a603f8c3af1b2f5792e68de" category="section-title">Volume 負載平衡</block>
   <block id="380221f3a88d939f31cd4269828e2920" category="section-title">檢視節點使用率資訊</block>
   <block id="cf1de2ea971a9d03b59178af9472d4b0" category="paragraph">有了 Element 12.8 ，您就可以像使用<block ref="f26fbe9dd2d7f06608bbf6327141caa9" prefix=" " category="inline-code"></block>和<block ref="84b7393e47ffdee1d6a06f5067a7270c" prefix=" " category="inline-code"></block> API 方法一樣檢視節點使用率資訊<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>。<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>物件是物件的成員<block ref="d9bfbffd38f5f9686a85ef17e8138b5c" prefix=" " category="inline-code"></block>，會根據主要 IOPS 或整體 IOPS 與一段時間內平均的已設定 IOPS 比率，顯示節點使用率資訊。</block>
@@ -11797,8 +11789,6 @@
   <block id="b7ff4d8cc30e1648a2610b037b9c5b97" category="paragraph">當主機 iSCSI 啟動器建立具有元素 iSCSI 目標的 iSCSI 工作階段時，會要求使用挑戰握手驗證傳輸協定（ CHAP ）演算法清單。從元素 12.8 開始，您可以檢視元素 iSCSI 目標選擇用於 iSCSI 工作階段的支援 CHAP 演算法。</block>
   <block id="3c72afcfca67f187b816a55135a243dd" category="section-title">升級 VM 硬體版本</block>
   <block id="7dba8a3f7eba09c328d90efc88b182cd" category="paragraph">如果您正在執行現有管理節點的就地升級至元素 12.8 ，則在升級之前，必須確保管理節點上的 VM 硬體版本與 ESXi 6.7 （ VM 硬體版本 14 ）或更新版本相容，視您的環境而定。<block ref="f415360b3de270935343c57ae74254e8" category="inline-link-macro-rx"></block>。</block>
-  <block id="9c5d76276e21d49836999553da451b64" category="paragraph">深入瞭解 Element 12.7 的新功能。</block>
-  <block id="c709a2d01de03a4c29036ff9f37c0dff" category="paragraph">深入瞭解 Element 12.5 的新功能。</block>
   <block id="ad0a505756223d68dc11afeae3459351" category="inline-link">資訊文件NetApp HCI</block>
   <block id="bf667c8802395357e4f080e2fcd819e4" category="list-text"><block ref="bf667c8802395357e4f080e2fcd819e4" category="inline-link-rx"></block></block>
   <block id="f512bd2c4d2b9ed8c936fc1a75c3581e" category="paragraph">視您的 Element 軟體版本而定，不支援下列節點：</block>
@@ -11841,18 +11831,13 @@
   <block id="e52172b27eb39053f2941029ca952216" category="list-text">* 節點使用率 * ：以 nodeHeat 為基礎的節點使用率百分比。顯示的值為 recentPrimaryTotalHeat 百分比。從元件 12.8 開始提供。</block>
   <block id="5e8ecd2e12df03135f7d9ea0fc9f1e5e" category="list-text">* 自訂保護網域 * ：指派給節點的自訂保護網域。</block>
   <block id="c5c29b3089afd57677f0c6e16b8f6bc1" category="inline-link-macro">執行管理節點的原位升級</block>
-  <block id="870c21ddabb9d392de6b8260f26cb2bd" category="list-text">自 2023 年 11 月起，您無法使用 NetApp 混合雲控制或 REST API 來啟動元件升級，因為簽署金鑰憑證（私有和公有）已於 2023 年 11 月 5 日到期。在使用 NetApp 混合雲控制或 REST API 升級管理服務，元件軟體和儲存韌體之前，您可以先解決此問題，方法是<block ref="3f48e72cfa47aa3f4c9b8d036d27a113" category="inline-link-macro-rx"></block>至版本 12.8 。</block>
-  <block id="155ca98fbc1ded22cd8604d6760bbd99" category="paragraph">如果您部署的是版本 12.8 的新管理節點，您可以使用 NetApp 混合雲控制或 REST API <block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block>，依照中所列的順序執行元件升級。</block>
   <block id="1806b0c9501c3b2013932e456db5038b" category="list-text">不支援下列節點。如果您嘗試將其中一個節點升級至不受支援的元素版本，您會看到錯誤，指出元素 12.x 不支援該節點：</block>
   <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">步驟 1 ：在管理節點上升級 VM 硬體版本</block>
-  <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">如果您正在執行現有管理節點的就地升級至元素 12.8 ，則在升級之前，必須確保管理節點上的 VM 硬體版本與 ESXi 6.7 （ VM 硬體版本 14 ）或更新版本相容，視您的環境而定。</block>
   <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">以vCenter管理員身分登入vSphere Web Client。</block>
   <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">根據 vSphere 環境的版本，選取 ESXi 6.7 或更新版本。</block>
   <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">選取 * OK* 。</block>
   <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">步驟 2 ：將管理節點升級至元件 12.5 或更新版本</block>
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">請選擇下列其中一個升級選項：</block>
-  <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">包含硬體元件（例如磁碟機和節點）的全快閃儲存系統、這些元件會整合到儲存資源池中。SolidFire使用元素介面、 API 或其他管理工具、您可以使用 NetApp Element 軟體來管理這些儲存資源叢集。本網站包含 Element 軟體 12.8 的文件。</block>
-  <block id="83214fe0ca2841bff645ee69075302da" category="sidebar">SolidFire 與 Element 軟體文件 12.8.</block>
   <block id="d9a22d7a8178d5b42a8750123cbfe5b1" category="list-text">完成</block>
   <block id="acbccd83186c34328efe61415e4f06c3" category="paragraph">iosInProgress</block>
   <block id="efadf566bdff7cd45611bcf2ea26634b" category="paragraph">此磁碟機的 I/O 數量正在進行中。</block>
@@ -11893,13 +11878,10 @@
   <block id="bd000e3a7a010d55765a9684adc1c25f" category="paragraph">元素儲存升級</block>
   <block id="53e04163346326834efd61306c0800b5" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block></block>
   <block id="7373675a8dd923fb7362a663e0cb6e1f" category="inline-link">vCenter 外掛程式 5.5 發行說明</block>
-  <block id="1bb29b9b64a805e59f4873c404e002c4" category="list-text"><block ref="19934d197d6821fc66160fdecbaaf499" category="inline-link-rx"></block>_新的_</block>
   <block id="9addfb2ff8ac3a9826d26736c6697320" category="inline-link-macro">管理服務 2.27.40 版通知（適用於 VMware vCenter Server 5.5.16 的NetApp Element插件）</block>
   <block id="5f97199338e05d8d021611cc709fe28f" category="list-text"><block ref="5f97199338e05d8d021611cc709fe28f" category="inline-link-macro-rx"></block></block>
   <block id="111e46cd39158a394cd8236185cf08df" category="inline-link-macro">在升級儲存之前執行 Element 儲存健康檢查</block>
   <block id="15c2fc4333a0aada89bc8cf9f0ebbdac" category="list-text"><block ref="76b28290238ca686b8113b7395511f66" category="inline-link-macro-rx"></block> 。</block>
-  <block id="c759706a0ac25a6b9701339b7c7959d4" category="list-text">管理服務 2.27 套裝組合包含適用於 vCenter Server 5.5 的 Element Plug-in，外掛程式僅與管理節點 12.8 相容。當您更新至管理服務 2.27 時，您必須變更升級順序並在升級至 Element 12.8 之後更新管理服務包，以使管理節點和管理服務之間相容。</block>
-  <block id="aebb2147cc4f1c96830ec15bbe8bbaaa" category="list-text">如果您要更新至管理服務 2.21.61 到 2.26.40，則必須在升級至 Element 12.8 之前更新管理服務套件。</block>
   <block id="a364164cb135a0ea8d140eae7c98e606" category="admonition">如果您要將管理服務更新至版本 2.16 或更高版本，並且正在執行管理節點 11.3 到 11.8，則需要在更新管理服務之前增加管理節點 VM 的 RAM。</block>
   <block id="f09175d59684197ed7788662b7cd5fe4" category="list-text">您正在升級至適用於 vCenter Server 5.5、5.4、5.3、5.2、5.1 或 5.0 的 Element 插件。</block>
   <block id="6eb41496b0f7ef5be359156d440fc5ea" category="paragraph">您應該會看到以下版本詳細資訊：</block>
@@ -12049,4 +12031,37 @@
   <block id="872f6cff86593f6dadbf113566b2518c" category="sidebar">光纖通道會議</block>
   <block id="b41e191265a87133dd55dbef64fbdca8" category="sidebar">了解如何排除驅動器故障</block>
   <block id="5a4bef238f8c68aedf2579a9018edb5a" category="sidebar">學習如何使用每個節點的實用程序</block>
+  <block id="60210a5d8b6171337fa1c587c1634bb4" category="paragraph">沒有輸入參數<block ref="8a0a6fa5053e047edbf44e6a00a611ab" prefix=" " category="inline-code"></block>。</block>
+  <block id="9829197f8e9aa49b0fda96130560499e" category="paragraph">這<block ref="8a0a6fa5053e047edbf44e6a00a611ab" prefix=" " category="inline-code"></block>此方法具有以下傳回值：</block>
+  <block id="86776fdc076d835f05040f05494bdf4c" category="paragraph">列出已設定為接收轉送日誌訊息的主機的 IP 位址、FQDN 和連接埠訊息</block>
+  <block id="50315a0d519071f70616423e8c0354dc" category="paragraph">從ONTAP 9.6 版本開始可用。</block>
+  <block id="1ff08da76d2e8e320be0217ec1d5f67b" category="paragraph">loggingServer 物件儲存有關為儲存叢集配置的日誌主機的資訊。使用<block ref="8a0a6fa5053e047edbf44e6a00a611ab" prefix=" " category="inline-code"></block>查看目前日誌記錄主機，然後使用<block ref="7ec501e5c4a5552f16c73746995c46e7" prefix=" " category="inline-code"></block>設定目前和新增日誌主機的所需清單。</block>
+  <block id="f77af844fd9172704ddd5137f3048d3d" category="paragraph">日誌伺服器的 FQDN 或 IP 位址</block>
+  <block id="eccc2fb30066b6672be61ec0db876936" category="paragraph">用於與日誌伺服器通訊的連接埠號</block>
+  <block id="3cfc0ac3a30a1f382a276d893e091631" category="list-text"><block ref="3cfc0ac3a30a1f382a276d893e091631" category="inline-link-macro-rx"></block></block>
+  <block id="23ffdb57fafb6f4ca3a258aad83820db" category="list-text"><block ref="23ffdb57fafb6f4ca3a258aad83820db" category="inline-link-macro-rx"></block></block>
+  <block id="f3910c16a2d3ccfefad3cf6a2990562f" category="inline-link">NetApp Element軟體 12.9 發行說明</block>
+  <block id="0f0dd8ebb47c876fc4d83cd4c503304a" category="list-text"><block ref="65f476025a11aaf16dc58328cfd02319" category="inline-link-rx"></block>_新的_</block>
+  <block id="19934d197d6821fc66160fdecbaaf499" category="list-text"><block ref="19934d197d6821fc66160fdecbaaf499" category="inline-link-rx"></block></block>
+  <block id="16447f3faa9ba0e1db5b0d946a9dbeaf" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block></block>
+  <block id="c79ac813d0c7f2dd315deb5f8e5f9c6c" category="paragraph">NetApp會定期更新SolidFire和 Element 軟體，為您帶來新功能、增強功能和錯誤修復。Element 12.9 是最新版本，包含安全性和系統元件更新、操作改進以及已解決的問題。</block>
+  <block id="a812546e32c191a0705a7a886149db96" category="admonition">累積軟體和韌體更新是作為 Element 12.9 升級的一部分安裝的，該升級基於儲存叢集上運行的當前 Element 版本。例如，如果叢集目前正在執行 Element 12.5，您可以直接升級到 Element 12.9，以取得 Element 12.7、12.8 和 12.9 的累積更新。有關支援的升級路徑，請參閱知識庫文章。<block ref="c5b23fd17ac7c12a5a03bb47eaffc085" category="inline-link-rx"></block> 。</block>
+  <block id="6e63dfea551985425e07f6425933484a" category="section-title">元素 12.9</block>
+  <block id="696efa96854e5c2d2cbe5f3e83073e41" category="paragraph">了解 Element 12.9 的新功能。</block>
+  <block id="4ae9a2118e67992355ab5780caa3d49e" category="section-title">「SetRemoteLoggingHosts」中對 FQDN 的支持</block>
+  <block id="c49f5d04f26c84b5395309d04ac1998d" category="paragraph">從 Element 12.9 開始，您可以使用<block ref="7ec501e5c4a5552f16c73746995c46e7" prefix=" " category="inline-code"></block>用於將完全限定網域名稱 (FQDN) 或 IP 位址配置為儲存叢集的日誌主機值的方法。您可以在回應中查看 FQDN 主機值。<block ref="8a0a6fa5053e047edbf44e6a00a611ab" prefix=" " category="inline-code"></block>方法。對於 Element 12.8 及更早版本，您只能將 IP 位址配置為日誌主機值。</block>
+  <block id="90e71fac5dbce2c697f3e0a45bab7ed6" category="inline-link">了解更多關於日誌主機配置的信息</block>
+  <block id="35b4745d5c9d019bd2e8b01a2a5786b9" category="paragraph"><block ref="35b4745d5c9d019bd2e8b01a2a5786b9" category="inline-link-rx"></block></block>
+  <block id="758c5e2948e12b97aecf7d88769cfd1a" category="paragraph">了解 Element 12.8 的新功能。</block>
+  <block id="be1da0c99f4abe78428e43b0eca9ac8d" category="paragraph">了解 Element 12.7 的新功能。</block>
+  <block id="129baaa25f6330e3a23929947c195f89" category="paragraph">了解 Element 12.5 的新功能。</block>
+  <block id="576a64066f01cba7e1d9e6cc332e1c1e" category="inline-link-macro">Element 軟體 12.9 版通知</block>
+  <block id="0052f32dde4447765e38fcb8d2c7c0fb" category="list-text"><block ref="0052f32dde4447765e38fcb8d2c7c0fb" category="inline-link-macro-rx"></block></block>
+  <block id="fb68b6e8bd76e850e368bd0ae5040962" category="list-text">從 2023 年 11 月開始，您將無法使用NetApp Hybrid Cloud Control 或 REST API 啟動元件升級，因為簽署金鑰憑證（私鑰和公鑰）已於 2023 年 11 月 5 日過期。您可以透過以下方式解決此問題：<block ref="3f48e72cfa47aa3f4c9b8d036d27a113" category="inline-link-macro-rx"></block>在使用NetApp Hybrid Cloud Control 或 REST API 升級管理服務、Element 軟體和儲存韌體之前，請升級至 12.8 或更高版本。</block>
+  <block id="7c1f07352f172bbf997cd277bb22f373" category="paragraph">如果您要部署版本為 12.8 或更高版本的新管理節點，則可以使用NetApp Hybrid Cloud Control 或 REST API，請依照清單中列出的順序執行元件升級。<block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="8a3417feffea00ce52b83a4254396630" category="list-text">管理服務 2.27 套件包含適用於 vCenter Server 5.5 的 Element 插件，該插件僅與管理節點 12.8 或更高版本相容。當您更新至管理服務 2.27 時，您必須變更升級順序並在升級至 Element 12.9 之後更新管理服務包，以使管理節點和管理服務之間相容。</block>
+  <block id="be17882b01381c744c05bc87ef6f8f6b" category="list-text">如果您要更新至管理服務 2.21.61 到 2.26.40，則必須在升級至 Element 12.9 之前更新管理服務套件。</block>
+  <block id="08338b1803089277b6a93f4d800189f8" category="paragraph">如果您要將現有管理節點就地升級到 Element 12.9，則在升級之前，必須確保管理節點上的 VM 硬體版本與您的環境相容於 ESXi 6.7（VM 硬體版本 14）或更高版本。</block>
+  <block id="cf5be9e5b7186b071d6f04d4b0377a82" category="sidebar">SolidFire全快閃儲存系統由磁碟機和節點等硬體元件組成，這些元件組合成一個儲存資源池。使用 Element 介面、API 或其他管理工具，您可以使用NetApp Element軟體管理這些儲存資源叢集。本網站包含 Element 軟體 12.9 的文檔。</block>
+  <block id="04d99e886b9a296f2c17ceac36c3b3f7" category="sidebar">SolidFire和 Element 軟體文件 12.9</block>
 </blocks>

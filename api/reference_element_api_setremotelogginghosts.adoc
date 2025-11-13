@@ -60,6 +60,10 @@ xref:reference_element_api_loggingserver.adoc[記錄伺服器] 陣列
         },
         {
           "host": "172.16.1.25"
+        },
+        {
+          "host": "syslogs.lab.company.net",
+          "port": 514
         }
       ]
    }

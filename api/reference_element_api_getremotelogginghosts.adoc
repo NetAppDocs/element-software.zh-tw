@@ -17,13 +17,13 @@ summary: 您可以使用GetRemoteLoggingHist方法來取得目前的記錄伺服
 
 == 參數
 
-此方法沒有輸入參數。
+沒有輸入參數 `GetRemoteLoggingHosts`。
 
 
 
 == 傳回值
 
-此方法具有下列傳回值：
+這 `GetRemoteLoggingHosts`此方法具有以下傳回值：
 
 |===
 | 名稱 | 說明 | 類型 
@@ -32,7 +32,7 @@ summary: 您可以使用GetRemoteLoggingHist方法來取得目前的記錄伺服
  a| 
 遠端系統
  a| 
-設定接收轉送記錄資訊之主機的IP位址和連接埠資訊清單。
+列出已設定為接收轉送日誌訊息的主機的 IP 位址、FQDN 和連接埠訊息
  a| 
 xref:reference_element_api_loggingserver.adoc[記錄伺服器] 陣列
 
@@ -69,6 +69,10 @@ xref:reference_element_api_loggingserver.adoc[記錄伺服器] 陣列
          },
          {
            "host": "172.16.1.25"
+         },
+         {
+            "host": "syslogs.lab.company.net",
+            "port": 514
          }
       ]
    }
@@ -78,7 +82,7 @@ xref:reference_element_api_loggingserver.adoc[記錄伺服器] 陣列
 
 == 新的自版本
 
-9.6
+從ONTAP 9.6 版本開始可用。
 
 
 

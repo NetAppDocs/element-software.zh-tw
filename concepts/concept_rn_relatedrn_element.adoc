@@ -20,6 +20,7 @@ NOTE: 系統會提示您使用NetApp支援認證登入。
 
 == 軟件NetApp Element
 
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3362264["NetApp Element軟體 12.9 發行說明"^]_新的_
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2886996["NetApp Element 軟體 12.8 版本資訊"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2884468["《軟件》第12版發行說明NetApp Element"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2882193["《軟件發行說明》（英文）NetApp Element"^]
@@ -49,7 +50,7 @@ NOTE: 系統會提示您使用NetApp支援認證登入。
 
 == vCenter Server的VMware vCenter外掛程式NetApp Element
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP3344864["vCenter 外掛程式 5.5 發行說明"^]_新的_
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP3344864["vCenter 外掛程式 5.5 發行說明"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP3330676["vCenter Plug-in 5.4 版本資訊"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP3316480["vCenter Plug-in 5.3 版本資訊"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2886272["vCenter Plug-in 5.2 版本資訊"^]
@@ -78,7 +79,7 @@ NOTE: 系統會提示您使用NetApp支援認證登入。
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.76.html["儲存韌體產品組合2.76版本說明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.27.html["儲存韌體產品組合2.27版本說明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_H610S_BMC_3.84.07.html["H610S BMC 3.84.07版本說明"^]
-* https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["支援的韌體和ESXi驅動程式版本"] _新_
+* https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html["支援的韌體和ESXi驅動程式版本"]
 
 
 

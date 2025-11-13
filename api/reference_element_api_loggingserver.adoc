@@ -11,7 +11,7 @@ summary: 記錄伺服器物件包含任何為儲存叢集設定的記錄主機�
 
 
 [role="lead"]
-記錄伺服器物件包含任何為儲存叢集設定的記錄主機相關資訊。您可以使用「GetRemoteLoggingHosS」來判斷目前的記錄主機、然後使用「etRemoteLoggingHosS」來設定所需的目前和新記錄主機清單。
+loggingServer 物件儲存有關為儲存叢集配置的日誌主機的資訊。使用 `GetRemoteLoggingHosts`查看目前日誌記錄主機，然後使用 `SetRemoteLoggingHosts`設定目前和新增日誌主機的所需清單。
 
 
 
@@ -26,7 +26,7 @@ summary: 記錄伺服器物件包含任何為儲存叢集設定的記錄主機�
  a| 
 主機
  a| 
-記錄伺服器的IP位址。
+日誌伺服器的 FQDN 或 IP 位址
  a| 
 字串
 
@@ -35,8 +35,12 @@ summary: 記錄伺服器物件包含任何為儲存叢集設定的記錄主機�
  a| 
 連接埠
  a| 
-用於與記錄伺服器通訊的連接埠號碼。
+用於與日誌伺服器通訊的連接埠號
  a| 
 整數
 
 |===
+.相關資訊
+* link:reference_element_api_getremotelogginghosts.html["GetRemoteLoggingHos"]
+* link:reference_element_api_setremotelogginghosts.html["SetRemoteLoggingHos"]
+
