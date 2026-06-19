@@ -1623,9 +1623,6 @@
   <block id="d50044469c0bf9ab38eff9cf7243fb25" category="section-title">複製磁碟區</block>
   <block id="dc1cc8200d35d9ec64b7565d154fff16" category="paragraph">您可以建立單一磁碟區或多個磁碟區的複本、以建立資料的時間點複本。當您複製磁碟區時、系統會建立磁碟區的快照、然後建立快照所參照資料的複本。這是一個非同步程序、程序所需的時間長短取決於您要複製的磁碟區大小和目前的叢集負載。</block>
   <block id="50ac16ed5c9a955e644b093813cd75e0" category="paragraph">叢集一次最多可支援兩個執行中的每個Volume複製要求、一次最多可支援八個作用中Volume複製作業。超過這些限制的要求會排入佇列、以供日後處理。</block>
-  <block id="b8a1cad4a50c9260122967b830aa2f1e" category="inline-link">掛載VMFS資料存放區複本</block>
-  <block id="d79c3c87976b8fd24486c760b99214ec" category="inline-link">管理重複的VMFS資料存放區</block>
-  <block id="4a82b53219bfaabced3d1c81b475eff8" category="admonition">作業系統在處理複製磁碟區的方式上各不相同。VMware ESXi會將複製的Volume視為Volume複本或Snapshot Volume。磁碟區將是可用來建立新資料存放區的可用裝置。如需掛載複製磁碟區及處理快照LUN的詳細資訊、請參閱上的VMware文件<block ref="e578a339e9493d9c63d57360db9fb8b0" category="inline-link-rx"></block> 和<block ref="6865dba41e05c4300a16bf14013377d9" category="inline-link-rx"></block>。</block>
   <block id="7df9bea854445d9f3836e4622d758b3b" category="admonition">在您以較小的大小複製來精簡複製的磁碟區之前、請務必先準備好分割區、使其適合較小的磁碟區。</block>
   <block id="743554a1317a874d785bae30fdf78296" category="list-text">若要複製單一磁碟區、請執行下列步驟：</block>
   <block id="0c45f82d13eb2f161b1469f4deca5df8" category="list-text">在「*作用中*」頁面的磁碟區清單中、按一下您要複製之磁碟區的「動作」圖示。</block>
@@ -2893,9 +2890,6 @@
   <block id="24d4dcacc9ee231e8de862294db2f6fc" category="list-text">按一下您要編輯之群組快照成員的「動作」圖示。</block>
   <block id="ea339f6b03ecb49af3bf45b8496f3eec" category="list-text">若要變更快照的複寫設定、請從下列選項中選取：</block>
   <block id="c790184773e8ef26c5af49a38611a471" category="summary">您可以使用整合式備份功能來備份磁碟區快照。您可以將快照從SolidFire 一個實體叢集備份到一個外部物件存放區、或是另SolidFire 一個實體叢集。當您將快照備份到外部物件存放區時、必須連線到允許讀取/寫入作業的物件存放區。</block>
-  <block id="4e385daedad4a81e3776afbca9ea07a7" category="list-text"><block ref="4e385daedad4a81e3776afbca9ea07a7" category="inline-link-macro-rx"></block></block>
-  <block id="3a50ce5f4085bd0f74405eb1c25f6cc9" category="list-text"><block ref="3a50ce5f4085bd0f74405eb1c25f6cc9" category="inline-link-macro-rx"></block></block>
-  <block id="091f209abc9bb34dfb86fb2328780ca1" category="list-text"><block ref="091f209abc9bb34dfb86fb2328780ca1" category="inline-link-macro-rx"></block></block>
   <block id="4cf5f18e32ae2a3ab791ffc90b0c71b8" category="summary">您必須監控系統以進行診斷、並取得各種系統作業的效能趨勢和狀態資訊。您可能需要更換節點或SSD以進行維護。</block>
   <block id="5d275af03802c344792a6765e974ac03" category="list-text"><block ref="5d275af03802c344792a6765e974ac03" category="inline-link-macro-rx"></block></block>
   <block id="b1c9ca707156f02819d3d0e1cc8278ee" category="list-text"><block ref="b1c9ca707156f02819d3d0e1cc8278ee" category="inline-link-macro-rx"></block></block>
@@ -2914,7 +2908,6 @@
   <block id="e95cde644dcbc92ed35f811389d93624" category="inline-link-macro">設定外部管理</block>
   <block id="8038ace7de9a6145f384d01b5f03e2d8" category="list-text"><block ref="8038ace7de9a6145f384d01b5f03e2d8" category="inline-link-macro-rx"></block></block>
   <block id="ae4a16d89bc4c1fd130a91d5ecdfc931" category="list-text"><block ref="ae4a16d89bc4c1fd130a91d5ecdfc931" category="inline-link-macro-rx"></block></block>
-  <block id="f1f67a70bba55b3b1679804cb55ea1d1" category="list-text"><block ref="f1f67a70bba55b3b1679804cb55ea1d1" category="inline-link-macro-rx"></block></block>
   <block id="06d3db643866a2632d21e5d307008e72" category="list-text"><block ref="06d3db643866a2632d21e5d307008e72" category="inline-link-macro-rx"></block></block>
   <block id="62d29aedc6ec474773233dd69dabe7c4" category="inline-link-macro">可用來在閒置時啟用軟體加密的叢集API</block>
   <block id="06a6eb8faffa4fc7f7366b906cc31075" category="list-text"><block ref="06a6eb8faffa4fc7f7366b906cc31075" category="inline-link-macro-rx"></block></block>
@@ -5291,7 +5284,6 @@
   <block id="2e02ae79fb104d3c608baf3627930722" category="paragraph">一線儲存設備中的來源Volume與二線儲存設備中的目的地Volume之間的關係稱為資料保護關係。叢集稱為磁碟區所在的端點、而包含複寫資料的磁碟區則必須執行對等處理。對等關係可讓叢集和磁碟區安全地交換資料。</block>
   <block id="e8eee300f648a33639310b4549ed1596" category="paragraph">SnapMirror原生在NetApp ONTAP 的支援控制器上執行、並整合到元素中、這些元素可在NetApp HCI 支援的過程中執行於整個過程的過程中。SolidFireSnapMirror的控制邏輯位於ONTAP 整個過程中；因此、所有SnapMirror關係都必須至少涉及一個ONTAP 支援系統、才能執行協調工作。使用者主要ONTAP 透過Element UI來管理Element與相依叢集之間的關係、不過有些管理工作則位於NetApp ONTAP ®System Manager中。使用者也可以透過CLI和API來管理SnapMirror、ONTAP 而這兩者都可在支援中找到。</block>
   <block id="d95bb83fde5706bb5398bb94c8106f7f" category="inline-link">TR-4651：NetApp SolidFire SnapMirror架構與組態</block>
-  <block id="05f383efa661d49bdf542c9e9e281e05" category="paragraph">請參閱<block ref="eea98aade109823686927fb53af38fab" category="inline-link-rx"></block> （需要登入）</block>
   <block id="52b5fba1a62806fe621dc72218549e9c" category="paragraph">您必須使用Element軟體、在叢集層級手動啟用SnapMirror功能。SnapMirror功能預設為停用、不會在新安裝或升級時自動啟用。</block>
   <block id="237207bac5b8584faf6c036500958cad" category="paragraph">啟用SnapMirror之後、您可以從Element軟體的Data Protection（資料保護）索引標籤建立SnapMirror關係。</block>
   <block id="5ce5a4c32220893139a79b7961ce29a5" category="paragraph">支援SnapMirror 10.1及更新版本的軟體、可透過各種系統複製及還原快照。NetApp Element ONTAP</block>
@@ -10236,7 +10228,6 @@
   <block id="8e9a3ba87453eb870e97d5a72d5d9aac" category="inline-link">取消登錄</block>
   <block id="778212e26cda250d5f5f97f4685bf1e0" category="list-text">對於vCSA和Windows升級、<block ref="da392680dca74f52691137b810baae7b" category="inline-link-rx"></block> 與vCenter Server相關聯的外掛程式、使用登錄公用程式。</block>
   <block id="2aaad98bfcfbd95f21871cf486a3243c" category="inline-link">升級vSphere、包括vCenter Server、ESXi、VM及其他VMware元件</block>
-  <block id="f23d91ab86d1cf2e82bd86fd860c8585" category="list-text"><block ref="f0107c2e24795b3c47b3466dee69927b" category="inline-link-rx"></block>。</block>
   <block id="0ba7583639a274c434bbe6ef797115a4" category="inline-link">註冊</block>
   <block id="81750b82d55f7148c9a0001ed71e7dd4" category="list-text"><block ref="670ccc28c8c6a3ae1c020a0fa12ec195" category="inline-link-rx"></block> vCenter Server的元件外掛程式與vCenter一起使用。</block>
   <block id="2984cab36bd51d5446963e671e808f5d" category="inline-link">新增叢集</block>
@@ -10780,7 +10771,6 @@
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter外掛程式4.10版本說明</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
-  <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">您已為安排足夠的時間 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升級：升級至Element軟體12.5或更新版本時、升級程序時間會因元件軟體版本和韌體更新而有所不同。</block>
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">您可以使用下列順序來升級SolidFire 適用於Element 12.5或更新版本的NetApp全快閃儲存系統。</block>
   <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">使用HealthTools升級至Element 12.3.x</block>
   <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">從元素12.5開始、NetApp HealthTools不再支援元素軟體升級。如果您執行的是元件11.0或11.1、則必須先執行 <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> 然後使用NetApp混合雲控制升級至Element 12.5或更新版本。</block>
@@ -11432,7 +11422,6 @@
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp社群</block>
   <block id="213686afc3803be7caa09348765467fe" category="sidebar">取得協助的地方</block>
   <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2及更早版本的文件</block>
-  <block id="47fd1428a184377839b3521d9b89b20c" category="paragraph">如需更多資訊、請參閱<block ref="5fe7d084aafda4fb5c53715a85948ffe" category="inline-link-rx"></block>。</block>
   <block id="3d08f19c985682eb2a632e36184cedd2" category="paragraph"><block ref="3d08f19c985682eb2a632e36184cedd2" category="inline-link-rx"></block></block>
   <block id="b456d131470ee117b6ff900f949b80c5" category="paragraph"><block ref="b456d131470ee117b6ff900f949b80c5" category="inline-link-rx"></block></block>
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
@@ -12064,4 +12053,14 @@
   <block id="08338b1803089277b6a93f4d800189f8" category="paragraph">如果您要將現有管理節點就地升級到 Element 12.9，則在升級之前，必須確保管理節點上的 VM 硬體版本與您的環境相容於 ESXi 6.7（VM 硬體版本 14）或更高版本。</block>
   <block id="cf5be9e5b7186b071d6f04d4b0377a82" category="sidebar">SolidFire全快閃儲存系統由磁碟機和節點等硬體元件組成，這些元件組合成一個儲存資源池。使用 Element 介面、API 或其他管理工具，您可以使用NetApp Element軟體管理這些儲存資源叢集。本網站包含 Element 軟體 12.9 的文檔。</block>
   <block id="04d99e886b9a296f2c17ceac36c3b3f7" category="sidebar">SolidFire和 Element 軟體文件 12.9</block>
+  <block id="7ed2110dda4e725820c86037ab54d196" category="paragraph">如需詳細資訊，請參閱<block ref="45dfeaa43e9f1dd00a21977e432c35a4" category="inline-link-rx"></block>。</block>
+  <block id="d2ef1335ae8e1d79c299379ac49e4b1b" category="paragraph">請參閱<block ref="30ea8dea45042e51ef9f45277c3dcfc3" category="inline-link-rx"></block></block>
+  <block id="806181f8afe63ab2176a9668a88c16e9" category="list-text"><block ref="806181f8afe63ab2176a9668a88c16e9" category="inline-link-macro-rx"></block></block>
+  <block id="d64340614e4fc20e1f47eeb584d094b6" category="list-text"><block ref="d64340614e4fc20e1f47eeb584d094b6" category="inline-link-macro-rx"></block></block>
+  <block id="a08e600a476d03b143ad4ffabcc3dc36" category="list-text"><block ref="a08e600a476d03b143ad4ffabcc3dc36" category="inline-link-macro-rx"></block></block>
+  <block id="522cf0a888d1be9011076f48d51639fb" category="list-text"><block ref="522cf0a888d1be9011076f48d51639fb" category="inline-link-macro-rx"></block></block>
+  <block id="70cd8bfb8fd7a4082087201414ab2fe4" category="inline-link-macro">VMware 文件</block>
+  <block id="132c11da2b1e7646c3d397a41e823c61" category="admonition">不同的作業系統對複製磁碟區的處理方式有所不同。VMware ESXi 會將複製磁碟區視為磁碟區副本或快照磁碟區。該磁碟區將作為可用裝置用於建立新的資料存放區。有關掛載複製磁碟區和處理快照 LUN 的詳細資訊，請參閱<block ref="3be1aef9521c6da181e637c000f32aa2" category="inline-link-macro-rx"></block>有關掛載 VMFS 資料存放區副本和管理重複 VMFS 資料存放區的說明。</block>
+  <block id="75b0b932212b6758e37fc8920da31e3e" category="list-text">您已為 <block ref="da6d02632764bebb791a1a7b176b342b" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升級預留了充足的時間。升級到 Element 軟體 12.5 或更高版本時，升級過程所需時間取決於 Element 軟體版本和韌體更新情況。</block>
+  <block id="fe3c28c386d2be6c3cbda4b2feb01c29" category="list-text"><block ref="e8348e5b207b91893f9322900bc614aa" category="inline-link-rx"></block>。</block>
 </blocks>

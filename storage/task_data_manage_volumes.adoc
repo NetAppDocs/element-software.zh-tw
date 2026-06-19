@@ -287,7 +287,7 @@ IMPORTANT: 與管理服務相關的持續磁碟區會在安裝或升級期間建
 叢集一次最多可支援兩個執行中的每個Volume複製要求、一次最多可支援八個作用中Volume複製作業。超過這些限制的要求會排入佇列、以供日後處理。
 
 
-NOTE: 作業系統在處理複製磁碟區的方式上各不相同。VMware ESXi會將複製的Volume視為Volume複本或Snapshot Volume。磁碟區將是可用來建立新資料存放區的可用裝置。如需掛載複製磁碟區及處理快照LUN的詳細資訊、請參閱上的VMware文件 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["掛載VMFS資料存放區複本"] 和 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EBAB0D5A-3C77-4A9B-9884-3D4AD69E28DC.html["管理重複的VMFS資料存放區"]。
+NOTE: 不同的作業系統對複製磁碟區的處理方式有所不同。VMware ESXi 會將複製磁碟區視為磁碟區副本或快照磁碟區。該磁碟區將作為可用裝置用於建立新的資料存放區。有關掛載複製磁碟區和處理快照 LUN 的詳細資訊，請參閱link:https://techdocs.broadcom.com/["VMware 文件"^]有關掛載 VMFS 資料存放區副本和管理重複 VMFS 資料存放區的說明。
 
 
 IMPORTANT: 在您以較小的大小複製來精簡複製的磁碟區之前、請務必先準備好分割區、使其適合較小的磁碟區。

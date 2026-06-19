@@ -49,7 +49,7 @@ TIP: 若要檢查版本、請登入管理節點、並在登入橫幅中檢視元
 使用NetApp混合式雲端控制進行升級的舊版服務組合版本無法使用。
 
 * 您已確保所有節點上的系統時間都已同步、且儲存叢集和節點的NTP設定正確。每個節點都必須在每個節點的Web UI（「https://[IP位址」：442`）中設定DNS名稱伺服器、且不會發生與時間偏移相關的未解決叢集故障。
-* 您已為安排足夠的時間 link:task_hcc_upgrade_element_software.html#element-upgrade-time["Element軟體"] 和 link:task_hcc_upgrade_storage_firmware.html#storage-firmware-upgrade["儲存韌體"] 升級：升級至Element軟體12.5或更新版本時、升級程序時間會因元件軟體版本和韌體更新而有所不同。
+* 您已為 link:task_hcc_upgrade_element_software.html["Element軟體"] 和 link:task_hcc_upgrade_storage_firmware.html#storage-firmware-upgrade["儲存韌體"] 升級預留了充足的時間。升級到 Element 軟體 12.5 或更高版本時，升級過程所需時間取決於 Element 軟體版本和韌體更新情況。
 
 
 

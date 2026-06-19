@@ -15,7 +15,7 @@ summary: 外部金鑰管理（EKM\）可搭配叢集外外部金鑰伺服器（E
 
 * link:task_system_manage_key_set_up_external_key_management.html["設定外部管理"]
 * link:task_system_manage_rekey_software_ear_master_key.html["在REST主要金鑰重新輸入軟體加密"]
-* link:concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys["恢復無法存取或無效的驗證金鑰"]
+* link:concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys.html["恢復無法存取或無效的驗證金鑰"]
 * link:concept_system_manage_key_external_key_management_api_commands.html["外部金鑰管理API命令"]
 
 
